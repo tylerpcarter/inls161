@@ -5,6 +5,8 @@ title: INLS 161 Schedule (Summer II 2015)
 
 ## Week 1
 
+Basics
+
 ###2015-06-22
 
 ###2015-06-23
@@ -16,6 +18,8 @@ title: INLS 161 Schedule (Summer II 2015)
 ###2015-06-26
 
 ## Week 2
+
+Web Development
 
 ###2015-06-29
 
@@ -31,6 +35,8 @@ NO CLASS - Independence Day (observed)
 
 ## Week 3
 
+Document Processing
+
 ###2015-07-06
 
 ###2015-07-07
@@ -43,6 +49,8 @@ NO CLASS - Independence Day (observed)
 
 ## Week 4
 
+Data Processing
+
 ###2015-07-13
 
 ###2015-07-14
@@ -54,6 +62,8 @@ NO CLASS - Independence Day (observed)
 ###2015-07-17
 
 ## Week 5
+
+Design and Presentation
 
 ###2015-07-20
 
