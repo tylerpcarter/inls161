@@ -1,40 +1,14 @@
-# Architect theme
+# Tools for Information Literacy
 
-This is a [Jekyll][1] theme that is an adaptation of [@jasonlong][2]'s [Architect theme][4] on [GitHub Pages][3].
+## INLS 161-001 (Summer II 2015)
 
-This is the raw HTML and styles that are used for the *Architect* theme on [GitHub Pages](http://pages.github.com/).
+### School of Information and Library Science <br />
+### University of North Carolina at Chapel Hill
 
-![](http://cl.ly/image/1x0Q3213330G/content)
+This repository houses the source files for INLS 161-001 course website and syllabus. 
 
-# How to use it?
+The course description, as it appears in the UNC course catalog:
 
-Install Jekyll in your system
+"Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems."
 
-```
-$ gem install jekyll # use sudo if your system requires it
-```
-
-Download the theme @ http://github.com/pietromenna/jekyll-architect-theme/archive/master.zip
-
-Unzip it and use it as a regular jekyll folder.
-
-```
-$ unzip master.zip
-```
-
-Use it!
-
-```
-$ jekyll serve
-```
-
-For more details read about [Jekyll][1] on its web page.
-
-# License
-
-This work is licensed under a [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/).
-
-[1]: http://jekyllrb.com
-[2]: https://github.com/jasonlong
-[3]: http://pages.github.com/
-[4]: http://github.com/jasonlong/architect-theme
+The course introduces some basic technology tools as an essential component of information literacy training. 

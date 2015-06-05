@@ -1,66 +1,68 @@
 ---
 layout: default
-title: INLS 161 Summer 2 Schedule
+title: INLS 161 Schedule (Summer II 2015)
 ---
 
 ## Week 1
 
-### Monday 22 June
+###20150622
 
-### Tuesday 23 June
+###20150623
 
-### Wednesday 24 June
+###20150624
 
-### Thursday 25 June
+###20150625
 
-### Friday 26 June
+###20150626
 
 ## Week 2
 
-### Monday 29 June
+###20150629
 
-### Tuesday 30 June
+###20150630
 
-### Wednesday 01 July
+###20150701
 
-### Thursday 02 July
+###20150702
 
-### Friday 03 July 
+###20150703
+
 NO CLASS - Independence Day (observed)
 
 ## Week 3
 
-### Monday 06 July
+###20150706
 
-### Tuesday 07 July
+###20150707
 
-### Wednesday 08 July
+###20150708
 
-### Thursday 09 July
+###20150709
 
-### Friday 10 July 
+###20150710
 
 ## Week 4
 
-### Monday 13 July
+###20150713
 
-### Tuesday 14 July
+###20150714
 
-### Wednesday 15 July
+###20150715
 
-### Thursday 16 July
+###20150716
 
-### Friday 17 July
+###20150717
 
 ## Week 5
 
-### Monday 20 July
+###20150720
 
-### Tuesday 21 July
+###20150721
 
-### Wednesday 22 July
+###20150722
 
-### Thursday 23 July
+###20150723
 
-### Friday 10 July
+###20150724 
+
 NO CLASS - Reading Day
