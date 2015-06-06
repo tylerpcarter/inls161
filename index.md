@@ -5,29 +5,47 @@ title: INLS 161 Schedule (Summer II 2015)
 
 ## Week 1
 
-Basics
+**Basics**
 
 ###2015-06-22
 
+Intro > Tools > The easy way, the hard way, and the right way
+
 ###2015-06-23
+
+Clients > Servers > Operating on a remote system > SSH > FTP 
 
 ###2015-06-24
 
+Networks > Inter-networks > Whois > Traceroute
+
 ###2015-06-25
+
+Version control > Git > Github > CodeAnywhere
 
 ###2015-06-26
 
+LAB: Coding is not that hard > Set up a repo
+
 ## Week 2
 
-Web Development
+**Web Development**
 
 ###2015-06-29
 
+Markup > HTML > CSS 
+
 ###2015-06-30
+
+Static v. dynamic websites > Relative links
 
 ###2015-07-01
 
+Protecting directories > Permissions
+
 ###2015-07-02
+
+LAB: Testing, checking, and validation
 
 ###2015-07-03
 
@@ -35,7 +53,7 @@ NO CLASS - Independence Day (observed)
 
 ## Week 3
 
-Document Processing
+**Document Processing**
 
 ###2015-07-06
 
@@ -47,9 +65,11 @@ Document Processing
 
 ###2015-07-10
 
+LAB:
+
 ## Week 4
 
-Data Processing
+**Data Processing**
 
 ###2015-07-13
 
@@ -61,9 +81,11 @@ Data Processing
 
 ###2015-07-17
 
+LAB: 
+
 ## Week 5
 
-Design and Presentation
+**Design and Presentation**
 
 ###2015-07-20
 
@@ -73,6 +95,12 @@ Design and Presentation
 
 ###2015-07-23
 
+LAB:
+
 ###2015-07-24 
 
 NO CLASS - Reading Day
+
+###2015-07-27
+
+EXAM DAY - Presentations to class
