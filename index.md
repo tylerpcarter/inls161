@@ -49,7 +49,7 @@ LAB: Testing, checking, and validation
 
 ###2015-07-03
 
-NO CLASS - Independence Day (observed)
+*NO CLASS - Independence Day (observed)*
 
 ## Week 3
 
@@ -57,31 +57,47 @@ NO CLASS - Independence Day (observed)
 
 ###2015-07-06
 
+Plaintext > Markup > Templates > Formatted text
+
 ###2015-07-07
+
+Word Processors > How not to replicate work
 
 ###2015-07-08
 
-###2015-07-09
-
-###2015-07-10
-
-LAB:
-
-## Week 4
+Single source, multiple outputs > A return to plaintext
 
 **Data Processing**
 
+###2015-07-09
+
+Plaintext data > Structured data > Working with CSV files
+
+###2015-07-10
+
+LAB: How to make a DOC file when you don't have access to MSWord
+
+## Week 4
+
 ###2015-07-13
+
+Working with data in spreadsheets 
 
 ###2015-07-14
 
+Tables from spreadsheets > What is a database?
+
 ###2015-07-15
+
+Build a database from scratch > Relational databases put everything together
 
 ###2015-07-16
 
+Queries > Getting data into and out of a database
+
 ###2015-07-17
 
-LAB: 
+LAB: Tools for data manipulation beyond the GUI
 
 ## Week 5
 
@@ -89,17 +105,23 @@ LAB:
 
 ###2015-07-20
 
+Death by PowerPoint > Edward Tufte is your best friend
+
 ###2015-07-21
+
+Communication > Visual presentation > Design
 
 ###2015-07-22
 
+Flow > Connecting with your audience > Keeping on track > Taking questions
+
 ###2015-07-23
 
-LAB:
+LAB: Working through technical problems with presentations (and everything else)
 
 ###2015-07-24 
 
-NO CLASS - Reading Day
+*NO CLASS - Reading Day*
 
 ###2015-07-27
 
