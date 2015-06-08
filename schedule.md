@@ -3,76 +3,126 @@ layout: default
 title: INLS 161 Schedule (Summer II 2015)
 ---
 
-## Week 1
+# Week 1
 
-Basics
+**Basics**
 
-###2015-06-22
+##2015-06-22
 
-###2015-06-23
+Intro > Tools > The easy way, the hard way, and the right way
 
-###2015-06-24
+##2015-06-23
 
-###2015-06-25
+Clients > Servers > Operating on a remote system > SSH > FTP 
 
-###2015-06-26
+##2015-06-24
 
-## Week 2
+Networks > Inter-networks > Whois > Traceroute
 
-Web Development
+##2015-06-25
 
-###2015-06-29
+Version control > Git > Github > CodeAnywhere
 
-###2015-06-30
+##2015-06-26
 
-###2015-07-01
+LAB: Coding is not that hard > Set up a repo
 
-###2015-07-02
+# Week 2
 
-###2015-07-03
+**Web Development**
 
-NO CLASS - Independence Day (observed)
+##2015-06-29
 
-## Week 3
+Markup > HTML > CSS 
 
-Document Processing
+##2015-06-30
 
-###2015-07-06
+Static v. dynamic websites > Relative links
 
-###2015-07-07
+##2015-07-01
 
-###2015-07-08
+Protecting directories > Permissions
 
-###2015-07-09
+##2015-07-02
 
-###2015-07-10
+LAB: Testing, checking, and validation
 
-## Week 4
+##2015-07-03
 
-Data Processing
+*NO CLASS - Independence Day (observed)*
 
-###2015-07-13
+# Week 3
 
-###2015-07-14
+**Document Processing**
 
-###2015-07-15
+##2015-07-06
 
-###2015-07-16
+Plaintext > Markup > Templates > Formatted text
 
-###2015-07-17
+##2015-07-07
 
-## Week 5
+Word Processors > How not to replicate work
 
-Design and Presentation
+##2015-07-08
 
-###2015-07-20
+Single source, multiple outputs > A return to plaintext
 
-###2015-07-21
+##2015-07-09
 
-###2015-07-22
+Plaintext data > Structured data > Working with CSV files
 
-###2015-07-23
+##2015-07-10
 
-###2015-07-24 
+LAB: How to make a DOC file when you don't have access to MSWord
 
-NO CLASS - Reading Day
+# Week 4
+
+**Data Processing**
+
+##2015-07-13
+
+Working with data in spreadsheets 
+
+##2015-07-14
+
+Tables from spreadsheets > What is a database?
+
+##2015-07-15
+
+Build a database from scratch > Relational databases put everything together
+
+##2015-07-16
+
+Queries > Getting data into and out of a database
+
+##2015-07-17
+
+LAB: Tools for data manipulation beyond the GUI
+
+# Week 5
+
+**Design and Presentation**
+
+##2015-07-20
+
+Death by PowerPoint > Edward Tufte is your best friend
+
+##2015-07-21
+
+Communication > Visual presentation > Design
+
+##2015-07-22
+
+Flow > Connecting with your audience > Keeping on track > Taking questions
+
+##2015-07-23
+
+LAB: Working through technical problems with presentations (and everything else)
+
+##2015-07-24 
+
+*NO CLASS - Reading Day*
+
+##2015-07-27
+
+EXAM DAY - Presentations to class

@@ -4,8 +4,8 @@ tagline: INLS 161-001 (Summer II)
 email: john.d.martin.iii@unc.edu
 description: "Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems."
 baseurl: ""
-#url: "http://inls161.johndmart.in"
-url: "http://henry.local:4000"
+url: "http://inls161.johndmart.in"
+#url: "http://henry.local:4000"
 twitter_username: jdmar3
 github_username:  jdmar3
 
