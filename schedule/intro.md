@@ -3,6 +3,9 @@ layout: default
 title: Intro
 ---
 
+# 2015-06-22
+## {{ page.title }}
+
 Welcome to INLS161!
 
 I'm John, your instructor for INLS161 this summer. 
@@ -23,5 +26,5 @@ If you land here before that and want to fill it out, you can find it at the lin
 
 [https://unc.az1.qualtrics.com/SE/?SID=SV_0k1YCv2V4wgGuMd](https://unc.az1.qualtrics.com/SE/?SID=SV_0k1YCv2V4wgGuMd)
 
-Next up: [Tools](./tools/)
+Next up: [Tools]({{ base.url }}/schedule/tools/)
 
