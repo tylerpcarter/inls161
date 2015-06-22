@@ -124,6 +124,8 @@ LAB: Working through technical problems with presentations (and everything else)
 
 *NO CLASS - Reading Day*
 
+# Exam Week
+
 ##2015-07-27
 
 EXAM DAY - Presentations to class
