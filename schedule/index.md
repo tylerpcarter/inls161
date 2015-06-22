@@ -1,6 +1,7 @@
 ---
 layout: default
-title: INLS 161 Schedule (Summer II 2015)
+title: Schedule
+menuitem: true
 ---
 
 # Week 1
@@ -9,7 +10,7 @@ title: INLS 161 Schedule (Summer II 2015)
 
 ##2015-06-22
 
-Intro > Tools > The easy way, the hard way, and the right way
+[Intro](./intro/) > [Tools](./tools/) > [The easy way, the hard way, and the right way](./easy-hard-right/)
 
 ##2015-06-23
 

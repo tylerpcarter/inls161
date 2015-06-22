@@ -1,15 +1,30 @@
 # Site settings
-name: Tools for Information Literacy 
-tagline: INLS 161-001 (Summer II)
-email: john.d.martin.iii@unc.edu
+title: Tools for Information Literacy 
+tagline: INLS161-001 (Summer II)
 description: "Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems."
 baseurl: ""
 url: "http://inls161.johndmart.in"
-#url: "http://henry.local:4000"
+
+name: John D. Martin III
+email: john.d.martin.iii@unc.edu
 twitter_username: jdmar3
 github_username:  jdmar3
+
+department: INLS
+course-number: "161"
+course-section: "001"
+course-term: Summer II
+
+location: 117 Manning Hall (computer lab inside the SILS library)
+hours: "1100 - 1230"
+days: MoTuWeThFr
+dates: "22 June - 23 July 2015"
+exam: 27 July 2015
 
 # Build settings
 #markdown: kramdown
 markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 permalink: pretty
+

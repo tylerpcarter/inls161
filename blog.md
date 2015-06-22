@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Class Blog
+title: Blog
 ---
 
 <div id="home">

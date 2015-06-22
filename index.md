@@ -1,6 +1,6 @@
 ---
 layout: default
-title: INLS 161 Synopsis (Summer II 2015)
+title: About
 ---
 
 #Welcome to INLS 161-001
