@@ -14,11 +14,11 @@ menuitem: true
 
 ##2015-06-23
 
-Clients > Servers > Operating on a remote system > SSH > FTP 
+[Clients](./clients/) > [Servers](./servers/) > [Operating on a remote system](./remote/) > [SSH and FTP](./ssh-ftp/) 
 
 ##2015-06-24
 
-Networks > Inter-networks > Whois > Traceroute
+Ports > Networks > Inter-networks > Whois > Traceroute
 
 ##2015-06-25
 
