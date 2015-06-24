@@ -18,7 +18,7 @@ menuitem: true
 
 ##2015-06-24
 
-Ports > Networks > Inter-networks > Whois > Traceroute
+[Networks]({{ base.url }}/schedule/networks/) > [Inter-networks]({{ base.url }}/schedule/inter-networks/) > [Network tools]({{ base.url }}/schedule/network-tools/)
 
 ##2015-06-25
 
