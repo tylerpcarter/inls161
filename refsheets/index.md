@@ -12,6 +12,6 @@ title: Reference Sheets
 
 These reference sheets correspond to things that we actualy did or will do in class (depending on how fast I can aggregate them and get them posted here).
 
-[Remote operation]({{ base.url }}/refsheets/remote-ref.md)
+[Remote operation]({{ base.url }}/refsheets/remote-ref/)
 
-[Networking]({{ base.url }}/refsheets/network-ref.md)
+[Networking]({{ base.url }}/refsheets/network-ref/)

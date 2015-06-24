@@ -18,7 +18,7 @@ We will use and consider the following tools:
 6. [wget](http://linux.die.net/man/1/wget)
 7. [nmap](http://linux.die.net/man/1/nmap)
 
-These will be included in our [reference sheet]({{ base.url }}/refsheets/network-ref.md) for today's session. 
+These will be included in our [reference sheet]({{ base.url }}/refsheets/network-ref/) for today's session. 
 
 **For next time:**
 
