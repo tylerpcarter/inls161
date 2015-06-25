@@ -36,6 +36,71 @@
 
 <h2 id="ssh-and-ftp">SSH and FTP</h2>
 
+<p>The two remote operation protocols that we will want to think about in this class are SSH and FTP.</p>
+
+<p>SSH stands for &quot;Secure SHell.&quot; 
+It allows users to log in remotely through a command-line-only interface. </p>
+
+<p>FTP stands for &quot;File Transfer Protocol.&quot;
+It allows users to transfer files from one system to another. </p>
+
+<p>Both are standard issue tools on most UNIX distributions. 
+Both run as daemons which sit waiting and listening for the right request on the right port. </p>
+
+<p>SSH uses port 22, unless otherwise configured. </p>
+
+<p>FTP uses port 21, unless otherwise configured. </p>
+
+<p>SSH traffic is encrypted. </p>
+
+<p>FTP traffic is not typically encrypted. </p>
+
+<h3 id="special-uses">Special uses</h3>
+
+<p>There is also a special use case for something called SFTP (Secure File Transfer Protocol), which uses the SSH daemon to connect for file transfers. 
+This means that you can connect to a server and transfer files over port 22 (or whatever port is configured). </p>
+
+<p>What do you think is the reason that you might want to do this?</p>
+
+<h3 id="logging-in">Logging in</h3>
+
+<p>With SSH, login is simple. 
+If you operate on a system with an SSH client installed, you need to know your username and password. </p>
+
+<p>You will issue a command something like this:</p>
+
+<p><code>localhost $ ssh user@system.hostname</code></p>
+
+<p>For FTP, we have the same thing:</p>
+
+<p><code>localhost $ ftp system.hostname</code></p>
+
+<p>The <code>localhost $</code> above is called a &quot;prompt.&quot; 
+This indicates that you can issue commands. 
+Prompts take many different forms. 
+You&#39;ll see different prompts as you try things out on different systems. </p>
+
+<p>A better way to use FTP is with a client that allows you to move files back and forth somewhat more graphically. 
+You can do without this, but there is really no need. 
+The FTP client built into CodeAnywhere allows for direct operation on files through FTP.
+You can upload directly from your local filesystem. </p>
+
+<p>There are many different clients available, though. 
+Go out on the Internet and find an FTP client to share with the class. 
+Pay attention to different features. 
+We will talk about these in class. </p>
+
+<h3 id="next-time:">Next time:</h3>
+
+<p>We&#39;ll get into what ports really do next time when we talk about networking a bit more. 
+In the mean time, I want you to think about what we know about ports so far. </p>
+
+<p>We know three, HTTP (8000), SSH (22), and FTP (21).</p>
+
+<p>Why do you think that we specify ports for different protocols?  </p>
+
+<p>What happens if we change them? </p>
+
 <p>Previous: <a href="/schedule/remote/">Operating on a remote system</a></p>
 
 
@@ -59,13 +124,34 @@
 		
 	
 		
+	
 		
-		<li><a class="active" href="/schedule/">Schedule</a></li>
+	
+		
+		
+		<li><a href="/refsheets/">Reference Sheets</a></li>
 		
 	
 		
 		
 		<li><a href="/syllabus/">Syllabus</a></li>
+		
+	
+		
+		
+		<li><a class="active" href="/schedule/">Schedule</a></li>
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
 		
 	
 		

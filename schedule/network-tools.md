@@ -17,6 +17,7 @@ We will use and consider the following tools:
 5. [dig](http://linux.die.net/man/1/dig)
 6. [wget](http://linux.die.net/man/1/wget)
 7. [nmap](http://linux.die.net/man/1/nmap)
+8. [traceroute](http://linux.die.net/man/8/traceroute)
 
 These will be included in our [reference sheet]({{ base.url }}/refsheets/network-ref/) for today's session. 
 

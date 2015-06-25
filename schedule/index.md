@@ -22,7 +22,7 @@ menuitem: true
 
 ##2015-06-25
 
-Version control > Git > Github > CodeAnywhere
+[Version control]({{ base.url }}/schedule/version-control/) > [Git]({{ base.url }}/schedule/git/) > [GitHub]({{ base.url }}/schedule/github/)
 
 ##2015-06-26
 

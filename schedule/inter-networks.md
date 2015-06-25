@@ -35,7 +35,18 @@ It looks something like this:
 
 `192.168.1.1`
 
-Each number in that string of numbers represents a "subnet." 
+Each block of numbers in that string of numbers and dots is called a quad and can be used either to represent a device or a subnet. 
+The first three quads might represent subnets of subnets and the last represents a subnet of addresses. 
+
+Each number can range from 0-255, meaning that it can address a space with 256 individual devices or subnets in the network. 
+The limit is due to the fact that each quad is actually a binary number which can address an 8-bit space. 
+8-bit means that in each quad there are 8 individual binary bits or on/off pairs that can be flipped to record the number. 
+This means that the address above actually reads like this in binary:
+
+`11000000.10101000.00000001.00000001`
+
+With this address structure, we can address 256<sup>4</sup>, or 256×256×256×256 = 4,294,967,296, addresses.
+
 Knowing the numbers in sequence allows for traffic to be routed from one subnet to another. 
 The whole string of numebrs together is the address for an individual host/node on the network. 
 
