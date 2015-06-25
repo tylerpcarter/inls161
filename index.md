@@ -1,11 +1,11 @@
 ---
 layout: default
-title: About
+title: INLS161-001 Summer II 2015
 ---
 
 #Welcome to INLS 161-001
 
-This site houses the course files and syllabus for INLS 161-001.
+This site houses the course files and syllabus for INLS 161-001, Tools for Information Literacy.
 
 The course runs from 22 June 2015 to 27 July 2015. 
 The full site and syllabus will be available one week before the class begins. 
