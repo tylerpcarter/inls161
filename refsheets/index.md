@@ -15,3 +15,7 @@ These reference sheets correspond to things that we actualy did or will do in cl
 [Remote operation]({{ base.url }}/refsheets/remote-ref/)
 
 [Networking]({{ base.url }}/refsheets/network-ref/)
+
+# Git
+
+<a href="http://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf" target="_blank">Git - The Simple Guide</a>
