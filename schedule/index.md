@@ -26,7 +26,7 @@ menuitem: true
 
 ##2015-06-26
 
-LAB: Coding is not that hard > Set up a repo
+LAB: Licensing > Coding is not that hard > Set up a repo
 
 # Week 2
 
