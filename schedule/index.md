@@ -26,7 +26,7 @@ menuitem: true
 
 ##2015-06-26
 
-LAB: Licensing > Coding is not that hard > Set up a repo
+LAB: Licensing > Set up a GitHub repo
 
 # Week 2
 
@@ -34,7 +34,7 @@ LAB: Licensing > Coding is not that hard > Set up a repo
 
 ##2015-06-29
 
-Markup > HTML > CSS 
+Coding is not that hard > Markup > HTML > CSS 
 
 ##2015-06-30
 

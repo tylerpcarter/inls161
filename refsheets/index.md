@@ -19,3 +19,6 @@ These reference sheets correspond to things that we actualy did or will do in cl
 # Git
 
 <a href="http://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf" target="_blank">Git - The Simple Guide</a>
+
+## Reference sheets from in-class activities
+

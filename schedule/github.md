@@ -13,7 +13,9 @@ It is useful for (and used by) software development projects as well as other pl
 
 It is particularly good for keeping track of projects that involve both plaintext source code or markup and files related to work that will be published using that code. 
 
-Today we are going to learn to set up a repository locally and then push it to GitHub. 
+Today we are going to learn to set up a repository locally
+
+Tomorrow we will learn to push it to GitHub. 
 We will also learn to set up a repository remotely on GitHub and then copy it locally. 
 
 For this purpose, we will follow this guide, for the most part:  
@@ -35,6 +37,5 @@ Walli, S.R. (2013, Jan 23). Which open source software license should I use? Ret
 Tomorrow we will have a guest, John Nelson, who will talk to us about licensing and the implications of storing your code online. 
 John practices business law and focuses on copyright and intellectual property. 
 You can check out some of his articles [here](http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=937847). 
-
 
 Previous: [Git]({{ base.url }}/schedule/git/). 
