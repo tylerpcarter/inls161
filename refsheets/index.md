@@ -22,3 +22,4 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 ## Reference sheets from in-class activities
 
+[Git local]({{ base.url }}/refsheets/git/)
