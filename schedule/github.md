@@ -37,5 +37,6 @@ Walli, S.R. (2013, Jan 23). Which open source software license should I use? Ret
 Tomorrow we will have a guest, John Nelson, who will talk to us about licensing and the implications of storing your code online. 
 John practices business law and focuses on copyright and intellectual property. 
 You can check out some of his articles [here](http://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=937847). 
+You can also read his excellent blog on law and technology here: [http://www.lextechnologiae.com/](http://www.lextechnologiae.com/).
 
 Previous: [Git]({{ base.url }}/schedule/git/). 
