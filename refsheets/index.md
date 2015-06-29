@@ -25,3 +25,15 @@ These reference sheets correspond to things that we actualy did or will do in cl
 [Git local]({{ base.url }}/refsheets/git-ref/)
 
 [Git remote]({{ base.url }}/refsheets/github-ref/)
+
+# Markup
+
+## Markdown
+
+<a href="http://packetlife.net/media/library/16/Markdown.pdf" target="_blank">Markdown Cheat Sheet - Packetlife.net</a>
+
+## HTML
+
+<a href="http://websitesetup.org/HTML5-cheat-sheet.pdf" target="_blank">HTML5 Cheat Sheet - WebsiteSetup.org</a>
+
+
