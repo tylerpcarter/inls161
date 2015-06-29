@@ -32,8 +32,13 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 <a href="http://packetlife.net/media/library/16/Markdown.pdf" target="_blank">Markdown Cheat Sheet - Packetlife.net</a>
 
-## HTML
+## HTML5
 
 <a href="http://websitesetup.org/HTML5-cheat-sheet.pdf" target="_blank">HTML5 Cheat Sheet - WebsiteSetup.org</a>
+
+## CSS3
+
+<a href="http://lesliefranke.com/sandbox/ref/csscheatsheet.pdf" target="_blank">CSS3 Cheat Sheet - Leslie Franke</a>
+
 
 
