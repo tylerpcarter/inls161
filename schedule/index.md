@@ -34,7 +34,7 @@ LAB: Licensing > Set up a GitHub repo
 
 ##2015-06-29
 
-Coding is not that hard > Markup > HTML > CSS 
+[Coding is not that hard]({{ base.url }}/schedule/coding/) > [Markup]({{ base.url }}/schedule/markdown/) > [HTML]({{ base.url }}/schedule/html/) > [CSS]({{ base.url }}/schedule/css/) 
 
 ##2015-06-30
 
