@@ -58,11 +58,11 @@ LAB: Testing, checking, and validation
 
 ##2015-07-06
 
-Plaintext > Markup > Templates > Formatted text
+Word Processors > How not to replicate work
 
 ##2015-07-07
 
-Word Processors > How not to replicate work
+Plaintext > Markup > Templates > Formatted text
 
 ##2015-07-08
 
