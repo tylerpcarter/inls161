@@ -38,7 +38,7 @@ LAB: Licensing > Set up a GitHub repo
 
 ##2015-06-30
 
-Static v. dynamic websites > Relative links
+[Static v. dynamic websites]({{ base.url }}/schedule/static-dynamic-sites/) > [Relative links]({{ base.url }}/schedule/links/)
 
 ##2015-07-01
 
