@@ -91,7 +91,7 @@ If we take our code blocks from earlier and split them up, they will look someth
 ```html
 <!doctype html>
 
-{% include header.html %}
+&#123;% include header.html %&#124;
 
 \{\{ content \}\}
 
