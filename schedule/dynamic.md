@@ -143,7 +143,7 @@ The following file gives us the content for the actual index page.
 
 `index.md`
 
-```md
+```
 # A Header
 
 Some content.
