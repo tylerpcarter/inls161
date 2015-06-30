@@ -88,7 +88,7 @@ If we take our code blocks from earlier and split them up, they will look someth
 
 `_layouts/default.html`
 
-```html
+<code>
 <!doctype html>
 
 &#123;% include header.html %&#124;
@@ -96,7 +96,7 @@ If we take our code blocks from earlier and split them up, they will look someth
 \{\{ content \}\}
 
 \{\% include footer.html \%\}
-```
+</code>
 In the file above, we set where different parts of the page will go. 
 The curly braces offset our Liquid markup.
 
