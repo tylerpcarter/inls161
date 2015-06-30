@@ -143,7 +143,7 @@ The following file gives us the content for the actual index page.
 
 `index.md`
 
-```
+```yaml
 # A Header
 
 Some content.
