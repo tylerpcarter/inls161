@@ -89,9 +89,9 @@ If we take our code blocks from earlier and split them up, they will look someth
 `_layouts/default.html`
 
 ```html
-<\!doctype html>
+<!doctype html>
 
-\{\% include header.html \%\}
+{% include header.html %}
 
 \{\{ content \}\}
 
@@ -143,7 +143,7 @@ The following file gives us the content for the actual index page.
 
 `index.md`
 
-```md
+```
 # A Header
 
 Some content.
