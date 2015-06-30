@@ -14,7 +14,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title> The Easy Way, The Hard Way, and the Right Way </title>
+    <title> GitHub Reference Sheet </title>
   </head>
 
   <body>
@@ -32,67 +32,77 @@
       <div class="inner clearfix">
         <section id="main-content">
           
-          <h1 id="2015-06-22">2015-06-22</h1>
+          <h1 id="github-reference-sheet">GitHub Reference Sheet</h1>
 
-<h2 id="the-easy-way,-the-hard-way,-and-the-right-way">The Easy Way, The Hard Way, and the Right Way</h2>
+<h2 id="set-up-a-github-repository">Set up a GitHub repository</h2>
 
-<p>This is the meat of today&#39;s lecture. </p>
+<p>When you log into GitHub, you will see your dashboard. 
+Click the green button that says, &quot;New repository.&quot;</p>
 
-<p>As previous mentioned in the notes, this class is about challenging your boundaries with basic technological tools. 
-This will mean sometimes learning what seems to be a really complicated way of doing something that seems like it should be simple. </p>
+<p><img src="/refsheets/ref-images/button.png" alt="New repository"></p>
 
-<p>But things are not always as they appear. </p>
+<p>You will be taken to a screen that asks for some information. </p>
 
-<p>You may think that it is simpler to create a webpage using some specially-designed interface for web design or, worse, creating a document in MSWord and then either copying and pasting that your work into a what-you-see-is-what-you-get (WYSIWYG) editor or exporting to HTML. 
-You can do this, but if you want to use your markup later on or understand what is happening (as we do in this class), it is not a good option. </p>
+<p><img src="/refsheets/ref-images/screenshot-add-repo.png" alt="New repository interface"></p>
 
-<p>For example, if you want to make a PDF that is well-formatted, you have a few options as well. </p>
+<p>Several important things to consider:</p>
 
-<p>One toolchain looks like this: </p>
+<ol>
+<li>Give the repository a name that makes it easily identifiable to you.</li>
+<li>In your description, explain the purpose of the repository&#39;s contents succinctly. </li>
+<li>Consider whether you want the contents of your repository to be publicly available or not. </li>
+<li>You should initialize your repo with a README. This lets you say something more about the contents of the repository. It also serves as the landing page for anyone who happens to visit your repo&#39;s address. </li>
+<li>If you are programming or writing in a specific progamming language, choose it in the .gitignore dropdown.</li>
+<li>Choose a license. You can always change or update it later. For more information about choosing the appropriate license, check out <a href="http://choosealicense.com/">this link</a>. </li>
+</ol>
 
-<p><code>LibreOffice Writer (software) &gt; ODT (file format) &gt; Export as PDF (file format)</code></p>
+<p>Press the button to create the repository. </p>
 
-<p>Another looks like tihs:</p>
+<h2 id="edit-in-github">Edit in GitHub</h2>
 
-<p><code>Markdown (plaintext markup) &gt; Pandoc (software) &gt; LaTeX (software) &gt; PDF (file format)</code></p>
+<p><img src="/refsheets/ref-images/screenshot-repo-interface.png" alt="Repository interface"></p>
 
-<p>The difference here is the way that the SOURCE of the files are conceived. 
-The source for the first option is wrapped up in the interface somewhere. 
-We can&#39;t see it. 
-The source for the second option is the original plaintext file using markup to tell the interpreter what to do with it. </p>
+<p>The interface once in GitHub is relatively straightforward. 
+To edit a file, click the name of the file and it will take you to the intreface for individual files. 
+Then click the pencil icon. </p>
 
-<p><strong>Why is this second approach advantageous?</strong></p>
+<p><img src="/refsheets/ref-images/edit.png" alt="Edit file"></p>
 
-<p>Let&#39;s look at a second usage scenario. 
-Let&#39;s say that I want to have the same document that I put into PDF, but as a web page also.</p>
+<p>You can change the text inside the file and then add a commit message at the bottom of the page (just like committing changes with Git).</p>
 
-<p>From LibreOffice, I have to export HTML and then upload it to a web server. 
-Fine. </p>
+<p><img src="/refsheets/ref-images/commit.png" alt="Commit changes"></p>
 
-<p>If I start with Markdown, however, my toolchain looks like this:</p>
+<h2 id="clone-repository">Clone repository</h2>
 
-<p><code>Markdown -&gt; Pandoc -&gt; HTML</code> </p>
+<p>To clone the repository, select and copy the text in the box illustrated below: </p>
 
-<p>What is better yet is that since the tools in this scenario rely on marked-up plaintext and commands that can be executed without a graphical user interface (GUI), I can probably create the documents server-side rather than having to upload them after working on them locally. </p>
+<p><img src="/refsheets/ref-images/clone.png" alt="Clone"></p>
 
-<p>This approach helps with automation and also with having multiple desired output formats that can come from a single source. </p>
+<p>Then go to CodeAnywhere and open a terminal in your DevBox. </p>
 
-<p>There are easy ways to do everything, and there are hard ways to do everything. 
-Neither are ever going to be the right way all the time. 
-The method that you use to complete a task has to depend on the context of the task. 
-The right way will fall somewhere in the middle or be an amalgam of both. </p>
+<p>Type the following and then paste in the URL of the repository that you have copied to the clipboard. </p>
 
-<p>We&#39;ll talk more in the next few sessions about operating on a system using the command line for giving instructions and running programs. </p>
+<p><code>git clone</code> </p>
 
-<p><strong>For the next session:</strong></p>
+<p>Press enter to run the command and clone the repo. 
+Once you have a command prompt again, you can descend into the directory (<code>cd CLONED-DIRECTORY</code>). </p>
 
-<p>For now, I would like you to have a look at the following resource: </p>
+<p>Make whatever changes you like the repo. 
+Add a file. 
+Edit something. 
+Make sure to use <code>git add</code> and <code>git commit</code> as we have previously covered in the <a href="/refsheets/git-ref">Git Reference Sheet</a>. </p>
 
-<p><em><a href="http://linuxcommand.org/lc3_learning_the_shell.php" target="_blank">Learning the Shell</em></a> by William E. Shotts, Jr. </p>
+<h2 id="updating-your-repo-on-github">Updating your repo on GitHub</h2>
 
-<p>Go through each of the steps in the contents listed on that page and try out the commands in your CodeAnywhere DevBox interface that we set up. </p>
+<p>When you have made and committed changes locally, you can push those changes to your remote repository on GitHub. </p>
 
-<p>Previous: <a href="/schedule/tools/">Tools</a>.</p>
+<p>Make sure that you are somewhere within the directory that represents your repository on your local system. 
+Then do: </p>
+
+<p><code>git push</code></p>
+
+<p>If Git caught the URL of the repo when you cloned it, you will be asked to input your GitHub username and password. 
+The password is masked, so you will not be able to see it when you are typing, but don&#39;t worry, it is there. </p>
 
 
         </section>
@@ -132,7 +142,7 @@ The right way will fall somewhere in the middle or be an amalgam of both. </p>
 	
 		
 		
-		<li><a href="/refsheets/">Reference Sheets</a></li>
+		<li><a class="active" href="/refsheets/">Reference Sheets</a></li>
 		
 	
 		
@@ -142,7 +152,7 @@ The right way will fall somewhere in the middle or be an amalgam of both. </p>
 	
 		
 		
-		<li><a class="active" href="/schedule/">Schedule</a></li>
+		<li><a href="/schedule/">Schedule</a></li>
 		
 	
 		

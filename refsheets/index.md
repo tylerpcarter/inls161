@@ -36,9 +36,14 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 <a href="http://websitesetup.org/HTML5-cheat-sheet.pdf" target="_blank">HTML5 Cheat Sheet - WebsiteSetup.org</a>
 
+<a href="http://www.w3schools.com/html/default.asp" target="_blank">W3CSchools HTML(5) Tutorial</a>
+
 ## CSS3
 
 <a href="http://lesliefranke.com/sandbox/ref/csscheatsheet.pdf" target="_blank">CSS3 Cheat Sheet - Leslie Franke</a>
 
+<a href="http://www.w3schools.com/css/default.asp" target="_blank">W3CSchools CSS Tutorial</a>
 
+## Jekyll and Liquid
 
+<a href="http://ricostacruz.com/cheatsheets/jekyll.html" target="_blank">Jekyll Cheatsheet - Rico Santa Cruz</a> 

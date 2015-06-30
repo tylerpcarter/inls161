@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
+	<link href="http://www.unc.edu/wp-content/themes/unc-sites-base-theme/images/ss_img_unc_favicon.ico" rel="shortcut icon">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title> Dynamic sites </title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href=" http://inls161.johndmart.in ">
+		  <h1> Tools for Information Literacy </h1>
+		  <h2> INLS161-001 (Summer II) </h2>
+		</a>
+        <a href="http://sils.unc.edu" class="button"><img width="180" src="/images/silslogo.png" /></a>
+	  </div>
+	</header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          
+          <h1 id="2015-06-30">2015-06-30</h1>
+
+<h2 id="dynamic-sites">Dynamic sites</h2>
+
+<p>A dynamic site allows for the generation of sites from component parts on the server. 
+Instead of serving a complete page that was written as a single object, the server puts the parts together based on some instructions or framework and then serves the finished page.
+This process is called &quot;server side scripting.&quot;</p>
+
+<p>There are a number of systems available for dynamic web service. 
+Their internal logics and mechanisms are different. </p>
+
+<p>PHP (PHP Hypertext Processor) is one language for dynamic web pages. 
+It is now a two-decades-old web standard and very robust. </p>
+
+<p>It is also somewhat complicated to learn to use very well. 
+It takes a fairly long time and it is easy to go down a rabbit hole learning the ins and outs. </p>
+
+<p>We will used a newer, more flexible system for server-side scripting called <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>. 
+Jekyll is a page builder, built on Ruby, that allows for the the use of Liquid escapes and commands in order to create web pages from component files dynamically. </p>
+
+<p><a href="http://liquidmarkup.org/" target="_blank">Liquid</a> is another form of markup (get the theme). 
+Jekyll parses Markdown, HTML and Liquid from template files and then inserts information stored centrally in order to construct the web page. </p>
+
+<p>This is the basic system that GitHub Pages runs on. </p>
+
+<h3 id="why-dynamic-sites?">Why dynamic sites?</h3>
+
+<p>Well, for one, repeating work is terrifically boring, and a terrible waste of our time.  </p>
+
+<p>What happens if we want to write multiple pages, but we plan to have the same head section at the top, the same stylesheet, the same basic structure? In other words: we need a template. </p>
+
+<p>Jekyll allows us to create templates using HTML and Liquid markup (or use existing templates) into which we place our content using Markdown. </p>
+
+<p>In other words, Markdown is the medium for our content, HTML is the medium for our structure, and Liquid provides the limks between the two. 
+Jekyll parses the whole thing and prepares it to be served online. </p>
+
+<h3 id="structure">Structure</h3>
+
+<p>A basic file structure for Jekyll looks like this:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">./
+├── _config.yml
+│
+├── css/
+│   └── styles.css
+|
+├── _data/
+│   └── ...
+│
+├── _drafts/
+│   └── ...
+│
+├── _posts/
+│   └── 2014-01-01-hello.md
+│
+├── _layouts/
+│   ├── default.html
+│   └── post.html
+│
+├── _includes/             
+│   ├── header.html
+│   └── footer.html
+│
+├── index.md
+|
+└── _site/
+    └── ...
+</code></pre></div>
+<p>Hierarchically, Jekyll constructs the page something like this:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">_config.yml
+default.html (in _layouts)
+    header.html (in _includes)
+        content.md (information in Markdown files)
+    footer.html (in _includes)
+</code></pre></div>
+<h3 id="code-breakout">Code breakout</h3>
+
+<p>If we take our code blocks from earlier and split them up, they will look something like this.</p>
+
+<p><code>_layouts/default.html</code></p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="err">&lt;</span>\!doctype html&gt;
+
+\{\% include header.html \%\}
+
+\{\{ content \}\}
+
+\{\% include footer.html \%\}
+</code></pre></div>
+<p>In the file above, we set where different parts of the page will go. 
+The curly braces offset our Liquid markup.</p>
+
+<p>The next two files give us the structure that goes at the top and the bottom of every page. 
+Pay attention to the Liquid tags and see what they are doing. </p>
+
+<p><code>_include/header.html</code></p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;title&gt;</span>\{\{ site.title \}\}<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">content=</span><span class="s">&quot;\{\{ site.description \}\}&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;author&quot;</span> <span class="na">content=</span><span class="s">&quot;\{\{ site.author \}\}&quot;</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;css/styles.css&quot;</span><span class="nt">&gt;</span>
+
+  <span class="c">&lt;!--[if lt IE 9]&gt;</span>
+<span class="c">  &lt;script src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;</span>
+<span class="c">  &lt;![endif]--&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/scripts.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;wrapper&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+<p><code>_include/footer.html</code></p>
+<div class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+<p>Note that the tags that open <code>html</code>, <code>body</code>, and <code>div</code> in <code>header.html</code> are not closed until <code>footer.html</code>.
+These two files function as a wrapper for our content.</p>
+
+<p>The following file gives us the content for the actual index page. </p>
+
+<p><code>index.md</code></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># A Header
+
+Some content.
+
+## A second-level header
+
+Some more content.
+
+And an image: 
+
+![A pretty picture](images/pretty.img)
+
+[Return home.](index.html)
+</code></pre></div>
+<p>Finally, we need a config file to give us the variables that show up in the header:</p>
+
+<p><code>_config.yml</code></p>
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># Site settings</span>
+<span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">TITLE</span>
+<span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">DESCRIPTION</span>
+<span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">AUTHOR</span>
+</code></pre></div>
+<h3 id="pay-now-or-pay-later">Pay now or pay later</h3>
+
+<p>The major issue that we are dealing with is whether to spend a lot of time doing something over and over again throughout the course of our projects, or to spend some time at the beginning setting everything up the way that we want it and then using get down to the business of writing our content.</p>
+
+<p>Certainly, you can start with content. 
+You can even put the content into an interface if we need to throw something together very quickly. </p>
+
+<p>However, we are best served by spending some time engineering our presentation and our workflow from the beginning. </p>
+
+<p><strong>For next time:</strong></p>
+
+<p>Spend some time looking at the following links about Jekyll:</p>
+
+<p>Greiling, M. (n.d.). Jekyll From Scratch - Getting Started. Retrieved from <a href="http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/">http://pixelcog.com/blog/2013/jekyll-from-scratch-introduction/</a></p>
+
+<p>Cruz, R. S. (n.d.). Jekyll Cheatsheet. Retrieved from <a href="http://ricostacruz.com/cheatsheets/jekyll.html">http://ricostacruz.com/cheatsheets/jekyll.html</a></p>
+
+<p>Your next task will be to create a new branch in your repository and create a Jekyll-based site in it. 
+We will look at how to do that in the next class. </p>
+
+<p>Gold stars for everyone who figures it out in advance. :) </p>
+
+<p>Previous: <a href="%7B%7B%20base.url%20%7D%7D/schedule/links/">Linking</a>. </p>
+
+
+        </section>
+
+        <aside id="sidebar">
+			<nav>
+	<h1>
+		<a href="http://inls161.johndmart.in">Home</a>
+	</h1>
+	<ul>
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+		
+		<li><a href="/refsheets/">Reference Sheets</a></li>
+		
+	
+		
+		
+		<li><a href="/syllabus/">Syllabus</a></li>
+		
+	
+		
+		
+		<li><a class="active" href="/schedule/">Schedule</a></li>
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	</ul>
+</nav>
+			
+			<p class="repo-owner">
+				<h1>Course Info</h1>
+				<b>Description:</b> Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.<br />
+				<b>Instructor:</b> <a href="mailto:john.d.martin.iii@unc.edu">John D. Martin III</a><br />
+        		<b>Location:</b> 117 Manning Hall (computer lab inside the SILS library)<br />
+				<b>Time:</b> 1100 - 1230<br />
+				<b>Days:</b> MoTuWeThFr<br />
+				<b>Dates:</b> 22 June - 23 July 2015<br />
+				<b>Exam day:</b> 27 July 2015<br />
+				<b>Office hours:</b> I will be available for a half hour before and after our Lab sessions and also by appointment.<br />
+			</p>
+			
+		  	<p>
+				<b>Acknowledgements:</b> I would like to thank Ron Bergquist, upon whose course much of the content of this course is based, as well as all of those who have taught this course over the years since it was originated at SILS.
+		  	</p>
+			<p>
+				<b>Credits: </b>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using a slightly modified version of the <a href="https://github.com/jasonlong/architect-theme">Architect theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>. <a href="https://github.com/pietromenna/jekyll-architect-theme">jekyll-architect-theme</a> is maintained by <a href="https://github.com/pietromenna">pietromenna</a>.
+		    </p>
+		    <p class="repo-owner">
+				Content &copy; John D. Martin III <br />
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">
+								<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+				</a><br />
+				This work is licensed under a 
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>
+				.			
+		  	</p>
+        </aside>
+      </div>
+    </div>
+
+  </body>
+</html>
