@@ -10,11 +10,11 @@ title: GitHub Reference Sheet
 When you log into GitHub, you will see your dashboard. 
 Click the green button that says, "New repository."
 
-![New repository](ref-images/button.png)
+![New repository]({{ base.url }}/refsheets/ref-images/button.png)
 
 You will be taken to a screen that asks for some information. 
 
-![New repository interface](ref-images/screenshot-add-repo.png)
+![New repository interface]({{ base.url }}/refsheets/ref-images/screenshot-add-repo.png)
 
 Several important things to consider:
 
@@ -29,23 +29,23 @@ Press the button to create the repository.
 
 ## Edit in GitHub
 
-![Repository interface](ref-images/screenshot-repo-interface.png)
+![Repository interface]({{ base.url }}/refsheets/ref-images/screenshot-repo-interface.png)
 
 The interface once in GitHub is relatively straightforward. 
 To edit a file, click the name of the file and it will take you to the intreface for individual files. 
 Then click the pencil icon. 
 
-![Edit file](ref-images/edit.png)
+![Edit file]({{ base.url }}/refsheets/ref-images/edit.png)
 
 You can change the text inside the file and then add a commit message at the bottom of the page (just like committing changes with Git).
 
-![Commit changes](ref-images/commit.png)
+![Commit changes]({{ base.url }}/refsheets/ref-images/commit.png)
 
 ## Clone repository
 
 To clone the repository, select and copy the text in the box illustrated below: 
 
-![Clone](ref-images/clone.png)
+![Clone]({{ base.url }}/refsheets/ref-images/clone.png)
 
 Then go to CodeAnywhere and open a terminal in your DevBox. 
 
