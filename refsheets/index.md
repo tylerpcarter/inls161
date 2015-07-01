@@ -20,6 +20,8 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 <a href="http://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf" target="_blank">Git - The Simple Guide</a>
 
+<a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">Git Cheat Sheet - GitHub</a>
+
 ## Reference sheets from in-class activities
 
 [Git local]({{ base.url }}/refsheets/git-ref/)
@@ -46,4 +48,12 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 ## Jekyll and Liquid
 
-<a href="http://ricostacruz.com/cheatsheets/jekyll.html" target="_blank">Jekyll Cheatsheet - Rico Santa Cruz</a> 
+<a href="http://ricostacruz.com/cheatsheets/jekyll.html" target="_blank">Jekyll Cheatsheet - Rico Sta. Cruz</a> 
+
+# All the things
+
+Web developer Rico Sta. Cruz has published all of his own cheatsheets on his website. 
+They are all quite excellent and can serve as a useful reference for anyone just starting out in tech. 
+Check them out. 
+
+<a href="http://ricostacruz.com/cheatsheets/" target="_blank">Cheatsheets - Rico Sta. Cruz</a>
