@@ -33,6 +33,8 @@ All of your assignments will be submitted using GitHub, as this is where you wil
 Learning how to use this system is built into the first assignment. 
 Particular requirements and instructions for assignments and submission will be discussed in class and included in the lecture notes. 
 
+Information about assignments is [listed here]({{ base.url }}/syllabus/assignments/).
+
 ### Participation
 
 In addition to the 6 tasks, participation will be evaluated and included in the evaluation scheme. 
