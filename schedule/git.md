@@ -36,4 +36,6 @@ We will discuss and explore one of those today and then use it for the rest of t
 
 First, though, lets explore Git, starting with the elegantly designed [Git: The Simple Guide](http://rogerdudler.github.io/git-guide/) by Roger Dudler.
 
+A more advanced and quite elegant Git tutorial is available here: [Git Tutorials and Training - Atlassian](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config).
+
 Previous: [Version control]({{ base.url }}/schedule/version-control/). Next up: [GitHub]({{ base.url }}/schedule/github/).

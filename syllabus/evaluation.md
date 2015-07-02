@@ -13,8 +13,8 @@ All of the tasks are interconnected, so it is important to complete the tasks in
 
 | **Task** | **Components** | **%** | **Due date** |  
 | :------- | :------------- | ----: | -----------: |  
-| Basics | CodeAnywhere, GitHub setup | 20 | 29 June |  
-| Web | Site published on GitHub Pages | 20 | 6 July |  
+| [Basics]({{ base.url }}/syllabus/assignments/assignment1/) | CodeAnywhere, GitHub setup | 20 | Week 1 |  
+| [Web]({{ base.url }}/syllabus/assignments/assignment2/) | Site published on GitHub Pages | 20 | 6 July |  
 | Text | Create formatted text document | 15 | 13 July |  
 | Spreadsheet | Create and format spreadsheets | 5 | 15 July |  
 | DB | Create a database from tables | 15 | 20 July |  

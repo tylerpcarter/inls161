@@ -22,6 +22,8 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 <a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">Git Cheat Sheet - GitHub</a>
 
+<a href="https://www.atlassian.com/git/tutorials/" target="_blank">Git Tutorials and Training - Atlassian</a>
+
 ## Reference sheets from in-class activities
 
 [Git local]({{ base.url }}/refsheets/git-ref/)
