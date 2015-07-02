@@ -13,8 +13,8 @@ All of the tasks are interconnected, so it is important to complete the tasks in
 
 | **Task** | **Components** | **%** | **Due date** |  
 | :------- | :------------- | ----: | -----------: |  
-| Basics | CodeAnywhere, GitHub setup | 20 | 29 June |  
-| Web | Site published on GitHub Pages | 20 | 6 July |  
+| [Basics]({{ base.url }}/syllabus/assignments/assignment1/) | CodeAnywhere, GitHub setup | 20 | Week 1 |  
+| [Web]({{ base.url }}/syllabus/assignments/assignment2/) | Site published on GitHub Pages | 20 | 6 July |  
 | Text | Create formatted text document | 15 | 13 July |  
 | Spreadsheet | Create and format spreadsheets | 5 | 15 July |  
 | DB | Create a database from tables | 15 | 20 July |  
@@ -32,6 +32,8 @@ The last assignment (the presentation) will be due before the exam date, but wil
 All of your assignments will be submitted using GitHub, as this is where you will store your course materials and personal website. 
 Learning how to use this system is built into the first assignment. 
 Particular requirements and instructions for assignments and submission will be discussed in class and included in the lecture notes. 
+
+[Information about individual assignments is listed here]({{ base.url }}/syllabus/assignments/).
 
 ### Participation
 

@@ -42,7 +42,7 @@ LAB: Licensing > Set up a GitHub repo
 
 ##2015-07-01
 
-Protecting directories > Permissions
+[Permissions]({{ base.url }}/schedule/permissions/) > LAB: [Get your site up and running]({{ base.url }}/schedule/build-a-site)
 
 ##2015-07-02
 

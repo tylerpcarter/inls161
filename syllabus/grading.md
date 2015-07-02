@@ -1,23 +1,16 @@
 ---
 layout: default
-title: Lab
+title: Grading
 ---
 
 ## Grading Scale
 
-| Points&nbsp;| Grade&nbsp;| What it means |  
-|:------ |:----- |:------------- |  
-| 95>    | A     | Mastery of course content at the highest level of attainment that can reasonably be expected |  
-| 92-94  | A-    | |  
-| 87-91  | B+    | |  
-| 83-86  | B     | A totally acceptable performance demonstrating an adequate level of attainment |  
-| 80-82  | B-    | |  
-| 77-79  | C+    | |  
-| 73-76  | C     | |  
-| 70-72  | C-    | A marginal performance in the required exercises demonstrating a minimal passing level |  
-| 67-69  | D+    | |  
-| 60-66  | D     | |  
-| \<60   | F     | For whatever reasons, an unacceptable performance |  
+| Points                                       | Grade UG                        | Grade G | What it means |  
+|:-------------------------------------------- |:------------------------------- |:-----   |:------------- |  
+| 95>                                          | A                               | H       | Mastery of course content at the highest level of attainment that can reasonably be expected |  
+| 92-94 <br /> 87-91 <br /> 83-86 <br /> 80-82 | A- <br /> B+ <br /> B <br /> B- | P       | A totally acceptable performance demonstrating an adequate level of attainment |  
+| 77-79 <br /> 73-76 <br /> 70-72 <br /> 67-69 | C+ <br /> C <br /> C-<br />  D+ | L       | A marginal performance in the required exercises demonstrating a minimal passing level |  
+| 60-66<br />  \<60                            | D<br />  F                      | F       | For whatever reasons, an unacceptable performance |  
 
 ## Grades and Progress
 

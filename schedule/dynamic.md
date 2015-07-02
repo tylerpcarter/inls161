@@ -22,7 +22,7 @@ It takes a fairly long time and it is easy to go down a rabbit hole learning the
 We will used a newer, more flexible system for server-side scripting called <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>. 
 Jekyll is a page builder, built on Ruby, that allows for the the use of Liquid escapes and commands in order to create web pages from component files dynamically. 
 
-<a href="http://liquidmarkup.org/" target="_blank">Liquid</a> is another form of markup (get the theme). 
+<a href="http://liquidmarkup.org/" target="_blank">Liquid</a> is another form of markup (get the theme here?). 
 Jekyll parses Markdown, HTML and Liquid from template files and then inserts information stored centrally in order to construct the web page. 
 
 This is the basic system that GitHub Pages runs on. 
