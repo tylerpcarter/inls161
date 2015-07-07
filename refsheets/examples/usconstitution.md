@@ -23,6 +23,7 @@ donation to Project Gutenberg, and how to get involved.
 
 ***These eBooks Were Prepared By Thousands of Volunteers!***
 
+layout: default
 
 title: The United States' Constitution
 
