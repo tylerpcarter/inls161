@@ -62,7 +62,7 @@ LAB: Testing and troubleshooting
 
 ##2015-07-07
 
-[Templates]({{ base.url }}/schedule/templates/) > PanDoc > Word Processors > How not to replicate work
+[Templates]({{ base.url }}/schedule/templates/) > [Word processors]({{ base.url }}/schedule/word-processors/) > [Pandoc]({{ base.url }}/schedule/pandoc/) > [How not to replicate work]({{ base.url }}/schedule/no-replication/)
 
 ##2015-07-08
 
