@@ -52,6 +52,12 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 <a href="http://ricostacruz.com/cheatsheets/jekyll.html" target="_blank">Jekyll Cheatsheet - Rico Sta. Cruz</a> 
 
+# Pandoc
+
+A good list of commands to use with Pandoc live here: 
+
+
+
 # All the things
 
 Web developer Rico Sta. Cruz has published all of his own cheatsheets on his website. 
