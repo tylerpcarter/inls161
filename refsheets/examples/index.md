@@ -23,6 +23,7 @@ Each file is produced with the command that directly precedes it.
 
 <a href="{{ base.url}}/refsheets/examples/usconstitution.docx" target="_blank">DOCX file created by Pandoc</a>
 
-`pandoc -S --title="THE CONSTITUTION OF THE UNITED STATES OF AMERICA, 1787" -o usconstitution.html usconstitution.md && pandoc -S --toc -o usconstitution.pdf usconstitution.html`
-
+```
+pandoc -S --title="THE CONSTITUTION OF THE UNITED STATES OF AMERICA, 1787" -o usconstitution.html usconstitution.md && pandoc -S --toc -o usconstitution.pdf usconstitution.html
+```
 <a href="{{ base.url}}/refsheets/examples/usconstitution.pdf" target="_blank">PDF file created by Pandoc (first stage conversion to HTML to preserve table formatting)</a>
