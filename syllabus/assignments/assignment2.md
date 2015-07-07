@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Assignment #2: Build a web page
+title: Assignment \#2: Build a web page
 ---
 
 # {{ page.title }}

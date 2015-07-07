@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Assignment #3: Format a document
+title: Assignment \#3: Format a document
 ---
 
 # {{ page.title }}
