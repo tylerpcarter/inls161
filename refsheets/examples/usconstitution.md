@@ -1,4 +1,17 @@
 ---
+layout: default
+title: The United States' Constitution
+author:  Founding Fathers
+gutenberg-release-date: 1975-12-01  
+gutenberg-release-number: 5
+orig-post-date: This file was first posted on August 19, 2003
+prev-update: 2006-04-14
+last-update: 2015-04-01
+edition: 11
+language: English
+---
+
+---
 The Project Gutenberg EBook of The United States' Constitution
 by Founding Fathers
 
@@ -23,20 +36,18 @@ donation to Project Gutenberg, and how to get involved.
 
 ***These eBooks Were Prepared By Thousands of Volunteers!***
 
-layout: default
+Title: The United States' Constitution
 
-title: The United States' Constitution
+Author:  Founding Fathers
 
-author:  Founding Fathers
-
-release-date: December, 1975  [EBook #5]
+Release Date: December, 1975  [EBook #5]
 [This file was first posted on August 19, 2003]
 [Previous update: April 14, 2006]
 [Last updated: April 1, 2015]
 
-edition: 11
+Edition: 11
 
-language: English
+Language: English
 
 ---
 
