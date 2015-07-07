@@ -10,7 +10,7 @@ last-update: 2015-04-01
 edition: 11
 language: English
 ---
-
+<!--
 ---
 The Project Gutenberg EBook of The United States' Constitution
 by Founding Fathers
@@ -93,7 +93,7 @@ or longer, to send us a note concerning possible corrections.
 ***
 
 
-
+-->
 
 # THE CONSTITUTION OF THE UNITED STATES OF AMERICA, 1787
 
@@ -650,6 +650,7 @@ thousand seven hundred and eighty seven and of the Independence of the
 United States of America the Twelfth        In Witness whereof 
 We have hereunto subscribed our Names,
 
+|                                    |                |                                                                                                  |               |                                                         |
 |:---------------------------------- |:-------------- | :----------------------------------------------------------------------------------------------- |:------------- |:------------------------------------------------------ |  
 | Attest: William Jackson, Secretary |                |                                                                                                  |               | Go. WASHINGTON-- <br/> Presid. and deputy from Virginia |  
 |                                    | Delaware       | Geo: Read <br/> Gunning Bedford jun <br/> John Dickinson <br/> Richard Bassett <br/> Jaco: Broom | New Hampshire | John Langdon <br/> Nicholas Gilman |  
