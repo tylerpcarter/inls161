@@ -11,7 +11,7 @@ This assignment involves creating formatted text documents.
 
 The taskset is as follows:
 
-1. Select a plaintext source file. You can choose anything you want. A good source is Project Gutenberg. It can also be something else that you have or are working on. This file should not have any markup in it, but should be heavily structured (i.e., it should have things like headers, links, blockquotes, etc.). If you use Guterberg, make sure that you choose a file with the .TXT extension. 
+1. Select a plaintext source file. You can choose anything you want. A good source is Project Gutenberg. It can also be something else that you have or are working on. This file should not have any markup in it, but should be heavily structured (i.e., it should have things like headers, links, blockquotes, tables, etc.). If you use Guterberg, make sure that you choose a file with the .TXT extension. 
 2. Save a copy of your .TXT file as a Markdown file. In this new file, mark up your text using Markdown. Use the Markdown references linked from the refsheets page. 
 3. Once you have completed your formatting to your satisfaction, use Pandoc to convert it to other file types (see refsheets for Pandoc usage). 
 3. The outputs you will need in the end are: ODT, DOCX, and PDF. 
