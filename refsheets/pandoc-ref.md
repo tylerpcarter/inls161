@@ -68,4 +68,4 @@ Compile a table of contents (for PDF output):
 
 # Example files
 
-I will create and link example files here.
+<a href="{{ base.url }}/refsheets/examples/#formatted-text-files" target="_blank">Link to the example files.</a>
