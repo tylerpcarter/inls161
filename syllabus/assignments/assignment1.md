@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Assignment 1: Basic computing
+title: Assignment 1 - Basic computing
 ---
 
 # {{ page.title }}
