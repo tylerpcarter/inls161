@@ -5,7 +5,7 @@ title: Assignment \#1: Basic computing
 
 # {{ page.title }}
 
-Due: Within the first week of class. 
+**Due: Within the first week of class.** 
 
 This assignment is somewhat amorphous. 
 It is really an assessment of your ability to use the command line and understand version control. 

@@ -5,7 +5,7 @@ title: Assignment \#4: Make a spreadsheet from plaintext
 
 # {{ page.title }}
 
-**Due: 2015-07-15
+**Due: 2015-07-15**
 
 This assignment involves creating a spreadsheet from scratch in plaintext.
 

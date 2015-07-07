@@ -5,7 +5,7 @@ title: Assignment \#3: Format a document
 
 # {{ page.title }}
 
-**Due: 2015-07-13
+**Due: 2015-07-13** 
 
 This assignment involves creating formatted text documents.
 

@@ -5,7 +5,7 @@ title: Assignment \#2: Build a web page
 
 # {{ page.title }}
 
-**Due: 2015-07-06
+**Due: 2015-07-07** [UPDATED]
 
 This is the first assignment with a real deliverable attached to it. 
 
