@@ -22,7 +22,7 @@ and our Posterity, do ordain and establish this Constitution for the
 United States of America.
 
 
-## Article 1
+## Article. I.
 
 ### Section 1.  
 
@@ -310,7 +310,7 @@ Agreement or Compact with another State, or with a foreign Power, or
 engage in War, unless actually invaded, or in such imminent Danger
 as will not admit of delay.
 
-## ARTICLE 2
+## ARTICLE. II.
 
 ###Section 1.  
 
@@ -423,7 +423,7 @@ The President, Vice President and all civil Officers of the
 United States, shall be removed from Office on Impeachment for,
 and Conviction of, Treason, Bribery, or other high Crimes and Misdemeanors.
 
-## ARTICLE THREE
+## ARTICLE. III. 
 
 ### Section 1.  
 
@@ -471,7 +471,7 @@ but no Attainder of Treason shall work Corruption of Blood,
 or Forfeiture except during the Life of the Person attainted.
 
 
-## ARTICLE FOUR
+## ARTICLE. IV. 
 
 ### Section 1.  
 
@@ -520,7 +520,7 @@ Invasion; and on Application of the Legislature, or of the Executive
 (when the Legislature cannot be convened) against domestic Violence.
 
 
-## ARTICLE FIVE
+## ARTICLE. V.
 
 The Congress, whenever two thirds of both Houses shall deem it necessary,
 shall propose Amendments to this Constitution, or, on the Application of
@@ -535,7 +535,7 @@ the first and fourth Clauses in the ninth Section of the first Article;
 and that no State, without its Consent, shall be deprived of it's
 equal Suffrage in the Senate.
 
-## ARTICLE SIX
+## ARTICLE. VI.
 
 All Debts contracted and Engagements entered into, before the Adoption
 of this Constitution, shall be as valid against the United States
@@ -555,7 +555,7 @@ by Oath or Affirmation, to support this Constitution; but no religious
 Test shall ever be required as a Qualification to any Office or public Trust
 under the United States
 
-## ARTICLE SEVEN
+## ARTICLE. VII.
 
 The Ratification of the Conventions of nine States, shall be sufficient for the
 Establishment of this Constitution between the States so ratifying the Same.
