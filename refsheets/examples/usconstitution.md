@@ -9,6 +9,7 @@ prev-update: 2006-04-14
 last-update: 2015-04-01
 edition: 11
 language: English
+editor: John D. Martin III
 ---
 
 # THE CONSTITUTION OF THE UNITED STATES OF AMERICA, 1787
@@ -24,13 +25,13 @@ United States of America.
 
 ## Article. I.
 
-### Section 1.  
+### Section. 1.  
 
 All legislative Powers herein granted shall be vested in a
 Congress of the United States, which shall consist of a Senate and
 House of Representatives.
 
-### Section 2.  
+### Section. 2.  
 
 The House of Representatives shall be composed of Members
 chosen every second Year by the People of the several States,
@@ -65,7 +66,7 @@ Authority thereof shall issue Writs of Election to fill such Vacancies.
 The House of Representatives shall chuse their Speaker and other Officers;
 and shall have the sole Power of Impeachment.
 
-### Section 3.  
+### Section. 3.  
 
 The Senate of the United States shall be composed of
 two Senators from each State, chosen by the legislature thereof,
@@ -105,7 +106,7 @@ Trust or Profit under the United States:  but the Party convicted shall
 nevertheless be liable and subject to Indictment, Trial, Judgment and
 Punishment, according to Law.
 
-### Section 4.  
+### Section. 4.  
 
 The Times, Places and Manner of holding Elections for Senators and
 Representatives, shall be prescribed in each State by the Legislature thereof;
@@ -117,7 +118,7 @@ and such Meeting shall be on the first Monday in December,
 unless they shall by law appoint a different Day.
 
 
-### Section 5.  
+### Section. 5.  
 
 Each House shall be the Judge of the Elections,
 Returns and Qualifications of its own Members, and a
@@ -140,7 +141,7 @@ Neither House, during the Session of Congress, shall, without the
 Consent of the other, adjourn for more than three days, nor to
 any other Place than that in which the two Houses shall be sitting.
 
-### Section 6.  
+### Section. 6.  
 
 The Senators and Representatives shall receive a Compensation
 for their Services, to be ascertained by Law, and paid out of the Treasury
@@ -157,7 +158,7 @@ increased during such time; and no Person holding any Office under the
 United States, shall be a Member of either House during his Continuance
 in Office.
 
-### Section 7.  
+### Section. 7.  
 
 All Bills for raising Revenue shall originate in the
 House of Representatives; but the Senate may propose or concur with
@@ -190,7 +191,7 @@ or being disapproved by him, shall be repassed by two thirds of
 the Senate and House of Representatives, according to the Rules
 and Limitations prescribed in the Case of a Bill.
 
-### Section 8.  
+### Section. 8.  
 
 The Congress shall have Power to lay and collect Taxes, Duties,
 Imposts and Excises, to pay the Debts and provide for the common Defence
@@ -255,7 +256,7 @@ into Execution the foregoing Powers, and all other Powers vested
 by this Constitution in the Government of the United States,
 or in any Department or Officer thereof.
 
-### Section 9.  
+### Section. 9.  
 
 The Migration or Importation of such Persons as any
 of the States now existing shall think proper to admit, shall not
@@ -288,7 +289,7 @@ without the Consent of the Congress, accept of any present, Emolument,
 Office, or Title, of any kind whatever, from any King, Prince,
 or foreign State.
 
-### Section 10.  
+### Section. 10.  
 
 No State shall enter into any Treaty, Alliance, or
 Confederation; grant Letters of Marque and Reprisal; coin Money;
@@ -312,7 +313,7 @@ as will not admit of delay.
 
 ## ARTICLE. II.
 
-###Section 1.  
+###Section. 1.  
 
 The executive Power shall be vested in a President
 of the United States of America.  He shall hold his Office during
@@ -379,7 +380,7 @@ I will faithfully execute the Office of President of the United States,
 and will to the best of my Ability, preserve, protect and defend the
 Constitution of the United States."
 
-###Section 2.  
+###Section. 2.  
 
 The President shall be Commander in Chief of the Army
 and Navy of the United States, and of the Militia of the several States,
@@ -405,7 +406,7 @@ The President shall have Power to fill up all Vacancies that may happen
 during the Recess of the Senate, by granting Commissions which shall
 expire at the End of their next session.
 
-### Section 3.  
+### Section. 3.  
 
 He shall from time to time give to the Congress
 Information of the State of the Union, and recommend to their
@@ -417,7 +418,7 @@ think proper; he shall receive Ambassadors and other public Ministers;
 he shall take Care that the Laws be faithfully executed, and shall
 Commission all the Officers of the United States.
 
-### Section 4.  
+### Section. 4.  
 
 The President, Vice President and all civil Officers of the
 United States, shall be removed from Office on Impeachment for,
@@ -425,7 +426,7 @@ and Conviction of, Treason, Bribery, or other high Crimes and Misdemeanors.
 
 ## ARTICLE. III. 
 
-### Section 1.  
+### Section. 1.  
 
 The judicial Power of the United States, shall be vested
 in one supreme Court, and in such inferior Courts as the Congress may
@@ -434,7 +435,7 @@ and inferior Courts, shall hold their Offices during good behavior,
 and shall, at stated Times, receive for their Services, a Compensation,
 which shall not be diminished during their Continuance in Office.
 
-### Section 2.  
+### Section. 2.  
 
 The judicial Power shall extend to all Cases, in Law and Equity,
 arising under this Constitution, the Laws of the United States, and Treaties
@@ -458,7 +459,7 @@ and such Trial shall be held in the State where the said Crimes shall
 have been committed; but when not committed within any State, the Trial
 shall be at such Place or Places as the Congress may by Law have directed.
 
-###Section 3.  
+###Section. 3.  
 
 Treason against the United States, shall consist only in
 levying War against them, or in adhering to their Enemies, giving them
@@ -473,7 +474,7 @@ or Forfeiture except during the Life of the Person attainted.
 
 ## ARTICLE. IV. 
 
-### Section 1.  
+### Section. 1.  
 
 Full Faith and Credit shall be given in each State to the
 public Acts, Records, and judicial Proceedings of every other State.
@@ -481,7 +482,7 @@ And the Congress may by general Laws prescribe the Manner in which such Acts,
 Records, and Proceedings shall be proved, and the Effect thereof.
 
 
-### Section 2.  
+### Section. 2.  
 
 The Citizens of each State shall be entitled to all
 Privileges and Immunities of Citizens in the several States.
@@ -498,7 +499,7 @@ be discharged from such Service or Labor, But shall be delivered up on Claim
 of the Party to whom such Service or Labor may be due.
 
 
-### Section 3.  
+### Section. 3.  
 
 New States may be admitted by the Congress into this Union;
 but no new States shall be formed or erected within the Jurisdiction
@@ -512,7 +513,7 @@ to the United States; and nothing in this Constitution shall be so
 construed as to Prejudice any Claims of the United States,
 or of any particular State.
 
-### Section 4.  
+### Section. 4.  
 
 The United States shall guarantee to every State in this Union
 a Republican Form of Government, and shall protect each of them against
@@ -531,7 +532,7 @@ of three fourths of the several States, or by Conventions in three fourths
 thereof, as the one or the other Mode of Ratification may be proposed by
 the Congress; Provided that no Amendment which may be made prior to the
 Year one thousand eight hundred and eight shall in any Manner affect
-the first and fourth Clauses in the ninth Section of the first Article;
+the first and fourth Clauses in the ninth Section. of the first Article;
 and that no State, without its Consent, shall be deprived of it's
 equal Suffrage in the Senate.
 
