@@ -15,8 +15,8 @@ All of the tasks are interconnected, so it is important to complete the tasks in
 | :------- | :------------- | ----: | -----------: |  
 | [Basics]({{ base.url }}/syllabus/assignments/assignment1/) | CodeAnywhere, GitHub setup | 20 | Week 1 |  
 | [Web]({{ base.url }}/syllabus/assignments/assignment2/) | Site published on GitHub Pages | 20 | 6 July |  
-| Text | Create formatted text document | 15 | 13 July |  
-| Spreadsheet | Create and format spreadsheets | 5 | 15 July |  
+| [Text]({{ base.url }}/syllabus/assignments/assignment3/) | Create formatted text document | 15 | 13 July |  
+| [Spreadsheet]({{ base.url }}/syllabus/assignments/assignment4/) | Create and format spreadsheets | 5 | 15 July |  
 | DB | Create a database from tables | 15 | 20 July |  
 | Present | Create and record a presentation | 15 | 25 July |  
 | Participation | Come to class, Share resources | 10 | N/A |  

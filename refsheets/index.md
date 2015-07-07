@@ -52,6 +52,18 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 <a href="http://ricostacruz.com/cheatsheets/jekyll.html" target="_blank">Jekyll Cheatsheet - Rico Sta. Cruz</a> 
 
+# Pandoc
+
+A good set of commands and rationale for using Pandoc to create and convert documents lives here: 
+
+<a href="http://anghyflawn.github.io/teaching/2015/ilw-pandoc/" target="_blank">getting off the word standard: your academic life in plain text - Pavel Iosad</a>
+
+The help/manpage file for Pandoc is linked here: <a href="http://pandoc.org/README.html" target="_blank">Pandoc User Guide</a>. Use it!
+
+## Reference sheets from in-class activities
+
+[Pandoc]({{ base.url }}/refsheets/pandoc-ref/)
+
 # All the things
 
 Web developer Rico Sta. Cruz has published all of his own cheatsheets on his website. 

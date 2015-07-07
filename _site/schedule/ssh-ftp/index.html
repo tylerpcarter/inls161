@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
+	<link href="http://www.unc.edu/wp-content/themes/unc-sites-base-theme/images/ss_img_unc_favicon.ico" rel="shortcut icon">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title> SSH and FTP </title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href=" http://inls161.johndmart.in ">
+		  <h1> Tools for Information Literacy </h1>
+		  <h2> INLS161-001 (Summer II) </h2>
+		</a>
+        <a href="http://sils.unc.edu" class="button"><img width="180" src="/images/silslogo.png" /></a>
+	  </div>
+	</header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          
+          <h1 id="2015-06-23">2015-06-23</h1>
+
+<h2 id="ssh-and-ftp">SSH and FTP</h2>
+
+<p>The two remote operation protocols that we will want to think about in this class are SSH and FTP.</p>
+
+<p>SSH stands for &quot;Secure SHell.&quot; 
+It allows users to log in remotely through a command-line-only interface. </p>
+
+<p>FTP stands for &quot;File Transfer Protocol.&quot;
+It allows users to transfer files from one system to another. </p>
+
+<p>Both are standard issue tools on most UNIX distributions. 
+Both run as daemons which sit waiting and listening for the right request on the right port. </p>
+
+<p>SSH uses port 22, unless otherwise configured. </p>
+
+<p>FTP uses port 21, unless otherwise configured. </p>
+
+<p>SSH traffic is encrypted. </p>
+
+<p>FTP traffic is not typically encrypted. </p>
+
+<h3 id="special-uses">Special uses</h3>
+
+<p>There is also a special use case for something called SFTP (Secure File Transfer Protocol), which uses the SSH daemon to connect for file transfers. 
+This means that you can connect to a server and transfer files over port 22 (or whatever port is configured). </p>
+
+<p>What do you think is the reason that you might want to do this?</p>
+
+<h3 id="logging-in">Logging in</h3>
+
+<p>With SSH, login is simple. 
+If you operate on a system with an SSH client installed, you need to know your username and password. </p>
+
+<p>You will issue a command something like this:</p>
+
+<p><code>localhost $ ssh user@system.hostname</code></p>
+
+<p>For FTP, we have the same thing:</p>
+
+<p><code>localhost $ ftp system.hostname</code></p>
+
+<p>The <code>localhost $</code> above is called a &quot;prompt.&quot; 
+This indicates that you can issue commands. 
+Prompts take many different forms. 
+You&#39;ll see different prompts as you try things out on different systems. </p>
+
+<p>A better way to use FTP is with a client that allows you to move files back and forth somewhat more graphically. 
+You can do without this, but there is really no need. 
+The FTP client built into CodeAnywhere allows for direct operation on files through FTP.
+You can upload directly from your local filesystem. </p>
+
+<p>There are many different clients available, though. 
+Go out on the Internet and find an FTP client to share with the class. 
+Pay attention to different features. 
+We will talk about these in class. </p>
+
+<h3 id="next-time:">Next time:</h3>
+
+<p>We&#39;ll get into what ports really do next time when we talk about networking a bit more. 
+In the mean time, I want you to think about what we know about ports so far. </p>
+
+<p>We know three, HTTP (8000), SSH (22), and FTP (21).</p>
+
+<p>Why do you think that we specify ports for different protocols?  </p>
+
+<p>What happens if we change them? </p>
+
+<p>Previous: <a href="/schedule/remote/">Operating on a remote system</a></p>
+
+
+        </section>
+
+        <aside id="sidebar">
+			<nav>
+	<h1>
+		<a href="http://inls161.johndmart.in">Home</a>
+	</h1>
+	<ul>
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+		
+		<li><a href="/refsheets/">Reference Sheets</a></li>
+		
+	
+		
+		
+		<li><a href="/syllabus/">Syllabus</a></li>
+		
+	
+		
+		
+		<li><a class="active" href="/schedule/">Schedule</a></li>
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	</ul>
+</nav>
+			
+			<p class="repo-owner">
+				<h1>Course Info</h1>
+				<b>Description:</b> Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.<br />
+				<b>Instructor:</b> <a href="mailto:john.d.martin.iii@unc.edu">John D. Martin III</a><br />
+        		<b>Location:</b> 117 Manning Hall (computer lab inside the SILS library)<br />
+				<b>Time:</b> 1100 - 1230<br />
+				<b>Days:</b> MoTuWeThFr<br />
+				<b>Dates:</b> 22 June - 23 July 2015<br />
+				<b>Exam day:</b> 27 July 2015<br />
+				<b>Office hours:</b> I will be available for a half hour before and after our Lab sessions and also by appointment.<br />
+			</p>
+			
+		  	<p>
+				<b>Acknowledgements:</b> I would like to thank Ron Bergquist, upon whose course much of the content of this course is based, as well as all of those who have taught this course over the years since it was originated at SILS.
+		  	</p>
+			<p>
+				<b>Credits: </b>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using a slightly modified version of the <a href="https://github.com/jasonlong/architect-theme">Architect theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>. <a href="https://github.com/pietromenna/jekyll-architect-theme">jekyll-architect-theme</a> is maintained by <a href="https://github.com/pietromenna">pietromenna</a>.
+		    </p>
+		    <p class="repo-owner">
+				Content &copy; John D. Martin III <br />
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">
+								<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+				</a><br />
+				This work is licensed under a 
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>
+				.			
+		  	</p>
+        </aside>
+      </div>
+    </div>
+
+  </body>
+</html>

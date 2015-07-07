@@ -46,7 +46,7 @@ LAB: Licensing > Set up a GitHub repo
 
 ##2015-07-02
 
-LAB: Testing, checking, and validation
+LAB: Testing and troubleshooting
 
 ##2015-07-03
 
@@ -58,11 +58,11 @@ LAB: Testing, checking, and validation
 
 ##2015-07-06
 
-Plaintext > Markup > Templates > Formatted text
+[Plaintext > Markup > Formatted text]({{ base.url }}/schedule/formatted-text/)
 
 ##2015-07-07
 
-Word Processors > How not to replicate work
+[Templates]({{ base.url }}/schedule/templates/) > [Word processors]({{ base.url }}/schedule/word-processors/) > [Pandoc]({{ base.url }}/schedule/pandoc/) > [How not to replicate work]({{ base.url }}/schedule/no-replication/)
 
 ##2015-07-08
 
