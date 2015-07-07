@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Assignment \#4: Make a spreadsheet from plaintext
+title: Assignment 4 - Make a spreadsheet from plaintext
 ---
 
 # {{ page.title }}
