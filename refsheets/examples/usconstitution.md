@@ -21,26 +21,27 @@ donation to Project Gutenberg, and how to get involved.
 
 **eBooks Readable By Both Humans and By Computers, Since 1971**
 
-*****These eBooks Were Prepared By Thousands of Volunteers!*****
+***These eBooks Were Prepared By Thousands of Volunteers!***
 
 
-Title: The United States' Constitution
+title: The United States' Constitution
 
-Author:  Founding Fathers
+author:  Founding Fathers
 
-Release Date: December, 1975  [EBook #5]
+release-date: December, 1975  [EBook #5]
 [This file was first posted on August 19, 2003]
 [Previous update: April 14, 2006]
 [Last updated: April 1, 2015]
 
-Edition: 11
+edition: 11
 
-Language: English
+language: English
 
 ---
 
+---
 *** START OF THE PROJECT GUTENBERG EBOOK, THE UNITED STATES' CONSTITUTION ***
-
+---
 
 
 
@@ -82,7 +83,7 @@ or longer, to send us a note concerning possible corrections.
 
 
 
-THE CONSTITUTION OF THE UNITED STATES OF AMERICA, 1787
+# THE CONSTITUTION OF THE UNITED STATES OF AMERICA, 1787
 
 
 
@@ -93,13 +94,17 @@ and our Posterity, do ordain and establish this Constitution for the
 United States of America.
 
 
-Article 1
+## Article 1
 
-Section 1.  All legislative Powers herein granted shall be vested in a
+### Section 1.  
+
+All legislative Powers herein granted shall be vested in a
 Congress of the United States, which shall consist of a Senate and
 House of Representatives.
 
-Section 2.  The House of Representatives shall be composed of Members
+### Section 2.  
+
+The House of Representatives shall be composed of Members
 chosen every second Year by the People of the several States,
 and the electors in each State shall have the qualifications requisite
 for electors of the most numerous branch of the State legislature.
@@ -132,7 +137,9 @@ Authority thereof shall issue Writs of Election to fill such Vacancies.
 The House of Representatives shall chuse their Speaker and other Officers;
 and shall have the sole Power of Impeachment.
 
-Section 3.  The Senate of the United States shall be composed of
+### Section 3.  
+
+The Senate of the United States shall be composed of
 two Senators from each State, chosen by the legislature thereof,
 for six Years; and each Senator shall have one Vote.
 
@@ -170,7 +177,9 @@ Trust or Profit under the United States:  but the Party convicted shall
 nevertheless be liable and subject to Indictment, Trial, Judgment and
 Punishment, according to Law.
 
-Section 4.  The Times, Places and Manner of holding Elections for Senators and
+### Section 4.  
+
+The Times, Places and Manner of holding Elections for Senators and
 Representatives, shall be prescribed in each State by the Legislature thereof;
 but the Congress may at any time by Law make or alter such Regulations,
 except as to the Places of chusing Senators.
@@ -180,7 +189,9 @@ and such Meeting shall be on the first Monday in December,
 unless they shall by law appoint a different Day.
 
 
-Section 5.  Each House shall be the Judge of the Elections,
+### Section 5.  
+
+Each House shall be the Judge of the Elections,
 Returns and Qualifications of its own Members, and a
 Majority of each shall constitute a Quorum to do Business;
 but a smaller Number may adjourn from day to day,
@@ -201,7 +212,9 @@ Neither House, during the Session of Congress, shall, without the
 Consent of the other, adjourn for more than three days, nor to
 any other Place than that in which the two Houses shall be sitting.
 
-Section 6.  The Senators and Representatives shall receive a Compensation
+### Section 6.  
+
+The Senators and Representatives shall receive a Compensation
 for their Services, to be ascertained by Law, and paid out of the Treasury
 of the United States.  They shall in all Cases, except Treason, Felony and
 Breach of the Peace, be privileged from Arrest during their Attendance
@@ -216,7 +229,9 @@ increased during such time; and no Person holding any Office under the
 United States, shall be a Member of either House during his Continuance
 in Office.
 
-Section 7.  All Bills for raising Revenue shall originate in the
+### Section 7.  
+
+All Bills for raising Revenue shall originate in the
 House of Representatives; but the Senate may propose or concur with
 Amendments as on other Bills.
 
@@ -247,7 +262,9 @@ or being disapproved by him, shall be repassed by two thirds of
 the Senate and House of Representatives, according to the Rules
 and Limitations prescribed in the Case of a Bill.
 
-Section 8.  The Congress shall have Power to lay and collect Taxes, Duties,
+### Section 8.  
+
+The Congress shall have Power to lay and collect Taxes, Duties,
 Imposts and Excises, to pay the Debts and provide for the common Defence
 and general Welfare of the United States; but all Duties, Imposts and Excises
 shall be uniform throughout the United States;
@@ -310,7 +327,9 @@ into Execution the foregoing Powers, and all other Powers vested
 by this Constitution in the Government of the United States,
 or in any Department or Officer thereof.
 
-Section 9.  The Migration or Importation of such Persons as any
+### Section 9.  
+
+The Migration or Importation of such Persons as any
 of the States now existing shall think proper to admit, shall not
 be prohibited by the Congress prior to the Year one thousand eight
 hundred and eight, but a Tax or Duty may be imposed on such Importation,
@@ -341,7 +360,9 @@ without the Consent of the Congress, accept of any present, Emolument,
 Office, or Title, of any kind whatever, from any King, Prince,
 or foreign State.
 
-Section 10.  No State shall enter into any Treaty, Alliance, or
+### Section 10.  
+
+No State shall enter into any Treaty, Alliance, or
 Confederation; grant Letters of Marque and Reprisal; coin Money;
 emit Bills of Credit; make any Thing but gold and silver Coin a Tender
 in Payment of Debts; pass any Bill of Attainder, ex post facto Law,
@@ -361,9 +382,11 @@ Agreement or Compact with another State, or with a foreign Power, or
 engage in War, unless actually invaded, or in such imminent Danger
 as will not admit of delay.
 
-ARTICLE 2
+## ARTICLE 2
 
-Section 1.  The executive Power shall be vested in a President
+###Section 1.  
+
+The executive Power shall be vested in a President
 of the United States of America.  He shall hold his Office during
 the Term of four Years, and, together with the Vice President
 chosen for the same Term, be elected, as follows:
@@ -428,7 +451,9 @@ I will faithfully execute the Office of President of the United States,
 and will to the best of my Ability, preserve, protect and defend the
 Constitution of the United States."
 
-Section 2.  The President shall be Commander in Chief of the Army
+###Section 2.  
+
+The President shall be Commander in Chief of the Army
 and Navy of the United States, and of the Militia of the several States,
 when called into the actual Service of the United States;
 he may require the Opinion, in writing, of the principal Officer
@@ -452,7 +477,9 @@ The President shall have Power to fill up all Vacancies that may happen
 during the Recess of the Senate, by granting Commissions which shall
 expire at the End of their next session.
 
-Section 3.  He shall from time to time give to the Congress
+### Section 3.  
+
+He shall from time to time give to the Congress
 Information of the State of the Union, and recommend to their
 Consideration such Measures as he shall judge necessary and expedient;
 he may, on extraordinary Occasions, convene both Houses, or either
@@ -462,20 +489,26 @@ think proper; he shall receive Ambassadors and other public Ministers;
 he shall take Care that the Laws be faithfully executed, and shall
 Commission all the Officers of the United States.
 
-Section 4.  The President, Vice President and all civil Officers of the
+### Section 4.  
+
+The President, Vice President and all civil Officers of the
 United States, shall be removed from Office on Impeachment for,
 and Conviction of, Treason, Bribery, or other high Crimes and Misdemeanors.
 
-ARTICLE THREE
+## ARTICLE THREE
 
-Section 1.  The judicial Power of the United States, shall be vested
+### Section 1.  
+
+The judicial Power of the United States, shall be vested
 in one supreme Court, and in such inferior Courts as the Congress may
 from time to time ordain and establish.  The Judges, both of the supreme
 and inferior Courts, shall hold their Offices during good behavior,
 and shall, at stated Times, receive for their Services, a Compensation,
 which shall not be diminished during their Continuance in Office.
 
-Section 2.  The judicial Power shall extend to all Cases, in Law and Equity,
+### Section 2.  
+
+The judicial Power shall extend to all Cases, in Law and Equity,
 arising under this Constitution, the Laws of the United States, and Treaties
 made, or which shall be made, under their Authority;--to all Cases affecting
 Ambassadors, other public Ministers and Consuls;--to all Cases of admiralty
@@ -497,7 +530,9 @@ and such Trial shall be held in the State where the said Crimes shall
 have been committed; but when not committed within any State, the Trial
 shall be at such Place or Places as the Congress may by Law have directed.
 
-Section 3.  Treason against the United States, shall consist only in
+###Section 3.  
+
+Treason against the United States, shall consist only in
 levying War against them, or in adhering to their Enemies, giving them
 Aid and Comfort.  No Person shall be convicted of Treason unless on
 the Testimony of two Witnesses to the same overt Act, or on Confession
@@ -508,15 +543,19 @@ but no Attainder of Treason shall work Corruption of Blood,
 or Forfeiture except during the Life of the Person attainted.
 
 
-ARTICLE FOUR
+## ARTICLE FOUR
 
-Section 1.  Full Faith and Credit shall be given in each State to the
+### Section 1.  
+
+Full Faith and Credit shall be given in each State to the
 public Acts, Records, and judicial Proceedings of every other State.
 And the Congress may by general Laws prescribe the Manner in which such Acts,
 Records, and Proceedings shall be proved, and the Effect thereof.
 
 
-Section 2.  The Citizens of each State shall be entitled to all
+### Section 2.  
+
+The Citizens of each State shall be entitled to all
 Privileges and Immunities of Citizens in the several States.
 
 A Person charged in any State with Treason, Felony, or other Crime,
@@ -531,7 +570,9 @@ be discharged from such Service or Labor, But shall be delivered up on Claim
 of the Party to whom such Service or Labor may be due.
 
 
-Section 3.  New States may be admitted by the Congress into this Union;
+### Section 3.  
+
+New States may be admitted by the Congress into this Union;
 but no new States shall be formed or erected within the Jurisdiction
 of any other State; nor any State be formed by the Junction of two
 or more States, or Parts of States, without the Consent of the
@@ -543,13 +584,15 @@ to the United States; and nothing in this Constitution shall be so
 construed as to Prejudice any Claims of the United States,
 or of any particular State.
 
-Section 4.  The United States shall guarantee to every State in this Union
+### Section 4.  
+
+The United States shall guarantee to every State in this Union
 a Republican Form of Government, and shall protect each of them against
 Invasion; and on Application of the Legislature, or of the Executive
 (when the Legislature cannot be convened) against domestic Violence.
 
 
-ARTICLE FIVE
+## ARTICLE FIVE
 
 The Congress, whenever two thirds of both Houses shall deem it necessary,
 shall propose Amendments to this Constitution, or, on the Application of
@@ -564,7 +607,7 @@ the first and fourth Clauses in the ninth Section of the first Article;
 and that no State, without its Consent, shall be deprived of it's
 equal Suffrage in the Senate.
 
-ARTICLE SIX
+## ARTICLE SIX
 
 All Debts contracted and Engagements entered into, before the Adoption
 of this Constitution, shall be as valid against the United States
@@ -584,7 +627,7 @@ by Oath or Affirmation, to support this Constitution; but no religious
 Test shall ever be required as a Qualification to any Office or public Trust
 under the United States
 
-ARTICLE SEVEN
+## ARTICLE SEVEN
 
 The Ratification of the Conventions of nine States, shall be sufficient for the
 Establishment of this Constitution between the States so ratifying the Same.
@@ -592,96 +635,21 @@ Establishment of this Constitution between the States so ratifying the Same.
 Done in Convention by the Unanimous Consent of the States present
 the Seventeenth Day of September in the Year of our Lord one
 thousand seven hundred and eighty seven and of the Independence of the
-United States of America the Twelfth        In Witness whereof We have
-hereunto subscribed our Names,
+United States of America the Twelfth        In Witness whereof 
+We have hereunto subscribed our Names,
 
-Go. WASHINGTON--
-Presid. and deputy from Virginia
+|:---------------------------------- |:-------------- | :----------------------------------------------------------------------------------------------- |:------------- |:------------------------------------------------------ |  
+| Attest: William Jackson, Secretary |                |                                                                                                  |               | Go. WASHINGTON-- <br/> Presid. and deputy from Virginia |  
+|                                    | Delaware       | Geo: Read <br/> Gunning Bedford jun <br/> John Dickinson <br/> Richard Bassett <br/> Jaco: Broom | New Hampshire | John Langdon <br/> Nicholas Gilman |  
+|                                    | Maryland       | James Mchenry <br/> Dan of St Thos. Jenifer <br/> Danl Carroll                                   | Massachusetts | Nathaniel Gorham <br/> Rufus King |  
+|                                    | Virginia       | John Blair-- <br/> James Madison Jr.                                                             | Connecticut   | Wm. Saml. Johnson <br/> Roger Sherman |
+|                                    | North Carolina | Wm. Blount <br/> Rich'd Dobbs Spaight <br/> Hu Williamson                                        | New York      | Alexander Hamilton |  
+|                                    | South Carolina | J. Rutledge <br/> Charles Cotesworth Pinckney <br/> Charles Pinckney <br/> Pierce Butler         | New Jersey    | Wil: Livingston <br/> David Brearley <br/> Wm. Paterson <br/> Jona: Dayton | 
+|                                    | Georgia        | William Few <br/> Abr Baldwin                                                                    | Pennsylvania  | B Franklin <br/> Thomas Mifflin <br/> Robt Morris <br/> Geo. Clymer <br/> Thos FitzSimons <br/> Jared Ingersoll <br/> James Wilson <br/> Gouv Morris |  
 
-New Hampshire
-
-John Langdon
-Nicholas Gilman
-
-Massachusetts
-
-Nathaniel Gorham
-Rufus King
-
-Connecticut
-
-Wm. Saml. Johnson
-Roger Sherman
-
-New York
-
-Alexander Hamilton
-
-New Jersey
-
-Wil: Livingston
-David Brearley
-Wm. Paterson
-Jona: Dayton
-
-Pennsylvania
-
-B Franklin
-Thomas Mifflin
-Robt Morris
-Geo. Clymer
-Thos FitzSimons
-Jared Ingersoll
-James Wilson
-Gouv Morris
-
-Delaware
-
-Geo: Read
-Gunning Bedford jun
-John Dickinson
-Richard Bassett
-Jaco: Broom
-
-Maryland
-
-James Mchenry
-Dan of St Thos. Jenifer
-Danl Carroll
-
-Virginia
-
-John Blair--
-James Madison Jr.
-
-North Carolina
-
-Wm. Blount
-Rich'd Dobbs Spaight
-Hu Williamson
-
-South Carolina
-
-J. Rutledge
-Charles Cotesworth Pinckney
-Charles Pinckney
-Pierce Butler
-
-Georgia
-
-William Few
-Abr Baldwin
-
-
-Attest:
-William Jackson, Secretary
-
-
-
-
-
-
+---
 *** END OF THE PROJECT GUTENBERG EBOOK, THE UNITED STATES' CONSTITUTION ***
+---
 
 This file should be named 5.txt or 5.zip
 
@@ -727,7 +695,7 @@ Just search by the first five letters of the filename you want,
 as it appears in our Newsletters.
 
 
-Information about Project Gutenberg (one page)
+## Information about Project Gutenberg (one page)
 
 We produce about two million dollars for each hour we work.  The
 time it takes us, a rather conservative estimate, is fifty hours
@@ -747,20 +715,20 @@ which is only about 4% of the present number of computer users.
 
 Here is the briefest record of our progress (* means estimated):
 
-eBooks Year Month
-
-    1  1971 July
-   10  1991 January
-  100  1994 January
- 1000  1997 August
- 1500  1998 October
- 2000  1999 December
- 2500  2000 December
- 3000  2001 November
- 4000  2001 October/November
- 6000  2002 December*
- 9000  2003 November*
-10000  2004 January*
+| eBooks | Year | Month     |  
+| -----: | ---- |:--------- |  
+|      1 | 1971 | July |  
+|    10 | 1991 | January |  
+|   100 | 1994 | January |  
+|  1000 | 1997 | August |  
+|  1500 | 1998 | October |  
+|  2000 | 1999 | December |  
+|  2500 | 2000 | December |  
+|  3000 | 2001 | November |  
+|  4000 | 2001 | October/November |  
+|  6000 | 2002 | December\* |  
+|  9000 | 2003 | November\* |  
+| 10000 | 2004 | January\* |  
 
 
 The Project Gutenberg Literary Archive Foundation has been created
@@ -837,12 +805,13 @@ Prof. Hart will answer or forward your message.
 We would prefer to send you information by email.
 
 
-**The Legal Small Print**
+## **The Legal Small Print**
 
 
 (Three Pages)
-
+---
 ***START**THE SMALL PRINT!**FOR PUBLIC DOMAIN EBOOKS**START***
+---
 Why is this "Small Print!" statement here? You know: lawyers.
 They tell us you might sue us if there is something wrong with
 your copy of this eBook, even if you got it for free from
@@ -860,7 +829,7 @@ sending a request within 30 days of receiving it to the person
 you got it from. If you received this eBook on a physical
 medium (such as a disk), you must return it with your request.
 
-ABOUT PROJECT GUTENBERG-TM EBOOKS
+### ABOUT PROJECT GUTENBERG-TM EBOOKS
 This PROJECT GUTENBERG-tm eBook, like most PROJECT GUTENBERG-tm eBooks,
 is a "public domain" work distributed by Professor Michael S. Hart
 through the Project Gutenberg Association (the "Project").
@@ -884,7 +853,7 @@ intellectual property infringement, a defective or damaged
 disk or other eBook medium, a computer virus, or computer
 codes that damage or cannot be read by your equipment.
 
-LIMITED WARRANTY; DISCLAIMER OF DAMAGES
+### LIMITED WARRANTY; DISCLAIMER OF DAMAGES
 But for the "Right of Replacement or Refund" described below,
 [1] Michael Hart and the Foundation (and any other party you may
 receive this eBook from as a PROJECT GUTENBERG-tm eBook) disclaims
@@ -905,18 +874,18 @@ copy. If you received it electronically, such person may
 choose to alternatively give you a second opportunity to
 receive it electronically.
 
-THIS EBOOK IS OTHERWISE PROVIDED TO YOU "AS-IS". NO OTHER
+**THIS EBOOK IS OTHERWISE PROVIDED TO YOU "AS-IS". NO OTHER
 WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, ARE MADE TO YOU AS
 TO THE EBOOK OR ANY MEDIUM IT MAY BE ON, INCLUDING BUT NOT
 LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
-PARTICULAR PURPOSE.
+PARTICULAR PURPOSE.**
 
 Some states do not allow disclaimers of implied warranties or
 the exclusion or limitation of consequential damages, so the
 above disclaimers and exclusions may not apply to you, and you
 may have other legal rights.
 
-INDEMNITY
+### INDEMNITY
 You will indemnify and hold Michael Hart, the Foundation,
 and its trustees and agents, and any volunteers associated
 with the production and distribution of Project Gutenberg-tm
@@ -926,14 +895,13 @@ following that you do or cause:  [1] distribution of this eBook,
 [2] alteration, modification, or addition to the eBook,
 or [3] any Defect.
 
-DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
+### DISTRIBUTION UNDER "PROJECT GUTENBERG-tm"
 You may distribute copies of this eBook electronically, or by
 disk, book or any other medium if you either delete this
 "Small Print!" and all other references to Project Gutenberg,
 or:
 
-[1]  Only give exact copies of it.  Among other things, this
-     requires that you do not remove, alter or modify the
+1.  Only give exact copies of it.  Among other things, this requires that you do not remove, alter or modify the
      eBook or this "small print!" statement.  You may however,
      if you wish, distribute this eBook in machine readable
      binary, compressed, mark-up, or proprietary form,
@@ -941,29 +909,29 @@ or:
      processing or hypertext software, but only so long as
      *EITHER*:
 
-     [*]  The eBook, when displayed, is clearly readable, and
+     *  The eBook, when displayed, is clearly readable, and
           does *not* contain characters other than those
           intended by the author of the work, although tilde
-          (~), asterisk (*) and underline (_) characters may
+          (~), asterisk (\*) and underline (\_) characters may
           be used to convey punctuation intended by the
           author, and additional characters may be used to
           indicate hypertext links; OR
 
-     [*]  The eBook may be readily converted by the reader at
+     *  The eBook may be readily converted by the reader at
           no expense into plain ASCII, EBCDIC or equivalent
           form by the program that displays the eBook (as is
           the case, for instance, with most word processors);
           OR
 
-     [*]  You provide, or agree to also provide on request at
+     *  You provide, or agree to also provide on request at
           no additional cost, fee or expense, a copy of the
           eBook in its original plain ASCII form (or in EBCDIC
           or other equivalent proprietary form).
 
-[2]  Honor the eBook refund and replacement provisions of this
+2.  Honor the eBook refund and replacement provisions of this
      "Small Print!" statement.
 
-[3]  Pay a trademark license fee to the Foundation of 20% of the
+3.  Pay a trademark license fee to the Foundation of 20% of the
      gross profits you derive calculated using the method you
      already use to calculate your applicable taxes.  If you
      don't derive profits, no royalty is due.  Royalties are
@@ -994,4 +962,6 @@ used in any sales of Project Gutenberg eBooks or other materials be
 they hardware or software or any other related product without
 express permission.]
 
-*END THE SMALL PRINT! FOR PUBLIC DOMAIN EBOOKS*Ver.02/11/02*END*
+---
+*END THE SMALL PRINT! FOR PUBLIC DOMAIN EBOOKS* Ver.02/11/02 *END*
+---
