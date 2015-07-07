@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
+	<link href="http://www.unc.edu/wp-content/themes/unc-sites-base-theme/images/ss_img_unc_favicon.ico" rel="shortcut icon">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title> Git Reference Sheet </title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href=" http://inls161.johndmart.in ">
+		  <h1> Tools for Information Literacy </h1>
+		  <h2> INLS161-001 (Summer II) </h2>
+		</a>
+        <a href="http://sils.unc.edu" class="button"><img width="180" src="/images/silslogo.png" /></a>
+	  </div>
+	</header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          
+          <h1 id="git-reference-sheet">Git Reference Sheet</h1>
+
+<h2 id="set-up-a-workspace">Set up a workspace</h2>
+
+<p>Let&#39;s login to our DevBox on CodeAnywhere and make a new workspace. 
+Then we&#39;ll turn that workspace into a Git repository. </p>
+
+<p>First, make a new directory like we learned the other day. </p>
+
+<p><code>mkdir mynewproject</code></p>
+
+<p>Then move into that directory and create some files. </p>
+
+<p><code>cd mynewproject</code>
+<code>touch file1 file2 file3 file4</code></p>
+
+<p>Make a subdirectory of the directory we just created and are currently in. </p>
+
+<p><code>mkdir ./newsubdirectory</code></p>
+
+<p>Make some files there.</p>
+
+<p><code>touch newsubdirectory/newfile1 newsubdirectory/newfile2</code></p>
+
+<p>Add some text to the files, either with an echo command or with nano (or another editor).</p>
+
+<p><code>echo &quot;Hello, world!&quot; &gt; file1</code>
+<code>echo &quot;Here is some more text.&quot; &gt; file2</code>
+<code>echo &quot;Even more text.&quot; &gt; newsubdirectory/newfile1</code></p>
+
+<p>Now that we have some stuff to work with, let&#39;s turn this directory into a Git repository. </p>
+
+<h2 id="git">Git</h2>
+
+<p>Make sure that you are in the correct directory. </p>
+
+<p><code>pwd</code> should output <code>/home/cabox/workspace</code>.</p>
+
+<p>The initialize your repository:</p>
+
+<p><code>git init</code></p>
+
+<p>That command told Git to start tracking the changes made in this directory from now on. 
+If you do the following command you will see a ne subdirectory <code>.git</code> in the workspace:</p>
+
+<p><code>ls -lah</code></p>
+
+<p>The <code>ls</code> command we know, these switches that we added after tell us more information about the directory that we have listed. 
+You can look at what the switches do by looking at the help for ls:</p>
+
+<p><code>ls --help</code> </p>
+
+<p>We can also now see all of the hidden files in the directory. 
+If a file or directory name has a period in front of it, then it will be hidden. 
+Our <code>.git</code> directory is hidden. </p>
+
+<p>This directory contains metadata about our workspace. 
+The information contained therein tells Git what changes has been made and what to do with them. </p>
+
+<p>Now we need to add files and directories to our repository. 
+This must always be done manually. 
+If you do not add a file, it will not show up in your repository, which is good for files that you don&#39;t want to distribute, like certain kinds of data or log files, etc. 
+There is a specific way to tell git to ignore files which we will learn later. 
+For now let&#39;s just add everything. </p>
+
+<p><code>git add .</code></p>
+
+<p>That command adds everything in the current directory including subdirectories.
+If you want to be absolutely sure that you don&#39;t miss anything, use the following:</p>
+
+<p><code>git add *</code></p>
+
+<p>That tells git to expand all file and directory names and add them. </p>
+
+<p>You will see some output here. 
+Try to use the articles and tutorials that we have referenced in class and figure out what the output means. </p>
+
+<p>Now that we have added files, let&#39;s commit our changes. 
+Committing is sort of like &quot;save as.&quot; 
+It tells Git that we want to keep these changes as a new version. 
+This is why we call this task version control. </p>
+
+<p><code>git commit -a -m &quot;first commit&quot;</code></p>
+
+<p>Let&#39;s break this down a bit. 
+The first switch <code>-a</code> tells git to record all the changes made. 
+The second switch <code>-m</code> allows us to enter a commit message. 
+This is a message to ourselves to remind us what we just did. 
+This is very useful for keeping your workflow in order. </p>
+
+<p>Make a change to a file:</p>
+
+<p><code>echo &quot;I&#39;m changing this file to have a new line.&quot; &gt; file3</code></p>
+
+<p>Then commit that change;</p>
+
+<p><code>git commit -a -m &quot;I changed a file.&quot;</code></p>
+
+<p>The output from that command should show you that there has been a change (insertion) to that file.</p>
+
+<h2 id="branching">Branching</h2>
+
+<p>Now that we have some things committed, let&#39;s see what else we can do. 
+First we&#39;ll create a branch. </p>
+
+<p><code>git checkout -b newbranch</code></p>
+
+<p>This command creates and moves us into a new branch of the same workspace. 
+Let&#39;s delete some files. 
+Let&#39;s delete that whole subdirectory. </p>
+
+<p><code>rm -rI newsubdirectory</code>
+<code>ls</code></p>
+
+<p>We should see that the subdirectory is now gone. </p>
+
+<p>Let&#39;s switch back to the master branch and see if it has changed. </p>
+
+<p><code>git checkout master</code>
+<code>ls -lah</code></p>
+
+<p>Hmmm. It looks like they are still gone. What&#39;s going on here?</p>
+
+<p>Aha! We didn&#39;t commit our changes. Switch back into the new branch:</p>
+
+<p><code>git checkout newbranch</code></p>
+
+<p>And commit:</p>
+
+<p>`git commit -a -m &quot;I deleted some things.&quot;</p>
+
+<p>The output should show you your deletions. </p>
+
+<p><em>Now</em> let&#39;s switch to the master branch: </p>
+
+<p><code>git checkout master</code>
+<code>ls</code></p>
+
+<p><em>Et voila,</em> our deleted files are still there in our master branch. 
+This is because Git preserves all of the information about what has happened in the workspace as well as all of the files in the workspace across all changes. </p>
+
+<p>One last thing with branches. 
+If we want to see a list of all of our branches, we can:</p>
+
+<p><code>git branch --list</code></p>
+
+<p>This will show us the names of all of the branches that we have created and also which one we are currently in. </p>
+
+<h2 id="logs">Logs</h2>
+
+<p>So now, let&#39;s look at what we did:</p>
+
+<p><code>git log</code></p>
+
+<p>This command gives us a list of all of the transactions we have made. 
+Try out some of the other log commands in the Git Simple Guide and see how else you can display this information. </p>
+
+
+        </section>
+
+        <aside id="sidebar">
+			<nav>
+	<h1>
+		<a href="http://inls161.johndmart.in">Home</a>
+	</h1>
+	<ul>
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+		
+		<li><a class="active" href="/refsheets/">Reference Sheets</a></li>
+		
+	
+		
+		
+		<li><a href="/syllabus/">Syllabus</a></li>
+		
+	
+		
+		
+		<li><a href="/schedule/">Schedule</a></li>
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	</ul>
+</nav>
+			
+			<p class="repo-owner">
+				<h1>Course Info</h1>
+				<b>Description:</b> Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.<br />
+				<b>Instructor:</b> <a href="mailto:john.d.martin.iii@unc.edu">John D. Martin III</a><br />
+        		<b>Location:</b> 117 Manning Hall (computer lab inside the SILS library)<br />
+				<b>Time:</b> 1100 - 1230<br />
+				<b>Days:</b> MoTuWeThFr<br />
+				<b>Dates:</b> 22 June - 23 July 2015<br />
+				<b>Exam day:</b> 27 July 2015<br />
+				<b>Office hours:</b> I will be available for a half hour before and after our Lab sessions and also by appointment.<br />
+			</p>
+			
+		  	<p>
+				<b>Acknowledgements:</b> I would like to thank Ron Bergquist, upon whose course much of the content of this course is based, as well as all of those who have taught this course over the years since it was originated at SILS.
+		  	</p>
+			<p>
+				<b>Credits: </b>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using a slightly modified version of the <a href="https://github.com/jasonlong/architect-theme">Architect theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>. <a href="https://github.com/pietromenna/jekyll-architect-theme">jekyll-architect-theme</a> is maintained by <a href="https://github.com/pietromenna">pietromenna</a>.
+		    </p>
+		    <p class="repo-owner">
+				Content &copy; John D. Martin III <br />
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">
+								<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+				</a><br />
+				This work is licensed under a 
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>
+				.			
+		  	</p>
+        </aside>
+      </div>
+    </div>
+
+  </body>
+</html>
