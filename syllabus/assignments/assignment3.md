@@ -16,19 +16,20 @@ The taskset is as follows:
 3. Once you have completed your formatting to your satisfaction, use Pandoc to convert it to other file types (see refsheets for Pandoc usage). 
 3. The outputs you will need in the end are: ODT, DOCX, and PDF. 
 3. You will need to create a table of contents for your files. You can do this in both Pandoc (for PDF) and also in LibreOffice (for ODT or DOCX).
-4. You should look at all of these files in LibreOffice and whatever PDF viewer to make sure that everything worked. Fix them accordingly. You can also choose to run the conversion through a template file (see the refsheets for instructions). 
-5. Once you have your ODT and DOCX files, you can use LibreOffice to convert to PDF. You can also install the most basic TeXLive package in your dev box and convert directly to PDF. See the refsheets for instructions about what to install and what commands to use. 
-6. This work should occur somewhere in your site repository (like a folder called "content"), or moved into your site repository so that you can push it to GitHub. 
+4. You should look at all of these files in LibreOffice and whatever PDF viewer to make sure that everything worked. Fix them accordingly. 
+5. Once you have your ODT and DOCX files, you can use LibreOffice to convert to PDF. *Bonus: You can also install the most basic TeXLive package in your dev box and convert directly to PDF.* See the refsheets for instructions about what to install and what commands to use. 
+6. This work should occur somewhere in your site repository (like a folder called "content"), or be moved into your site repository so that you can push it to GitHub. 
 7. You will need to then create a page on your site where you will link to these files as examples. We will look at this part of the task in the lab on Friday. 
 
-*For extra points: You can submit a plaintext file with the Pandoc commands that you used.* This will give me a sense of what you did to get to your final product and show me some of the underlying rationale you used. Get creative here!
+*For extra points: You can add the Pandoc commands that you used in order to arrive at your final files.* This will give me a sense of what you did to get to your final product and show me some of the underlying rationale you used. Get creative here!
+*For other extra points: You can also choose to run the conversion through a template file* (see the refsheets for instructions).
 
 Whether you start from scratch or from a template, you will still need to make the site your own and place your information into it. 
 Remember, this will be the place where you put the rest of your assignments for this class. 
 
 ## Grading
 
-The base assessment for this assignment will relate to the completion of the task in full. You will need to link to the following types files on your site (the names will be different, but you should have these extensions):
+The base assessment for this assignment will relate to the completion of the task. You will need to link to the following types files on your site (the names will be different, but you should have these extensions):
 
 1. example.txt
 2. example.md
