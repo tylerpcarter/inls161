@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Assignment 3: Format a document
+title: "Assignment 3: Format a document"
 ---
 
 # {{ page.title }}
@@ -35,6 +35,8 @@ The base assessment for this assignment will relate to the completion of the tas
 3. example.odt
 4. example.docx
 5. example.pdf
+
+Examples of the types of files and formats that you will want to use are located [here]({{ base.url }}/refsheets/examples/).
 
 If you use a template file, also link to the original version of that. If you made the template, upload it and link to it along with your other files. 
 
