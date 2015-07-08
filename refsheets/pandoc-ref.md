@@ -46,21 +46,21 @@ If you have TeXLive installed, you will be able to compile a PDF:
 
 If you wish to convert to a DOCX or ODT file:
 
-`pandoc -S -o example.docx example.md`
-`pandoc -S -o example.odt example.md`
+`pandoc -o example.docx example.md`
+`pandoc -o example.odt example.md`
 
 If you wish to convert between two different word processor types:
 
-`pandoc -S -o example.docx example.odt`
+`pandoc -o example.docx example.odt`
 
 Filter a document through a template file:
 
-`pandoc -S --template=FILE -o example.docx example.md` 
+`pandoc -S --reference-docx=FILE -o example.docx example.md` 
 
 In the above command, you need to specify the location of the template file. 
 If it is a file called `template.docx` and is located in the same directory as your Markdown source, then the command will be:
 
-`pandoc -S --template=./template.docx -o example.docx example.md`
+`pandoc -S --reference-docx=./template.docx -o example.docx example.md`
 
 Compile a table of contents (for PDF output): 
 
