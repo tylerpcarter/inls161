@@ -70,7 +70,7 @@ LAB: Testing and troubleshooting
 
 ##2015-07-09
 
-Plaintext data > Structured data > Working with CSV files
+Raw data > Structured data > Working with CSV files
 
 ##2015-07-10
 
