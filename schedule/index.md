@@ -66,7 +66,7 @@ LAB: Testing and troubleshooting
 
 ##2015-07-08
 
-Single source, multiple outputs > A return to plaintext
+[Single input, multiple outputs]({{ base.url }}/schedule/single-in-multiple-out/) > [Return to plaintext]({{ base.url }}/schedule/return-to-plaintext/)
 
 ##2015-07-09
 
