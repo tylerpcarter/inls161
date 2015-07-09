@@ -70,7 +70,7 @@ LAB: Testing and troubleshooting
 
 ##2015-07-09
 
-Raw data > Structured data > Working with CSV files
+[Raw data]({{ base.url }}/schedule/raw-data/) > [Structured data]({{ base.url }}/schedule/structured-data/) > [Working with CSV files]({{ base.url }}/schedule/csv-files/)
 
 ##2015-07-10
 
