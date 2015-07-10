@@ -74,7 +74,7 @@ LAB: Testing and troubleshooting
 
 ##2015-07-10
 
-LAB: How to make a DOC file when you don't have access to MSWord
+CSVs and spreadsheets > LAB: More Pandoc, more web
 
 # Week 4
 
