@@ -64,6 +64,16 @@ The help/manpage file for Pandoc is linked here: <a href="http://pandoc.org/READ
 
 [Pandoc]({{ base.url }}/refsheets/pandoc-ref/)
 
+#LibreOffice
+
+https://www.libreoffice.org/get-help/documentation/
+
+## Calc 
+
+https://help.libreoffice.org/Calc/Spreadsheet_Functions
+
+https://forum.openoffice.org/en/forum/viewtopic.php?t=39529
+
 # All the things
 
 Web developer Rico Sta. Cruz has published all of his own cheatsheets on his website. 
