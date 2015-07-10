@@ -74,7 +74,7 @@ LAB: Testing and troubleshooting
 
 ##2015-07-10
 
-CSVs and spreadsheets > LAB: More Pandoc, more web
+[CSVs and spreadsheets]({{ base.url }}/schedule/csvs-spreadsheets/) > LAB: More Pandoc, more web
 
 # Week 4
 
