@@ -22,3 +22,24 @@ Just like with DOCX and ODT files when compared with plaintext files, spreadshee
 
 Unlike with the relationship between plaintext and interface-wrapped formatted text files, it is more difficult to get all of the information out of the spreadsheet. 
 
+As mentioned in the piece by Paul Ford, spreadsheets can hide a lot of things from us, including errors. 
+If our code to perform the same kinds of operations is visible to us, it is easier to check for errors. 
+
+That said, spreadsheets are a powerful tool and should be used in certain tasks in preference over other tools. 
+
+Once you have learned to do basic math in a spreadsheet, there is absolutely no reason to ever use a calculator (or calculator app) for instance.
+
+We will look at a few things in class today before switching to lab mode. 
+
+This forum post is a good guide to things that you should be aware of when using spreadsheets:
+
+https://forum.openoffice.org/en/forum/viewtopic.php?t=39529
+
+It pertains to OpenOffice, which is the productivity suite that LibreOffice was forked from some years ago. 
+OpenOffice is now owned by Oracle and some of the community was not happy with licensing changes that had occured, so they jumped ship and moved their development to LibreOffice under the umbrella of the Open Document Foundation. 
+The software still operates similarly enough that the information is relevant to us. 
+This is because both suites use ODF at their core. 
+
+It will also be a good idea to have a look at the LibreOffice documentation to familiarize yourself with it as a reference: https://www.libreoffice.org/get-help/documentation/
+
+Finally, here is a compendium of all of the functions available to you in LibreOffice Calc: https://help.libreoffice.org/Calc/Spreadsheet_Functions
