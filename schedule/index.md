@@ -86,7 +86,7 @@ LAB: Testing and troubleshooting
 
 ##2015-07-14
 
-Tables from spreadsheets > What is a database?
+[What is a database?]({{ base.url}}/schedule/databases/) > [Tables]({{ base.url}}/schedule/db-tables)
 
 ##2015-07-15
 
