@@ -19,4 +19,4 @@ The tables that we need to import into our database are available [at this link]
 
 After class I will post a reference sheet covering some of the specific details that we need to keep in mind when importing data. 
 
-Next up: [Queries]({{ base.url}}/schedule/queries/).
+Next up: [Queries]({{ base.url}}/schedule/db-queries/).
