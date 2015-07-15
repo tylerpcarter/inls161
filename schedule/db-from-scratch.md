@@ -17,4 +17,6 @@ We will be doing this today in class.
 
 The tables that we need to import into our database are available [at this link]({{ base.url }}/raw-material/161-database-tables.ods).
 
+After class I will post a reference sheet covering some of the specific details that we need to keep in mind when importing data. 
+
 Next up: [Queries]({{ base.url}}/schedule/queries/).

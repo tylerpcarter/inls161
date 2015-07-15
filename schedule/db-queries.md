@@ -59,4 +59,13 @@ FROM tblPublisher RIGHT JOIN tblBook ON tblPublisher.tblPublisher_PK = tblBook.t
 WHERE (((tblPublisher.tblPublisher_Publisher)="Oxford University Press") AND ((tblPublisher.tblPublisher_Country)="GB"));
 ```
 
+**FOR TOMORROW:**
+
+Make sure that you review chapters **7** (tables) and **9** (queries) in the LibreOffice Base Tutorial: 
+
+https://wiki.documentfoundation.org/images/0/02/Base_tutorial.pdf
+
+Tomorrow we will be learning other ways to get data and information into and out of our DBs. 
+Take a look at chapters **8** (forms) and **10** in the above-linked tutorial to get a head start. 
+
 Previous: [Build a database from scratch]({{ base.url}}/schedule/db-from-scratch/).
