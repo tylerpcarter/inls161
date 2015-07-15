@@ -22,4 +22,41 @@ Please look at this documentation for LibreOffice Base for how to create queries
 
 You will then be asked to create a query on your own. 
 
+### Joins
+
+When we define relationships in the query designer, you'll notice that there are different joins available to you. 
+
+These are logical inclusion/exclusion criteria for your query at the table level. 
+It is a good idea to have some understanding of basically what they are. 
+
+See this visual guide to joins in SQL (remember that the language underlying our queries is SQL):
+
+Moffatt, C. L. (n.d.). Visual Representation of SQL Joins - CodeProject. Retrieved July 15, 2015, from http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins
+
+Moffat's guide can help you to better understand each join and what they do. 
+
+Today, we will only use right joins in our example queries. 
+
+Why did we do that?
+
+### SQL reference
+
+Here is what our example queries look like in SQL.
+
+Command to select only the OUP GB books from the catalog list:
+
+```sql
+SELECT tblBook.tblBook_Title
+FROM tblPublisher RIGHT JOIN tblBook ON tblPublisher.tblPublisher_PK = tblBook.tblBook_PubID
+WHERE (((tblPublisher.tblPublisher_Publisher)="Oxford University Press") AND ((tblPublisher.tblPublisher_Country)="GB"));
+```
+
+Command to count the OUP GB titles in the catalog list: 
+
+```sql
+SELECT COUNT (tblBook.tblBook_Title)
+FROM tblPublisher RIGHT JOIN tblBook ON tblPublisher.tblPublisher_PK = tblBook.tblBook_PubID
+WHERE (((tblPublisher.tblPublisher_Publisher)="Oxford University Press") AND ((tblPublisher.tblPublisher_Country)="GB"));
+```
+
 Previous: [Build a database from scratch]({{ base.url}}/schedule/db-from-scratch/).
