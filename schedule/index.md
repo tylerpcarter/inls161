@@ -90,11 +90,11 @@ LAB: Testing and troubleshooting
 
 ##2015-07-15
 
-Build a database from scratch > Relational databases put everything together
+[Build a database from scratch]({{ base.url}}/schedule/db-from-scratch/) > [Queries]({{ base.url}}/schedule/queries/)
 
 ##2015-07-16
 
-Queries > Getting data into and out of a database
+Getting data into and out of a database > Forms > Reports
 
 ##2015-07-17
 
