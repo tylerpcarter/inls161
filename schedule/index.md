@@ -90,7 +90,7 @@ LAB: Testing and troubleshooting
 
 ##2015-07-15
 
-[Build a database from scratch]({{ base.url}}/schedule/db-from-scratch/) > [Queries]({{ base.url}}/schedule/queries/)
+[Build a database from scratch]({{ base.url}}/schedule/db-from-scratch/) > [Queries]({{ base.url}}/schedule/db-queries/)
 
 ##2015-07-16
 
