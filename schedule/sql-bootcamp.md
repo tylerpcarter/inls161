@@ -29,6 +29,7 @@ Then install the client:
 Let's download some CSV files that I prepared with our books list in them. 
 
 `wget http://inls161.johndmart.in/raw-material/tblBook.csv` 
+
 `wget http://inls161.johndmart.in/raw-material/tblPub.csv`
 
 ## The MySQL prompt
