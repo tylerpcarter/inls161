@@ -57,10 +57,16 @@ We should see the DB with the name that we created in the list. Let's move into 
 
 Now we have to create two tables so that we can import data from our CSV files.
 
-`CREATE TABLE tblBook (tblBook_PK INT, tblBook_Title VARCHAR(255), tblBook_Date INT, tblBook_RetailPrice DECIMAL(5,2), tblBook_Copies INT, tblBook_Shelf Number VARCHAR(255), tblBook_PubID INT);`
+`CREATE TABLE tblBook (PK INT, Title VARCHAR(255), Date INT, RetailPrice DECIMAL(5,2), Copies INT, ShelfNumber VARCHAR(255), PubID INT);`
 
-`CREATE TABLE tblPub (tblPublisher_PK INT, tblPublisher_Publisher VARCHAR(255), tblPublisher_City VARCHAR(255), tblPublisher_State VARCHAR(255), tblPublisher_Country VARCHAR(255));`
+`CREATE TABLE tblPub (PK INT, Publisher VARCHAR(255), City VARCHAR(255), State VARCHAR(255), Country VARCHAR(255));`
+
+See what tables we have just created:
+
+`show tables;`
 
 Let's import some tables from the files we downloaded earlier:
 
+`LOAD DATA INFILE '/home/cabox/workspace/tblBook.csv' INTO TABLE tblBook FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"';`
 
+`LOAD DATA INFILE '/home/cabox/workspace/tblPub.csv' INTO TABLE tblPub FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"';`
