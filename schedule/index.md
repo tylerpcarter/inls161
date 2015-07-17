@@ -98,7 +98,7 @@ Getting data into and out of a database > Forms > Reports
 
 ##2015-07-17
 
-LAB: Tools for data manipulation beyond the GUI
+LAB: [Tools for data manipulation beyond the GUI]({{ base.url }}/schedule/sql-bootcamp.md)
 
 # Week 5
 
