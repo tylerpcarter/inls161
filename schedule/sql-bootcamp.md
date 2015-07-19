@@ -187,6 +187,26 @@ I wonder if books cost more from the OUP GB location than from the OUP US locati
 
 `SELECT AVG(RetailPrice) FROM tblBook b RIGHT JOIN tblPub p ON b.PubID = p.ID WHERE p.Publisher = 'Oxford University Press' AND p.Country = 'US';`
 
+## Output from MySQL queries as tables
+
+We can take any of the above queries and output the results to a table. 
+
+We need to add `CREATE TABLE qryName` to the front of any of our query commands. 
+
+Here is an example using our price summary from above:
+
+`CREATE TABLE qryPrices SELECT AVG(RetailPrice) AS 'Average Price', MIN(RetailPrice) AS 'Lowest Price', MAX(RetailPrice) AS 'Highest Price' FROM tblBook;`
+
+See if it worked by listing the tables:
+
+`show tables;`
+
+Look at what is in the new table:
+
+`SELECT * FROM qryPrices`
+
+It should match the output from when you ran the query before. 
+
 ## Output from MySQL queries in other formats
 
 We can output all of this stuff outside of our MySQL prompt shell (in a normal shell).

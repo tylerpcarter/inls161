@@ -9,7 +9,7 @@ The assignments for the course are listed as follows and specific information an
 2. [Web - Make a website and publish using GitHub]({{ base.url }}/syllabus/assignments/assignment2/)
 3. [ Text - Create a formatted document of high quality]({{ base.url }}/syllabus/assignments/assignment3/)
 4. [Spreadsheet - Create and format spreadsheets]({{ base.url }}/syllabus/assignments/assignment4/)
-5. Database - Create a database from scratch
+5. [Database - Create a database from scratch]({{ base.url }}/syllabus/assignments/assignment5/)
 6. Present - Create and record a presentation for the class 
 
 There will be other small assignments that will be tacked onto your participation grade. 

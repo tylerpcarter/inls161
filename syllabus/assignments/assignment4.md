@@ -27,4 +27,4 @@ Grading for this assignment is based on the completeness of your fileset and als
 
 The files, internally, should contain data from every student in the class who committed a change to the shared repository (this will be fully explained in class).
 
-The formatted text assignment is worth 5% of your total grade. 
+The formatted text assignment is worth 15% of your total grade. 
