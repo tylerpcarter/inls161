@@ -10,7 +10,7 @@ The assignments for the course are listed as follows and specific information an
 3. [ Text - Create a formatted document of high quality]({{ base.url }}/syllabus/assignments/assignment3/)
 4. [Spreadsheet - Create and format spreadsheets]({{ base.url }}/syllabus/assignments/assignment4/)
 5. [Database - Create a database from scratch]({{ base.url }}/syllabus/assignments/assignment5/)
-6. Present - Create and record a presentation for the class 
+6. [Present - Create and record a presentation for the class]({{ base.url }}/syllabus/assignments/assignment6/)
 
 There will be other small assignments that will be tacked onto your participation grade. 
 These will tend to be very simple information retrieval tasks or tasks in preparation for something we will do in class. 
