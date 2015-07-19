@@ -15,6 +15,7 @@ They are listed below.
 Instructions for Option 1:
 
 1. Beginning with the ODS file linked here, import the data in each worksheet into two database tables using LibreOffice Base. 
+	*	http://inls161.johndmart.in/raw-material/161-database-tables.ods
 2. Once you have the data in the tables, you will need to make several queries and save them. Here are some examples:
 	*	Select all of the books published by Oxford University Press in the United States.
 	*	Count the books returned by the above query.
@@ -28,12 +29,15 @@ Instructions for Option 1:
 Instructions for Option 2:
 
 1. Use MySQl to import the tables in the CSV files linked here into a new database. 
+	*	http://inls161.johndmart.in/raw-material/tblBook.csv
+	*	http://inls161.johndmart.in/raw-material/tblPub.csv
 2. Link the tables by setting the primary key for the table with publisher info as a foreign key in the table with book info. 
 3. Make some queries and write the results of the queries into new tables. Use the prefix "qry" instead of "tbl" to make a distinction between the two. 
 4. You can use the query instructions from the ODB option above or use examples similar to those in the lecture notes. 
 5. Export your database and save it as `booksinfo.sql`. 
 
-More detailed information about how to do all of the things in this assignment is available either in the lecture notes directly or from links therein. 
+More detailed information about how to do all of the tasks in this assignment is available either in the lecture notes directly or from links therein. 
+If you choose option 1, all of the information you need is in the [Base Tutorial](https://wiki.documentfoundation.org/images/0/02/Base_tutorial.pdf).
 Use those and other resources to solve issues and problems that you might run into in the process. 
 
 ## Grading
