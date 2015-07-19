@@ -198,3 +198,13 @@ Let's ask for the summary of book prices in HTML and then we can try some other 
 Now you have exited from the MySql prompt.
 
 `mysql -u root -p -H -e "SELECT AVG(RetailPrice) AS 'Average Price', MIN(RetailPrice) AS 'Lowest Price', MAX(RetailPrice) AS 'Highest Price' FROM tblBook;" booksinfo`
+
+## Exporting and Importing 
+
+To export your whole database so that you can use it elsewhere (i.e., transfer it to a different server) do the following command:
+
+`mysqldump -u root -p booksinfo > booksinfo.sql`
+
+If you want to then import that same database somewhere else, the command is very similar. The direction changes, and instead of the specialized `mysqldump` command, you use just the standard MySQL client command:
+
+`mysql -u root -p booksinfo < booksinfo.sql`

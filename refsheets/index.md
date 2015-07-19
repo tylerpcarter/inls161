@@ -64,15 +64,28 @@ The help/manpage file for Pandoc is linked here: <a href="http://pandoc.org/READ
 
 [Pandoc]({{ base.url }}/refsheets/pandoc-ref/)
 
+# Databases
+
+## MySQL
+
+<a href="http://www.w3schools.com/sql/" target="_blank">SQL Tutorial - W3Schools</a>
+
+<a href="https://dev.mysql.com/doc/refman/5.5/en/" target="_blank">MySQL 5.5 Reference Manual - MySQL - ORACLE</a>
+
 #LibreOffice
 
-https://www.libreoffice.org/get-help/documentation/
+<a href="https://www.libreoffice.org/get-help/documentation/" target="_blank">LibreOffice Documentation for all Packages</a>
 
 ## Calc 
 
-https://help.libreoffice.org/Calc/Spreadsheet_Functions
+<a href="https://help.libreoffice.org/Calc/Functions_by_Category" target="_blank">Spreadsheet Functions by Category - LibreOffice Wiki</a>
 
-https://forum.openoffice.org/en/forum/viewtopic.php?t=39529
+<a href="https://forum.openoffice.org/en/forum/viewtopic.php?t=39529" target="_blank">
+[Tutorial] Ten concepts that every Calc user should know - Apache OpenOffice Forum</a>
+
+## Base
+
+<a href="https://wiki.documentfoundation.org/images/0/02/Base_tutorial.pdf" target="_blank">Base Tutorial - Mariano Casanova</a>
 
 # All the things
 
