@@ -51,6 +51,10 @@ Please read this blog post from a decade ago (that is still as relevant as ever)
 
 [The "Lessig Method" of Presentation - Garr Reynolds - Presentation Zen](http://presentationzen.blogs.com/presentationzen/2005/10/the_lessig_meth.html)
 
+The link to Dick Hardt's 2005 OSCON presentation in that article is not working. You can view it on YouTube instead:
+
+[Identity 2.0 Keynote - OSCON 2005 - Dick Hardt](https://www.youtube.com/watch?v=RrpajcAgR1E)
+
 Finally, choose a topic and write a paragraph summarizing the topic that you would like to present and why you wish to do so. 
 
 Previous: [Death by PowerPoint]({{ base.url }}/schedule/death-by-powerpoint/).
