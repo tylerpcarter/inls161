@@ -106,11 +106,11 @@ LAB: [Tools for data manipulation beyond the GUI]({{ base.url }}/schedule/sql-bo
 
 ##2015-07-20
 
-Death by PowerPoint > Edward Tufte is your best friend
+[Death by PowerPoint]({{ base.url }}/schedule/death-by-powerpoint/) > [Edward Tufte is your best friend]({{ base.url }}/schedule/tufte/)
 
 ##2015-07-21
 
-Communication > Visual presentation > Design
+An array of tools > Script > Record
 
 ##2015-07-22
 

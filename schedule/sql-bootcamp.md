@@ -3,7 +3,10 @@ layout: default
 title: MySQL Bootcamp
 ---
 
-## Install MySQL
+# 2015-07-17
+## {{ page.title }}
+
+### Install MySQL
 
 First update and upgrade all packages:
 
@@ -24,7 +27,7 @@ Then install the client:
 
 `sudo apt-get install mysql-client`
 
-## Get some data
+### Get some data
 
 Let's download some CSV files that I prepared with our books list in them. 
 
@@ -32,7 +35,7 @@ Let's download some CSV files that I prepared with our books list in them.
 
 `wget http://inls161.johndmart.in/raw-material/tblPub.csv`
 
-## The MySQL prompt
+### The MySQL prompt
 
 Once we are all installed, issue the `mysql` command to get into the `mysql>` prompt:
 
@@ -58,7 +61,7 @@ We should see the DB with the name that we created in the list. Let's move into 
 
 `USE booksinfo;`
 
-## Add tables
+### Add tables
 
 Now we have to create two tables so that we can import data from our CSV files.
 
@@ -107,7 +110,7 @@ Now do the same for the other table:
 
 `ALTER TABLE tblPub ADD PRIMARY KEY (ID);`
 
-## Define relationships
+### Define relationships
 
 We need to tell MySQL that the PubID column in tblBook refers to the primary key in tblPub. This action is called a constraint and the reference is called a foreign key. 
 
@@ -121,7 +124,7 @@ You'll notice that the 'Key' column now has 'MUL' for PubID.
 This means that we are using that column as an index as well as the primary key column. 
 This new index just happens to be non-unique. 
 
-## Summaries
+### Summaries
 
 So now that we have our data in place, let's summarize it a bit. 
 
@@ -161,7 +164,7 @@ MAX(RetailPrice) AS 'Highest Price'
 FROM tblBook;
 ```
 
-## Queries
+### Queries
 
 Let's try something that I posed the other day in class. 
 I want to list out all the books in the list that were published by Oxford University Press. 
@@ -187,7 +190,7 @@ I wonder if books cost more from the OUP GB location than from the OUP US locati
 
 `SELECT AVG(RetailPrice) FROM tblBook b RIGHT JOIN tblPub p ON b.PubID = p.ID WHERE p.Publisher = 'Oxford University Press' AND p.Country = 'US';`
 
-## Output from MySQL queries as tables
+### Output from MySQL queries as tables
 
 We can take any of the above queries and output the results to a table. 
 
@@ -207,7 +210,7 @@ Look at what is in the new table:
 
 It should match the output from when you ran the query before. 
 
-## Output from MySQL queries in other formats
+### Output from MySQL queries in other formats
 
 We can output all of this stuff outside of our MySQL prompt shell (in a normal shell).
 
@@ -219,7 +222,7 @@ Now you have exited from the MySql prompt.
 
 `mysql -u root -p -H -e "SELECT AVG(RetailPrice) AS 'Average Price', MIN(RetailPrice) AS 'Lowest Price', MAX(RetailPrice) AS 'Highest Price' FROM tblBook;" booksinfo`
 
-## Exporting and Importing 
+### Exporting and Importing 
 
 To export your whole database so that you can use it elsewhere (i.e., transfer it to a different server) do the following command:
 

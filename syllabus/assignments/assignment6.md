@@ -50,15 +50,15 @@ Your goal is to create a single presentation that simultaneously satisfies two o
 
 1.	It will be a self-running presentation of anywhere from 10-15 minutes that incorporates slide timing and your narration.
 
-	*	This presentation will run automatically just as if you were delivering the presentation live.
-	*	I will see the slides, hear your narration, and observe images and objects in the order and timing you wish them to appear.
-	*	I will use this version to decide on the points for aesthetics and delivery.
+*	This presentation will run automatically just as if you were delivering the presentation live.
+*	I will see the slides, hear your narration, and observe images and objects in the order and timing you wish them to appear.
+*	I will use this version to decide on the points for aesthetics and delivery.
 
 2.	However, the presentation should be created as if you were, in fact, going to present it live.
 
-	*	It should be set up with delivery tools, in particular with on-screen navigation tools, so that you could present it and have total control over how it would run.
-	*	We will cover this requirement in more detail during the delivery session.
-	*	I will use your design to decide on the points for formatting decisions and preparation.
+*	It should be set up with delivery tools, in particular with on-screen navigation tools, so that you could present it and have total control over how it would run.
+*	We will cover this requirement in more detail during the delivery session.
+*	I will use your design to decide on the points for formatting decisions and preparation.
 
 You may create this presentation alone or you may work in teams of up to 3. If you wish to work in a team, you will need to create a shared repository for your work. When you or your team has completed the task, each of the members of the team will place a hyperlink to it on their respective web sites. 
 When it's ready for me to download and grade, send me a note telling me to retrieve it from your websites.
