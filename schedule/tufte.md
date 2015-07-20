@@ -57,7 +57,9 @@ The link to Dick Hardt's 2005 OSCON presentation in that article is not working.
 
 A gold star to whomever accurately counts the number of slides used. 
 
+The link to Lessig's "Free Culture" presentation is also not available at that link. You can view it on YouTube:
 
+[Free Culture - OSCON 2002 - Lawrence Lessig](https://www.youtube.com/watch?v=JWR6eiiBhf8)
 
 Finally, choose a topic and write a paragraph summarizing the topic that you would like to present and why you wish to do so. 
 
