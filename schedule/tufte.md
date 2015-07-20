@@ -55,6 +55,10 @@ The link to Dick Hardt's 2005 OSCON presentation in that article is not working.
 
 [Identity 2.0 Keynote - OSCON 2005 - Dick Hardt](https://www.youtube.com/watch?v=RrpajcAgR1E)
 
+A gold star to whomever accurately counts the number of slides used. 
+
+
+
 Finally, choose a topic and write a paragraph summarizing the topic that you would like to present and why you wish to do so. 
 
 Previous: [Death by PowerPoint]({{ base.url }}/schedule/death-by-powerpoint/).
