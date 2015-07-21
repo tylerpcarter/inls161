@@ -110,7 +110,7 @@ LAB: [Tools for data manipulation beyond the GUI]({{ base.url }}/schedule/sql-bo
 
 ##2015-07-21
 
-An array of tools > Script > Record
+[An array of tools]({{ base.url }}/schedule/present/) > [Script]({{ base.url }}/schedule/script/) > Record
 
 ##2015-07-22
 
@@ -123,6 +123,7 @@ LAB: Working through technical problems with presentations (and everything else)
 ##2015-07-24 
 
 *NO CLASS - Reading Day*
+The lab will be open and I will be there from 10:00am - noon. 
 
 # Exam Week
 
