@@ -110,7 +110,7 @@ LAB: [Tools for data manipulation beyond the GUI]({{ base.url }}/schedule/sql-bo
 
 ##2015-07-21
 
-[An array of tools]({{ base.url }}/schedule/present/) > Demo p
+[An array of tools]({{ base.url }}/schedule/present/) > Demo presentation
 
 ##2015-07-22
 
