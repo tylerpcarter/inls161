@@ -110,11 +110,11 @@ LAB: [Tools for data manipulation beyond the GUI]({{ base.url }}/schedule/sql-bo
 
 ##2015-07-21
 
-[An array of tools]({{ base.url }}/schedule/present/) > [Script]({{ base.url }}/schedule/script/) > Record
+[An array of tools]({{ base.url }}/schedule/present/) > Demo p
 
 ##2015-07-22
 
-Flow > Connecting with your audience > Keeping on track > Taking questions
+Flow > Connecting with your audience > Keeping on track > Taking questions > [Script]({{ base.url }}/schedule/script/)
 
 ##2015-07-23
 
