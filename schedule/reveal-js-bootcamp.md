@@ -1,5 +1,5 @@
 ---
-layout:default
+layout: default
 title: "reveal.js bootcamp"
 ---
 
