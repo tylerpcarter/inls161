@@ -230,4 +230,4 @@ To export your whole database so that you can use it elsewhere (i.e., transfer i
 
 If you want to then import that same database somewhere else, the command is very similar. The direction changes, and instead of the specialized `mysqldump` command, you use just the standard MySQL client command:
 
-`mysqlimport -u root -p booksinfo < booksinfo.sql`
+`mysql -u root -p booksinfo < booksinfo.sql`
