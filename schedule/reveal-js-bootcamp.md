@@ -1,6 +1,6 @@
 ---
 layout:default
-title: reveal.js bootcamp
+title: "reveal.js bootcamp"
 ---
 
 # 2015-07-23
