@@ -118,7 +118,7 @@ Flow > Connecting with your audience > Keeping on track > Taking questions > [Sc
 
 ##2015-07-23
 
-LAB: [Working through technical problems with presentations (and everything else)]({{ base.url }}/schedule/reveal-js-bootcamp)
+LAB: [Working through technical problems with presentations (and everything else)]({{ base.url }}/schedule/reveal-and-audacity/)
 
 ##2015-07-24 
 
