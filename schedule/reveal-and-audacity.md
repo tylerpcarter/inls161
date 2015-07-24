@@ -206,7 +206,7 @@ Once you have your presentation text in your slides, or if you want to read thro
 
 In this method, you will record your whole presentation, and then split the track into smaller tracks with numbered filenames. 
 
-<img src="{{ base.url }}/schedule/images-audacity/label-track1.png" width="200px" alt="Label Track" />
+<a href="{{ base.url }}/schedule/images-audacity/label-track1.png"><img src="{{ base.url }}/schedule/images-audacity/label-track1.png" width="200px" alt="Label Track" /></a>
 
 To add a label track click: Tracks > Add New > Label Track.
 
@@ -215,7 +215,7 @@ This is just a reference track for you to break the audio apart into multiple fi
 To set a label, click on the wave form in the track where you want the label to be and then press CTRL+B, write the name of the label and press enter. 
 You can edit labels by clicking on them in the label track. 
 
-<img src="{{ base.url }}/schedule/images-audacity/label-track2.png" width="200px" alt="Label Track" />
+<a href="{{ base.url }}/schedule/images-audacity/label-track2.png"><img src="{{ base.url }}/schedule/images-audacity/label-track2.png" width="200px" alt="Label Track" /></a>
 
 Documentation: http://manual.audacityteam.org/o/man/label_tracks.html
 
@@ -227,7 +227,7 @@ Keep this in mind and make a label at the beginning of the track for the first s
 
 When you have finished labeling. Select File > Export Multiple... and a dialog will pop up. 
 
-<img src="{{ base.url }}/schedule/images-audacity/export-multiple.png" width="200px" alt="Export Multiple" />
+<a href="{{ base.url }}/schedule/images-audacity/export-multiple.png"><img src="{{ base.url }}/schedule/images-audacity/export-multiple.png" width="200px" alt="Export Multiple" /></a>
 
 You should select OGG Vorbis files and under "Name files:" select the middle option, "Numbering before Label/Track Name."
 
@@ -240,7 +240,7 @@ Documentation: http://manual.audacityteam.org/o/man/export_multiple.html
 You will be presented with the same tag editing interface as mentioned above, except this time for each file. 
 So just press okay on that dialog until it is finished. 
 
-<img src="{{ base.url }}/schedule/images-audacity/tags.png" width="200px" alt="Tags" />
+<a href="{{ base.url }}/schedule/images-audacity/tags.png"><img src="{{ base.url }}/schedule/images-audacity/tags.png" width="200px" alt="Tags" /></a>
 
 ### Putting the files in the right place
 
