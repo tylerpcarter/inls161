@@ -129,4 +129,6 @@ The lab will be open and I will be there from 10:00am - noon.
 
 ##2015-07-27
 
-EXAM DAY - Presentations to class
+EXAM DAY - Presentations to class - Exam period runs from 11:30am - 2:30pm (11:30-14:30 EDT)
+
+Feel free to bring your lunch if you like. 

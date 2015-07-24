@@ -25,7 +25,7 @@ All of the tasks are interconnected, so it is important to complete the tasks in
 
 Each task is due by the end of the day (midnight) on the date specified. 
 It would be a good idea to turn things in before that deadline so that you can get a jump on the next section. 
-The last assignment (the presentation) will be due before the exam date, but will be presented to the rest of the class on the exam day. 
+The last assignment (the recorded/narrated presentation) will be due ON THE EXAM DAY, but will be presented to the rest of the class during that session. 
 
 ### Submitting Assignments
 

@@ -69,7 +69,11 @@ You should also include a script or notes with the other files.
 ## Presentation
 
 We will all view the presentations in class on the exam day. 
+The exam day session will run from 11:30am - 2:30pm (11:30-14:30 EDT) on Monday, 27 July, 2015.
 
 ## Grading 
+
+YOUR PRESENTATION IS DUE ON THE EXAM DAY WHEN THE SESSION STARTS. 
+It should be commited to your presentation repo in Github. 
 
 This assignment will comprise 15% of your total grade. 
