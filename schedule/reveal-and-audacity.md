@@ -169,6 +169,8 @@ To stop, press the SPACE BAR.
 
 For playback of audio that you have just recorded, press the SPACE BAR again. 
 
+<img src="{{ base.url }}/schedule/images-audacity/controls.png" width="200px" alt="Audacity Controls" />
+
 You can move backward and forward in the track by using the LEFT <- and RIGHT -> cursor keys. 
 
 It is a good idea to save as you go, so that you do not lose anything. 
@@ -190,6 +192,8 @@ You'll want to give the file a number so that you can keep them in order.
 
 For example, call the file "01-first-slide.ogg" or something along those lines. 
 
+<img src="{{ base.url }}/schedule/images-audacity/export-audio.png" width="200px" alt="Audacity Export Audio" />
+
 Select "ogg Vorbis file" from the menu and then press save. 
 
 The dialog will prompt you to add tags. You can if you wish, but it is not necessary. 
@@ -202,12 +206,16 @@ Once you have your presentation text in your slides, or if you want to read thro
 
 In this method, you will record your whole presentation, and then split the track into smaller tracks with numbered filenames. 
 
+<img src="{{ base.url }}/schedule/images-audacity/label-track1.png" width="200px" alt="Label Track" />
+
 To add a label track click: Tracks > Add New > Label Track.
 
 This is just a reference track for you to break the audio apart into multiple files. 
 
 To set a label, click on the wave form in the track where you want the label to be and then press CTRL+B, write the name of the label and press enter. 
 You can edit labels by clicking on them in the label track. 
+
+<img src="{{ base.url }}/schedule/images-audacity/label-track2.png" width="200px" alt="Label Track" />
 
 Documentation: http://manual.audacityteam.org/o/man/label_tracks.html
 
@@ -219,6 +227,8 @@ Keep this in mind and make a label at the beginning of the track for the first s
 
 When you have finished labeling. Select File > Export Multiple... and a dialog will pop up. 
 
+<img src="{{ base.url }}/schedule/images-audacity/export-multiple.png" width="200px" alt="Export Multiple" />
+
 You should select OGG Vorbis files and under "Name files:" select the middle option, "Numbering before Label/Track Name."
 
 Choose an export location (you'll be uploading these to CodeAnywhere or Github directly). 
@@ -229,6 +239,8 @@ Documentation: http://manual.audacityteam.org/o/man/export_multiple.html
 
 You will be presented with the same tag editing interface as mentioned above, except this time for each file. 
 So just press okay on that dialog until it is finished. 
+
+<img src="{{ base.url }}/schedule/images-audacity/tags.png" width="200px" alt="Tags" />
 
 ### Putting the files in the right place
 
