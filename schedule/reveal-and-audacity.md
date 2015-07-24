@@ -75,7 +75,7 @@ So, we can switch back to master for everything else now.
 
 ### Markdown source
 
-You will need to put your markdown source into the newly cloned repo directory. 
+IF you are starting from Markdown, you will need to put your markdown source into the newly cloned repo directory. 
 
 You will need to specify some variables. 
 
@@ -92,7 +92,7 @@ Pandoc will use these as variables when it reads your markdown into the template
 This command will convert your markdown into a well-formed reveal.js HTML5 file. 
 
 ```
-pandoc -t revealjs --template=template-index.html -s --variable theme="black" --variable transition="slide" --variable revealjs-url="http://USERNAME.github.io/PRESENTATION-REPO-NAME" YOUR-MARKDOWN-FILENAME.md -o YOUR-MARKDOWN-FILENAME.html
+pandoc -t revealjs --template=template-index.html -s --variable theme="black" --variable transition="slide" --variable revealjs-url="http://YOUR-USERNAME.github.io/YOUR-REPO-NAME/" YOUR-MARKDOWN-FILENAME.md -o YOUR-HTML-FILENAME.html
 ```
 
 Here is an example of the command that I ran to get my demo presentation to translate from MD source.
@@ -103,16 +103,32 @@ pandoc -t revealjs --template=template-index.html -s --variable theme="black" --
 johndmart.in/inls161-revealjs-template/" gettysburg.md -o gettysburg.html
 ```
 
+Once you are sure that your Markdown file has translated correctly you can copy it over the existing index.html file. 
+
+Make sure there is a file called `index.html.bck`. This is a backup. If there isn't one, do this first: 
+
+`cp index.html index.html.bck`
+
+Then you can copy your newly created html:
+
+`cp YOUR-HTML-FILENAME.html index.html`
+
+### Viewing work in progress
+
+Once you have come this far, use Git to add, commit and push to your remote. 
+Once you have done so, you should be able to see your slides in their early state at: http://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
+
 ### Starting with HTML5
 
 If you start with the existing HTML5 document, make sure that you change a couple of things in the head. 
+It will also be useful to check on these things after you have converted your markdown. 
 
 1. Find the line where it says `<base href="">` and change it so that it has the url where your presentation will be `<base href="http://USERNAME.github.io/PRESENTATION-REPO-NAME">`
 2. Change the `<title>` so that it has the title of your presentation. 
 3. Change the `<meta name="author" content="NAME">` so that it has your name. 
 4. Find the CSS/stylesheet line with `id="theme"` (`<link rel="stylesheet" href="css/theme/sky.css" id="theme">`) and change it to whatever theme you like. The themes are located in the `css/themes/` directory. 
 
-### Adding a section 
+#### Adding a section 
 
 Remember that each section is a slide, so to make a new slide, just add a new `<section> </section>` and then put your slide content between it. 
 
@@ -131,7 +147,7 @@ Or the fullpath:
 
 You should not have to specify the fullpath if you do not want to, because we have already set the base URL for the presentation in the `<base>` tag in the head that we edited above. 
 
-### Adding audio
+#### Adding audio
 
 Adding audio is relatively simple, once you have some audio to add. 
 You will need to record some and then put the individual sound files in a subdirectory called `audio`. 
