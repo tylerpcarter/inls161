@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Record audio with Audacity
+title: Presentation workflow
 ---
 
 # 2015-07-23
@@ -49,7 +49,7 @@ So that the whole file should look something like this:
 	bare = false
 	logallrefupdates = true
 [remote "origin"]
-	url = git@github.com:jdmar3/gettysburg.git
+	url = git@github.com:YOUR-USERNAME/YOUR-REPO-NAME.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
 	push = +refs/heads/master:refs/heads/gh-pages
 	push = +refs/heads/master:refs/heads/master
