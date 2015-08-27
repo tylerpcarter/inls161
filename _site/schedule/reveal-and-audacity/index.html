@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
+	<link href="http://www.unc.edu/wp-content/themes/unc-sites-base-theme/images/ss_img_unc_favicon.ico" rel="shortcut icon">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title> Presentation workflow </title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href=" http://inls161.johndmart.in ">
+		  <h1> Tools for Information Literacy </h1>
+		  <h2> INLS161-001 (Summer II) </h2>
+		</a>
+        <a href="http://sils.unc.edu" class="button"><img width="180" src="/images/silslogo.png" /></a>
+	  </div>
+      <a href="https://github.com/jdmar3/inls161/">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
+      </a>
+	</header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          
+          <h1 id="2015-07-23">2015-07-23</h1>
+
+<h2 id="presentation-workflow">Presentation workflow</h2>
+
+<p>So, after much struggling, I decided that the recorder is unworkable in its current state. 
+It requires too much fiddling and then still doesn&#39;t work most of the time. </p>
+
+<p>The audio-slideshow plugin, on its own, works really well. </p>
+
+<p>To make sure that it isn&#39;t too burdensome, I created a new reveal.js repo with all of the submodules installed correctly and a template for Pandoc that functions a little better than the one that is built into it.</p>
+
+<p>Unfortunately, you will now have to record audio and then put the files in your repo, but that is no big deal. 
+You would have had to write links to any audio recorded directly through reveal.js anyway, which decreased its appeal. </p>
+
+<p>So, start off with this new repo and just make sure that you transfer your </p>
+
+<h3 id="installing-the-customized-reveal-js-repo">Installing the customized reveal.js repo</h3>
+
+<p>You should fork it on Github and then change its name to whatever you would like it to be (perhaps &quot;inls161-revealjs&quot;). 
+The repo is located here: </p>
+
+<p><a href="https://github.com/jdmar3/inls161-revealjs-template">https://github.com/jdmar3/inls161-revealjs-template</a></p>
+
+<p>Once you have forked and renamed it, then clone it to your DevBox so that you can work on it. </p>
+
+<h3 id="making-sure-that-you-are-pushing-to-gh-pages">Making sure that you are pushing to gh-pages</h3>
+
+<p>If you do not do this, your reveal.js presentation will not show up at the correct address. </p>
+
+<p>Open .git/config and look for the <code>[remote &quot;origin&quot;]</code> section. </p>
+
+<p>Then add the following two lines into that section:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    push = +refs/heads/master:refs/heads/gh-pages
+    push = +refs/heads/master:refs/heads/master
+</code></pre></div>
+<p>So that the whole file should look something like this:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">[core]
+    repositoryformatversion = 0
+    filemode = true
+    bare = false
+    logallrefupdates = true
+[remote &quot;origin&quot;]
+    url = git@github.com:YOUR-USERNAME/YOUR-REPO-NAME.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    push = +refs/heads/master:refs/heads/gh-pages
+    push = +refs/heads/master:refs/heads/master
+[branch &quot;master&quot;]
+    remote = origin
+    merge = refs/heads/master
+</code></pre></div>
+<p>Then we need to create a new branch. 
+This is necessary for github-pages to be able to generate a project page for us. 
+The branch must be called gh-pages. </p>
+
+<p><code>git checkout gh-pages</code></p>
+
+<p>Let&#39;s add, commit and push that just to be sure that it all worked and that our new branch was added. </p>
+
+<p>Alright. </p>
+
+<p>We have a new branch and our new branch is going to be synced with our master branch. 
+So, we can switch back to master for everything else now. </p>
+
+<p><code>git checkout master</code></p>
+
+<h3 id="markdown-source">Markdown source</h3>
+
+<p>IF you are starting from Markdown, you will need to put your markdown source into the newly cloned repo directory. </p>
+
+<p>You will need to specify some variables. </p>
+
+<p>Rememeber that the first three lines of your markdown file need to be:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">% TITLE
+% NAME
+% DATE
+</code></pre></div>
+<p>Pandoc will use these as variables when it reads your markdown into the template that I have provided.</p>
+
+<p>This command will convert your markdown into a well-formed reveal.js HTML5 file. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">pandoc -t revealjs --template=template-index.html -s --variable theme=&quot;black&quot; --variable transition=&quot;slide&quot; --variable revealjs-url=&quot;http://YOUR-USERNAME.github.io/YOUR-REPO-NAME/&quot; YOUR-MARKDOWN-FILENAME.md -o YOUR-HTML-FILENAME.html
+</code></pre></div>
+<p>Here is an example of the command that I ran to get my demo presentation to translate from MD source.
+<em>CAUTION: the gettysburg.md source file is incomplete and very rudimentary. The final product took a lot of editing once it was translated into reveal.js HTML5.</em></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">pandoc -t revealjs --template=template-index.html -s --variable theme=&quot;black&quot; --variable transition=&quot;slide&quot; --variable revealjs-url=&quot;http://
+johndmart.in/inls161-revealjs-template/&quot; gettysburg.md -o gettysburg.html
+</code></pre></div>
+<p>Once you are sure that your Markdown file has translated correctly you can copy it over the existing index.html file. </p>
+
+<p>Make sure there is a file called <code>index.html.bck</code>. This is a backup. If there isn&#39;t one, do this first: </p>
+
+<p><code>cp index.html index.html.bck</code></p>
+
+<p>Then you can copy your newly created html:</p>
+
+<p><code>cp YOUR-HTML-FILENAME.html index.html</code></p>
+
+<h3 id="viewing-work-in-progress">Viewing work in progress</h3>
+
+<p>Once you have come this far, use Git to add, commit and push to your remote. 
+Once you have done so, you should be able to see your slides in their early state at: <a href="http://YOUR-USERNAME.github.io/YOUR-REPO-NAME/">http://YOUR-USERNAME.github.io/YOUR-REPO-NAME/</a></p>
+
+<h3 id="starting-with-html5">Starting with HTML5</h3>
+
+<p>If you start with the existing HTML5 document, make sure that you change a couple of things in the head. 
+It will also be useful to check on these things after you have converted your markdown. </p>
+
+<ol>
+<li>Find the line where it says <code>&lt;base href=&quot;&quot;&gt;</code> and change it so that it has the url where your presentation will be <code>&lt;base href=&quot;http://USERNAME.github.io/PRESENTATION-REPO-NAME&quot;&gt;</code></li>
+<li>Change the <code>&lt;title&gt;</code> so that it has the title of your presentation. </li>
+<li>Change the <code>&lt;meta name=&quot;author&quot; content=&quot;NAME&quot;&gt;</code> so that it has your name. </li>
+<li>Find the CSS/stylesheet line with <code>id=&quot;theme&quot;</code> (<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/theme/sky.css&quot; id=&quot;theme&quot;&gt;</code>) and change it to whatever theme you like. The themes are located in the <code>css/themes/</code> directory. </li>
+</ol>
+
+<h4 id="adding-a-section">Adding a section</h4>
+
+<p>Remember that each section is a slide, so to make a new slide, just add a new <code>&lt;section&gt; &lt;/section&gt;</code> and then put your slide content between it. </p>
+
+<p>To add a background, you add either a URL or a Hex color number inside the section tag: </p>
+
+<ol>
+<li><code>&lt;section data-background=&quot;http://SOME-IMAGE.png&quot;&gt; &lt;/section&gt;</code></li>
+<li><code>&lt;section data-background=&quot;#56A0D3&quot;&gt; &lt;/section&gt;</code></li>
+</ol>
+
+<p>If you put your images in a subdirectory (which you should) you can link to them either with the relative path:</p>
+
+<p><code>&lt;section data-background=&quot;images/SOME-IMAGE.png&quot;&gt; &lt;/section&gt;</code></p>
+
+<p>Or the fullpath:</p>
+
+<p><code>&lt;section data-background=&quot;http://USERNAME.github.io/PRESENTATION-REPO-NAME/images/SOME-IMAGE.png&quot;&gt; &lt;/section&gt;</code></p>
+
+<p>You should not have to specify the fullpath if you do not want to, because we have already set the base URL for the presentation in the <code>&lt;base&gt;</code> tag in the head that we edited above. </p>
+
+<h4 id="adding-audio">Adding audio</h4>
+
+<p>Adding audio is relatively simple, once you have some audio to add. 
+You will need to record some and then put the individual sound files in a subdirectory called <code>audio</code>. </p>
+
+<p>Once that is done, you will need to add <code>data-audio-src=&quot;audio/SOME-AUDIO.ogg&quot;</code> to your <code>&lt;section&gt;</code> tags. </p>
+
+<p>The section tag will now look like this: </p>
+
+<p><code>&lt;section data-audio-src=&quot;audio/SOME-AUDIO.ogg&quot; data-background=&quot;#56A0D3&quot;&gt; &lt;/section&gt;</code></p>
+
+<p>You can also add an id to each <code>&lt;section&gt;</code> tag so that they are easier to navigate: </p>
+
+<p><code>&lt;section id=&quot;01&quot; data-audio-src=&quot;audio/SOME-AUDIO.ogg&quot; data-background=&quot;#56A0D3&quot;&gt; &lt;/section&gt;</code></p>
+
+<p>In the next section, there are instructions on how to use Audacity to create your sound files.</p>
+
+<h3 id="installing-audacity">Installing Audacity</h3>
+
+<p>Look for the correct installer at the download site for Audacity&#39;s current version. 
+DMG for Mac and EXE for windows. </p>
+
+<p><a href="http://sourceforge.net/projects/audacity/files/audacity/2.1.0/">http://sourceforge.net/projects/audacity/files/audacity/2.1.0/</a></p>
+
+<p>Install the software as you normally would install something. </p>
+
+<p>Specific instructions here, if you need to troubleshoot: <a href="http://manual.audacityteam.org/o/man/faq_installation_and_plug_ins.html">http://manual.audacityteam.org/o/man/faq_installation_and_plug_ins.html</a></p>
+
+<h3 id="recording-audio">Recording audio</h3>
+
+<p>Make sure that you have a microphone plugged and then open Audacity. </p>
+
+<p>To record, press the record button on the top bar or press SHIFT+R. </p>
+
+<p>To stop, press the SPACE BAR. </p>
+
+<p>For playback of audio that you have just recorded, press the SPACE BAR again. </p>
+
+<p><img src="/schedule/images-audacity/controls.png" width="200px" alt="Audacity Controls" /></p>
+
+<p>You can move backward and forward in the track by using the LEFT &lt;- and RIGHT -&gt; cursor keys. </p>
+
+<p>It is a good idea to save as you go, so that you do not lose anything. </p>
+
+<p>The file will save as an AUP file. 
+That is Audacity&#39;s project file format. 
+It will allow you to open the whole project with all of your audio saved in it. </p>
+
+<p>Look here for documentation about getting started recording your audio: </p>
+
+<p><a href="http://manual.audacityteam.org/o/quick_help.html">http://manual.audacityteam.org/o/quick_help.html</a></p>
+
+<h4 id="recording-chunks-of-audio-for-each-slide">Recording chunks of audio for each slide</h4>
+
+<p>If you want to record audio for each slide event in an individual file, which is a good approach, simply record the audio and then when you are satisfied with it, export it as an OGG Vorbis file. </p>
+
+<p>You can press CTRL+SHIFT+E or select &quot;Export Audio...&quot; from the &quot;File&quot; menu. 
+You&#39;ll want to give the file a number so that you can keep them in order. </p>
+
+<p>For example, call the file &quot;01-first-slide.ogg&quot; or something along those lines. </p>
+
+<p><img src="/schedule/images-audacity/export-audio.png" width="200px" alt="Audacity Export Audio" /></p>
+
+<p>Select &quot;ogg Vorbis file&quot; from the menu and then press save. </p>
+
+<p>The dialog will prompt you to add tags. You can if you wish, but it is not necessary. </p>
+
+<p>You can open a new project for each audio file. </p>
+
+<h4 id="recording-all-at-once-and-splitting-into-separate-files">Recording all at once and splitting into separate files</h4>
+
+<p>Once you have your presentation text in your slides, or if you want to read through your script and then break up the audio, you can do this by using a &quot;label&quot; track and the &quot;Export Multiple...&quot; function in Audacity. </p>
+
+<p>In this method, you will record your whole presentation, and then split the track into smaller tracks with numbered filenames. </p>
+
+<p><a href="/schedule/images-audacity/label-track1.png"><img src="/schedule/images-audacity/label-track1.png" width="200px" alt="Label Track" /></a></p>
+
+<p>To add a label track click: Tracks &gt; Add New &gt; Label Track.</p>
+
+<p>This is just a reference track for you to break the audio apart into multiple files. </p>
+
+<p>To set a label, click on the wave form in the track where you want the label to be and then press CTRL+B, write the name of the label and press enter. 
+You can edit labels by clicking on them in the label track. </p>
+
+<p><a href="/schedule/images-audacity/label-track2.png"><img src="/schedule/images-audacity/label-track2.png" width="200px" alt="Label Track" /></a></p>
+
+<p>Documentation: <a href="http://manual.audacityteam.org/o/man/label_tracks.html">http://manual.audacityteam.org/o/man/label_tracks.html</a></p>
+
+<p>Make sure that you are thinking about where slides begin and end in your script. 
+The easiest way to do this is to record first and then listen. 
+As you listen ou can pause and move back and forth to get your selector in the right position before creating a label with CTRL+B. 
+Your labels should be positioned at the beginning of your desired audio clips. 
+Keep this in mind and make a label at the beginning of the track for the first slide&#39;s audio. </p>
+
+<p>When you have finished labeling. Select File &gt; Export Multiple... and a dialog will pop up. </p>
+
+<p><a href="/schedule/images-audacity/export-multiple.png"><img src="/schedule/images-audacity/export-multiple.png" width="200px" alt="Export Multiple" /></a></p>
+
+<p>You should select OGG Vorbis files and under &quot;Name files:&quot; select the middle option, &quot;Numbering before Label/Track Name.&quot;</p>
+
+<p>Choose an export location (you&#39;ll be uploading these to CodeAnywhere or Github directly). </p>
+
+<p>Then press export. </p>
+
+<p>Documentation: <a href="http://manual.audacityteam.org/o/man/export_multiple.html">http://manual.audacityteam.org/o/man/export_multiple.html</a></p>
+
+<p>You will be presented with the same tag editing interface as mentioned above, except this time for each file. 
+So just press okay on that dialog until it is finished. </p>
+
+<p><a href="/schedule/images-audacity/tags.png"><img src="/schedule/images-audacity/tags.png" width="200px" alt="Tags" /></a></p>
+
+<h3 id="putting-the-files-in-the-right-place">Putting the files in the right place</h3>
+
+<p>You should end up with a file list that looks something like this:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">01-four_score.ogg
+02-our_fathers.ogg
+03-on_this_continent.ogg
+04-a_new_nation.ogg
+05-conceived_in_liberty.ogg
+06-and_dedicated.ogg
+07-all_men.ogg
+08-equal.ogg
+09-now_we_are_engaged.ogg
+10-civil_war.ogg
+11-that_nation.ogg
+12-any_nation.ogg
+...
+</code></pre></div>
+<p>The files should be relatively small. 
+They are just short clips. </p>
+
+<p>Probably the easiest way to get these files into CodeAnywhere is to zip them up in a ZIP file and then upload them by right clicking on the correct directory in your tree. </p>
+
+<p>Then unzip them into the directory where you want them using the unzip command. </p>
+
+<p>Do <code>ls</code> to see that the ZIP file is in the right place. </p>
+
+<p>Then do:</p>
+
+<p><code>unzip audio.zip</code> </p>
+
+<p>In that same directory. 
+You will have to put the name of your ZIP file instead of &quot;audio.zip.&quot; </p>
+
+<p>The files should unzip there and then you are ready to put links into your <code>&lt;section&gt;</code> tags as mentioned above.</p>
+
+<h3 id="add-audio-to-section-tags">Add audio to section tags</h3>
+
+<p>Just to make sure that it is clear, the way that you add audio to a slide is by making your <code>&lt;section&gt;</code> look like this:</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">data-audio-src=</span><span class="s">&quot;audio/SOME-AUDIO.ogg&quot;</span> <span class="na">data-background=</span><span class="s">&quot;#56A0D3&quot;</span><span class="nt">&gt;</span> 
+    <span class="nt">&lt;h2&gt;</span>
+        SOME SLIDE TITLE
+    <span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+        Some other text.
+    <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</code></pre></div>
+<p>The <code>data-audio-src</code> takes care of adding the audio link so that it will play automatically. </p>
+
+<h3 id="examples">EXAMPLES</h3>
+
+<p>Make sure that you use the examples in the <code>orig-index.html</code> file and in <code>index.html</code>.
+They both have lots of good examples in them that you can use. </p>
+
+<p>The index.html file is one tht I created. 
+It has mostly examples sound with a background image or some very sparse text. 
+Very easy. </p>
+
+<p>To view that demo, follow this link, and then mouseover the bottom part of the screen to see the controls for the audio and then press the play button:</p>
+
+<p><a href="http://johndmart.in/inls161-revealjs-template/">http://johndmart.in/inls161-revealjs-template/</a></p>
+
+<p>The rest of the presentation will play from that point forward. </p>
+
+<h3 id="questions">QUESTIONS</h3>
+
+<p>If you have any questions or get stuck, email me ASAP. </p>
+
+<p>If you use Google Hangouts / GChat, add my email <a href="mailto:john.d.martin.iii@gmail.com">john.d.martin.iii@gmail.com</a>. 
+I will respond very quickly through that interface. </p>
+
+
+        </section>
+
+        <aside id="sidebar">
+			<nav>
+	<h1>
+		<a href="http://inls161.johndmart.in">Home</a>
+	</h1>
+	<ul>
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+		
+		<li><a class="active" href="/schedule/">Schedule</a></li>
+		
+	
+		
+		
+		<li><a href="/syllabus/">Syllabus</a></li>
+		
+	
+		
+	
+		
+	
+		
+		
+		<li><a href="/refsheets/">Reference Sheets</a></li>
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	</ul>
+</nav>
+			
+			<p class="repo-owner">
+				<h1>Course Info</h1>
+				<b>Description:</b> Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.<br />
+				<b>Instructor:</b> <a href="mailto:john.d.martin.iii@unc.edu">John D. Martin III</a><br />
+        		<b>Location:</b> 117 Manning Hall (computer lab inside the SILS library)<br />
+				<b>Time:</b> 1100 - 1230<br />
+				<b>Days:</b> MoTuWeThFr<br />
+				<b>Dates:</b> 22 June - 23 July 2015<br />
+				<b>Exam day:</b> 27 July 2015<br />
+				<b>Office hours:</b> I will be available for a half hour before and after our Lab sessions and also by appointment.<br />
+			</p>
+			
+		  	<p>
+				<b>Acknowledgements:</b> I would like to thank Ron Bergquist, upon whose course much of the content of this course is based, as well as all of those who have taught this course over the years since it was originated at SILS.
+		  	</p>
+			<p>
+				<b>Credits: </b>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using a slightly modified version of the <a href="https://github.com/jasonlong/architect-theme">Architect theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>. <a href="https://github.com/pietromenna/jekyll-architect-theme">jekyll-architect-theme</a> is maintained by <a href="https://github.com/pietromenna">pietromenna</a>.
+		    </p>
+		    <p class="repo-owner">
+				Content &copy; John D. Martin III <br />
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">
+								<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+				</a><br />
+				This work is licensed under a 
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.
+		  	</p>
+            <p>
+                <b><a href="https://github.com/jdmar3/inls161" target="_blank">Fork this course on Github.</a></b>
+            </p>
+        </aside>
+      </div>
+    </div>
+
+  </body>
+</html>

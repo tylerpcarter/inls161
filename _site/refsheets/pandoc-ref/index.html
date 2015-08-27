@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
+	<link href="http://www.unc.edu/wp-content/themes/unc-sites-base-theme/images/ss_img_unc_favicon.ico" rel="shortcut icon">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title> Pandoc Reference Sheet </title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href=" http://inls161.johndmart.in ">
+		  <h1> Tools for Information Literacy </h1>
+		  <h2> INLS161-001 (Summer II) </h2>
+		</a>
+        <a href="http://sils.unc.edu" class="button"><img width="180" src="/images/silslogo.png" /></a>
+	  </div>
+      <a href="https://github.com/jdmar3/inls161/">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
+      </a>
+	</header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          
+          <h1 id="pandoc-reference-sheet">Pandoc Reference Sheet</h1>
+
+<h2 id="installing-pandoc">Installing Pandoc</h2>
+
+<p>To install Pandoc in your CodeAnywhere DevBox, use the following command:</p>
+
+<p><code>sudo apt-get install pandoc</code></p>
+
+<p>If you are going to be compiling a document with citations then you will also want to install pandoc-citeproc:</p>
+
+<p><code>sudo apt-get install pandoc-citeproc</code></p>
+
+<p>If you want to be able to convert into PDF directly, grab the TeXLive installer that I have configured at one of our class repos. </p>
+
+<p><code>cd ~/workspace</code>
+<code>git clone git@github.com:INLS161Su2015/install-tl-inls161.git</code>
+<code>cd ./install-tl-inls161</code>
+<code>sudo ./install-tl</code></p>
+
+<p>The TeXLive installer will run and ask you if you want to install it with the preconfigured profile. 
+Just type <code>y</code> and let it run. It should only take a few minutes. </p>
+
+<p>This will give you a pretty minimal install, but you can always use the TeXLive package manager (<code>tlmgr</code>) to install any additional packages that you need without having to install all of TeXLive.
+It is a pretty massive beast, so if you are using a CodeAnywhere devBox, you will likely run out of space. 
+In fact, since you have all of your work saved in your GitHub repo (and you should, if you&#39;ve been committing and pushing properly) it might be a good idea to just go ahead and delete your DevBox and start a new one before you install TeXLive.</p>
+
+<p>Right off the bat, when I was testing this, I found that I needed the <code>booktabs</code> package from TeXLive. 
+To install a package directly from TeXLive, do as follows:</p>
+
+<p><code>sudo tlmgr install PACKAGENAME</code></p>
+
+<p>In this case, I needed <code>booktabs</code>, so I did this:</p>
+
+<p><code>sudo tlmgr install booktabs</code></p>
+
+<p>Et voila. Installed. </p>
+
+<h2 id="basic-pandoc-commands">Basic Pandoc commands</h2>
+
+<p><em>All Pandoc commands are documented here: <a href="http://pandoc.org/README.html">http://pandoc.org/README.html</a></em></p>
+
+<p>Convert a Markdown file to HTML:</p>
+
+<p>`pandoc -o example.html example.md</p>
+
+<p>Pandoc reads the filetype from the extension in normal usage. 
+If you want to convert a file directly from a URL, you will have to specify the filetype, like this:</p>
+
+<p><code>pandoc -f html -t markdown http://inls161.johndmart.in/syllabus/</code></p>
+
+<p>You can make sure that certain things, like quotes and em-dashes, get read and formatted propery by specifying the &quot;Smart&quot; switch (a capital <code>-S</code> or <code>--smart</code>):</p>
+
+<p><code>pandoc -S -o example.html example.md</code></p>
+
+<p>There are a host of other commands in the documentation. Be sure to try them out. </p>
+
+<h2 id="specific-file-commands">Specific file commands</h2>
+
+<p>Convert your markdown to HTML:</p>
+
+<p><code>pandoc -o example.html exampld.md</code></p>
+
+<p>If you have TeXLive installed properly (see above), you will be able to compile a PDF: </p>
+
+<p><code>pandoc -o example.pdf example.md</code></p>
+
+<p>To get a table of contents in that file and to make sure that quotes and dashes and other special characters work properly we have to add the switches <code>--toc</code> (or <code>--table-of-contents</code>) and <code>-S</code> (or <code>--smart</code>), like this: </p>
+
+<p><code>pandoc --toc -S -o example.pdf example.md</code></p>
+
+<p>If you wish to convert to a DOCX or ODT file:</p>
+
+<p><code>pandoc -o example.docx example.md</code>
+<code>pandoc -o example.odt example.md</code></p>
+
+<p>If you wish to convert between two different word processor filetypes, we might have to get a little creative. 
+We learned in class that if we issue the following command, we get errors related to file encoding and the conversion will not work. </p>
+
+<p><code>pandoc -o example.docx example.odt</code></p>
+
+<p>If, however, we add an intermediary step, say through HTML, we can get the output that we want. Try it like this instead: </p>
+
+<p><code>pandoc -o example.docx example-tmp.html &amp;&amp; pandoc -o example.odt example-tmp.html</code></p>
+
+<p>This preserves the formatting and extracts the text from the DOCX as an HTML file and then converts that HTML into ODT. 
+We do not have the weird encoding errors this way, and we don&#39;t have to mess with pipes. </p>
+
+<p>Filter a document through a template file:</p>
+
+<p><code>pandoc -S --reference-docx=FILE -o example.docx example.md</code> </p>
+
+<p>In the above command, you need to specify the location of the template file. 
+If it is a file called <code>template.docx</code> and is located in the same directory as your Markdown source, then the command will be:</p>
+
+<p><code>pandoc -S --reference-docx=./template.docx -o example.docx example.md</code></p>
+
+<p>You can also use an ODT or OTT for reference:</p>
+
+<p><code>pandoc -S --reference-odt=./template.ott -o example.odt example.md</code></p>
+
+<h1 id="example-files">Example files</h1>
+
+<p><a href="/refsheets/examples/#formatted-text-files" target="_blank">Link to the example files.</a></p>
+
+
+        </section>
+
+        <aside id="sidebar">
+			<nav>
+	<h1>
+		<a href="http://inls161.johndmart.in">Home</a>
+	</h1>
+	<ul>
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+		
+		<li><a href="/schedule/">Schedule</a></li>
+		
+	
+		
+		
+		<li><a href="/syllabus/">Syllabus</a></li>
+		
+	
+		
+	
+		
+	
+		
+		
+		<li><a class="active" href="/refsheets/">Reference Sheets</a></li>
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	</ul>
+</nav>
+			
+			<p class="repo-owner">
+				<h1>Course Info</h1>
+				<b>Description:</b> Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.<br />
+				<b>Instructor:</b> <a href="mailto:john.d.martin.iii@unc.edu">John D. Martin III</a><br />
+        		<b>Location:</b> 117 Manning Hall (computer lab inside the SILS library)<br />
+				<b>Time:</b> 1100 - 1230<br />
+				<b>Days:</b> MoTuWeThFr<br />
+				<b>Dates:</b> 22 June - 23 July 2015<br />
+				<b>Exam day:</b> 27 July 2015<br />
+				<b>Office hours:</b> I will be available for a half hour before and after our Lab sessions and also by appointment.<br />
+			</p>
+			
+		  	<p>
+				<b>Acknowledgements:</b> I would like to thank Ron Bergquist, upon whose course much of the content of this course is based, as well as all of those who have taught this course over the years since it was originated at SILS.
+		  	</p>
+			<p>
+				<b>Credits: </b>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using a slightly modified version of the <a href="https://github.com/jasonlong/architect-theme">Architect theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>. <a href="https://github.com/pietromenna/jekyll-architect-theme">jekyll-architect-theme</a> is maintained by <a href="https://github.com/pietromenna">pietromenna</a>.
+		    </p>
+		    <p class="repo-owner">
+				Content &copy; John D. Martin III <br />
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">
+								<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+				</a><br />
+				This work is licensed under a 
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.
+		  	</p>
+            <p>
+                <b><a href="https://github.com/jdmar3/inls161" target="_blank">Fork this course on Github.</a></b>
+            </p>
+        </aside>
+      </div>
+    </div>
+
+  </body>
+</html>

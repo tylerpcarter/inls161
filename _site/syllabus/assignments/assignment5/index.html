@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
+	<link href="http://www.unc.edu/wp-content/themes/unc-sites-base-theme/images/ss_img_unc_favicon.ico" rel="shortcut icon">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title> Assignment 5 - Database </title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href=" http://inls161.johndmart.in ">
+		  <h1> Tools for Information Literacy </h1>
+		  <h2> INLS161-001 (Summer II) </h2>
+		</a>
+        <a href="http://sils.unc.edu" class="button"><img width="180" src="/images/silslogo.png" /></a>
+	  </div>
+      <a href="https://github.com/jdmar3/inls161/">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
+      </a>
+	</header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          
+          <h1 id="assignment-5-database">Assignment 5 - Database</h1>
+
+<p><strong>Due: 2015-07-22</strong></p>
+
+<p>This assignment involves creating a database and running some queries.</p>
+
+<p>You have two alternatives for completing this assignment. 
+They are listed below.</p>
+
+<p>Instructions for Option 1:</p>
+
+<ol>
+<li>Beginning with the ODS file linked here, import the data in each worksheet into two database tables using LibreOffice Base. 
+
+<ul>
+<li>  <a href="http://inls161.johndmart.in/raw-material/161-database-tables.ods">http://inls161.johndmart.in/raw-material/161-database-tables.ods</a></li>
+</ul></li>
+<li>Once you have the data in the tables, you will need to make several queries and save them. Here are some examples:
+
+<ul>
+<li>  Select all of the books published by Oxford University Press in the United States.</li>
+<li>  Count the books returned by the above query.</li>
+<li>  Find the Average retail price of books in the database, along with the minimum and maximum prices of the books listed. </li>
+<li>  Find how many total physical volumes are represented in the database (note that this does not mean the number of titles in the database, but rather the number of copies).</li>
+</ul></li>
+<li>Create a form for data input and editing. You can do this with the form wizard. Remember that you have to ungroup the field entry boxes from their labels in order to update the labels.<br></li>
+<li>Create a report (template) for one or more of your queries using the report wizard. </li>
+<li>Save and upload and ODB file to your content directory on CodeAnywhere and then link it on your content page. </li>
+<li>Remember to use Git to add, commit and push all of this so that it shows up on your site. </li>
+</ol>
+
+<p>Instructions for Option 2:</p>
+
+<ol>
+<li>Use MySQl to import the tables in the CSV files linked here into a new database. 
+
+<ul>
+<li>  <a href="http://inls161.johndmart.in/raw-material/tblBook.csv">http://inls161.johndmart.in/raw-material/tblBook.csv</a></li>
+<li>  <a href="http://inls161.johndmart.in/raw-material/tblPub.csv">http://inls161.johndmart.in/raw-material/tblPub.csv</a></li>
+</ul></li>
+<li>Link the tables by setting the primary key for the table with publisher info as a foreign key in the table with book info. </li>
+<li>Make some queries and write the results of the queries into new tables. Use the prefix &quot;qry&quot; instead of &quot;tbl&quot; to make a distinction between the two. </li>
+<li>Save your actual query language in a TXT file so that you can recall what you did and figure out what is wrong when something doesn&#39;t work. You can also link to this file on your site in order to clarify the query output that you have saved in new tables. </li>
+<li>You can use the query instructions from the ODB option above or use examples similar to those in the lecture notes. </li>
+<li>Export your database and save it as <code>booksinfo.sql</code>. </li>
+</ol>
+
+<p>More detailed information about how to do all of the tasks in this assignment is available either in the lecture notes directly or from links therein. 
+If you choose option 1, all of the information you need is in the <a href="https://wiki.documentfoundation.org/images/0/02/Base_tutorial.pdf">Base Tutorial</a>.
+Use those and other resources to solve issues and problems that you might run into in the process. </p>
+
+<h2 id="grading">Grading</h2>
+
+<p>Grading for this assignment is based on the completeness of your fileset and also of the data in the files. You should have one database file linked on your site:</p>
+
+<ol>
+<li>booksinfo.odb OR booksinfo.sql (depending on choice above)</li>
+</ol>
+
+<p>These files should be uploaded to your class site for submission. If you were in class and went through the hands-on-keyboard exercises then, you should be able to submit what you created in class. It may need a little tweaking here and there, but should be relatively complete. If you get stuck and need some help, please do not hesitate to ask me. </p>
+
+<p>The databases assignment is worth 15% of your total grade. </p>
+
+
+        </section>
+
+        <aside id="sidebar">
+			<nav>
+	<h1>
+		<a href="http://inls161.johndmart.in">Home</a>
+	</h1>
+	<ul>
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+		
+		<li><a href="/schedule/">Schedule</a></li>
+		
+	
+		
+		
+		<li><a class="active" href="/syllabus/">Syllabus</a></li>
+		
+	
+		
+	
+		
+	
+		
+		
+		<li><a href="/refsheets/">Reference Sheets</a></li>
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	</ul>
+</nav>
+			
+			<p class="repo-owner">
+				<h1>Course Info</h1>
+				<b>Description:</b> Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.<br />
+				<b>Instructor:</b> <a href="mailto:john.d.martin.iii@unc.edu">John D. Martin III</a><br />
+        		<b>Location:</b> 117 Manning Hall (computer lab inside the SILS library)<br />
+				<b>Time:</b> 1100 - 1230<br />
+				<b>Days:</b> MoTuWeThFr<br />
+				<b>Dates:</b> 22 June - 23 July 2015<br />
+				<b>Exam day:</b> 27 July 2015<br />
+				<b>Office hours:</b> I will be available for a half hour before and after our Lab sessions and also by appointment.<br />
+			</p>
+			
+		  	<p>
+				<b>Acknowledgements:</b> I would like to thank Ron Bergquist, upon whose course much of the content of this course is based, as well as all of those who have taught this course over the years since it was originated at SILS.
+		  	</p>
+			<p>
+				<b>Credits: </b>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using a slightly modified version of the <a href="https://github.com/jasonlong/architect-theme">Architect theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>. <a href="https://github.com/pietromenna/jekyll-architect-theme">jekyll-architect-theme</a> is maintained by <a href="https://github.com/pietromenna">pietromenna</a>.
+		    </p>
+		    <p class="repo-owner">
+				Content &copy; John D. Martin III <br />
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">
+								<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+				</a><br />
+				This work is licensed under a 
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.
+		  	</p>
+            <p>
+                <b><a href="https://github.com/jdmar3/inls161" target="_blank">Fork this course on Github.</a></b>
+            </p>
+        </aside>
+      </div>
+    </div>
+
+  </body>
+</html>

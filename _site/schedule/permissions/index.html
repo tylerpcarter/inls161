@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
+	<link href="http://www.unc.edu/wp-content/themes/unc-sites-base-theme/images/ss_img_unc_favicon.ico" rel="shortcut icon">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title> Permissions </title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href=" http://inls161.johndmart.in ">
+		  <h1> Tools for Information Literacy </h1>
+		  <h2> INLS161-001 (Summer II) </h2>
+		</a>
+        <a href="http://sils.unc.edu" class="button"><img width="180" src="/images/silslogo.png" /></a>
+	  </div>
+      <a href="https://github.com/jdmar3/inls161/">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
+      </a>
+	</header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          
+          <h1 id="2015-07-01">2015-07-01</h1>
+
+<h2 id="permissions">Permissions</h2>
+
+<p>Sometimes we will need to specify that certain users can or cannot access a given file. 
+We do this using permissions. </p>
+
+<p>In UNIX systems, permissions can be represented in a number of ways. 
+One way is the representation that we see when we use <code>ls -l</code> in a directory. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">cabox@box-codeanywhere:~/workspace/inls161$ ls -lah                                                                                                                                                                                           
+total 88K                                                                                                                                                                                                                                     
+drwxr-xr-x 12 cabox cabox 4.0K Jul  1 11:06 .                                                                                                                                                                                                 
+drwxrwxr-x  4 cabox cabox 4.0K Jun 30 10:39 ..                                                                                                                                                                                                
+drwxr-xr-x  8 cabox cabox 4.0K Jun 30 10:56 .git                                                                                                                                                                                              
+-rw-r--r--  1 cabox cabox   20 Jun 30 10:39 CNAME                                                                                                                                                                                             
+-rw-r--r--  1 cabox cabox  20K Jun 30 10:39 LICENSE                                                                                                                                                                                           
+-rw-r--r--  1 cabox cabox  580 Jun 30 10:39 README.md                                                                                                                                                                                         
+-rw-r--r--  1 cabox cabox 1.6K Jun 30 10:46 _config.yml                                                                                                                                                                                       
+drwxr-xr-x  2 cabox cabox 4.0K Jul  1 10:06 _drafts                                                                                                                                                                                           
+drwxr-xr-x  2 cabox cabox 4.0K Jun 30 10:39 _includes
+</code></pre></div>
+<p>The readout from <code>ls -lah</code> provides us with information about the directory we are in, the parent directory, and then all of the immediate subdirectories and files. 
+The first field on the left gives us the permissions (<code>drwxr-xr-x</code>). 
+Then number of links (<code>12</code>), owner (<code>cabox</code>), group (<code>cabox</code>), size of file or directory node (<code>4.0K</code>), timestamp of last change (<code>Jul  1 10:06</code>), and finally the file or directory name (.).</p>
+
+<p><code>r</code> means &quot;read.&quot;
+<code>w</code> means &quot;write.&quot;
+<code>x</code> means &quot;execute.&quot;</p>
+
+<p>The first place is to indicate whether or not it is a directory. 
+<code>d</code> means that it is, while <code>-</code> means that it is just a file. </p>
+
+<p>Then the places are grouped into threes. 
+The first triplet refers to the user who owns the file: <code>u</code>.
+The second triplet refers to the group that owns the file: <code>g</code>. 
+The final triplet refers to anyone else on the system: <code>o</code>.</p>
+
+<h3 id="chmod">chmod</h3>
+
+<p>To change permissions, we use a program called <code>chmod</code>.
+This is an abbreviation for &quot;change mode.&quot;
+Mode refers to how the file or directory behaves depending on who accesses it and how. </p>
+
+<p>The basic syntax is as follows;</p>
+
+<p><code>chmod [MODE] [FILENAME]</code></p>
+
+<p>For example, if I want to change the following file to be executable by any user: </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">-rw-r--r--  1 cabox cabox 1.6K Jun 30 10:46 scripts.js
+</code></pre></div>
+<p>I would type:</p>
+
+<p><code>chmod +x scripts.js</code> or <code>chmod a+x scripts.js</code></p>
+
+<p>If I only want it to be executable by me or members of my group, I would type:</p>
+
+<p><code>chmod ug+x scripts.js</code></p>
+
+<p>If I want to make it so that only I can read the file at all, I type:</p>
+
+<p><code>chmod go-r scripts.js</code></p>
+
+<p>And so on. </p>
+
+<h3 id="octal-permissions">Octal permissions</h3>
+
+<p>Sometimes instead of letters, you will see numbers associated with permissions. 
+Instead of being confused about this, let&#39;s go ahead and demystify those. </p>
+
+<p>In this case, you will see a set of three or four numbers as the representation of permissions, like this;</p>
+
+<p><code>0644</code></p>
+
+<p>These numbers correspond to the same representation in the directory listing above:</p>
+
+<p><code>-rw-r--r--</code></p>
+
+<p>Let&#39;s ignore the first digit. 
+It sets some special information about the file. 
+If you are interested in that, read <a href="https://en.wikipedia.org/wiki/Setuid">here</a>.</p>
+
+<p>The second digit represents the user, the same as our first triplet of letters.</p>
+
+<p>The third represents the group, same as the second triplet.</p>
+
+<p>The final digit represents everyone else, just like our last triplet. </p>
+
+<p>Each digit has 8 possibilities (0-8) each of which correspond to a specific mode. 
+This is why we call them &quot;octal&quot; permissions. 
+They are just permissions represented in a base-8 numeric system. </p>
+
+<p>Let&#39;s play around with an online calculator that will let us see how different permissions translate between the two. </p>
+
+<p><a href="http://permissions-calculator.org/">UNIX Permissions Calculator</a></p>
+
+<p>Next up: <a href="/schedule/build-a-site">Get your site up and running</a>. </p>
+
+
+        </section>
+
+        <aside id="sidebar">
+			<nav>
+	<h1>
+		<a href="http://inls161.johndmart.in">Home</a>
+	</h1>
+	<ul>
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+		
+		<li><a class="active" href="/schedule/">Schedule</a></li>
+		
+	
+		
+		
+		<li><a href="/syllabus/">Syllabus</a></li>
+		
+	
+		
+	
+		
+	
+		
+		
+		<li><a href="/refsheets/">Reference Sheets</a></li>
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+	</ul>
+</nav>
+			
+			<p class="repo-owner">
+				<h1>Course Info</h1>
+				<b>Description:</b> Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.<br />
+				<b>Instructor:</b> <a href="mailto:john.d.martin.iii@unc.edu">John D. Martin III</a><br />
+        		<b>Location:</b> 117 Manning Hall (computer lab inside the SILS library)<br />
+				<b>Time:</b> 1100 - 1230<br />
+				<b>Days:</b> MoTuWeThFr<br />
+				<b>Dates:</b> 22 June - 23 July 2015<br />
+				<b>Exam day:</b> 27 July 2015<br />
+				<b>Office hours:</b> I will be available for a half hour before and after our Lab sessions and also by appointment.<br />
+			</p>
+			
+		  	<p>
+				<b>Acknowledgements:</b> I would like to thank Ron Bergquist, upon whose course much of the content of this course is based, as well as all of those who have taught this course over the years since it was originated at SILS.
+		  	</p>
+			<p>
+				<b>Credits: </b>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using a slightly modified version of the <a href="https://github.com/jasonlong/architect-theme">Architect theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>. <a href="https://github.com/pietromenna/jekyll-architect-theme">jekyll-architect-theme</a> is maintained by <a href="https://github.com/pietromenna">pietromenna</a>.
+		    </p>
+		    <p class="repo-owner">
+				Content &copy; John D. Martin III <br />
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">
+								<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+				</a><br />
+				This work is licensed under a 
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.
+		  	</p>
+            <p>
+                <b><a href="https://github.com/jdmar3/inls161" target="_blank">Fork this course on Github.</a></b>
+            </p>
+        </aside>
+      </div>
+    </div>
+
+  </body>
+</html>
