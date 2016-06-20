@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Policies
+category: syllabus
+nav_exclude: true
 ---
 
 ## Course Policies
@@ -48,7 +50,7 @@ Your reward is in the practice of these principles.
 
 However, academic dishonesty in any form is unacceptable, because any breach in academic integrity, however small, strikes destructively at the University's life and work.
 
-### Diversity
+### Diversity and Inclusion
 
 In support of the University's diversity goals and the mission of the School of Information and Library Science, SILS embraces diversity as an ethical and societal value.
 
@@ -67,6 +69,11 @@ The statement represents a commitment of resources to the development and mainte
 Remember, on occasion you may have felt yourself to be a member of a minority group, picked on by a majority group. 
 Here at school, you may find those roles reversed. 
 Do not fall prey to the temptation to use your new majority sensibility to get back at those who may have picked on you in the past, when you were in a minority group. 
+
+People are complex, intersectional beings.
+Our identities are fluid and performative. 
+It is incumbent upon each of us to remember that, particularly if we come from a place of privilege.
+
 *Treating others as you would have them treat you is always a good rule to follow.*
 
 <img width="300px" src="https://touchofmodern.insnw.net/products/000/014/708/30537003d42cb6c83c99e05353bda119_large.jpg" alt="'I think everybody should like everybody.' - Andy Warhol" />

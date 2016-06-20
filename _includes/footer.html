@@ -1,0 +1,15 @@
+<footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    {% for info_hash in site.data.info %}
+    {% assign info = info_hash[1] %}
+      <li>
+        {% if info.link %}<a href="{{ info.link }}" title="{% if info.alt %}{{ info.alt }}{% else %}{{info.var}}{% endif %}">{% endif %}<span class="{{ info.icon }}"></span>{% if info.var %}&nbsp;{{ info.var }}{% endif %}{% if info.link %}</a>{% endif %}
+      </li>
+    {% endfor %}  
+  </ul>
+<div class="credits">
+  <span>{{site.title | upcase }} &nbsp;&nbsp;|&nbsp;&nbsp; {{site.subtitle}} </br> <small>{{site.description}}</small> </span></br>
+<span><small>&copy; {{ site.time | date: '%Y' }}</small></span> 
+</div>  
+</footer>

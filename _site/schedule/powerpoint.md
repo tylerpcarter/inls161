@@ -1,1 +1,0 @@
-http://www.slideshare.net/thecroaker/death-by-powerpoint

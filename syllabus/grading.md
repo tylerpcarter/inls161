@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Grading
+category: syllabus
+nav_exclude: true
 ---
 
 ## Grading Scale

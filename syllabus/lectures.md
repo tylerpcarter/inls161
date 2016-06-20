@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Lectures
+category: syllabus
+nav_exclude: true
 ---
 
 ## Lectures
@@ -13,7 +15,7 @@ Some lecture notes will be very detailed and loaded with images; some lecture no
 
 Refer to the lecture notes either to prepare for what you are going to learn or to review what you have learned.
 Lecture notes will be made available before each class session. 
-See the [schedule]({{ base.url }}/schedule/) for links to lecture notes. 
+See the [schedule]({{ site.baseurl }}/schedule/) for links to lecture notes. 
 
 ### Daily Plan
 
@@ -24,7 +26,7 @@ The first 5 to 10 minutes will be reviewing the material from the previous sessi
 This will be mostly done by you. 
 You will talk about what you learned and I will listen.
 
-The next 50 to 60 minutes will consist of lecture (mostly); examples (a lot); discussion (a fair amount); and practice (some).
+The next 50 to 60 minutes will consist of lecture (some); examples (a lot); discussion (a fair amount); and practice (some).
 
 The last 20 to 30 minutes will be for practice (more) when we have the time and hands-on-keyboards activities (most days).
 
