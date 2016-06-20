@@ -1,0 +1,30 @@
+instructor:
+  link: "http://johndmart.in" 
+  alt: "Instructor home page"
+  icon: icon-user
+  var: "John D. Martin III"
+ email:
+  link: "mailto:john.d.martin.iii@unc.edu" 
+  alt: "Email instructor"
+  icon: icon-mail
+	var:  "john.d.martin.iii@unc.edu</a>
+time:
+  icon: icon-clock2
+	var:  "11:30-13:00
+days:
+  icon: icon-calendar
+	var:  "MoTuWeThFr
+building: 
+  icon: icon-library
+	var:  "Manning Hall
+room: 
+  icon: icon-location
+	var:  "Rm. 117
+github:
+  link: "//github.com/inls161"
+  alt: "Follow on GitHub"
+  icon: icon-github
+rss:
+  link: "/feed"
+  alt: "Add RSS feed"
+  icon: icon-feed
