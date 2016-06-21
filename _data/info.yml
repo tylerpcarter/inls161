@@ -3,23 +3,23 @@ instructor:
   alt: "Instructor home page"
   icon: icon-user
   var: "John D. Martin III"
- email:
-  link: "mailto:john.d.martin.iii@unc.edu" 
+email:
+  link: "mailto:john.d.martin.iii@unc.edu"
   alt: "Email instructor"
   icon: icon-mail
-	var:  "john.d.martin.iii@unc.edu</a>
+  var: "john.d.martin.iii@unc.edu"
 time:
   icon: icon-clock2
-	var:  "11:30-13:00
+  var: "11:30-13:00"
 days:
   icon: icon-calendar
-	var:  "MoTuWeThFr
+  var: "MoTuWeThFr"
 building: 
   icon: icon-library
-	var:  "Manning Hall
+  var: "Manning Hall"
 room: 
   icon: icon-location
-	var:  "Rm. 117
+  var: "Rm. 117"
 github:
   link: "//github.com/inls161"
   alt: "Follow on GitHub"

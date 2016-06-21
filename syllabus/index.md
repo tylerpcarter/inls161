@@ -48,8 +48,7 @@ We will begin with the building blocks of the Internet and the World Wide Web, t
 This will allow us to better understand methods for creating well-formed materials to be used on the Web.
 We will also introduce concepts and practice skills relevant to effective use and understanding of the power built into the tools listed above. 
 
-You will have choices for how to complete each set of tasks. 
-Some may be familiar to you already while others may not. 
+Some of the tools used may be familiar to you already while others may not. 
 If you already know how to use a given set of tools, it will behoove you to learn a new set, thus increasing your technical skills. 
 We will use primarily Free and Open Source Software (F/OSS) when possible and conduct and submit most of our work in open repositories online. 
 
@@ -57,9 +56,11 @@ We will use primarily Free and Open Source Software (F/OSS) when possible and co
 
 This is a paper-free course. 
 There will be no paper products generated in this class and there is no printing requirement. 
+
 All work done in INLS161 will be done on computers either on your personal laptop or on the desktop systems in the SILS lab. 
+You can use whatever computer you wish in the lab that we will use as our classroom. 
+You may also use your own laptops. 
 In most cases, work will be done using web applications in such a way that you might access your workspace from any computer, anywhere. 
-It would behoove you to bring your laptop to class every day as there will be some hands-on-keyboards work done in every class period. 
 
 {% include syllabus-nav.html %}
 
@@ -88,54 +89,34 @@ The best and most current resources for using technology tools are not going to 
 Rather, they will be on forums, blogs, and in ebooks like some of those listed above. 
 They best way to keep abreast of current techniques is to keep up with the resources and tutorials available online.
 
+## Other readings
+
 ### Interfaces
 
-Harris, Tristan. “How Technology Hijacks People’s Minds — from a Magician and Google’s Design Ethicist.” Medium. Last modified May 18, 2016. https://medium.com/swlh/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3.
-
-This is an interesting and insightful piece about how design choices in interfaces affect how we think and interact. 
-
-### What is Code?
-
-Ford, Paul. “What Is Code? If You Don’t Know, You Need to Read This.” Bloomberg.com. Last modified June 11, 2015. http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/.
-
-This is an excellent piece about the need for people at all levels in industries both technologically-focused and otherwise to have a better understanding of how software is developed and implemented. 
-I will refer to this piece occasionally and sections of it will be assigned throughout the course. 
-It is probably a good idea to read the whole thing.
+Harris, Tristan.{% marginnote 'hijack' 'This is an interesting and insightful piece about how design choices in interfaces affect how we think and interact.' %} “How Technology Hijacks People’s Minds — from a Magician and Google’s Design Ethicist.”  Medium. Last modified May 18, 2016. https://medium.com/swlh/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3. 
 
 ### The Linux Command Line
 
-Shotts, William E. The Linux Command Line: A Complete Introduction. San Francisco, California: No Starch Press, 2013. http://linuxcommand.org/tlcl.php.
-
-This book will give you everything you need to be able to operate in a command shell. 
-It is a good reference for everything command line. 
-If you like books in physical form, you can also get it [on Amazon](http://www.amazon.com/Linux-Command-Line-Complete-Introduction/dp/1593273894/). 
+Shotts, William E.{% marginnote 'tlcl' 'This book will give you everything you need to be able to operate in a command shell. It is a good reference for everything command line. If you like books in physical form, you can also get it [on Amazon](http://www.amazon.com/Linux-Command-Line-Complete-Introduction/dp/1593273894/).' %} The Linux Command Line: A Complete Introduction. San Francisco, California: No Starch Press, 2013. http://linuxcommand.org/tlcl.php. 
 
 ### Pro Git
-Chacon, Scott, and Ben Straub. Pro Git. 2nd ed. Apress, 2014. https://git-scm.com/book/en/v2.
+Chacon, Scott, and Ben Straub.{% marginnote 'progit' 'The definitive guide to using git. This will come in handy.' %} Pro Git. 2nd ed. Apress, 2014. https://git-scm.com/book/en/v2. 
 
-The definitive guide to using git. 
-This will come in handy. 
-
-Additionally, the following resources for using git will be very helpful. 
-They may be used in class for reference.
-
-Wynn, Joseph. “A Hacker’s Guide to Git.” Wildly Innacurate. Last modified May 25, 2014. http://wildlyinaccurate.com/a-hackers-guide-to-git/.
+Wynn, Joseph.{% marginnote 'git' 'These resources for using git will be very helpful. They may be used in class for reference.' %} “A Hacker’s Guide to Git.”  Wildly Innacurate. Last modified May 25, 2014. http://wildlyinaccurate.com/a-hackers-guide-to-git/.
 
 Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. http://rogerdudler.github.io/git-guide/.
 
 ### How to Code in HTML5 and CSS3
 
-Wielgosik, Damian. How to Code in HTML5 and CSS3, 2015. http://howtocodeinhtml.com/index.html#toc.
-
-Good introduction to HTML and CSS. 
-We will be referring to this and other guides. 
+Wielgosik, Damian.{% marginnote 'webcode' 'Good introduction to HTML and CSS. We will be referring to this and other guides.' %} How to Code in HTML5 and CSS3, 2015.  http://howtocodeinhtml.com/index.html#toc. 
 
 ### The Cognitive Style of PowerPoint
 
-Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. [Available in Sakai, [open web](http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf), or on [Amazon](https://www.amazon.com/Cognitive-Style-PowerPoint-Pitching-Corrupts/dp/0961392169).]
+Tufte, Edward R.{% marginnote 'tufte' 'We will use this to unlearn what we have learned and then reorient our minds to create better visual presentation aides. Definitely read the whole thing.' %} The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. [Available in Sakai, [open web](http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf), or on [Amazon](https://www.amazon.com/Cognitive-Style-PowerPoint-Pitching-Corrupts/dp/0961392169).] 
 
-We will use this to unlearn what we have learned and then reorient our minds to create better visual presentation aides. 
-Definitely read the whole thing. 
+### What is Code?
+
+Ford, Paul.{% marginnote 'code' 'This is an excellent piece about the need for people at all levels in industries both technologically-focused and otherwise to have a better understanding of how software is developed and implemented. I will refer to this piece occasionally and sections of it will be assigned throughout the course. It is probably a good idea to read the whole thing.' %} “What Is Code? If You Don’t Know, You Need to Read This.” Bloomberg.com. Last modified June 11, 2015. http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/.
 
 {% include syllabus-nav.html %}
 
@@ -168,19 +149,9 @@ The last 20 to 30 minutes will be for practice (more) when we have the time and 
 
 # Lab
 
-Fridays will be reserved as a lab session. 
-These sessions will start and end an hour earlier than regular sessions. 
-
+Fridays will be reserved as a lab session.{% marginnote 'lab' 'I will also make myself available in the lab beginning at 10:30 on Fridays. If you need any extra help or wish to talk about anything, that is a good time to do it. ' %} 
 We will typically have a very short hands-on lesson related to one of your assignment tasks and then time to work through issues in building or completing the assignment. 
 Sometimes we will have a guest on days like this who will show us something interesting that we can put into practice. 
-
-## Computers
-
-You can use whatever computer you wish in the lab that we will use as our classroom. 
-You may also use your own laptops. 
-If you need help installing or configuring a piece of software, I will be available to help you outside of class. 
-Most of our activity will be conducted through web applications in-browser. 
-This will hopefully ease the burden of installing and configuring considerably.
 
 {% include syllabus-nav.html %}
 
@@ -191,6 +162,8 @@ These include a final presentation which will be made during the scheduled final
 All of the tasks are interconnected, so it is important to complete the tasks in succession by the due dates listed in the chart below. 
 
 ## Tasks
+
+{% marginnote 'tab1' '*Table 1*: List of required course tasks' %}
 
 | **Task** | **Components** | **%** | **Due date** |  
 | :------- | :------------- | ----: | -----------: |  
@@ -231,12 +204,21 @@ Attendance is mandatory. Absence will affect your grade in the class. There is n
 
 # Grading 
 
-| Points                                       | Grade UG                        | Grade G | What it means |  
-|:-------------------------------------------- |:------------------------------- |:-----   |:------------- |  
-| 95>                                          | A                               | H       | Mastery of course content at the highest level of attainment that can reasonably be expected |  
-| 92-94 <br /> 87-91 <br /> 83-86 <br /> 80-82 | A- <br /> B+ <br /> B <br /> B- | P       | A totally acceptable performance demonstrating an adequate level of attainment |  
-| 77-79 <br /> 73-76 <br /> 70-72 <br /> 67-69 | C+ <br /> C <br /> C-<br />  D+ | L       | A marginal performance in the required exercises demonstrating a minimal passing level |  
-| 60-66<br />  \<60                            | D<br />  F                      | F       | For whatever reasons, an unacceptable performance |  
+{% marginnote 'tab2' '*Table 2*: Course grades<br/><br/>Explanation of UNC grading systems: http://registrar.unc.edu/academic-services/grades/explanation-of-grading-system/.' %}
+
+| Points            | Grade UG            | Grade G           | What it means |  
+|:-------|:---------|:--------|:------------- |  
+| 95>    | A        | H       | Highest level mastery of course content |
+| 92-94  | A-       | H       | |
+| 87-91  | B+       | P       | |
+| 83-86  | B        | P       | Totally acceptable performance |
+| 80-82  | B-       | P       | |
+| 77-79  | C+       | P       | |
+| 73-76  | C        | P       | |
+| 70-72  | C-       | L       | Marginal performance in course requirements |  
+| 67-69  | D+       | L       | |
+| 60-66  | D        | L       | |
+| \<60   | F        | F       | For whatever reasons, an unacceptable performance | 
 
 ## Grades and Progress
 
