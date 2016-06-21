@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<h1>{{ post.title}}</h1>
-<p class="subtitle">{{ post.date | date: "%B %-d, %Y" }}</p>
-<p class="subtitle">{{ post }}</p>
+<h1>{{ page.title }}</h1>
+<p class="subtitle">{{ page.date | date: "%A, %-d %B %Y" }}</p>
+<p class="subtitle"><span class="smaller">Topics: {{ page.topics }}</span></p>
 
 {{ content }}
 
