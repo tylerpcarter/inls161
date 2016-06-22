@@ -1,1 +1,8 @@
-this is a template placeholder
+---
+layout: post
+title: ""
+category: 
+tags: 
+- tag
+- tag
+---
