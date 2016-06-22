@@ -637,6 +637,64 @@ hr.slender {
 
 }
 
+/* TAGS */
+
+.tags,{list-style:none;
+  margin:0;
+  overflow:hidden;
+  padding:0;
+  text-indent:0;
+}
+
+.tags li{float:left;
+  margin:0;
+  padding:0;
+  text-indent:0;
+}
+
+.tag,.tag:hover,.tag:visited{text-decoration:none}
+
+.tag{ font-weight: 500;
+  background:$contrast-color;
+  border-radius:0.2rem 0.2rem 0.2rem 0.2rem;
+  color: $bg-color;
+  display:inline-block;
+  height:1.6rem;
+  line-height:1.6rem;
+  padding:0 0.6667rem 0 1.333rem;
+  position:relative;
+  margin:0 0.6667rem 0.6667rem 0;
+  -webkit-transition:color .2s
+}
+
+.tag::before{ background:$bg-color;
+  content:'';
+  position:absolute}
+
+.tag-archive-font{ font-size:1.2rem }
+
+.tag::before{ border-radius:0.6667rem;
+  box-shadow:inset 0 1px rgba(0,0,0,.25);
+  height:0.4rem;
+  left:0.6rem;
+  width:0.4rem;
+  top:0.6rem }
+
+/*.tag::after { border-bottom:13px solid transparent;
+  border-left:0.6667rem solid $contrast-color; 
+  border-top:0.8667rem solid transparent;
+  right:0;
+  top:0 
+} */
+
+.tag:hover{ background-color:$contrast-color-dark;
+  color:$bg-color }
+
+//.tag:hover::after{ border-left-color:$contrast-color-dark }
+
+.tag:visited{ color: $bg-color}
+
+//.icon-tags{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAuklEQVQ4jbXTrxJBQRTH8RsEQfAINwqiKHoEUfAYgiaIoiiIHsMDCKIgCIIgCILwEewd15/LXjN+M6fs7Pc755ydTZJ/BRV0UQvVxxSzUBM0i+AG1kHQxs77bIrgXQ4+5YAjhlhmB2VgGIR7dZwfBBEwLMJuOg8dRMJZDvmRysLPmSduC+mF1rYl4D3SBKsgqIbDWLiRzd90H6GLSzRc8AKfJK9wCUkxHCH5DuckKUZuH6iFMdIo+JdcAcegeBZTaArHAAAAAElFTkSuQmCC)}
 
 /* --- Icomoon icon fonts CSS --*/
 @font-face {

@@ -9,9 +9,13 @@ weight: 5
         <li class="listing">
           <hr class="slender">
           <a href="{{ post.url | prepend: site.baseurl }}"><h1 class="contrast">{{ post.title }}</h1></a>
-          <br>{{ post.date | date: "%B %-d, %Y" }}  <br/>
-          <div>{{ post.excerpt }}</div> 
-          <div>Topics: {{ post.topics }}</div>
+          <big>{{ post.date | date: "%B %-d, %Y" }}</big>
+          <br/>
+          <div>{{ post.excerpt }}</div>
+          <br/>
+          <ul class="tags">
+            {% for tag in post.tags %}<li><a href="/topics#{{ tag }}" class="tag">{{ tag | replace: " ", "-" }}</a></li>{% endfor %}
+          </ul>
         </li>
     {% endfor %}
   </ul>
