@@ -14,12 +14,9 @@ time:
 days:
   icon: icon-calendar
   var: "MoTuWeThFr"
-building: 
+location: 
   icon: icon-library
-  var: "Manning Hall"
-room: 
-  icon: icon-location
-  var: "Rm. 117"
+  var: "117 Manning Hall"
 github:
   link: "//github.com/inls161"
   alt: "Follow on GitHub"
