@@ -5,13 +5,13 @@ weight: 5
 ---
 
   <ul class="content-listing ">
-    {% for post in site.posts %}      
+    {% for post in site.posts reversed %}      
         <li class="listing">
           <hr class="slender">
           <a href="{{ post.url | prepend: site.baseurl }}"><h1 class="contrast">{{ post.title }}</h1></a>
           <br>{{ post.date | date: "%B %-d, %Y" }}  <br/>
           <div>{{ post.excerpt }}</div> 
-          <div>Topics: {{ post.tags }}</div>
+          <div>Topics: {{ post.topics }}</div>
         </li>
     {% endfor %}
   </ul>
