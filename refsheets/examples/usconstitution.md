@@ -11,6 +11,7 @@ edition: 11
 language: English
 editor: John D. Martin III
 source: http://www.gutenberg.org/cache/epub/5/pg5.txt
+nav_exclude: true
 ---
 
 # THE CONSTITUTION OF THE UNITED STATES OF AMERICA, 1787

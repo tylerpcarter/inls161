@@ -16,6 +16,7 @@ department: INLS
 course-number: "161"
 course-section: "001"
 course-term: Summer II
+course-year: "2016"
 dates: 20 June 2016 - 25 July 2016
 exam: 25 July 2016 (11:30-14:30)
 
@@ -34,7 +35,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 permalink: pretty
 timezone: America/New_York
 
-excerpt_separator: \\excerpt  # you can specify your own separator, of course.
+excerpt_separator: <excerpt/>  # you can specify your own separator, of course.
 
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
 post:

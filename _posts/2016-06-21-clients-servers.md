@@ -15,7 +15,8 @@ interact with one another. We'll also begin discussing the history of
 computing in the context of operating systems, UNIX, and Linux.
 
 In class we will also start with some hands-on-keyboards practice with
-moving around the shell and manipulating files. \\excerpt
+moving around the shell and manipulating files. 
+<excerpt/>
 
 Clients
 =======

@@ -4,12 +4,17 @@ title: Schedule
 weight: 5
 ---
 
+<br/>
+<span class="huge date"><a href="#today">{{ site.time | date: "%A, %-d %b %Y" }}</a></span> 
+
   <ul class="content-listing ">
     {% for post in site.posts reversed %}      
         <li class="listing">
           <hr class="slender">
-          <a href="{{ post.url | prepend: site.baseurl }}"><h1 class="contrast">{{ post.title }}</h1></a>
-          <big>{{ post.date | date: "%B %-d, %Y" }}</big>
+          {% capture datestamp %}{{post.date | date: "%F"}}{% endcapture %}
+          {% capture today %}{{site.time | date: "%F"}}{% endcapture %}
+          <a href="{{ post.url | prepend: site.baseurl }}" ><h1 class="contrast" {% if datestamp == today  %}id="today"{% endif %}>{{ post.title }}</h1></a>
+          <span class="larger">{{ post.date | date: "%B %-d, %Y" }}</span>
           <br/>
           <div>{{ post.excerpt }}</div>
           <br/>

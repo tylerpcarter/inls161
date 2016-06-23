@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: page
 title: Networks Reference Sheet
+nav_exclude: true
 ---
 
 # {{ page.title }}

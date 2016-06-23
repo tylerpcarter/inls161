@@ -1,4 +1,8 @@
-
+---
+layout: page
+title: LaTeX Reference
+nav_exclude: true
+---
 `wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz`
 
 `tar xvzf install-tl-unx.tar.gz`

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Git Reference Sheet
+nav_exclude: true
 ---
 
 # {{ page.title }}

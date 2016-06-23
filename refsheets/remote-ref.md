@@ -1,6 +1,7 @@
 ---
-layout: default
-title: Remote Operation Reference Sheet
+layout: page
+title: Remote Operation Reference
+nav_exclude: true
 ---
 
 # {{ page.title }}

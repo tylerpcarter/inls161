@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Examples of files
+nav_exclude: true
 ---
 
 # {{ page.title }}

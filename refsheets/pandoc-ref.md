@@ -1,6 +1,7 @@
 ---
-layout: default
-title: Pandoc Reference Sheet
+layout: page
+title: Pandoc Reference
+nav_exclude: true
 ---
 
 # {{ page.title }}

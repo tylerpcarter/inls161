@@ -394,7 +394,19 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
 //helper classes
 
 .contrast { color: $contrast-color;}
+
+//Text sizes
+
+.tiny { font-size: 50%; }
+.small { font-size: 60%; }
 .smaller { font-size: 80%;}
+.normalsize { font-size: 100%;}
+.large { font-size: 120%; }
+.larger { font-size: 140% }
+.huge { font-size: 150%; }
+
+.date { font-family: $sans-font }
+
 //Nav and Footer styling area
 
 header > nav.group, body footer {

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Remote Operation Reference</title>
+  <meta name="description" content="Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="/css/tufte.css"> 
+  
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+
+  <link rel="canonical" href="http://inls161.johndmart.in/refsheets/remote-ref/">
+
+  <link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="http://inls161.johndmart.in/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/161icon.png" alt="UNC"></a>
+	
+	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/">Tools for Information Literacy</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/syllabus/">Syllabus</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/schedule/">Schedule</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/assignments/">Assignments</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/refsheets/">Reference</a>
+		    
+	    
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1>Remote Operation Reference</h1>
+<p class="subtitle"></p>
+
+<h1 id="remote-operation-reference">Remote Operation Reference</h1>
+
+<p>Dollar sign ($) in the command prompt means that you are in a user shell. </p>
+
+<p>What directory am I in right now?</p>
+
+<p><code>pwd</code></p>
+
+<p>Make me a new directory right here:</p>
+
+<p><code>mkdir mydirectory</code></p>
+
+<p>Move into that new directory that I just made:</p>
+
+<p><code>cd mydirectory</code></p>
+
+<p>Show me what is in this directory:</p>
+
+<p><code>ls</code></p>
+
+<p>Show me more information about what is in this directory:</p>
+
+<p><code>ls -lah</code></p>
+
+<p>Make a new blank file with this name:</p>
+
+<p><code>touch myfile</code></p>
+
+<p>Output this on the command line:</p>
+
+<p><code>echo &quot;Hello, world!&quot;</code></p>
+
+<p>Put that thing that I just said into the file I made before:</p>
+
+<p><code>echo &quot;Hello, world!&quot; &gt; myfile</code></p>
+
+<p>Put this other thing that I want to say into the same file on a new line:</p>
+
+<p><code>echo &quot;This is another line.&quot; &gt;&gt; myfile</code></p>
+
+<p>Show me what is in that file:</p>
+
+<p><code>cat myfile</code></p>
+
+<p>Put this thing I want to say into a totally new file:</p>
+
+<p><code>echo &quot;This is a third line.&quot; &gt; myfile2</code></p>
+
+<p>Put the stuff in this new file on a new line in my old file:</p>
+
+<p><code>cat myfile2 &gt;&gt; myfile</code></p>
+
+<p>Make a backup copy of that file:</p>
+
+<p><code>cp myfile myfile.bck</code></p>
+
+<p>Rename the old file to a new thing:</p>
+
+<p><code>mv myfile mynewfile</code></p>
+
+<p>Remove that other file that I created:</p>
+
+<p><code>rm myfile2</code></p>
+
+<p>Become a SUPERUSER:</p>
+
+<p><code>sudo COMMAND</code></p>
+
+<p>Become the ROOT user: </p>
+
+<p><code>sudo su</code></p>
+
+<p>Search for this software package:</p>
+
+<p><code>apt-cache search nano</code></p>
+
+<p>Install that software package (text editor):</p>
+
+<p><code>sudo apt-get install nano</code></p>
+
+<p>Install a different editor:</p>
+
+<p><code>sudo apt-get install vim</code></p>
+
+<p>Install yet another text editor:</p>
+
+<p><code>sudo apt-get install emacs23</code></p>
+
+<p>Open my file in that editor:</p>
+
+<p><code>nano mynewfile</code></p>
+
+
+    </article>
+    <span class="print-footer">Remote Operation Reference - </span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    
+    
+      <li>
+        <a href="http://johndmart.in" title="Instructor home page"><span class="icon-user"></span>&nbsp;John D. Martin III</a>
+      </li>
+    
+    
+      <li>
+        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="icon-mail"></span>&nbsp;john.d.martin.iii@unc.edu</a>
+      </li>
+    
+    
+      <li>
+        <span class="icon-clock2"></span>&nbsp;11:30-13:00
+      </li>
+    
+    
+      <li>
+        <span class="icon-calendar"></span>&nbsp;MoTuWeThFr
+      </li>
+    
+    
+      <li>
+        <span class="icon-library"></span>&nbsp;117 Manning Hall
+      </li>
+    
+    
+      <li>
+        <a href="//github.com/inls161" title="Follow on GitHub"><span class="icon-github"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed" title="Add RSS feed"><span class="icon-feed"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+  <span>TOOLS FOR INFORMATION LITERACY &nbsp;&nbsp;|&nbsp;&nbsp; INLS161-001 (Summer II)
+    <br/> 
+  <span class="smaller">Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</span>
+  <br/><br/>
+  <span class="smaller"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.</span>
+  <br/>
+  <span class="smaller"><a href="/credits/">Content &copy; 2016 John D. Martin III</a></span>
+</div>  
+</footer>
+  </body>
+</html>
