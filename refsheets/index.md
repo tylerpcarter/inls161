@@ -16,9 +16,17 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 [Networking]({{ site.baseurl }}/refsheets/network-ref/)
 
+# Text Editors
+
+## VIM (Vi Improved)
+
+<a href="http://vim.rtorr.com/" target="_blank">VIM Cheat Sheet - Richard Torruellas</a>
+
+<a href="http://tnerual.eriogerg.free.fr/vimqrc.pdf" target="_blank">VIM Quick Reference Card - Laurent Gregoire</a>
+
 # Git
 
-<a href="http://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf" target="_blank">Git - The Simple Guide</a>
+<a href="http://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf" target="_blank">Git - The Simple Guide (PDF)</a> <a href="https://rogerdudler.github.io/git-guide/" target="_blank">(WEB)</a>
 
 <a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">Git Cheat Sheet - GitHub</a>
 
@@ -27,6 +35,12 @@ These reference sheets correspond to things that we actualy did or will do in cl
 ## Reference sheets from in-class activities
 
 [Git local]({{ site.baseurl }}/refsheets/git-ref/)
+
+# GitHub
+
+<a href="https://guides.github.com/activities/hello-world/" target="_blank"Hello World - GitHub Guides</a>
+
+## Reference sheets from in-class activities
 
 [Git remote]({{ site.baseurl }}/refsheets/github-ref/)
 
@@ -75,17 +89,6 @@ The help/manpage file for Pandoc is linked here: <a href="http://pandoc.org/READ
 #LibreOffice
 
 <a href="https://www.libreoffice.org/get-help/documentation/" target="_blank">LibreOffice Documentation for all Packages</a>
-
-## Calc 
-
-<a href="https://help.libreoffice.org/Calc/Functions_by_Category" target="_blank">Spreadsheet Functions by Category - LibreOffice Wiki</a>
-
-<a href="https://forum.openoffice.org/en/forum/viewtopic.php?t=39529" target="_blank">
-[Tutorial] Ten concepts that every Calc user should know - Apache OpenOffice Forum</a>
-
-## Base
-
-<a href="https://wiki.documentfoundation.org/images/0/02/Base_tutorial.pdf" target="_blank">Base Tutorial - Mariano Casanova</a>
 
 # All the things
 
