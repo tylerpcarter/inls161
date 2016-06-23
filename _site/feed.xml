@@ -5,9 +5,108 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>http://inls161.johndmart.in/</link>
     <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Jun 2016 00:25:40 -0400</pubDate>
-    <lastBuildDate>Thu, 23 Jun 2016 00:25:40 -0400</lastBuildDate>
+    <pubDate>Thu, 23 Jun 2016 11:25:26 -0400</pubDate>
+    <lastBuildDate>Thu, 23 Jun 2016 11:25:26 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;p&gt;We&amp;#39;ve discussed a bit about how servers and clients operate. 
+Now we&amp;#39;ll look at what happens when we put lots of servers and lots of clients together. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;p&gt;A network is a relatively simple concept with some complex underlying technologies. 
+Each computer or device in a network can be referred to as a &amp;quot;node.&amp;quot; &lt;/p&gt;
+
+&lt;p&gt;Information is transmitted through networks in something called a &amp;quot;packet.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;Packets of information are sent from node to node through paths called &amp;quot;routes.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;A &amp;quot;router&amp;quot; is a device that receives packets and sends them on to their destination. &lt;/p&gt;
+
+&lt;h2 id=&quot;types-of-networks-(topology)&quot;&gt;Types of networks (topology)&lt;/h2&gt;
+
+&lt;p&gt;Different networks have different physical or virtual arrangements of devices.&lt;label for=&#39;nettypes&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;nettypes&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/9/97/NetworkTopologies.svg&quot; target=&quot;_blank&quot; &gt;&lt;img width=&quot;200px&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/NetworkTopologies.svg/200px-NetworkTopologies.svg.png&quot; alt=&quot;Types of networks&quot; /&gt;&lt;/a&gt; &lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;Most of the networks that we deal with on a given day are star networks. 
+They might be connected to other star networks so that you will end up with a star of stars. 
+In these networks each device connects to a node and then that node sends them elsewhere on the network. 
+The node that is used to connect is usually either a router or switch of some kind. 
+Connections occur through a single path. 
+If a connection is lost, either through physical network failure or through software failure, it is not possible to re-establish the connection unless the route is restored. &lt;/p&gt;
+
+&lt;p&gt;Most local area networks (LANs) operate in this way. &lt;/p&gt;
+
+&lt;p&gt;Some networks allow any device to connect to any other device. 
+These are called mesh networks. &lt;/p&gt;
+
+&lt;p&gt;A mesh network is self-healing, which means that if a connection is dropped between any two given devices, the same connection can be re-established through a different route. 
+These networks are not typically in use on LANs, but there is a very large one that we interact with on a near-continuous basis.&lt;/p&gt;
+
+&lt;h1 id=&quot;inter-networks&quot;&gt;Inter-networks&lt;/h1&gt;
+
+&lt;p&gt;Inter-networks have several layers. &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Link-layer: communication between hosts on a single network&lt;/li&gt;
+&lt;li&gt;Internet layer: communication between networks &lt;/li&gt;
+&lt;li&gt;Transport layer: communication between hosts&lt;/li&gt;
+&lt;li&gt;Application layer: communication between processes&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The communication protocols that are used to govern how information is routed through these layers are called Transmission Control Protocol and Internet Protocol (TCP/IP).&lt;/p&gt;
+
+&lt;p&gt;TCP/IP governs the way that all information is routed through networks. &lt;/p&gt;
+
+&lt;p&gt;These protocols are how we derive addresses on networks. 
+Different networks have different modes of addressing, but they use a similar structure. 
+It looks something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;192.168.1.1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Each block of numbers in that string of numbers and dots is called a quad and can be used either to represent a device or a subnet. 
+The first three quads might represent subnets of subnets and the last represents a subnet of addresses. &lt;/p&gt;
+
+&lt;p&gt;Each number can range from 0-255, meaning that it can address a space with 256 individual devices or subnets in the network. 
+The limit is due to the fact that each quad is actually a binary number which can address an 8-bit space. 
+8-bit means that in each quad there are 8 individual binary bits or on/off pairs that can be flipped to record the number. 
+This means that the address above actually reads like this in binary:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;11000000.10101000.00000001.00000001&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;With this address structure, we can address 256&lt;sup&gt;4&lt;/sup&gt;, or 256*256*256*256 = 4,294,967,296, addresses.&lt;label for=&#39;256&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;256&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;Why 256 addresses?&lt;br/&gt;&lt;br/&gt;Wilson, Gray. “The Story of 256.” &lt;a href=&quot;http://256.com/&quot;&gt;http://256.com/&lt;/a&gt;. Last modified 2002. &lt;a href=&quot;http://256.com/256.html.&quot;&gt;http://256.com/256.html.&lt;/a&gt;} &lt;/span&gt;
+When you make a change to the DNS information related to a site or host, it propagates through this network of root servers. &lt;/p&gt;
+
+&lt;p&gt;When we type &lt;code&gt;unc.edu&lt;/code&gt; into a browser or other network tool, a query is made against a DNS server somewhere and the DNS server then tells us where that domain is located physically (or in some cases virtually).
+Then a request is made to the nearest routing host on our network which sends the request to the next and to the next until it hits its destination. 
+When the request arrives at its intended target, that host responds by attempting to fulfill the request and route the information back to the origin of the request. &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Et voila!&lt;/em&gt; It all happens in the blink of an eye.&lt;/p&gt;
+
+&lt;p&gt;Next we will look at some methods for figuring out what is happening on a network during that blink. &lt;/p&gt;
+
+&lt;h1 id=&quot;network-tools&quot;&gt;Network tools&lt;/h1&gt;
+
+&lt;p&gt;Next week, we will explore networks a bit more and talk about some of the tools that we can and will use to better understand the networks around us. &lt;/p&gt;
+
+&lt;p&gt;For the rest of the session today, we&amp;#39;ll be exploring more using git and GitHub. &lt;/p&gt;
+
+&lt;h1 id=&quot;for-next-time&quot;&gt;For Next Time&lt;/h1&gt;
+
+&lt;p&gt;Though we will go over this in class, I would like you to review the &amp;quot;Hello World&amp;quot; GitHub Guide on your own time.&lt;label for=&#39;hello&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;hello&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;“Hello World.” GitHub Guides. Last modified April 7, 2016. Accessed June 23, 2016. &lt;a href=&quot;https://guides.github.com/activities/hello-world/&quot;&gt;https://guides.github.com/activities/hello-world/&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;We will use some of its principles in the Friday lab to get ourselves set up for the next assignment: building a web page from scratch (sort of).&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/2016/06/23/networks/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/2016/06/23/networks/</guid>
+        
+        <category>tag</category>
+        
+        <category>tag</category>
+        
+        
+      </item>
     
       <item>
         <title>Version Control</title>
