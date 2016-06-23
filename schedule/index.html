@@ -5,7 +5,7 @@ weight: 5
 ---
 
 <br/>
-<span class="huge date"><a href="#today">{{ site.time | date: "%A, %-d %b %Y" }}</a></span> 
+<span class="huge date"><a href="#today">{{ site.time | date: "%A, %-d %B %Y" }}</a></span> 
 
   <ul class="content-listing ">
     {% for post in site.posts reversed %}      
@@ -14,7 +14,7 @@ weight: 5
           {% capture datestamp %}{{post.date | date: "%F"}}{% endcapture %}
           {% capture today %}{{site.time | date: "%F"}}{% endcapture %}
           <a href="{{ post.url | prepend: site.baseurl }}" ><h1 class="contrast" {% if datestamp == today  %}id="today"{% endif %}>{{ post.title }}</h1></a>
-          <span class="larger">{{ post.date | date: "%B %-d, %Y" }}</span>{% if datestamp == today  %}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="smaller date contrast">TODAY</span>{% endif %}
+          <span class="larger">{{ post.date | date: "%A, %-d %B %Y" }}</span>{% if datestamp == today  %}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="smaller date contrast">TODAY</span>{% endif %}
           <br/>
           <div>{{ post.excerpt }}</div>
           <br/>
