@@ -6,7 +6,7 @@ weight: 3
 
 ## About the Course
 
-{% marginnote 'info' '<big>**_Course Info_**</big><br/>**Instructor:** [John D. Martin III](http://johndmart.in)<br/>**Email:** <a href="mailto:john.d.martin.iii@unc.edu">john.d.martin.iii@unc.edu</a><br/>**Location:** 117 Manning Hall<br/>**Time:** 11:30-13:00<br/>**Days:** MoTuWeThFr<br/>**Lab:** Fridays 10:30-12:00<br/>**Dates:** 20 June 2016 - 25 July 2016<br/>**Exam day:** 25 July 2016 (11:30-14:30)' %}{% newthought 'INLS161 focuses on concepts and tools' %} necessary for communicating information to users.
+{% marginnote 'info' '<big>**_Course Info_**</big><br/>**Instructor:** [John D. Martin III](http://johndmart.in)<br/>**Email:** <a href="mailto:john.d.martin.iii@unc.edu">john.d.martin.iii@unc.edu</a><br/>**Office hours:** I'll be available for help in the lab starting at 10:30 on Fridays. Email me to meet any other weekday.<br/>**Location:** 117 Manning Hall<br/>**Time:** 11:30-13:00<br/>**Days:** MoTuWeThFr<br/>**Lab:** Friday is lab day, same time same place<br/>**Dates:** 20 June 2016 - 25 July 2016<br/>**Exam day:** 25 July 2016 (11:30-14:30)' %}{% newthought 'INLS161 focuses on concepts and tools' %} necessary for communicating information to users.
 This is a critical component of information literacy, which involves seeking, evaluating, and utilizing information. 
 INLS151, titled "Retrieving and Analyzing Information," is focused on the seeking and evaluating components of information literacy. 
 This course is about effective use and communication. 
