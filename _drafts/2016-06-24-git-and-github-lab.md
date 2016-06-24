@@ -1,8 +1,11 @@
 ---
 layout: post
-title: ""
-category: 
+title: "Lab #1: Git and GitHub"
+category: Basics
 tags: 
-- tag
-- tag
+- version control
+- git
+- GitHub
+- web design
 ---
+

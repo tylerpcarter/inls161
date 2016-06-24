@@ -6,6 +6,8 @@ weight: 9
 
 # UNIX Commands
 
+{% marginnote 'unix' '**UNIX** is a general purpose operating system originally developed in the 1970s by Ken Thompson and Dennis Ritchie at Bell Labs. It's utility and wide use has given rise to a number of clones&emdash;operating systems that are functionally identical.' %}
+
 <a href="https://ubuntudanmark.dk/filer/fwunixref.pdf" target="_blank">FOSSWire UNIX Command Reference</a>
 
 ## Reference sheets from in-class activities
