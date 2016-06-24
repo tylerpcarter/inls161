@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Examples of files</title>
+  <meta name="description" content="Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="/css/tufte.css"> 
+  
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+
+  <link rel="canonical" href="http://inls161.johndmart.in/refsheets/examples/">
+
+  <link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="http://inls161.johndmart.in/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/161icon.png" alt="UNC"></a>
+	
+	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/">Tools for Information Literacy</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/syllabus/">Syllabus</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/schedule/">Schedule</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/assignments/">Assignments</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/refsheets/">Reference</a>
+		    
+	    
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1 id="examples-of-files">Examples of files</h1>
+
+<h2 id="formatted-text-files">Formatted text files</h2>
+
+<p>Here is a list of example files. </p>
+
+<p>Each file is produced with the command that directly precedes it.</p>
+
+<p><a href="/refsheets/examples/usconstitution.txt" target="_blank">Original TXT file</a></p>
+
+<p><a href="/refsheets/examples/usconstitution.md" target="_blank">My Markdown file</a></p>
+<div class="highlight"><pre><code class="language-" data-lang="">pandoc -S -o usconstitution.odt usconstitution.md
+</code></pre></div>
+<p><a href="/refsheets/examples/usconstitution.odt" target="_blank">ODT file created by Pandoc</a></p>
+<div class="highlight"><pre><code class="language-" data-lang="">pandoc -S -o usconstitution.docx usconstitution.md
+</code></pre></div>
+<p><a href="/refsheets/examples/usconstitution.docx" target="_blank">DOCX file created by Pandoc</a></p>
+<div class="highlight"><pre><code class="language-" data-lang="">pandoc -S --title="THE CONSTITUTION OF THE UNITED STATES OF AMERICA, 1787" -o usconstitution.html usconstitution.md &amp;&amp; pandoc -S --toc -o usconstitution.pdf usconstitution.html
+</code></pre></div>
+<p><a href="/refsheets/examples/usconstitution.pdf" target="_blank">PDF file created by Pandoc (first stage conversion to HTML to preserve table formatting)</a></p>
+<div class="highlight"><pre><code class="language-" data-lang="">pandoc -S --reference-odt=apa.ott -o usconstitution-apa.odt usconstitution.md
+</code></pre></div>
+<p><a href="/refsheets/examples/usconstitution-apa.odt" target="_blank">ODT file created by Pandoc with reference file for styling</a></p>
+
+    </article>
+    <span class="print-footer">Examples of files - </span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    
+    
+      <li>
+        <a href="http://johndmart.in" title="Instructor home page"><span class="icon-user"></span>&nbsp;John D. Martin III</a>
+      </li>
+    
+    
+      <li>
+        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="icon-mail"></span>&nbsp;john.d.martin.iii@unc.edu</a>
+      </li>
+    
+    
+      <li>
+        <span class="icon-clock2"></span>&nbsp;11:30-13:00
+      </li>
+    
+    
+      <li>
+        <span class="icon-calendar"></span>&nbsp;MoTuWeThFr
+      </li>
+    
+    
+      <li>
+        <span class="icon-library"></span>&nbsp;117 Manning Hall
+      </li>
+    
+    
+      <li>
+        <a href="//github.com/inls161" title="Follow on GitHub"><span class="icon-github"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed" title="Add RSS feed"><span class="icon-feed"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+  <span>TOOLS FOR INFORMATION LITERACY &nbsp;&nbsp;|&nbsp;&nbsp; INLS161-001 (Summer II)
+    <br/> 
+  <span class="smaller">Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</span>
+  <br/><br/>
+  <span class="smaller"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.</span>
+  <br/>
+  <span class="smaller"><a href="/credits/">Content &copy; 2016 John D. Martin III</a></span>
+</div>  
+</footer>
+  </body>
+</html>

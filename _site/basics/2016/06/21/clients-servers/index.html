@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Clients and Servers</title>
+  <meta name="description" content="Today we&#39;ll talk about some of the basic ways that computers work andinteract with one another. We&#39;ll also begin discussing the history ofcomputing i...">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="/css/tufte.css"> 
+  
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+
+  <link rel="canonical" href="http://inls161.johndmart.in/basics/2016/06/21/clients-servers/">
+
+  <link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="http://inls161.johndmart.in/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/161icon.png" alt="UNC"></a>
+	
+	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/">Tools for Information Literacy</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/syllabus/">Syllabus</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/schedule/">Schedule</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/assignments/">Assignments</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/refsheets/">Reference</a>
+		    
+	    
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1>Clients and Servers</h1>
+
+
+
+<p class="subtitle">Tuesday, 21 June 2016</p>
+
+<p>Today we&#39;ll talk about some of the basic ways that computers work and
+interact with one another. We&#39;ll also begin discussing the history of
+computing in the context of operating systems, UNIX, and Linux.</p>
+
+<p>In class we will also start with some hands-on-keyboards practice with
+moving around the shell and manipulating files. 
+<excerpt/></p>
+
+<h1 id="clients">Clients</h1>
+
+<p>A &quot;client&quot; in the context of computing is any hardware or software that
+is used to connect to a service being run on a server. <span
+class="marginnote">The client-server
+model<br/><br/><a href="https://en.wikipedia.org/wiki/Client_(computing)#/media/File:Client-server-model.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/200px-Client-server-model.svg.png" alt=""></a>
+</span></p>
+
+<p>Almost every device that you interact with now is a client. Each time
+your phone reaches out to see if you have new messages, it is a client.
+When you go to web browser to bring up Facebook, your computer is a
+client. When you you talk to Siri or Alexa or Google Now or whatever
+creepy robot voice you talk to, your are talking to a client which sends
+your request out to a server for processing.</p>
+
+<p>Very little in the networked world operates locally, and that is as it
+should be.</p>
+
+<h1 id="servers">Servers</h1>
+
+<p>A &quot;server&quot; is a piece of hardware or software that runs a service for
+clients to connect to. <span class="marginnote">A typical server rack
+in a datacenter<br/><br/><a href="https://en.wikipedia.org/wiki/Data_center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Rack001.jpg/360px-Rack001.jpg" alt=""></a>
+</span></p>
+
+<p>Sometimes, certain types of servers are referred to as &quot;daemons.&quot; Don&#39;t
+worry, your computing infrastructure is not possessed.</p>
+
+<p>They are called this in reference to Maxwell&#39;s demon, which is itself a
+reference to the ancient Greek notion of a δαίμων (daimon). These were
+spirits that operated the world around us, unseen and unseeable. Broadly
+construed, they were the forces that made all of the otherwise
+unexplained processes happen in the physical world. James Clerk Maxwell
+adapted this notion to pose potential violations to the Second Law of
+Thermodynamics. His demon acted precisely in the way that the Greek
+daimon did, except naughty.</p>
+
+<p>All that aside, a daemon is a &quot;background process.&quot; Some piece of
+software that runs on a computer in the background and waits for
+something to happen. These processes listen, typically on a specific
+port for an event to occur. When that event occurs, the daemon executes
+some set of instructions.</p>
+
+<p>In a server, that event will be a request for something.</p>
+
+<p>In a web server, that event will be a request for a web page or some
+other web content.</p>
+
+<p>On a web server, the daemon that serves the web pages listens on port
+number 8000, unless otherwise specified.</p>
+
+<p>When it receives a request on port 8000, it dutifully gathers up all of
+the requisite parts of the web page, interprets them, and then sends
+them to your client (a.k.a., your browser) and then all of that
+information gets prettified and placed on your screen so that it can go
+into your eyeballs and then your brain.</p>
+
+<h2 id="questions-to-keep-in-mind:-{#questions-to-keep-in-mind:}">Questions to keep in mind: {#questions-to-keep-in-mind:}</h2>
+
+<ol>
+<li> Why do we use this model?</li>
+<li> What are the advantages?</li>
+<li> Why not just run all this stuff on the devices in our
+hands/pockets/backpacks?</li>
+</ol>
+
+<p>In this class, when we operate on a remote system, we will do so through
+a few different protocols, which will be detailed shortly.</p>
+
+<p>Operating on a remote system directly--that is, manipulating files and
+issuing instructions in a command shell--is preferable if you wish to
+have a high level of control over what you are doing. It also keeps you
+closer to &quot;bare-metal&quot; computing. In most cases, what we will be doing
+is not, in fact, bare metal computing, but rather interacting with
+systems that run on huge banks of servers, the resources of which have
+been virtualized and distributed across many more systems than there
+could possibly be if each were running on its own.</p>
+
+<p>This abstraction, however, does not take us too far from the experience
+that we are aiming at. We will learn all the same techniques as if we
+were running on systems directly.</p>
+
+<h1 id="linux-and-unix">Linux and UNIX</h1>
+
+<p>I will not go too deeply into the history of Linux and UNIX, except to
+say a few things and explain why we are using these as our primary
+platforms for operation.</p>
+
+<p>UNIX is a general purpose, multitasking, multi-user operating system
+designed in the 1970s at Bell Labs. <span class="marginnote">UNIX
+history<br/><br/><a href="https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Unix_history-simple.svg/200px-Unix_history-simple.svg.png" alt="UNIX
+History"></a>
+</span> The name &quot;UNIX&quot; now refers to a whole family of operating
+systems.</p>
+
+<p>UNIX serves as the precursor to a complete, independent clone thereof
+called &quot;Linux.&quot; Linux was developed initially in 1991 by a student at
+Helsinki University named Linux Torvalds, who still develops the
+operating system kernel today. The project was inspired by the lack of a
+functioning kernel for the GNU UNIX-like system designed by Richard
+Stallman. Torvalds says that if the GNU kernel had worked, he would
+likely have never written Linux.</p>
+
+<p>When you use Linux today you are actually using GNU and Linux together.
+Linux provides the operating system kernel and GNU provides the system
+software layer that runs over it and allows you to interact with it.
+There are myriad different versions of GNU/Linux floating around out
+there. All are Free and Open Source Software, which means that you can
+download the source code, compile it yourself, and run it on any system
+you like. Below is a family tree of all existing GNU/Linux
+distributions. Have a look to see if you can find Ubuntu, the system
+that we are most likely using on our CodeAnywhere Dev Boxes. <span
+class="marginnote">A timeline of Linux distributions<br/><br/><a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Linux_Distribution_Timeline.svg/200px-Linux_Distribution_Timeline.svg.png" alt="GNU/Linux Family
+Tree"></a>
+</span></p>
+
+<p>Operating systems are complex, as is their history, and I am afraid that
+I cannot do justice to it here. This history (and a general history of
+personal computing) is best told in a long essay by science-fiction
+author, Neal Stephenson:</p>
+
+<p>Stephenson, N. (1999). <a href="http://www.cryptonomicon.com/beginning.html">In the beginning was the command
+line</a>. Retrieved from
+<a href="http://www.cryptonomicon.com/beginning.html">http://www.cryptonomicon.com/beginning.html</a></p>
+
+<p>Read that piece at some point, if you have a chance. It&#39;s fascinating,
+exceedingly well-written, and a reasonably easy read.</p>
+
+<h2 id="who-cares?-{#who-cares?}">Who cares? {#who-cares?}</h2>
+
+<p>Right, so why is this important?</p>
+
+<p>Well for starters, some version of UNIX or Linux runs on the backend of
+nearly 70% of all public-facing web servers. In addition to that, Linux
+runs on 97% of supercomputers and computer clusters.</p>
+
+<p>Also, Mac OS X is UNIX-based. Android is just a weird, simplified
+version of Linux. Chrome OS, underneath the browser layer is Linux.
+Myriad little embedded devices like e-readers, tiny automation devices,
+media devices (DVRs, Amazon Fire, Roku, etc.) have some Linux-y thing
+running underneath.</p>
+
+<p>UNIX and Linux surround you, physically and otherwise.</p>
+
+<p>It is important to know something about the things around you.
+Otherwise, they might as well be operating as if by magic.</p>
+
+<h2 id="so...">So...</h2>
+
+<p>So, if you ever have occasion to operate on a remote system, it is
+terribly likely that you are going to be logging into a Linux box
+somewhere, and failing that, a UNIX box. From now on, you&#39;ll never be
+able to say that you don&#39;t know how to do that.</p>
+
+<h1 id="for-the-next-session:-{#for-the-next-session:}">For the next session: {#for-the-next-session:}</h1>
+
+<p>Look at Joseph Wynn&#39;s &quot;Hacker&#39;s Guide&quot;. <span class="marginnote">Wynn,
+Joseph. “A Hacker’s Guide to Git.” Wildly Innacurate. Last modified May
+25, 2014. <a href="http://wildlyinaccurate.com/a-hackers-guide-to-git/">http://wildlyinaccurate.com/a-hackers-guide-to-git/</a>. </span>
+It is a really useful tutorial for new users of git who want to know
+ways to get things done with it.</p>
+
+<p>I would also like you to look at Roger Dudler&#39;s simple git tutorial.
+<span class="marginnote">Dudler, Roger. “Git: The Simple Guide.” Git:
+The Simple Guide. Last modified 2015.
+<a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a>. </span> It is the best and
+fastest way to get you up to speed using git.</p>
+
+<p>We will also return to &quot;Learning the Shell&quot; <span
+class="marginnote">Shotts, William, Jr. “Learning the Shell.”
+LinuxCommand.org. <a href="http://linuxcommand.org/lc3_learning_the_shell.php">http://linuxcommand.org/lc3_learning_the_shell.php</a>.
+</span> for more command line fun. We&#39;ll do some more exploring once we
+are up to speed with git as well.</p>
+
+
+<p>
+  <br/>
+  <ul class="tags">
+    <li><a href="/topics#clients" class="tag">clients</a></li><li><a href="/topics#servers" class="tag">servers</a></li><li><a href="/topics#Linux" class="tag">Linux</a></li><li><a href="/topics#shell commands" class="tag">shell-commands</a></li>
+  </ul> 
+</p>
+
+    </article>
+    <span class="print-footer">Clients and Servers - June 21, 2016 - </span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    
+    
+      <li>
+        <a href="http://johndmart.in" title="Instructor home page"><span class="icon-user"></span>&nbsp;John D. Martin III</a>
+      </li>
+    
+    
+      <li>
+        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="icon-mail"></span>&nbsp;john.d.martin.iii@unc.edu</a>
+      </li>
+    
+    
+      <li>
+        <span class="icon-clock2"></span>&nbsp;11:30-13:00
+      </li>
+    
+    
+      <li>
+        <span class="icon-calendar"></span>&nbsp;MoTuWeThFr
+      </li>
+    
+    
+      <li>
+        <span class="icon-library"></span>&nbsp;117 Manning Hall
+      </li>
+    
+    
+      <li>
+        <a href="//github.com/inls161" title="Follow on GitHub"><span class="icon-github"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed" title="Add RSS feed"><span class="icon-feed"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+  <span>TOOLS FOR INFORMATION LITERACY &nbsp;&nbsp;|&nbsp;&nbsp; INLS161-001 (Summer II)
+    <br/> 
+  <span class="smaller">Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</span>
+  <br/><br/>
+  <span class="smaller"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.</span>
+  <br/>
+  <span class="smaller"><a href="/credits/">Content &copy; 2016 John D. Martin III</a></span>
+</div>  
+</footer>
+  </body>
+</html>
