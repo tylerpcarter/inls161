@@ -313,7 +313,8 @@ pre, pre code, p code, p pre code {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 1rem;
   line-height: 1.71428571;
-  margin-top: 1.71428571rem; }
+  margin-top: 1.71428571rem;
+  background: #444; }
 
 h1 code, h2 code, h3 code {
   font-size: 0.80em; }

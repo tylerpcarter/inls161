@@ -98,7 +98,8 @@
 <p class="subtitle">Friday, 24 June 2016</p>
 
 <p>Today we&#39;re going to learn how to fork, clone, and push changes to a repository on GitHub using git. 
-We do this in preparation for creating personal websites that will be hosted by GitHub pages. </p>
+We do this in preparation for creating personal websites that will be hosted by GitHub pages. 
+<excerpt/></p>
 
 <h1 id="fork">Fork</h1>
 
@@ -109,6 +110,9 @@ We&#39;ll use this as an opportunity to get wome web code and see what that look
 We&#39;ll start by going to this repo:</p>
 
 <p><a href="https://github.com/henrythemes/jekyll-starter-theme">https://github.com/henrythemes/jekyll-starter-theme</a></p>
+
+<p>This is the repo for a very, very simple Jekyll web theme. 
+We will us this as a starter theme to practice with. </p>
 
 <p>Once you are at the above repo, click the &quot;Fork&quot; button and select your username when prompted to make a copy of the repo in your account.<label for='fork' class='margin-toggle'> &#8853;</label><input type='checkbox' id='fork' class='margin-toggle'/><span class='marginnote'><img src="/assets/ref-images/fork.png" alt="Click the &quot;fork&quot; button."> </span> </p>
 
@@ -121,9 +125,82 @@ It will look like the link in the image on the right. </p>
 
 <p>Then, switch over to CodeAnywhere, make sure you&#39;re logged in, and then right click on your container and open and SSH terminal from the menu. </p>
 
-<p>In your &quot;workspace&quot; directory. </p>
+<p>In your &quot;workspace&quot; directory, type the following command, and paste your link in after, so that it looks like this: </p>
+
+<p><code>git clone git@github.com:YOUR-GITHUB-USERNAME/jekyll-starter-theme.git</code></p>
+
+<p>This makes a copy of the repository that you just forked to your local workspace in CodeAnywhere. 
+This is called cloning. </p>
+
+<p>Then descend into the directory:</p>
+
+<p><code>cd jekyll-starter-theme</code></p>
+
+<p>And explore what is in there:</p>
+
+<p><code>ls -lah</code></p>
+
+<p>You should see a <code>_config.yml</code> file somewhere in the directory. 
+This file is filled with variables that Jekyll reads to structure the information made by your webpage. </p>
+
+<p>The basic structure of variables for Jekyll is:</p>
+
+<p><code>Liquid variable-name:   &quot;variable value&quot;</code></p>
+
+<p>I want you to change the title variable to your name or whatever you like. 
+Change the subtitle as well. </p>
+
+<p>From this:</p>
+<div class="highlight"><pre><code class="language-Liquid" data-lang="Liquid">###########
+# site.title
+
+title:    'Jekyll Starter Theme'
+subtitle: 'Another Minimalistic Static Site Quick Starter Theme'
+</code></pre></div>
+<p>To something like this:</p>
+<div class="highlight"><pre><code class="language-Liquid" data-lang="Liquid">###########
+# site.title
+
+title:    'YOUR-NAME'
+subtitle: 'Some subtitle I just made up!'
+</code></pre></div>
+<p>Then I want you to change the <code>url</code> variable so that this will show up at the address associated with your GitHub repo.</p>
+
+<p>So change this: </p>
+
+<p><code>Liquid url:   &#39;http://henrythemes.github.io/jekyll-starter-theme&#39;</code></p>
+
+<p>To this:</p>
+
+<p><code>Liquid url:   &#39;http://YOUR-GITHUB-USERNAME.github.io/jekyll-starter-theme&#39;</code></p>
+
+<p>Once you have made those changes, then save the file and we will push it back up to GitHub.</p>
 
 <h1 id="push">Push</h1>
+
+<p>So in order to record these changes and get them into our remote repo on GitHub, we have to first go through the normal commit process. 
+First, add the files:</p>
+
+<p><code>git add -v *</code></p>
+
+<p>Then commit the changes (remember to leave a message for yourself):</p>
+
+<p><code>git commit -a -m &quot;update config&quot;</code></p>
+
+<p>Then we have to push the changes upstream:</p>
+
+<p><code>git push</code></p>
+
+<p>And that should be that. </p>
+
+<h1 id="github-pages">GitHub Pages</h1>
+
+<p>You should be able to see this web code rendered as a webpage now. 
+Try going to the address that corresponds to the GH pages site associated with this repository. It will look like this:</p>
+
+<p><code>https://YOUR-GITHUB-USERNAME.github.io/jekyll-starter-theme/</code></p>
+
+<p>And there you should see a site with the title and subtitle that you assigned in the <code>_config.yml</code> file.</p>
 
 <h1 id="for-next-time">For next time</h1>
 
