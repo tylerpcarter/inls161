@@ -518,12 +518,12 @@ div.highlight {
   width: 55%; }
 
 code {
-  color: #aaa; }
+  color: #bbb; }
 
 pre, pre code, p pre code {
   padding-left: 1.25%;
   overflow-x: auto;
-  color: #ccc;
+  color: #bbb;
   background: #222; }
 
 .fullwidth {
