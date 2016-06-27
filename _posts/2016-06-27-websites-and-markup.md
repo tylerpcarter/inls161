@@ -42,7 +42,7 @@ All of the above boils down to a simple comparison that Mitchell makes:
 
 HTML:
 
-```HTML
+```
 <h1>Why <em>you</em> should use Markdown to write your next blog post</h1>
 
 <p><a href=”http://daringfireball.net/projects/markdown/”>Markdown</a> is just so dang legible, it will make your <em>whole life</em> easier. <strong>I promise.</strong></p>
@@ -50,7 +50,7 @@ HTML:
 
 Markdown:
 
-```Markdown
+```
 # Why *you* should use Markdown to write your next blog post
 
 [Markdown][1] is just so dang legible, it will make your *whole life* easier. **I promise.**
@@ -60,7 +60,7 @@ Markdown:
 
 The above examples render the same thing when parsed. Which would you rather use? 
 
-We will go over some of the basics in class today, but I would also like you to review the resources listed here independently, outside of class. {% sidenote 'markdown' '“Mastering Markdown.” GitHub Guides. Last modified January 15, 2014. Accessed June 27, 2016. https://guides.github.com/features/mastering-markdown/.<br/><br/>This guide is oriented toward GitHub, but the skills represented there extend well beyond that context.<br/><br/>' %}
+We will go over some of the basics in class today, but I would also like you to review the resources listed here independently, outside of class. {% sidenote 'markdown' '“Mastering Markdown.” GitHub Guides. Last modified January 15, 2014. Accessed June 27, 2016. https://guides.github.com/features/mastering-markdown/.<br/><br/>This guide is oriented toward GitHub, but the skills represented there extend well beyond that context.' %}
 
 We will work interchangeably in HTML and Markdown over the course of this week.
 
