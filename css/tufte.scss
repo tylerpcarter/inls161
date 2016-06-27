@@ -343,12 +343,13 @@ div.highlight {
   width: 55%;
 }
 
-code { color: #aaa; }
+code { color: $code-color; }
 
 pre, pre code, p pre code { //width: 52.5%;
            padding-left: 1.25%;
            overflow-x: auto; 
-           background: #222; 
+           color: $code-color-block;
+           background: $code-background-block; 
            }
 
 .fullwidth/*, li.listing div*/{ max-width: 90%; }
