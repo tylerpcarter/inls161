@@ -58,15 +58,14 @@ This file is filled with variables that Jekyll reads to structure the informatio
 
 The basic structure of variables for Jekyll is:
 
-``` Liquid variable-name:   "variable value"```
+```variable-name:   "variable value"```
 
-I want you to change the title variable to your name or whatever you like. 
+I want you to change the title variable to your name or whatever you like.
 Change the subtitle as well. 
 
-From this:
+From this:{% marginnote 'test' 'The first thing that we are going to do today is fork' %} 
 
-``` Liquid 
-###########
+```
 # site.title
 
 title:    'Jekyll Starter Theme'
@@ -75,23 +74,23 @@ subtitle: 'Another Minimalistic Static Site Quick Starter Theme'
 
 To something like this:
 
-``` Liquid 
-###########
+```
 # site.title
 
 title:    'YOUR-NAME'
 subtitle: 'Some subtitle I just made up!'
 ```
 
+
 Then I want you to change the `url` variable so that this will show up at the address associated with your GitHub repo.
 
 So change this: 
 
-``` Liquid url:   'http://henrythemes.github.io/jekyll-starter-theme'```
+``` url:   'http://henrythemes.github.io/jekyll-starter-theme'```
 
 To this:
 
-``` Liquid url:   'http://YOUR-GITHUB-USERNAME.github.io/jekyll-starter-theme'```
+``` url:   'http://YOUR-GITHUB-USERNAME.github.io/jekyll-starter-theme'```
 
 Once you have made those changes, then save the file and we will push it back up to GitHub.
 

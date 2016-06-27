@@ -311,10 +311,9 @@ blockquote footer {
 
 pre, pre code, p code, p pre code {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 1rem;
+  font-size: 0.85rem;
   line-height: 1.71428571;
-  margin-top: 1.71428571rem;
-  background: #444; }
+  margin-top: 1rem; }
 
 h1 code, h2 code, h3 code {
   font-size: 0.80em; }
@@ -384,7 +383,7 @@ th, td {
 /* Basic Layout stuff --*/
 article {
   position: relative;
-  padding: 1 rem 0rem 2.5rem 0rem; }
+  padding: 1rem 0rem 2.5rem 0rem; }
 
 section {
   padding-top: 1rem;
@@ -498,9 +497,6 @@ div.table-wrapper {
   p, footer, div.mathblock {
     width: 90%; }
 
-  pre code {
-    width: 87.5%; }
-
   ul {
     width: 85%; }
 
@@ -518,16 +514,25 @@ div.table-wrapper {
 .marginnote code, .sidenote code {
   font-size: 1rem; }
 
+div.highlight {
+  width: 55%; }
+
+code {
+  color: #aaa; }
+
 pre, pre code, p pre code {
-  width: 52.5%;
-  padding-left: 2.5%;
-  overflow-x: auto; }
+  padding-left: 1.25%;
+  overflow-x: auto;
+  background: #222; }
 
 .fullwidth {
   max-width: 90%; }
 
 .full-width .sidenote, .full-width .sidenote-number, .full-width .marginnote {
   display: none; }
+
+.fullwidth div.highlight {
+  width: 90%; }
 
 span.newthought {
   font-variant: small-caps;
@@ -566,7 +571,6 @@ label.margin-toggle:not(.sidenote-number) {
     cursor: pointer; }
 
   pre, pre code, p code, p pre code {
-    width: 90%;
     padding: 0; }
 
   .table-caption {
