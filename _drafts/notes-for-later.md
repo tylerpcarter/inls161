@@ -8,12 +8,26 @@ tags:
 ---
 
 
-https://github.com/scotte/jekyll-clean
+## Some easy themes
 
-https://github.com/biomadeira/vitae
+http://jekyllthemes.org/themes/basic/
 
-https://github.com/dbtek/dbyll
+http://jekyllthemes.org/themes/trading/
 
-https://github.com/karloespiritu/BlackDoc
+http://jekyllthemes.org/themes/devjournal/
 
-https://github.com/kronik3r/daktilo
+http://jekyllthemes.org/themes/gravity/
+
+## More challenging themes
+
+http://jekyllthemes.org/themes/jekyll-clean/
+
+http://jekyllthemes.org/themes/thinkspace/
+
+http://jekyllthemes.org/themes/vitae/
+
+http://jekyllthemes.org/themes/dbyll/
+
+http://jekyllthemes.org/themes/blackdoc/
+
+http://jekyllthemes.org/themes/daktilo/

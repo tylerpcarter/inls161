@@ -162,6 +162,7 @@ blockquote p {  font-size: 1rem; //1.1rem;
 blockquote footer { width: 45%;
                     text-align: right; }
 
+.twitter-tweet { width: 55% !important; }
 
 .sans { font-family: $sans-font;
         letter-spacing: .03em; }
@@ -325,17 +326,20 @@ p, footer, div.table-wrapper, div.mathblock{ width: 55%; }
 
 div.table-wrapper { overflow-x: auto; } //changed all overflow values to 'auto' so scroll bars appear only as needed
 
-@media screen and (max-width: 760px) { p, footer,div.mathblock { width: 90%; }
-                                       pre code { //width: 52.5%; 
-                                       }
-                                       ul { width: 85%; }
-                                       figure { max-width: 90%; }
-                                       figcaption, figure.fullwidth figcaption { margin-right: 0%;
-                                                                                 max-width: none; }
-                                       blockquote p, blockquote footer {  width: 80%;
-                                                                          padding-left: 5%;
-                                                                          padding-right: 5%;
-                                                                        }}
+@media screen and (max-width: 760px) { 
+    p, footer,div.mathblock, { width: 90%; }
+    div.highlight { width: 87.5% !important; }
+  .twitter-tweet { max-width: 87.5%; }
+    pre code { //width: 52.5%; 
+    }
+    ul { width: 85%; }
+    figure { max-width: 90%; }
+    figcaption, figure.fullwidth figcaption { margin-right: 0%;
+        max-width: none; }
+    blockquote p, blockquote footer {  width: 80%;
+        padding-left: 5%;
+        padding-right: 5%; }
+}
 
 .marginnote code, .sidenote code { font-size: 1rem; } //more .code class removal
 

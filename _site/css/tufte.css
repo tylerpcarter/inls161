@@ -305,6 +305,9 @@ blockquote footer {
   width: 45%;
   text-align: right; }
 
+.twitter-tweet {
+  width: 55% !important; }
+
 .sans {
   font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif;
   letter-spacing: .03em; }
@@ -496,6 +499,12 @@ div.table-wrapper {
 @media screen and (max-width: 760px) {
   p, footer, div.mathblock {
     width: 90%; }
+
+  div.highlight {
+    width: 87.5% !important; }
+
+  .twitter-tweet {
+    max-width: 87.5%; }
 
   ul {
     width: 85%; }
