@@ -28,6 +28,8 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 # Git
 
+{% marginnote 'git' '**git** is a distributed version control system that keeps track of the changes between plaintext source files. It can be used for collaboration or for managing and keeping track of workflows for individuals. While primarily intended for software source code, git works with any plaintext files, and so can also be used for authoring of other kinds.' %}
+
 <a href="http://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf" target="_blank">Git - The Simple Guide (PDF)</a> <a href="https://rogerdudler.github.io/git-guide/" target="_blank">(WEB)</a>
 
 <a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">Git Cheat Sheet - GitHub</a>
@@ -39,6 +41,8 @@ These reference sheets correspond to things that we actualy did or will do in cl
 [Git local]({{ site.baseurl }}/refsheets/git-ref/)
 
 # GitHub
+
+{% marginnote 'github' '**GitHub** is a platform that allows for users to keep copies of their open source, plaintext repositories online, in a single centralized location. It also adds a social interaction layer to the process of managing version-controlled source files.' %}
 
 <a href="https://guides.github.com/activities/hello-world/" target="_blank"Hello World - GitHub Guides</a>
 
@@ -52,7 +56,11 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 <a href="http://packetlife.net/media/library/16/Markdown.pdf" target="_blank">Markdown Cheat Sheet - Packetlife.net</a>
 
+
+
 ## HTML5
+
+{% marginnote 'html' '**HTML** is an acronym for "HyperText Markup Language." "Hypertext" is text that contains links to other text. The Web, as we know it, relies on hypertext to for us to communicate with systems and with other humans. It is the medium of Web content.' %}
 
 <a href="http://websitesetup.org/HTML5-cheat-sheet.pdf" target="_blank">HTML5 Cheat Sheet - WebsiteSetup.org</a>
 
@@ -60,13 +68,23 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 ## CSS3
 
+{% marginnote 'css' '**CSS** is an acronym for "Cascading Style Sheet." If HTML is the medium for web content, then CSS is the palette for the visual styling of the web. Whenever a website looks like anything other than just a blank page, there is CSS involved.' %}
+
 <a href="http://lesliefranke.com/sandbox/ref/csscheatsheet.pdf" target="_blank">CSS3 Cheat Sheet - Leslie Franke</a>
 
 <a href="http://www.w3schools.com/css/default.asp" target="_blank">W3CSchools CSS Tutorial</a>
 
 ## Jekyll and Liquid
 
+{% marginnote 'jekyll' '**Jekyll** is a blog-aware static site generator. It uses raw text files in place of a database to store content, which it parses and renders into web code.' %}
+
 <a href="http://ricostacruz.com/cheatsheets/jekyll.html" target="_blank">Jekyll Cheatsheet - Rico Sta. Cruz</a> 
+
+{% marginnote 'liquid' '**Liquid** is a templating engine with simple markup used by Jekyll to render dynamic elements of a site. ' %}
+
+<a href="https://github.com/Shopify/liquid/wiki/liquid-for-designers" target="_blank">Liquid for Designers - Shopify Dev Team</a>
+
+<a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers" target="_blank">Liquid for Programmers - Shopify Dev Team</a>
 
 # Pandoc
 
