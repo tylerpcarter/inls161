@@ -5,16 +5,16 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>http://inls161.johndmart.in/</link>
     <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Jun 2016 11:12:22 -0400</pubDate>
-    <lastBuildDate>Mon, 27 Jun 2016 11:12:22 -0400</lastBuildDate>
+    <pubDate>Tue, 28 Jun 2016 11:06:52 -0400</pubDate>
+    <lastBuildDate>Tue, 28 Jun 2016 11:06:52 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
         <title></title>
         <description></description>
-        <pubDate>Mon, 27 Jun 2016 11:12:22 -0400</pubDate>
-        <link>http://inls161.johndmart.in/2016/06/27/template/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/2016/06/27/template/</guid>
+        <pubDate>Tue, 28 Jun 2016 11:06:52 -0400</pubDate>
+        <link>http://inls161.johndmart.in/2016/06/28/template/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/2016/06/28/template/</guid>
         
         <category>tag</category>
         
@@ -31,6 +31,10 @@
 
 &lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/trading/&quot;&gt;http://jekyllthemes.org/themes/trading/&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/devjournal/&quot;&gt;http://jekyllthemes.org/themes/devjournal/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/gravity/&quot;&gt;http://jekyllthemes.org/themes/gravity/&lt;/a&gt;&lt;/p&gt;
+
 &lt;h2 id=&quot;more-challenging-themes&quot;&gt;More challenging themes&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/jekyll-clean/&quot;&gt;http://jekyllthemes.org/themes/jekyll-clean/&lt;/a&gt;&lt;/p&gt;
@@ -45,14 +49,34 @@
 
 &lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/daktilo/&quot;&gt;http://jekyllthemes.org/themes/daktilo/&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 27 Jun 2016 11:12:22 -0400</pubDate>
-        <link>http://inls161.johndmart.in/2016/06/27/notes-for-later/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/2016/06/27/notes-for-later/</guid>
+        <pubDate>Tue, 28 Jun 2016 11:06:52 -0400</pubDate>
+        <link>http://inls161.johndmart.in/2016/06/28/notes-for-later/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/2016/06/28/notes-for-later/</guid>
         
         <category>tag</category>
         
         <category>tag</category>
         
+        
+      </item>
+    
+      <item>
+        <title>Visual styling for the web</title>
+        <description></description>
+        <pubDate>Tue, 28 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/web/2016/06/28/jekyll-css-html/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/web/2016/06/28/jekyll-css-html/</guid>
+        
+        <category>Jekyll</category>
+        
+        <category>CSS</category>
+        
+        <category>HTML</category>
+        
+        <category>Markdown</category>
+        
+        
+        <category>Web</category>
         
       </item>
     
@@ -91,12 +115,12 @@ It doesn&amp;#39;t require complicated tags, which have a high potential for typ
 &lt;p&gt;All of the above boils down to a simple comparison that Mitchell makes:&lt;/p&gt;
 
 &lt;p&gt;HTML:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-HTML&quot; data-lang=&quot;HTML&quot;&gt;&amp;lt;h1&amp;gt;Why &amp;lt;em&amp;gt;you&amp;lt;/em&amp;gt; should use Markdown to write your next blog post&amp;lt;/h1&amp;gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&amp;lt;h1&amp;gt;Why &amp;lt;em&amp;gt;you&amp;lt;/em&amp;gt; should use Markdown to write your next blog post&amp;lt;/h1&amp;gt;
 
 &amp;lt;p&amp;gt;&amp;lt;a href=”http://daringfireball.net/projects/markdown/”&amp;gt;Markdown&amp;lt;/a&amp;gt; is just so dang legible, it will make your &amp;lt;em&amp;gt;whole life&amp;lt;/em&amp;gt; easier. &amp;lt;strong&amp;gt;I promise.&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Markdown:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-Markdown&quot; data-lang=&quot;Markdown&quot;&gt;# Why *you* should use Markdown to write your next blog post
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;# Why *you* should use Markdown to write your next blog post
 
 [Markdown][1] is just so dang legible, it will make your *whole life* easier. **I promise.**
 
@@ -104,7 +128,7 @@ It doesn&amp;#39;t require complicated tags, which have a high potential for typ
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The above examples render the same thing when parsed. Which would you rather use? &lt;/p&gt;
 
-&lt;p&gt;We will go over some of the basics in class today, but I would also like you to review the resources listed here independently, outside of class. &lt;label for=&#39;markdown&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;markdown&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;“Mastering Markdown.” GitHub Guides. Last modified January 15, 2014. Accessed June 27, 2016. &lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;https://guides.github.com/features/mastering-markdown/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;This guide is oriented toward GitHub, but the skills represented there extend well beyond that context.&lt;br/&gt;&lt;br/&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We will go over some of the basics in class today, but I would also like you to review the resources listed here independently, outside of class. &lt;label for=&#39;markdown&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;markdown&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;“Mastering Markdown.” GitHub Guides. Last modified January 15, 2014. Accessed June 27, 2016. &lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;https://guides.github.com/features/mastering-markdown/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;This guide is oriented toward GitHub, but the skills represented there extend well beyond that context. &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;We will work interchangeably in HTML and Markdown over the course of this week.&lt;/p&gt;
 
@@ -130,7 +154,31 @@ Berners-Lee proposed the creation of an information management system for the Eu
 
 &lt;p&gt;We have already done this in a very rudimentary way, but we will do it again to create a better final product. &lt;/p&gt;
 
-&lt;p&gt;Please also look at these themes: &lt;/p&gt;
+&lt;p&gt;Please also look at these themes and choose one for your site. Some have dynamic navigation (those are listed first == easy). You will modify them heavily. &lt;/p&gt;
+
+&lt;h2 id=&quot;some-easy-themes&quot;&gt;Some easy themes&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/basic/&quot;&gt;http://jekyllthemes.org/themes/basic/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/trading/&quot;&gt;http://jekyllthemes.org/themes/trading/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/devjournal/&quot;&gt;http://jekyllthemes.org/themes/devjournal/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/gravity/&quot;&gt;http://jekyllthemes.org/themes/gravity/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;more-challenging-themes&quot;&gt;More challenging themes&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/jekyll-clean/&quot;&gt;http://jekyllthemes.org/themes/jekyll-clean/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/thinkspace/&quot;&gt;http://jekyllthemes.org/themes/thinkspace/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/vitae/&quot;&gt;http://jekyllthemes.org/themes/vitae/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/dbyll/&quot;&gt;http://jekyllthemes.org/themes/dbyll/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/blackdoc/&quot;&gt;http://jekyllthemes.org/themes/blackdoc/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/daktilo/&quot;&gt;http://jekyllthemes.org/themes/daktilo/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Good advice: &lt;/p&gt;
 

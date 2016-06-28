@@ -44,7 +44,7 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 {% marginnote 'github' '**GitHub** is a platform that allows for users to keep copies of their open source, plaintext repositories online, in a single centralized location. It also adds a social interaction layer to the process of managing version-controlled source files.' %}
 
-<a href="https://guides.github.com/activities/hello-world/" target="_blank"Hello World - GitHub Guides</a>
+<a href="https://guides.github.com/activities/hello-world/" target="_blank">Hello World - GitHub Guides</a>
 
 ## Reference sheets from in-class activities
 
@@ -54,9 +54,11 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 ## Markdown
 
+{% marginnote 'markdown' '**Markdown** is a simple, human-readable, free markup syntax for rendering plaintext source files into HTML or other formats when run through an interpreter.' %}
+
 <a href="http://packetlife.net/media/library/16/Markdown.pdf" target="_blank">Markdown Cheat Sheet - Packetlife.net</a>
 
-
+<a href="http://code.tutsplus.com/tutorials/markdown-the-ins-and-outs--net-25482" target="_blank">Makdown: The Ins and Outs - Dan Harper</a>
 
 ## HTML5
 
