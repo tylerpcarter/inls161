@@ -5,64 +5,201 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>http://inls161.johndmart.in/</link>
     <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Jun 2016 11:06:52 -0400</pubDate>
-    <lastBuildDate>Tue, 28 Jun 2016 11:06:52 -0400</lastBuildDate>
+    <pubDate>Wed, 29 Jun 2016 23:00:13 -0400</pubDate>
+    <lastBuildDate>Wed, 29 Jun 2016 23:00:13 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
-        <title></title>
-        <description></description>
-        <pubDate>Tue, 28 Jun 2016 11:06:52 -0400</pubDate>
-        <link>http://inls161.johndmart.in/2016/06/28/template/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/2016/06/28/template/</guid>
+        <title>Branching and Merging</title>
+        <description>&lt;p&gt;Some new content&lt;/p&gt;
+
+&lt;h1 id=&quot;a-header-or-something&quot;&gt;A header or something&lt;/h1&gt;
+
+&lt;p&gt;Some other content. &lt;/p&gt;
+
+&lt;h1 id=&quot;for-next-class&quot;&gt;For next class&lt;/h1&gt;
+</description>
+        <pubDate>Thu, 30 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/web/2016/06/30/branching-and-merging/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/web/2016/06/30/branching-and-merging/</guid>
         
-        <category>tag</category>
+        <category>git</category>
         
-        <category>tag</category>
+        <category>GitHub</category>
         
+        <category>web development</category>
+        
+        <category>workflows</category>
+        
+        
+        <category>Web</category>
         
       </item>
     
       <item>
-        <title></title>
-        <description>&lt;h2 id=&quot;some-easy-themes&quot;&gt;Some easy themes&lt;/h2&gt;
+        <title>Developing and Deploying</title>
+        <description>&lt;p&gt;Today we&amp;#39;re going to take the first steps toward actually getting our website up and running. 
+We will also use this opportunity to discuss the development &amp;gt; testing &amp;gt; deployment workflow. 
+&lt;excerpt/&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/basic/&quot;&gt;http://jekyllthemes.org/themes/basic/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;#39;ll be using Barry Clark&amp;#39;s tutorial as a reference, so you&amp;#39;ll want to have that pulled up in a separate window so that you can switch back and forth to it. &lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/trading/&quot;&gt;http://jekyllthemes.org/themes/trading/&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;fork&quot;&gt;Fork&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/devjournal/&quot;&gt;http://jekyllthemes.org/themes/devjournal/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We will do the same thing that we have previously done in GitHub and fork our chosen theme into our account as a starting place. &lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/gravity/&quot;&gt;http://jekyllthemes.org/themes/gravity/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;That should be relatively straightforward now.&lt;/p&gt;
 
-&lt;h2 id=&quot;more-challenging-themes&quot;&gt;More challenging themes&lt;/h2&gt;
+&lt;h1 id=&quot;configure&quot;&gt;Configure&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/jekyll-clean/&quot;&gt;http://jekyllthemes.org/themes/jekyll-clean/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Once we have the base theme forked, we need to make sure that the site is going to show up at the right address. &lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/thinkspace/&quot;&gt;http://jekyllthemes.org/themes/thinkspace/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The address that we want is &lt;code&gt;http://YOUR-GITHUB-USERNAME.github.io&lt;/code&gt;. This is the default user site address for GitHub pages. &lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/vitae/&quot;&gt;http://jekyllthemes.org/themes/vitae/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GH Pages will serve this site from code in the master branch of a repository in your account named the same as the fully qualified domain name (FQDN) or just the full URL to our desired site. &lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/dbyll/&quot;&gt;http://jekyllthemes.org/themes/dbyll/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Therefore, if your GH Pages user site defaults to &lt;code&gt;http://YOUR-GITHUB-USERNAME.github.io&lt;/code&gt; then we have to make a repository in your account titled &lt;code&gt;YOUR-GITHUB-USERNAME.github.io&lt;/code&gt;. 
+The easiest way to do this is to just change the name of the theme repository that we just forked so that it matches what we need. &lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/blackdoc/&quot;&gt;http://jekyllthemes.org/themes/blackdoc/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To do this, click the settings tab on your repository page, enter a new name under &amp;quot;Repository name,&amp;quot; and then click &amp;quot;Rename.&amp;quot;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/daktilo/&quot;&gt;http://jekyllthemes.org/themes/daktilo/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;_config.yml&quot;&gt;_config.yml&lt;/h2&gt;
+
+&lt;p&gt;Once we are there, we should be able to look into &lt;code&gt;_config.yml&lt;/code&gt; file right in GitHub and make sure that our site settings are correct.
+We will likely have to change three variables, if they exist: &lt;code&gt;path&lt;/code&gt;, &lt;code&gt;url&lt;/code&gt;, and &lt;code&gt;baseurl&lt;/code&gt;.
+These will be different for different themes, so we&amp;#39;ll look over this together in class. Basic principles are as follows:&lt;/p&gt;
+
+&lt;p&gt;You want &lt;code&gt;url&lt;/code&gt; to match the desired URL for your site: &lt;code&gt;http://YOUR-GITHUB-USERNAME.github.io&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;path&lt;/code&gt; specifies a path where files are held. 
+For the GH Pages user site, it needs to have no value. You can either delete that line, comment it, or just put a set of double quotes to specify that Jekyll should not try to rewrite the links and append a subdirectory. It will look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;path: &amp;quot;&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The same is true for &lt;code&gt;baseurl&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;All that these do is tell Jekyll where things are when it is trying to build the site. 
+Remember, linking is dynamic in the build process, so Jekyll is trying to figure out how to tell your browser where to find stuff that it needs to render the site. &lt;/p&gt;
+
+&lt;h2 id=&quot;test&quot;&gt;Test&lt;/h2&gt;
+
+&lt;p&gt;Once you have your config set accordingly, then you should be able to look at your site at &lt;code&gt;http://YOUR-GITHUB-USERNAME.github.io&lt;/code&gt;. 
+Don&amp;#39;t worry if it doesn&amp;#39;t work or if something looks weird. 
+Nothing is broken in those cases, you&amp;#39;ll just need to troublshoot to figure out what is wrong. This is part of the developmet workflow. &lt;/p&gt;
+
+&lt;h1 id=&quot;development&quot;&gt;Development&lt;/h1&gt;
+
+&lt;p&gt;A &amp;quot;development workflow&amp;quot; has several stages that happen in order.&lt;label for=&#39;ghflow&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;ghflow&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;“Understanding the GitHub Flow.” GitHub Guides. Last modified December 12, 2013. &lt;a href=&quot;https://guides.github.com/introduction/flow/&quot;&gt;https://guides.github.com/introduction/flow/&lt;/a&gt;. &lt;/span&gt; 
+We have been gearing up to think about our work in this context. &lt;/p&gt;
+
+&lt;p&gt;A typical development workflow might conceptually look like this:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Create new branch of source code for new feature&lt;/li&gt;
+&lt;li&gt;Work on code for new feature in new branch &lt;/li&gt;
+&lt;li&gt;Test feature and make fixes if necessary&lt;/li&gt;
+&lt;li&gt;Run with feature in testing environment to ensure that feature works&lt;/li&gt;
+&lt;li&gt;Get feedback about new feature and integrate suggestions if necessary&lt;/li&gt;
+&lt;li&gt;Merge new feature into main workflow&lt;/li&gt;
+&lt;li&gt;New feature is live in production&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;next-time&quot;&gt;Next time&lt;/h1&gt;
+
+&lt;p&gt;We&amp;#39;re going to learn tomorrow how to incorporate branching, testing, and merging by setting up a development workflow like the one described above. &lt;/p&gt;
+
+&lt;p&gt;To prepare for this, I would like you to read the Gist linked in the margin, but I would also like you to do some searching online about how different developers managed their workflows. {sidenote &amp;#39;workflow&amp;#39; &amp;#39;blackfalcon. “Git Basics - a General Workflow.” Gist. Accessed June 29, 2016. &lt;a href=&quot;https://gist.github.com/blackfalcon/8428401.&amp;#x27;&quot;&gt;https://gist.github.com/blackfalcon/8428401.&amp;#39;&lt;/a&gt;}
+To this end you might Google things like &amp;quot;development workflow&amp;quot; or &amp;quot;project development.&amp;quot;
+See what you can find. 
+There is a ton of relevant information on this topic out in the Internet.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 28 Jun 2016 11:06:52 -0400</pubDate>
-        <link>http://inls161.johndmart.in/2016/06/28/notes-for-later/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/2016/06/28/notes-for-later/</guid>
+        <pubDate>Wed, 29 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/web/2016/06/29/developing-deploying-branching/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/web/2016/06/29/developing-deploying-branching/</guid>
         
-        <category>tag</category>
+        <category>git</category>
         
-        <category>tag</category>
+        <category>GitHub</category>
         
+        <category>Jekyll</category>
+        
+        <category>development</category>
+        
+        <category>workflow</category>
+        
+        
+        <category>Web</category>
         
       </item>
     
       <item>
         <title>Visual styling for the web</title>
-        <description></description>
+        <description>&lt;p&gt;For most of class today, we will spend time creating our base site and then exploring ways that we can change and customize the style to our liking. &lt;/p&gt;
+
+&lt;p&gt;We&amp;#39;ll learn a little bit about CSS and about linking resources so that they show up where we want them. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h1&gt;
+
+&lt;p&gt;Once you have chosen a Jekyll theme for your site, we will need to fork the theme, make appropriate changes to turn it into our own, and then we can get to work on customizing the look and feel of the site. &lt;/p&gt;
+
+&lt;p&gt;When we make changes to Jekyll&amp;#39;s configuration, we are ostensibly telling it where to find different necessary files for rendering the site, like our CSS file. &lt;/p&gt;
+
+&lt;p&gt;Let&amp;#39;s take a look at different ways of linking. &lt;/p&gt;
+
+&lt;h1 id=&quot;linking&quot;&gt;Linking&lt;/h1&gt;
+
+&lt;p&gt;Linking is what makes the Internet what it is in terms of how information is organized. 
+Without links, we would have to know the location of every single thing we wish to get to. 
+We would have to index everything: that is, we would need a list. 
+Linking allows us to move between resources, call and embed resources within one another, and in some cases find resources based on their relationships. &lt;/p&gt;
+
+&lt;h3 id=&quot;relative-and-absolute-paths&quot;&gt;Relative and absolute paths&lt;/h3&gt;
+
+&lt;p&gt;We have choices about how we can link to resources. &lt;/p&gt;
+
+&lt;p&gt;Let&amp;#39;s look at the links in the examples on the last page:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;css/styles.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;js/scripts.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;images/pretty.img&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;A pretty picture&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;index.html&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Home&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Return home.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;These are all examples of relative paths. 
+This means that they assume that the files referenced here are located near our index page. &lt;/p&gt;
+
+&lt;p&gt;If we were to represent the same links with absolute paths, we would have to add the domain name / hostname also. 
+See below:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.somewebsite.com/css/styles.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.somewebsite.com/js/scripts.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.somewebsite.com/images/pretty.img&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;A pretty picture&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.somewebsite.com/index.html&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Home&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Return home.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let&amp;#39;s consider the advantages and disadvantages of each of these approaches and ask these questions:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;What happens if we have to change our doman name or move to a different server?&lt;/li&gt;
+&lt;li&gt;Is there perhaps a way to automate such a change and still provide an absolute path?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Let&amp;#39;s move on to working with visual elements.&lt;/p&gt;
+
+&lt;h1 id=&quot;css&quot;&gt;CSS&lt;/h1&gt;
+
+&lt;p&gt;CSS is an acronym for &amp;quot;Cascading Style Sheet.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;If HTML is the medium for web content, then CSS is the medium for the visual styling of the web. 
+Whenever a website looks like anything other than just a blank page, there is CSS involved. &lt;/p&gt;
+
+&lt;p&gt;We will continue to use a combination of Markdown, HTML5 and CSS3 to construct our very own web pages. &lt;/p&gt;
+
+&lt;h1 id=&quot;for-next-time&quot;&gt;For next time&lt;/h1&gt;
+
+&lt;p&gt;I want you to continue to work with your site and actually begin creating some content: write a blog post. &lt;/p&gt;
+
+&lt;p&gt;This involves having an idea, making an outline of what you want to say about that idea, committing some text, referencing outside information, and maybe putting a picture in to give a visual anchor to your text.&lt;/p&gt;
+
+&lt;p&gt;I would also like you to move through the W3Schools HTML5 and CSS3 tutorials on your own, outside of class.&lt;label for=&#39;css-tutorial&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;css-tutorial&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;“HTML Tutorial.” W3Schools. &lt;a href=&quot;http://www.w3schools.com/html/default.asp&quot;&gt;http://www.w3schools.com/html/default.asp&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;“CSS Tutorial.” W3Schools. &lt;a href=&quot;http://www.w3schools.com/css/default.asp&quot;&gt;http://www.w3schools.com/css/default.asp&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+</description>
         <pubDate>Tue, 28 Jun 2016 00:00:00 -0400</pubDate>
         <link>http://inls161.johndmart.in/web/2016/06/28/jekyll-css-html/</link>
         <guid isPermaLink="true">http://inls161.johndmart.in/web/2016/06/28/jekyll-css-html/</guid>

@@ -1,0 +1,19 @@
+{% for assignment in site.data.assignments %}
+
+<h1>{% if assignment.number %}Assignment&nbsp;#{{ assignment.number }}:&nbsp;{{ assignment.title }}{% else %}{{ assignment.title }}{% endif %}</h1>
+
+{% if assignment.description %}
+  <p>
+    {{ assignment.description }}
+  </p>
+{% endif %}
+{% if assignment.link %}
+  Link to assignment instructions: {{ assignment.link }}
+{% endif %}
+{% if assignment.percent %}
+  <p>
+    {% if assignment.number %}This assignment{% else %}{{ assignment.title }}{% endif %} is worth {{ assignment.percent }}% of your final grade. {% if assignment.due %}It is due on {{ assignment.due | date: "%A, %-d %B %Y" }} at midnight.{% endif %}
+  </p>
+{% endif %}
+
+{% endfor %}
