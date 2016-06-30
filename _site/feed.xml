@@ -5,135 +5,9 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>http://inls161.johndmart.in/</link>
     <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Jun 2016 11:29:07 -0400</pubDate>
-    <lastBuildDate>Thu, 30 Jun 2016 11:29:07 -0400</lastBuildDate>
+    <pubDate>Thu, 30 Jun 2016 15:08:12 -0400</pubDate>
+    <lastBuildDate>Thu, 30 Jun 2016 15:08:12 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
-    
-      <item>
-        <title>Troubleshootingg</title>
-        <description>&lt;p&gt;This lab session will be primarily dedicated to helping you work out kinks and wrinkles in the process of getting your site online and completing the second assignment. 
-If you are already very far along, then this is an opportunity for you to finish your work. 
-&lt;excerpt/&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h1&gt;
-
-&lt;p&gt;In addition to completing your site and the assignment at hand, we will start looking at ways that you can teach yourself how to fix problems that happen. 
-You will always run into issues, no matter what you are working on. 
-This will never stop. &lt;/p&gt;
-
-&lt;p&gt;At that point, you have two options: &lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Wait for someone to help you. &lt;/li&gt;
-&lt;li&gt;Figure it out on your own. &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Guess which one goes further in the course of your academic and work lives.&lt;/p&gt;
-
-&lt;h2 id=&quot;sources-of-information-are-myriad&quot;&gt;Sources of information are myriad&lt;/h2&gt;
-
-&lt;p&gt;It is really difficult to recommend places to get help with troubleshooting online. 
-This is not because they are so few, but because they are so many. &lt;/p&gt;
-
-&lt;p&gt;The best approach is to actually see what information you can get directly from the error interaction and then move on from there. &lt;/p&gt;
-
-&lt;p&gt;Read the error and try to understand it in plain language. 
-That may work some of the time. &lt;/p&gt;
-
-&lt;p&gt;Some error systems give VERY helpful errors that include suggestions for ways to fix what has gone wrong. 
-Git is like this.
-If you have a git error, most of the time, it will tell you what has gone wrong and how you can fix it. 
-Usually you just have to read it and do what it says. &lt;/p&gt;
-
-&lt;p&gt;Sometimes error messages will be more obtuse: this is a legitimate and well-known fact. &lt;/p&gt;
-
-&lt;p&gt;If you catch an error that doesn&amp;#39;t make sense to you, try at the very least to figure out what it means or to what it is referring. &lt;/p&gt;
-
-&lt;h2 id=&quot;google-it&quot;&gt;Google it&lt;/h2&gt;
-
-&lt;p&gt;Take this error, for example:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;error: Entry &#39;&amp;lt;fileName&amp;gt;&#39; would be overwritten by merge. Cannot merge. (Changes in staging area)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This is not particularly helpful. 
-I could pore over the git documentation for this, or I could take a more reasonable path and &lt;a href=&quot;http://lmgtfy.com/?q=error%3A+Entry+%27%3CfileName%3E%27+would+be+overwritten+by+merge.+Cannot+merge.+(Changes+in+staging+area)&quot;&gt;Google it&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;As you can see, there is a fair amount of information immediately available that will help you cirvumvent that error. &lt;/p&gt;
-
-&lt;p&gt;Take this approach first and keep these things in mind:
-1. Be careful: not all information is good. 
-2. Learn to spot the difference. 
-3. READ.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://stackoverflow.org&quot;&gt;Stack Overflow&lt;/a&gt; is generally a useful resource for recovering from errors. 
-It is well curated and lots of people use it to figure things out. &lt;/p&gt;
-
-&lt;h1 id=&quot;for-next-week&quot;&gt;For next week&lt;/h1&gt;
-</description>
-        <pubDate>Fri, 01 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/web/2016/07/01/web-lab/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/web/2016/07/01/web-lab/</guid>
-        
-        <category>troubleshooting</category>
-        
-        <category>websites</category>
-        
-        <category>trial and error</category>
-        
-        
-        <category>Web</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description></description>
-        <pubDate>Thu, 30 Jun 2016 11:29:07 -0400</pubDate>
-        <link>http://inls161.johndmart.in/2016/06/30/template/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/2016/06/30/template/</guid>
-        
-        <category>tag</category>
-        
-        <category>tag</category>
-        
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>&lt;h2 id=&quot;some-easy-themes&quot;&gt;Some easy themes&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/basic/&quot;&gt;http://jekyllthemes.org/themes/basic/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/trading/&quot;&gt;http://jekyllthemes.org/themes/trading/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/devjournal/&quot;&gt;http://jekyllthemes.org/themes/devjournal/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/gravity/&quot;&gt;http://jekyllthemes.org/themes/gravity/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;more-challenging-themes&quot;&gt;More challenging themes&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/jekyll-clean/&quot;&gt;http://jekyllthemes.org/themes/jekyll-clean/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/thinkspace/&quot;&gt;http://jekyllthemes.org/themes/thinkspace/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/vitae/&quot;&gt;http://jekyllthemes.org/themes/vitae/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/dbyll/&quot;&gt;http://jekyllthemes.org/themes/dbyll/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/blackdoc/&quot;&gt;http://jekyllthemes.org/themes/blackdoc/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/daktilo/&quot;&gt;http://jekyllthemes.org/themes/daktilo/&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 30 Jun 2016 11:29:07 -0400</pubDate>
-        <link>http://inls161.johndmart.in/2016/06/30/notes-for-later/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/2016/06/30/notes-for-later/</guid>
-        
-        <category>tag</category>
-        
-        <category>tag</category>
-        
-        
-      </item>
     
       <item>
         <title>Branching and Merging</title>
@@ -1018,6 +892,328 @@ We will also learn to set up a repository remotely on GitHub and then copy it lo
         <category>git</category>
         
         <category>shell commands</category>
+        
+        
+        <category>Basics</category>
+        
+      </item>
+    
+      <item>
+        <title>Clients and Servers</title>
+        <description>&lt;p&gt;Today we&amp;#39;ll talk about some of the basic ways that computers work and
+interact with one another. We&amp;#39;ll also begin discussing the history of
+computing in the context of operating systems, UNIX, and Linux.&lt;/p&gt;
+
+&lt;p&gt;In class we will also start with some hands-on-keyboards practice with
+moving around the shell and manipulating files. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;clients&quot;&gt;Clients&lt;/h1&gt;
+
+&lt;p&gt;A &amp;quot;client&amp;quot; in the context of computing is any hardware or software that
+is used to connect to a service being run on a server. &lt;span
+class=&quot;marginnote&quot;&gt;The client-server
+model&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Client_(computing)#/media/File:Client-server-model.svg&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/200px-Client-server-model.svg.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Almost every device that you interact with now is a client. Each time
+your phone reaches out to see if you have new messages, it is a client.
+When you go to web browser to bring up Facebook, your computer is a
+client. When you you talk to Siri or Alexa or Google Now or whatever
+creepy robot voice you talk to, your are talking to a client which sends
+your request out to a server for processing.&lt;/p&gt;
+
+&lt;p&gt;Very little in the networked world operates locally, and that is as it
+should be.&lt;/p&gt;
+
+&lt;h1 id=&quot;servers&quot;&gt;Servers&lt;/h1&gt;
+
+&lt;p&gt;A &amp;quot;server&amp;quot; is a piece of hardware or software that runs a service for
+clients to connect to. &lt;span class=&quot;marginnote&quot;&gt;A typical server rack
+in a datacenter&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Data_center&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Rack001.jpg/360px-Rack001.jpg&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Sometimes, certain types of servers are referred to as &amp;quot;daemons.&amp;quot; Don&amp;#39;t
+worry, your computing infrastructure is not possessed.&lt;/p&gt;
+
+&lt;p&gt;They are called this in reference to Maxwell&amp;#39;s demon, which is itself a
+reference to the ancient Greek notion of a δαίμων (daimon). These were
+spirits that operated the world around us, unseen and unseeable. Broadly
+construed, they were the forces that made all of the otherwise
+unexplained processes happen in the physical world. James Clerk Maxwell
+adapted this notion to pose potential violations to the Second Law of
+Thermodynamics. His demon acted precisely in the way that the Greek
+daimon did, except naughty.&lt;/p&gt;
+
+&lt;p&gt;All that aside, a daemon is a &amp;quot;background process.&amp;quot; Some piece of
+software that runs on a computer in the background and waits for
+something to happen. These processes listen, typically on a specific
+port for an event to occur. When that event occurs, the daemon executes
+some set of instructions.&lt;/p&gt;
+
+&lt;p&gt;In a server, that event will be a request for something.&lt;/p&gt;
+
+&lt;p&gt;In a web server, that event will be a request for a web page or some
+other web content.&lt;/p&gt;
+
+&lt;p&gt;On a web server, the daemon that serves the web pages listens on port
+number 8000, unless otherwise specified.&lt;/p&gt;
+
+&lt;p&gt;When it receives a request on port 8000, it dutifully gathers up all of
+the requisite parts of the web page, interprets them, and then sends
+them to your client (a.k.a., your browser) and then all of that
+information gets prettified and placed on your screen so that it can go
+into your eyeballs and then your brain.&lt;/p&gt;
+
+&lt;h2 id=&quot;questions-to-keep-in-mind:-{#questions-to-keep-in-mind:}&quot;&gt;Questions to keep in mind: {#questions-to-keep-in-mind:}&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt; Why do we use this model?&lt;/li&gt;
+&lt;li&gt; What are the advantages?&lt;/li&gt;
+&lt;li&gt; Why not just run all this stuff on the devices in our
+hands/pockets/backpacks?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In this class, when we operate on a remote system, we will do so through
+a few different protocols, which will be detailed shortly.&lt;/p&gt;
+
+&lt;p&gt;Operating on a remote system directly--that is, manipulating files and
+issuing instructions in a command shell--is preferable if you wish to
+have a high level of control over what you are doing. It also keeps you
+closer to &amp;quot;bare-metal&amp;quot; computing. In most cases, what we will be doing
+is not, in fact, bare metal computing, but rather interacting with
+systems that run on huge banks of servers, the resources of which have
+been virtualized and distributed across many more systems than there
+could possibly be if each were running on its own.&lt;/p&gt;
+
+&lt;p&gt;This abstraction, however, does not take us too far from the experience
+that we are aiming at. We will learn all the same techniques as if we
+were running on systems directly.&lt;/p&gt;
+
+&lt;h1 id=&quot;linux-and-unix&quot;&gt;Linux and UNIX&lt;/h1&gt;
+
+&lt;p&gt;I will not go too deeply into the history of Linux and UNIX, except to
+say a few things and explain why we are using these as our primary
+platforms for operation.&lt;/p&gt;
+
+&lt;p&gt;UNIX is a general purpose, multitasking, multi-user operating system
+designed in the 1970s at Bell Labs. &lt;span class=&quot;marginnote&quot;&gt;UNIX
+history&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Unix_history-simple.svg/200px-Unix_history-simple.svg.png&quot; alt=&quot;UNIX
+History&quot;&gt;&lt;/a&gt;
+&lt;/span&gt; The name &amp;quot;UNIX&amp;quot; now refers to a whole family of operating
+systems.&lt;/p&gt;
+
+&lt;p&gt;UNIX serves as the precursor to a complete, independent clone thereof
+called &amp;quot;Linux.&amp;quot; Linux was developed initially in 1991 by a student at
+Helsinki University named Linux Torvalds, who still develops the
+operating system kernel today. The project was inspired by the lack of a
+functioning kernel for the GNU UNIX-like system designed by Richard
+Stallman. Torvalds says that if the GNU kernel had worked, he would
+likely have never written Linux.&lt;/p&gt;
+
+&lt;p&gt;When you use Linux today you are actually using GNU and Linux together.
+Linux provides the operating system kernel and GNU provides the system
+software layer that runs over it and allows you to interact with it.
+There are myriad different versions of GNU/Linux floating around out
+there. All are Free and Open Source Software, which means that you can
+download the source code, compile it yourself, and run it on any system
+you like. Below is a family tree of all existing GNU/Linux
+distributions. Have a look to see if you can find Ubuntu, the system
+that we are most likely using on our CodeAnywhere Dev Boxes. &lt;span
+class=&quot;marginnote&quot;&gt;A timeline of Linux distributions&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Linux_Distribution_Timeline.svg/200px-Linux_Distribution_Timeline.svg.png&quot; alt=&quot;GNU/Linux Family
+Tree&quot;&gt;&lt;/a&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Operating systems are complex, as is their history, and I am afraid that
+I cannot do justice to it here. This history (and a general history of
+personal computing) is best told in a long essay by science-fiction
+author, Neal Stephenson:&lt;/p&gt;
+
+&lt;p&gt;Stephenson, N. (1999). &lt;a href=&quot;http://www.cryptonomicon.com/beginning.html&quot;&gt;In the beginning was the command
+line&lt;/a&gt;. Retrieved from
+&lt;a href=&quot;http://www.cryptonomicon.com/beginning.html&quot;&gt;http://www.cryptonomicon.com/beginning.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Read that piece at some point, if you have a chance. It&amp;#39;s fascinating,
+exceedingly well-written, and a reasonably easy read.&lt;/p&gt;
+
+&lt;h2 id=&quot;who-cares?-{#who-cares?}&quot;&gt;Who cares? {#who-cares?}&lt;/h2&gt;
+
+&lt;p&gt;Right, so why is this important?&lt;/p&gt;
+
+&lt;p&gt;Well for starters, some version of UNIX or Linux runs on the backend of
+nearly 70% of all public-facing web servers. In addition to that, Linux
+runs on 97% of supercomputers and computer clusters.&lt;/p&gt;
+
+&lt;p&gt;Also, Mac OS X is UNIX-based. Android is just a weird, simplified
+version of Linux. Chrome OS, underneath the browser layer is Linux.
+Myriad little embedded devices like e-readers, tiny automation devices,
+media devices (DVRs, Amazon Fire, Roku, etc.) have some Linux-y thing
+running underneath.&lt;/p&gt;
+
+&lt;p&gt;UNIX and Linux surround you, physically and otherwise.&lt;/p&gt;
+
+&lt;p&gt;It is important to know something about the things around you.
+Otherwise, they might as well be operating as if by magic.&lt;/p&gt;
+
+&lt;h2 id=&quot;so...&quot;&gt;So...&lt;/h2&gt;
+
+&lt;p&gt;So, if you ever have occasion to operate on a remote system, it is
+terribly likely that you are going to be logging into a Linux box
+somewhere, and failing that, a UNIX box. From now on, you&amp;#39;ll never be
+able to say that you don&amp;#39;t know how to do that.&lt;/p&gt;
+
+&lt;h1 id=&quot;for-the-next-session:-{#for-the-next-session:}&quot;&gt;For the next session: {#for-the-next-session:}&lt;/h1&gt;
+
+&lt;p&gt;Look at Joseph Wynn&amp;#39;s &amp;quot;Hacker&amp;#39;s Guide&amp;quot;. &lt;span class=&quot;marginnote&quot;&gt;Wynn,
+Joseph. “A Hacker’s Guide to Git.” Wildly Innacurate. Last modified May
+25, 2014. &lt;a href=&quot;http://wildlyinaccurate.com/a-hackers-guide-to-git/&quot;&gt;http://wildlyinaccurate.com/a-hackers-guide-to-git/&lt;/a&gt;. &lt;/span&gt;
+It is a really useful tutorial for new users of git who want to know
+ways to get things done with it.&lt;/p&gt;
+
+&lt;p&gt;I would also like you to look at Roger Dudler&amp;#39;s simple git tutorial.
+&lt;span class=&quot;marginnote&quot;&gt;Dudler, Roger. “Git: The Simple Guide.” Git:
+The Simple Guide. Last modified 2015.
+&lt;a href=&quot;http://rogerdudler.github.io/git-guide/&quot;&gt;http://rogerdudler.github.io/git-guide/&lt;/a&gt;. &lt;/span&gt; It is the best and
+fastest way to get you up to speed using git.&lt;/p&gt;
+
+&lt;p&gt;We will also return to &amp;quot;Learning the Shell&amp;quot; &lt;span
+class=&quot;marginnote&quot;&gt;Shotts, William, Jr. “Learning the Shell.”
+LinuxCommand.org. &lt;a href=&quot;http://linuxcommand.org/lc3_learning_the_shell.php&quot;&gt;http://linuxcommand.org/lc3_learning_the_shell.php&lt;/a&gt;.
+&lt;/span&gt; for more command line fun. We&amp;#39;ll do some more exploring once we
+are up to speed with git as well.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/basics/2016/06/21/clients-servers/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/basics/2016/06/21/clients-servers/</guid>
+        
+        <category>clients</category>
+        
+        <category>servers</category>
+        
+        <category>Linux</category>
+        
+        <category>shell commands</category>
+        
+        
+        <category>Basics</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to INLS161!</title>
+        <description>&lt;p&gt;This is a course about pushing our boundaries and learning new things. 
+It is also about learning new ways of doing things that we might already know how to do. 
+Some of the topics and skills covered by the course might be old hat for some of you. 
+Others may not have ever heard of some of these things. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;tools&quot;&gt;Tools&lt;/h1&gt;
+
+&lt;p&gt;We&amp;#39;ll be using an learning a number of different tools in this class. &lt;/p&gt;
+
+&lt;h2 id=&quot;github&quot;&gt;GitHub&lt;/h2&gt;
+
+&lt;p&gt;&lt;label for=&#39;github&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;github&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;&lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot;&gt;&lt;img width=&quot;200px&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/GitHub_logo_2013.svg/200px-GitHub_logo_2013.svg.png&quot; alt=&quot;GitHub&quot; /&gt;&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;To get us started, we will be using GitHub as a repository for our output. &lt;/p&gt;
+
+&lt;p&gt;GitHub will also help us learn about version control and the importance of keeping your versions in order. &lt;/p&gt;
+
+&lt;h2 id=&quot;codeanywhere&quot;&gt;CodeAnywhere&lt;/h2&gt;
+
+&lt;p&gt;&lt;label for=&#39;codeanywhere&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;codeanywhere&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;&lt;a href=&quot;https://codeanywhere.com/&quot; target=&quot;_blank&quot;&gt;&lt;img width=&quot;200px&quot; src=&quot;https://s3.amazonaws.com/image.infoarmy/1388835079827.png&quot; alt=&quot;CodeAnywhere&quot; /&gt;&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Following that, we will use CodeAnywhere to learn about remote operations and to do our web development tasks.&lt;/p&gt;
+
+&lt;p&gt;CodeAnywhere is a web-based integrated development environment (IDE). It highlights syntax for a number of different languages and makes it easy to get to your code wherever you are. &lt;/p&gt;
+
+&lt;p&gt;In today&amp;#39;s session, we are going to make sure that everyone is set up on GitHub and add everyone to an GitHub organization for this class. 
+We will also set up CodeAnywhere and make sure that everyone can log in and set up a Dev Box where you will be able to do some of your work. &lt;/p&gt;
+
+&lt;h2 id=&quot;plaintext&quot;&gt;Plaintext&lt;/h2&gt;
+
+&lt;p&gt;We will approach all of the tasks for this class starting with plaintext. 
+This means no GUIs to get in the way of our content or design. &lt;/p&gt;
+
+&lt;p&gt;We will learn how to run on a command line interface (CLI) and how to do some basic scripting to automate our work. &lt;/p&gt;
+
+&lt;h1 id=&quot;try-new-things&quot;&gt;Try new things&lt;/h1&gt;
+
+&lt;p&gt;This is a course about trying new things and learning in non-linear ways. 
+If you are used to doing something one way, then branch out and do it in another way.
+This might seem difficult at first, but it will only benefit you in the long run.
+By increasing your flexibility and allowing you to swap different tools in and out of your toolchain as needed, you will develop a very marketable technical skillset. &lt;/p&gt;
+
+&lt;p&gt;Next we&amp;#39;ll take a look at some different ways of doing things and what that means for us.&lt;/p&gt;
+
+&lt;p&gt;This is the meat of today&amp;#39;s lecture. &lt;/p&gt;
+
+&lt;h2 id=&quot;flexibility-==-technological-skill&quot;&gt;Flexibility == technological skill&lt;/h2&gt;
+
+&lt;p&gt;As previous mentioned in the notes, this class is about challenging your boundaries with basic technological tools. 
+This will mean sometimes learning what seems to be a really complicated way of doing something that seems like it should be simple. &lt;/p&gt;
+
+&lt;p&gt;But things are not always as they appear. &lt;/p&gt;
+
+&lt;p&gt;You may think that it is simpler to create a webpage using some specially-designed interface for web design or, worse, creating a document in MSWord and then either copying and pasting that your work into a what-you-see-is-what-you-get (WYSIWYG) editor or exporting to HTML. 
+You can do this, but if you want to use your markup later on or understand what is happening (as we do in this class), it is not a good option. &lt;/p&gt;
+
+&lt;p&gt;For example, if you want to make a PDF that is well-formatted, you have a few options as well. &lt;/p&gt;
+
+&lt;p&gt;One toolchain looks like this: &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;LibreOffice Writer (software) &amp;gt; ODT (file format) &amp;gt; Export as PDF (file format)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Another looks like tihs:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Markdown (plaintext markup) &amp;gt; Pandoc (software) &amp;gt; LaTeX (software) &amp;gt; PDF (file format)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The difference here is the way that the SOURCE of the files are conceived. 
+The source for the first option is wrapped up in the interface somewhere. 
+We can&amp;#39;t see it. 
+The source for the second option is the original plaintext file using markup to tell the interpreter what to do with it. &lt;/p&gt;
+
+&lt;h3 id=&quot;why-is-this-second-approach-advantageous?&quot;&gt;Why is this second approach advantageous?&lt;/h3&gt;&lt;/h3&gt;
+
+&lt;p&gt;Let&amp;#39;s look at a second usage scenario. 
+Let&amp;#39;s say that I want to have the same document that I put into PDF, but as a web page also.&lt;/p&gt;
+
+&lt;p&gt;From LibreOffice, I have to export HTML and then upload it to a web server. 
+Fine. &lt;/p&gt;
+
+&lt;p&gt;If I start with Markdown, however, my toolchain looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Markdown &amp;gt; Pandoc &amp;gt; HTML&lt;/code&gt; &lt;/p&gt;
+
+&lt;p&gt;What is better yet is that since the tools in this scenario rely on marked-up plaintext and commands that can be executed without a graphical user interface (GUI), I can probably create the documents server-side rather than having to upload them after working on them locally. &lt;/p&gt;
+
+&lt;p&gt;This approach helps with automation and also with having multiple desired output formats that can come from a single source. &lt;/p&gt;
+
+&lt;p&gt;There are easy ways to do everything, and there are hard ways to do everything. 
+Neither are ever going to be the right way all the time. 
+The method that you use to complete a task has to depend on the context of the task. 
+The right way will fall somewhere in the middle or be an amalgam of both. &lt;/p&gt;
+
+&lt;p&gt;We&amp;#39;ll talk more in the next few sessions about operating on a system using the command line for giving instructions and running programs. &lt;/p&gt;
+
+&lt;h1 id=&quot;for-the-next-session:&quot;&gt;For the next session:&lt;/h1&gt;
+
+&lt;p&gt;I would like you to have a look at the Bill Shotts&amp;#39; &amp;quot;Learning the Shell.&amp;quot;&lt;label for=&#39;shell&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;shell&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;Shotts, William, Jr. “Learning the Shell.” LinuxCommand.org. &lt;a href=&quot;http://linuxcommand.org/lc3_learning_the_shell.php&quot;&gt;http://linuxcommand.org/lc3_learning_the_shell.php&lt;/a&gt;. &lt;/span&gt; 
+Go through each of the steps in the contents listed on that page and try out the commands in your CodeAnywhere DevBox interface that we set up. This is where we will start tomorrow.&lt;/p&gt;
+
+&lt;p&gt;I would also like you to read Tristan Harris&amp;#39; blog post&lt;label for=&#39;hijack&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;hijack&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;Harris, Tristan. “How Technology Hijacks People’s Minds — from a Magician and Google’s Design Ethicist.” Medium. Last modified May 18, 2016. &lt;a href=&quot;https://medium.com/swlh/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3&quot;&gt;https://medium.com/swlh/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3&lt;/a&gt;. &lt;/span&gt; about how design choices in interfaces affect how we think and interact. &lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/basics/2016/06/20/intro/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/basics/2016/06/20/intro/</guid>
+        
+        <category>intro</category>
+        
+        <category>tools</category>
+        
+        <category>GitHub</category>
+        
+        <category>CodeAnywhere</category>
         
         
         <category>Basics</category>

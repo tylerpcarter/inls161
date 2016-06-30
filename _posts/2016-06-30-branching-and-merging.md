@@ -64,7 +64,8 @@ We'll switch to a different tab to continue working while it runs.
 
 # Create a branch
 
-To create, or "checkout" a new branch, we can follow Roger Dudler's guide again.
+To create, or "checkout" a new branch, we can follow Roger Dudler's guide again.{% sidenote 'gitnoshit' 'Dudler, Roger. “Git: The Simple Guide.” Git:
+The Simple Guide. Last modified 2015. <http://rogerdudler.github.io/git-guide/>.'<br/><br/>Also check this resource out for help with branching and merging: “Git - Basic Branching and Merging.” Git --Fast-Version-Control. https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging. %}
 
 `git checkout -b testing`
 
@@ -158,7 +159,7 @@ Don't forget to commit and push.
 
 # Roll back a change
 
-We can roll back most changes. 
+We can roll back most changes. {% sidenote 'revert' jaw6. “How to Undo (almost) Anything with Git.” GitHub. Last modified June 8, 2015. https://github.com/blog/2019-how-to-undo-almost-anything-with-git.'' %}
 The simplest way to do this it to just revert the last commit. 
 
 `git revert <SHA>`
