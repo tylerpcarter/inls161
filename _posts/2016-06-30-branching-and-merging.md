@@ -159,7 +159,7 @@ Don't forget to commit and push.
 
 # Roll back a change
 
-We can roll back most changes. {% sidenote 'revert' jaw6. “How to Undo (almost) Anything with Git.” GitHub. Last modified June 8, 2015. https://github.com/blog/2019-how-to-undo-almost-anything-with-git.'' %}
+We can roll back most changes. {% sidenote 'revert' 'jaw6. “How to Undo (almost) Anything with Git.” GitHub. Last modified June 8, 2015. https://github.com/blog/2019-how-to-undo-almost-anything-with-git.' %}
 The simplest way to do this it to just revert the last commit. 
 
 `git revert <SHA>`
