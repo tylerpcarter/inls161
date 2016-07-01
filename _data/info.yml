@@ -21,6 +21,10 @@ github:
   link: "//github.com/inls161"
   alt: "Follow on GitHub"
   icon: icon-github
+slack: 
+  link: "//inls161.slack.com"
+  alt: "Join the Slack conversations for this class"
+  icon: icon-slack
 rss:
   link: "/feed"
   alt: "Add RSS feed"
