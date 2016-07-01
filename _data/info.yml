@@ -24,7 +24,7 @@ github:
 slack: 
   link: "//inls161.slack.com"
   alt: "Join the Slack conversations for this class"
-  icon: icon-slack
+  icon: icon-bubble
 rss:
   link: "/feed"
   alt: "Add RSS feed"
