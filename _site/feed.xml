@@ -5,9 +5,95 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>http://inls161.johndmart.in/</link>
     <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Jun 2016 15:08:12 -0400</pubDate>
-    <lastBuildDate>Thu, 30 Jun 2016 15:08:12 -0400</lastBuildDate>
+    <pubDate>Fri, 01 Jul 2016 14:13:56 -0400</pubDate>
+    <lastBuildDate>Fri, 01 Jul 2016 14:13:56 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Troubleshooting</title>
+        <description>&lt;p&gt;This lab session will be primarily dedicated to helping you work out kinks and wrinkles in the process of getting your site online and completing the second assignment. 
+If you are already very far along, then this is an opportunity for you to finish your work. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h1&gt;
+
+&lt;p&gt;In addition to completing your site and the assignment at hand, we will start looking at ways that you can teach yourself how to fix problems that happen. 
+You will always run into issues, no matter what you are working on. 
+This will never stop. &lt;/p&gt;
+
+&lt;p&gt;At that point, you have two options: &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Wait for someone to help you. &lt;/li&gt;
+&lt;li&gt;Figure it out on your own. &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Guess which one goes further in the course of your academic and work lives.&lt;/p&gt;
+
+&lt;h2 id=&quot;sources-of-information-are-myriad&quot;&gt;Sources of information are myriad&lt;/h2&gt;
+
+&lt;p&gt;It is really difficult to recommend places to get help with troubleshooting online. 
+This is not because they are so few, but because they are so many. &lt;/p&gt;
+
+&lt;p&gt;The best approach is to actually see what information you can get directly from the error interaction and then move on from there. &lt;/p&gt;
+
+&lt;p&gt;Read the error and try to understand it in plain language. 
+That may work some of the time. &lt;/p&gt;
+
+&lt;p&gt;Some error systems give VERY helpful errors that include suggestions for ways to fix what has gone wrong. 
+Git is like this.
+If you have a git error, most of the time, it will tell you what has gone wrong and how you can fix it. 
+Usually you just have to read it and do what it says. &lt;/p&gt;
+
+&lt;p&gt;Sometimes error messages will be more obtuse: this is a legitimate and well-known fact. &lt;/p&gt;
+
+&lt;p&gt;If you catch an error that doesn&amp;#39;t make sense to you, try at the very least to figure out what it means or to what it is referring. &lt;/p&gt;
+
+&lt;h2 id=&quot;google-it&quot;&gt;Google it&lt;/h2&gt;
+
+&lt;p&gt;Take this error, for example:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;error: Entry &#39;&amp;lt;fileName&amp;gt;&#39; would be overwritten by merge. Cannot merge. (Changes in staging area)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is not particularly helpful. 
+I could pore over the git documentation for this, or I could take a more reasonable path and &lt;a href=&quot;http://lmgtfy.com/?q=error%3A+Entry+%27%3CfileName%3E%27+would+be+overwritten+by+merge.+Cannot+merge.+(Changes+in+staging+area)&quot;&gt;Google it&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;As you can see, there is a fair amount of information immediately available that will help you cirvumvent that error. &lt;/p&gt;
+
+&lt;p&gt;Take this approach first and keep these things in mind:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Be careful: not all information is good. &lt;/li&gt;
+&lt;li&gt;Learn to spot the difference. &lt;/li&gt;
+&lt;li&gt;READ.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.org&quot;&gt;Stack Overflow&lt;/a&gt; is generally a useful resource for recovering from errors. 
+It is well curated and lots of people use it to figure things out. &lt;/p&gt;
+
+&lt;h1 id=&quot;next-week&quot;&gt;Next week&lt;/h1&gt;
+
+&lt;p&gt;Next week we are going to start working on manipulating and formatting text.&lt;label for=&#39;word&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;word&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;Wiens, John A. “Word Processing versus Writing.” The Auk 100 (1983): 758. &lt;a href=&quot;https://sora.unm.edu/sites/default/files/journals/auk/v100n03/p0758-p0758.pdf&quot;&gt;https://sora.unm.edu/sites/default/files/journals/auk/v100n03/p0758-p0758.pdf&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Caleb McDaniel, W. “Why (and How) I Wrote My Academic Book in Plain Text | W. Caleb McDaniel.” Last modified September 28, 2012. &lt;a href=&quot;http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html&quot;&gt;http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Stross, Charlie. “Why Microsoft Word Must Die.” Charlie’s Diary. Last modified October 12, 2013. &lt;a href=&quot;http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html&quot;&gt;http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html&lt;/a&gt;. &lt;/span&gt;  &lt;/p&gt;
+
+&lt;p&gt;To prepare for this philosophically, I would like you to read a few blog posts and a very short article. &lt;/p&gt;
+
+&lt;p&gt;The first is a short article from about the difference between word processing and writing from the earliest days word processors.&lt;/p&gt;
+
+&lt;p&gt;The blog posts are about the relative merits of giving up word processors altogether and using plaintext the way we have been in this class.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Jul 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/web/2016/07/01/web-lab/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/web/2016/07/01/web-lab/</guid>
+        
+        <category>troubleshooting</category>
+        
+        <category>websites</category>
+        
+        <category>trial and error</category>
+        
+        
+        <category>Web</category>
+        
+      </item>
     
       <item>
         <title>Branching and Merging</title>
@@ -66,8 +152,7 @@ We&amp;#39;ll switch to a different tab to continue working while it runs. &lt;/
 
 &lt;h1 id=&quot;create-a-branch&quot;&gt;Create a branch&lt;/h1&gt;
 
-&lt;p&gt;To create, or &amp;quot;checkout&amp;quot; a new branch, we can follow Roger Dudler&amp;#39;s guide again.&lt;label for=&#39;gitnoshit&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;gitnoshit&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Dudler, Roger. “Git: The Simple Guide.” Git:
-The Simple Guide. Last modified 2015. &lt;a href=&quot;http://rogerdudler.github.io/git-guide/&quot;&gt;http://rogerdudler.github.io/git-guide/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Also &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;To create, or &amp;quot;checkout&amp;quot; a new branch, we can follow Roger Dudler&amp;#39;s guide again.&lt;label for=&#39;gitnoshit&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;gitnoshit&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. &lt;a href=&quot;http://rogerdudler.github.io/git-guide/&quot;&gt;http://rogerdudler.github.io/git-guide/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Also check this resource out for help with branching and merging: “Git - Basic Branching and Merging.” Git --Fast-Version-Control. &lt;a href=&quot;https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging&quot;&gt;https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;git checkout -b testing&lt;/code&gt;&lt;/p&gt;
 
@@ -161,7 +246,7 @@ Don&amp;#39;t forget to commit and push.&lt;/p&gt;
 
 &lt;h1 id=&quot;roll-back-a-change&quot;&gt;Roll back a change&lt;/h1&gt;
 
-&lt;p&gt;We can roll back most changes. &lt;label for=&#39;revert&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;revert&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;jaw6. &lt;/span&gt;
+&lt;p&gt;We can roll back most changes.&lt;label for=&#39;revert&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;revert&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;jaw6. “How to Undo (almost) Anything with Git.” GitHub. Last modified June 8, 2015. &lt;a href=&quot;https://github.com/blog/2019-how-to-undo-almost-anything-with-git&quot;&gt;https://github.com/blog/2019-how-to-undo-almost-anything-with-git&lt;/a&gt;. &lt;/span&gt; 
 The simplest way to do this it to just revert the last commit. &lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;git revert &amp;lt;SHA&amp;gt;&lt;/code&gt;&lt;/p&gt;
