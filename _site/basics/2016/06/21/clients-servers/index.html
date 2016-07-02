@@ -108,10 +108,7 @@ moving around the shell and manipulating files.
 <h1 id="clients">Clients</h1>
 
 <p>A &quot;client&quot; in the context of computing is any hardware or software that
-is used to connect to a service being run on a server. <span
-class="marginnote">The client-server
-model<br/><br/><a href="https://en.wikipedia.org/wiki/Client_(computing)#/media/File:Client-server-model.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/200px-Client-server-model.svg.png" alt=""></a>
-</span></p>
+is used to connect to a service being run on a server. <label for='client-server' class='margin-toggle'> &#8853;</label><input type='checkbox' id='client-server' class='margin-toggle'/><span class='marginnote'>The client-server model<br/><br/><a href="https://en.wikipedia.org/wiki/Client_(computing)#/media/File:Client-server-model.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/200px-Client-server-model.svg.png" alt=""></a> </span></p>
 
 <p>Almost every device that you interact with now is a client. Each time
 your phone reaches out to see if you have new messages, it is a client.
@@ -126,9 +123,7 @@ should be.</p>
 <h1 id="servers">Servers</h1>
 
 <p>A &quot;server&quot; is a piece of hardware or software that runs a service for
-clients to connect to. <span class="marginnote">A typical server rack
-in a datacenter<br/><br/><a href="https://en.wikipedia.org/wiki/Data_center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Rack001.jpg/360px-Rack001.jpg" alt=""></a>
-</span></p>
+clients to connect to.<label for='' class='margin-toggle'> &#8853;</label><input type='checkbox' id='' class='margin-toggle'/><span class='marginnote'>A typical server rack in a datacenter<br/><br/><a href="https://en.wikipedia.org/wiki/Data_center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Rack001.jpg/360px-Rack001.jpg" alt=""></a> </span></p>
 
 <p>Sometimes, certain types of servers are referred to as &quot;daemons.&quot; Don&#39;t
 worry, your computing infrastructure is not possessed.</p>
@@ -191,17 +186,15 @@ were running on systems directly.</p>
 
 <p>I will not go too deeply into the history of Linux and UNIX, except to
 say a few things and explain why we are using these as our primary
-platforms for operation.</p>
+platforms for operation.<label for='unix' class='margin-toggle'> &#8853;</label><input type='checkbox' id='unix' class='margin-toggle'/><span class='marginnote'>UNIX history<br/><br/><a href="https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Unix_history-simple.svg/200px-Unix_history-simple.svg.png" alt="UNIX History"></a> </span> </p>
 
 <p>UNIX is a general purpose, multitasking, multi-user operating system
-designed in the 1970s at Bell Labs. <span class="marginnote">UNIX
-history<br/><br/><a href="https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Unix_history-simple.svg/200px-Unix_history-simple.svg.png" alt="UNIX
-History"></a>
-</span> The name &quot;UNIX&quot; now refers to a whole family of operating
+designed in the 1970s at Bell Labs.
+The name &quot;UNIX&quot; now refers to a whole family of operating
 systems.</p>
 
 <p>UNIX serves as the precursor to a complete, independent clone thereof
-called &quot;Linux.&quot; Linux was developed initially in 1991 by a student at
+called &quot;Linux.&quot;<label for='linux' class='margin-toggle'> &#8853;</label><input type='checkbox' id='linux' class='margin-toggle'/><span class='marginnote'>A timeline of Linux distributions<br/><br/><a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Linux_Distribution_Timeline.svg/200px-Linux_Distribution_Timeline.svg.png" alt="GNU/Linux Family Tree"></a> </span> Linux was developed initially in 1991 by a student at
 Helsinki University named Linux Torvalds, who still develops the
 operating system kernel today. The project was inspired by the lack of a
 functioning kernel for the GNU UNIX-like system designed by Richard
@@ -216,24 +209,17 @@ there. All are Free and Open Source Software, which means that you can
 download the source code, compile it yourself, and run it on any system
 you like. Below is a family tree of all existing GNU/Linux
 distributions. Have a look to see if you can find Ubuntu, the system
-that we are most likely using on our CodeAnywhere Dev Boxes. <span
-class="marginnote">A timeline of Linux distributions<br/><br/><a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Linux_Distribution_Timeline.svg/200px-Linux_Distribution_Timeline.svg.png" alt="GNU/Linux Family
-Tree"></a>
-</span></p>
+that we are most likely using on our CodeAnywhere Dev Boxes.</p>
 
 <p>Operating systems are complex, as is their history, and I am afraid that
 I cannot do justice to it here. This history (and a general history of
 personal computing) is best told in a long essay by science-fiction
-author, Neal Stephenson:</p>
-
-<p>Stephenson, N. (1999). <a href="http://www.cryptonomicon.com/beginning.html">In the beginning was the command
-line</a>. Retrieved from
-<a href="http://www.cryptonomicon.com/beginning.html">http://www.cryptonomicon.com/beginning.html</a></p>
+author, Neal Stephenson.<label for='' class='margin-toggle sidenote-number'></label><input type='checkbox' id='' class='margin-toggle'/><span class='sidenote'>Stephenson, N. (1999). <a href="http://www.cryptonomicon.com/beginning.html">In the beginning was the command line</a>. </span></p>
 
 <p>Read that piece at some point, if you have a chance. It&#39;s fascinating,
 exceedingly well-written, and a reasonably easy read.</p>
 
-<h2 id="who-cares?-{#who-cares?}">Who cares? {#who-cares?}</h2>
+<h1 id="who-cares?">Who cares?</h1>
 
 <p>Right, so why is this important?</p>
 
@@ -259,25 +245,16 @@ terribly likely that you are going to be logging into a Linux box
 somewhere, and failing that, a UNIX box. From now on, you&#39;ll never be
 able to say that you don&#39;t know how to do that.</p>
 
-<h1 id="for-the-next-session:-{#for-the-next-session:}">For the next session: {#for-the-next-session:}</h1>
+<h1 id="for-the-next-session">For the next session</h1>
 
-<p>Look at Joseph Wynn&#39;s &quot;Hacker&#39;s Guide&quot;. <span class="marginnote">Wynn,
-Joseph. “A Hacker’s Guide to Git.” Wildly Innacurate. Last modified May
-25, 2014. <a href="http://wildlyinaccurate.com/a-hackers-guide-to-git/">http://wildlyinaccurate.com/a-hackers-guide-to-git/</a>. </span>
-It is a really useful tutorial for new users of git who want to know
-ways to get things done with it.</p>
+<p>Look at Joseph Wynn&#39;s &quot;Hacker&#39;s Guide&quot;.<label for='githacker' class='margin-toggle sidenote-number'></label><input type='checkbox' id='githacker' class='margin-toggle'/><span class='sidenote'>Wynn, Joseph. “A Hacker’s Guide to Git.” Wildly Innacurate. Last modified May 25, 2014. <a href="http://wildlyinaccurate.com/a-hackers-guide-to-git/">http://wildlyinaccurate.com/a-hackers-guide-to-git/</a>. </span>
+It is a really useful tutorial for new users of git who want to know ways to get things done with it.</p>
 
-<p>I would also like you to look at Roger Dudler&#39;s simple git tutorial.
-<span class="marginnote">Dudler, Roger. “Git: The Simple Guide.” Git:
-The Simple Guide. Last modified 2015.
-<a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a>. </span> It is the best and
-fastest way to get you up to speed using git.</p>
+<p>I would also like you to look at Roger Dudler&#39;s simple git tutorial.<label for='gitnoshit' class='margin-toggle sidenote-number'></label><input type='checkbox' id='gitnoshit' class='margin-toggle'/><span class='sidenote'>Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. <a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a>. </span>
+It is the best and fastest way to get you up to speed using git.</p>
 
-<p>We will also return to &quot;Learning the Shell&quot; <span
-class="marginnote">Shotts, William, Jr. “Learning the Shell.”
-LinuxCommand.org. <a href="http://linuxcommand.org/lc3_learning_the_shell.php">http://linuxcommand.org/lc3_learning_the_shell.php</a>.
-</span> for more command line fun. We&#39;ll do some more exploring once we
-are up to speed with git as well.</p>
+<p>We will also return to &quot;Learning the Shell&quot;<label for='shell' class='margin-toggle sidenote-number'></label><input type='checkbox' id='shell' class='margin-toggle'/><span class='sidenote'>Shotts, William, Jr. “Learning the Shell.” LinuxCommand.org. <a href="http://linuxcommand.org/lc3_learning_the_shell.php">http://linuxcommand.org/lc3_learning_the_shell.php</a>. </span> for more command line fun. 
+We&#39;ll do some more exploring once we are up to speed with git as well.</p>
 
 
 <p>
@@ -287,6 +264,14 @@ are up to speed with git as well.</p>
   </ul> 
 </p>
 
+<div class="blognav">
+  
+    <a class="prev" href="/basics/2016/06/20/intro/">&laquo; Welcome to INLS161!</a>
+  
+  
+    <a class="next" href="/basics/2016/06/22/git/">Version Control &raquo;</a>
+  
+</div>
     </article>
     <span class="print-footer">Clients and Servers - June 21, 2016 - </span>
     <footer>
@@ -295,42 +280,47 @@ are up to speed with git as well.</p>
     
     
       <li>
-        <a href="http://johndmart.in" title="Instructor home page"><span class="icon-user"></span>&nbsp;John D. Martin III</a>
+        <a href="http://johndmart.in" title="Instructor home page"><span class="ico-user"></span>&nbsp;John D. Martin III</a>
       </li>
     
     
       <li>
-        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="icon-mail"></span>&nbsp;john.d.martin.iii@unc.edu</a>
+        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="ico-envelope"></span>&nbsp;john.d.martin.iii@unc.edu</a>
       </li>
     
     
       <li>
-        <span class="icon-clock2"></span>&nbsp;11:30-13:00
+        <span class="ico-clock"></span>&nbsp;11:30-13:00
       </li>
     
     
       <li>
-        <span class="icon-calendar"></span>&nbsp;MoTuWeThFr
+        <span class="ico-calendar"></span>&nbsp;MoTuWeThFr
       </li>
     
     
       <li>
-        <span class="icon-library"></span>&nbsp;117 Manning Hall
+        <span class="ico-library"></span>&nbsp;117 Manning Hall
       </li>
     
     
       <li>
-        <a href="//github.com/inls161" title="Follow on GitHub"><span class="icon-github"></span></a>
+        <a href="https://sakai.unc.edu/portal/site/inls161s216" title="UNC Sakai site for this course"><span class="ico-target"></span></a>
       </li>
     
     
       <li>
-        <a href="//inls161.slack.com" title="Join the Slack conversations for this class"><span class="icon-bubbles"></span></a>
+        <a href="https://github.com/inls161" title="GitHub organization for this course"><span class="ico-github"></span></a>
       </li>
     
     
       <li>
-        <a href="/feed" title="Add RSS feed"><span class="icon-feed"></span></a>
+        <a href="https://inls161.slack.com" title="Join the Slack conversations for this course"><span class="ico-slack"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed" title="Add RSS feed"><span class="ico-rss"></span></a>
       </li>
       
   </ul>

@@ -5,8 +5,8 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>http://inls161.johndmart.in/</link>
     <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 Jul 2016 14:13:56 -0400</pubDate>
-    <lastBuildDate>Fri, 01 Jul 2016 14:13:56 -0400</lastBuildDate>
+    <pubDate>Sat, 02 Jul 2016 17:21:46 -0400</pubDate>
+    <lastBuildDate>Sat, 02 Jul 2016 17:21:46 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
@@ -152,7 +152,7 @@ We&amp;#39;ll switch to a different tab to continue working while it runs. &lt;/
 
 &lt;h1 id=&quot;create-a-branch&quot;&gt;Create a branch&lt;/h1&gt;
 
-&lt;p&gt;To create, or &amp;quot;checkout&amp;quot; a new branch, we can follow Roger Dudler&amp;#39;s guide again.&lt;label for=&#39;gitnoshit&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;gitnoshit&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. &lt;a href=&quot;http://rogerdudler.github.io/git-guide/&quot;&gt;http://rogerdudler.github.io/git-guide/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Also check this resource out for help with branching and merging: “Git - Basic Branching and Merging.” Git --Fast-Version-Control. &lt;a href=&quot;https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging&quot;&gt;https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;To create, or &amp;quot;checkout&amp;quot; a new branch, we can follow Roger Dudler&amp;#39;s guide again.&lt;label for=&#39;gitnoshit&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;gitnoshit&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. &lt;a href=&quot;http://rogerdudler.github.io/git-guide/&quot;&gt;http://rogerdudler.github.io/git-guide/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Also check this resource out for help with branching and merging: Chacon, Scott, and Ben Straub. “Basic Branching and Merging.” In ProGit. New York, New York: Apress, 2014. &lt;a href=&quot;https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging&quot;&gt;https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;git checkout -b testing&lt;/code&gt;&lt;/p&gt;
 
@@ -212,7 +212,7 @@ This is because the default preview port for Jekyll is 4000. &lt;/p&gt;
 
 &lt;p&gt;So, edit the link to read:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000&quot;&gt;http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com*&lt;em&gt;:4000&lt;/em&gt;*&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000&quot;&gt;http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;You will then be able to see your site online. If you click on the link above while I am demonstrating this in class, you will see my site.&lt;/p&gt;
 
@@ -250,6 +250,40 @@ Don&amp;#39;t forget to commit and push.&lt;/p&gt;
 The simplest way to do this it to just revert the last commit. &lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;git revert &amp;lt;SHA&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;SHA&amp;gt;&lt;/code&gt; above refers to the SHA-1 checksum of the git commit. 
+If you look at the git log for a set of recent commits you will see this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/inls161.github.io$ git log
+commit 98816f674673b2f6143db724edf71f34f471f164
+Author: john.d.martin.iii &amp;lt;john.d.martin.iii@gmail.com&amp;gt;
+Date:   Thu Jun 30 12:01:06 2016 -0400
+
+    changed the color of black
+
+commit c8cc9f57e5a0e43f38ffb7a21aacb72ded8f7778
+Author: john.d.martin.iii &amp;lt;john.d.martin.iii@gmail.com&amp;gt;
+Date:   Thu Jun 30 11:16:42 2016 -0400
+
+    edit index
+
+commit a2937da7d6052d953e4cbedb1c4df0a0300d7993
+Author: john.d.martin.iii &amp;lt;john.d.martin.iii@gmail.com&amp;gt;
+Date:   Thu Jun 30 11:14:40 2016 -0400
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The SHA-1 checksum identifies each git commit as unique. &lt;/p&gt;
+
+&lt;p&gt;If we run &lt;code&gt;git revert 98816f674673b2f6143db724edf71f34f471f164 -m &amp;#39;&amp;quot;Revert &amp;quot;changed the color of black&amp;quot;&amp;#39;&lt;/code&gt;, which is the SHA-1 checksum of the last commit listed above, and then run &lt;code&gt;git log&lt;/code&gt; we will see that the output tells us that we reverted the last commit: &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/inls161.github.io$ git log
+commit e73f76956fdd29c2cc0c92e6433be3669fccc155
+Author: john.d.martin.iii &amp;lt;john.d.martin.iii@gmail.com&amp;gt;
+Date:   Thu Jun 30 12:54:27 2016 -0400
+
+    Revert &quot;changed the color of black&quot;
+
+    This reverts commit 98816f674673b2f6143db724edf71f34f471f164.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In this way, we can always fix a mistake we have made (or multiple mistakes), even if we&amp;#39;ve committed and pushed them. 
+This makes git a &lt;em&gt;very&lt;/em&gt; powerful tool for making sure that you do not lose work.&lt;label for=&#39;nota-bene&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;nota-bene&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;&lt;strong&gt;&lt;em&gt;Nota bene:&lt;/em&gt;&lt;/strong&gt; This is why it is a good rule of thumb to commit early and often. while working on a project. &lt;/span&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;for-tomorrow&quot;&gt;For tomorrow&lt;/h1&gt;
 
@@ -902,11 +936,8 @@ It also works for managing different versions of datasets, from raw data to clea
 
 &lt;p&gt;In this course, we are going to use such a system to manage and back up our work.  &lt;/p&gt;
 
-&lt;p&gt;You should have read through the following:&lt;/p&gt;
-
-&lt;p&gt;Wynn, J. (2014, May 25). &lt;a href=&quot;http://wildlyinaccurate.com/a-hackers-guide-to-git/&quot;&gt;A Hacker&amp;#39;s Guide to Git&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;We will disscuss the fundamental concepts about version control contained in that article. &lt;/p&gt;
+&lt;p&gt;You should have read an article in preparation for this session about Git.&lt;label for=&#39;githacker&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;githacker&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Wynn, Joseph. “A Hacker’s Guide to Git.” Wildly Innacurate. Last modified May 25, 2014. &lt;a href=&quot;http://wildlyinaccurate.com/a-hackers-guide-to-git/&quot;&gt;http://wildlyinaccurate.com/a-hackers-guide-to-git/&lt;/a&gt;. &lt;/span&gt; 
+We will disscuss the fundamental concepts about version control contained in that article. &lt;/p&gt;
 
 &lt;p&gt;Then, for the rest of today&amp;#39;s class we are going to experiment with the version control systems that we will operate on and learn how to get our information into them and manage it once it is there.&lt;/p&gt;
 
@@ -934,7 +965,7 @@ Git has an interesting past and was developed out of necessity. &lt;/p&gt;
 
 &lt;p&gt;Able to handle large projects like the Linux kernel efficiently (speed and data size)&lt;/p&gt;
 
-&lt;p&gt;Since its birth in 2005, Git has evolved and matured to be easy to use and yet retain these initial qualities. It’s incredibly fast, it’s very efficient with large projects, and it has an incredible branching system for non-linear development (&lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git&quot;&gt;Chacon &amp;amp; Straub, 2014&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Since its birth in 2005, Git has evolved and matured to be easy to use and yet retain these initial qualities. It’s incredibly fast, it’s very efficient with large projects, and it has an incredible branching system for non-linear development.&lt;label for=&#39;git-history&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;git-history&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Chacon, Scott, and Ben Straub. “A Short History of Git.” In ProGit. New York, New York: Apress, 2014. &lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git&quot;&gt;https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;So, the development of Git is tied to the development of the Linux kernel, but it doesn&amp;#39;t end there. 
@@ -960,13 +991,8 @@ It also adds a social interaction layer to the process of managing version-contr
 &lt;p&gt;Tomorrow we will learn to push it to GitHub. 
 We will also learn to set up a repository remotely on GitHub and then copy it locally. &lt;/p&gt;
 
-&lt;p&gt;For this purpose, we will follow this guide, for the most part:  &lt;/p&gt;
-
-&lt;p&gt;Orsini, L. (2013). &lt;a href=&quot;http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1&quot;&gt;GitHub For Beginners: Don&amp;#39;t Get Scared, Get Started&lt;/a&gt;. Retrieved from &lt;a href=&quot;http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1&quot;&gt;http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It has much the same information as some of the other articles and books referenced in our course site, but it strings the different parts together and makes for a useful review resource.&lt;/p&gt;
-
-&lt;p&gt;Since we will have already created repos, we may want to have a look at this to see how we can get our repo into GitHub: &lt;a href=&quot;https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/&quot;&gt;https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Please read up on the basics of GitHub in preparation for tomorrow&amp;#39;s session.&lt;label for=&#39;github-beginners&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;github-beginners&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Orsini, Lauren. “GitHub For Beginners: Don’t Get Scared, Get Started.” ReadWrite. Last modified September 30, 2013. &lt;a href=&quot;http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/&quot;&gt;http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/&lt;/a&gt;. &lt;/span&gt; 
+The article in the notes has much the same information as some of the other articles and books referenced in our course site, but it strings the different parts together and makes for a useful review resource.&lt;/p&gt;
 </description>
         <pubDate>Wed, 22 Jun 2016 00:00:00 -0400</pubDate>
         <link>http://inls161.johndmart.in/basics/2016/06/22/git/</link>
@@ -996,10 +1022,7 @@ moving around the shell and manipulating files.
 &lt;h1 id=&quot;clients&quot;&gt;Clients&lt;/h1&gt;
 
 &lt;p&gt;A &amp;quot;client&amp;quot; in the context of computing is any hardware or software that
-is used to connect to a service being run on a server. &lt;span
-class=&quot;marginnote&quot;&gt;The client-server
-model&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Client_(computing)#/media/File:Client-server-model.svg&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/200px-Client-server-model.svg.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
-&lt;/span&gt;&lt;/p&gt;
+is used to connect to a service being run on a server. &lt;label for=&#39;client-server&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;client-server&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;The client-server model&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Client_(computing)#/media/File:Client-server-model.svg&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/200px-Client-server-model.svg.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;Almost every device that you interact with now is a client. Each time
 your phone reaches out to see if you have new messages, it is a client.
@@ -1014,9 +1037,7 @@ should be.&lt;/p&gt;
 &lt;h1 id=&quot;servers&quot;&gt;Servers&lt;/h1&gt;
 
 &lt;p&gt;A &amp;quot;server&amp;quot; is a piece of hardware or software that runs a service for
-clients to connect to. &lt;span class=&quot;marginnote&quot;&gt;A typical server rack
-in a datacenter&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Data_center&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Rack001.jpg/360px-Rack001.jpg&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
-&lt;/span&gt;&lt;/p&gt;
+clients to connect to.&lt;label for=&#39;&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;A typical server rack in a datacenter&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Data_center&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Rack001.jpg/360px-Rack001.jpg&quot; alt=&quot;&quot;&gt;&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;Sometimes, certain types of servers are referred to as &amp;quot;daemons.&amp;quot; Don&amp;#39;t
 worry, your computing infrastructure is not possessed.&lt;/p&gt;
@@ -1079,17 +1100,15 @@ were running on systems directly.&lt;/p&gt;
 
 &lt;p&gt;I will not go too deeply into the history of Linux and UNIX, except to
 say a few things and explain why we are using these as our primary
-platforms for operation.&lt;/p&gt;
+platforms for operation.&lt;label for=&#39;unix&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;unix&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;UNIX history&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Unix_history-simple.svg/200px-Unix_history-simple.svg.png&quot; alt=&quot;UNIX History&quot;&gt;&lt;/a&gt; &lt;/span&gt; &lt;/p&gt;
 
 &lt;p&gt;UNIX is a general purpose, multitasking, multi-user operating system
-designed in the 1970s at Bell Labs. &lt;span class=&quot;marginnote&quot;&gt;UNIX
-history&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Unix_history-simple.svg/200px-Unix_history-simple.svg.png&quot; alt=&quot;UNIX
-History&quot;&gt;&lt;/a&gt;
-&lt;/span&gt; The name &amp;quot;UNIX&amp;quot; now refers to a whole family of operating
+designed in the 1970s at Bell Labs.
+The name &amp;quot;UNIX&amp;quot; now refers to a whole family of operating
 systems.&lt;/p&gt;
 
 &lt;p&gt;UNIX serves as the precursor to a complete, independent clone thereof
-called &amp;quot;Linux.&amp;quot; Linux was developed initially in 1991 by a student at
+called &amp;quot;Linux.&amp;quot;&lt;label for=&#39;linux&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;linux&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;A timeline of Linux distributions&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Linux_Distribution_Timeline.svg/200px-Linux_Distribution_Timeline.svg.png&quot; alt=&quot;GNU/Linux Family Tree&quot;&gt;&lt;/a&gt; &lt;/span&gt; Linux was developed initially in 1991 by a student at
 Helsinki University named Linux Torvalds, who still develops the
 operating system kernel today. The project was inspired by the lack of a
 functioning kernel for the GNU UNIX-like system designed by Richard
@@ -1104,24 +1123,17 @@ there. All are Free and Open Source Software, which means that you can
 download the source code, compile it yourself, and run it on any system
 you like. Below is a family tree of all existing GNU/Linux
 distributions. Have a look to see if you can find Ubuntu, the system
-that we are most likely using on our CodeAnywhere Dev Boxes. &lt;span
-class=&quot;marginnote&quot;&gt;A timeline of Linux distributions&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Linux_Distribution_Timeline.svg/200px-Linux_Distribution_Timeline.svg.png&quot; alt=&quot;GNU/Linux Family
-Tree&quot;&gt;&lt;/a&gt;
-&lt;/span&gt;&lt;/p&gt;
+that we are most likely using on our CodeAnywhere Dev Boxes.&lt;/p&gt;
 
 &lt;p&gt;Operating systems are complex, as is their history, and I am afraid that
 I cannot do justice to it here. This history (and a general history of
 personal computing) is best told in a long essay by science-fiction
-author, Neal Stephenson:&lt;/p&gt;
-
-&lt;p&gt;Stephenson, N. (1999). &lt;a href=&quot;http://www.cryptonomicon.com/beginning.html&quot;&gt;In the beginning was the command
-line&lt;/a&gt;. Retrieved from
-&lt;a href=&quot;http://www.cryptonomicon.com/beginning.html&quot;&gt;http://www.cryptonomicon.com/beginning.html&lt;/a&gt;&lt;/p&gt;
+author, Neal Stephenson.&lt;label for=&#39;&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Stephenson, N. (1999). &lt;a href=&quot;http://www.cryptonomicon.com/beginning.html&quot;&gt;In the beginning was the command line&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;Read that piece at some point, if you have a chance. It&amp;#39;s fascinating,
 exceedingly well-written, and a reasonably easy read.&lt;/p&gt;
 
-&lt;h2 id=&quot;who-cares?-{#who-cares?}&quot;&gt;Who cares? {#who-cares?}&lt;/h2&gt;
+&lt;h1 id=&quot;who-cares?&quot;&gt;Who cares?&lt;/h1&gt;
 
 &lt;p&gt;Right, so why is this important?&lt;/p&gt;
 
@@ -1147,25 +1159,16 @@ terribly likely that you are going to be logging into a Linux box
 somewhere, and failing that, a UNIX box. From now on, you&amp;#39;ll never be
 able to say that you don&amp;#39;t know how to do that.&lt;/p&gt;
 
-&lt;h1 id=&quot;for-the-next-session:-{#for-the-next-session:}&quot;&gt;For the next session: {#for-the-next-session:}&lt;/h1&gt;
+&lt;h1 id=&quot;for-the-next-session&quot;&gt;For the next session&lt;/h1&gt;
 
-&lt;p&gt;Look at Joseph Wynn&amp;#39;s &amp;quot;Hacker&amp;#39;s Guide&amp;quot;. &lt;span class=&quot;marginnote&quot;&gt;Wynn,
-Joseph. “A Hacker’s Guide to Git.” Wildly Innacurate. Last modified May
-25, 2014. &lt;a href=&quot;http://wildlyinaccurate.com/a-hackers-guide-to-git/&quot;&gt;http://wildlyinaccurate.com/a-hackers-guide-to-git/&lt;/a&gt;. &lt;/span&gt;
-It is a really useful tutorial for new users of git who want to know
-ways to get things done with it.&lt;/p&gt;
+&lt;p&gt;Look at Joseph Wynn&amp;#39;s &amp;quot;Hacker&amp;#39;s Guide&amp;quot;.&lt;label for=&#39;githacker&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;githacker&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Wynn, Joseph. “A Hacker’s Guide to Git.” Wildly Innacurate. Last modified May 25, 2014. &lt;a href=&quot;http://wildlyinaccurate.com/a-hackers-guide-to-git/&quot;&gt;http://wildlyinaccurate.com/a-hackers-guide-to-git/&lt;/a&gt;. &lt;/span&gt;
+It is a really useful tutorial for new users of git who want to know ways to get things done with it.&lt;/p&gt;
 
-&lt;p&gt;I would also like you to look at Roger Dudler&amp;#39;s simple git tutorial.
-&lt;span class=&quot;marginnote&quot;&gt;Dudler, Roger. “Git: The Simple Guide.” Git:
-The Simple Guide. Last modified 2015.
-&lt;a href=&quot;http://rogerdudler.github.io/git-guide/&quot;&gt;http://rogerdudler.github.io/git-guide/&lt;/a&gt;. &lt;/span&gt; It is the best and
-fastest way to get you up to speed using git.&lt;/p&gt;
+&lt;p&gt;I would also like you to look at Roger Dudler&amp;#39;s simple git tutorial.&lt;label for=&#39;gitnoshit&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;gitnoshit&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. &lt;a href=&quot;http://rogerdudler.github.io/git-guide/&quot;&gt;http://rogerdudler.github.io/git-guide/&lt;/a&gt;. &lt;/span&gt;
+It is the best and fastest way to get you up to speed using git.&lt;/p&gt;
 
-&lt;p&gt;We will also return to &amp;quot;Learning the Shell&amp;quot; &lt;span
-class=&quot;marginnote&quot;&gt;Shotts, William, Jr. “Learning the Shell.”
-LinuxCommand.org. &lt;a href=&quot;http://linuxcommand.org/lc3_learning_the_shell.php&quot;&gt;http://linuxcommand.org/lc3_learning_the_shell.php&lt;/a&gt;.
-&lt;/span&gt; for more command line fun. We&amp;#39;ll do some more exploring once we
-are up to speed with git as well.&lt;/p&gt;
+&lt;p&gt;We will also return to &amp;quot;Learning the Shell&amp;quot;&lt;label for=&#39;shell&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;shell&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Shotts, William, Jr. “Learning the Shell.” LinuxCommand.org. &lt;a href=&quot;http://linuxcommand.org/lc3_learning_the_shell.php&quot;&gt;http://linuxcommand.org/lc3_learning_the_shell.php&lt;/a&gt;. &lt;/span&gt; for more command line fun. 
+We&amp;#39;ll do some more exploring once we are up to speed with git as well.&lt;/p&gt;
 </description>
         <pubDate>Tue, 21 Jun 2016 00:00:00 -0400</pubDate>
         <link>http://inls161.johndmart.in/basics/2016/06/21/clients-servers/</link>

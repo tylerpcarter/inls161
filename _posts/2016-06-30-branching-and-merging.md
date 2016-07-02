@@ -64,7 +64,7 @@ We'll switch to a different tab to continue working while it runs.
 
 # Create a branch
 
-To create, or "checkout" a new branch, we can follow Roger Dudler's guide again.{% sidenote 'gitnoshit' 'Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. <http://rogerdudler.github.io/git-guide/>.<br/><br/>Also check this resource out for help with branching and merging: “Git - Basic Branching and Merging.” Git --Fast-Version-Control. https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging.' %}
+To create, or "checkout" a new branch, we can follow Roger Dudler's guide again.{% sidenote 'gitnoshit' 'Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. <http://rogerdudler.github.io/git-guide/>.<br/><br/>Also check this resource out for help with branching and merging: Chacon, Scott, and Ben Straub. “Basic Branching and Merging.” In ProGit. New York, New York: Apress, 2014. https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging.' %}
 
 `git checkout -b testing`
 
@@ -124,7 +124,7 @@ This is because the default preview port for Jekyll is 4000.
 
 So, edit the link to read:
 
-[http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com**:4000**](http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000)
+[http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000](http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000)
 
 You will then be able to see your site online. If you click on the link above while I am demonstrating this in class, you will see my site.
 
@@ -162,6 +162,46 @@ We can roll back most changes.{% sidenote 'revert' 'jaw6. “How to Undo (almost
 The simplest way to do this it to just revert the last commit. 
 
 `git revert <SHA>`
+
+`<SHA>` above refers to the SHA-1 checksum of the git commit. 
+If you look at the git log for a set of recent commits you will see this:
+
+```
+cabox@box-codeanywhere:~/workspace/inls161.github.io$ git log
+commit 98816f674673b2f6143db724edf71f34f471f164
+Author: john.d.martin.iii <john.d.martin.iii@gmail.com>
+Date:   Thu Jun 30 12:01:06 2016 -0400
+
+    changed the color of black
+
+commit c8cc9f57e5a0e43f38ffb7a21aacb72ded8f7778
+Author: john.d.martin.iii <john.d.martin.iii@gmail.com>
+Date:   Thu Jun 30 11:16:42 2016 -0400
+
+    edit index
+
+commit a2937da7d6052d953e4cbedb1c4df0a0300d7993
+Author: john.d.martin.iii <john.d.martin.iii@gmail.com>
+Date:   Thu Jun 30 11:14:40 2016 -0400
+```
+
+The SHA-1 checksum identifies each git commit as unique. 
+
+If we run `git revert 98816f674673b2f6143db724edf71f34f471f164 -m '"Revert "changed the color of black"'`, which is the SHA-1 checksum of the last commit listed above, and then run `git log` we will see that the output tells us that we reverted the last commit: 
+
+```
+cabox@box-codeanywhere:~/workspace/inls161.github.io$ git log
+commit e73f76956fdd29c2cc0c92e6433be3669fccc155
+Author: john.d.martin.iii <john.d.martin.iii@gmail.com>
+Date:   Thu Jun 30 12:54:27 2016 -0400
+
+    Revert "changed the color of black"
+
+    This reverts commit 98816f674673b2f6143db724edf71f34f471f164.
+```
+
+In this way, we can always fix a mistake we have made (or multiple mistakes), even if we've committed and pushed them. 
+This makes git a *very* powerful tool for making sure that you do not lose work.{% marginnote 'nota-bene' '**_Nota bene:_** This is why it is a good rule of thumb to commit early and often. while working on a project.' %}
 
 # For tomorrow
 

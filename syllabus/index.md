@@ -6,7 +6,7 @@ weight: 3
 
 ## About the Course
 
-{% marginnote 'info' '<big>**_Course Info_**</big><br/>**Instructor:** [John D. Martin III](http://johndmart.in)<br/>**Email:** <a href="mailto:john.d.martin.iii@unc.edu">john.d.martin.iii@unc.edu</a><br/>**Office hours:** I will be available for help in the lab starting at 10:30 on Fridays. Email me to meet any other weekday.<br/>**Location:** 117 Manning Hall<br/>**Time:** 11:30-13:00<br/>**Days:** MoTuWeThFr<br/>**Lab:** Friday is lab day, same time same place<br/>**Dates:** 20 June 2016 - 25 July 2016<br/>**Exam day:** 25 July 2016 (11:30-14:30)' %}{% newthought 'INLS161 focuses on concepts and tools' %} necessary for communicating information to users.
+{% include info.md %}{% newthought 'INLS161 focuses on concepts and tools' %} necessary for communicating information to users.
 This is a critical component of information literacy, which involves seeking, evaluating, and utilizing information. 
 INLS151, titled "Retrieving and Analyzing Information," is focused on the seeking and evaluating components of information literacy. 
 This course is about effective use and communication. 
@@ -161,7 +161,10 @@ This class has no exams, but there are 6 major tasks that will correspond to one
 These include a final presentation which will be made during the scheduled final exam period. 
 All of the tasks are interconnected, so it is important to complete the tasks in succession by the due dates listed in the chart below. 
 
-## Tasks
+## Assignment Tasks
+
+See [this page]({{ site.baseurl }}/assignments/) for a list of assignments and links to individual assignment instructions. 
+Assignment descriptions will be up typically one week before the due date. 
 
 {% marginnote 'tab1' '*Table 1*: List of required course tasks' %}
 
@@ -178,8 +181,8 @@ All of the tasks are interconnected, so it is important to complete the tasks in
 ## Due Dates
 
 Each task is due by the end of the day (midnight) on the date specified. 
-It would be a good idea to turn things in before that deadline so that you can get a jump on the next section. 
-The last assignment (the recorded/narrated presentation) will be due ON THE EXAM DAY, but will be presented to the rest of the class during that session. 
+It would be a good idea to complete assignments before that deadline so that you can get a jump on the next section. 
+The last assignment (the recorded/narrated presentation) will be due before the final exam day, but will be presented during the exam day session itself. You will have one chance to make changes after submission. 
 
 ## Submitting Assignments
 
@@ -187,7 +190,13 @@ All of your assignments will be submitted using GitHub, as this is where you wil
 Learning how to use this system is built into the first assignment. 
 Particular requirements and instructions for assignments and submission will be discussed in class and included in the lecture notes. 
 
-[Information about individual assignments is listed here]({{ site.baseurl }}/syllabus/assignments/).
+A snapshot of your work will be automatically collected at midnight on the assignment due date. 
+You do not have to submit anything manually. 
+You just have to make sure that your assignment is ready and pushed to a repository in your GitHub account. 
+Given this, it is important to pay attention to how I have instructed you to name your repositories in the assignment text. 
+If the name is incorrect, the assignment will not be collected on time. 
+
+[Information about individual assignments is listed here]({{ site.baseurl }}/assignments/).
 
 ## Participation
 

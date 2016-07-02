@@ -1,31 +1,35 @@
 instructor:
   link: "http://johndmart.in" 
   alt: "Instructor home page"
-  icon: icon-user
+  icon: ico-user
   var: "John D. Martin III"
 email:
   link: "mailto:john.d.martin.iii@unc.edu"
   alt: "Email instructor"
-  icon: icon-mail
+  icon: ico-envelope
   var: "john.d.martin.iii@unc.edu"
 time:
-  icon: icon-clock2
+  icon: ico-clock
   var: "11:30-13:00"
 days:
-  icon: icon-calendar
+  icon: ico-calendar
   var: "MoTuWeThFr"
 location: 
-  icon: icon-library
+  icon: ico-library
   var: "117 Manning Hall"
+sakai:
+  icon: ico-target
+  alt: "UNC Sakai site for this course"
+  link: "https://sakai.unc.edu/portal/site/inls161s216"
 github:
-  link: "//github.com/inls161"
-  alt: "Follow on GitHub"
-  icon: icon-github
+  link: "https://github.com/inls161"
+  alt: "GitHub organization for this course"
+  icon: ico-github
 slack: 
-  link: "//inls161.slack.com"
-  alt: "Join the Slack conversations for this class"
-  icon: icon-bubbles
+  link: "https://inls161.slack.com"
+  alt: "Join the Slack conversations for this course"
+  icon: ico-slack
 rss:
   link: "/feed"
   alt: "Add RSS feed"
-  icon: icon-feed
+  icon: ico-rss

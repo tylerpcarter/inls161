@@ -152,7 +152,7 @@ We&#39;ll switch to a different tab to continue working while it runs. </p>
 
 <h1 id="create-a-branch">Create a branch</h1>
 
-<p>To create, or &quot;checkout&quot; a new branch, we can follow Roger Dudler&#39;s guide again.<label for='gitnoshit' class='margin-toggle sidenote-number'></label><input type='checkbox' id='gitnoshit' class='margin-toggle'/><span class='sidenote'>Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. <a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a>.<br/><br/>Also check this resource out for help with branching and merging: “Git - Basic Branching and Merging.” Git --Fast-Version-Control. <a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging</a>. </span></p>
+<p>To create, or &quot;checkout&quot; a new branch, we can follow Roger Dudler&#39;s guide again.<label for='gitnoshit' class='margin-toggle sidenote-number'></label><input type='checkbox' id='gitnoshit' class='margin-toggle'/><span class='sidenote'>Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. <a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a>.<br/><br/>Also check this resource out for help with branching and merging: Chacon, Scott, and Ben Straub. “Basic Branching and Merging.” In ProGit. New York, New York: Apress, 2014. <a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging</a>. </span></p>
 
 <p><code>git checkout -b testing</code></p>
 
@@ -212,7 +212,7 @@ This is because the default preview port for Jekyll is 4000. </p>
 
 <p>So, edit the link to read:</p>
 
-<p><a href="http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000">http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com*<em>:4000</em>*</a></p>
+<p><a href="http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000">http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000</a></p>
 
 <p>You will then be able to see your site online. If you click on the link above while I am demonstrating this in class, you will see my site.</p>
 
@@ -251,6 +251,40 @@ The simplest way to do this it to just revert the last commit. </p>
 
 <p><code>git revert &lt;SHA&gt;</code></p>
 
+<p><code>&lt;SHA&gt;</code> above refers to the SHA-1 checksum of the git commit. 
+If you look at the git log for a set of recent commits you will see this:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/inls161.github.io$ git log
+commit 98816f674673b2f6143db724edf71f34f471f164
+Author: john.d.martin.iii &lt;john.d.martin.iii@gmail.com&gt;
+Date:   Thu Jun 30 12:01:06 2016 -0400
+
+    changed the color of black
+
+commit c8cc9f57e5a0e43f38ffb7a21aacb72ded8f7778
+Author: john.d.martin.iii &lt;john.d.martin.iii@gmail.com&gt;
+Date:   Thu Jun 30 11:16:42 2016 -0400
+
+    edit index
+
+commit a2937da7d6052d953e4cbedb1c4df0a0300d7993
+Author: john.d.martin.iii &lt;john.d.martin.iii@gmail.com&gt;
+Date:   Thu Jun 30 11:14:40 2016 -0400
+</code></pre></div>
+<p>The SHA-1 checksum identifies each git commit as unique. </p>
+
+<p>If we run <code>git revert 98816f674673b2f6143db724edf71f34f471f164 -m &#39;&quot;Revert &quot;changed the color of black&quot;&#39;</code>, which is the SHA-1 checksum of the last commit listed above, and then run <code>git log</code> we will see that the output tells us that we reverted the last commit: </p>
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/inls161.github.io$ git log
+commit e73f76956fdd29c2cc0c92e6433be3669fccc155
+Author: john.d.martin.iii &lt;john.d.martin.iii@gmail.com&gt;
+Date:   Thu Jun 30 12:54:27 2016 -0400
+
+    Revert "changed the color of black"
+
+    This reverts commit 98816f674673b2f6143db724edf71f34f471f164.
+</code></pre></div>
+<p>In this way, we can always fix a mistake we have made (or multiple mistakes), even if we&#39;ve committed and pushed them. 
+This makes git a <em>very</em> powerful tool for making sure that you do not lose work.<label for='nota-bene' class='margin-toggle'> &#8853;</label><input type='checkbox' id='nota-bene' class='margin-toggle'/><span class='marginnote'><strong><em>Nota bene:</em></strong> This is why it is a good rule of thumb to commit early and often. while working on a project. </span></p>
+
 <h1 id="for-tomorrow">For tomorrow</h1>
 
 <p>We&#39;re going to try a slightly different approach tomorrow. 
@@ -266,6 +300,14 @@ I want to be able to collectively help you, though, and that will be easier to d
   </ul> 
 </p>
 
+<div class="blognav">
+  
+    <a class="prev" href="/web/2016/06/29/developing-deploying-branching/">&laquo; Developing and Deploying</a>
+  
+  
+    <a class="next" href="/web/2016/07/01/web-lab/">Troubleshooting &raquo;</a>
+  
+</div>
     </article>
     <span class="print-footer">Branching and Merging - June 30, 2016 - </span>
     <footer>
@@ -274,42 +316,47 @@ I want to be able to collectively help you, though, and that will be easier to d
     
     
       <li>
-        <a href="http://johndmart.in" title="Instructor home page"><span class="icon-user"></span>&nbsp;John D. Martin III</a>
+        <a href="http://johndmart.in" title="Instructor home page"><span class="ico-user"></span>&nbsp;John D. Martin III</a>
       </li>
     
     
       <li>
-        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="icon-mail"></span>&nbsp;john.d.martin.iii@unc.edu</a>
+        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="ico-envelope"></span>&nbsp;john.d.martin.iii@unc.edu</a>
       </li>
     
     
       <li>
-        <span class="icon-clock2"></span>&nbsp;11:30-13:00
+        <span class="ico-clock"></span>&nbsp;11:30-13:00
       </li>
     
     
       <li>
-        <span class="icon-calendar"></span>&nbsp;MoTuWeThFr
+        <span class="ico-calendar"></span>&nbsp;MoTuWeThFr
       </li>
     
     
       <li>
-        <span class="icon-library"></span>&nbsp;117 Manning Hall
+        <span class="ico-library"></span>&nbsp;117 Manning Hall
       </li>
     
     
       <li>
-        <a href="//github.com/inls161" title="Follow on GitHub"><span class="icon-github"></span></a>
+        <a href="https://sakai.unc.edu/portal/site/inls161s216" title="UNC Sakai site for this course"><span class="ico-target"></span></a>
       </li>
     
     
       <li>
-        <a href="//inls161.slack.com" title="Join the Slack conversations for this class"><span class="icon-bubbles"></span></a>
+        <a href="https://github.com/inls161" title="GitHub organization for this course"><span class="ico-github"></span></a>
       </li>
     
     
       <li>
-        <a href="/feed" title="Add RSS feed"><span class="icon-feed"></span></a>
+        <a href="https://inls161.slack.com" title="Join the Slack conversations for this course"><span class="ico-slack"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed" title="Add RSS feed"><span class="ico-rss"></span></a>
       </li>
       
   </ul>
