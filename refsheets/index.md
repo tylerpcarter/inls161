@@ -4,13 +4,30 @@ title: Reference
 weight: 9
 ---
 
-# UNIX Commands
+# Operating systems and tools
 
-{% marginnote 'unix' '**UNIX** is a general purpose operating system originally developed in the 1970s by Ken Thompson and Dennis Ritchie at Bell Labs. Its utility and wide use has given rise to a number of clones&emdash;operating systems that are functionally identical.' %}
+## UNIX
+
+{% marginnote 'unix' '**UNIX** is a general purpose operating system originally developed in the 1970s by Ken Thompson and Dennis Ritchie at Bell Labs. Its utility and wide use has given rise to a number of clones&mdash;operating systems that are functionally identical.' %}
 
 <a href="https://ubuntudanmark.dk/filer/fwunixref.pdf" target="_blank">FOSSWire UNIX Command Reference</a>
 
-## Reference sheets from in-class activities
+## Linux
+{% marginnote 'unix' '**Linux** is one such UNIX clone originally invented in 1991 by Linus Torvalds. It is now among the most widely used operating systems in the world. If you have used the Internet, you have interacted with Linux perhaps without even realizing it. Your CodeAnywhere containers run Linux.' %}
+
+<a href="The Linux Command Line - William E. Shotts, Jr." target="_blank">http://linuxcommand.org/tlcl.php</a>
+
+<a href="http://linuxnewbieguide.org/?page_id=5">The Ultimate Linux Newbie Guide</a>
+
+## Bash (UNIX shell)
+
+{% marginnote 'bash' '**Bash** is the name of the shell and command language that we use most frequently in Linux and other UNIX clones. It is a text-interface command line envrionment but it can also read commands from files in the form of scripts.' %}
+
+<a href="Learning the shell - William E. Shotts, Jr." target="_blank">http://linuxcommand.org/lc3_learning_the_shell.php</a>
+
+<a href="Writing shell scripts - William E. Shotts, Jr." target="_blank">http://linuxcommand.org/lc3_writing_shell_scripts.php</a>
+
+### Reference sheets from in-class activities
 
 These reference sheets correspond to things that we actualy did or will do in class (depending on how fast I can aggregate them and get them posted here).
 
@@ -18,9 +35,7 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 [Networking]({{ site.baseurl }}/refsheets/network-ref/)
 
-# Text Editors
-
-## VIM (Vi Improved)
+## VIM (UNIX text editor)
 
 {% marginnote 'vim' '**VIM** is a text-only, command-based text editor that is meant to be used when no graphical user environment is available. When making commits in git, if you forget to add a message in the command, this is the editor that pops up automatically. It is good to know this and other text editors just in case you are using a Linux system that only has a command line interface. ' %}
 
@@ -28,7 +43,9 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 <a href="http://tnerual.eriogerg.free.fr/vimqrc.pdf" target="_blank">VIM Quick Reference Card - Laurent Gregoire</a>
 
-# Git
+# Version Control
+
+## Git
 
 {% marginnote 'git' '**git** is a distributed version control system that keeps track of the changes between plaintext source files. It can be used for collaboration or for managing and keeping track of workflows for individuals. While primarily intended for software source code, git works with any plaintext files, and so can also be used for authoring of other kinds.' %}
 
@@ -42,17 +59,17 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 [Git local]({{ site.baseurl }}/refsheets/git-ref/)
 
-# GitHub
+## GitHub
 
 {% marginnote 'github' '**GitHub** is a platform that allows for users to keep copies of their open source, plaintext repositories online, in a single centralized location. It also adds a social interaction layer to the process of managing version-controlled source files.' %}
 
 <a href="https://guides.github.com/activities/hello-world/" target="_blank">Hello World - GitHub Guides</a>
 
-## Reference sheets from in-class activities
+### Reference sheets from in-class activities
 
 [Git remote]({{ site.baseurl }}/refsheets/github-ref/)
 
-# Markup
+# Markup languages and web code
 
 ## Markdown
 
@@ -90,7 +107,11 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 <a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers" target="_blank">Liquid for Programmers - Shopify Dev Team</a>
 
-# Pandoc
+# Document processing
+
+## Pandoc
+
+{% marginnote 'pandoc' '**Pandoc** is a universal document converter invented and developed by John MacFarlane. It is an indispensible tool for converting to and from a multitude of text document formats.' %}
 
 A good set of commands and rationale for using Pandoc to create and convert documents lives here: 
 
@@ -98,7 +119,7 @@ A good set of commands and rationale for using Pandoc to create and convert docu
 
 The help/manpage file for Pandoc is linked here: <a href="http://pandoc.org/README.html" target="_blank">Pandoc User Guide</a>. Use it!
 
-## Reference sheets from in-class activities
+### Reference sheets from in-class activities
 
 [Pandoc]({{ site.baseurl }}/refsheets/pandoc-ref/)
 
@@ -106,11 +127,30 @@ The help/manpage file for Pandoc is linked here: <a href="http://pandoc.org/READ
 
 ## MySQL
 
+{% marginnote 'mysql' '**MySQL** is an open source relational database management system (RDBMS) that uses structured query language (SQL) syntax. It was invented by Michael Widenius and David Axmark in the mid 1990s. It is now among the most widely-used database systems in the world. It ships with only a command line interface (CLI) and can be scripted.' %}
+
 <a href="http://www.w3schools.com/sql/" target="_blank">SQL Tutorial - W3Schools</a>
 
 <a href="https://dev.mysql.com/doc/refman/5.5/en/" target="_blank">MySQL 5.5 Reference Manual - MySQL - ORACLE</a>
 
-#LibreOffice
+# Presentations
+
+# Reveal.js
+
+{% marginnote 'reveal' '**Reveal.js** is an open source presentation framework for HTML5 invented by Hakim El Hattab. It allows content creators to develop slideshows as simply as they would web pages. It also has the capacity to add audio narration using a plugin.' %}
+
+### Reveal example presentations
+<a href="http://lab.hakim.se/reveal-js/#/" target="_blank">Reveal.js: The HTML5 Presentation Framework - Hakim El Hattab</a>
+
+<a href="https://github.com/hakimel/reveal.js/wiki/Example-Presentations">Example presentations - Reveal.js</a>
+
+### Reveal tutorials
+
+<a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank">Reveal.js Tutorial-Reveal.js for Beginners - Tom Campbell</a>
+
+# Productivity suites
+
+## LibreOffice
 
 <a href="https://www.libreoffice.org/get-help/documentation/" target="_blank">LibreOffice Documentation for all Packages</a>
 
