@@ -22,6 +22,8 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 ## VIM (Vi Improved)
 
+{% marginnote 'vim' '**VIM** is a text-only, command-based text editor that is meant to be used when no graphical user environment is available. When making commits in git, if you forget to add a message in the command, this is the editor that pops up automatically. It is good to know this and other text editors just in case you are using a Linux system that only has a command line interface. ' %}
+
 <a href="http://vim.rtorr.com/" target="_blank">VIM Cheat Sheet - Richard Torruellas</a>
 
 <a href="http://tnerual.eriogerg.free.fr/vimqrc.pdf" target="_blank">VIM Quick Reference Card - Laurent Gregoire</a>
