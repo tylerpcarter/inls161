@@ -94,8 +94,6 @@
       <h1>Pandoc Reference</h1>
 <p class="subtitle"></p>
 
-<h1 id="pandoc-reference">Pandoc Reference</h1>
-
 <h2 id="installing-pandoc">Installing Pandoc</h2>
 
 <p>To install Pandoc in your CodeAnywhere DevBox, use the following command:</p>
@@ -106,29 +104,6 @@
 
 <p><code>sudo apt-get install pandoc-citeproc</code></p>
 
-<p>If you want to be able to convert into PDF directly, grab the TeXLive installer that I have configured at one of our class repos. </p>
-
-<p><code>cd ~/workspace</code>
-<code>git clone git@github.com:INLS161Su2015/install-tl-inls161.git</code>
-<code>cd ./install-tl-inls161</code>
-<code>sudo ./install-tl</code></p>
-
-<p>The TeXLive installer will run and ask you if you want to install it with the preconfigured profile. 
-Just type <code>y</code> and let it run. It should only take a few minutes. </p>
-
-<p>This will give you a pretty minimal install, but you can always use the TeXLive package manager (<code>tlmgr</code>) to install any additional packages that you need without having to install all of TeXLive.
-It is a pretty massive beast, so if you are using a CodeAnywhere devBox, you will likely run out of space. 
-In fact, since you have all of your work saved in your GitHub repo (and you should, if you&#39;ve been committing and pushing properly) it might be a good idea to just go ahead and delete your DevBox and start a new one before you install TeXLive.</p>
-
-<p>Right off the bat, when I was testing this, I found that I needed the <code>booktabs</code> package from TeXLive. 
-To install a package directly from TeXLive, do as follows:</p>
-
-<p><code>sudo tlmgr install PACKAGENAME</code></p>
-
-<p>In this case, I needed <code>booktabs</code>, so I did this:</p>
-
-<p><code>sudo tlmgr install booktabs</code></p>
-
 <p>Et voila. Installed. </p>
 
 <h2 id="basic-pandoc-commands">Basic Pandoc commands</h2>
@@ -137,7 +112,7 @@ To install a package directly from TeXLive, do as follows:</p>
 
 <p>Convert a Markdown file to HTML:</p>
 
-<p>`pandoc -o example.html example.md</p>
+<p><code>pandoc -o example.html example.md</code></p>
 
 <p>Pandoc reads the filetype from the extension in normal usage. 
 If you want to convert a file directly from a URL, you will have to specify the filetype, like this:</p>
@@ -155,14 +130,6 @@ If you want to convert a file directly from a URL, you will have to specify the 
 <p>Convert your markdown to HTML:</p>
 
 <p><code>pandoc -o example.html exampld.md</code></p>
-
-<p>If you have TeXLive installed properly (see above), you will be able to compile a PDF: </p>
-
-<p><code>pandoc -o example.pdf example.md</code></p>
-
-<p>To get a table of contents in that file and to make sure that quotes and dashes and other special characters work properly we have to add the switches <code>--toc</code> (or <code>--table-of-contents</code>) and <code>-S</code> (or <code>--smart</code>), like this: </p>
-
-<p><code>pandoc --toc -S -o example.pdf example.md</code></p>
 
 <p>If you wish to convert to a DOCX or ODT file:</p>
 

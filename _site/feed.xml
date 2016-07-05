@@ -5,9 +5,141 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>http://inls161.johndmart.in/</link>
     <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Jul 2016 19:41:02 -0400</pubDate>
-    <lastBuildDate>Sat, 02 Jul 2016 19:41:02 -0400</lastBuildDate>
+    <pubDate>Tue, 05 Jul 2016 11:13:02 -0400</pubDate>
+    <lastBuildDate>Tue, 05 Jul 2016 11:13:02 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Text Conversion</title>
+        <description>&lt;h1 id=&quot;plaintext,-markup,-and-formatted-text&quot;&gt;Plaintext, markup, and formatted text&lt;/h1&gt;
+
+&lt;p&gt;This week we will discuss the uses of plaintext and markup for creating formatted documents. &lt;/p&gt;
+
+&lt;p&gt;Today we are going to briefly introduce Pandoc and then tomorrow we are going to see what it can really do with our documents when we learn some interesting switches and tricks. We will also some hand-on-keyboards excercises that will demonstrate the power of using marked-up plaintext for creating formatted documents. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;p&gt;All of the tools and tasks that we cover in this course can be used to make our lives easier and our workflows simpler. 
+They can also be used to make our lives harder. 
+That is not the intent of this course. 
+We&amp;#39;re here to learn about new and flexible ways of completing tasks that involve the communication of information. &lt;/p&gt;
+
+&lt;p&gt;Inevitably, someone (usually a boss or instructor) will demand that you use a specific tool to complete a task. 
+On that day, knowing what you know after taking this class, you will be able to not only suggest alternatives, but you will also be able to make a compelling argument as to why those alternatives are better, more flexible and will save work in the long run. &lt;/p&gt;
+
+&lt;p&gt;If you are particularly talented or skilled, you will go off on your own and use whatever workflow you want and then produce the output requested by your boss or instructor. 
+They never have to know the difference and can be blissfully unaware of the the technical prowess that went into creating the Word document that they only want so that they can print onto dead trees and then give back to you with red pen marks all over it. &lt;/p&gt;
+
+&lt;p&gt;The triumph in learning these tools is that you will know that there is a better way, and you will use that way whenever you can. 
+And in the end, when you are in charge, you can set the workflows and toolchains and collaboration environments. &lt;/p&gt;
+
+&lt;p&gt;You will be equipped to do that. &lt;/p&gt;
+
+&lt;h2 id=&quot;down-with-word,-up-with-creativity&quot;&gt;Down with Word, Up with Creativity&lt;/h2&gt;
+
+&lt;p&gt;You should have read for today the elegant and logical rant about why MicroSoft Word has to by by science-fiction author Charlie Stross.
+Stross believes that tools like Word stifle creativity by shackling you to an interface.&lt;label for=&#39;word&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;word&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Stross, Charlie. “Why Microsoft Word Must Die.” Charlie’s Diary. Last modified October 12, 2013. &lt;a href=&quot;http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html&quot;&gt;http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;I believe the same thing. 
+Don Knuth, famed computer scientist, believed the same thing about writing and typesetting for scientists in the 1970s. 
+It is because of his disdain for the arduous process involved in getting your work to print that he invented something called TeX. 
+He believed that TeX freed writers and allowed them to return to their content and not worry so much about presentation. &lt;/p&gt;
+
+&lt;p&gt;We do not have enough time in this class to cover TeX, but we can discuss it briefly in this week&amp;#39;s sessions in relation to using Pandoc for creating PDFs from our document sources. &lt;/p&gt;
+
+&lt;h1 id=&quot;word-processors&quot;&gt;Word Processors&lt;/h1&gt;
+
+&lt;p&gt;We are only ever going to use word processor software to check our outputs and explore the things we&amp;#39;ve created. 
+When we do, we will use Writer, the word processor from LibreOffice, an open-source productivity suite. 
+There are several reasons for choosing an open-source tool. &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The software is free to download and use. &lt;/li&gt;
+&lt;li&gt;The community of developers and users interact to create a more robust product and better user experience.&lt;/li&gt;
+&lt;li&gt;I don&amp;#39;t like using proprietary software if I can avoid it. &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;LibreOffice should be installed on the lab computers. 
+However, if you want to install it on your laptops instead, you can. &lt;/p&gt;
+
+&lt;p&gt;Here is a link to download LibreOffice: &lt;a href=&quot;https://www.libreoffice.org/download/libreoffice-fresh/&quot;&gt;https://www.libreoffice.org/download/libreoffice-fresh/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is a link to a good installation tutorial, tailored to your operating system: &lt;a href=&quot;https://www.libreoffice.org/get-help/install-howto/&quot;&gt;https://www.libreoffice.org/get-help/install-howto/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;writer&quot;&gt;Writer&lt;/h2&gt;
+
+&lt;p&gt;LibreOffice contains several tools. 
+One of them is a package called Writer. 
+Writer is analog to MSWord. &lt;/p&gt;
+
+&lt;p&gt;Writer is a word processor. &lt;/p&gt;
+
+&lt;h3 id=&quot;questions-to-consider:&quot;&gt;Questions to consider:&lt;/h3&gt;
+
+&lt;p&gt;What is a word processor and how does it work?&lt;label for=&#39;word&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;word&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Wiens, John A. “Word Processing versus Writing.” The Auk 100 (1983): 758. &lt;a href=&quot;https://sora.unm.edu/sites/default/files/journals/auk/v100n03/p0758-p0758.pdf&quot;&gt;https://sora.unm.edu/sites/default/files/journals/auk/v100n03/p0758-p0758.pdf&lt;/a&gt;. &lt;/span&gt;
+How does what a word processor does differ from what we when we write in Markdown?
+Why would we want to employ something other than a word processor for writing anyway?&lt;label for=&#39;word&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;word&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Caleb McDaniel, W. “Why (and How) I Wrote My Academic Book in Plain Text | W. Caleb McDaniel.” Last modified September 28, 2012. &lt;a href=&quot;http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html&quot;&gt;http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
+
+&lt;h1 id=&quot;document-conversion&quot;&gt;Document conversion&lt;/h1&gt;
+
+&lt;p&gt;Essential to any workflow that involves Markdown or other plaintext markup language, like HTML, is a parser or converter of some sort that using the markup to structure, format and style the document. 
+We&amp;#39;ve seen this with our work on creating web sites. &lt;/p&gt;
+
+&lt;p&gt;The workflow goes: &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;plaintext.md &amp;gt; formatted-text.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The toolchain that we have been using is:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;CodeAnywhere text editor [for authoring and editing] &amp;gt; 
+git [for version control] &amp;gt;
+GitHub [for storage, sharing, and disseminating] &amp;gt;
+Jekyll (via GitHub Pages) [for creating the site files from Markdown inputs] &amp;gt; 
+web browser [for viewing outputs]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;pandoc&quot;&gt;Pandoc&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pandoc.org/&quot;&gt;Pandoc&lt;/a&gt; is a universal document converter. &lt;/p&gt;
+
+&lt;p&gt;Without oversimplifying matters too much, it suffices to say that Pandoc is an awesome tool to have in our arsenal. &lt;/p&gt;
+
+&lt;p&gt;It allows us to convert from most any document type we can think of to any other type. 
+This is very good for collaborating and working with groups on documents for publication. 
+You can also use Pandoc to create presentation materials from source files or to extract text from a formatted document into plaintext. &lt;/p&gt;
+
+&lt;p&gt;You can try it out here: &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pandoc.org/try/&quot;&gt;http://pandoc.org/try/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Then we will install it and run it in our CodeAnywhere containers. &lt;/p&gt;
+
+&lt;p&gt;First things first, we need to install Pandoc. 
+You will need to do this in your CodeAnywhere container.&lt;/p&gt;
+
+&lt;p&gt;All of the commands for today are linked from the &lt;a href=&quot;/refsheets/pandoc-ref.md&quot;&gt;reference page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For tomorrow, I would like you to review a blog post tutorial by Pavel Iosad and the the main documentation page for Pandoc.&lt;label for=&#39;pandoc&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;pandoc&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;Iosad, Pavel. “Getting off the Word Standard: Your Academic Life in Plain Text.” Pavel Iosad. Last modified February 2015. &lt;a href=&quot;http://www.anghyflawn.net/teaching/2015/ilw-pandoc/&quot;&gt;http://www.anghyflawn.net/teaching/2015/ilw-pandoc/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;“Pandoc User’s Guide.” Pandoc. Accessed July 5, 2016. &lt;a href=&quot;http://pandoc.org/README.html&quot;&gt;http://pandoc.org/README.html&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;I would also like you to have a look at the examples in the link below:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pandoc.org/demos.html&quot;&gt;http://pandoc.org/demos.html&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 05 Jul 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/text/2016/07/05/text-conversion/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/text/2016/07/05/text-conversion/</guid>
+        
+        <category>pandoc</category>
+        
+        <category>text</category>
+        
+        <category>markdown</category>
+        
+        <category>documents</category>
+        
+        <category>conversion</category>
+        
+        
+        <category>Text</category>
+        
+      </item>
     
       <item>
         <title>Troubleshooting</title>
@@ -1181,127 +1313,6 @@ We&amp;#39;ll do some more exploring once we are up to speed with git as well.&l
         <category>Linux</category>
         
         <category>shell commands</category>
-        
-        
-        <category>Basics</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to INLS161!</title>
-        <description>&lt;p&gt;This is a course about pushing our boundaries and learning new things. 
-It is also about learning new ways of doing things that we might already know how to do. 
-Some of the topics and skills covered by the course might be old hat for some of you. 
-Others may not have ever heard of some of these things. 
-&lt;excerpt/&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;tools&quot;&gt;Tools&lt;/h1&gt;
-
-&lt;p&gt;We&amp;#39;ll be using an learning a number of different tools in this class. &lt;/p&gt;
-
-&lt;h2 id=&quot;github&quot;&gt;GitHub&lt;/h2&gt;
-
-&lt;p&gt;&lt;label for=&#39;github&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;github&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;&lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot;&gt;&lt;img width=&quot;200px&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/GitHub_logo_2013.svg/200px-GitHub_logo_2013.svg.png&quot; alt=&quot;GitHub&quot; /&gt;&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;To get us started, we will be using GitHub as a repository for our output. &lt;/p&gt;
-
-&lt;p&gt;GitHub will also help us learn about version control and the importance of keeping your versions in order. &lt;/p&gt;
-
-&lt;h2 id=&quot;codeanywhere&quot;&gt;CodeAnywhere&lt;/h2&gt;
-
-&lt;p&gt;&lt;label for=&#39;codeanywhere&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;codeanywhere&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;&lt;a href=&quot;https://codeanywhere.com/&quot; target=&quot;_blank&quot;&gt;&lt;img width=&quot;200px&quot; src=&quot;https://s3.amazonaws.com/image.infoarmy/1388835079827.png&quot; alt=&quot;CodeAnywhere&quot; /&gt;&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Following that, we will use CodeAnywhere to learn about remote operations and to do our web development tasks.&lt;/p&gt;
-
-&lt;p&gt;CodeAnywhere is a web-based integrated development environment (IDE). It highlights syntax for a number of different languages and makes it easy to get to your code wherever you are. &lt;/p&gt;
-
-&lt;p&gt;In today&amp;#39;s session, we are going to make sure that everyone is set up on GitHub and add everyone to an GitHub organization for this class. 
-We will also set up CodeAnywhere and make sure that everyone can log in and set up a Dev Box where you will be able to do some of your work. &lt;/p&gt;
-
-&lt;h2 id=&quot;plaintext&quot;&gt;Plaintext&lt;/h2&gt;
-
-&lt;p&gt;We will approach all of the tasks for this class starting with plaintext. 
-This means no GUIs to get in the way of our content or design. &lt;/p&gt;
-
-&lt;p&gt;We will learn how to run on a command line interface (CLI) and how to do some basic scripting to automate our work. &lt;/p&gt;
-
-&lt;h1 id=&quot;try-new-things&quot;&gt;Try new things&lt;/h1&gt;
-
-&lt;p&gt;This is a course about trying new things and learning in non-linear ways. 
-If you are used to doing something one way, then branch out and do it in another way.
-This might seem difficult at first, but it will only benefit you in the long run.
-By increasing your flexibility and allowing you to swap different tools in and out of your toolchain as needed, you will develop a very marketable technical skillset. &lt;/p&gt;
-
-&lt;p&gt;Next we&amp;#39;ll take a look at some different ways of doing things and what that means for us.&lt;/p&gt;
-
-&lt;p&gt;This is the meat of today&amp;#39;s lecture. &lt;/p&gt;
-
-&lt;h2 id=&quot;flexibility-==-technological-skill&quot;&gt;Flexibility == technological skill&lt;/h2&gt;
-
-&lt;p&gt;As previous mentioned in the notes, this class is about challenging your boundaries with basic technological tools. 
-This will mean sometimes learning what seems to be a really complicated way of doing something that seems like it should be simple. &lt;/p&gt;
-
-&lt;p&gt;But things are not always as they appear. &lt;/p&gt;
-
-&lt;p&gt;You may think that it is simpler to create a webpage using some specially-designed interface for web design or, worse, creating a document in MSWord and then either copying and pasting that your work into a what-you-see-is-what-you-get (WYSIWYG) editor or exporting to HTML. 
-You can do this, but if you want to use your markup later on or understand what is happening (as we do in this class), it is not a good option. &lt;/p&gt;
-
-&lt;p&gt;For example, if you want to make a PDF that is well-formatted, you have a few options as well. &lt;/p&gt;
-
-&lt;p&gt;One toolchain looks like this: &lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;LibreOffice Writer (software) &amp;gt; ODT (file format) &amp;gt; Export as PDF (file format)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Another looks like tihs:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Markdown (plaintext markup) &amp;gt; Pandoc (software) &amp;gt; LaTeX (software) &amp;gt; PDF (file format)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The difference here is the way that the SOURCE of the files are conceived. 
-The source for the first option is wrapped up in the interface somewhere. 
-We can&amp;#39;t see it. 
-The source for the second option is the original plaintext file using markup to tell the interpreter what to do with it. &lt;/p&gt;
-
-&lt;h3 id=&quot;why-is-this-second-approach-advantageous?&quot;&gt;Why is this second approach advantageous?&lt;/h3&gt;&lt;/h3&gt;
-
-&lt;p&gt;Let&amp;#39;s look at a second usage scenario. 
-Let&amp;#39;s say that I want to have the same document that I put into PDF, but as a web page also.&lt;/p&gt;
-
-&lt;p&gt;From LibreOffice, I have to export HTML and then upload it to a web server. 
-Fine. &lt;/p&gt;
-
-&lt;p&gt;If I start with Markdown, however, my toolchain looks like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;Markdown &amp;gt; Pandoc &amp;gt; HTML&lt;/code&gt; &lt;/p&gt;
-
-&lt;p&gt;What is better yet is that since the tools in this scenario rely on marked-up plaintext and commands that can be executed without a graphical user interface (GUI), I can probably create the documents server-side rather than having to upload them after working on them locally. &lt;/p&gt;
-
-&lt;p&gt;This approach helps with automation and also with having multiple desired output formats that can come from a single source. &lt;/p&gt;
-
-&lt;p&gt;There are easy ways to do everything, and there are hard ways to do everything. 
-Neither are ever going to be the right way all the time. 
-The method that you use to complete a task has to depend on the context of the task. 
-The right way will fall somewhere in the middle or be an amalgam of both. &lt;/p&gt;
-
-&lt;p&gt;We&amp;#39;ll talk more in the next few sessions about operating on a system using the command line for giving instructions and running programs. &lt;/p&gt;
-
-&lt;h1 id=&quot;for-the-next-session:&quot;&gt;For the next session:&lt;/h1&gt;
-
-&lt;p&gt;I would like you to have a look at the Bill Shotts&amp;#39; &amp;quot;Learning the Shell.&amp;quot;&lt;label for=&#39;shell&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;shell&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;Shotts, William, Jr. “Learning the Shell.” LinuxCommand.org. &lt;a href=&quot;http://linuxcommand.org/lc3_learning_the_shell.php&quot;&gt;http://linuxcommand.org/lc3_learning_the_shell.php&lt;/a&gt;. &lt;/span&gt; 
-Go through each of the steps in the contents listed on that page and try out the commands in your CodeAnywhere DevBox interface that we set up. This is where we will start tomorrow.&lt;/p&gt;
-
-&lt;p&gt;I would also like you to read Tristan Harris&amp;#39; blog post&lt;label for=&#39;hijack&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;hijack&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;Harris, Tristan. “How Technology Hijacks People’s Minds — from a Magician and Google’s Design Ethicist.” Medium. Last modified May 18, 2016. &lt;a href=&quot;https://medium.com/swlh/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3&quot;&gt;https://medium.com/swlh/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3&lt;/a&gt;. &lt;/span&gt; about how design choices in interfaces affect how we think and interact. &lt;/p&gt;
-</description>
-        <pubDate>Mon, 20 Jun 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/basics/2016/06/20/intro/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/basics/2016/06/20/intro/</guid>
-        
-        <category>intro</category>
-        
-        <category>tools</category>
-        
-        <category>GitHub</category>
-        
-        <category>CodeAnywhere</category>
         
         
         <category>Basics</category>
