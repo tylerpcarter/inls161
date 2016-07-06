@@ -59,6 +59,8 @@ These reference sheets correspond to things that we actualy did or will do in cl
 
 [Git local]({{ site.baseurl }}/refsheets/git-ref/)
 
+[Basic git workflow cheatsheet]({{ site.baseurl }}/refsheets/basic-git-workflow-cheatsheet.pdf/)
+
 ## GitHub
 
 {% marginnote 'github' '**GitHub** is a platform that allows for users to keep copies of their open source, plaintext repositories online, in a single centralized location. It also adds a social interaction layer to the process of managing version-controlled source files.' %}

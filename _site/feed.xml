@@ -5,9 +5,133 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>http://inls161.johndmart.in/</link>
     <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 Jul 2016 09:18:25 -0400</pubDate>
-    <lastBuildDate>Wed, 06 Jul 2016 09:18:25 -0400</lastBuildDate>
+    <pubDate>Wed, 06 Jul 2016 11:22:10 -0400</pubDate>
+    <lastBuildDate>Wed, 06 Jul 2016 11:22:10 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Single input, multiple outputs</title>
+        <description>&lt;p&gt;We&amp;#39;ve briefly discussed Pandoc now. 
+It bills itself as the &amp;quot;Universal Document Converter.&amp;quot; 
+This is reasonably true, but it might require some creative combinations of switches within Pandoc commands as well as multiple commands strung together or intermediate commands to get the desired output. &lt;/p&gt;
+
+&lt;p&gt;The benefit of troubleshooting and understanding this process is that once we do, we can more easily optimize our conversions and automate them. 
+We&amp;#39;ll talk more about this as we go forward. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;source-to-output-conversion&quot;&gt;Source to output conversion&lt;/h1&gt;
+
+&lt;p&gt;It is possible to use GUI tools to create and convert documents. 
+Support is somewhat limited, but in LibreOffice, we can at least create a PDF from our ODT and DOCX files. &lt;/p&gt;
+
+&lt;p&gt;We can also manipulate the styles of the headers and other structural elements that we have assigned using Markdown in our GUI editors. &lt;/p&gt;
+
+&lt;p&gt;One convenient effect of starting with plaintext marked up with Markdown is that we have those structural elements when we convert them into another format and then edit them elsewhere. It is certainly possible to start in the GUI editor and define the same things, but after becoming acquainted with Markdown, it should feel somewhat more burdensome to use the GUI. Arguably, it is. There is a great deal more that goes into a DOCX or an ODT file, structurally, than in a plaintext file with Markdown in it. &lt;/p&gt;
+
+&lt;p&gt;We also have the disadvantage of only being able to operate on thost files in limited ways on headless or remote systems. &lt;/p&gt;
+
+&lt;p&gt;If we keep plaintext at the core of our workflows and GUI editors toward the periphery, we will be served in the end as we will always have access to our work, on any system, without any huge barriers to editing and changing. &lt;/p&gt;
+
+&lt;h2 id=&quot;commands&quot;&gt;Commands&lt;/h2&gt;
+
+&lt;p&gt;We&amp;#39;re going to practice some conversions using Pandoc today. We will also work in groups. &lt;/p&gt;
+
+&lt;p&gt;First, we need to get some files. &lt;/p&gt;
+
+&lt;p&gt;Fork and clone this repository into your CodeAnywhere container:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/inls161/pandoc-practice&quot;&gt;https://github.com/inls161/pandoc-practice&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have the files in your CodeAnywhere container, I will show you some things in class and then in your groups you will answer and mark up the &lt;code&gt;example.md&lt;/code&gt; file using the instructions in the file. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;When you are finished with the questions in file:&lt;/em&gt;&lt;/strong&gt; &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;I want you to change the name of the file to your GitHub username. &lt;/li&gt;
+&lt;li&gt;You will then work as a group to convert the file to HTML, DOCX, and ODT formats, per the instructions in class. I also want you to open the files on your lab computers so you can see what you have done. &lt;/li&gt;
+&lt;li&gt;Then I want you to add, commit, and push your changes. &lt;/li&gt;
+&lt;li&gt;Finally, you will create a pull request in GitHub to get these files back into my original repository.&lt;br&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;basic-pandoc-commands&quot;&gt;Basic Pandoc commands&lt;/h2&gt;
+
+&lt;p&gt;&lt;label for=&#39;pandoc-commands&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;pandoc-commands&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;All Pandoc commands are documented here: &lt;a href=&quot;http://pandoc.org/README.html&quot;&gt;http://pandoc.org/README.html&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;A good set of example commands exists here: &lt;a href=&quot;http://pandoc.org/demos.html&quot;&gt;http://pandoc.org/demos.html&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Convert a Markdown file to HTML:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -o example.html example.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Pandoc reads the filetype from the extension in normal usage. 
+If you want to convert a file directly from a URL, you will have to specify the filetype, like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -f html -t markdown http://inls161.johndmart.in/syllabus/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can make sure that certain things, like quotes and em-dashes, get read and formatted propery by specifying the &amp;quot;Smart&amp;quot; switch (a capital &lt;code&gt;-S&lt;/code&gt; or &lt;code&gt;--smart&lt;/code&gt;):&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -S -o example.html example.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;There are a host of other commands in the documentation. Be sure to try them out. &lt;/p&gt;
+
+&lt;h2 id=&quot;specific-file-commands&quot;&gt;Specific file commands&lt;/h2&gt;
+
+&lt;p&gt;Convert your markdown to HTML:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -o example.html exampld.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If you wish to convert to a DOCX or ODT file:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -o example.docx example.md&lt;/code&gt;
+&lt;code&gt;pandoc -o example.odt example.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If you wish to convert between two different word processor filetypes, we might have to get a little creative. 
+We learned in class that if we issue the following command, we get errors related to file encoding and the conversion will not work. &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -o example.docx example.odt&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If, however, we add an intermediary step, say through HTML, we can get the output that we want. Try it like this instead: &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -o example.docx example-tmp.html &amp;amp;&amp;amp; pandoc -o example.odt example-tmp.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This preserves the formatting and extracts the text from the DOCX as an HTML file and then converts that HTML into ODT. 
+We do not have the weird encoding errors this way, and we don&amp;#39;t have to mess with pipes. &lt;/p&gt;
+
+&lt;p&gt;Filter a document through a template file:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -S --reference-docx=FILE -o example.docx example.md&lt;/code&gt; &lt;/p&gt;
+
+&lt;p&gt;In the above command, you need to specify the location of the template file. 
+If it is a file called &lt;code&gt;template.docx&lt;/code&gt; and is located in the same directory as your Markdown source, then the command will be:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -S --reference-docx=./template.docx -o example.docx example.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also use an ODT or OTT for reference:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -S --reference-odt=./template.ott -o example.odt example.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;for-tomorrow&quot;&gt;For tomorrow&lt;/h1&gt;
+
+&lt;p&gt;Tomorrow, we are going to learn one more output format and then learn how to script all of our outputs together so that we can save ourselves time. &lt;/p&gt;
+
+&lt;p&gt;I would like you to go through the Writing Shell Scripts tutorial by William Shotts for tomorrow.&lt;label for=&#39;shell-scripts&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;shell-scripts&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. &lt;a href=&quot;http://linuxcommand.org/lc3_writing_shell_scripts.php&quot;&gt;http://linuxcommand.org/lc3_writing_shell_scripts.php&lt;/a&gt;. &lt;/span&gt; 
+This will show you the basics of scripting. 
+The scripts that we will write will be very, very simple, but it is good to have looked over this before we start. &lt;/p&gt;
+</description>
+        <pubDate>Wed, 06 Jul 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/text/2016/07/06/single-multiple-outputs/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/text/2016/07/06/single-multiple-outputs/</guid>
+        
+        <category>pandoc</category>
+        
+        <category>text</category>
+        
+        <category>conversion</category>
+        
+        <category>LaTeX</category>
+        
+        
+        <category>Text</category>
+        
+      </item>
     
       <item>
         <title>Text Conversion</title>
@@ -1135,184 +1259,6 @@ The article in the notes has much the same information as some of the other arti
         <category>version control</category>
         
         <category>git</category>
-        
-        <category>shell commands</category>
-        
-        
-        <category>Basics</category>
-        
-      </item>
-    
-      <item>
-        <title>Clients and Servers</title>
-        <description>&lt;p&gt;Today we&amp;#39;ll talk about some of the basic ways that computers work and
-interact with one another. We&amp;#39;ll also begin discussing the history of
-computing in the context of operating systems, UNIX, and Linux.&lt;/p&gt;
-
-&lt;p&gt;In class we will also start with some hands-on-keyboards practice with
-moving around the shell and manipulating files. 
-&lt;excerpt/&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;clients&quot;&gt;Clients&lt;/h1&gt;
-
-&lt;p&gt;A &amp;quot;client&amp;quot; in the context of computing is any hardware or software that
-is used to connect to a service being run on a server. &lt;label for=&#39;client-server&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;client-server&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;The client-server model&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Client_(computing)#/media/File:Client-server-model.svg&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/200px-Client-server-model.svg.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Almost every device that you interact with now is a client. Each time
-your phone reaches out to see if you have new messages, it is a client.
-When you go to web browser to bring up Facebook, your computer is a
-client. When you you talk to Siri or Alexa or Google Now or whatever
-creepy robot voice you talk to, your are talking to a client which sends
-your request out to a server for processing.&lt;/p&gt;
-
-&lt;p&gt;Very little in the networked world operates locally, and that is as it
-should be.&lt;/p&gt;
-
-&lt;h1 id=&quot;servers&quot;&gt;Servers&lt;/h1&gt;
-
-&lt;p&gt;A &amp;quot;server&amp;quot; is a piece of hardware or software that runs a service for
-clients to connect to.&lt;label for=&#39;&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;A typical server rack in a datacenter&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Data_center&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Rack001.jpg/360px-Rack001.jpg&quot; alt=&quot;&quot;&gt;&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Sometimes, certain types of servers are referred to as &amp;quot;daemons.&amp;quot; Don&amp;#39;t
-worry, your computing infrastructure is not possessed.&lt;/p&gt;
-
-&lt;p&gt;They are called this in reference to Maxwell&amp;#39;s demon, which is itself a
-reference to the ancient Greek notion of a δαίμων (daimon). These were
-spirits that operated the world around us, unseen and unseeable. Broadly
-construed, they were the forces that made all of the otherwise
-unexplained processes happen in the physical world. James Clerk Maxwell
-adapted this notion to pose potential violations to the Second Law of
-Thermodynamics. His demon acted precisely in the way that the Greek
-daimon did, except naughty.&lt;/p&gt;
-
-&lt;p&gt;All that aside, a daemon is a &amp;quot;background process.&amp;quot; Some piece of
-software that runs on a computer in the background and waits for
-something to happen. These processes listen, typically on a specific
-port for an event to occur. When that event occurs, the daemon executes
-some set of instructions.&lt;/p&gt;
-
-&lt;p&gt;In a server, that event will be a request for something.&lt;/p&gt;
-
-&lt;p&gt;In a web server, that event will be a request for a web page or some
-other web content.&lt;/p&gt;
-
-&lt;p&gt;On a web server, the daemon that serves the web pages listens on port
-number 8000, unless otherwise specified.&lt;/p&gt;
-
-&lt;p&gt;When it receives a request on port 8000, it dutifully gathers up all of
-the requisite parts of the web page, interprets them, and then sends
-them to your client (a.k.a., your browser) and then all of that
-information gets prettified and placed on your screen so that it can go
-into your eyeballs and then your brain.&lt;/p&gt;
-
-&lt;h2 id=&quot;questions-to-keep-in-mind:-{#questions-to-keep-in-mind:}&quot;&gt;Questions to keep in mind: {#questions-to-keep-in-mind:}&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt; Why do we use this model?&lt;/li&gt;
-&lt;li&gt; What are the advantages?&lt;/li&gt;
-&lt;li&gt; Why not just run all this stuff on the devices in our
-hands/pockets/backpacks?&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;In this class, when we operate on a remote system, we will do so through
-a few different protocols, which will be detailed shortly.&lt;/p&gt;
-
-&lt;p&gt;Operating on a remote system directly--that is, manipulating files and
-issuing instructions in a command shell--is preferable if you wish to
-have a high level of control over what you are doing. It also keeps you
-closer to &amp;quot;bare-metal&amp;quot; computing. In most cases, what we will be doing
-is not, in fact, bare metal computing, but rather interacting with
-systems that run on huge banks of servers, the resources of which have
-been virtualized and distributed across many more systems than there
-could possibly be if each were running on its own.&lt;/p&gt;
-
-&lt;p&gt;This abstraction, however, does not take us too far from the experience
-that we are aiming at. We will learn all the same techniques as if we
-were running on systems directly.&lt;/p&gt;
-
-&lt;h1 id=&quot;linux-and-unix&quot;&gt;Linux and UNIX&lt;/h1&gt;
-
-&lt;p&gt;I will not go too deeply into the history of Linux and UNIX, except to
-say a few things and explain why we are using these as our primary
-platforms for operation.&lt;label for=&#39;unix&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;unix&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;UNIX history&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Unix_history-simple.svg/200px-Unix_history-simple.svg.png&quot; alt=&quot;UNIX History&quot;&gt;&lt;/a&gt; &lt;/span&gt; &lt;/p&gt;
-
-&lt;p&gt;UNIX is a general purpose, multitasking, multi-user operating system
-designed in the 1970s at Bell Labs.
-The name &amp;quot;UNIX&amp;quot; now refers to a whole family of operating
-systems.&lt;/p&gt;
-
-&lt;p&gt;UNIX serves as the precursor to a complete, independent clone thereof
-called &amp;quot;Linux.&amp;quot;&lt;label for=&#39;linux&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;linux&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;A timeline of Linux distributions&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg&quot;&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Linux_Distribution_Timeline.svg/200px-Linux_Distribution_Timeline.svg.png&quot; alt=&quot;GNU/Linux Family Tree&quot;&gt;&lt;/a&gt; &lt;/span&gt; Linux was developed initially in 1991 by a student at
-Helsinki University named Linux Torvalds, who still develops the
-operating system kernel today. The project was inspired by the lack of a
-functioning kernel for the GNU UNIX-like system designed by Richard
-Stallman. Torvalds says that if the GNU kernel had worked, he would
-likely have never written Linux.&lt;/p&gt;
-
-&lt;p&gt;When you use Linux today you are actually using GNU and Linux together.
-Linux provides the operating system kernel and GNU provides the system
-software layer that runs over it and allows you to interact with it.
-There are myriad different versions of GNU/Linux floating around out
-there. All are Free and Open Source Software, which means that you can
-download the source code, compile it yourself, and run it on any system
-you like. Below is a family tree of all existing GNU/Linux
-distributions. Have a look to see if you can find Ubuntu, the system
-that we are most likely using on our CodeAnywhere Dev Boxes.&lt;/p&gt;
-
-&lt;p&gt;Operating systems are complex, as is their history, and I am afraid that
-I cannot do justice to it here. This history (and a general history of
-personal computing) is best told in a long essay by science-fiction
-author, Neal Stephenson.&lt;label for=&#39;&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Stephenson, N. (1999). &lt;a href=&quot;http://www.cryptonomicon.com/beginning.html&quot;&gt;In the beginning was the command line&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Read that piece at some point, if you have a chance. It&amp;#39;s fascinating,
-exceedingly well-written, and a reasonably easy read.&lt;/p&gt;
-
-&lt;h1 id=&quot;who-cares?&quot;&gt;Who cares?&lt;/h1&gt;
-
-&lt;p&gt;Right, so why is this important?&lt;/p&gt;
-
-&lt;p&gt;Well for starters, some version of UNIX or Linux runs on the backend of
-nearly 70% of all public-facing web servers. In addition to that, Linux
-runs on 97% of supercomputers and computer clusters.&lt;/p&gt;
-
-&lt;p&gt;Also, Mac OS X is UNIX-based. Android is just a weird, simplified
-version of Linux. Chrome OS, underneath the browser layer is Linux.
-Myriad little embedded devices like e-readers, tiny automation devices,
-media devices (DVRs, Amazon Fire, Roku, etc.) have some Linux-y thing
-running underneath.&lt;/p&gt;
-
-&lt;p&gt;UNIX and Linux surround you, physically and otherwise.&lt;/p&gt;
-
-&lt;p&gt;It is important to know something about the things around you.
-Otherwise, they might as well be operating as if by magic.&lt;/p&gt;
-
-&lt;h2 id=&quot;so...&quot;&gt;So...&lt;/h2&gt;
-
-&lt;p&gt;So, if you ever have occasion to operate on a remote system, it is
-terribly likely that you are going to be logging into a Linux box
-somewhere, and failing that, a UNIX box. From now on, you&amp;#39;ll never be
-able to say that you don&amp;#39;t know how to do that.&lt;/p&gt;
-
-&lt;h1 id=&quot;for-the-next-session&quot;&gt;For the next session&lt;/h1&gt;
-
-&lt;p&gt;Look at Joseph Wynn&amp;#39;s &amp;quot;Hacker&amp;#39;s Guide&amp;quot;.&lt;label for=&#39;githacker&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;githacker&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Wynn, Joseph. “A Hacker’s Guide to Git.” Wildly Innacurate. Last modified May 25, 2014. &lt;a href=&quot;http://wildlyinaccurate.com/a-hackers-guide-to-git/&quot;&gt;http://wildlyinaccurate.com/a-hackers-guide-to-git/&lt;/a&gt;. &lt;/span&gt;
-It is a really useful tutorial for new users of git who want to know ways to get things done with it.&lt;/p&gt;
-
-&lt;p&gt;I would also like you to look at Roger Dudler&amp;#39;s simple git tutorial.&lt;label for=&#39;gitnoshit&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;gitnoshit&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. &lt;a href=&quot;http://rogerdudler.github.io/git-guide/&quot;&gt;http://rogerdudler.github.io/git-guide/&lt;/a&gt;. &lt;/span&gt;
-It is the best and fastest way to get you up to speed using git.&lt;/p&gt;
-
-&lt;p&gt;We will also return to &amp;quot;Learning the Shell&amp;quot;&lt;label for=&#39;shell&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;shell&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Shotts, William, Jr. “Learning the Shell.” LinuxCommand.org. &lt;a href=&quot;http://linuxcommand.org/lc3_learning_the_shell.php&quot;&gt;http://linuxcommand.org/lc3_learning_the_shell.php&lt;/a&gt;. &lt;/span&gt; for more command line fun. 
-We&amp;#39;ll do some more exploring once we are up to speed with git as well.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 21 Jun 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/basics/2016/06/21/clients-servers/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/basics/2016/06/21/clients-servers/</guid>
-        
-        <category>clients</category>
-        
-        <category>servers</category>
-        
-        <category>Linux</category>
         
         <category>shell commands</category>
         

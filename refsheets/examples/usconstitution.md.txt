@@ -16,7 +16,7 @@ nav_exclude: true
 
 # THE CONSTITUTION OF THE UNITED STATES OF AMERICA, 1787
 
-
+![Image of U.S. Constitution from http://www.archives.gov/exhibits/charters/images/charters_exhibit_zoom_images/constitution_1_of_4_630.jpg](http://www.archives.gov/exhibits/charters/images/charters_exhibit_zoom_images/constitution_1_of_4_630.jpg)
 
 We the people of the United States, in Order to form a more perfect Union,
 establish Justice, insure domestic Tranquility, provide for the common defence,
