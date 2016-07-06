@@ -77,6 +77,7 @@ Convert your markdown to HTML:
 If you wish to convert to a DOCX or ODT file:
 
 `pandoc -o example.docx example.md`
+
 `pandoc -o example.odt example.md`
 
 If you wish to convert between two different word processor filetypes, we might have to get a little creative. 
