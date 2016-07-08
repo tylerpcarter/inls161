@@ -12,8 +12,8 @@ weight: 9
 
 <a href="https://ubuntudanmark.dk/filer/fwunixref.pdf" target="_blank">FOSSWire UNIX Command Reference</a>
 
-## Linux
-{% marginnote 'unix' '**Linux** is one such UNIX clone originally invented in 1991 by Linus Torvalds. It is now among the most widely used operating systems in the world. If you have used the Internet, you have interacted with Linux perhaps without even realizing it. Your CodeAnywhere containers run Linux.' %}
+## Linux (Ubuntu)
+{% marginnote 'unix' '**Linux** is one such UNIX clone originally invented in 1991 by Linus Torvalds. It is now among the most widely used operating systems in the world. If you have used the Internet, you have interacted with Linux perhaps without even realizing it. Your CodeAnywhere containers run Ubuntu Linux.' %}
 
 <a href="The Linux Command Line - William E. Shotts, Jr." target="_blank">http://linuxcommand.org/tlcl.php</a>
 
@@ -27,14 +27,6 @@ weight: 9
 
 <a href="Writing shell scripts - William E. Shotts, Jr." target="_blank">http://linuxcommand.org/lc3_writing_shell_scripts.php</a>
 
-### Reference sheets from in-class activities
-
-These reference sheets correspond to things that we actualy did or will do in class (depending on how fast I can aggregate them and get them posted here).
-
-[Remote operation]({{ site.baseurl }}/refsheets/remote-ref/)
-
-[Networking]({{ site.baseurl }}/refsheets/network-ref/)
-
 ## VIM (UNIX text editor)
 
 {% marginnote 'vim' '**VIM** is a text-only, command-based text editor that is meant to be used when no graphical user environment is available. When making commits in git, if you forget to add a message in the command, this is the editor that pops up automatically. It is good to know this and other text editors just in case you are using a Linux system that only has a command line interface. ' %}
@@ -42,6 +34,12 @@ These reference sheets correspond to things that we actualy did or will do in cl
 <a href="http://vim.rtorr.com/" target="_blank">VIM Cheat Sheet - Richard Torruellas</a>
 
 <a href="http://tnerual.eriogerg.free.fr/vimqrc.pdf" target="_blank">VIM Quick Reference Card - Laurent Gregoire</a>
+
+## APT (Advanced Packaging Tool)
+
+{% marginnote 'apt' '**APT** is the Advanced Packaging Tool which maintains, downloads, updates, and installs software repositories and packages on Ubuntu Linux. It is originally part of Debian Linux. APT-get is the primary command-line tool that is used to interface with the package management system.' %}
+
+<a href="https://help.ubuntu.com/community/AptGet/Howto" target="_blank">AptGet/Howto - Ubuntu Documentation - Community Help Wiki</a>
 
 # Version Control
 
