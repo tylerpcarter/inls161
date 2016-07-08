@@ -5,21 +5,30 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>http://inls161.johndmart.in/</link>
     <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 08 Jul 2016 11:18:58 -0400</pubDate>
-    <lastBuildDate>Fri, 08 Jul 2016 11:18:58 -0400</lastBuildDate>
+    <pubDate>Fri, 08 Jul 2016 11:32:16 -0400</pubDate>
+    <lastBuildDate>Fri, 08 Jul 2016 11:32:16 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
-        <title></title>
-        <description></description>
+        <title>Lab #3: Automation</title>
+        <description>&lt;p&gt;Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. 
+I will post detailed notes after class for review of the scripting tutorial part of today&amp;#39;s session. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;p&gt;We will use a few online tutorials for reference.&lt;label for=&#39;shell-scripts&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;shell-scripts&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. &lt;a href=&quot;http://linuxcommand.org/lc3_writing_shell_scripts.php&quot;&gt;http://linuxcommand.org/lc3_writing_shell_scripts.php&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Chadwick, Ryan. “User Input - Bash Scripting Tutorial.” Ryan’s Tutorials. &lt;a href=&quot;http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php&quot;&gt;http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
+</description>
         <pubDate>Fri, 08 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/2016/07/08/lab-automation/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/2016/07/08/lab-automation/</guid>
+        <link>http://inls161.johndmart.in/text/2016/07/08/lab-automation/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/text/2016/07/08/lab-automation/</guid>
         
-        <category>tag</category>
+        <category>scripting</category>
         
-        <category>tag</category>
+        <category>Bash</category>
         
+        <category>Pandoc</category>
+        
+        
+        <category>Text</category>
         
       </item>
     
