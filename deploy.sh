@@ -1,23 +1,20 @@
 #!/bin/bash
-TMP=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
 # Backup push
 git add -v *
 git commit -av -m "backup commit"
 git push -v
 # Build Jekyll site
 jekyll build
-# Move _site to tmp file
-mkdir /tmp/$TMP
-rsync -P -r ./_site/ /tmp/$TMP
-rm -r ./_site
+# Move to tmp file
+mkdir /tmp/jekyll-site
+rsync -P -r ./_site/ /tmp/jekyll-site
 # checkout into gh-pages
 git checkout gh-pages 
-rm -r *
-rsync -P -r /tmp/$TMP .
+rsync -P -r /tmp/jekyll-site/ .
 # commit and push changes
 git commit -av -m "update gh-pages site on `date`"
 git push -v
 # check back into master
 git checkout master
 # Clear temp dir
-rm -r /tmp/$TMP
+#rm -r /tmp/jekyll-site

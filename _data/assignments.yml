@@ -31,7 +31,7 @@ data:
     title: Make data
     components: Create and format spreadsheets using scripts
     description: You will learn how to aggregate data and script the data generation process.
-    link: TEST-LINK
+    link: 
     percent: "5"
     due: "2016-07-15"
 database:
@@ -40,7 +40,7 @@ database:
     title: Organize data
     components: Create and script queries in a database from tables
     description: In this assignment, you will use scripts and the MySQL shell to create a database and use queries to get information from it.
-    link: TEST-LINK
+    link: 
     percent: "15"
     due: "2016-07-18"
 present:
@@ -49,7 +49,7 @@ present:
     title: Be presentable
     components: Create and record a presentation
     description: You will create a narrated presentation using reveal.js and automate it. 
-    link: TEST-LINK
+    link: 
     percent: "15"
     due: "2016-07-21"
 participation:
