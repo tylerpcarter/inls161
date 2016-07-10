@@ -15,9 +15,9 @@ jekyll build -s $WORKDIR -d $TEMPDIR
 # Move back to source dir
 cd $WORKDIR
 # checkout into gh-pages
-git checkout -f gh-pages 
+git checkout gh-pages 
 rm -r *
-rsync -r $TEMPDIR/ .
+rsync -r $TEMPDIR .
 # commit and push changes
 git commit -av -m "update gh-pages site on `date`"
 git push -v
