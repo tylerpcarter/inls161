@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Visual styling for the web</title>
+  <meta name="description" content="For most of class today, we will spend time creating our base site and then exploring ways that we can change and customize the style to our liking. We&#39;l...">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="/css/tufte.css"> 
+  
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+
+  <link rel="canonical" href="http://inls161.johndmart.in/web/2016/06/28/jekyll-css-html/">
+
+  <link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="http://inls161.johndmart.in/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/161icon.png" alt="UNC"></a>
+	
+	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/">Tools for Information Literacy</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/syllabus/">Syllabus</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/schedule/">Schedule</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/assignments/">Assignments</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/refsheets/">Reference</a>
+		    
+	    
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1>Visual styling for the web</h1>
+
+
+
+<p class="subtitle">Tuesday, 28 June 2016</p>
+
+<p>For most of class today, we will spend time creating our base site and then exploring ways that we can change and customize the style to our liking. </p>
+
+<p>We&#39;ll learn a little bit about CSS and about linking resources so that they show up where we want them. 
+<excerpt/></p>
+
+<h1 id="jekyll">Jekyll</h1>
+
+<p>Once you have chosen a Jekyll theme for your site, we will need to fork the theme, make appropriate changes to turn it into our own, and then we can get to work on customizing the look and feel of the site. </p>
+
+<p>When we make changes to Jekyll&#39;s configuration, we are ostensibly telling it where to find different necessary files for rendering the site, like our CSS file. </p>
+
+<p>Let&#39;s take a look at different ways of linking. </p>
+
+<h1 id="linking">Linking</h1>
+
+<p>Linking is what makes the Internet what it is in terms of how information is organized. 
+Without links, we would have to know the location of every single thing we wish to get to. 
+We would have to index everything: that is, we would need a list. 
+Linking allows us to move between resources, call and embed resources within one another, and in some cases find resources based on their relationships. </p>
+
+<h3 id="relative-and-absolute-paths">Relative and absolute paths</h3>
+
+<p>We have choices about how we can link to resources. </p>
+
+<p>Let&#39;s look at the links in the examples on the last page:</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;css/styles.css&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/scripts.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;images/pretty.img&quot;</span> <span class="na">alt=</span><span class="s">&quot;A pretty picture&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;index.html&quot;</span> <span class="na">title=</span><span class="s">&quot;Home&quot;</span><span class="nt">&gt;</span>Return home.<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+<p>These are all examples of relative paths. 
+This means that they assume that the files referenced here are located near our index page. </p>
+
+<p>If we were to represent the same links with absolute paths, we would have to add the domain name / hostname also. 
+See below:</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;http://www.somewebsite.com/css/styles.css&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;http://www.somewebsite.com/js/scripts.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://www.somewebsite.com/images/pretty.img&quot;</span> <span class="na">alt=</span><span class="s">&quot;A pretty picture&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.somewebsite.com/index.html&quot;</span> <span class="na">title=</span><span class="s">&quot;Home&quot;</span><span class="nt">&gt;</span>Return home.<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+<p>Let&#39;s consider the advantages and disadvantages of each of these approaches and ask these questions:</p>
+
+<ol>
+<li>What happens if we have to change our doman name or move to a different server?</li>
+<li>Is there perhaps a way to automate such a change and still provide an absolute path?</li>
+</ol>
+
+<p>Let&#39;s move on to working with visual elements.</p>
+
+<h1 id="css">CSS</h1>
+
+<p>CSS is an acronym for &quot;Cascading Style Sheet.&quot;</p>
+
+<p>If HTML is the medium for web content, then CSS is the medium for the visual styling of the web. 
+Whenever a website looks like anything other than just a blank page, there is CSS involved. </p>
+
+<p>We will continue to use a combination of Markdown, HTML5 and CSS3 to construct our very own web pages. </p>
+
+<h1 id="for-next-time">For next time</h1>
+
+<p>I want you to continue to work with your site and actually begin creating some content: write a blog post. </p>
+
+<p>This involves having an idea, making an outline of what you want to say about that idea, committing some text, referencing outside information, and maybe putting a picture in to give a visual anchor to your text.</p>
+
+<p>I would also like you to move through the W3Schools HTML5 and CSS3 tutorials on your own, outside of class.<label for='css-tutorial' class='margin-toggle sidenote-number'></label><input type='checkbox' id='css-tutorial' class='margin-toggle'/><span class='sidenote'>“HTML Tutorial.” W3Schools. <a href="http://www.w3schools.com/html/default.asp">http://www.w3schools.com/html/default.asp</a>.<br/><br/>“CSS Tutorial.” W3Schools. <a href="http://www.w3schools.com/css/default.asp">http://www.w3schools.com/css/default.asp</a>. </span></p>
+
+
+<p>
+  <br/>
+  <ul class="tags">
+    <li><a href="/topics#Jekyll" class="tag">Jekyll</a></li><li><a href="/topics#CSS" class="tag">CSS</a></li><li><a href="/topics#HTML" class="tag">HTML</a></li><li><a href="/topics#Markdown" class="tag">Markdown</a></li>
+  </ul> 
+</p>
+
+<div class="blognav">
+  
+    <a class="prev" href="/web/2016/06/27/websites-and-markup/">&laquo; Websites, Markup, and Markdown</a>
+  
+  
+    <a class="next" href="/web/2016/06/29/developing-deploying-branching/">Developing and Deploying &raquo;</a>
+  
+</div>
+    </article>
+    <span class="print-footer">Visual styling for the web - June 28, 2016 - </span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    
+    
+      <li>
+        <a href="http://johndmart.in" title="Instructor home page"><span class="ico-user"></span>&nbsp;John D. Martin III</a>
+      </li>
+    
+    
+      <li>
+        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="ico-envelope"></span>&nbsp;john.d.martin.iii@unc.edu</a>
+      </li>
+    
+    
+      <li>
+        <span class="ico-clock"></span>&nbsp;11:30-13:00
+      </li>
+    
+    
+      <li>
+        <span class="ico-calendar"></span>&nbsp;MoTuWeThFr
+      </li>
+    
+    
+      <li>
+        <span class="ico-library"></span>&nbsp;117 Manning Hall
+      </li>
+    
+    
+      <li>
+        <a href="https://sakai.unc.edu/portal/site/inls161s216" title="UNC Sakai site for this course"><span class="ico-target"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://github.com/inls161" title="GitHub organization for this course"><span class="ico-github"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://inls161.slack.com" title="Join the Slack conversations for this course"><span class="ico-slack"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed" title="Add RSS feed"><span class="ico-rss"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+  <span>TOOLS FOR INFORMATION LITERACY &nbsp;&nbsp;|&nbsp;&nbsp; INLS161-001 (Summer II)
+    <br/> 
+  <span class="smaller">Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</span>
+  <br/><br/>
+  <span class="smaller"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.</span>
+  <br/>
+  <span class="smaller"><a href="/credits/">Content &copy; 2016 John D. Martin III</a></span>
+</div>  
+</footer>
+  </body>
+</html>

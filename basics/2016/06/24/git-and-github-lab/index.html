@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Lab #1: Git and GitHub</title>
+  <meta name="description" content="Today we&#39;re going to learn how to fork, clone, and push changes to a repository on GitHub using git. We do this in preparation for creating personal webs...">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="/css/tufte.css"> 
+  
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+
+  <link rel="canonical" href="http://inls161.johndmart.in/basics/2016/06/24/git-and-github-lab/">
+
+  <link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="http://inls161.johndmart.in/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/161icon.png" alt="UNC"></a>
+	
+	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/">Tools for Information Literacy</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/syllabus/">Syllabus</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/schedule/">Schedule</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/assignments/">Assignments</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/refsheets/">Reference</a>
+		    
+	    
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1>Lab #1: Git and GitHub</h1>
+
+
+
+<p class="subtitle">Friday, 24 June 2016</p>
+
+<p>Today we&#39;re going to learn how to fork, clone, and push changes to a repository on GitHub using git. 
+We do this in preparation for creating personal websites that will be hosted by GitHub pages. 
+<excerpt/></p>
+
+<h1 id="fork">Fork</h1>
+
+<p>The first thing that we are going to do today is fork some code that will allow us to have something to work with in CodeAnywhere later.
+We&#39;ll use this as an opportunity to get wome web code and see what that looks like. </p>
+
+<p>You are not committing to anything today: this is just for practice. 
+We&#39;ll start by going to this repo:</p>
+
+<p><a href="https://github.com/henrythemes/jekyll-starter-theme">https://github.com/henrythemes/jekyll-starter-theme</a></p>
+
+<p>This is the repo for a very, very simple Jekyll web theme. 
+We will us this as a starter theme to practice with. </p>
+
+<p>Once you are at the above repo, click the &quot;Fork&quot; button and select your username when prompted to make a copy of the repo in your account.<label for='fork' class='margin-toggle'> &#8853;</label><input type='checkbox' id='fork' class='margin-toggle'/><span class='marginnote'><img src="/assets/ref-images/fork.png" alt="Click the &quot;fork&quot; button."> </span> </p>
+
+<p>After a few seconds you will be taken to the repo page for the copy that you have made in your account. </p>
+
+<h1 id="clone">Clone</h1>
+
+<p>Once there, click the big green &quot;Clone or Download&quot; button, select &quot;Use SSH,&quot; and copy the resulting link. <label for='clone' class='margin-toggle'> &#8853;</label><input type='checkbox' id='clone' class='margin-toggle'/><span class='marginnote'><img src="/assets/ref-images/clone.png" alt="Click the &quot;fork&quot; button."> </span> 
+It will look like the link in the image on the right. </p>
+
+<p>Then, switch over to CodeAnywhere, make sure you&#39;re logged in, and then right click on your container and open and SSH terminal from the menu. </p>
+
+<p>In your &quot;workspace&quot; directory, type the following command, and paste your link in after, so that it looks like this: </p>
+
+<p><code>git clone git@github.com:YOUR-GITHUB-USERNAME/jekyll-starter-theme.git</code></p>
+
+<p>This makes a copy of the repository that you just forked to your local workspace in CodeAnywhere. 
+This is called cloning. </p>
+
+<p>Then descend into the directory:</p>
+
+<p><code>cd jekyll-starter-theme</code></p>
+
+<p>And explore what is in there:</p>
+
+<p><code>ls -lah</code></p>
+
+<p>You should see a <code>_config.yml</code> file somewhere in the directory. 
+This file is filled with variables that Jekyll reads to structure the information made by your webpage. </p>
+
+<p>The basic structure of variables for Jekyll is:</p>
+
+<p><code>variable-name:   &quot;variable value&quot;</code></p>
+
+<p>I want you to change the title variable to your name or whatever you like.
+Change the subtitle as well. </p>
+
+<p>From this:<label for='test' class='margin-toggle'> &#8853;</label><input type='checkbox' id='test' class='margin-toggle'/><span class='marginnote'>The first thing that we are going to do today is fork </span> </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># site.title
+
+title:    &#39;Jekyll Starter Theme&#39;
+subtitle: &#39;Another Minimalistic Static Site Quick Starter Theme&#39;
+</code></pre></div>
+<p>To something like this:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># site.title
+
+title:    &#39;YOUR-NAME&#39;
+subtitle: &#39;Some subtitle I just made up!&#39;
+</code></pre></div>
+<p>Then I want you to change the <code>url</code> variable so that this will show up at the address associated with your GitHub repo.</p>
+
+<p>So change this: </p>
+
+<p><code>url:   &#39;http://henrythemes.github.io/jekyll-starter-theme&#39;</code></p>
+
+<p>To this:</p>
+
+<p><code>url:   &#39;http://YOUR-GITHUB-USERNAME.github.io/jekyll-starter-theme&#39;</code></p>
+
+<p>Once you have made those changes, then save the file and we will push it back up to GitHub.</p>
+
+<h1 id="push">Push</h1>
+
+<p>So in order to record these changes and get them into our remote repo on GitHub, we have to first go through the normal commit process. 
+First, add the files:</p>
+
+<p><code>git add -v *</code></p>
+
+<p>Then commit the changes (remember to leave a message for yourself):</p>
+
+<p><code>git commit -a -m &quot;update config&quot;</code></p>
+
+<p>Then we have to push the changes upstream:</p>
+
+<p><code>git push</code></p>
+
+<p>And that should be that. </p>
+
+<h1 id="github-pages">GitHub Pages</h1>
+
+<p>You should be able to see this web code rendered as a webpage now. 
+Try going to the address that corresponds to the GH pages site associated with this repository. It will look like this:</p>
+
+<p><code>https://YOUR-GITHUB-USERNAME.github.io/jekyll-starter-theme/</code></p>
+
+<p>And there you should see a site with the title and subtitle that you assigned in the <code>_config.yml</code> file.</p>
+
+<h1 id="for-next-time">For next time</h1>
+
+<p>I would like you to have a look at some tutorials and guides to Markdown for Monday. </p>
+
+<p>Kirk Strobeck&#39;s page describes the origin and intent of Markdown, and provides links to useful resources. </p>
+
+<p><a href="http://whatismarkdown.com/">http://whatismarkdown.com/</a></p>
+
+<p>Dan Harper gives a good introduction to how Markdown is used and what it looks like in the wild. </p>
+
+<p><a href="http://code.tutsplus.com/tutorials/markdown-the-ins-and-outs--net-25482">http://code.tutsplus.com/tutorials/markdown-the-ins-and-outs--net-25482</a></p>
+
+
+<p>
+  <br/>
+  <ul class="tags">
+    <li><a href="/topics#version control" class="tag">version-control</a></li><li><a href="/topics#git" class="tag">git</a></li><li><a href="/topics#GitHub" class="tag">GitHub</a></li><li><a href="/topics#Jekyll" class="tag">Jekyll</a></li><li><a href="/topics#web design" class="tag">web-design</a></li>
+  </ul> 
+</p>
+
+<div class="blognav">
+  
+    <a class="prev" href="/basics/2016/06/23/networks/">&laquo; Networks</a>
+  
+  
+    <a class="next" href="/web/2016/06/27/websites-and-markup/">Websites, Markup, and Markdown &raquo;</a>
+  
+</div>
+    </article>
+    <span class="print-footer">Lab #1: Git and GitHub - June 24, 2016 - </span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    
+    
+      <li>
+        <a href="http://johndmart.in" title="Instructor home page"><span class="ico-user"></span>&nbsp;John D. Martin III</a>
+      </li>
+    
+    
+      <li>
+        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="ico-envelope"></span>&nbsp;john.d.martin.iii@unc.edu</a>
+      </li>
+    
+    
+      <li>
+        <span class="ico-clock"></span>&nbsp;11:30-13:00
+      </li>
+    
+    
+      <li>
+        <span class="ico-calendar"></span>&nbsp;MoTuWeThFr
+      </li>
+    
+    
+      <li>
+        <span class="ico-library"></span>&nbsp;117 Manning Hall
+      </li>
+    
+    
+      <li>
+        <a href="https://sakai.unc.edu/portal/site/inls161s216" title="UNC Sakai site for this course"><span class="ico-target"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://github.com/inls161" title="GitHub organization for this course"><span class="ico-github"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://inls161.slack.com" title="Join the Slack conversations for this course"><span class="ico-slack"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed" title="Add RSS feed"><span class="ico-rss"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+  <span>TOOLS FOR INFORMATION LITERACY &nbsp;&nbsp;|&nbsp;&nbsp; INLS161-001 (Summer II)
+    <br/> 
+  <span class="smaller">Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</span>
+  <br/><br/>
+  <span class="smaller"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.</span>
+  <br/>
+  <span class="smaller"><a href="/credits/">Content &copy; 2016 John D. Martin III</a></span>
+</div>  
+</footer>
+  </body>
+</html>

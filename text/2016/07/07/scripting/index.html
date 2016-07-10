@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Introduction to scripting</title>
+  <meta name="description" content="Today we will learn how to convert our plaintext Markdown into a PDF. To do this we will have to install some more software, which may take a while. In the m...">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="/css/tufte.css"> 
+  
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+
+  <link rel="canonical" href="http://inls161.johndmart.in/text/2016/07/07/scripting/">
+
+  <link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="http://inls161.johndmart.in/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/161icon.png" alt="UNC"></a>
+	
+	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/">Tools for Information Literacy</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/syllabus/">Syllabus</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/schedule/">Schedule</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/assignments/">Assignments</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/refsheets/">Reference</a>
+		    
+	    
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1>Introduction to scripting</h1>
+
+
+
+<p class="subtitle">Thursday, 7 July 2016</p>
+
+<p>Today we will learn how to convert our plaintext Markdown into a PDF. 
+To do this we will have to install some more software, which may take a while. </p>
+
+<p>In the mean time, we will cover some of the basics of scripting in order to be able to automate our workflows a little bit better. 
+<excerpt/></p>
+
+<h1 id="texlive">Texlive</h1>
+
+<p>The TeX (or LaTeX) distribution that we are using in conjunction with Pandoc is called &quot;TeXLive.&quot; 
+This software is in our CodeAnywhere container&#39;s repositories. </p>
+
+<p>It is very large, so we are only going to install the base package to avoid running out of space on our CodeAnywhere containers. 
+We have a total of 2GB of space. 
+TeXLive should take up an extra ~650MB of space. </p>
+
+<p>To check to see how much space we have, we can run this command in a terminal:</p>
+
+<p><code>df -h</code></p>
+
+<p>It will look something like this:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">cabox@box-codeanywhere:~/workspace$ df -h
+Filesystem          Size  Used Avail Use% Mounted on
+/vz/private/669416  2.0G  1.1G  953M  54% /
+none                128M  4.0K  128M   1% /dev
+none                4.0K     0  4.0K   0% /sys/fs/cgroup
+none                 26M   52K   26M   1% /run
+none                5.0M     0  5.0M   0% /run/lock
+none                128M     0  128M   0% /run/shm
+none                100M     0  100M   0% /run/user
+cabox@box-codeanywhere:~/workspace$
+</code></pre></div>
+<p>Make a mental note of the number in the first line of output. 
+I have 953MB available. </p>
+
+<h2 id="installation">Installation</h2>
+
+<p>Now, to get TeXLive installed on our CodeAnywhere containers, we&#39;ll need to use apt-get<label for='apt-get' class='margin-toggle sidenote-number'></label><input type='checkbox' id='apt-get' class='margin-toggle'/><span class='sidenote'>“AptGet/Howto.” Ubuntu Documentation - Community Help Wiki. <a href="https://help.ubuntu.com/community/AptGet/Howto">https://help.ubuntu.com/community/AptGet/Howto</a>. </span> just like we did for Pandoc:</p>
+
+<p><code>sudo apt-get install texlive</code></p>
+
+<p>That will output a bunch of stuff and tell us how much the installation will take up on disk. 
+See if the number is smaller than your available space and then type <code>Y</code> and hit enter if you have enough space. 
+If not, we&#39;ll have to clear something out so you can install it. </p>
+
+<p>This may take a while. </p>
+
+<p>If that command does not work, it is likely because you need to update your software source repositories and upgrade your installed software packages. 
+You can do that with two commands:</p>
+
+<p><code>sudo apt-get update</code></p>
+
+<p>This updates the sources. Follow it with;</p>
+
+<p><code>sudo apt-get dist-upgrade</code></p>
+
+<p>This actually downloads and installs updates to the already-installed software. </p>
+
+<p>In the mean time, we can look at scripting. </p>
+
+<h1 id="scripting">Scripting</h1>
+
+<p>Scripting is fun when you get used to how it works. 
+It is also really useful for not having to repeat the same work over and over again. </p>
+
+<p>Creating scripts is often a trial and error process, though, and can feel frustrating (see below).</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">What scripting feels like <a href="https://t.co/jYR9WQftIX">https://t.co/jYR9WQftIX</a></p>&mdash; SecuriTay (@SwiftOnSecurity) <a href="https://twitter.com/SwiftOnSecurity/status/749783791279939585">July 4, 2016</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h2 id="how-to-do-it?">How to do it?</h2>
+
+<p>In class today, we&#39;ll go over some basic scripting. 
+We&#39;ll use William Shotts&#39; tutorial.Writing Shell Scripts tutorial by William Shotts for tomorrow.<label for='shell-scripts' class='margin-toggle sidenote-number'></label><input type='checkbox' id='shell-scripts' class='margin-toggle'/><span class='sidenote'>Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. <a href="http://linuxcommand.org/lc3_writing_shell_scripts.php">http://linuxcommand.org/lc3_writing_shell_scripts.php</a>. </span> </p>
+
+<p>A basic Bash script is simply a list of commands in a file. </p>
+
+<p>The lines in the file get executed sequentially and then at the end of the file Bash stops, or waits depending on what the file tells it to do. </p>
+
+<h3 id="execution">Execution</h3>
+
+<p>All shell scripts should be executable and specify what shell program will run them. 
+If this is not the case, then we have to call a shell in the command line in order to run. </p>
+
+<p>To create a basic Bash shell script, just touch a new file and give it the extension <code>.sh</code>:</p>
+
+<p><code>touch hello-world.sh</code></p>
+
+<p>Then we&#39;ll make it executable:</p>
+
+<p><code>chmod +x hello-world.sh</code></p>
+
+<p>This command sets the execute flag for user, group, and anyone in the permissions. 
+They should look like this if you list the files with long output:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">cabox@box-codeanywhere:~/workspace/helper-scripts$ ls -lah
+total 64K                                   
+drwxr-xr-x 3 cabox cabox 4.0K Jul  7 12:44 .
+drwxrwxr-x 5 cabox cabox 4.0K Jul  7 10:02 ..
+-rwxr-xr-x 1 cabox cabox  104 Jul  7 12:50 hello-world.sh 
+cabox@box-codeanywhere:~/workspace/helper-scripts$ 
+</code></pre></div>
+<p>We also need to add a &quot;shebang&quot; to our script to tell Bash to execute this file. Inside the <code>hello-world.sh</code> file, put this on the first line:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">#!/bin/bash
+</code></pre></div>
+<h3 id="echo">Echo</h3>
+
+<p>Now, we&#39;re going to make this script say hello to the world and hello to us. 
+We do this by using the <code>echo</code> command, which outputs whatever you tell it as text to <code>STDOUT</code>. 
+Try it:</p>
+
+<p><code>echo &quot;Hello, world!&quot;</code></p>
+
+<p>You should see this in the command line:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">cabox@box-codeanywhere:~/workspace/helper-scripts$ echo &quot;Hello, world!&quot;
+Hello, world!
+cabox@box-codeanywhere:~/workspace/helper-scripts$
+</code></pre></div>
+<p>Now we will add this command to our script: </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">#!/bin/bash
+
+# Say &quot;Hello, world!
+echo &quot;Hello, world!&quot;
+</code></pre></div>
+<p>Now when we run this script, we will see the same output as from our earlier <code>echo</code> command on <code>STDOUT</code>:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
+Hello, world!
+cabox@box-codeanywhere:~/workspace/helper-scripts$
+</code></pre></div>
+<p>Note the <code>./</code> in front of the script&#39;s filename in the above command. </p>
+
+<p>We have to do this in order to execute files and scripts that are not in our execute path. 
+The excecute path is just a list of directories from which we are allowed to execute files without jumping through some extra hoops. 
+To see your path, use the following command: </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">cabox@box-codeanywhere:~/workspace/helper-scripts$ echo $PATH 
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+cabox@box-codeanywhere:~/workspace/helper-scripts$
+</code></pre></div>
+<p>These are all the directories from which you can execute a program. </p>
+
+<p>Finally, we want to add a &quot;Hello!&quot; to ourselves, and use our GitHub username. 
+We will add the same command as before, substituting our GitHub username for world, so that the script looks like this (I&#39;ve used my own name here):</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">#!/bin/bash
+
+# Say &quot;Hello, world!
+echo &quot;Hello, world!&quot;
+# Say &quot;Hello, YOU!
+echo &quot;Hello, jdmar3!&quot;
+</code></pre></div>
+<p>Now if we run this, we will see all of this output:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
+Hello, world!
+Hello, jdmar3!
+cabox@box-codeanywhere:~/workspace/helper-scripts$
+</code></pre></div>
+<h2 id="tomorrow">Tomorrow</h2>
+
+<p>We will pick up where we left off tomorrow during lab and get to work creating our scripts for the next assignment. 
+Please review the tutorial on writing shell scripts again.<label for='shell-scripts' class='margin-toggle sidenote-number'></label><input type='checkbox' id='shell-scripts' class='margin-toggle'/><span class='sidenote'>Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. <a href="http://linuxcommand.org/lc3_writing_shell_scripts.php">http://linuxcommand.org/lc3_writing_shell_scripts.php</a>. </span> 
+Also, we&#39;ll use another tutorial so that we can learn to create prompts for user input.<label for='user-input' class='margin-toggle sidenote-number'></label><input type='checkbox' id='user-input' class='margin-toggle'/><span class='sidenote'>Chadwick, Ryan. “User Input - Bash Scripting Tutorial.” Ryan’s Tutorials. <a href="http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php">http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php</a>. </span></p>
+
+
+<p>
+  <br/>
+  <ul class="tags">
+    <li><a href="/topics#Pandoc" class="tag">Pandoc</a></li><li><a href="/topics#PDF" class="tag">PDF</a></li><li><a href="/topics#LaTeX" class="tag">LaTeX</a></li><li><a href="/topics#Bash" class="tag">Bash</a></li><li><a href="/topics#Scripts" class="tag">Scripts</a></li>
+  </ul> 
+</p>
+
+<div class="blognav">
+  
+    <a class="prev" href="/text/2016/07/06/single-multiple-outputs/">&laquo; Single input, multiple outputs</a>
+  
+  
+    <a class="next" href="/text/2016/07/08/lab-automation/">Lab #3: Automation &raquo;</a>
+  
+</div>
+    </article>
+    <span class="print-footer">Introduction to scripting - July 7, 2016 - </span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    
+    
+      <li>
+        <a href="http://johndmart.in" title="Instructor home page"><span class="ico-user"></span>&nbsp;John D. Martin III</a>
+      </li>
+    
+    
+      <li>
+        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="ico-envelope"></span>&nbsp;john.d.martin.iii@unc.edu</a>
+      </li>
+    
+    
+      <li>
+        <span class="ico-clock"></span>&nbsp;11:30-13:00
+      </li>
+    
+    
+      <li>
+        <span class="ico-calendar"></span>&nbsp;MoTuWeThFr
+      </li>
+    
+    
+      <li>
+        <span class="ico-library"></span>&nbsp;117 Manning Hall
+      </li>
+    
+    
+      <li>
+        <a href="https://sakai.unc.edu/portal/site/inls161s216" title="UNC Sakai site for this course"><span class="ico-target"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://github.com/inls161" title="GitHub organization for this course"><span class="ico-github"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://inls161.slack.com" title="Join the Slack conversations for this course"><span class="ico-slack"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed" title="Add RSS feed"><span class="ico-rss"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+  <span>TOOLS FOR INFORMATION LITERACY &nbsp;&nbsp;|&nbsp;&nbsp; INLS161-001 (Summer II)
+    <br/> 
+  <span class="smaller">Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</span>
+  <br/><br/>
+  <span class="smaller"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.</span>
+  <br/>
+  <span class="smaller"><a href="/credits/">Content &copy; 2016 John D. Martin III</a></span>
+</div>  
+</footer>
+  </body>
+</html>
