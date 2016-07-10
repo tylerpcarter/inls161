@@ -1,7 +1,6 @@
 {% for ass in site.data.assignments %}
-{% assign ass = ass[1] %}
 
-<h1>{{ ass.title }}</h1>
+<h1>{% if ass.number %}Assignment&nbsp;{{ ass.number }}:&nbsp;{% endif %}{{ ass.title }}</h1>
 
 {% if ass.description %}
   <p>
@@ -10,8 +9,8 @@
 {% endif %}
 {% if ass.link %}
   <p>
-    
-</p>Link to assignment instructions: {{ ass.link }}
+    Link to assignment instructions: {{ ass.link }}
+  </p>
 {% endif %}
 {% if ass.percent %}
   <p>
