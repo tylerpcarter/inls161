@@ -1,21 +1,21 @@
-{% for assignment in site.data.assignments %}
-{% assign assignment = assignment[1] %}
+{% for ass in site.data.assignments %}
+{% assign ass = ass[1] %}
 
-<h1>{% if assignment.number %}Assignment&nbsp;{{ assignment.number }}:&nbsp;{% endif %}{{ assignment.title }}{{ assignment.title }}</h1>
+<h1>{{ ass.title }}</h1>
 
-{% if assignment.description %}
+{% if ass.description %}
   <p>
-    {{ assignment.description }}
+    {{ ass.description }}
   </p>
 {% endif %}
-{% if assignment.link %}
+{% if ass.link %}
   <p>
     
-</p>Link to assignment instructions: {{ assignment.link }}
+</p>Link to assignment instructions: {{ ass.link }}
 {% endif %}
-{% if assignment.percent %}
+{% if ass.percent %}
   <p>
-    {% if assignment.number %}This assignment{% else %}{{ assignment.title }}{% endif %} is worth {{ assignment.percent }}% of your final grade. {% if assignment.due %}It is due on {{ assignment.due | date: "%A, %-d %B %Y" }} at midnight.{% endif %}
+    {% if ass.number %}This assignment{% else %}{{ ass.title }}{% endif %} is worth {{ ass.percent }}% of your final grade. {% if ass.due %}It is due on {{ ass.due | date: "%A, %-d %B %Y" }} at midnight.{% endif %}
   </p>
 {% endif %}
 
