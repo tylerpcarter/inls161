@@ -122,20 +122,20 @@ Linking allows us to move between resources, call and embed resources within one
 <p>We have choices about how we can link to resources. </p>
 
 <p>Let&#39;s look at the links in the examples on the last page:</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;css/styles.css&quot;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/scripts.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;images/pretty.img&quot;</span> <span class="na">alt=</span><span class="s">&quot;A pretty picture&quot;</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;index.html&quot;</span> <span class="na">title=</span><span class="s">&quot;Home&quot;</span><span class="nt">&gt;</span>Return home.<span class="nt">&lt;/a&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/styles.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/scripts.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/pretty.img"</span> <span class="na">alt=</span><span class="s">"A pretty picture"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"index.html"</span> <span class="na">title=</span><span class="s">"Home"</span><span class="nt">&gt;</span>Return home.<span class="nt">&lt;/a&gt;</span>
 </code></pre></div>
 <p>These are all examples of relative paths. 
 This means that they assume that the files referenced here are located near our index page. </p>
 
 <p>If we were to represent the same links with absolute paths, we would have to add the domain name / hostname also. 
 See below:</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;http://www.somewebsite.com/css/styles.css&quot;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;http://www.somewebsite.com/js/scripts.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;http://www.somewebsite.com/images/pretty.img&quot;</span> <span class="na">alt=</span><span class="s">&quot;A pretty picture&quot;</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.somewebsite.com/index.html&quot;</span> <span class="na">title=</span><span class="s">&quot;Home&quot;</span><span class="nt">&gt;</span>Return home.<span class="nt">&lt;/a&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"http://www.somewebsite.com/css/styles.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://www.somewebsite.com/js/scripts.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://www.somewebsite.com/images/pretty.img"</span> <span class="na">alt=</span><span class="s">"A pretty picture"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.somewebsite.com/index.html"</span> <span class="na">title=</span><span class="s">"Home"</span><span class="nt">&gt;</span>Return home.<span class="nt">&lt;/a&gt;</span>
 </code></pre></div>
 <p>Let&#39;s consider the advantages and disadvantages of each of these approaches and ask these questions:</p>
 

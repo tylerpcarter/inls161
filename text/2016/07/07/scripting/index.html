@@ -117,7 +117,7 @@ TeXLive should take up an extra ~650MB of space. </p>
 <p><code>df -h</code></p>
 
 <p>It will look something like this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cabox@box-codeanywhere:~/workspace$ df -h
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace$ df -h
 Filesystem          Size  Used Avail Use% Mounted on
 /vz/private/669416  2.0G  1.1G  953M  54% /
 none                128M  4.0K  128M   1% /dev
@@ -191,7 +191,7 @@ If this is not the case, then we have to call a shell in the command line in ord
 
 <p>This command sets the execute flag for user, group, and anyone in the permissions. 
 They should look like this if you list the files with long output:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cabox@box-codeanywhere:~/workspace/helper-scripts$ ls -lah
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/helper-scripts$ ls -lah
 total 64K                                   
 drwxr-xr-x 3 cabox cabox 4.0K Jul  7 12:44 .
 drwxrwxr-x 5 cabox cabox 4.0K Jul  7 10:02 ..
@@ -199,7 +199,7 @@ drwxrwxr-x 5 cabox cabox 4.0K Jul  7 10:02 ..
 cabox@box-codeanywhere:~/workspace/helper-scripts$ 
 </code></pre></div>
 <p>We also need to add a &quot;shebang&quot; to our script to tell Bash to execute this file. Inside the <code>hello-world.sh</code> file, put this on the first line:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">#!/bin/bash
+<div class="highlight"><pre><code class="language-" data-lang=""><span class="c">#!/bin/bash</span>
 </code></pre></div>
 <h3 id="echo">Echo</h3>
 
@@ -210,18 +210,18 @@ Try it:</p>
 <p><code>echo &quot;Hello, world!&quot;</code></p>
 
 <p>You should see this in the command line:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cabox@box-codeanywhere:~/workspace/helper-scripts$ echo &quot;Hello, world!&quot;
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/helper-scripts$ echo "Hello, world!"
 Hello, world!
 cabox@box-codeanywhere:~/workspace/helper-scripts$
 </code></pre></div>
 <p>Now we will add this command to our script: </p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">#!/bin/bash
+<div class="highlight"><pre><code class="language-" data-lang=""><span class="c">#!/bin/bash</span>
 
-# Say &quot;Hello, world!
-echo &quot;Hello, world!&quot;
+<span class="c"># Say "Hello, world!</span>
+<span class="nb">echo</span> <span class="s2">"Hello, world!"</span>
 </code></pre></div>
 <p>Now when we run this script, we will see the same output as from our earlier <code>echo</code> command on <code>STDOUT</code>:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
 Hello, world!
 cabox@box-codeanywhere:~/workspace/helper-scripts$
 </code></pre></div>
@@ -230,7 +230,7 @@ cabox@box-codeanywhere:~/workspace/helper-scripts$
 <p>We have to do this in order to execute files and scripts that are not in our execute path. 
 The excecute path is just a list of directories from which we are allowed to execute files without jumping through some extra hoops. 
 To see your path, use the following command: </p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cabox@box-codeanywhere:~/workspace/helper-scripts$ echo $PATH 
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/helper-scripts$ echo $PATH 
 /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 cabox@box-codeanywhere:~/workspace/helper-scripts$
 </code></pre></div>
@@ -238,15 +238,15 @@ cabox@box-codeanywhere:~/workspace/helper-scripts$
 
 <p>Finally, we want to add a &quot;Hello!&quot; to ourselves, and use our GitHub username. 
 We will add the same command as before, substituting our GitHub username for world, so that the script looks like this (I&#39;ve used my own name here):</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">#!/bin/bash
+<div class="highlight"><pre><code class="language-" data-lang=""><span class="c">#!/bin/bash</span>
 
-# Say &quot;Hello, world!
-echo &quot;Hello, world!&quot;
-# Say &quot;Hello, YOU!
-echo &quot;Hello, jdmar3!&quot;
+<span class="c"># Say "Hello, world!</span>
+<span class="nb">echo</span> <span class="s2">"Hello, world!"</span>
+<span class="c"># Say "Hello, YOU!</span>
+<span class="nb">echo</span> <span class="s2">"Hello, jdmar3!"</span>
 </code></pre></div>
 <p>Now if we run this, we will see all of this output:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
 Hello, world!
 Hello, jdmar3!
 cabox@box-codeanywhere:~/workspace/helper-scripts$

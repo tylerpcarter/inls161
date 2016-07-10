@@ -253,7 +253,7 @@ The simplest way to do this it to just revert the last commit. </p>
 
 <p><code>&lt;SHA&gt;</code> above refers to the SHA-1 checksum of the git commit. 
 If you look at the git log for a set of recent commits you will see this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cabox@box-codeanywhere:~/workspace/inls161.github.io$ git log
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/inls161.github.io$ git log
 commit 98816f674673b2f6143db724edf71f34f471f164
 Author: john.d.martin.iii &lt;john.d.martin.iii@gmail.com&gt;
 Date:   Thu Jun 30 12:01:06 2016 -0400
@@ -273,12 +273,12 @@ Date:   Thu Jun 30 11:14:40 2016 -0400
 <p>The SHA-1 checksum identifies each git commit as unique. </p>
 
 <p>If we run <code>git revert 98816f674673b2f6143db724edf71f34f471f164 -m &#39;&quot;Revert &quot;changed the color of black&quot;&#39;</code>, which is the SHA-1 checksum of the last commit listed above, and then run <code>git log</code> we will see that the output tells us that we reverted the last commit: </p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cabox@box-codeanywhere:~/workspace/inls161.github.io$ git log
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/inls161.github.io$ git log
 commit e73f76956fdd29c2cc0c92e6433be3669fccc155
 Author: john.d.martin.iii &lt;john.d.martin.iii@gmail.com&gt;
 Date:   Thu Jun 30 12:54:27 2016 -0400
 
-    Revert &quot;changed the color of black&quot;
+    Revert "changed the color of black"
 
     This reverts commit 98816f674673b2f6143db724edf71f34f471f164.
 </code></pre></div>
