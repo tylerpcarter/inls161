@@ -1,6 +1,7 @@
 {% for assignment in site.data.assignments %}
+{% assign assignment = assignment[1] %}
 
-<h1>{% if assignment.number %}Assignment&nbsp;#{{ assignment.number }}:&nbsp;{{ assignment.title }}{% else %}{{ assignment.title }}{% endif %}</h1>
+<h1>{% if assignment.number %}Assignment&nbsp;#{{ assignment.number }}:&nbsp;{% endif %}{{ assignment.title }}{{ assignment.title }}</h1>
 
 {% if assignment.description %}
   <p>
