@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools for Information Literacy</title>
+    <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
+    <link>http://inls161.johndmart.in/</link>
+    <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 10 Jul 2016 01:56:39 -0400</pubDate>
+    <lastBuildDate>Sun, 10 Jul 2016 01:56:39 -0400</lastBuildDate>
+    <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Lab #3: Automation</title>
+        <description>&lt;p&gt;Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. 
+I will post detailed notes after class for review of the scripting tutorial part of today&amp;#39;s session. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;p&gt;We will use a few online tutorials for reference.&lt;label for=&#39;shell-scripts&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;shell-scripts&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. &lt;a href=&quot;http://linuxcommand.org/lc3_writing_shell_scripts.php&quot;&gt;http://linuxcommand.org/lc3_writing_shell_scripts.php&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Chadwick, Ryan. “User Input - Bash Scripting Tutorial.” Ryan’s Tutorials. &lt;a href=&quot;http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php&quot;&gt;http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
+</description>
+        <pubDate>Fri, 08 Jul 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/text/2016/07/08/lab-automation/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/text/2016/07/08/lab-automation/</guid>
+        
+        <category>scripting</category>
+        
+        <category>Bash</category>
+        
+        <category>Pandoc</category>
+        
+        
+        <category>Text</category>
+        
+      </item>
+    
+      <item>
+        <title>Introduction to scripting</title>
+        <description>&lt;p&gt;Today we will learn how to convert our plaintext Markdown into a PDF. 
+To do this we will have to install some more software, which may take a while. &lt;/p&gt;
+
+&lt;p&gt;In the mean time, we will cover some of the basics of scripting in order to be able to automate our workflows a little bit better. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;texlive&quot;&gt;Texlive&lt;/h1&gt;
+
+&lt;p&gt;The TeX (or LaTeX) distribution that we are using in conjunction with Pandoc is called &amp;quot;TeXLive.&amp;quot; 
+This software is in our CodeAnywhere container&amp;#39;s repositories. &lt;/p&gt;
+
+&lt;p&gt;It is very large, so we are only going to install the base package to avoid running out of space on our CodeAnywhere containers. 
+We have a total of 2GB of space. 
+TeXLive should take up an extra ~650MB of space. &lt;/p&gt;
+
+&lt;p&gt;To check to see how much space we have, we can run this command in a terminal:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;df -h&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;It will look something like this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace$ df -h
+Filesystem          Size  Used Avail Use% Mounted on
+/vz/private/669416  2.0G  1.1G  953M  54% /
+none                128M  4.0K  128M   1% /dev
+none                4.0K     0  4.0K   0% /sys/fs/cgroup
+none                 26M   52K   26M   1% /run
+none                5.0M     0  5.0M   0% /run/lock
+none                128M     0  128M   0% /run/shm
+none                100M     0  100M   0% /run/user
+cabox@box-codeanywhere:~/workspace$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Make a mental note of the number in the first line of output. 
+I have 953MB available. &lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;Now, to get TeXLive installed on our CodeAnywhere containers, we&amp;#39;ll need to use apt-get&lt;label for=&#39;apt-get&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;apt-get&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;“AptGet/Howto.” Ubuntu Documentation - Community Help Wiki. &lt;a href=&quot;https://help.ubuntu.com/community/AptGet/Howto&quot;&gt;https://help.ubuntu.com/community/AptGet/Howto&lt;/a&gt;. &lt;/span&gt; just like we did for Pandoc:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt-get install texlive&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;That will output a bunch of stuff and tell us how much the installation will take up on disk. 
+See if the number is smaller than your available space and then type &lt;code&gt;Y&lt;/code&gt; and hit enter if you have enough space. 
+If not, we&amp;#39;ll have to clear something out so you can install it. &lt;/p&gt;
+
+&lt;p&gt;This may take a while. &lt;/p&gt;
+
+&lt;p&gt;If that command does not work, it is likely because you need to update your software source repositories and upgrade your installed software packages. 
+You can do that with two commands:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt-get update&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This updates the sources. Follow it with;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt-get dist-upgrade&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This actually downloads and installs updates to the already-installed software. &lt;/p&gt;
+
+&lt;p&gt;In the mean time, we can look at scripting. &lt;/p&gt;
+
+&lt;h1 id=&quot;scripting&quot;&gt;Scripting&lt;/h1&gt;
+
+&lt;p&gt;Scripting is fun when you get used to how it works. 
+It is also really useful for not having to repeat the same work over and over again. &lt;/p&gt;
+
+&lt;p&gt;Creating scripts is often a trial and error process, though, and can feel frustrating (see below).&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;What scripting feels like &lt;a href=&quot;https://t.co/jYR9WQftIX&quot;&gt;https://t.co/jYR9WQftIX&lt;/a&gt;&lt;/p&gt;&amp;mdash; SecuriTay (@SwiftOnSecurity) &lt;a href=&quot;https://twitter.com/SwiftOnSecurity/status/749783791279939585&quot;&gt;July 4, 2016&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;how-to-do-it?&quot;&gt;How to do it?&lt;/h2&gt;
+
+&lt;p&gt;In class today, we&amp;#39;ll go over some basic scripting. 
+We&amp;#39;ll use William Shotts&amp;#39; tutorial.Writing Shell Scripts tutorial by William Shotts for tomorrow.&lt;label for=&#39;shell-scripts&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;shell-scripts&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. &lt;a href=&quot;http://linuxcommand.org/lc3_writing_shell_scripts.php&quot;&gt;http://linuxcommand.org/lc3_writing_shell_scripts.php&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;A basic Bash script is simply a list of commands in a file. &lt;/p&gt;
+
+&lt;p&gt;The lines in the file get executed sequentially and then at the end of the file Bash stops, or waits depending on what the file tells it to do. &lt;/p&gt;
+
+&lt;h3 id=&quot;execution&quot;&gt;Execution&lt;/h3&gt;
+
+&lt;p&gt;All shell scripts should be executable and specify what shell program will run them. 
+If this is not the case, then we have to call a shell in the command line in order to run. &lt;/p&gt;
+
+&lt;p&gt;To create a basic Bash shell script, just touch a new file and give it the extension &lt;code&gt;.sh&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;touch hello-world.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then we&amp;#39;ll make it executable:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;chmod +x hello-world.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This command sets the execute flag for user, group, and anyone in the permissions. 
+They should look like this if you list the files with long output:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/helper-scripts$ ls -lah
+total 64K                                   
+drwxr-xr-x 3 cabox cabox 4.0K Jul  7 12:44 .
+drwxrwxr-x 5 cabox cabox 4.0K Jul  7 10:02 ..
+-rwxr-xr-x 1 cabox cabox  104 Jul  7 12:50 hello-world.sh 
+cabox@box-codeanywhere:~/workspace/helper-scripts$ 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We also need to add a &amp;quot;shebang&amp;quot; to our script to tell Bash to execute this file. Inside the &lt;code&gt;hello-world.sh&lt;/code&gt; file, put this on the first line:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;echo&quot;&gt;Echo&lt;/h3&gt;
+
+&lt;p&gt;Now, we&amp;#39;re going to make this script say hello to the world and hello to us. 
+We do this by using the &lt;code&gt;echo&lt;/code&gt; command, which outputs whatever you tell it as text to &lt;code&gt;STDOUT&lt;/code&gt;. 
+Try it:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;echo &amp;quot;Hello, world!&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You should see this in the command line:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/helper-scripts$ echo &quot;Hello, world!&quot;
+Hello, world!
+cabox@box-codeanywhere:~/workspace/helper-scripts$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now we will add this command to our script: &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Say &quot;Hello, world!&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now when we run this script, we will see the same output as from our earlier &lt;code&gt;echo&lt;/code&gt; command on &lt;code&gt;STDOUT&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
+Hello, world!
+cabox@box-codeanywhere:~/workspace/helper-scripts$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note the &lt;code&gt;./&lt;/code&gt; in front of the script&amp;#39;s filename in the above command. &lt;/p&gt;
+
+&lt;p&gt;We have to do this in order to execute files and scripts that are not in our execute path. 
+The excecute path is just a list of directories from which we are allowed to execute files without jumping through some extra hoops. 
+To see your path, use the following command: &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/helper-scripts$ echo $PATH 
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+cabox@box-codeanywhere:~/workspace/helper-scripts$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;These are all the directories from which you can execute a program. &lt;/p&gt;
+
+&lt;p&gt;Finally, we want to add a &amp;quot;Hello!&amp;quot; to ourselves, and use our GitHub username. 
+We will add the same command as before, substituting our GitHub username for world, so that the script looks like this (I&amp;#39;ve used my own name here):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Say &quot;Hello, world!&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Say &quot;Hello, YOU!&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello, jdmar3!&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now if we run this, we will see all of this output:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
+Hello, world!
+Hello, jdmar3!
+cabox@box-codeanywhere:~/workspace/helper-scripts$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;tomorrow&quot;&gt;Tomorrow&lt;/h2&gt;
+
+&lt;p&gt;We will pick up where we left off tomorrow during lab and get to work creating our scripts for the next assignment. 
+Please review the tutorial on writing shell scripts again.&lt;label for=&#39;shell-scripts&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;shell-scripts&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. &lt;a href=&quot;http://linuxcommand.org/lc3_writing_shell_scripts.php&quot;&gt;http://linuxcommand.org/lc3_writing_shell_scripts.php&lt;/a&gt;. &lt;/span&gt; 
+Also, we&amp;#39;ll use another tutorial so that we can learn to create prompts for user input.&lt;label for=&#39;user-input&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;user-input&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Chadwick, Ryan. “User Input - Bash Scripting Tutorial.” Ryan’s Tutorials. &lt;a href=&quot;http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php&quot;&gt;http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 07 Jul 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/text/2016/07/07/scripting/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/text/2016/07/07/scripting/</guid>
+        
+        <category>Pandoc</category>
+        
+        <category>PDF</category>
+        
+        <category>LaTeX</category>
+        
+        <category>Bash</category>
+        
+        <category>Scripts</category>
+        
+        
+        <category>Text</category>
+        
+      </item>
+    
+      <item>
+        <title>Single input, multiple outputs</title>
+        <description>&lt;p&gt;We&amp;#39;ve briefly discussed Pandoc now. 
+It bills itself as the &amp;quot;Universal Document Converter.&amp;quot; 
+This is reasonably true, but it might require some creative combinations of switches within Pandoc commands as well as multiple commands strung together or intermediate commands to get the desired output. &lt;/p&gt;
+
+&lt;p&gt;The benefit of troubleshooting and understanding this process is that once we do, we can more easily optimize our conversions and automate them. 
+We&amp;#39;ll talk more about this as we go forward. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;source-to-output-conversion&quot;&gt;Source to output conversion&lt;/h1&gt;
+
+&lt;p&gt;It is possible to use GUI tools to create and convert documents. 
+Support is somewhat limited, but in LibreOffice, we can at least create a PDF from our ODT and DOCX files. &lt;/p&gt;
+
+&lt;p&gt;We can also manipulate the styles of the headers and other structural elements that we have assigned using Markdown in our GUI editors. &lt;/p&gt;
+
+&lt;p&gt;One convenient effect of starting with plaintext marked up with Markdown is that we have those structural elements when we convert them into another format and then edit them elsewhere. It is certainly possible to start in the GUI editor and define the same things, but after becoming acquainted with Markdown, it should feel somewhat more burdensome to use the GUI. Arguably, it is. There is a great deal more that goes into a DOCX or an ODT file, structurally, than in a plaintext file with Markdown in it. &lt;/p&gt;
+
+&lt;p&gt;We also have the disadvantage of only being able to operate on thost files in limited ways on headless or remote systems. &lt;/p&gt;
+
+&lt;p&gt;If we keep plaintext at the core of our workflows and GUI editors toward the periphery, we will be served in the end as we will always have access to our work, on any system, without any huge barriers to editing and changing. &lt;/p&gt;
+
+&lt;h2 id=&quot;commands&quot;&gt;Commands&lt;/h2&gt;
+
+&lt;p&gt;We&amp;#39;re going to practice some conversions using Pandoc today. We will also work in groups. &lt;/p&gt;
+
+&lt;p&gt;First, we need to get some files. &lt;/p&gt;
+
+&lt;p&gt;Fork and clone this repository into your CodeAnywhere container:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/inls161/pandoc-practice&quot;&gt;https://github.com/inls161/pandoc-practice&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have the files in your CodeAnywhere container, I will show you some things in class and then in your groups you will answer and mark up the &lt;code&gt;example.md&lt;/code&gt; file using the instructions in the file. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;When you are finished with the questions in file:&lt;/em&gt;&lt;/strong&gt; &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;I want you to change the name of the file to your GitHub username. &lt;/li&gt;
+&lt;li&gt;You will then work as a group to convert the file to HTML, DOCX, and ODT formats, per the instructions in class. I also want you to open the files on your lab computers so you can see what you have done. &lt;/li&gt;
+&lt;li&gt;Then I want you to add, commit, and push your changes. &lt;/li&gt;
+&lt;li&gt;Finally, you will create a pull request in GitHub to get these files back into my original repository.&lt;br&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;basic-pandoc-commands&quot;&gt;Basic Pandoc commands&lt;/h2&gt;
+
+&lt;p&gt;&lt;label for=&#39;pandoc-commands&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;pandoc-commands&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;All Pandoc commands are documented here: &lt;a href=&quot;http://pandoc.org/README.html&quot;&gt;http://pandoc.org/README.html&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;A good set of example commands exists here: &lt;a href=&quot;http://pandoc.org/demos.html&quot;&gt;http://pandoc.org/demos.html&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Convert a Markdown file to HTML:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -o example.html example.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Pandoc reads the filetype from the extension in normal usage. 
+If you want to convert a file directly from a URL, you will have to specify the filetype, like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -f html -t markdown http://inls161.johndmart.in/syllabus/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can make sure that certain things, like quotes and em-dashes, get read and formatted propery by specifying the &amp;quot;Smart&amp;quot; switch (a capital &lt;code&gt;-S&lt;/code&gt; or &lt;code&gt;--smart&lt;/code&gt;):&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -S -o example.html example.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;There are a host of other commands in the documentation. Be sure to try them out. &lt;/p&gt;
+
+&lt;h2 id=&quot;specific-file-commands&quot;&gt;Specific file commands&lt;/h2&gt;
+
+&lt;p&gt;Convert your markdown to HTML:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -o example.html exampld.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If you wish to convert to a DOCX or ODT file:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -o example.docx example.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -o example.odt example.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If you wish to convert between two different word processor filetypes, we might have to get a little creative. 
+We learned in class that if we issue the following command, we get errors related to file encoding and the conversion will not work. &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -o example.docx example.odt&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If, however, we add an intermediary step, say through HTML, we can get the output that we want. Try it like this instead: &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -o example.docx example-tmp.html &amp;amp;&amp;amp; pandoc -o example.odt example-tmp.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This preserves the formatting and extracts the text from the DOCX as an HTML file and then converts that HTML into ODT. 
+We do not have the weird encoding errors this way, and we don&amp;#39;t have to mess with pipes. &lt;/p&gt;
+
+&lt;p&gt;Filter a document through a template file:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -S --reference-docx=FILE -o example.docx example.md&lt;/code&gt; &lt;/p&gt;
+
+&lt;p&gt;In the above command, you need to specify the location of the template file. 
+If it is a file called &lt;code&gt;template.docx&lt;/code&gt; and is located in the same directory as your Markdown source, then the command will be:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -S --reference-docx=./template.docx -o example.docx example.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also use an ODT or OTT for reference:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;pandoc -S --reference-odt=./template.ott -o example.odt example.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;for-tomorrow&quot;&gt;For tomorrow&lt;/h1&gt;
+
+&lt;p&gt;Tomorrow, we are going to learn one more output format and then learn how to script all of our outputs together so that we can save ourselves time. &lt;/p&gt;
+
+&lt;p&gt;I would like you to go through the Writing Shell Scripts tutorial by William Shotts for tomorrow.&lt;label for=&#39;shell-scripts&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;shell-scripts&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. &lt;a href=&quot;http://linuxcommand.org/lc3_writing_shell_scripts.php&quot;&gt;http://linuxcommand.org/lc3_writing_shell_scripts.php&lt;/a&gt;. &lt;/span&gt; 
+This will show you the basics of scripting. 
+The scripts that we will write will be very, very simple, but it is good to have looked over this before we start. &lt;/p&gt;
+</description>
+        <pubDate>Wed, 06 Jul 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/text/2016/07/06/single-multiple-outputs/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/text/2016/07/06/single-multiple-outputs/</guid>
+        
+        <category>pandoc</category>
+        
+        <category>text</category>
+        
+        <category>conversion</category>
+        
+        <category>LaTeX</category>
+        
+        
+        <category>Text</category>
+        
+      </item>
+    
+      <item>
+        <title>Text Conversion</title>
+        <description>&lt;h1 id=&quot;plaintext,-markup,-and-formatted-text&quot;&gt;Plaintext, markup, and formatted text&lt;/h1&gt;
+
+&lt;p&gt;This week we will discuss the uses of plaintext and markup for creating formatted documents. &lt;/p&gt;
+
+&lt;p&gt;Today we are going to briefly introduce Pandoc and then tomorrow we are going to see what it can really do with our documents when we learn some interesting switches and tricks. We will also some hand-on-keyboards excercises that will demonstrate the power of using marked-up plaintext for creating formatted documents. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;p&gt;All of the tools and tasks that we cover in this course can be used to make our lives easier and our workflows simpler. 
+They can also be used to make our lives harder. 
+That is not the intent of this course. 
+We&amp;#39;re here to learn about new and flexible ways of completing tasks that involve the communication of information. &lt;/p&gt;
+
+&lt;p&gt;Inevitably, someone (usually a boss or instructor) will demand that you use a specific tool to complete a task. 
+On that day, knowing what you know after taking this class, you will be able to not only suggest alternatives, but you will also be able to make a compelling argument as to why those alternatives are better, more flexible and will save work in the long run. &lt;/p&gt;
+
+&lt;p&gt;If you are particularly talented or skilled, you will go off on your own and use whatever workflow you want and then produce the output requested by your boss or instructor. 
+They never have to know the difference and can be blissfully unaware of the the technical prowess that went into creating the Word document that they only want so that they can print onto dead trees and then give back to you with red pen marks all over it. &lt;/p&gt;
+
+&lt;p&gt;The triumph in learning these tools is that you will know that there is a better way, and you will use that way whenever you can. 
+And in the end, when you are in charge, you can set the workflows and toolchains and collaboration environments. &lt;/p&gt;
+
+&lt;p&gt;You will be equipped to do that. &lt;/p&gt;
+
+&lt;h2 id=&quot;down-with-word,-up-with-creativity&quot;&gt;Down with Word, Up with Creativity&lt;/h2&gt;
+
+&lt;p&gt;You should have read for today the elegant and logical rant about why MicroSoft Word has to by by science-fiction author Charlie Stross.
+Stross believes that tools like Word stifle creativity by shackling you to an interface.&lt;label for=&#39;word&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;word&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Stross, Charlie. “Why Microsoft Word Must Die.” Charlie’s Diary. Last modified October 12, 2013. &lt;a href=&quot;http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html&quot;&gt;http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;I believe the same thing. 
+Don Knuth, famed computer scientist, believed the same thing about writing and typesetting for scientists in the 1970s. 
+It is because of his disdain for the arduous process involved in getting your work to print that he invented something called TeX. 
+He believed that TeX freed writers and allowed them to return to their content and not worry so much about presentation. &lt;/p&gt;
+
+&lt;p&gt;We do not have enough time in this class to cover TeX, but we can discuss it briefly in this week&amp;#39;s sessions in relation to using Pandoc for creating PDFs from our document sources. &lt;/p&gt;
+
+&lt;h1 id=&quot;word-processors&quot;&gt;Word Processors&lt;/h1&gt;
+
+&lt;p&gt;We are only ever going to use word processor software to check our outputs and explore the things we&amp;#39;ve created. 
+When we do, we will use Writer, the word processor from LibreOffice, an open-source productivity suite. 
+There are several reasons for choosing an open-source tool. &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The software is free to download and use. &lt;/li&gt;
+&lt;li&gt;The community of developers and users interact to create a more robust product and better user experience.&lt;/li&gt;
+&lt;li&gt;I don&amp;#39;t like using proprietary software if I can avoid it. &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;LibreOffice should be installed on the lab computers. 
+However, if you want to install it on your laptops instead, you can. &lt;/p&gt;
+
+&lt;p&gt;Here is a link to download LibreOffice: &lt;a href=&quot;https://www.libreoffice.org/download/libreoffice-fresh/&quot;&gt;https://www.libreoffice.org/download/libreoffice-fresh/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is a link to a good installation tutorial, tailored to your operating system: &lt;a href=&quot;https://www.libreoffice.org/get-help/install-howto/&quot;&gt;https://www.libreoffice.org/get-help/install-howto/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;writer&quot;&gt;Writer&lt;/h2&gt;
+
+&lt;p&gt;LibreOffice contains several tools. 
+One of them is a package called Writer. 
+Writer is analog to MSWord. &lt;/p&gt;
+
+&lt;p&gt;Writer is a word processor. &lt;/p&gt;
+
+&lt;h3 id=&quot;questions-to-consider:&quot;&gt;Questions to consider:&lt;/h3&gt;
+
+&lt;p&gt;What is a word processor and how does it work?&lt;label for=&#39;word&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;word&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Wiens, John A. “Word Processing versus Writing.” The Auk 100 (1983): 758. &lt;a href=&quot;https://sora.unm.edu/sites/default/files/journals/auk/v100n03/p0758-p0758.pdf&quot;&gt;https://sora.unm.edu/sites/default/files/journals/auk/v100n03/p0758-p0758.pdf&lt;/a&gt;. &lt;/span&gt;
+How does what a word processor does differ from what we when we write in Markdown?
+Why would we want to employ something other than a word processor for writing anyway?&lt;label for=&#39;word&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;word&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Caleb McDaniel, W. “Why (and How) I Wrote My Academic Book in Plain Text | W. Caleb McDaniel.” Last modified September 28, 2012. &lt;a href=&quot;http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html&quot;&gt;http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
+
+&lt;h1 id=&quot;document-conversion&quot;&gt;Document conversion&lt;/h1&gt;
+
+&lt;p&gt;Essential to any workflow that involves Markdown or other plaintext markup language, like HTML, is a parser or converter of some sort that using the markup to structure, format and style the document. 
+We&amp;#39;ve seen this with our work on creating web sites. &lt;/p&gt;
+
+&lt;p&gt;The workflow goes: &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;plaintext.md &amp;gt; formatted-text.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The toolchain that we have been using is:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;CodeAnywhere text editor [for authoring and editing] &amp;gt; 
+git [for version control] &amp;gt;
+GitHub [for storage, sharing, and disseminating] &amp;gt;
+Jekyll (via GitHub Pages) [for creating the site files from Markdown inputs] &amp;gt; 
+web browser [for viewing outputs]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;pandoc&quot;&gt;Pandoc&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pandoc.org/&quot;&gt;Pandoc&lt;/a&gt; is a universal document converter. &lt;/p&gt;
+
+&lt;p&gt;Without oversimplifying matters too much, it suffices to say that Pandoc is an awesome tool to have in our arsenal. &lt;/p&gt;
+
+&lt;p&gt;It allows us to convert from most any document type we can think of to any other type. 
+This is very good for collaborating and working with groups on documents for publication. 
+You can also use Pandoc to create presentation materials from source files or to extract text from a formatted document into plaintext. &lt;/p&gt;
+
+&lt;p&gt;You can try it out here: &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pandoc.org/try/&quot;&gt;http://pandoc.org/try/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Then we will install it and run it in our CodeAnywhere containers. &lt;/p&gt;
+
+&lt;p&gt;First things first, we need to install Pandoc. 
+You will need to do this in your CodeAnywhere container.&lt;/p&gt;
+
+&lt;p&gt;All of the commands for today are linked from the &lt;a href=&quot;http://inls161.johndmart.in/refsheets/pandoc-ref/&quot;&gt;reference page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;for-next-time&quot;&gt;For next time&lt;/h1&gt;
+
+&lt;p&gt;For tomorrow, I would like you to review a blog post tutorial by Pavel Iosad and the the main documentation page for Pandoc.&lt;label for=&#39;pandoc&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;pandoc&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;Iosad, Pavel. “Getting off the Word Standard: Your Academic Life in Plain Text.” Pavel Iosad. Last modified February 2015. &lt;a href=&quot;http://www.anghyflawn.net/teaching/2015/ilw-pandoc/&quot;&gt;http://www.anghyflawn.net/teaching/2015/ilw-pandoc/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;“Pandoc User’s Guide.” Pandoc. Accessed July 5, 2016. &lt;a href=&quot;http://pandoc.org/README.html&quot;&gt;http://pandoc.org/README.html&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;I would also like you to have a look at the examples in the link below:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pandoc.org/demos.html&quot;&gt;http://pandoc.org/demos.html&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 05 Jul 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/text/2016/07/05/text-conversion/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/text/2016/07/05/text-conversion/</guid>
+        
+        <category>pandoc</category>
+        
+        <category>text</category>
+        
+        <category>markdown</category>
+        
+        <category>documents</category>
+        
+        <category>conversion</category>
+        
+        
+        <category>Text</category>
+        
+      </item>
+    
+      <item>
+        <title>Troubleshooting</title>
+        <description>&lt;p&gt;This lab session will be primarily dedicated to helping you work out kinks and wrinkles in the process of getting your site online and completing the second assignment. 
+If you are already very far along, then this is an opportunity for you to finish your work. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h1&gt;
+
+&lt;p&gt;In addition to completing your site and the assignment at hand, we will start looking at ways that you can teach yourself how to fix problems that happen. 
+You will always run into issues, no matter what you are working on. 
+This will never stop. &lt;/p&gt;
+
+&lt;p&gt;At that point, you have two options: &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Wait for someone to help you. &lt;/li&gt;
+&lt;li&gt;Figure it out on your own. &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Guess which one goes further in the course of your academic and work lives.&lt;/p&gt;
+
+&lt;h2 id=&quot;sources-of-information-are-myriad&quot;&gt;Sources of information are myriad&lt;/h2&gt;
+
+&lt;p&gt;It is really difficult to recommend places to get help with troubleshooting online. 
+This is not because they are so few, but because they are so many. &lt;/p&gt;
+
+&lt;p&gt;The best approach is to actually see what information you can get directly from the error interaction and then move on from there. &lt;/p&gt;
+
+&lt;p&gt;Read the error and try to understand it in plain language. 
+That may work some of the time. &lt;/p&gt;
+
+&lt;p&gt;Some error systems give VERY helpful errors that include suggestions for ways to fix what has gone wrong. 
+Git is like this.
+If you have a git error, most of the time, it will tell you what has gone wrong and how you can fix it. 
+Usually you just have to read it and do what it says. &lt;/p&gt;
+
+&lt;p&gt;Sometimes error messages will be more obtuse: this is a legitimate and well-known fact. &lt;/p&gt;
+
+&lt;p&gt;If you catch an error that doesn&amp;#39;t make sense to you, try at the very least to figure out what it means or to what it is referring. &lt;/p&gt;
+
+&lt;h2 id=&quot;google-it&quot;&gt;Google it&lt;/h2&gt;
+
+&lt;p&gt;Take this error, for example:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;error: Entry &#39;&amp;lt;fileName&amp;gt;&#39; would be overwritten by merge. Cannot merge. (Changes in staging area)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is not particularly helpful. 
+I could pore over the git documentation for this, or I could take a more reasonable path and &lt;a href=&quot;http://lmgtfy.com/?q=error%3A+Entry+%27%3CfileName%3E%27+would+be+overwritten+by+merge.+Cannot+merge.+(Changes+in+staging+area)&quot;&gt;Google it&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;As you can see, there is a fair amount of information immediately available that will help you cirvumvent that error. &lt;/p&gt;
+
+&lt;p&gt;Take this approach first and keep these things in mind:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Be careful: not all information is good. &lt;/li&gt;
+&lt;li&gt;Learn to spot the difference. &lt;/li&gt;
+&lt;li&gt;READ.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.org&quot;&gt;Stack Overflow&lt;/a&gt; is generally a useful resource for recovering from errors. 
+It is well curated and lots of people use it to figure things out. &lt;/p&gt;
+
+&lt;h1 id=&quot;next-week&quot;&gt;Next week&lt;/h1&gt;
+
+&lt;p&gt;Next week we are going to start working on manipulating and formatting text.&lt;label for=&#39;word&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;word&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;Wiens, John A. “Word Processing versus Writing.” The Auk 100 (1983): 758. &lt;a href=&quot;https://sora.unm.edu/sites/default/files/journals/auk/v100n03/p0758-p0758.pdf&quot;&gt;https://sora.unm.edu/sites/default/files/journals/auk/v100n03/p0758-p0758.pdf&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Caleb McDaniel, W. “Why (and How) I Wrote My Academic Book in Plain Text | W. Caleb McDaniel.” Last modified September 28, 2012. &lt;a href=&quot;http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html&quot;&gt;http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Stross, Charlie. “Why Microsoft Word Must Die.” Charlie’s Diary. Last modified October 12, 2013. &lt;a href=&quot;http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html&quot;&gt;http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html&lt;/a&gt;. &lt;/span&gt;  &lt;/p&gt;
+
+&lt;p&gt;To prepare for this philosophically, I would like you to read a few blog posts and a very short article. &lt;/p&gt;
+
+&lt;p&gt;The first is a short article from about the difference between word processing and writing from the earliest days word processors.&lt;/p&gt;
+
+&lt;p&gt;The blog posts are about the relative merits of giving up word processors altogether and using plaintext the way we have been in this class.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Jul 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/web/2016/07/01/web-lab/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/web/2016/07/01/web-lab/</guid>
+        
+        <category>troubleshooting</category>
+        
+        <category>websites</category>
+        
+        <category>trial and error</category>
+        
+        
+        <category>Web</category>
+        
+      </item>
+    
+      <item>
+        <title>Branching and Merging</title>
+        <description>&lt;p&gt;Today we will set up a testing workflow and learn how to create branches for adding and changing features on our sites. 
+We will use this to change the visual style the site and create blog posts. &lt;/p&gt;
+
+&lt;p&gt;This session will be mostly hands-on. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;set-up-testing-environment&quot;&gt;Set up testing environment&lt;/h1&gt;
+
+&lt;p&gt;Testing and checking your work is a necessary part of doing any task. 
+You don&amp;#39;t send a paper off to your professor without proofreading it (you shouldn&amp;#39;t, anyway). 
+Similarly, you do not want to put a website online that you haven&amp;#39;t tested. &lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve created a repository that has some helper scripts in it. 
+It is called &lt;code&gt;helper-scripts&lt;/code&gt; and is located in the github organization for the class. 
+I will add to it over the course of rest of the semester. &lt;/p&gt;
+
+&lt;p&gt;Open an SSH terminal in your CodeAnywhere container. 
+Then clone the &lt;code&gt;helper-scripts&lt;/code&gt; repo.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git clone git@github.com:inls161/helper-scripts.git&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have it, descend into the directory. &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd helper-scripts&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then look at the &lt;code&gt;README.md&lt;/code&gt;. 
+Remember, you can look at this online, in GitHub, or you can look at it in the terminal (or in your CodeAnywhere text editor). &lt;/p&gt;
+
+&lt;p&gt;You&amp;#39;ll need to make sure that the &lt;code&gt;install-gh-pages.sh&lt;/code&gt; file is executable. &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ls -lah&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You should see an &lt;code&gt;x&lt;/code&gt; in the permissions. Is it there?&lt;/p&gt;
+
+&lt;p&gt;The filename will also be highlighted as green text if the file is executable. &lt;/p&gt;
+
+&lt;p&gt;Once you have made sure it can be executed, you have to run it as a superuser, or the root user. 
+To do this with any command, type &lt;code&gt;sudo&lt;/code&gt; before the rest of the command.
+&lt;code&gt;sudo&lt;/code&gt; is a program that allows you to execute system commands. 
+You only need it when you are doing something that operates on the operating system itself, like installing new software. &lt;/p&gt;
+
+&lt;p&gt;This script installs updates and new software to your system.
+Just type:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo ./install-gh-pages.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The dot and slash specify the location. 
+This is necessary because this executable is not in your normal execution &lt;code&gt;PATH&lt;/code&gt;. &lt;/p&gt;
+
+&lt;p&gt;That command will run for a few minutes (~10 min). 
+Just let it go. It should work unsupervised. 
+We&amp;#39;ll switch to a different tab to continue working while it runs. &lt;/p&gt;
+
+&lt;h1 id=&quot;create-a-branch&quot;&gt;Create a branch&lt;/h1&gt;
+
+&lt;p&gt;To create, or &amp;quot;checkout&amp;quot; a new branch, we can follow Roger Dudler&amp;#39;s guide again.&lt;label for=&#39;gitnoshit&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;gitnoshit&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. &lt;a href=&quot;http://rogerdudler.github.io/git-guide/&quot;&gt;http://rogerdudler.github.io/git-guide/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Also check this resource out for help with branching and merging: Chacon, Scott, and Ben Straub. “Basic Branching and Merging.” In ProGit. New York, New York: Apress, 2014. &lt;a href=&quot;https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging&quot;&gt;https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git checkout -b testing&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This creates a new branch and switches us into it.&lt;/p&gt;
+
+&lt;p&gt;If we want to see our existing branches and see where we are, type:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git branch -l&lt;/code&gt; or &lt;code&gt;git branch --list&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Once here we can make changes without disturbing the &lt;code&gt;master&lt;/code&gt; branch, which should have our running code in it. &lt;/p&gt;
+
+&lt;p&gt;To switch between branches, simply type (mutatis mutandis):&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git checkout BRANCH-NAME&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;edit-your-css&quot;&gt;Edit your CSS&lt;/h1&gt;
+
+&lt;p&gt;Find your CSS file. &lt;/p&gt;
+
+&lt;p&gt;This file might have either &lt;code&gt;.css&lt;/code&gt; or &lt;code&gt;.scss&lt;/code&gt; as an extension.&lt;/p&gt;
+
+&lt;p&gt;Once you have found it you should make a small change to it.
+Change the background color, for instance.&lt;/p&gt;
+
+&lt;p&gt;Once that is done, you can add and commit those changes: &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git add -v * &amp;amp;&amp;amp; git commit -a -m &amp;quot;edited css to different background color&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;test-your-branch&quot;&gt;Test your branch&lt;/h1&gt;
+
+&lt;p&gt;We are still in the &lt;code&gt;testing&lt;/code&gt; branch. 
+We need to test our code to see if it worked. &lt;/p&gt;
+
+&lt;p&gt;To do this, we will have to access the files locally and start a webserver. 
+Go back to the SSH terminal and check to see that the earlier script finished its work. You&amp;#39;ll know because you will see a prompt and blinking cursor at the bottom. &lt;/p&gt;
+
+&lt;p&gt;Switch into the root directory of your website repository. &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd ../YOUR-GITHUB-USERNAME.github.io&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And then run the following command. &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;jekyll serve --host=0.0.0.0 --drafts&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This starts a webserver and builds your site.
+Then we need to find the address where you can see your site. &lt;/p&gt;
+
+&lt;p&gt;If you right click on the container in your file tree and select &amp;quot;Info&amp;quot; it will bring up a document with two long links in it toward the bottom. 
+These links let you see applications that your server is running. &lt;/p&gt;
+
+&lt;p&gt;Click the first link, which looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com&quot;&gt;http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This will give you a 404 error. 
+This is because the default preview port for Jekyll is 4000. &lt;/p&gt;
+
+&lt;p&gt;So, edit the link to read:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000&quot;&gt;http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You will then be able to see your site online. If you click on the link above while I am demonstrating this in class, you will see my site.&lt;/p&gt;
+
+&lt;p&gt;This will allow you to see if your changes worked or not. 
+If they did, and you like them, you can merge them back into the &lt;code&gt;master&lt;/code&gt; branch and then they will be live on your site when you push them up to GitHub. &lt;/p&gt;
+
+&lt;p&gt;To kill the preview, press &lt;code&gt;CTRL+C&lt;/code&gt; in the SSH terminal where jekyll is running. &lt;/p&gt;
+
+&lt;h1 id=&quot;merge-your-branch-into-master&quot;&gt;Merge your branch into master&lt;/h1&gt;
+
+&lt;p&gt;To merge changes, switch back to the master branch. &lt;/p&gt;
+
+&lt;p&gt;First, checkout the &lt;code&gt;master&lt;/code&gt; branch. &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git checkout master&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And make sure that you are in the right place. &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git branch -l&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You should see &lt;code&gt;master&lt;/code&gt; highlighted. &lt;/p&gt;
+
+&lt;p&gt;Then merge the changes in:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git merge testing&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And they should be made. 
+Don&amp;#39;t forget to commit and push.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git commit -a -m &amp;quot;merged testing into master&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;roll-back-a-change&quot;&gt;Roll back a change&lt;/h1&gt;
+
+&lt;p&gt;We can roll back most changes.&lt;label for=&#39;revert&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;revert&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;jaw6. “How to Undo (almost) Anything with Git.” GitHub. Last modified June 8, 2015. &lt;a href=&quot;https://github.com/blog/2019-how-to-undo-almost-anything-with-git&quot;&gt;https://github.com/blog/2019-how-to-undo-almost-anything-with-git&lt;/a&gt;. &lt;/span&gt; 
+The simplest way to do this it to just revert the last commit. &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git revert &amp;lt;SHA&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;SHA&amp;gt;&lt;/code&gt; above refers to the SHA-1 checksum of the git commit. 
+If you look at the git log for a set of recent commits you will see this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/inls161.github.io$ git log
+commit 98816f674673b2f6143db724edf71f34f471f164
+Author: john.d.martin.iii &amp;lt;john.d.martin.iii@gmail.com&amp;gt;
+Date:   Thu Jun 30 12:01:06 2016 -0400
+
+    changed the color of black
+
+commit c8cc9f57e5a0e43f38ffb7a21aacb72ded8f7778
+Author: john.d.martin.iii &amp;lt;john.d.martin.iii@gmail.com&amp;gt;
+Date:   Thu Jun 30 11:16:42 2016 -0400
+
+    edit index
+
+commit a2937da7d6052d953e4cbedb1c4df0a0300d7993
+Author: john.d.martin.iii &amp;lt;john.d.martin.iii@gmail.com&amp;gt;
+Date:   Thu Jun 30 11:14:40 2016 -0400
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The SHA-1 checksum identifies each git commit as unique. &lt;/p&gt;
+
+&lt;p&gt;If we run &lt;code&gt;git revert 98816f674673b2f6143db724edf71f34f471f164 -m &amp;#39;&amp;quot;Revert &amp;quot;changed the color of black&amp;quot;&amp;#39;&lt;/code&gt;, which is the SHA-1 checksum of the last commit listed above, and then run &lt;code&gt;git log&lt;/code&gt; we will see that the output tells us that we reverted the last commit: &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/inls161.github.io$ git log
+commit e73f76956fdd29c2cc0c92e6433be3669fccc155
+Author: john.d.martin.iii &amp;lt;john.d.martin.iii@gmail.com&amp;gt;
+Date:   Thu Jun 30 12:54:27 2016 -0400
+
+    Revert &quot;changed the color of black&quot;
+
+    This reverts commit 98816f674673b2f6143db724edf71f34f471f164.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In this way, we can always fix a mistake we have made (or multiple mistakes), even if we&amp;#39;ve committed and pushed them. 
+This makes git a &lt;em&gt;very&lt;/em&gt; powerful tool for making sure that you do not lose work.&lt;label for=&#39;nota-bene&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;nota-bene&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;&lt;strong&gt;&lt;em&gt;Nota bene:&lt;/em&gt;&lt;/strong&gt; This is why it is a good rule of thumb to commit early and often. while working on a project. &lt;/span&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;for-tomorrow&quot;&gt;For tomorrow&lt;/h1&gt;
+
+&lt;p&gt;We&amp;#39;re going to try a slightly different approach tomorrow. 
+I&amp;#39;m going to cluster you in groups based on where you are in the process of completing assignment #1. 
+It is okay if you are still early on: that is fine. 
+I want to be able to collectively help you, though, and that will be easier to do if I know where you are and if you can help each other through tasks that are closer together in the overall workflow. &lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/web/2016/06/30/branching-and-merging/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/web/2016/06/30/branching-and-merging/</guid>
+        
+        <category>git</category>
+        
+        <category>GitHub</category>
+        
+        <category>web development</category>
+        
+        <category>workflows</category>
+        
+        
+        <category>Web</category>
+        
+      </item>
+    
+      <item>
+        <title>Developing and Deploying</title>
+        <description>&lt;p&gt;Today we&amp;#39;re going to take the first steps toward actually getting our website up and running. 
+We will also use this opportunity to discuss the development &amp;gt; testing &amp;gt; deployment workflow. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;p&gt;We&amp;#39;ll be using Barry Clark&amp;#39;s tutorial as a reference, so you&amp;#39;ll want to have that pulled up in a separate window so that you can switch back and forth to it. &lt;/p&gt;
+
+&lt;h1 id=&quot;fork&quot;&gt;Fork&lt;/h1&gt;
+
+&lt;p&gt;We will do the same thing that we have previously done in GitHub and fork our chosen theme into our account as a starting place. &lt;/p&gt;
+
+&lt;p&gt;That should be relatively straightforward now.&lt;/p&gt;
+
+&lt;h1 id=&quot;configure&quot;&gt;Configure&lt;/h1&gt;
+
+&lt;p&gt;Once we have the base theme forked, we need to make sure that the site is going to show up at the right address. &lt;/p&gt;
+
+&lt;p&gt;The address that we want is &lt;code&gt;http://YOUR-GITHUB-USERNAME.github.io&lt;/code&gt;. This is the default user site address for GitHub pages. &lt;/p&gt;
+
+&lt;p&gt;GH Pages will serve this site from code in the master branch of a repository in your account named the same as the fully qualified domain name (FQDN) or just the full URL to our desired site. &lt;/p&gt;
+
+&lt;p&gt;Therefore, if your GH Pages user site defaults to &lt;code&gt;http://YOUR-GITHUB-USERNAME.github.io&lt;/code&gt; then we have to make a repository in your account titled &lt;code&gt;YOUR-GITHUB-USERNAME.github.io&lt;/code&gt;. 
+The easiest way to do this is to just change the name of the theme repository that we just forked so that it matches what we need. &lt;/p&gt;
+
+&lt;p&gt;To do this, click the settings tab on your repository page, enter a new name under &amp;quot;Repository name,&amp;quot; and then click &amp;quot;Rename.&amp;quot;&lt;/p&gt;
+
+&lt;h2 id=&quot;_config.yml&quot;&gt;_config.yml&lt;/h2&gt;
+
+&lt;p&gt;Once we are there, we should be able to look into &lt;code&gt;_config.yml&lt;/code&gt; file right in GitHub and make sure that our site settings are correct.
+We will likely have to change three variables, if they exist: &lt;code&gt;path&lt;/code&gt;, &lt;code&gt;url&lt;/code&gt;, and &lt;code&gt;baseurl&lt;/code&gt;.
+These will be different for different themes, so we&amp;#39;ll look over this together in class. Basic principles are as follows:&lt;/p&gt;
+
+&lt;p&gt;You want &lt;code&gt;url&lt;/code&gt; to match the desired URL for your site: &lt;code&gt;http://YOUR-GITHUB-USERNAME.github.io&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;path&lt;/code&gt; specifies a path where files are held. 
+For the GH Pages user site, it needs to have no value. You can either delete that line, comment it, or just put a set of double quotes to specify that Jekyll should not try to rewrite the links and append a subdirectory. It will look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;path: &amp;quot;&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The same is true for &lt;code&gt;baseurl&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;All that these do is tell Jekyll where things are when it is trying to build the site. 
+Remember, linking is dynamic in the build process, so Jekyll is trying to figure out how to tell your browser where to find stuff that it needs to render the site. &lt;/p&gt;
+
+&lt;h2 id=&quot;test&quot;&gt;Test&lt;/h2&gt;
+
+&lt;p&gt;Once you have your config set accordingly, then you should be able to look at your site at &lt;code&gt;http://YOUR-GITHUB-USERNAME.github.io&lt;/code&gt;. 
+Don&amp;#39;t worry if it doesn&amp;#39;t work or if something looks weird. 
+Nothing is broken in those cases, you&amp;#39;ll just need to troublshoot to figure out what is wrong. This is part of the developmet workflow. &lt;/p&gt;
+
+&lt;h1 id=&quot;development&quot;&gt;Development&lt;/h1&gt;
+
+&lt;p&gt;A &amp;quot;development workflow&amp;quot; has several stages that happen in order.&lt;label for=&#39;ghflow&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;ghflow&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;“Understanding the GitHub Flow.” GitHub Guides. Last modified December 12, 2013. &lt;a href=&quot;https://guides.github.com/introduction/flow/&quot;&gt;https://guides.github.com/introduction/flow/&lt;/a&gt;. &lt;/span&gt; 
+We have been gearing up to think about our work in this context. &lt;/p&gt;
+
+&lt;p&gt;A typical development workflow might conceptually look like this:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Create new branch of source code for new feature&lt;/li&gt;
+&lt;li&gt;Work on code for new feature in new branch &lt;/li&gt;
+&lt;li&gt;Test feature and make fixes if necessary&lt;/li&gt;
+&lt;li&gt;Run with feature in testing environment to ensure that feature works&lt;/li&gt;
+&lt;li&gt;Get feedback about new feature and integrate suggestions if necessary&lt;/li&gt;
+&lt;li&gt;Merge new feature into main workflow&lt;/li&gt;
+&lt;li&gt;New feature is live in production&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;next-time&quot;&gt;Next time&lt;/h1&gt;
+
+&lt;p&gt;We&amp;#39;re going to learn tomorrow how to incorporate branching, testing, and merging by setting up a development workflow like the one described above. &lt;/p&gt;
+
+&lt;p&gt;To prepare for this, I would like you to read the Gist linked in the margin, but I would also like you to do some searching online about how different developers managed their workflows. {sidenote &amp;#39;workflow&amp;#39; &amp;#39;blackfalcon. “Git Basics - a General Workflow.” Gist. Accessed June 29, 2016. &lt;a href=&quot;https://gist.github.com/blackfalcon/8428401.&amp;#x27;&quot;&gt;https://gist.github.com/blackfalcon/8428401.&amp;#39;&lt;/a&gt;}
+To this end you might Google things like &amp;quot;development workflow&amp;quot; or &amp;quot;project development.&amp;quot;
+See what you can find. 
+There is a ton of relevant information on this topic out in the Internet.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/web/2016/06/29/developing-deploying-branching/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/web/2016/06/29/developing-deploying-branching/</guid>
+        
+        <category>git</category>
+        
+        <category>GitHub</category>
+        
+        <category>Jekyll</category>
+        
+        <category>development</category>
+        
+        <category>workflow</category>
+        
+        
+        <category>Web</category>
+        
+      </item>
+    
+      <item>
+        <title>Visual styling for the web</title>
+        <description>&lt;p&gt;For most of class today, we will spend time creating our base site and then exploring ways that we can change and customize the style to our liking. &lt;/p&gt;
+
+&lt;p&gt;We&amp;#39;ll learn a little bit about CSS and about linking resources so that they show up where we want them. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h1&gt;
+
+&lt;p&gt;Once you have chosen a Jekyll theme for your site, we will need to fork the theme, make appropriate changes to turn it into our own, and then we can get to work on customizing the look and feel of the site. &lt;/p&gt;
+
+&lt;p&gt;When we make changes to Jekyll&amp;#39;s configuration, we are ostensibly telling it where to find different necessary files for rendering the site, like our CSS file. &lt;/p&gt;
+
+&lt;p&gt;Let&amp;#39;s take a look at different ways of linking. &lt;/p&gt;
+
+&lt;h1 id=&quot;linking&quot;&gt;Linking&lt;/h1&gt;
+
+&lt;p&gt;Linking is what makes the Internet what it is in terms of how information is organized. 
+Without links, we would have to know the location of every single thing we wish to get to. 
+We would have to index everything: that is, we would need a list. 
+Linking allows us to move between resources, call and embed resources within one another, and in some cases find resources based on their relationships. &lt;/p&gt;
+
+&lt;h3 id=&quot;relative-and-absolute-paths&quot;&gt;Relative and absolute paths&lt;/h3&gt;
+
+&lt;p&gt;We have choices about how we can link to resources. &lt;/p&gt;
+
+&lt;p&gt;Let&amp;#39;s look at the links in the examples on the last page:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;css/styles.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;js/scripts.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;images/pretty.img&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;A pretty picture&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;index.html&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Home&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Return home.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;These are all examples of relative paths. 
+This means that they assume that the files referenced here are located near our index page. &lt;/p&gt;
+
+&lt;p&gt;If we were to represent the same links with absolute paths, we would have to add the domain name / hostname also. 
+See below:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.somewebsite.com/css/styles.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.somewebsite.com/js/scripts.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.somewebsite.com/images/pretty.img&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;A pretty picture&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.somewebsite.com/index.html&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Home&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Return home.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let&amp;#39;s consider the advantages and disadvantages of each of these approaches and ask these questions:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;What happens if we have to change our doman name or move to a different server?&lt;/li&gt;
+&lt;li&gt;Is there perhaps a way to automate such a change and still provide an absolute path?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Let&amp;#39;s move on to working with visual elements.&lt;/p&gt;
+
+&lt;h1 id=&quot;css&quot;&gt;CSS&lt;/h1&gt;
+
+&lt;p&gt;CSS is an acronym for &amp;quot;Cascading Style Sheet.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;If HTML is the medium for web content, then CSS is the medium for the visual styling of the web. 
+Whenever a website looks like anything other than just a blank page, there is CSS involved. &lt;/p&gt;
+
+&lt;p&gt;We will continue to use a combination of Markdown, HTML5 and CSS3 to construct our very own web pages. &lt;/p&gt;
+
+&lt;h1 id=&quot;for-next-time&quot;&gt;For next time&lt;/h1&gt;
+
+&lt;p&gt;I want you to continue to work with your site and actually begin creating some content: write a blog post. &lt;/p&gt;
+
+&lt;p&gt;This involves having an idea, making an outline of what you want to say about that idea, committing some text, referencing outside information, and maybe putting a picture in to give a visual anchor to your text.&lt;/p&gt;
+
+&lt;p&gt;I would also like you to move through the W3Schools HTML5 and CSS3 tutorials on your own, outside of class.&lt;label for=&#39;css-tutorial&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;css-tutorial&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;“HTML Tutorial.” W3Schools. &lt;a href=&quot;http://www.w3schools.com/html/default.asp&quot;&gt;http://www.w3schools.com/html/default.asp&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;“CSS Tutorial.” W3Schools. &lt;a href=&quot;http://www.w3schools.com/css/default.asp&quot;&gt;http://www.w3schools.com/css/default.asp&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/web/2016/06/28/jekyll-css-html/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/web/2016/06/28/jekyll-css-html/</guid>
+        
+        <category>Jekyll</category>
+        
+        <category>CSS</category>
+        
+        <category>HTML</category>
+        
+        <category>Markdown</category>
+        
+        
+        <category>Web</category>
+        
+      </item>
+    
+      <item>
+        <title>Websites, Markup, and Markdown</title>
+        <description>&lt;p&gt;This week&amp;#39;s tasks will involve some very simple coding (markup, really) and continued exploration and use of our system administration skills. &lt;/p&gt;
+
+&lt;p&gt;Last Friday we learned how to set up a very basic website using Jekyll and GitHub pasges. 
+This week we will expand on that significantly, learn how to use markup to change the style of our content, and then learn to publish content to the web. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;p&gt;First things first, we need to know some things about markup. &lt;/p&gt;
+
+&lt;h1 id=&quot;markup-and-markdown&quot;&gt;Markup and Markdown&lt;/h1&gt;
+
+&lt;p&gt;Markup has been used over the last several decades to enhance plaintext for web use. &lt;/p&gt;
+
+&lt;p&gt;Today we will consider some of the basics. &lt;/p&gt;
+
+&lt;p&gt;Markdown is a markup language. 
+We had a brief introduction to it last week when we established our first repositories on GitHub. &lt;/p&gt;
+
+&lt;h2 id=&quot;why-are-we-learning-markdown?&quot;&gt;Why are we learning Markdown?&lt;/h2&gt;
+
+&lt;p&gt;For starters, Markdown is easier to use than HTML or other markup languages. 
+It doesn&amp;#39;t require complicated tags, which have a high potential for typographical error. &lt;/p&gt;
+
+&lt;p&gt;Jon Mitchell posits the three following good and compelling reasons that everyone should learn Markdown:&lt;label for=&#39;reasons&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;reasons&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Mitchell, Jon. “3 Reasons Why Everyone Needs to Learn Markdown - ReadWrite.” ReadWrite. Last modified April 17, 2012. &lt;a href=&quot;http://readwrite.com/2012/04/17/why-you-need-to-learn-markdown/&quot;&gt;http://readwrite.com/2012/04/17/why-you-need-to-learn-markdown/&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;It is easy to read. &lt;/li&gt;
+&lt;li&gt;You will make fewer errors.&lt;/li&gt;
+&lt;li&gt;It helps us to get rid of buggy, crashy, loss-prone content management systems (CMS). &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;All of the above boils down to a simple comparison that Mitchell makes:&lt;/p&gt;
+
+&lt;p&gt;HTML:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&amp;lt;h1&amp;gt;Why &amp;lt;em&amp;gt;you&amp;lt;/em&amp;gt; should use Markdown to write your next blog post&amp;lt;/h1&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;a href=”http://daringfireball.net/projects/markdown/”&amp;gt;Markdown&amp;lt;/a&amp;gt; is just so dang legible, it will make your &amp;lt;em&amp;gt;whole life&amp;lt;/em&amp;gt; easier. &amp;lt;strong&amp;gt;I promise.&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Markdown:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;# Why *you* should use Markdown to write your next blog post
+
+[Markdown][1] is just so dang legible, it will make your *whole life* easier. **I promise.**
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The above examples render the same thing when parsed. Which would you rather use? &lt;/p&gt;
+
+&lt;p&gt;We will go over some of the basics in class today, but I would also like you to review the resources listed here independently, outside of class. &lt;label for=&#39;markdown&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;markdown&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;“Mastering Markdown.” GitHub Guides. Last modified January 15, 2014. Accessed June 27, 2016. &lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;https://guides.github.com/features/mastering-markdown/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;This guide is oriented toward GitHub, but the skills represented there extend well beyond that context. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;We will work interchangeably in HTML and Markdown over the course of this week.&lt;/p&gt;
+
+&lt;h1 id=&quot;html5&quot;&gt;HTML5&lt;/h1&gt;
+
+&lt;p&gt;HTML is an initialism for &amp;quot;HyperText Markup Language.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;&amp;quot;Hypertext&amp;quot; is text that contains links to other text.&lt;label for=&#39;markup-history&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;markup-history&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Keith, Jeremy. “A Brief History of Markup.” A List Apart 305 (May 4, 2010). &lt;a href=&quot;http://alistapart.com/article/a-brief-history-of-markup&quot;&gt;http://alistapart.com/article/a-brief-history-of-markup&lt;/a&gt;. &lt;/span&gt;
+The Web, as we know it, relies on hypertext to for us to communicate with systems and with other humans. 
+It is the medium of Web content.&lt;/p&gt;
+
+&lt;p&gt;HTML5 is the latest iteration of a standard related to the writing of web content.
+Web markup has a long history over the last few decades, beginning with Tim Berners-Lee, one of the fathers of the modern web (and the inventor of HTML).
+Berners-Lee proposed the creation of an information management system for the European Agency for Nuclear Research (CERN) in the late 1980&amp;#39;s.&lt;label for=&#39;html-origin&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;html-origin&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Berners-Lee, Tim. Information Management: A Proposal. European Agency for Nuclear Research (CERN), March 1989. Accessed June 27, 2016. &lt;a href=&quot;https://www.w3.org/History/1989/proposal.html&quot;&gt;https://www.w3.org/History/1989/proposal.html&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;When we write Markdown and then post it to GitHub, a system actually translates it into HTML5. &lt;/p&gt;
+
+&lt;h1 id=&quot;for-next-time&quot;&gt;For next time&lt;/h1&gt;
+
+&lt;p&gt;I would like you to look at this tutorial about creating a website using Jekyll and GitHub Pages. &lt;/p&gt;
+
+&lt;p&gt;Clark, Barry. “Build A Blog With Jekyll And GitHub Pages – Smashing Magazine.” Smashing Magazine. Last modified August 1, 2014. Accessed June 27, 2016. &lt;a href=&quot;https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/&quot;&gt;https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We have already done this in a very rudimentary way, but we will do it again to create a better final product. &lt;/p&gt;
+
+&lt;p&gt;Please also look at these themes and choose one for your site. Some have dynamic navigation (those are listed first == easy). You will modify them heavily. &lt;/p&gt;
+
+&lt;h2 id=&quot;some-easy-themes&quot;&gt;Some easy themes&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/basic/&quot;&gt;http://jekyllthemes.org/themes/basic/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/trading/&quot;&gt;http://jekyllthemes.org/themes/trading/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/devjournal/&quot;&gt;http://jekyllthemes.org/themes/devjournal/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/gravity/&quot;&gt;http://jekyllthemes.org/themes/gravity/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;more-challenging-themes&quot;&gt;More challenging themes&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/jekyll-clean/&quot;&gt;http://jekyllthemes.org/themes/jekyll-clean/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/thinkspace/&quot;&gt;http://jekyllthemes.org/themes/thinkspace/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/vitae/&quot;&gt;http://jekyllthemes.org/themes/vitae/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/dbyll/&quot;&gt;http://jekyllthemes.org/themes/dbyll/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/blackdoc/&quot;&gt;http://jekyllthemes.org/themes/blackdoc/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/daktilo/&quot;&gt;http://jekyllthemes.org/themes/daktilo/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Good advice: &lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&amp;quot;Write the best code possible today and be completely unattached to it and willing to delete it tomorrow.&amp;quot;&lt;a href=&quot;https://t.co/mBAJhip0KP&quot;&gt;https://t.co/mBAJhip0KP&lt;/a&gt;&lt;/p&gt;&amp;mdash; Adam Wathan (@adamwathan) &lt;a href=&quot;https://twitter.com/adamwathan/status/747429538930393088&quot;&gt;June 27, 2016&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+</description>
+        <pubDate>Mon, 27 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/web/2016/06/27/websites-and-markup/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/web/2016/06/27/websites-and-markup/</guid>
+        
+        <category>websites</category>
+        
+        <category>markup</category>
+        
+        <category>markdown</category>
+        
+        <category>html</category>
+        
+        <category>css</category>
+        
+        
+        <category>Web</category>
+        
+      </item>
+    
+      <item>
+        <title>Lab #1: Git and GitHub</title>
+        <description>&lt;p&gt;Today we&amp;#39;re going to learn how to fork, clone, and push changes to a repository on GitHub using git. 
+We do this in preparation for creating personal websites that will be hosted by GitHub pages. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;fork&quot;&gt;Fork&lt;/h1&gt;
+
+&lt;p&gt;The first thing that we are going to do today is fork some code that will allow us to have something to work with in CodeAnywhere later.
+We&amp;#39;ll use this as an opportunity to get wome web code and see what that looks like. &lt;/p&gt;
+
+&lt;p&gt;You are not committing to anything today: this is just for practice. 
+We&amp;#39;ll start by going to this repo:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/henrythemes/jekyll-starter-theme&quot;&gt;https://github.com/henrythemes/jekyll-starter-theme&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the repo for a very, very simple Jekyll web theme. 
+We will us this as a starter theme to practice with. &lt;/p&gt;
+
+&lt;p&gt;Once you are at the above repo, click the &amp;quot;Fork&amp;quot; button and select your username when prompted to make a copy of the repo in your account.&lt;label for=&#39;fork&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;fork&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;&lt;img src=&quot;/assets/ref-images/fork.png&quot; alt=&quot;Click the &amp;quot;fork&amp;quot; button.&quot;&gt; &lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;After a few seconds you will be taken to the repo page for the copy that you have made in your account. &lt;/p&gt;
+
+&lt;h1 id=&quot;clone&quot;&gt;Clone&lt;/h1&gt;
+
+&lt;p&gt;Once there, click the big green &amp;quot;Clone or Download&amp;quot; button, select &amp;quot;Use SSH,&amp;quot; and copy the resulting link. &lt;label for=&#39;clone&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;clone&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;&lt;img src=&quot;/assets/ref-images/clone.png&quot; alt=&quot;Click the &amp;quot;fork&amp;quot; button.&quot;&gt; &lt;/span&gt; 
+It will look like the link in the image on the right. &lt;/p&gt;
+
+&lt;p&gt;Then, switch over to CodeAnywhere, make sure you&amp;#39;re logged in, and then right click on your container and open and SSH terminal from the menu. &lt;/p&gt;
+
+&lt;p&gt;In your &amp;quot;workspace&amp;quot; directory, type the following command, and paste your link in after, so that it looks like this: &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git clone git@github.com:YOUR-GITHUB-USERNAME/jekyll-starter-theme.git&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This makes a copy of the repository that you just forked to your local workspace in CodeAnywhere. 
+This is called cloning. &lt;/p&gt;
+
+&lt;p&gt;Then descend into the directory:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd jekyll-starter-theme&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And explore what is in there:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ls -lah&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You should see a &lt;code&gt;_config.yml&lt;/code&gt; file somewhere in the directory. 
+This file is filled with variables that Jekyll reads to structure the information made by your webpage. &lt;/p&gt;
+
+&lt;p&gt;The basic structure of variables for Jekyll is:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;variable-name:   &amp;quot;variable value&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I want you to change the title variable to your name or whatever you like.
+Change the subtitle as well. &lt;/p&gt;
+
+&lt;p&gt;From this:&lt;label for=&#39;test&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;test&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;The first thing that we are going to do today is fork &lt;/span&gt; &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;# site.title
+
+title:    &#39;Jekyll Starter Theme&#39;
+subtitle: &#39;Another Minimalistic Static Site Quick Starter Theme&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To something like this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;# site.title
+
+title:    &#39;YOUR-NAME&#39;
+subtitle: &#39;Some subtitle I just made up!&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then I want you to change the &lt;code&gt;url&lt;/code&gt; variable so that this will show up at the address associated with your GitHub repo.&lt;/p&gt;
+
+&lt;p&gt;So change this: &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;url:   &amp;#39;http://henrythemes.github.io/jekyll-starter-theme&amp;#39;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;url:   &amp;#39;http://YOUR-GITHUB-USERNAME.github.io/jekyll-starter-theme&amp;#39;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have made those changes, then save the file and we will push it back up to GitHub.&lt;/p&gt;
+
+&lt;h1 id=&quot;push&quot;&gt;Push&lt;/h1&gt;
+
+&lt;p&gt;So in order to record these changes and get them into our remote repo on GitHub, we have to first go through the normal commit process. 
+First, add the files:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git add -v *&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then commit the changes (remember to leave a message for yourself):&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git commit -a -m &amp;quot;update config&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then we have to push the changes upstream:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git push&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And that should be that. &lt;/p&gt;
+
+&lt;h1 id=&quot;github-pages&quot;&gt;GitHub Pages&lt;/h1&gt;
+
+&lt;p&gt;You should be able to see this web code rendered as a webpage now. 
+Try going to the address that corresponds to the GH pages site associated with this repository. It will look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;https://YOUR-GITHUB-USERNAME.github.io/jekyll-starter-theme/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And there you should see a site with the title and subtitle that you assigned in the &lt;code&gt;_config.yml&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;h1 id=&quot;for-next-time&quot;&gt;For next time&lt;/h1&gt;
+
+&lt;p&gt;I would like you to have a look at some tutorials and guides to Markdown for Monday. &lt;/p&gt;
+
+&lt;p&gt;Kirk Strobeck&amp;#39;s page describes the origin and intent of Markdown, and provides links to useful resources. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://whatismarkdown.com/&quot;&gt;http://whatismarkdown.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Dan Harper gives a good introduction to how Markdown is used and what it looks like in the wild. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://code.tutsplus.com/tutorials/markdown-the-ins-and-outs--net-25482&quot;&gt;http://code.tutsplus.com/tutorials/markdown-the-ins-and-outs--net-25482&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 24 Jun 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/basics/2016/06/24/git-and-github-lab/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/basics/2016/06/24/git-and-github-lab/</guid>
+        
+        <category>version control</category>
+        
+        <category>git</category>
+        
+        <category>GitHub</category>
+        
+        <category>Jekyll</category>
+        
+        <category>web design</category>
+        
+        
+        <category>Basics</category>
+        
+      </item>
+    
+  </channel>
+</rss>
