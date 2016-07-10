@@ -19,6 +19,7 @@ git checkout -f gh-pages
 rm -r *
 rsync -r $TEMPDIR/ .
 # commit and push changes
+git add -v *
 git commit -av -m "update gh-pages site on `date`"
 git push -v
 # check back into master
