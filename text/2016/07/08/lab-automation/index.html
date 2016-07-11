@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Tools for Information Literacy&nbsp;|&nbsp;Lab #3: Automation</title>
-  <meta name="description" content="Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. I will post detailed ...">
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Lab #3: Automation and Scripting</title>
+  <meta name="description" content="Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. ">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
   
@@ -91,17 +91,98 @@
 	</nav>
 </header>
     <article class="group">
-      <h1>Lab #3: Automation</h1>
+      <h1>Lab #3: Automation and Scripting</h1>
 
 
 
 <p class="subtitle">Friday, 8 July 2016</p>
 
 <p>Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. 
-I will post detailed notes after class for review of the scripting tutorial part of today&#39;s session. 
 <excerpt/></p>
 
 <p>We will use a few online tutorials for reference.<label for='shell-scripts' class='margin-toggle sidenote-number'></label><input type='checkbox' id='shell-scripts' class='margin-toggle'/><span class='sidenote'>Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. <a href="http://linuxcommand.org/lc3_writing_shell_scripts.php">http://linuxcommand.org/lc3_writing_shell_scripts.php</a>.<br/><br/>Chadwick, Ryan. “User Input - Bash Scripting Tutorial.” Ryan’s Tutorials. <a href="http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php">http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php</a>. </span> </p>
+
+<h2 id="adding-user-input">Adding user input</h2>
+
+<p>We&#39;re going to add user input to our scripts from yesterday. </p>
+
+<p>To do this, we use the <code>read</code> command to accept the next line of input and save it as a variable.
+Instead of putting our GitHub username in the script where we want it to read out, this method will prompt for a username.</p>
+<div class="highlight"><pre><code class="language-" data-lang=""><span class="c">#!/bin/bash</span>
+<span class="c"># Say "Hello" to the world.</span>
+<span class="nb">echo</span> <span class="s2">"Hello, world!"</span>
+<span class="c"># Ask who the user is</span>
+<span class="nb">echo</span> <span class="s2">"Who are you?"</span>
+<span class="c"># Read GitHub username from input</span>
+<span class="nb">read </span>GHUSERNAME
+<span class="c"># Say "Hello" to me.</span>
+<span class="nb">echo</span> <span class="s2">"Hello, </span><span class="nv">$GHUSERNAME</span><span class="s2">!"</span>
+</code></pre></div>
+<p>Now if we run the script, it will pause and ask us for input:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
+Hello, world!
+Who are you?
+</code></pre></div>
+<p>If I type my GitHub username and press enter, then Bash will read it and put it in the right place in the output. </p>
+<div class="highlight"><pre><code class="language-" data-lang="">jdmar3
+Hello, jdmar3!
+cabox@box-codeanywhere:~/workspace/helper-scripts$ 
+</code></pre></div>
+<h2 id="setting-a-variable">Setting a variable</h2>
+
+<p>We can also set the username we want to output before we run the second echo command. 
+It&#39;s best to set variables at the top of the file so that they are easily found. </p>
+
+<p>Here is an example: </p>
+<div class="highlight"><pre><code class="language-" data-lang=""><span class="c">#!/bin/bash</span>
+<span class="c"># Read GH username in as variable</span>
+<span class="nv">GHUSERNAME</span><span class="o">=</span>jdmar3
+<span class="c"># Say "Hello" to the world.</span>
+<span class="nb">echo</span> <span class="s2">"Hello, world!"</span>
+<span class="c"># Say "Hello" to me.</span>
+<span class="nb">echo</span> <span class="s2">"Hello, </span><span class="nv">$GHUSERNAME</span><span class="s2">!"</span>
+</code></pre></div>
+<p>If we run this the Bash will output the value we set in place of the variable name:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
+Hello, world!
+Hello, jdmar3!
+cabox@box-codeanywhere:~/workspace/helper-scripts$ 
+</code></pre></div>
+<h2 id="accepting-a-variable-from-command-line-input">Accepting a variable from command line input</h2>
+
+<p>We can also specify a varialbe value in the command line itself. 
+To do this, we need to tell Bash to read what comes after the run command in as a variable, like this: </p>
+<div class="highlight"><pre><code class="language-" data-lang=""><span class="c">#!/bin/bash</span>
+<span class="c"># Read GH username</span>
+<span class="nv">GHUSERNAME</span><span class="o">=</span><span class="nv">$1</span>
+<span class="c"># Say "Hello" to the world.</span>
+<span class="nb">echo</span> <span class="s2">"Hello, world!"</span>
+<span class="c"># Say "Hello" to me.</span>
+<span class="nb">echo</span> <span class="s2">"Hello, </span><span class="nv">$GHUSERNAME</span><span class="s2">!"</span>
+</code></pre></div>
+<p>Now when we run the script, we will have to specify the username directly after the name of the script. </p>
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh jdmar3
+Hello, world!
+Hello, jdmar3!
+cabox@box-codeanywhere:~/workspace/helper-scripts$ 
+</code></pre></div>
+<p>If you change the input, you will see it change in the output now:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh YOUR-GITHUB-USERNAME
+Hello, world!
+Hello, YOUR-GITHUB-USERNAME!
+cabox@box-codeanywhere:~/workspace/helper-scripts$ 
+</code></pre></div>
+<h1 id="lab">Lab</h1>
+
+<p>You can use the techniques above to create a script to automate your document conversion workflow. 
+Use the assignment text to make sure that you have gotten each of the required parts to work properly. </p>
+
+<h1 id="for-next-week">For next week</h1>
+
+<p>Next week we will use similar methods to help to automate the collection and formatting of data in flat data tables. 
+Through this we will learn more about pipes and redirecting output.<label for='csv' class='margin-toggle sidenote-number'></label><input type='checkbox' id='csv' class='margin-toggle'/><span class='sidenote'>Connelly, Brian. “Working with CSVs on the Command Line.” <a href="Http://bconnelly.net/">Http://bconnelly.net/</a>. Last modified September 23, 2013. <a href="http://bconnelly.net/working-with-csvs-on-the-command-line/">http://bconnelly.net/working-with-csvs-on-the-command-line/</a>. </span> </p>
+
+<p>We will then learn how to use data tables to create a more complex database, which we will be able to query to see relationships between different variables.<label for='sql' class='margin-toggle sidenote-number'></label><input type='checkbox' id='sql' class='margin-toggle'/><span class='sidenote'>Sverdlov, Etel. “A Basic MySQL Tutorial.” DigitalOcean. Last modified June 12, 2012. <a href="https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial">https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial</a>. </span> </p>
 
 
 <p>
@@ -118,7 +199,7 @@ I will post detailed notes after class for review of the scripting tutorial part
   
 </div>
     </article>
-    <span class="print-footer">Lab #3: Automation - July 8, 2016 - </span>
+    <span class="print-footer">Lab #3: Automation and Scripting - July 8, 2016 - </span>
     <footer>
   <hr class="slender">
   <ul class="footer-links">
