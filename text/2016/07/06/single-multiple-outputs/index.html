@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Single input, multiple outputs</title>
+  <meta name="description" content="We&#39;ve briefly discussed Pandoc now. It bills itself as the &quot;Universal Document Converter.&quot; This is reasonably true, but it might require some c...">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="/css/tufte.css"> 
+  
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+
+  <link rel="canonical" href="http://inls161.johndmart.in/text/2016/07/06/single-multiple-outputs/">
+
+  <link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="http://inls161.johndmart.in/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/161icon.png" alt="UNC"></a>
+	
+	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/">Tools for Information Literacy</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/syllabus/">Syllabus</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/schedule/">Schedule</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/assignments/">Assignments</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/refsheets/">Reference</a>
+		    
+	    
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1>Single input, multiple outputs</h1>
+
+
+
+<p class="subtitle">Wednesday, 6 July 2016</p>
+
+<p>We&#39;ve briefly discussed Pandoc now. 
+It bills itself as the &quot;Universal Document Converter.&quot; 
+This is reasonably true, but it might require some creative combinations of switches within Pandoc commands as well as multiple commands strung together or intermediate commands to get the desired output. </p>
+
+<p>The benefit of troubleshooting and understanding this process is that once we do, we can more easily optimize our conversions and automate them. 
+We&#39;ll talk more about this as we go forward. 
+<excerpt/></p>
+
+<h1 id="source-to-output-conversion">Source to output conversion</h1>
+
+<p>It is possible to use GUI tools to create and convert documents. 
+Support is somewhat limited, but in LibreOffice, we can at least create a PDF from our ODT and DOCX files. </p>
+
+<p>We can also manipulate the styles of the headers and other structural elements that we have assigned using Markdown in our GUI editors. </p>
+
+<p>One convenient effect of starting with plaintext marked up with Markdown is that we have those structural elements when we convert them into another format and then edit them elsewhere. It is certainly possible to start in the GUI editor and define the same things, but after becoming acquainted with Markdown, it should feel somewhat more burdensome to use the GUI. Arguably, it is. There is a great deal more that goes into a DOCX or an ODT file, structurally, than in a plaintext file with Markdown in it. </p>
+
+<p>We also have the disadvantage of only being able to operate on thost files in limited ways on headless or remote systems. </p>
+
+<p>If we keep plaintext at the core of our workflows and GUI editors toward the periphery, we will be served in the end as we will always have access to our work, on any system, without any huge barriers to editing and changing. </p>
+
+<h2 id="commands">Commands</h2>
+
+<p>We&#39;re going to practice some conversions using Pandoc today. We will also work in groups. </p>
+
+<p>First, we need to get some files. </p>
+
+<p>Fork and clone this repository into your CodeAnywhere container:</p>
+
+<p><a href="https://github.com/inls161/pandoc-practice">https://github.com/inls161/pandoc-practice</a></p>
+
+<p>Once you have the files in your CodeAnywhere container, I will show you some things in class and then in your groups you will answer and mark up the <code>example.md</code> file using the instructions in the file. </p>
+
+<p><strong><em>When you are finished with the questions in file:</em></strong> </p>
+
+<ol>
+<li>I want you to change the name of the file to your GitHub username. </li>
+<li>You will then work as a group to convert the file to HTML, DOCX, and ODT formats, per the instructions in class. I also want you to open the files on your lab computers so you can see what you have done. </li>
+<li>Then I want you to add, commit, and push your changes. </li>
+<li>Finally, you will create a pull request in GitHub to get these files back into my original repository.<br></li>
+</ol>
+
+<h2 id="basic-pandoc-commands">Basic Pandoc commands</h2>
+
+<p><label for='pandoc-commands' class='margin-toggle'> &#8853;</label><input type='checkbox' id='pandoc-commands' class='margin-toggle'/><span class='marginnote'>All Pandoc commands are documented here: <a href="http://pandoc.org/README.html">http://pandoc.org/README.html</a><br/><br/>A good set of example commands exists here: <a href="http://pandoc.org/demos.html">http://pandoc.org/demos.html</a> </span></p>
+
+<p>Convert a Markdown file to HTML:</p>
+
+<p><code>pandoc -o example.html example.md</code></p>
+
+<p>Pandoc reads the filetype from the extension in normal usage. 
+If you want to convert a file directly from a URL, you will have to specify the filetype, like this:</p>
+
+<p><code>pandoc -f html -t markdown http://inls161.johndmart.in/syllabus/</code></p>
+
+<p>You can make sure that certain things, like quotes and em-dashes, get read and formatted propery by specifying the &quot;Smart&quot; switch (a capital <code>-S</code> or <code>--smart</code>):</p>
+
+<p><code>pandoc -S -o example.html example.md</code></p>
+
+<p>There are a host of other commands in the documentation. Be sure to try them out. </p>
+
+<h2 id="specific-file-commands">Specific file commands</h2>
+
+<p>Convert your markdown to HTML:</p>
+
+<p><code>pandoc -o example.html exampld.md</code></p>
+
+<p>If you wish to convert to a DOCX or ODT file:</p>
+
+<p><code>pandoc -o example.docx example.md</code></p>
+
+<p><code>pandoc -o example.odt example.md</code></p>
+
+<p>If you wish to convert between two different word processor filetypes, we might have to get a little creative. 
+We learned in class that if we issue the following command, we get errors related to file encoding and the conversion will not work. </p>
+
+<p><code>pandoc -o example.docx example.odt</code></p>
+
+<p>If, however, we add an intermediary step, say through HTML, we can get the output that we want. Try it like this instead: </p>
+
+<p><code>pandoc -o example.docx example-tmp.html &amp;&amp; pandoc -o example.odt example-tmp.html</code></p>
+
+<p>This preserves the formatting and extracts the text from the DOCX as an HTML file and then converts that HTML into ODT. 
+We do not have the weird encoding errors this way, and we don&#39;t have to mess with pipes. </p>
+
+<p>Filter a document through a template file:</p>
+
+<p><code>pandoc -S --reference-docx=FILE -o example.docx example.md</code> </p>
+
+<p>In the above command, you need to specify the location of the template file. 
+If it is a file called <code>template.docx</code> and is located in the same directory as your Markdown source, then the command will be:</p>
+
+<p><code>pandoc -S --reference-docx=./template.docx -o example.docx example.md</code></p>
+
+<p>You can also use an ODT or OTT for reference:</p>
+
+<p><code>pandoc -S --reference-odt=./template.ott -o example.odt example.md</code></p>
+
+<h1 id="for-tomorrow">For tomorrow</h1>
+
+<p>Tomorrow, we are going to learn one more output format and then learn how to script all of our outputs together so that we can save ourselves time. </p>
+
+<p>I would like you to go through the Writing Shell Scripts tutorial by William Shotts for tomorrow.<label for='shell-scripts' class='margin-toggle sidenote-number'></label><input type='checkbox' id='shell-scripts' class='margin-toggle'/><span class='sidenote'>Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. <a href="http://linuxcommand.org/lc3_writing_shell_scripts.php">http://linuxcommand.org/lc3_writing_shell_scripts.php</a>. </span> 
+This will show you the basics of scripting. 
+The scripts that we will write will be very, very simple, but it is good to have looked over this before we start. </p>
+
+
+<p>
+  <br/>
+  <ul class="tags">
+    <li><a href="/topics#pandoc" class="tag">pandoc</a></li><li><a href="/topics#text" class="tag">text</a></li><li><a href="/topics#conversion" class="tag">conversion</a></li><li><a href="/topics#LaTeX" class="tag">LaTeX</a></li>
+  </ul> 
+</p>
+
+<div class="blognav">
+  
+    <a class="prev" href="/text/2016/07/05/text-conversion/">&laquo; Text Conversion</a>
+  
+  
+    <a class="next" href="/text/2016/07/07/scripting/">Introduction to scripting &raquo;</a>
+  
+</div>
+    </article>
+    <span class="print-footer">Single input, multiple outputs - July 6, 2016 - </span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    
+    
+      <li>
+        <a href="http://johndmart.in" title="Instructor home page"><span class="ico-user"></span>&nbsp;John D. Martin III</a>
+      </li>
+    
+    
+      <li>
+        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="ico-envelope"></span>&nbsp;john.d.martin.iii@unc.edu</a>
+      </li>
+    
+    
+      <li>
+        <span class="ico-clock"></span>&nbsp;11:30-13:00
+      </li>
+    
+    
+      <li>
+        <span class="ico-calendar"></span>&nbsp;MoTuWeThFr
+      </li>
+    
+    
+      <li>
+        <span class="ico-library"></span>&nbsp;117 Manning Hall
+      </li>
+    
+    
+      <li>
+        <a href="https://sakai.unc.edu/portal/site/inls161s216" title="UNC Sakai site for this course"><span class="ico-target"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://github.com/inls161" title="GitHub organization for this course"><span class="ico-github"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://inls161.slack.com" title="Join the Slack conversations for this course"><span class="ico-slack"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed" title="Add RSS feed"><span class="ico-rss"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+  <span>TOOLS FOR INFORMATION LITERACY &nbsp;&nbsp;|&nbsp;&nbsp; INLS161-001 (Summer II)
+    <br/> 
+  <span class="smaller">Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</span>
+  <br/><br/>
+  <span class="smaller"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.</span>
+  <br/>
+  <span class="smaller"><a href="/credits/">Content &copy; 2016 John D. Martin III</a></span>
+</div>  
+</footer>
+  </body>
+</html>
