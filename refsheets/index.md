@@ -15,7 +15,7 @@ weight: 9
 ## Linux (Ubuntu)
 {% marginnote 'unix' '**Linux** is one such UNIX clone originally invented in 1991 by Linus Torvalds. It is now among the most widely used operating systems in the world. If you have used the Internet, you have interacted with Linux perhaps without even realizing it. Your CodeAnywhere containers run Ubuntu Linux.' %}
 
-<a href="The Linux Command Line - William E. Shotts, Jr." target="_blank">http://linuxcommand.org/tlcl.php</a>
+<a href="http://linuxcommand.org/tlcl.php" target="_blank">The Linux Command Line - William E. Shotts, Jr.</a>
 
 <a href="http://linuxnewbieguide.org/?page_id=5">The Ultimate Linux Newbie Guide</a>
 
@@ -23,9 +23,11 @@ weight: 9
 
 {% marginnote 'bash' '**Bash** is the name of the shell and command language that we use most frequently in Linux and other UNIX clones. It is a text-interface command line envrionment but it can also read commands from files in the form of scripts.' %}
 
-<a href="Learning the shell - William E. Shotts, Jr." target="_blank">http://linuxcommand.org/lc3_learning_the_shell.php</a>
+<a href="http://linuxcommand.org/lc3_learning_the_shell.php" target="_blank">Learning the shell - William E. Shotts, Jr.</a>
 
-<a href="Writing shell scripts - William E. Shotts, Jr." target="_blank">http://linuxcommand.org/lc3_writing_shell_scripts.php</a>
+<a href="http://linuxcommand.org/lc3_writing_shell_scripts.php" target="_blank">Writing shell scripts - William E. Shotts, Jr.</a>
+
+<a href="http://bconnelly.net/working-with-csvs-on-the-command-line/" target="_blank">Working with CSVs on the Command Line - Brian Connelly</a>
 
 ## VIM (UNIX text editor)
 
@@ -118,6 +120,8 @@ A good set of commands and rationale for using Pandoc to create and convert docu
 <a href="http://anghyflawn.github.io/teaching/2015/ilw-pandoc/" target="_blank">getting off the word standard: your academic life in plain text - Pavel Iosad</a>
 
 The help/manpage file for Pandoc is linked here: <a href="http://pandoc.org/README.html" target="_blank">Pandoc User Guide</a>. Use it!
+
+<a href="http://pandoc.org/demos.html" target="_blank">Pandoc Demos</a>
 
 ### Reference sheets from in-class activities
 
