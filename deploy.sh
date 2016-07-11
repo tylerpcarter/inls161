@@ -42,7 +42,7 @@ cd $WORKDIR
 # checkout into gh-pages 
 git checkout -f $TARGETBRANCH
 rm -r *
-rsync -r $TEMPDIR/ 
+rsync -r $TEMPDIR/ .
 # commit and push changes
 git add -v *
 git commit -av -m "update gh-pages site on `date`"
