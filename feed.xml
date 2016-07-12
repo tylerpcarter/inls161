@@ -5,9 +5,64 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>http://inls161.johndmart.in/</link>
     <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Jul 2016 11:23:44 -0400</pubDate>
-    <lastBuildDate>Mon, 11 Jul 2016 11:23:44 -0400</lastBuildDate>
+    <pubDate>Tue, 12 Jul 2016 11:23:09 -0400</pubDate>
+    <lastBuildDate>Tue, 12 Jul 2016 11:23:09 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Data cleaning and spreadsheet software</title>
+        <description>&lt;p&gt;Today we&amp;#39;re going to look at one common way of manipulating CSV and other data files: the spreadsheet. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;csv-to-spreadsheet&quot;&gt;CSV to spreadsheet&lt;/h1&gt;
+
+&lt;p&gt;Spreadsheets appear to operate in a very simple manner, storing data in rows and columns just like any other table, but looks can be deceiving. &lt;/p&gt;
+
+&lt;p&gt;Just like with DOCX and ODT files when compared with plaintext files, spreadsheets hide a lot of metadata underneath what appears on the surface. &lt;/p&gt;
+
+&lt;p&gt;Unlike with the relationship between plaintext and interface-wrapped formatted text files, it is more difficult to get all of the information out of the spreadsheet. &lt;/p&gt;
+
+&lt;p&gt;As mentioned in the piece by Paul Ford, spreadsheets can hide a lot of things from us, including errors. 
+If our code to perform the same kinds of operations is visible to us, it is easier to check for errors. &lt;/p&gt;
+
+&lt;p&gt;That said, spreadsheets are a powerful tool and should be used in certain tasks in preference over other tools. &lt;/p&gt;
+
+&lt;p&gt;Once you have learned to do basic math in a spreadsheet, there is absolutely no reason to ever use a calculator (or calculator app) for instance.&lt;/p&gt;
+
+&lt;h1 id=&quot;caveats-and-pitfalls-of-using-spreadsheets&quot;&gt;Caveats and pitfalls of using spreadsheets&lt;/h1&gt;
+
+&lt;p&gt;This forum post is a good guide to things that you should be aware of when using spreadsheets:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://forum.openoffice.org/en/forum/viewtopic.php?t=39529&quot;&gt;https://forum.openoffice.org/en/forum/viewtopic.php?t=39529&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It pertains to OpenOffice, which is the productivity suite that LibreOffice was forked from some years ago. 
+OpenOffice is now owned by Oracle and some of the community was not happy with licensing changes that had occured, so they jumped ship and moved their development to LibreOffice under the umbrella of the Open Document Foundation. 
+The software still operates similarly enough that the information is relevant to us. 
+This is because both suites use ODF at their core. &lt;/p&gt;
+
+&lt;p&gt;It will also be a good idea to have a look at the LibreOffice documentation to familiarize yourself with it as a reference: &lt;a href=&quot;https://www.libreoffice.org/get-help/documentation/&quot;&gt;https://www.libreoffice.org/get-help/documentation/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, here is a compendium of all of the functions available to you in LibreOffice Calc: &lt;a href=&quot;https://help.libreoffice.org/Calc/Spreadsheet_Functions&quot;&gt;https://help.libreoffice.org/Calc/Spreadsheet_Functions&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;for-next-time&quot;&gt;For next time&lt;/h1&gt;
+
+&lt;p&gt;We&amp;#39;re going to break into databases next time and have a MySQL crash course. 
+I would like you to look over some basic MySQL tutorials on your own so that we are prepared to dig into this.&lt;label for=&#39;sql&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;sql&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Sverdlov, Etel. “A Basic MySQL Tutorial.” DigitalOcean. Last modified June 12, 2012. &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial&quot;&gt;https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
+</description>
+        <pubDate>Tue, 12 Jul 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/data/2016/07/12/data-cleaning/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/data/2016/07/12/data-cleaning/</guid>
+        
+        <category>CSV</category>
+        
+        <category>data</category>
+        
+        <category>spreadsheets</category>
+        
+        
+        <category>Data</category>
+        
+      </item>
     
       <item>
         <title>Handling data</title>
@@ -90,6 +145,7 @@ Approximately how far is your home city/town away from UNC/Chapel Hill (in km)?&
 &lt;p&gt;If any answer doesn&amp;#39;t apply to you, type &lt;code&gt;NA&lt;/code&gt; (&amp;quot;not applicable&amp;quot;).&lt;/p&gt;
 
 &lt;p&gt;My file will look like this:&lt;/p&gt;
+
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;jdmar3
 175.26
 06:45
@@ -166,9 +222,9 @@ This will be the basis of the next asssignment, which will be a group assignment
         <link>http://inls161.johndmart.in/data/2016/07/11/data-handling/</link>
         <guid isPermaLink="true">http://inls161.johndmart.in/data/2016/07/11/data-handling/</guid>
         
-        <category>data</category>
-        
         <category>CSV</category>
+        
+        <category>data</category>
         
         <category>scripting</category>
         
@@ -1198,131 +1254,6 @@ Whenever a website looks like anything other than just a blank page, there is CS
         <category>HTML</category>
         
         <category>Markdown</category>
-        
-        
-        <category>Web</category>
-        
-      </item>
-    
-      <item>
-        <title>Websites, Markup, and Markdown</title>
-        <description>&lt;p&gt;This week&amp;#39;s tasks will involve some very simple coding (markup, really) and continued exploration and use of our system administration skills. &lt;/p&gt;
-
-&lt;p&gt;Last Friday we learned how to set up a very basic website using Jekyll and GitHub pasges. 
-This week we will expand on that significantly, learn how to use markup to change the style of our content, and then learn to publish content to the web. 
-&lt;excerpt/&gt;&lt;/p&gt;
-
-&lt;p&gt;First things first, we need to know some things about markup. &lt;/p&gt;
-
-&lt;h1 id=&quot;markup-and-markdown&quot;&gt;Markup and Markdown&lt;/h1&gt;
-
-&lt;p&gt;Markup has been used over the last several decades to enhance plaintext for web use. &lt;/p&gt;
-
-&lt;p&gt;Today we will consider some of the basics. &lt;/p&gt;
-
-&lt;p&gt;Markdown is a markup language. 
-We had a brief introduction to it last week when we established our first repositories on GitHub. &lt;/p&gt;
-
-&lt;h2 id=&quot;why-are-we-learning-markdown?&quot;&gt;Why are we learning Markdown?&lt;/h2&gt;
-
-&lt;p&gt;For starters, Markdown is easier to use than HTML or other markup languages. 
-It doesn&amp;#39;t require complicated tags, which have a high potential for typographical error. &lt;/p&gt;
-
-&lt;p&gt;Jon Mitchell posits the three following good and compelling reasons that everyone should learn Markdown:&lt;label for=&#39;reasons&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;reasons&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Mitchell, Jon. “3 Reasons Why Everyone Needs to Learn Markdown - ReadWrite.” ReadWrite. Last modified April 17, 2012. &lt;a href=&quot;http://readwrite.com/2012/04/17/why-you-need-to-learn-markdown/&quot;&gt;http://readwrite.com/2012/04/17/why-you-need-to-learn-markdown/&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;It is easy to read. &lt;/li&gt;
-&lt;li&gt;You will make fewer errors.&lt;/li&gt;
-&lt;li&gt;It helps us to get rid of buggy, crashy, loss-prone content management systems (CMS). &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;All of the above boils down to a simple comparison that Mitchell makes:&lt;/p&gt;
-
-&lt;p&gt;HTML:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&amp;lt;h1&amp;gt;Why &amp;lt;em&amp;gt;you&amp;lt;/em&amp;gt; should use Markdown to write your next blog post&amp;lt;/h1&amp;gt;
-
-&amp;lt;p&amp;gt;&amp;lt;a href=”http://daringfireball.net/projects/markdown/”&amp;gt;Markdown&amp;lt;/a&amp;gt; is just so dang legible, it will make your &amp;lt;em&amp;gt;whole life&amp;lt;/em&amp;gt; easier. &amp;lt;strong&amp;gt;I promise.&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Markdown:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;# Why *you* should use Markdown to write your next blog post
-
-[Markdown][1] is just so dang legible, it will make your *whole life* easier. **I promise.**
-
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;The above examples render the same thing when parsed. Which would you rather use? &lt;/p&gt;
-
-&lt;p&gt;We will go over some of the basics in class today, but I would also like you to review the resources listed here independently, outside of class. &lt;label for=&#39;markdown&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;markdown&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;“Mastering Markdown.” GitHub Guides. Last modified January 15, 2014. Accessed June 27, 2016. &lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;https://guides.github.com/features/mastering-markdown/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;This guide is oriented toward GitHub, but the skills represented there extend well beyond that context. &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;We will work interchangeably in HTML and Markdown over the course of this week.&lt;/p&gt;
-
-&lt;h1 id=&quot;html5&quot;&gt;HTML5&lt;/h1&gt;
-
-&lt;p&gt;HTML is an initialism for &amp;quot;HyperText Markup Language.&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;&amp;quot;Hypertext&amp;quot; is text that contains links to other text.&lt;label for=&#39;markup-history&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;markup-history&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Keith, Jeremy. “A Brief History of Markup.” A List Apart 305 (May 4, 2010). &lt;a href=&quot;http://alistapart.com/article/a-brief-history-of-markup&quot;&gt;http://alistapart.com/article/a-brief-history-of-markup&lt;/a&gt;. &lt;/span&gt;
-The Web, as we know it, relies on hypertext to for us to communicate with systems and with other humans. 
-It is the medium of Web content.&lt;/p&gt;
-
-&lt;p&gt;HTML5 is the latest iteration of a standard related to the writing of web content.
-Web markup has a long history over the last few decades, beginning with Tim Berners-Lee, one of the fathers of the modern web (and the inventor of HTML).
-Berners-Lee proposed the creation of an information management system for the European Agency for Nuclear Research (CERN) in the late 1980&amp;#39;s.&lt;label for=&#39;html-origin&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;html-origin&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Berners-Lee, Tim. Information Management: A Proposal. European Agency for Nuclear Research (CERN), March 1989. Accessed June 27, 2016. &lt;a href=&quot;https://www.w3.org/History/1989/proposal.html&quot;&gt;https://www.w3.org/History/1989/proposal.html&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
-
-&lt;p&gt;When we write Markdown and then post it to GitHub, a system actually translates it into HTML5. &lt;/p&gt;
-
-&lt;h1 id=&quot;for-next-time&quot;&gt;For next time&lt;/h1&gt;
-
-&lt;p&gt;I would like you to look at this tutorial about creating a website using Jekyll and GitHub Pages. &lt;/p&gt;
-
-&lt;p&gt;Clark, Barry. “Build A Blog With Jekyll And GitHub Pages – Smashing Magazine.” Smashing Magazine. Last modified August 1, 2014. Accessed June 27, 2016. &lt;a href=&quot;https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/&quot;&gt;https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We have already done this in a very rudimentary way, but we will do it again to create a better final product. &lt;/p&gt;
-
-&lt;p&gt;Please also look at these themes and choose one for your site. Some have dynamic navigation (those are listed first == easy). You will modify them heavily. &lt;/p&gt;
-
-&lt;h2 id=&quot;some-easy-themes&quot;&gt;Some easy themes&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/basic/&quot;&gt;http://jekyllthemes.org/themes/basic/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/trading/&quot;&gt;http://jekyllthemes.org/themes/trading/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/devjournal/&quot;&gt;http://jekyllthemes.org/themes/devjournal/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/gravity/&quot;&gt;http://jekyllthemes.org/themes/gravity/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;more-challenging-themes&quot;&gt;More challenging themes&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/jekyll-clean/&quot;&gt;http://jekyllthemes.org/themes/jekyll-clean/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/thinkspace/&quot;&gt;http://jekyllthemes.org/themes/thinkspace/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/vitae/&quot;&gt;http://jekyllthemes.org/themes/vitae/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/dbyll/&quot;&gt;http://jekyllthemes.org/themes/dbyll/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/blackdoc/&quot;&gt;http://jekyllthemes.org/themes/blackdoc/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/themes/daktilo/&quot;&gt;http://jekyllthemes.org/themes/daktilo/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Good advice: &lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&amp;quot;Write the best code possible today and be completely unattached to it and willing to delete it tomorrow.&amp;quot;&lt;a href=&quot;https://t.co/mBAJhip0KP&quot;&gt;https://t.co/mBAJhip0KP&lt;/a&gt;&lt;/p&gt;&amp;mdash; Adam Wathan (@adamwathan) &lt;a href=&quot;https://twitter.com/adamwathan/status/747429538930393088&quot;&gt;June 27, 2016&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-</description>
-        <pubDate>Mon, 27 Jun 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/web/2016/06/27/websites-and-markup/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/web/2016/06/27/websites-and-markup/</guid>
-        
-        <category>websites</category>
-        
-        <category>markup</category>
-        
-        <category>markdown</category>
-        
-        <category>html</category>
-        
-        <category>css</category>
         
         
         <category>Web</category>
