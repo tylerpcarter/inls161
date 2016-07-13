@@ -1496,15 +1496,78 @@ There is a ton of relevant information on this topic out in the Internet.&lt;/p&
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>http://inls161.johndmart.in/</link>
     <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 13 Jul 2016 17:33:17 -0400</pubDate>
-    <lastBuildDate>Wed, 13 Jul 2016 17:33:17 -0400</lastBuildDate>
+    <pubDate>Wed, 13 Jul 2016 18:12:40 -0400</pubDate>
+    <lastBuildDate>Wed, 13 Jul 2016 18:12:40 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
         <title>Databases, tables, queries, and relationships</title>
-        <description>&lt;h1 id=&quot;get-some-data&quot;&gt;Get some data&lt;/h1&gt;
+        <description>&lt;p&gt;Today we will continue with our discussion of databases and then learn ALL THE SQL. &lt;/p&gt;
 
-&lt;p&gt;Let&amp;#39;s download some CSV files that I prepared with our books list in them. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://inls161.johndmart.in/assets/img/learnallthesql.jpg&quot; alt=&quot;LEARN ALL THE SQL&quot;&gt;
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;parts-of-a-database&quot;&gt;Parts of a database&lt;/h1&gt;
+
+&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
+
+&lt;p&gt;The basic storage template in a database is a table. &lt;/p&gt;
+
+&lt;p&gt;This is simply a set of data arranged into columns and rows. 
+Just like with the data that we generated previously, the rows represent lists of information that are related to a specific thing. &lt;/p&gt;
+
+&lt;p&gt;The rows in our tables are called &amp;quot;records.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;The columns then represent the types of information that we are organizing. &lt;/p&gt;
+
+&lt;p&gt;Tables on their own are fine for storing a collection of data, but what if we have a lot of repeating data that we do not want to have to store over and over again in the same table?&lt;/p&gt;
+
+&lt;h2 id=&quot;relationships&quot;&gt;Relationships&lt;/h2&gt;
+
+&lt;p&gt;The primary method of reducing this sort of data is by creating more tables and then defining relationships between them. 
+This is why we refer to this type of database as &amp;quot;relational.&amp;quot;&lt;label for=&#39;Harkins, Susan. “Relational Databases: Defining Relationships between Database Tables.” TechRepublic. Last modified April 30, 2003. http://www.techrepublic.com/article/relational-databases-defining-relationships-between-database-tables/.&lt;br/&gt;&lt;br/&gt;Harkins, Susan. “Relational Databases: The Inspiration behind the Theory.” TechRepublic. Last modified April 2, 2003. &lt;a href=&quot;http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/&quot;&gt;http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;The whole TechRepublic series on relational databases is useful. It would be worthwhile to read all of it. &amp;#39; class=&amp;#39;margin-toggle sidenote-number&amp;#39;&amp;gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;Harkins, Susan. “Relational Databases: Defining Relationships between Database Tables.” TechRepublic. Last modified April 30, 2003. http://www.techrepublic.com/article/relational-databases-defining-relationships-between-database-tables/.&lt;br/&gt;&lt;br/&gt;Harkins, Susan. “Relational Databases: The Inspiration behind the Theory.” TechRepublic. Last modified April 2, 2003. &lt;a href=&quot;http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/&quot;&gt;http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;The whole TechRepublic series on relational databases is useful. It would be worthwhile to read all of it. &amp;#39; class=&amp;#39;margin-toggle&amp;#39;/&amp;gt;&lt;span class=&#39;sidenote&#39;&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;There are three categories of relationship:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;One-to-One: Each record in a table has only one relationship to one other record in another table&lt;/li&gt;
+&lt;li&gt;One-to-Many: Each record (by primary key) in a table can have zero, one, or many relationships to records in other tables. &lt;/li&gt;
+&lt;li&gt;Many-to-Many: Each record in a table can have any number of (or zero) relationships to records in other tables. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Can you think of any examples of relationships like this? &lt;/p&gt;
+
+&lt;h3 id=&quot;primary-keys&quot;&gt;Primary Keys&lt;/h3&gt;
+
+&lt;p&gt;A primary key, as mentioned above, is a designator associated with each record that distinguishes it from all other records. 
+When creating a table with a one-to-many relationship, you will need to create a primary key for each new record. &lt;/p&gt;
+
+&lt;p&gt;What are some possible pieces of existing information that might be used as a primary key?&lt;/p&gt;
+
+&lt;p&gt;What might be some problems with using an existing piece of information as a primary key?&lt;/p&gt;
+
+&lt;h2 id=&quot;queries&quot;&gt;Queries&lt;/h2&gt;
+
+&lt;p&gt;Queries take a set of instructions and use them to sort and categorize data across multiple variables and tables. &lt;/p&gt;
+
+&lt;p&gt;We will look at different possibilities for queries and try some together in class. &lt;/p&gt;
+
+&lt;p&gt;When we define relationships in the query designer, you&amp;#39;ll notice that there are different joins available to you. &lt;/p&gt;
+
+&lt;h2 id=&quot;joins&quot;&gt;Joins&lt;/h2&gt;
+
+&lt;p&gt;These are logical inclusion/exclusion criteria for your query at the table level. 
+It is a good idea to have some understanding of what they do on a logical level.&lt;label for=&#39;joins&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;joins&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Moffatt, C. L. “Visual Representation of SQL Joins.” CodeProject. &lt;a href=&quot;http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins&quot;&gt;http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;This visual  guide can help you to better understand each join and what they do. &lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;Today, we will only use right joins in our example queries. &lt;/p&gt;
+
+&lt;p&gt;Why would we do that?&lt;/p&gt;
+
+&lt;h1 id=&quot;sql-boot-camp&quot;&gt;SQL Boot Camp&lt;/h1&gt;
+
+&lt;h2 id=&quot;get-some-data&quot;&gt;Get some data&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;#39;s download some CSV files that I prepared with a list of books in them. &lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;wget http://inls161.johndmart.in/raw-material/tblBook.csv&lt;/code&gt; &lt;/p&gt;
 
@@ -1536,7 +1599,7 @@ There is a ton of relevant information on this topic out in the Internet.&lt;/p&
 
 &lt;p&gt;&lt;code&gt;USE booksinfo;&lt;/code&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;add-tables&quot;&gt;Add tables&lt;/h1&gt;
+&lt;h2 id=&quot;add-tables&quot;&gt;Add tables&lt;/h2&gt;
 
 &lt;p&gt;Now we have to create two tables so that we can import data from our CSV files.&lt;/p&gt;
 
@@ -1585,7 +1648,7 @@ We need to do this, right?&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;ALTER TABLE tblPub ADD PRIMARY KEY (ID);&lt;/code&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;define-relationships&quot;&gt;Define relationships&lt;/h1&gt;
+&lt;h2 id=&quot;define-relationships&quot;&gt;Define relationships&lt;/h2&gt;
 
 &lt;p&gt;We need to tell MySQL that the PubID column in tblBook refers to the primary key in tblPub. This action is called a constraint and the reference is called a foreign key. &lt;/p&gt;
 
@@ -1636,7 +1699,7 @@ This new index just happens to be non-unique. &lt;/p&gt;
 &lt;span class=&quot;k&quot;&gt;MAX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RetailPrice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;Highest Price&#39;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tblBook&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1 id=&quot;queries&quot;&gt;Queries&lt;/h1&gt;
+&lt;h2 id=&quot;make-queries&quot;&gt;Make queries&lt;/h2&gt;
 
 &lt;p&gt;I want to list out all the books in the list that were published by Oxford University Press. &lt;/p&gt;
 
@@ -1681,7 +1744,7 @@ I have to specify an additional criterion. &lt;/p&gt;
 
 &lt;p&gt;It should match the output from when you ran the query before. &lt;/p&gt;
 
-&lt;h1 id=&quot;output-from-mysql-queries-in-other-formats&quot;&gt;Output from MySQL queries in other formats&lt;/h1&gt;
+&lt;h2 id=&quot;output-from-mysql-queries-in-other-formats&quot;&gt;Output from MySQL queries in other formats&lt;/h2&gt;
 
 &lt;p&gt;We can output all of this stuff outside of our MySQL prompt shell (in a normal shell).&lt;/p&gt;
 
@@ -1705,7 +1768,7 @@ I have to specify an additional criterion. &lt;/p&gt;
 
 &lt;h1 id=&quot;next-time&quot;&gt;Next time&lt;/h1&gt;
 
-&lt;p&gt;You are going to work in your groups to create a new script, based on your last assignment, that will write the data you have collected into a MySQL database. &lt;/p&gt;
+&lt;p&gt;You are going to work in your groups to create a new script, based on your last assignment, that will write the data you have collected into a MySQL database. That assignment will be the focus of our lab session. &lt;/p&gt;
 </description>
         <pubDate>Thu, 14 Jul 2016 00:00:00 -0400</pubDate>
         <link>http://inls161.johndmart.in/data/2016/07/14/database-tables-queries/</link>

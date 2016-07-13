@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Tools for Information Literacy&nbsp;|&nbsp;Databases, tables, queries, and relationships</title>
-  <meta name="description" content="Get some dataLet&#39;s download some CSV files that I prepared with our books list in them. wget http://inls161.johndmart.in/raw-material/tblBook.csv wget ht...">
+  <meta name="description" content="Today we will continue with our discussion of databases and then learn ALL THE SQL. ">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
   
@@ -97,9 +97,72 @@
 
 <p class="subtitle">Thursday, 14 July 2016</p>
 
-<h1 id="get-some-data">Get some data</h1>
+<p>Today we will continue with our discussion of databases and then learn ALL THE SQL. </p>
 
-<p>Let&#39;s download some CSV files that I prepared with our books list in them. </p>
+<p><img src="http://inls161.johndmart.in/assets/img/learnallthesql.jpg" alt="LEARN ALL THE SQL">
+<excerpt/></p>
+
+<h1 id="parts-of-a-database">Parts of a database</h1>
+
+<h2 id="tables">Tables</h2>
+
+<p>The basic storage template in a database is a table. </p>
+
+<p>This is simply a set of data arranged into columns and rows. 
+Just like with the data that we generated previously, the rows represent lists of information that are related to a specific thing. </p>
+
+<p>The rows in our tables are called &quot;records.&quot;</p>
+
+<p>The columns then represent the types of information that we are organizing. </p>
+
+<p>Tables on their own are fine for storing a collection of data, but what if we have a lot of repeating data that we do not want to have to store over and over again in the same table?</p>
+
+<h2 id="relationships">Relationships</h2>
+
+<p>The primary method of reducing this sort of data is by creating more tables and then defining relationships between them. 
+This is why we refer to this type of database as &quot;relational.&quot;<label for='Harkins, Susan. “Relational Databases: Defining Relationships between Database Tables.” TechRepublic. Last modified April 30, 2003. http://www.techrepublic.com/article/relational-databases-defining-relationships-between-database-tables/.<br/><br/>Harkins, Susan. “Relational Databases: The Inspiration behind the Theory.” TechRepublic. Last modified April 2, 2003. <a href="http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/">http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/</a>.<br/><br/>The whole TechRepublic series on relational databases is useful. It would be worthwhile to read all of it. &#39; class=&#39;margin-toggle sidenote-number&#39;&gt;</label><input type='checkbox' id='Harkins, Susan. “Relational Databases: Defining Relationships between Database Tables.” TechRepublic. Last modified April 30, 2003. http://www.techrepublic.com/article/relational-databases-defining-relationships-between-database-tables/.<br/><br/>Harkins, Susan. “Relational Databases: The Inspiration behind the Theory.” TechRepublic. Last modified April 2, 2003. <a href="http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/">http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/</a>.<br/><br/>The whole TechRepublic series on relational databases is useful. It would be worthwhile to read all of it. &#39; class=&#39;margin-toggle&#39;/&gt;<span class='sidenote'> </span></p>
+
+<p>There are three categories of relationship:</p>
+
+<ul>
+<li>One-to-One: Each record in a table has only one relationship to one other record in another table</li>
+<li>One-to-Many: Each record (by primary key) in a table can have zero, one, or many relationships to records in other tables. </li>
+<li>Many-to-Many: Each record in a table can have any number of (or zero) relationships to records in other tables. </li>
+</ul>
+
+<p>Can you think of any examples of relationships like this? </p>
+
+<h3 id="primary-keys">Primary Keys</h3>
+
+<p>A primary key, as mentioned above, is a designator associated with each record that distinguishes it from all other records. 
+When creating a table with a one-to-many relationship, you will need to create a primary key for each new record. </p>
+
+<p>What are some possible pieces of existing information that might be used as a primary key?</p>
+
+<p>What might be some problems with using an existing piece of information as a primary key?</p>
+
+<h2 id="queries">Queries</h2>
+
+<p>Queries take a set of instructions and use them to sort and categorize data across multiple variables and tables. </p>
+
+<p>We will look at different possibilities for queries and try some together in class. </p>
+
+<p>When we define relationships in the query designer, you&#39;ll notice that there are different joins available to you. </p>
+
+<h2 id="joins">Joins</h2>
+
+<p>These are logical inclusion/exclusion criteria for your query at the table level. 
+It is a good idea to have some understanding of what they do on a logical level.<label for='joins' class='margin-toggle sidenote-number'></label><input type='checkbox' id='joins' class='margin-toggle'/><span class='sidenote'>Moffatt, C. L. “Visual Representation of SQL Joins.” CodeProject. <a href="http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins">http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins</a>.<br/><br/>This visual  guide can help you to better understand each join and what they do. </span> </p>
+
+<p>Today, we will only use right joins in our example queries. </p>
+
+<p>Why would we do that?</p>
+
+<h1 id="sql-boot-camp">SQL Boot Camp</h1>
+
+<h2 id="get-some-data">Get some data</h2>
+
+<p>Let&#39;s download some CSV files that I prepared with a list of books in them. </p>
 
 <p><code>wget http://inls161.johndmart.in/raw-material/tblBook.csv</code> </p>
 
@@ -131,7 +194,7 @@
 
 <p><code>USE booksinfo;</code></p>
 
-<h1 id="add-tables">Add tables</h1>
+<h2 id="add-tables">Add tables</h2>
 
 <p>Now we have to create two tables so that we can import data from our CSV files.</p>
 
@@ -180,7 +243,7 @@ We need to do this, right?</p>
 
 <p><code>ALTER TABLE tblPub ADD PRIMARY KEY (ID);</code></p>
 
-<h1 id="define-relationships">Define relationships</h1>
+<h2 id="define-relationships">Define relationships</h2>
 
 <p>We need to tell MySQL that the PubID column in tblBook refers to the primary key in tblPub. This action is called a constraint and the reference is called a foreign key. </p>
 
@@ -231,7 +294,7 @@ This new index just happens to be non-unique. </p>
 <span class="k">MAX</span><span class="p">(</span><span class="n">RetailPrice</span><span class="p">)</span> <span class="k">AS</span> <span class="s1">'Highest Price'</span>
 <span class="k">FROM</span> <span class="n">tblBook</span><span class="p">;</span>
 </code></pre></div>
-<h1 id="queries">Queries</h1>
+<h2 id="make-queries">Make queries</h2>
 
 <p>I want to list out all the books in the list that were published by Oxford University Press. </p>
 
@@ -276,7 +339,7 @@ I have to specify an additional criterion. </p>
 
 <p>It should match the output from when you ran the query before. </p>
 
-<h1 id="output-from-mysql-queries-in-other-formats">Output from MySQL queries in other formats</h1>
+<h2 id="output-from-mysql-queries-in-other-formats">Output from MySQL queries in other formats</h2>
 
 <p>We can output all of this stuff outside of our MySQL prompt shell (in a normal shell).</p>
 
@@ -300,7 +363,7 @@ I have to specify an additional criterion. </p>
 
 <h1 id="next-time">Next time</h1>
 
-<p>You are going to work in your groups to create a new script, based on your last assignment, that will write the data you have collected into a MySQL database. </p>
+<p>You are going to work in your groups to create a new script, based on your last assignment, that will write the data you have collected into a MySQL database. That assignment will be the focus of our lab session. </p>
 
 
 <p>

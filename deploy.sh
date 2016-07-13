@@ -5,6 +5,7 @@ REPONAME=inls161
 REMOTEADDR=github.com
 REMOTEUSERNAME=git
 BUILDBRANCH=gh-pages
+WORKDIR=~/workspace/inls161 # Local directory of source repo 
 
 ### Display help text
 if [[ "$1" = [-][hH] || "$1" = [-][hH] || "$1" = [-][-][Hh][Ee][Ll][Pp] ]]
@@ -19,18 +20,15 @@ if [[ "$1" = [-][hH] || "$1" = [-][hH] || "$1" = [-][-][Hh][Ee][Ll][Pp] ]]
 fi
 
 TEMPDIR=`mktemp -d`
-WORKDIR=`pwd`
 
-# Create temp directory
-cd /tmp
-# mkdir $TEMPDIR
+# move into $TEMPDIR
 cd $TEMPDIR
 # Clone repository into TEMPDIR
-git clone -b $BRANCHNAME --single-branch $REMOTEUSERNAME@$REMOTEADDR:$GITHUBUSERNAME/$REPONAME.git
+git clone --single-branch --branch=$BUILDBRANCH  $REMOTEUSERNAME@$REMOTEADDR:$GITHUBUSERNAME/$REPONAME.git $TEMPDIR
 # Build Jekyll site
 jekyll build -s $WORKDIR -d $TEMPDIR
 # Add new build to git 
-git add --all -v .
+git add -v .
 # Commit changes since last build
 git commit -a -m "Update live site `date`"
 # Push changes
