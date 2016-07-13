@@ -1,0 +1,63 @@
+basics:
+    number: "1"
+    category: Basics
+    title: Get on GitHub
+    components: CodeAnywhere, GitHub setup
+    description: "This assignment is very simple.<br/><br/>You will have completed most of it in class by the end of the week.<br/><br/>It involves: 1) setting up a GitHub user account; 2) using that account to log into CodeAnywhere; 3) forking the first assignment repository for practice; 4) taking a brief (6 minutes) questionnaire about yourself."
+    link: "https://classroom.github.com/assignment-invitations/79c87ffe0bca6f507160d665f4271941"
+    percent: "20"
+    due: "2016-06-23"
+web:
+    number: "2"
+    category: Web
+    title: Build a website
+    components: Site published on GitHub Pages
+    description: "You will build and deply a web page using GitHub Pages (Jekyll). Most of this assignment will involve creating content in Markdown and editing style in CSS.<br/><br/>The goal is to make your website an attractive place online where you can place information about yourselves, your interests, and your skills. Or your site can be about a project or hobby that you would like to put online. This assignment is intended to help you create an online space that you can actually use while also giving you new skills related to working with web content."
+    link: "https://classroom.github.com/assignment-invitations/ef90db5ca0a5943ef3ed5ceb52c82aae"
+    percent: "20"
+    due: "2016-07-07"
+text:
+    number: "3"
+    category: Text
+    title: Create documentation
+    components: Create and convert documents from source to multiple output formats
+    description: "This assignment is about converting your plaintext source files into different polished output formats.<br/><br/>You will create and convert a document from a markdown source file into multiple output formats using Pandoc. You will also write a simple script to automate this workflow so that it can be done using any document source specified." 
+    link: "https://classroom.github.com/assignment-invitations/69e6999dfd71dc191f0679cbae0c337d"
+    percent: "15"
+    due: "2016-07-13"
+data:
+    number: "4"
+    category: Data
+    title: Make data
+    components: Create and format spreadsheets using scripts
+    description: You will learn how to aggregate data and script the data generation process.
+    link: 
+    percent: "5"
+    due: "2016-07-15"
+database:
+    number: "5"
+    category: Database
+    title: Organize data
+    components: Create and script queries in a database from tables
+    description: In this assignment, you will use scripts and the MySQL shell to create a database and use queries to get information from it.
+    link: 
+    percent: "15"
+    due: "2016-07-18"
+present:
+    number: "6"
+    category: Present
+    title: Be presentable
+    components: Create and record a presentation
+    description: You will create a narrated presentation using reveal.js and automate it. 
+    link: 
+    percent: "15"
+    due: "2016-07-21"
+participation:
+    number: 
+    category: Participation
+    title: Participation
+    components: Come to class; Speak up; Share resources
+    description: "Attendance is mandatory. You need to come to class, but you should also be present and attentive in class.<br/><br/>This is not a lecture-only class. It is mostly hands-on work. If you are in class and you are not doing anything, there is probably something wrong. You should likely be following along in a workflow or trying out examples on your own.<br/><br/>Take notes. Speak up in class. Tell us what you know. Feel free to make mistakes. No one will judge you here. If you are uncertain about something, speak up and ask! We will address your uncertainty and get you on the right path." 
+    link: 
+    percent: 10
+    due: 
