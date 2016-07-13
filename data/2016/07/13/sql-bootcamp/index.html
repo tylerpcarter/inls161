@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Database software and MySQL</title>
+  <meta name="description" content="Today we will jump head-first into working with databases as an extension of our discussions earlier in the week about data.  ">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" href="/css/tufte.css"> 
+  
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+
+  <link rel="canonical" href="http://inls161.johndmart.in/data/2016/07/13/sql-bootcamp/">
+
+  <link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="http://inls161.johndmart.in/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/161icon.png" alt="UNC"></a>
+	
+	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/">Tools for Information Literacy</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/syllabus/">Syllabus</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/schedule/">Schedule</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/assignments/">Assignments</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/refsheets/">Reference</a>
+		    
+	    
+  	
+	</nav>
+</header>
+    <article class="group">
+      <h1>Database software and MySQL</h1>
+
+
+
+<p class="subtitle">Wednesday, 13 July 2016&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="smaller date contrast">TODAY</span></p>
+
+<p>Today we will jump head-first into working with databases as an extension of our discussions earlier in the week about data.<br>
+<excerpt/></p>
+
+<p>A &quot;database&quot; is a collection of information, arranged or organized in some meaningful way so as to aid the retrieval of that information. 
+The types of information stored in databases vary based on the purpose and application. </p>
+
+<p>When we refer to databases now, we usually mean electronic databases or DataBase Management Systems (DBMS). 
+However, databases can exist in a number of non-electonic forms (and have for much of human history).</p>
+
+<p>What are some examples of non-electronic databases?</p>
+
+<h1 id="what-goes-into-a-database?">What goes into a database?</h1>
+
+<p>Pieces of information, or objects, are stored in a database in a structured way. 
+The objects are sorted into classes according to type. 
+This approach is referred to as &quot;object-oriented,&quot; which we have briefly touched on over the course of the semester. </p>
+
+<p>When data are entered into a database, each object, or chunk of information, is assigned a class that allows for sorting and recall. </p>
+
+<h2 id="how-does-the-information-go-in?">How does the information go in?</h2>
+
+<p>There are a number of different ways to get data into a database. </p>
+
+<p>We can import tables directly from files. 
+We can also input data one at a time using an entry form. 
+We will do both of these things over the next few days. </p>
+
+<p>Today we will start by experimenting with opening the CSV we made the other day as a table. </p>
+
+<h2 id="electronic-dbms">Electronic DBMS</h2>
+
+<p>There are myriad choices for DMBS implementations. 
+A commonly used system is called MySQL, which is based in a database language called SQL (Structured Query Language). </p>
+
+<p>You will also hear of NoSQL databases, such as MongoDB. 
+These use an entirely different internal logic to store and recall data that that of SQL-based systems. </p>
+
+<p>There are a great many front-end user interfaces for these systems. 
+MSAccess has been used for years for all sorts of applications. </p>
+
+<p>We will use the LibreOffice Base package. 
+It is an open-source analog to Access and will allow us to do the same things. 
+One major benefit of this is that we will be able to open our database without being locked to MSAccess. 
+At present, there is no way to open an Access DB in another program. 
+We wish to avoid that. </p>
+
+<h1 id="install-mysql">Install MySQL</h1>
+
+<p>We will install MySQL so that we can create and explore a database using the SQL shell in our CodeAnywhere containers.</p>
+
+<h1 id="system-maintenance">System maintenance</h1>
+
+<p>First update and upgrade all packages:</p>
+
+<p><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade</code></p>
+
+<p>We will need to make some space on our containers to install MySQL. </p>
+
+<p>We no longer need <code>unoconv</code>, so let&#39;s get rid of it:</p>
+
+<p><code>sudo apt-get remove unoconv</code></p>
+
+<p>When that is done, we can remove all of its dependencies:</p>
+
+<p><code>sudo apt-get autoremove --purge</code></p>
+
+<p>And then just for good measure, let&#39;s clean out our package cache:</p>
+
+<p><code>sudo apt-get autoclean &amp;&amp; sudo apt-get clean</code></p>
+
+<h1 id="install-the-mysql-client-and-server-packages">Install the MySQL client and server packages</h1>
+
+<p>Then we have to install one dependency, without which the install will fail:</p>
+
+<p><code>sudo apt-get install bsdutils</code></p>
+
+<p>Then install both the MySQL server and client packages in separate commands. </p>
+
+<p><code>sudo apt-get install mysql-server</code></p>
+
+<p>This will ask you to create a password for the MySQL root user. 
+Since we are only trying things out today and not installing this for the purpose of running a real SQL server, just put <code>changethis</code> as the root password. </p>
+
+<p>Then install the client:</p>
+
+<p><code>sudo apt-get install mysql-client</code></p>
+
+<h1 id="get-some-data">Get some data</h1>
+
+<p>Let&#39;s download some CSV files that I prepared with our books list in them. </p>
+
+<p><code>wget http://inls161.johndmart.in/raw-material/tblBook.csv</code> </p>
+
+<p><code>wget http://inls161.johndmart.in/raw-material/tblPub.csv</code></p>
+
+<h1 id="the-mysql-prompt">The MySQL prompt</h1>
+
+<p>Once we are all installed, issue the <code>mysql</code> command to get into the <code>mysql&gt;</code> prompt:</p>
+
+<p><code>mysql -u root -p</code></p>
+
+<p>This specifies that you want to use the root user to login to the MySQL prompt. </p>
+
+<p>Next let&#39;s create a new DB. Make sure that your prompt looks like this:</p>
+
+<p><code>mysql&gt;</code></p>
+
+<p>If it does, then you can type:</p>
+
+<p><code>CREATE DATABASE booksinfo;</code></p>
+
+<p>Commands in the mysql&gt; prompt are <em>case-sensitive,</em> so pay attention to the case of the commands. </p>
+
+<p>Let&#39;s list our DBs:</p>
+
+<p><code>show databases;</code></p>
+
+<p>We should see the DB with the name that we created in the list. Let&#39;s move into it:</p>
+
+<p><code>USE booksinfo;</code></p>
+
+<h1 id="add-tables">Add tables</h1>
+
+<p>Now we have to create two tables so that we can import data from our CSV files.</p>
+
+<p><code>CREATE TABLE tblBook (ID INT, Title VARCHAR(255), Date INT, RetailPrice DECIMAL(5,2), Copies INT, ShelfNumber VARCHAR(255), PubID INT);</code></p>
+
+<p><code>CREATE TABLE tblPub (ID INT, Publisher VARCHAR(255), City VARCHAR(255), State VARCHAR(255), Country VARCHAR(255));</code></p>
+
+<p>See what tables we have just created:</p>
+
+<p><code>show tables;</code></p>
+
+<p>Let&#39;s import some tables from the files we downloaded earlier:</p>
+
+<p><code>LOAD DATA INFILE &#39;/home/cabox/workspace/tblBook.csv&#39; INTO TABLE tblBook FIELDS TERMINATED BY &#39;,&#39; OPTIONALLY ENCLOSED BY &#39;&quot;&#39;;</code></p>
+
+<p>This should give us some output. 
+If we notice a warning, type the following to view the warnings:</p>
+
+<p><code>SHOW WARNINGS;</code></p>
+
+<p>So, it looks like we have a missing date. 
+No big deal. 
+We&#39;ll deal with that later. 
+Let&#39;s import our other table. </p>
+
+<p><code>LOAD DATA INFILE &#39;/home/cabox/workspace/tblPub.csv&#39; INTO TABLE tblPub FIELDS TERMINATED BY &#39;,&#39; OPTIONALLY ENCLOSED BY &#39;&quot;&#39;;</code></p>
+
+<p>Let&#39;s see what is in our tables:</p>
+
+<p><code>SHOW COLUMNS FROM tblBook;</code></p>
+
+<p><code>SHOW COLUMNS FROM tblPub;</code></p>
+
+<p>We&#39;ll notice that we have no key set for either table. 
+We need to do this, right?</p>
+
+<p><code>ALTER TABLE tblBook ADD PRIMARY KEY (ID);</code></p>
+
+<p>Now look at the table again and see that it has changed:</p>
+
+<p><code>SHOW COLUMNS FROM tblBook;</code></p>
+
+<p>Now do the same for the other table:</p>
+
+<p><code>SHOW COLUMNS FROM tblPub;</code></p>
+
+<p><code>ALTER TABLE tblPub ADD PRIMARY KEY (ID);</code></p>
+
+<h1 id="define-relationships">Define relationships</h1>
+
+<p>We need to tell MySQL that the PubID column in tblBook refers to the primary key in tblPub. This action is called a constraint and the reference is called a foreign key. </p>
+
+<p><code>ALTER TABLE tblBook ADD CONSTRAINT fk_PubID FOREIGN KEY (PubID) REFERENCES tblPub(ID) ON UPDATE NO ACTION;</code></p>
+
+<p>Let&#39;s look at our columns again:</p>
+
+<p><code>SHOW COLUMNS FROM tblBook;</code></p>
+
+<p>You&#39;ll notice that the &#39;Key&#39; column now has &#39;MUL&#39; for PubID. 
+This means that we are using that column as an index as well as the primary key column. 
+This new index just happens to be non-unique. </p>
+
+<h1 id="summaries">Summaries</h1>
+
+<p>So now that we have our data in place, let&#39;s summarize it a bit. </p>
+
+<p><code>SELECT COUNT(*) FROM tblBook;</code></p>
+
+<p>What if we want to see the first ten rows in tblBook?</p>
+
+<p><code>SELECT * FROM tblBook ORDER BY Date LIMIT 10;</code></p>
+
+<p>Let&#39;s look at only books published after 1980;</p>
+
+<p><code>SELECT * FROM tblBook WHERE Date &gt; 1980 ORDER BY Date;</code></p>
+
+<p>And count them:</p>
+
+<p><code>SELECT COUNT(*) FROM tblBook WHERE Date &gt; 1980 ORDER BY Date;</code></p>
+
+<p>How about only books published in 1980?</p>
+
+<p><code>SELECT * FROM tblBook WHERE Date = 1980 ORDER BY ShelfNumber;</code></p>
+
+<p>Let&#39;s find out how much our books cost:</p>
+
+<p><code>SELECT AVG(RetailPrice) FROM tblBook;</code></p>
+
+<p><code>SELECT MIN(RetailPrice) FROM tblBook;</code></p>
+
+<p><code>SELECT MAX(RetailPrice) FROM tblBook;</code></p>
+
+<p>Let&#39;s summarize all of that together.</p>
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> 
+<span class="k">AVG</span><span class="p">(</span><span class="n">RetailPrice</span><span class="p">)</span> <span class="k">AS</span> <span class="s1">'Average Price'</span><span class="p">,</span>
+<span class="k">MIN</span><span class="p">(</span><span class="n">RetailPrice</span><span class="p">)</span> <span class="k">AS</span> <span class="s1">'Lowest Price'</span><span class="p">,</span>
+<span class="k">MAX</span><span class="p">(</span><span class="n">RetailPrice</span><span class="p">)</span> <span class="k">AS</span> <span class="s1">'Highest Price'</span>
+<span class="k">FROM</span> <span class="n">tblBook</span><span class="p">;</span>
+</code></pre></div>
+<h1 id="queries">Queries</h1>
+
+<p>Let&#39;s try something that I posed the other day in class. 
+I want to list out all the books in the list that were published by Oxford University Press. </p>
+
+<p><code>SELECT * FROM tblBook b RIGHT JOIN tblPub p ON b.PubID = p.ID WHERE p.Publisher = &#39;Oxford University Press&#39;;</code></p>
+
+<p>How many locations does OUP have? </p>
+
+<p><code>SELECT COUNT(*) FROM tblPub WHERE Publisher = &#39;Oxford University Press&#39;;</code></p>
+
+<p>Where are they?</p>
+
+<p><code>SELECT * FROM tblPub WHERE Publisher = &#39;Oxford University Press&#39;;</code></p>
+
+<p>What if I only want the books published by OUP&#39;s US office? 
+I have to specify an additional criterion. </p>
+
+<p><code>SELECT * FROM tblBook b RIGHT JOIN tblPub p ON b.PubID = p.ID WHERE p.Publisher = &#39;Oxford University Press&#39; AND p.Country = &#39;US&#39;;</code></p>
+
+<p>I wonder if books cost more from the OUP GB location than from the OUP US location.</p>
+
+<p><code>SELECT AVG(RetailPrice) FROM tblBook b RIGHT JOIN tblPub p ON b.PubID = p.ID WHERE p.Publisher = &#39;Oxford University Press&#39; AND p.Country = &#39;GB&#39;;</code></p>
+
+<p><code>SELECT AVG(RetailPrice) FROM tblBook b RIGHT JOIN tblPub p ON b.PubID = p.ID WHERE p.Publisher = &#39;Oxford University Press&#39; AND p.Country = &#39;US&#39;;</code></p>
+
+<h1 id="output-from-mysql-queries-as-tables">Output from MySQL queries as tables</h1>
+
+<p>We can take any of the above queries and output the results to a table. </p>
+
+<p>We need to add <code>CREATE TABLE qryName</code> to the front of any of our query commands. </p>
+
+<p>Here is an example using our price summary from above:</p>
+
+<p><code>CREATE TABLE qryPrices SELECT AVG(RetailPrice) AS &#39;Average Price&#39;, MIN(RetailPrice) AS &#39;Lowest Price&#39;, MAX(RetailPrice) AS &#39;Highest Price&#39; FROM tblBook;</code></p>
+
+<p>See if it worked by listing the tables:</p>
+
+<p><code>show tables;</code></p>
+
+<p>Look at what is in the new table:</p>
+
+<p><code>SELECT * FROM qryPrices</code></p>
+
+<p>It should match the output from when you ran the query before. </p>
+
+<h1 id="output-from-mysql-queries-in-other-formats">Output from MySQL queries in other formats</h1>
+
+<p>We can output all of this stuff outside of our MySQL prompt shell (in a normal shell).</p>
+
+<p>Let&#39;s ask for the summary of book prices in HTML and then we can try some other queries if we have time. </p>
+
+<p><code>quit</code> to exit the MySQL prompt.</p>
+
+<p>Now you have exited from the MySql prompt.</p>
+
+<p><code>mysql -u root -p -H -e &quot;SELECT AVG(RetailPrice) AS &#39;Average Price&#39;, MIN(RetailPrice) AS &#39;Lowest Price&#39;, MAX(RetailPrice) AS &#39;Highest Price&#39; FROM tblBook;&quot; booksinfo</code></p>
+
+<h1 id="exporting-and-importing">Exporting and Importing</h1>
+
+<p>To export your whole database so that you can use it elsewhere (i.e., transfer it to a different server) do the following command:</p>
+
+<p><code>mysqldump -u root -p booksinfo &gt; booksinfo.sql</code></p>
+
+<p>If you want to then import that same database somewhere else, the command is very similar. The direction changes, and instead of the specialized <code>mysqldump</code> command, you use just the standard MySQL client command:</p>
+
+<p><code>mysql -u root -p booksinfo &lt; booksinfo.sql</code></p>
+
+<h1 id="for-next-time">For next time</h1>
+
+<p>Tomorrow, we will return to databases and discuss the conceptual and theoretical underpinnings of what we worked on today. 
+I would like you to read something about databases.<label for='db' class='margin-toggle sidenote-number'></label><input type='checkbox' id='db' class='margin-toggle'/><span class='sidenote'>“What Is a Database?” BBC Guides. <a href="http://www.bbc.co.uk/guides/z8yk87h">http://www.bbc.co.uk/guides/z8yk87h</a>. </span></p>
+
+<p>We will look at other resources and tutorials in class as well. </p>
+
+
+<p>
+  <br/>
+  <ul class="tags">
+    <li><a href="/topics#database" class="tag">database</a></li><li><a href="/topics#SQL" class="tag">SQL</a></li><li><a href="/topics#tables" class="tag">tables</a></li><li><a href="/topics#queries" class="tag">queries</a></li>
+  </ul> 
+</p>
+
+<div class="blognav">
+  
+    <a class="prev" href="/data/2016/07/12/data-cleaning/">&laquo; Data cleaning and spreadsheet software</a>
+  
+  
+</div>
+    </article>
+    <span class="print-footer">Database software and MySQL - July 13, 2016 - </span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links">
+    
+    
+      <li>
+        <a href="http://johndmart.in" title="Instructor home page"><span class="ico-user"></span>&nbsp;John D. Martin III</a>
+      </li>
+    
+    
+      <li>
+        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="ico-envelope"></span>&nbsp;john.d.martin.iii@unc.edu</a>
+      </li>
+    
+    
+      <li>
+        <span class="ico-clock"></span>&nbsp;11:30-13:00
+      </li>
+    
+    
+      <li>
+        <span class="ico-calendar"></span>&nbsp;MoTuWeThFr
+      </li>
+    
+    
+      <li>
+        <span class="ico-library"></span>&nbsp;117 Manning Hall
+      </li>
+    
+    
+      <li>
+        <a href="https://sakai.unc.edu/portal/site/inls161s216" title="UNC Sakai site for this course"><span class="ico-target"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://github.com/inls161" title="GitHub organization for this course"><span class="ico-github"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://inls161.slack.com" title="Join the Slack conversations for this course"><span class="ico-slack"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed" title="Add RSS feed"><span class="ico-rss"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+  <span>TOOLS FOR INFORMATION LITERACY &nbsp;&nbsp;|&nbsp;&nbsp; INLS161-001 (Summer II)
+    <br/> 
+  <span class="smaller">Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</span>
+  <br/><br/>
+  <span class="smaller"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.</span>
+  <br/>
+  <span class="smaller"><a href="/credits/">Content &copy; 2016 John D. Martin III</a></span>
+</div>  
+</footer>
+  </body>
+</html>
