@@ -10,9 +10,70 @@ tags:
 - MySQL
 ---
 
-# Get some data
+Today we will continue with our discussion of databases and then learn ALL THE SQL. 
 
-Let's download some CSV files that I prepared with our books list in them. 
+![LEARN ALL THE SQL]({{ site.url}}/assets/img/learnallthesql.jpg)
+<excerpt/>
+
+# Parts of a database 
+
+## Tables
+
+The basic storage template in a database is a table. 
+
+This is simply a set of data arranged into columns and rows. 
+Just like with the data that we generated previously, the rows represent lists of information that are related to a specific thing. 
+
+The rows in our tables are called "records."
+
+The columns then represent the types of information that we are organizing. 
+
+Tables on their own are fine for storing a collection of data, but what if we have a lot of repeating data that we do not want to have to store over and over again in the same table?
+
+## Relationships
+
+The primary method of reducing this sort of data is by creating more tables and then defining relationships between them. 
+This is why we refer to this type of database as "relational."{% sidenote 'Harkins, Susan. “Relational Databases: Defining Relationships between Database Tables.” TechRepublic. Last modified April 30, 2003. http://www.techrepublic.com/article/relational-databases-defining-relationships-between-database-tables/.<br/><br/>Harkins, Susan. “Relational Databases: The Inspiration behind the Theory.” TechRepublic. Last modified April 2, 2003. http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/.<br/><br/>The whole TechRepublic series on relational databases is useful. It would be worthwhile to read all of it. ' %}
+
+There are three categories of relationship:
+
+- One-to-One: Each record in a table has only one relationship to one other record in another table
+- One-to-Many: Each record (by primary key) in a table can have zero, one, or many relationships to records in other tables. 
+- Many-to-Many: Each record in a table can have any number of (or zero) relationships to records in other tables. 
+ 	
+Can you think of any examples of relationships like this? 
+
+### Primary Keys
+
+A primary key, as mentioned above, is a designator associated with each record that distinguishes it from all other records. 
+When creating a table with a one-to-many relationship, you will need to create a primary key for each new record. 
+
+What are some possible pieces of existing information that might be used as a primary key?
+
+What might be some problems with using an existing piece of information as a primary key?
+
+## Queries
+
+Queries take a set of instructions and use them to sort and categorize data across multiple variables and tables. 
+
+We will look at different possibilities for queries and try some together in class. 
+
+When we define relationships in the query designer, you'll notice that there are different joins available to you. 
+
+## Joins
+
+These are logical inclusion/exclusion criteria for your query at the table level. 
+It is a good idea to have some understanding of what they do on a logical level.{% sidenote 'joins' 'Moffatt, C. L. “Visual Representation of SQL Joins.” CodeProject. http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins.<br/><br/>Moffat's visual  guide can help you to better understand each join and what they do.' %} 
+
+Today, we will only use right joins in our example queries. 
+
+Why would we do that?
+
+# SQL Boot Camp
+
+## Get some data
+
+Let's download some CSV files that I prepared with a list of books in them. 
 
 ```wget http://inls161.johndmart.in/raw-material/tblBook.csv``` 
 
@@ -44,7 +105,7 @@ We should see the DB with the name that we created in the list. Let's move into 
 
 ```USE booksinfo;```
 
-# Add tables
+## Add tables
 
 Now we have to create two tables so that we can import data from our CSV files.
 
@@ -93,7 +154,7 @@ Now do the same for the other table:
 
 ```ALTER TABLE tblPub ADD PRIMARY KEY (ID);```
 
-# Define relationships
+## Define relationships
 
 We need to tell MySQL that the PubID column in tblBook refers to the primary key in tblPub. This action is called a constraint and the reference is called a foreign key. 
 
@@ -147,7 +208,7 @@ MAX(RetailPrice) AS 'Highest Price'
 FROM tblBook;
 `````````
 
-# Queries
+## Make queries
 
 I want to list out all the books in the list that were published by Oxford University Press. 
 
@@ -192,7 +253,7 @@ Look at what is in the new table:
 
 It should match the output from when you ran the query before. 
 
-# Output from MySQL queries in other formats
+## Output from MySQL queries in other formats
 
 We can output all of this stuff outside of our MySQL prompt shell (in a normal shell).
 
@@ -216,4 +277,4 @@ If you want to then import that same database somewhere else, the command is ver
 
 # Next time
 
-You are going to work in your groups to create a new script, based on your last assignment, that will write the data you have collected into a MySQL database. 
+You are going to work in your groups to create a new script, based on your last assignment, that will write the data you have collected into a MySQL database. That assignment will be the focus of our lab session. 

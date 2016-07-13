@@ -22,14 +22,15 @@ TEMPDIR=`mktemp -d`
 WORKDIR=`pwd`
 
 # Create temp directory
-mkdir $TEMPDIR
+cd /tmp
+# mkdir $TEMPDIR
 cd $TEMPDIR
 # Clone repository into TEMPDIR
 git clone -b $BRANCHNAME --single-branch $REMOTEUSERNAME@$REMOTEADDR:$GITHUBUSERNAME/$REPONAME.git
 # Build Jekyll site
 jekyll build -s $WORKDIR -d $TEMPDIR
 # Add new build to git 
-git add --all -v .
+git add -v .
 # Commit changes since last build
 git commit -a -m "Update live site `date`"
 # Push changes
