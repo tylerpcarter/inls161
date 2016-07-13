@@ -29,7 +29,7 @@ SRCBRANCH=`git rev-parse --abbrev-ref HEAD`
 TEMPDIR=`mktemp -d`
 WORKDIR=`pwd`
 # Backup push
-git add -v .
+git add -v *
 git commit -av -m "backup commit"
 git push -v
 # Create temp file
@@ -44,7 +44,7 @@ git checkout -f $TARGETBRANCH
 rm -r *
 rsync -r $TEMPDIR/ .
 # commit and push changes
-git add -v .
+git add -v *
 git commit -av -m "update gh-pages site on `date`"
 git push -v
 # check back into master
