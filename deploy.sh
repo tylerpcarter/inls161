@@ -34,7 +34,8 @@ git commit -a -m "Update live site `date`"
 # Push changes
 git push
 # Clear temp dir
-rm -r $TEMPDIR
+cd ..
+rm -rf $TEMPDIR
 # Move back to source dir
 cd $WORKDIR
 # Exit
