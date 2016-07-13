@@ -386,7 +386,225 @@ To do this we will have to install some more software, which may take a while. <
 </div>
           <br/>
           <ul class="tags">
-            <li><a href="/topics#database" class="tag">database</a></li><li><a href="/topics#SQL" class="tag">SQL</a></li><li><a href="/topics#tables" class="tag">tables</a></li><li><a href="/topics#queries" class="tag">queries</a></li>
+            <li><a href="/topics#database" class="tag">database</a></li><li><a href="/topics#SQL" class="tag">SQL</a></li><li><a href="/topics#MySQL" class="tag">MySQL</a></li>
+          </ul>
+        </li>
+          
+        <li class="listing">
+          <hr class="slender">
+          
+          
+          <a href="/data/2016/07/14/database-tables-queries/" ><h1 class="contrast" >Databases, tables, queries, and relationships</h1></a>
+          <span class="larger">Thursday, 14 July 2016</span>
+          <br/>
+          <div><h1 id="get-some-data">Get some data</h1>
+
+<p>Let&#39;s download some CSV files that I prepared with our books list in them. </p>
+
+<p><code>wget http://inls161.johndmart.in/raw-material/tblBook.csv</code> </p>
+
+<p><code>wget http://inls161.johndmart.in/raw-material/tblPub.csv</code></p>
+
+<h1 id="the-mysql-prompt">The MySQL prompt</h1>
+
+<p>Once we are all installed, issue the <code>mysql</code> command to get into the <code>mysql&gt;</code> prompt:</p>
+
+<p><code>mysql -u root -p</code></p>
+
+<p>This specifies that you want to use the root user to login to the MySQL prompt. </p>
+
+<p>Next let&#39;s create a new DB. Make sure that your prompt looks like this:</p>
+
+<p><code>mysql&gt;</code></p>
+
+<p>If it does, then you can type:</p>
+
+<p><code>CREATE DATABASE booksinfo;</code></p>
+
+<p>Commands in the mysql&gt; prompt are <em>case-sensitive,</em> so pay attention to the case of the commands. </p>
+
+<p>Let&#39;s list our DBs:</p>
+
+<p><code>show databases;</code></p>
+
+<p>We should see the DB with the name that we created in the list. Let&#39;s move into it:</p>
+
+<p><code>USE booksinfo;</code></p>
+
+<h1 id="add-tables">Add tables</h1>
+
+<p>Now we have to create two tables so that we can import data from our CSV files.</p>
+
+<p><code>CREATE TABLE tblBook (ID INT, Title VARCHAR(255), Date INT, RetailPrice DECIMAL(5,2), Copies INT, ShelfNumber VARCHAR(255), PubID INT);</code></p>
+
+<p><code>CREATE TABLE tblPub (ID INT, Publisher VARCHAR(255), City VARCHAR(255), State VARCHAR(255), Country VARCHAR(255));</code></p>
+
+<p>See what tables we have just created:</p>
+
+<p><code>show tables;</code></p>
+
+<p>Let&#39;s import some tables from the files we downloaded earlier:</p>
+
+<p><code>LOAD DATA INFILE &#39;/home/cabox/workspace/tblBook.csv&#39; INTO TABLE tblBook FIELDS TERMINATED BY &#39;,&#39; OPTIONALLY ENCLOSED BY &#39;&quot;&#39;;</code></p>
+
+<p>This should give us some output. 
+If we notice a warning, type the following to view the warnings:</p>
+
+<p><code>SHOW WARNINGS;</code></p>
+
+<p>So, it looks like we have a missing date. 
+No big deal. 
+We&#39;ll deal with that later. 
+Let&#39;s import our other table. </p>
+
+<p><code>LOAD DATA INFILE &#39;/home/cabox/workspace/tblPub.csv&#39; INTO TABLE tblPub FIELDS TERMINATED BY &#39;,&#39; OPTIONALLY ENCLOSED BY &#39;&quot;&#39;;</code></p>
+
+<p>Let&#39;s see what is in our tables:</p>
+
+<p><code>SHOW COLUMNS FROM tblBook;</code></p>
+
+<p><code>SHOW COLUMNS FROM tblPub;</code></p>
+
+<p>We&#39;ll notice that we have no key set for either table. 
+We need to do this, right?</p>
+
+<p><code>ALTER TABLE tblBook ADD PRIMARY KEY (ID);</code></p>
+
+<p>Now look at the table again and see that it has changed:</p>
+
+<p><code>SHOW COLUMNS FROM tblBook;</code></p>
+
+<p>Now do the same for the other table:</p>
+
+<p><code>SHOW COLUMNS FROM tblPub;</code></p>
+
+<p><code>ALTER TABLE tblPub ADD PRIMARY KEY (ID);</code></p>
+
+<h1 id="define-relationships">Define relationships</h1>
+
+<p>We need to tell MySQL that the PubID column in tblBook refers to the primary key in tblPub. This action is called a constraint and the reference is called a foreign key. </p>
+
+<p><code>ALTER TABLE tblBook ADD CONSTRAINT fk_PubID FOREIGN KEY (PubID) REFERENCES tblPub(ID) ON UPDATE NO ACTION;</code></p>
+
+<p>Let&#39;s look at our columns again:</p>
+
+<p><code>SHOW COLUMNS FROM tblBook;</code></p>
+
+<p>You&#39;ll notice that the &#39;Key&#39; column now has &#39;MUL&#39; for PubID. 
+This means that we are using that column as an index as well as the primary key column. 
+This new index just happens to be non-unique. </p>
+
+<h1 id="summaries">Summaries</h1>
+
+<p>So now that we have our data in place, let&#39;s summarize it a bit. </p>
+
+<p><code>SELECT COUNT(*) FROM tblBook;</code></p>
+
+<p>What if we want to see the first ten rows in tblBook?</p>
+
+<p><code>SELECT * FROM tblBook ORDER BY Date LIMIT 10;</code></p>
+
+<p>Let&#39;s look at only books published after 1980;</p>
+
+<p><code>SELECT * FROM tblBook WHERE Date &gt; 1980 ORDER BY Date;</code></p>
+
+<p>And count them:</p>
+
+<p><code>SELECT COUNT(*) FROM tblBook WHERE Date &gt; 1980 ORDER BY Date;</code></p>
+
+<p>How about only books published in 1980?</p>
+
+<p><code>SELECT * FROM tblBook WHERE Date = 1980 ORDER BY ShelfNumber;</code></p>
+
+<p>Let&#39;s find out how much our books cost:</p>
+
+<p><code>SELECT AVG(RetailPrice) FROM tblBook;</code></p>
+
+<p><code>SELECT MIN(RetailPrice) FROM tblBook;</code></p>
+
+<p><code>SELECT MAX(RetailPrice) FROM tblBook;</code></p>
+
+<p>Let&#39;s summarize all of that together.</p>
+<div class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> 
+<span class="k">AVG</span><span class="p">(</span><span class="n">RetailPrice</span><span class="p">)</span> <span class="k">AS</span> <span class="s1">'Average Price'</span><span class="p">,</span>
+<span class="k">MIN</span><span class="p">(</span><span class="n">RetailPrice</span><span class="p">)</span> <span class="k">AS</span> <span class="s1">'Lowest Price'</span><span class="p">,</span>
+<span class="k">MAX</span><span class="p">(</span><span class="n">RetailPrice</span><span class="p">)</span> <span class="k">AS</span> <span class="s1">'Highest Price'</span>
+<span class="k">FROM</span> <span class="n">tblBook</span><span class="p">;</span>
+</code></pre></div>
+<h1 id="queries">Queries</h1>
+
+<p>I want to list out all the books in the list that were published by Oxford University Press. </p>
+
+<p><code>SELECT * FROM tblBook b RIGHT JOIN tblPub p ON b.PubID = p.ID WHERE p.Publisher = &#39;Oxford University Press&#39;;</code></p>
+
+<p>How many locations does OUP have? </p>
+
+<p><code>SELECT COUNT(*) FROM tblPub WHERE Publisher = &#39;Oxford University Press&#39;;</code></p>
+
+<p>Where are they?</p>
+
+<p><code>SELECT * FROM tblPub WHERE Publisher = &#39;Oxford University Press&#39;;</code></p>
+
+<p>What if I only want the books published by OUP&#39;s US office? 
+I have to specify an additional criterion. </p>
+
+<p><code>SELECT * FROM tblBook b RIGHT JOIN tblPub p ON b.PubID = p.ID WHERE p.Publisher = &#39;Oxford University Press&#39; AND p.Country = &#39;US&#39;;</code></p>
+
+<p>I wonder if books cost more from the OUP GB location than from the OUP US location.</p>
+
+<p><code>SELECT AVG(RetailPrice) FROM tblBook b RIGHT JOIN tblPub p ON b.PubID = p.ID WHERE p.Publisher = &#39;Oxford University Press&#39; AND p.Country = &#39;GB&#39;;</code></p>
+
+<p><code>SELECT AVG(RetailPrice) FROM tblBook b RIGHT JOIN tblPub p ON b.PubID = p.ID WHERE p.Publisher = &#39;Oxford University Press&#39; AND p.Country = &#39;US&#39;;</code></p>
+
+<h1 id="output-from-mysql-queries-as-tables">Output from MySQL queries as tables</h1>
+
+<p>We can take any of the above queries and output the results to a table. </p>
+
+<p>We need to add <code>CREATE TABLE qryName</code> to the front of any of our query commands. </p>
+
+<p>Here is an example using our price summary from above:</p>
+
+<p><code>CREATE TABLE qryPrices SELECT AVG(RetailPrice) AS &#39;Average Price&#39;, MIN(RetailPrice) AS &#39;Lowest Price&#39;, MAX(RetailPrice) AS &#39;Highest Price&#39; FROM tblBook;</code></p>
+
+<p>See if it worked by listing the tables:</p>
+
+<p><code>show tables;</code></p>
+
+<p>Look at what is in the new table:</p>
+
+<p><code>SELECT * FROM qryPrices</code></p>
+
+<p>It should match the output from when you ran the query before. </p>
+
+<h1 id="output-from-mysql-queries-in-other-formats">Output from MySQL queries in other formats</h1>
+
+<p>We can output all of this stuff outside of our MySQL prompt shell (in a normal shell).</p>
+
+<p>Let&#39;s ask for the summary of book prices in HTML and then we can try some other queries if we have time. </p>
+
+<p><code>quit</code> to exit the MySQL prompt.</p>
+
+<p>Now you have exited from the MySql prompt.</p>
+
+<p><code>mysql -u root -p -H -e &quot;SELECT AVG(RetailPrice) AS &#39;Average Price&#39;, MIN(RetailPrice) AS &#39;Lowest Price&#39;, MAX(RetailPrice) AS &#39;Highest Price&#39; FROM tblBook;&quot; booksinfo</code></p>
+
+<h1 id="exporting-and-importing">Exporting and Importing</h1>
+
+<p>To export your whole database so that you can use it elsewhere (i.e., transfer it to a different server) do the following command:</p>
+
+<p><code>mysqldump -u root -p booksinfo &gt; booksinfo.sql</code></p>
+
+<p>If you want to then import that same database somewhere else, the command is very similar. The direction changes, and instead of the specialized <code>mysqldump</code> command, you use just the standard MySQL client command:</p>
+
+<p><code>mysql -u root -p booksinfo &lt; booksinfo.sql</code></p>
+
+<h1 id="next-time">Next time</h1>
+
+<p>You are going to work in your groups to create a new script, based on your last assignment, that will write the data you have collected into a MySQL database. </p>
+</div>
+          <br/>
+          <ul class="tags">
+            <li><a href="/topics#database" class="tag">database</a></li><li><a href="/topics#tables" class="tag">tables</a></li><li><a href="/topics#queries" class="tag">queries</a></li><li><a href="/topics#SQL" class="tag">SQL</a></li><li><a href="/topics#MySQL" class="tag">MySQL</a></li>
           </ul>
         </li>
     

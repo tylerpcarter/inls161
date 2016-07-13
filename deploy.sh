@@ -1,22 +1,16 @@
 #!/bin/bash
-### FUNCTION: Print warning message. 
-function warning() 
-{ 
-    echo "$*" >&2 
-    exit 1   
-} 
-### FUNCTION: Print error message and exit. 
-function error() 
-{ 
-    echo "$*" >&2 
-    exit 1 
-} 
+### Set the following variables for your repository
+GITHUBUSERNAME=jdmar3
+REPONAME=inls161
+REMOTEADDR=github.com
+REMOTEUSERNAME=git
+BUILDBRANCH=gh-pages
 
 ### Display help text
 if [[ "$1" = [-][hH] || "$1" = [-][hH] || "$1" = [-][-][Hh][Ee][Ll][Pp] ]]
 	then
 		echo -e "Usage:	deploy.sh [source branch] [target branch]"
-		echo -e "Example:	deploy.sh gh-pages"
+		echo -e "Example:	deploy.sh"
 		echo -e
 		echo -e "This script should be run in the directory where your Jekyll source files live."
 		echo -e
@@ -24,32 +18,26 @@ if [[ "$1" = [-][hH] || "$1" = [-][hH] || "$1" = [-][-][Hh][Ee][Ll][Pp] ]]
     exit 0
 fi
 
-TARGETBRANCH=$1
-SRCBRANCH=`git rev-parse --abbrev-ref HEAD`
 TEMPDIR=`mktemp -d`
 WORKDIR=`pwd`
-# Backup push
-git add -v *
-git commit -av -m "backup commit"
-git push -v
-# Create temp file
+
+# Create temp directory
 cd /tmp
-mkdir $TEMPDIR
+# mkdir $TEMPDIR
+cd $TEMPDIR
+# Clone repository into TEMPDIR
+git clone -b $BRANCHNAME --single-branch $REMOTEUSERNAME@$REMOTEADDR:$GITHUBUSERNAME/$REPONAME.git
 # Build Jekyll site
 jekyll build -s $WORKDIR -d $TEMPDIR
-# Move back to source dir
-cd $WORKDIR
-# checkout into gh-pages 
-git checkout -f $TARGETBRANCH
-rm -r *
-rsync -r $TEMPDIR/ .
-# commit and push changes
-git add -v *
-git commit -av -m "update gh-pages site on `date`"
-git push -v
-# check back into master
-git checkout $SRCBRANCH
+# Add new build to git 
+git add --all -v .
+# Commit changes since last build
+git commit -a -m "Update live site `date`"
+# Push changes
+git push
 # Clear temp dir
 rm -r $TEMPDIR
+# Move back to source dir
+cd $WORKDIR
 # Exit
 exit 0
