@@ -137,6 +137,10 @@ The help/manpage file for Pandoc is linked here: <a href="http://pandoc.org/READ
 
 <a href="https://dev.mysql.com/doc/refman/5.5/en/" target="_blank">MySQL 5.5 Reference Manual - MySQL - ORACLE</a>
 
+<a href="https://www.cheatography.com/guslong/cheat-sheets/essential-mysql/" target="_blank">Essential MySQL Cheat Sheet - guslong</a>
+
+<a href="http://www.digilife.be/quickreferences/QRC/MySQL-4.02a.pdf" target="_blank">A Quick Guide to MySQL Tables and Queries - Embnet</a>
+
 # Presentations
 
 # Reveal.js

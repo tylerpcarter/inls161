@@ -63,7 +63,7 @@ When we define relationships in the query designer, you'll notice that there are
 ## Joins
 
 These are logical inclusion/exclusion criteria for your query at the table level. 
-It is a good idea to have some understanding of what they do on a logical level.{% sidenote 'joins' 'Moffatt, C. L. “Visual Representation of SQL Joins.” CodeProject. http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins.<br/><br/>Moffat's visual  guide can help you to better understand each join and what they do.' %} 
+It is a good idea to have some understanding of what they do on a logical level.{% sidenote 'joins' 'Moffatt, C. L. “Visual Representation of SQL Joins.” CodeProject. http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins.<br/><br/>This visual  guide can help you to better understand each join and what they do.' %} 
 
 Today, we will only use right joins in our example queries. 
 
