@@ -1496,9 +1496,150 @@ There is a ton of relevant information on this topic out in the Internet.&lt;/p&
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>http://inls161.johndmart.in/</link>
     <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 Jul 2016 21:51:53 -0400</pubDate>
-    <lastBuildDate>Fri, 15 Jul 2016 21:51:53 -0400</lastBuildDate>
+    <pubDate>Mon, 18 Jul 2016 11:29:34 -0400</pubDate>
+    <lastBuildDate>Mon, 18 Jul 2016 11:29:34 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>From data to database</title>
+        <description>&lt;p&gt;Today we&amp;#39;re going to talk about what is wrong with presentations and presentation software as they have come to be used.
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;p&gt;Presentations in class or at conferences are a weapon used to inflict maximum torturous boredom on an audience of unsuspecting victims. &lt;/p&gt;
+
+&lt;p&gt;Slideshows are the main modality of such attacks. &lt;/p&gt;
+
+&lt;h2 id=&quot;powerpoint-karaoke&quot;&gt;PowerPoint Karaoke&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  You will typically have to dodge lots of bullets.&lt;/li&gt;
+&lt;li&gt;  You will scale walls of illegible text, compressed so that it can fit on a screen. &lt;/li&gt;
+&lt;li&gt;  Presenters will read directly from their slides to you. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is all very bad.&lt;label for=&#39;worst&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;worst&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Purewal, Sarah Jacobsson. “The World’s Worst PowerPoint Presentations.” PC World. &lt;a href=&quot;http://www.pcworld.idg.com.au/slideshow/366369/world-worst-powerpoint-presentations/&quot;&gt;http://www.pcworld.idg.com.au/slideshow/366369/world-worst-powerpoint-presentations/&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;The typical mode for preparing presentations these days seems to be oriented toward allowing anyone to give a presentation, provided that they have the slide deck in front of them. &lt;/p&gt;
+
+&lt;p&gt;The more cynical among us have come to call this exercise PowerPoint karaoke. &lt;/p&gt;
+
+&lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
+
+&lt;p&gt;The problem is not PowerPoint itself.&lt;label for=&#39;death&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;death&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Kapterev, A. “Death by PowerPoint.” SlideShare. Last modified July 31, 2007. &lt;a href=&quot;http://www.slideshare.net/thecroaker/death-by-powerpoint&quot;&gt;http://www.slideshare.net/thecroaker/death-by-powerpoint&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;PowerPoint is just a tool. &lt;/p&gt;
+
+&lt;p&gt;All tools can be used in various ways for good or ill. &lt;/p&gt;
+
+&lt;p&gt;A knife can be used in the kitchen to prepare food, which feeds people and makes them happy. 
+That same knife can also be used as a weapon. &lt;/p&gt;
+
+&lt;p&gt;Like with all of the other tools that we have used, the end product has to do with how we use them. 
+Our intentions drive what happens more than the tools we use. &lt;/p&gt;
+
+&lt;p&gt;A rather hilarious example of how a major speech may have gone very differently, had the speaker been compelled to use PowerPoint in today&amp;#39;s typical style: &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.norvig.com/Gettysburg/index.htm&quot;&gt;The Gettysburg PowerPoint Presentation - Peter Norvig&lt;/a&gt; &lt;/p&gt;
+
+&lt;h1 id=&quot;edward-tufte&quot;&gt;Edward Tufte&lt;/h1&gt;
+
+&lt;p&gt;Edward Tufte is a statistician and artist and Professor Emeritus at Yale University. 
+If you ever have a chance to go to one of his workshops, you absolultely should do so. &lt;/p&gt;
+
+&lt;p&gt;Have a look through his website: &lt;a href=&quot;http://www.edwardtufte.com&quot;&gt;http://www.edwardtufte.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Tufte has led the charge for years that in order to communicate research and ideas, we need to pay close attention to aesthetics. &lt;/p&gt;
+
+&lt;p&gt;Beautifully designed communication is better at convincing others and transmitting knowledge than ugly or clunky communication. &lt;/p&gt;
+
+&lt;h2 id=&quot;the-cognitive-style-of-powerpoint&quot;&gt;The Cognitive Style of PowerPoint&lt;/h2&gt;
+
+&lt;p&gt;As we mentioned earlier, PowerPoint is not the problem. &lt;/p&gt;
+
+&lt;p&gt;We are the problem.&lt;label for=&#39;powerpoint&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;powerpoint&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. &lt;a href=&quot;http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf&quot;&gt;http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;We expect presentations to be boring and hideous, and so they are. &lt;/p&gt;
+
+&lt;p&gt;We expect that no one will pay attention to our boring and hideous presentations, and so they don&amp;#39;t. &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  We are lazy. &lt;/li&gt;
+&lt;li&gt;  We don&amp;#39;t think that we can do any better. &lt;/li&gt;
+&lt;li&gt;  We are wrong about that. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And it is not our fault. &lt;/p&gt;
+
+&lt;p&gt;We have been trained and cajoled and led into doing things in the same way over and over and over again. &lt;/p&gt;
+
+&lt;p&gt;You all have the opportunity to be better, to do better. &lt;/p&gt;
+
+&lt;h1 id=&quot;the-lessig-method-of-presentations&quot;&gt;The Lessig Method of Presentations&lt;/h1&gt;
+
+&lt;p&gt;Lawrence Lessig&amp;#39;s presentation style is widely recognized as being among the best in the business right now.&lt;label for=&#39;lessig-method&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;lessig-method&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Reynolds, Garr. “The ‘Lessig Method’ of Presentation.” Presentation Zen. Last modified October 7, 2005. &lt;a href=&quot;http://presentationzen.blogs.com/presentationzen/2005/10/the_lessig_meth.html&quot;&gt;http://presentationzen.blogs.com/presentationzen/2005/10/the_lessig_meth.html&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;We want to aim for this kind of scripted presentation for our final projects in this class. &lt;/p&gt;
+
+&lt;h2 id=&quot;getting-a-network-the-world-needs&quot;&gt;Getting a Network the World Needs&lt;/h2&gt;
+
+&lt;p&gt;Lessig talks on a wide variety of topics, but copyright is among his favorite. 
+This longish talk is an exemplary presentation. &lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+  &lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Qk_5UccWm3o&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+  &lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/piLXKUE_Bzo&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+  &lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ajv0Lxaqoys&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/xSbWG2LFrOk&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;reveal.js&quot;&gt;Reveal.js&lt;/h2&gt;
+
+&lt;p&gt;I have taken the libery of creating a response to Norvig&amp;#39;s stylistic blunder, here:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://johndmart.in/inls161-revealjs-template/#/&quot;&gt;The Gettysburg Reveal.js Presentation - John D. Martin III&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This presentation is an example of what is possible with reveal.js. 
+It is not even a terribly sophisticated example. &lt;/p&gt;
+
+&lt;h1 id=&quot;next-time&quot;&gt;Next time&lt;/h1&gt;
+
+&lt;p&gt;I want you to review the materials above and come to class tomorrow prepared to work in your presentation team. &lt;/p&gt;
+
+&lt;p&gt;Look over the repository for the presentation assignment and read through the &lt;code&gt;README.md&lt;/code&gt; and &lt;code&gt;INSTRUCTIONS.md&lt;/code&gt; files contained there:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jdmar3/task-6-be-presentable&quot;&gt;Assignment #6: Be Presentable&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 18 Jul 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/data/2016/07/18/presentation-basics/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/data/2016/07/18/presentation-basics/</guid>
+        
+        <category>database</category>
+        
+        <category>tables</category>
+        
+        <category>queries</category>
+        
+        <category>SQL</category>
+        
+        <category>MySQL</category>
+        
+        <category>Bash</category>
+        
+        <category>scripting</category>
+        
+        
+        <category>Data</category>
+        
+      </item>
     
       <item>
         <title>From data to database</title>
@@ -1522,7 +1663,7 @@ If you find something useful, share it with me and I will put links here.&lt;/p&
 
 &lt;p&gt;I would also like you to view the following video of a talk by Lawrence Lessig.
 We will look at parts of this in class as well, but it would be good if you could sit down and view the whole thing over the course of the weekend.
-It exists in three parts linked below.&lt;/p&gt;
+It exists in four parts linked below.&lt;/p&gt;
 
 &lt;div class=&quot;video-container&quot;&gt;
   &lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Qk_5UccWm3o&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
@@ -1534,6 +1675,10 @@ It exists in three parts linked below.&lt;/p&gt;
 
 &lt;div class=&quot;video-container&quot;&gt;
   &lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ajv0Lxaqoys&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/xSbWG2LFrOk&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;reveal.js&quot;&gt;Reveal.js&lt;/h2&gt;
@@ -2742,92 +2887,6 @@ You will need to do this in your CodeAnywhere container.&lt;/p&gt;
         
         
         <category>Text</category>
-        
-      </item>
-    
-      <item>
-        <title>Troubleshooting</title>
-        <description>&lt;p&gt;This lab session will be primarily dedicated to helping you work out kinks and wrinkles in the process of getting your site online and completing the second assignment. 
-If you are already very far along, then this is an opportunity for you to finish your work. 
-&lt;excerpt/&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h1&gt;
-
-&lt;p&gt;In addition to completing your site and the assignment at hand, we will start looking at ways that you can teach yourself how to fix problems that happen. 
-You will always run into issues, no matter what you are working on. 
-This will never stop. &lt;/p&gt;
-
-&lt;p&gt;At that point, you have two options: &lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Wait for someone to help you. &lt;/li&gt;
-&lt;li&gt;Figure it out on your own. &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Guess which one goes further in the course of your academic and work lives.&lt;/p&gt;
-
-&lt;h2 id=&quot;sources-of-information-are-myriad&quot;&gt;Sources of information are myriad&lt;/h2&gt;
-
-&lt;p&gt;It is really difficult to recommend places to get help with troubleshooting online. 
-This is not because they are so few, but because they are so many. &lt;/p&gt;
-
-&lt;p&gt;The best approach is to actually see what information you can get directly from the error interaction and then move on from there. &lt;/p&gt;
-
-&lt;p&gt;Read the error and try to understand it in plain language. 
-That may work some of the time. &lt;/p&gt;
-
-&lt;p&gt;Some error systems give VERY helpful errors that include suggestions for ways to fix what has gone wrong. 
-Git is like this.
-If you have a git error, most of the time, it will tell you what has gone wrong and how you can fix it. 
-Usually you just have to read it and do what it says. &lt;/p&gt;
-
-&lt;p&gt;Sometimes error messages will be more obtuse: this is a legitimate and well-known fact. &lt;/p&gt;
-
-&lt;p&gt;If you catch an error that doesn&amp;#39;t make sense to you, try at the very least to figure out what it means or to what it is referring. &lt;/p&gt;
-
-&lt;h2 id=&quot;google-it&quot;&gt;Google it&lt;/h2&gt;
-
-&lt;p&gt;Take this error, for example:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;error: Entry &#39;&amp;lt;fileName&amp;gt;&#39; would be overwritten by merge. Cannot merge. (Changes in staging area)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This is not particularly helpful. 
-I could pore over the git documentation for this, or I could take a more reasonable path and &lt;a href=&quot;http://lmgtfy.com/?q=error%3A+Entry+%27%3CfileName%3E%27+would+be+overwritten+by+merge.+Cannot+merge.+(Changes+in+staging+area)&quot;&gt;Google it&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;As you can see, there is a fair amount of information immediately available that will help you cirvumvent that error. &lt;/p&gt;
-
-&lt;p&gt;Take this approach first and keep these things in mind:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Be careful: not all information is good. &lt;/li&gt;
-&lt;li&gt;Learn to spot the difference. &lt;/li&gt;
-&lt;li&gt;READ.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://stackoverflow.org&quot;&gt;Stack Overflow&lt;/a&gt; is generally a useful resource for recovering from errors. 
-It is well curated and lots of people use it to figure things out. &lt;/p&gt;
-
-&lt;h1 id=&quot;next-week&quot;&gt;Next week&lt;/h1&gt;
-
-&lt;p&gt;Next week we are going to start working on manipulating and formatting text.&lt;label for=&#39;word&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;word&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;Wiens, John A. “Word Processing versus Writing.” The Auk 100 (1983): 758. &lt;a href=&quot;https://sora.unm.edu/sites/default/files/journals/auk/v100n03/p0758-p0758.pdf&quot;&gt;https://sora.unm.edu/sites/default/files/journals/auk/v100n03/p0758-p0758.pdf&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Caleb McDaniel, W. “Why (and How) I Wrote My Academic Book in Plain Text | W. Caleb McDaniel.” Last modified September 28, 2012. &lt;a href=&quot;http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html&quot;&gt;http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Stross, Charlie. “Why Microsoft Word Must Die.” Charlie’s Diary. Last modified October 12, 2013. &lt;a href=&quot;http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html&quot;&gt;http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html&lt;/a&gt;. &lt;/span&gt;  &lt;/p&gt;
-
-&lt;p&gt;To prepare for this philosophically, I would like you to read a few blog posts and a very short article. &lt;/p&gt;
-
-&lt;p&gt;The first is a short article from about the difference between word processing and writing from the earliest days word processors.&lt;/p&gt;
-
-&lt;p&gt;The blog posts are about the relative merits of giving up word processors altogether and using plaintext the way we have been in this class.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 01 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/web/2016/07/01/web-lab/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/web/2016/07/01/web-lab/</guid>
-        
-        <category>troubleshooting</category>
-        
-        <category>websites</category>
-        
-        <category>trial and error</category>
-        
-        
-        <category>Web</category>
         
       </item>
     
