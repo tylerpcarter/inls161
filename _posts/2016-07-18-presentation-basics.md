@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "From data to database"
-category: Data
+title: "Presentation Basics"
+category: Present
 tags: 
-- database
-- tables
-- queries
-- SQL
-- MySQL
-- Bash
-- scripting
+- powerpoint
+- reveal.js
+- presentations
+- Tufte
 ---
 
 Today we're going to talk about what is wrong with presentations and presentation software as they have come to be used.
