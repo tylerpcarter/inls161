@@ -32,7 +32,7 @@ I would like you to read/deep skim Edward Tufte's piece on the stupidity of Powe
 
 I would also like you to view the following video of a talk by Lawrence Lessig.
 We will look at parts of this in class as well, but it would be good if you could sit down and view the whole thing over the course of the weekend.
-It exists in three parts linked below.
+It exists in four parts linked below.
 
 <div class="video-container">
   <iframe width="420" height="315" src="https://www.youtube.com/embed/Qk_5UccWm3o" frameborder="0" allowfullscreen></iframe>
@@ -42,6 +42,9 @@ It exists in three parts linked below.
 </div>
 <div class="video-container">
   <iframe width="420" height="315" src="https://www.youtube.com/embed/ajv0Lxaqoys" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="video-container">
+<iframe width="420" height="315" src="https://www.youtube.com/embed/xSbWG2LFrOk" frameborder="0" allowfullscreen></iframe>
 </div>
 
 ## Reveal.js
