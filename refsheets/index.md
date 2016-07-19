@@ -156,6 +156,12 @@ The help/manpage file for Pandoc is linked here: <a href="http://pandoc.org/READ
 
 <a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank">Reveal.js Tutorial-Reveal.js for Beginners - Tom Campbell</a>
 
+# Audacity
+
+<a href="http://www.instructables.com/id/Basic-recording-and-editing-with-Audacity/" target="_blank">Basic recording and editing in Audacity - Instructables</a>
+
+<a href="https://www.youtube.com/watch?v=2gM12DIIwA0" target="_blank">How to use Audacity to record and edit audio - Dr. Mark Morton, University of Waterloo</a>
+
 # Productivity suites
 
 ## LibreOffice
