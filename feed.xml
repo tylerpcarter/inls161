@@ -1496,9 +1496,196 @@ There is a ton of relevant information on this topic out in the Internet.&lt;/p&
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>http://inls161.johndmart.in/</link>
     <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 19 Jul 2016 23:05:49 -0400</pubDate>
-    <lastBuildDate>Tue, 19 Jul 2016 23:05:49 -0400</lastBuildDate>
+    <pubDate>Wed, 20 Jul 2016 11:28:46 -0400</pubDate>
+    <lastBuildDate>Wed, 20 Jul 2016 11:28:46 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Recording and editing audio</title>
+        <description>&lt;p&gt;Today we are going to work with Audacity to create and edit some audio to embed in our presentations. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;installing-audacity&quot;&gt;Installing Audacity&lt;/h1&gt;
+
+&lt;p&gt;Look for the correct installer at the download site for Audacity&amp;#39;s current version. 
+DMG for Mac and EXE for windows. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.audacityteam.org/download/&quot;&gt;http://www.audacityteam.org/download/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Install the software as you normally would install something. &lt;/p&gt;
+
+&lt;p&gt;Specific instructions here, if you need to troubleshoot: &lt;a href=&quot;http://manual.audacityteam.org/o/man/faq_installation_and_plug_ins.html&quot;&gt;http://manual.audacityteam.org/o/man/faq_installation_and_plug_ins.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-vorbis&quot;&gt;Installing Vorbis&lt;/h2&gt;
+
+&lt;p&gt;In order to keep our audio files small, we may need to install an encoder that Audacity will use to compress and wrap the files so that they download faster.&lt;/p&gt;
+
+&lt;p&gt;The Ogg Vorbis format (.ogg) is probably best for our purposes.
+It can be automatically read and played back by any web browser that is HTML5 compliant. 
+The codec is free and open-source software, which makes it more flexible than something like MP3, which is non-free.&lt;/p&gt;
+
+&lt;p&gt;If Audacity does not offer it as an option for export, then you can download and install it from here:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.vorbis.com/setup/&quot;&gt;http://www.vorbis.com/setup/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;recording-audio&quot;&gt;Recording audio&lt;/h1&gt;
+
+&lt;p&gt;Make sure that you have a microphone plugged and then open Audacity. &lt;/p&gt;
+
+&lt;p&gt;To record, press the record button (red circle) on the top bar or press SHIFT+R.&lt;label for=&#39;controls&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;controls&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;&lt;a href=&quot;/assets/ref-images/audacity/controls.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/ref-images/audacity/controls.png&quot; alt=&quot;Audacity Controls&quot; /&gt;&lt;/a&gt; &lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;To stop, press the SPACE BAR. &lt;/p&gt;
+
+&lt;p&gt;For playback of audio that you have just recorded, press the SPACE BAR again. &lt;/p&gt;
+
+&lt;p&gt;You can move backward and forward in the track by using the LEFT &amp;lt;- and RIGHT -&amp;gt; cursor keys. &lt;/p&gt;
+
+&lt;p&gt;It is a good idea to save as you go, so that you do not lose anything. &lt;/p&gt;
+
+&lt;p&gt;The file will save as an AUP file. 
+That is Audacity&amp;#39;s project file format. 
+It will allow you to open the whole project with all of your audio saved in it. &lt;/p&gt;
+
+&lt;p&gt;Look here for documentation about getting started recording your audio: &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://manual.audacityteam.org/o/quick_help.html&quot;&gt;http://manual.audacityteam.org/o/quick_help.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;recording-chunks-of-audio-for-each-slide&quot;&gt;Recording chunks of audio for each slide&lt;/h2&gt;
+
+&lt;p&gt;If you want to record audio for each slide event in an individual file, which is a good approach, simply record the audio and then when you are satisfied with it, export it as an OGG Vorbis file. &lt;/p&gt;
+
+&lt;p&gt;You can press CTRL+SHIFT+E or select &amp;quot;Export Audio...&amp;quot; from the &amp;quot;File&amp;quot; menu. 
+You&amp;#39;ll want to give the file a number so that you can keep them in order. &lt;/p&gt;
+
+&lt;p&gt;For example, call the file &amp;quot;01-first-slide.ogg&amp;quot; or something along those lines.&lt;label for=&#39;export&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;export&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;&lt;a href=&quot;/assets/ref-images/audacity/export-audio.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/ref-images/audacity/export-audio.png&quot; alt=&quot;Audacity Export Audio&quot; /&gt;&lt;/a&gt; &lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;Select &amp;quot;ogg Vorbis file&amp;quot; from the menu and then press save. &lt;/p&gt;
+
+&lt;p&gt;The dialog will prompt you to add tags. You can if you wish, but it is not necessary. &lt;/p&gt;
+
+&lt;p&gt;You can open a new project for each audio file. &lt;/p&gt;
+
+&lt;h2 id=&quot;recording-all-at-once-and-splitting-into-separate-files&quot;&gt;Recording all at once and splitting into separate files&lt;/h2&gt;
+
+&lt;p&gt;Once you have your presentation text in your slides, or if you want to read through your script and then break up the audio, you can do this by using a &amp;quot;label&amp;quot; track and the &amp;quot;Export Multiple...&amp;quot; function in Audacity. &lt;/p&gt;
+
+&lt;p&gt;In this method, you will record your whole presentation, and then split the track into smaller tracks with numbered filenames.&lt;label for=&#39;label-track1&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;label-track1&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;&lt;a href=&quot;/assets/ref-images/audacity/label-track1.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/ref-images/audacity/label-track1.png&quot;  alt=&quot;Audacity Label Track&quot; /&gt;&lt;/a&gt; &lt;/span&gt;  &lt;/p&gt;
+
+&lt;p&gt;To add a label track click: Tracks &amp;gt; Add New &amp;gt; Label Track.&lt;/p&gt;
+
+&lt;p&gt;This is just a reference track for you to break the audio apart into multiple files.&lt;/p&gt;
+
+&lt;h3 id=&quot;labeling&quot;&gt;Labeling&lt;/h3&gt;
+
+&lt;p&gt;To set a label, click on the wave form in the track where you want the label to be and then press CTRL+B, write the name of the label and press enter. 
+You can edit labels by clicking on them in the label track.&lt;label for=&#39;label-track2&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;label-track2&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;&lt;a href=&quot;/assets/ref-images/audacity/label-track2.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/ref-images/audacity/label-track2.png&quot; alt=&quot;Audacity Label Tracks&quot; /&gt;&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;Audacity Label Tracks Documentation: &lt;a href=&quot;http://manual.audacityteam.org/o/man/label_tracks.html&quot;&gt;http://manual.audacityteam.org/o/man/label_tracks.html&lt;/a&gt; &lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;Make sure that you are thinking about where slides begin and end in your script. 
+The easiest way to do this is to record first and then listen. 
+As you listen ou can pause and move back and forth to get your selector in the right position before creating a label with CTRL+B. 
+Your labels should be positioned at the beginning of your desired audio clips. 
+Keep this in mind and make a label at the beginning of the track for the first slide&amp;#39;s audio. &lt;/p&gt;
+
+&lt;p&gt;If you want to lazy load your audio files in your slideshow, you can simply use the desired slide number as the label name, but you have to follow a specific naming convention. 
+Your label names should look similar to what follows&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;0.0 # Title slide
+1.0 # 1st slide after title slide
+2.0 # 2nd slide
+3.0 # 3rd slide
+3.1 # 3rd slide, basement level 1 (or fragment 1)
+4.0 # 4th slide
+5.0 # 5th slide
+...
+12.0 # 12th and final slide
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;When you have finished labeling. Select File &amp;gt; Export Multiple... and a dialog will pop up.&lt;label for=&#39;export-multiple&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;export-multiple&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;&lt;a href=&quot;/assets/ref-images/audacity/export-multiple.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/ref-images/audacity/export-multiple.png&quot;  alt=&quot;Audacity Export Multiple&quot; /&gt;&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;Audacity Export Multiple Documentation: &lt;a href=&quot;http://manual.audacityteam.org/o/man/export_multiple.html&quot;&gt;http://manual.audacityteam.org/o/man/export_multiple.html&lt;/a&gt; &lt;/span&gt;  &lt;/p&gt;
+
+&lt;p&gt;You should select OGG Vorbis files and under &amp;quot;Name files:&amp;quot; select the middle option, &amp;quot;Numbering before Label/Track Name.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;Choose an export location (you&amp;#39;ll be uploading these to CodeAnywhere or Github directly). &lt;/p&gt;
+
+&lt;p&gt;Then press export. &lt;/p&gt;
+
+&lt;p&gt;You will be presented with the same tag editing interface as mentioned above, except this time for each file. 
+So just press okay on that dialog until it is finished.&lt;label for=&#39;tags&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;tags&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;&lt;a href=&quot;/assets/ref-images/audacity/tags.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/assets/ref-images/audacity/tags.png&quot;  alt=&quot;Audacity ID3 Tags&quot; /&gt;&lt;/a&gt; &lt;/span&gt;  &lt;/p&gt;
+
+&lt;h1 id=&quot;putting-the-files-in-the-right-place&quot;&gt;Putting the files in the right place&lt;/h1&gt;
+
+&lt;p&gt;You should end up with a file list that looks something like this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;1.0.ogg
+2.0.ogg
+3.0.ogg
+3.1.ogg
+4.0.ogg
+5.0.ogg
+...
+12.0.ogg
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The files should be relatively small. 
+They are just short clips. &lt;/p&gt;
+
+&lt;p&gt;Probably the easiest way to get these files into CodeAnywhere is to zip them up in a ZIP file and then upload them by right clicking on the correct directory in your tree. &lt;/p&gt;
+
+&lt;p&gt;Then unzip them into the directory where you want them using the unzip command. &lt;/p&gt;
+
+&lt;p&gt;Do &lt;code&gt;ls&lt;/code&gt; to see that the ZIP file is in the right place. &lt;/p&gt;
+
+&lt;p&gt;Then do:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;unzip audio.zip&lt;/code&gt; &lt;/p&gt;
+
+&lt;p&gt;In that same directory. 
+You will have to put the name of your ZIP file instead of &amp;quot;audio.zip.&amp;quot; &lt;/p&gt;
+
+&lt;p&gt;The files should unzip there and then you are ready to put links into your &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; tags as mentioned above.&lt;/p&gt;
+
+&lt;h3 id=&quot;lazy-loading&quot;&gt;Lazy loading&lt;/h3&gt;
+
+&lt;p&gt;If you saved your files using the schema suggested above, the audio-slideshow plugin will load them automatically with the appropriate slide. &lt;/p&gt;
+
+&lt;p&gt;If you did not name them in this way, see below. &lt;/p&gt;
+
+&lt;h3 id=&quot;add-audio-to-section-tags&quot;&gt;Add audio to section tags&lt;/h3&gt;
+
+&lt;p&gt;Just to make sure that it is clear, the way that you add audio to a slide is by making your &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; look like this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;section&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-audio-src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;audio/SOME-AUDIO.ogg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-background=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#56A0D3&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; 
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;
+        SOME SLIDE TITLE
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;
+        Some other text.
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/section&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;code&gt;data-audio-src&lt;/code&gt; takes care of adding the audio link so that it will play automatically. &lt;/p&gt;
+
+&lt;h1 id=&quot;next-time&quot;&gt;Next time&lt;/h1&gt;
+
+&lt;p&gt;We have arrived at the last normal session of class. &lt;/p&gt;
+
+&lt;p&gt;In this session we will work on troubleshooting your presentations. &lt;/p&gt;
+
+&lt;p&gt;We will also talk as a group about the skillsets that you have gathered throughout this course. 
+This is an important discussion because it will orient you to the kinds of things that you can say about your skills on a resume or CV. &lt;/p&gt;
+
+&lt;p&gt;We will also discuss other future classes that you might want to take if you are interested in a particular aspect of this course. &lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 Jul 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/present/2016/07/20/recording-and-editing-audio/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/present/2016/07/20/recording-and-editing-audio/</guid>
+        
+        <category>reveal.js</category>
+        
+        <category>presentations</category>
+        
+        <category>audio</category>
+        
+        <category>audacity</category>
+        
+        
+        <category>Present</category>
+        
+      </item>
     
       <item>
         <title>Reveal.js</title>
@@ -1508,9 +1695,13 @@ We will also cover converting your text from Markdown into Reveal-ready HTML5 us
 
 &lt;h1 id=&quot;getting-started&quot;&gt;Getting started&lt;/h1&gt;
 
-&lt;h3 id=&quot;installing-the-customized-reveal.js-repo&quot;&gt;Installing the customized reveal.js repo&lt;/h3&gt;
+&lt;p&gt;First we will need to get a few things in place in our containers. &lt;/p&gt;
 
-&lt;p&gt;You should fork the assignment repo on Github. Since you are working in teams, you might want to maintain one repo while working and then create a fork in your individual accounts when you are finished with the assignment. 
+&lt;h2 id=&quot;fork-the-customized-reveal.js-repo&quot;&gt;Fork the customized reveal.js repo&lt;/h2&gt;
+
+&lt;p&gt;Fork the assignment repo on Github. All of the files that you will need in order to use reveal.js are contained in it. &lt;/p&gt;
+
+&lt;p&gt;Since you are working in teams, you might want to maintain one repo while working and then create a fork in your individual accounts when you are finished with the assignment. 
 If you are sharing a single repo, remember to add your teammate as a contributor.&lt;/p&gt;
 
 &lt;p&gt;The assignment repo is located here: &lt;/p&gt;
@@ -1522,7 +1713,7 @@ It will become clear why this is necessary at the end of the assignment.&lt;/p&g
 
 &lt;p&gt;Finally, clone it to your containers so that you can work on it. &lt;/p&gt;
 
-&lt;h3 id=&quot;making-sure-that-you-are-pushing-to-gh-pages&quot;&gt;Making sure that you are pushing to gh-pages&lt;/h3&gt;
+&lt;h2 id=&quot;making-sure-that-you-are-pushing-to-gh-pages&quot;&gt;Making sure that you are pushing to gh-pages&lt;/h2&gt;
 
 &lt;p&gt;If you do not do this, your reveal.js presentation will not show up at the correct address. &lt;/p&gt;
 
@@ -2800,131 +2991,6 @@ Also, we&amp;#39;ll use another tutorial so that we can learn to create prompts 
         <category>Bash</category>
         
         <category>Scripts</category>
-        
-        
-        <category>Text</category>
-        
-      </item>
-    
-      <item>
-        <title>Single input, multiple outputs</title>
-        <description>&lt;p&gt;We&amp;#39;ve briefly discussed Pandoc now. 
-It bills itself as the &amp;quot;Universal Document Converter.&amp;quot; 
-This is reasonably true, but it might require some creative combinations of switches within Pandoc commands as well as multiple commands strung together or intermediate commands to get the desired output. &lt;/p&gt;
-
-&lt;p&gt;The benefit of troubleshooting and understanding this process is that once we do, we can more easily optimize our conversions and automate them. 
-We&amp;#39;ll talk more about this as we go forward. 
-&lt;excerpt/&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;source-to-output-conversion&quot;&gt;Source to output conversion&lt;/h1&gt;
-
-&lt;p&gt;It is possible to use GUI tools to create and convert documents. 
-Support is somewhat limited, but in LibreOffice, we can at least create a PDF from our ODT and DOCX files. &lt;/p&gt;
-
-&lt;p&gt;We can also manipulate the styles of the headers and other structural elements that we have assigned using Markdown in our GUI editors. &lt;/p&gt;
-
-&lt;p&gt;One convenient effect of starting with plaintext marked up with Markdown is that we have those structural elements when we convert them into another format and then edit them elsewhere. It is certainly possible to start in the GUI editor and define the same things, but after becoming acquainted with Markdown, it should feel somewhat more burdensome to use the GUI. Arguably, it is. There is a great deal more that goes into a DOCX or an ODT file, structurally, than in a plaintext file with Markdown in it. &lt;/p&gt;
-
-&lt;p&gt;We also have the disadvantage of only being able to operate on thost files in limited ways on headless or remote systems. &lt;/p&gt;
-
-&lt;p&gt;If we keep plaintext at the core of our workflows and GUI editors toward the periphery, we will be served in the end as we will always have access to our work, on any system, without any huge barriers to editing and changing. &lt;/p&gt;
-
-&lt;h2 id=&quot;commands&quot;&gt;Commands&lt;/h2&gt;
-
-&lt;p&gt;We&amp;#39;re going to practice some conversions using Pandoc today. We will also work in groups. &lt;/p&gt;
-
-&lt;p&gt;First, we need to get some files. &lt;/p&gt;
-
-&lt;p&gt;Fork and clone this repository into your CodeAnywhere container:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/inls161/pandoc-practice&quot;&gt;https://github.com/inls161/pandoc-practice&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Once you have the files in your CodeAnywhere container, I will show you some things in class and then in your groups you will answer and mark up the &lt;code&gt;example.md&lt;/code&gt; file using the instructions in the file. &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;When you are finished with the questions in file:&lt;/em&gt;&lt;/strong&gt; &lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;I want you to change the name of the file to your GitHub username. &lt;/li&gt;
-&lt;li&gt;You will then work as a group to convert the file to HTML, DOCX, and ODT formats, per the instructions in class. I also want you to open the files on your lab computers so you can see what you have done. &lt;/li&gt;
-&lt;li&gt;Then I want you to add, commit, and push your changes. &lt;/li&gt;
-&lt;li&gt;Finally, you will create a pull request in GitHub to get these files back into my original repository.&lt;br&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;basic-pandoc-commands&quot;&gt;Basic Pandoc commands&lt;/h2&gt;
-
-&lt;p&gt;&lt;label for=&#39;pandoc-commands&#39; class=&#39;margin-toggle&#39;&gt; &amp;#8853;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;pandoc-commands&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;marginnote&#39;&gt;All Pandoc commands are documented here: &lt;a href=&quot;http://pandoc.org/README.html&quot;&gt;http://pandoc.org/README.html&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;A good set of example commands exists here: &lt;a href=&quot;http://pandoc.org/demos.html&quot;&gt;http://pandoc.org/demos.html&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Convert a Markdown file to HTML:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;pandoc -o example.html example.md&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Pandoc reads the filetype from the extension in normal usage. 
-If you want to convert a file directly from a URL, you will have to specify the filetype, like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;pandoc -f html -t markdown http://inls161.johndmart.in/syllabus/&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;You can make sure that certain things, like quotes and em-dashes, get read and formatted propery by specifying the &amp;quot;Smart&amp;quot; switch (a capital &lt;code&gt;-S&lt;/code&gt; or &lt;code&gt;--smart&lt;/code&gt;):&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;pandoc -S -o example.html example.md&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;There are a host of other commands in the documentation. Be sure to try them out. &lt;/p&gt;
-
-&lt;h2 id=&quot;specific-file-commands&quot;&gt;Specific file commands&lt;/h2&gt;
-
-&lt;p&gt;Convert your markdown to HTML:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;pandoc -o example.html exampld.md&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;If you wish to convert to a DOCX or ODT file:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;pandoc -o example.docx example.md&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;pandoc -o example.odt example.md&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;If you wish to convert between two different word processor filetypes, we might have to get a little creative. 
-We learned in class that if we issue the following command, we get errors related to file encoding and the conversion will not work. &lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;pandoc -o example.docx example.odt&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;If, however, we add an intermediary step, say through HTML, we can get the output that we want. Try it like this instead: &lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;pandoc -o example.docx example-tmp.html &amp;amp;&amp;amp; pandoc -o example.odt example-tmp.html&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This preserves the formatting and extracts the text from the DOCX as an HTML file and then converts that HTML into ODT. 
-We do not have the weird encoding errors this way, and we don&amp;#39;t have to mess with pipes. &lt;/p&gt;
-
-&lt;p&gt;Filter a document through a template file:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;pandoc -S --reference-docx=FILE -o example.docx example.md&lt;/code&gt; &lt;/p&gt;
-
-&lt;p&gt;In the above command, you need to specify the location of the template file. 
-If it is a file called &lt;code&gt;template.docx&lt;/code&gt; and is located in the same directory as your Markdown source, then the command will be:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;pandoc -S --reference-docx=./template.docx -o example.docx example.md&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;You can also use an ODT or OTT for reference:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;pandoc -S --reference-odt=./template.ott -o example.odt example.md&lt;/code&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;for-tomorrow&quot;&gt;For tomorrow&lt;/h1&gt;
-
-&lt;p&gt;Tomorrow, we are going to learn one more output format and then learn how to script all of our outputs together so that we can save ourselves time. &lt;/p&gt;
-
-&lt;p&gt;I would like you to go through the Writing Shell Scripts tutorial by William Shotts for tomorrow.&lt;label for=&#39;shell-scripts&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;shell-scripts&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. &lt;a href=&quot;http://linuxcommand.org/lc3_writing_shell_scripts.php&quot;&gt;http://linuxcommand.org/lc3_writing_shell_scripts.php&lt;/a&gt;. &lt;/span&gt; 
-This will show you the basics of scripting. 
-The scripts that we will write will be very, very simple, but it is good to have looked over this before we start. &lt;/p&gt;
-</description>
-        <pubDate>Wed, 06 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/text/2016/07/06/single-multiple-outputs/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/text/2016/07/06/single-multiple-outputs/</guid>
-        
-        <category>pandoc</category>
-        
-        <category>text</category>
-        
-        <category>conversion</category>
-        
-        <category>LaTeX</category>
         
         
         <category>Text</category>
