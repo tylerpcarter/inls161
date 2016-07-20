@@ -13,6 +13,7 @@ weight: 9
 <a href="https://ubuntudanmark.dk/filer/fwunixref.pdf" target="_blank">FOSSWire UNIX Command Reference</a>
 
 ## Linux (Ubuntu)
+
 {% marginnote 'unix' '**Linux** is one such UNIX clone originally invented in 1991 by Linus Torvalds. It is now among the most widely used operating systems in the world. If you have used the Internet, you have interacted with Linux perhaps without even realizing it. Your CodeAnywhere containers run Ubuntu Linux.' %}
 
 <a href="http://linuxcommand.org/tlcl.php" target="_blank">The Linux Command Line - William E. Shotts, Jr.</a>
@@ -66,6 +67,12 @@ weight: 9
 {% marginnote 'github' '**GitHub** is a platform that allows for users to keep copies of their open source, plaintext repositories online, in a single centralized location. It also adds a social interaction layer to the process of managing version-controlled source files.' %}
 
 <a href="https://guides.github.com/activities/hello-world/" target="_blank">Hello World - GitHub Guides</a>
+
+### Keeping GitHub forks up to date with upstream source 
+
+<a href="https://2buntu.com/articles/1459/keeping-your-forked-repo-synced-with-the-upstream-source/" target="_blank">Keeping your forked repo synced with the upstream source - Nitin Venkatesh</a>
+
+<a href="https://help.github.com/articles/syncing-a-fork/" target="_blank">Syncing a fork - GitHub Help</a>
 
 ### Reference sheets from in-class activities
 
@@ -143,7 +150,7 @@ The help/manpage file for Pandoc is linked here: <a href="http://pandoc.org/READ
 
 # Presentations
 
-# Reveal.js
+## Reveal.js
 
 {% marginnote 'reveal' '**Reveal.js** is an open source presentation framework for HTML5 invented by Hakim El Hattab. It allows content creators to develop slideshows as simply as they would web pages. It also has the capacity to add audio narration using a plugin.' %}
 
@@ -158,13 +165,21 @@ The help/manpage file for Pandoc is linked here: <a href="http://pandoc.org/READ
 
 # Audacity
 
+{% marginnote 'audacity' '**Audacity** is a free and open-source software audio recording and editing suite. The project was started in 1999 by Dominic Mazzoni and Roger Dannenberg at Carnegie Mellon University. It has been ported to most major operating systems, including Linux, Windows, and Mac OS.' %}
+
 <a href="http://www.instructables.com/id/Basic-recording-and-editing-with-Audacity/" target="_blank">Basic recording and editing in Audacity - Instructables</a>
 
 <a href="https://www.youtube.com/watch?v=2gM12DIIwA0" target="_blank">How to use Audacity to record and edit audio - Dr. Mark Morton, University of Waterloo</a>
 
+## How many words in 5 minutes?
+
+<a href="http://speechinminutes.com/" target="_blank">Speech - Words to Minutes Calculator</a>
+
 # Productivity suites
 
 ## LibreOffice
+
+{% marginnote 'libreoffice' '**LibreOffice** is a free and open-source productivity suite developed by the Open Document Foundation. It is the most actively-developed free productivity suite available and originated as a fork of the OpenOffice project in 2010. It is available in 110 different languages.<br/><br/>LibreOffice comprises a variety of programs for different tasks: *writer* for word processing, *calc* for creating and editing spreadsheets, *impress* for creating slideshows, *draw* for diagrams and drawings, *base* for databases, and *math* for composing and editing mathematical formulae.' %}
 
 <a href="https://www.libreoffice.org/get-help/documentation/" target="_blank">LibreOffice Documentation for all Packages</a>
 
@@ -175,3 +190,8 @@ They are all quite excellent and can serve as a useful reference for anyone just
 Check them out. 
 
 <a href="http://ricostacruz.com/cheatsheets/" target="_blank">Cheatsheets - Rico Sta. Cruz</a>
+
+Cheatography has over 2,500 cheatsheets available for various languages, platforms, markups, etc. 
+They are user-contributed and freely available. 
+
+<a href="https://www.cheatography.com/" target="_blank">Cheatography</a>
