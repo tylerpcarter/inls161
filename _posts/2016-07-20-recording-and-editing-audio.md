@@ -200,7 +200,7 @@ Remember to commit and test your changes so you don't lose anything.
 
 To test locally, consult the refsheet for testing using Jekyll:
 
-[{{ site.baseurl }}/refsheets/jekyll-testing/]({{ site.baseurl }}/refsheets/jekyll-testing/)
+[{{ site.url }}/refsheets/jekyll-testing/]({{ site.baseurl }}/refsheets/jekyll-testing/)
 
 To test on GitHub, make sure it is pushed to GitHub and that you have added the config line for the gh-pages branch [from yesterday]({{ site.baseurl }}/present/2016/07/19/reveal-basics/#making-sure-that-you-are-pushing-to-gh-pages). 
 
