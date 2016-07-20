@@ -14,9 +14,13 @@ We will also cover converting your text from Markdown into Reveal-ready HTML5 us
 
 # Getting started
 
-### Installing the customized reveal.js repo
+First we will need to get a few things in place in our containers. 
 
-You should fork the assignment repo on Github. Since you are working in teams, you might want to maintain one repo while working and then create a fork in your individual accounts when you are finished with the assignment. 
+## Fork the customized reveal.js repo
+
+Fork the assignment repo on Github. All of the files that you will need in order to use reveal.js are contained in it. 
+
+Since you are working in teams, you might want to maintain one repo while working and then create a fork in your individual accounts when you are finished with the assignment. 
 If you are sharing a single repo, remember to add your teammate as a contributor.
 
 The assignment repo is located here: 
@@ -28,7 +32,7 @@ It will become clear why this is necessary at the end of the assignment.
 
 Finally, clone it to your containers so that you can work on it. 
 
-### Making sure that you are pushing to gh-pages
+## Making sure that you are pushing to gh-pages
 
 If you do not do this, your reveal.js presentation will not show up at the correct address. 
 

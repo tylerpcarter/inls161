@@ -1,0 +1,9 @@
+begin:
+  dow: Monday
+  date: "2016-06-20"
+end: 
+  dow: Thursday
+  date: "2016-07-21"
+exam:
+  date: "2016-07-25"
+  time: "11:30-14:30"
