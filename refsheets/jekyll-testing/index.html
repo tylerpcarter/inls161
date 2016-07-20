@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Tools for Information Literacy&nbsp;|&nbsp;Remote Operation Reference</title>
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Test your site using Jekyll and CodeAnywhere</title>
   <meta name="description" content="Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
@@ -22,7 +22,7 @@
   
   <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
 
-  <link rel="canonical" href="http://inls161.johndmart.in/refsheets/remote-ref/">
+  <link rel="canonical" href="http://inls161.johndmart.in/refsheets/jekyll-testing/">
 
   <link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="http://inls161.johndmart.in/feed.xml" />
 </head>
@@ -93,104 +93,52 @@
 	</nav>
 </header>
     <article class="group">
-      <h1>Remote Operation Reference</h1>
-<p class="subtitle"></p>
+      <p>We need to test our code to see if it worked. </p>
 
-<h1 id="remote-operation-reference">Remote Operation Reference</h1>
+<p>To do this, we will have to access the files locally in our CodeAnywhere and start a webserver. 
+Luckily, Jekyll is also a webserver.</p>
 
-<p>Dollar sign ($) in the command prompt means that you are in a user shell. </p>
+<p>Go to the SSH terminal and switch into the root directory of your website repository. </p>
 
-<p>What directory am I in right now?</p>
+<p>Something like: <code>cd ../YOUR-GITHUB-USERNAME.github.io</code></p>
 
-<p><code>pwd</code></p>
+<p>And then run the following command. </p>
 
-<p>Make me a new directory right here:</p>
+<p><code>jekyll serve --host=0.0.0.0 --drafts</code> </p>
 
-<p><code>mkdir mydirectory</code></p>
+<p>If the web code that you are testing is not a Jekyll site, or you don&#39;t want to see drafts, you can remove the <code>--drafts</code> switch.</p>
 
-<p>Move into that new directory that I just made:</p>
+<p>This starts a webserver and builds your site.
+Then we need to find the address where you can see your site. </p>
 
-<p><code>cd mydirectory</code></p>
+<p>If you right click on the container in your file tree and select &quot;Info&quot; it will bring up a document with two long links in it toward the bottom. 
+These links let you see applications that your server is running. </p>
 
-<p>Show me what is in this directory:</p>
+<p>Click the first link, which looks like this:</p>
 
-<p><code>ls</code></p>
+<p><a href="http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com">http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com</a></p>
 
-<p>Show me more information about what is in this directory:</p>
+<p>This will give you a 404 error. 
+This is because the default preview port for Jekyll is 4000. </p>
 
-<p><code>ls -lah</code></p>
+<p>So, edit the link to read:</p>
 
-<p>Make a new blank file with this name:</p>
+<p><a href="http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000">http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000</a></p>
 
-<p><code>touch myfile</code></p>
+<p>You will then be able to see your site online. If you click on the link above while I am demonstrating this in class, you will see my site.</p>
 
-<p>Output this on the command line:</p>
+<p>This will allow you to see if your changes worked or not. 
+If they did, and you like them, you can merge them back into the <code>master</code> branch and then they will be live on your site when you push them up to GitHub. </p>
 
-<p><code>echo &quot;Hello, world!&quot;</code></p>
+<p>To kill the preview, press <code>CTRL+C</code> in the SSH terminal where jekyll is running. </p>
 
-<p>Put that thing that I just said into the file I made before:</p>
+<h1 id="testing-reveal.js-and-other-web-code">Testing Reveal.js and other web code</h1>
 
-<p><code>echo &quot;Hello, world!&quot; &gt; myfile</code></p>
-
-<p>Put this other thing that I want to say into the same file on a new line:</p>
-
-<p><code>echo &quot;This is another line.&quot; &gt;&gt; myfile</code></p>
-
-<p>Show me what is in that file:</p>
-
-<p><code>cat myfile</code></p>
-
-<p>Put this thing I want to say into a totally new file:</p>
-
-<p><code>echo &quot;This is a third line.&quot; &gt; myfile2</code></p>
-
-<p>Put the stuff in this new file on a new line in my old file:</p>
-
-<p><code>cat myfile2 &gt;&gt; myfile</code></p>
-
-<p>Make a backup copy of that file:</p>
-
-<p><code>cp myfile myfile.bck</code></p>
-
-<p>Rename the old file to a new thing:</p>
-
-<p><code>mv myfile mynewfile</code></p>
-
-<p>Remove that other file that I created:</p>
-
-<p><code>rm myfile2</code></p>
-
-<p>Become a SUPERUSER:</p>
-
-<p><code>sudo COMMAND</code></p>
-
-<p>Become the ROOT user: </p>
-
-<p><code>sudo su</code></p>
-
-<p>Search for this software package:</p>
-
-<p><code>apt-cache search nano</code></p>
-
-<p>Install that software package (text editor):</p>
-
-<p><code>sudo apt-get install nano</code></p>
-
-<p>Install a different editor:</p>
-
-<p><code>sudo apt-get install vim</code></p>
-
-<p>Install yet another text editor:</p>
-
-<p><code>sudo apt-get install emacs23</code></p>
-
-<p>Open my file in that editor:</p>
-
-<p><code>nano mynewfile</code></p>
-
+<p>You can use the above technique to test any web code, such as for Reveal.js. 
+Since Jekyll acts as a webserver, it will run anything that can be rendered on the web, from plain HTML or HTML with JS to Jekyll formatted markdown.</p>
 
     </article>
-    <span class="print-footer">Remote Operation Reference - </span>
+    <span class="print-footer">Test your site using Jekyll and CodeAnywhere - </span>
     <footer>
   <hr class="slender">
   <ul class="footer-links">
