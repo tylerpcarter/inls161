@@ -7,7 +7,7 @@ $spacing-unit:     30px;
 }
 
 .highlight {
-    background: #fffff8;
+    background: #fffff8 !important;
     @extend %vertical-rhythm;
 
     .c     { color: #998; font-style: italic } // Comment
@@ -45,7 +45,7 @@ $spacing-unit:     30px;
     .ne    { color: #900; font-weight: bold } // Name.Exception
     .nf    { color: #900; font-weight: bold } // Name.Function
     .nn    { color: #555 } // Name.Namespace
-    .nt    { color: #000080 } // Name.Tag
+    .nt    { color: #3687C0 } //#56A0D3 }//#000080 } // Name.Tag
     .nv    { color: #008080 } // Name.Variable
     .ow    { font-weight: bold } // Operator.Word
     .w     { color: #bbb } // Text.Whitespace
