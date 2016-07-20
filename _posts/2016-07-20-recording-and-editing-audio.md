@@ -202,7 +202,13 @@ To test locally, consult the refsheet for testing using Jekyll:
 
 [{{ site.baseurl }}/refsheets/jekyll-testing/]({{ site.baseurl }}/refsheets/jekyll-testing/)
 
-To test on GitHub, make sure it is pushed to GitHub and that you have added the config line for the gh-pages branch [from yesterday]({{ site.baseurl }}/present/2016/07/19/reveal-basics/#making-sure-that-you-are-pushing-to-gh-pages)
+To test on GitHub, make sure it is pushed to GitHub and that you have added the config line for the gh-pages branch [from yesterday]({{ site.baseurl }}/present/2016/07/19/reveal-basics/#making-sure-that-you-are-pushing-to-gh-pages). 
+
+You should then be able to go to an address that looks like the following, and see your presentation:
+
+http://YOUR-GITHUB-USERNAME.github.io/YOUR-PRESENTATION-REPONAME/
+
+*Et voila.*
 
 # Next time
 
