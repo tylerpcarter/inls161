@@ -6,7 +6,9 @@ title: Tools for Information Literacy
 
 ## Welcome to INLS 161-001
 
-{% include info.md %}{% newthought 'This site houses' %} the course files and syllabus for INLS 161-001, Tools for Information Literacy.
+{% include info.md %}
+
+{% newthought 'This site houses' %} the course files and syllabus for INLS 161-001, Tools for Information Literacy.
 
 The course runs from 20 June 2016 to 25 July 2016. 
 

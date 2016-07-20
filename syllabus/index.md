@@ -6,7 +6,9 @@ weight: 3
 
 ## About the Course
 
-{% include info.md %}{% newthought 'INLS161 focuses on concepts and tools' %} necessary for communicating information to users.
+{% include info.md %}
+
+{% newthought 'INLS161 focuses on concepts and tools' %} necessary for communicating information to users.
 This is a critical component of information literacy, which involves seeking, evaluating, and utilizing information. 
 INLS151, titled "Retrieving and Analyzing Information," is focused on the seeking and evaluating components of information literacy. 
 This course is about effective use and communication. 
