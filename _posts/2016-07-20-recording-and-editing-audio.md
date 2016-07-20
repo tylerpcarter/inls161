@@ -175,6 +175,33 @@ Just to make sure that it is clear, the way that you add audio to a slide is by 
 
 The `data-audio-src` takes care of adding the audio link so that it will play automatically. 
 
+# Demos and code examples
+
+Once you have your `index.html` file converted and you want to polish up the final version of the presentation, you can start adding and changing backgrounds, fragments, adding audio, and other elements to the individual slides. 
+
+Think of the markdown file as a draft for content (`<aside class="notes">`) and structure (headers indicate where each slide begins). 
+
+Use the reveal demo presentation find slide with things that you would like to be able to do in your presentation: 
+
+http://lab.hakim.se/reveal-js/
+
+Then find the corresponding section in the source file for the demo to see the HTML for the element or attribute you wish to use: 
+
+https://github.com/hakimel/reveal.js/blob/master/demo.html
+
+Finally, consult the `README.md` file in the base Reveal.js repo on GitHub. 
+It has A TON of really helpful info from simple stuff to very advanced things:
+
+https://github.com/hakimel/reveal.js/blob/master/README.md
+
+## Testing
+
+Remember to commit and test your changes so you don't lose anything. 
+
+To test locally, consult the refsheet for testing using Jekyll:
+
+[Test your site using Jekyll and CodeAnywhere]({{ site.baseurl }}/refsheets/jekyll-testing/)
+
 # Next time
 
 We have arrived at the last normal session of class. 

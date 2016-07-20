@@ -116,6 +116,10 @@ weight: 9
 
 <a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers" target="_blank">Liquid for Programmers - Shopify Dev Team</a>
 
+### Using Jekyll to test web code
+
+[Test your site using Jekyll and CodeAnywhere]({{ site.baseurl }}/refsheets/jekyll-testing/)
+
 # Document processing
 
 ## Pandoc
