@@ -688,6 +688,7 @@ ul.footer-links {
 
 ul.footer-links li {
   display: inline;
+  line-height: 1.5rem;
   padding: 0.5rem 0.25rem !important;
   margin: 0 !important;
   text-indent: 0% !important; }
