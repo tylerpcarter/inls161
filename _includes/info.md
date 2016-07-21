@@ -8,9 +8,9 @@
 <span class="{{ site.data.info.time.icon }}">&nbsp;**Time:**</span> 11:30-13:00<br/>
 <span class="{{ site.data.info.days.icon }}">&nbsp;**Days:**</span> MoTuWeThFr<br/>
 <span class="{{ site.data.info.location.icon }}">&nbsp;**Location:**</span> {{ site.data.info.location.var }}<br/>
-<span class="ico-desktop">&nbsp;**Lab:**</span> Friday is lab day: same time same place.<br/>
-<span class="ico-calendar-open">&nbsp;**Dates:**</span> 20 June 2016 - 25 July 2016<br/>
-<span class="ico-pencil">&nbsp;**Exam period:**</span> 11:30-14:30 25 July 2016<br/><br/>
+<span class="ico-desktop">&nbsp;**Lab:**</span> {{ site.data.dates.lab.dow }}: {{ site.data.dates.lab.place }}.<br/>
+<span class="ico-calendar-open">&nbsp;**Dates:**</span> {{ site.data.dates.begin.date | date: "%-d %B %Y" }} - {{ site.data.dates.end.date | date: "%-d %B %Y" }}<br/>
+<span class="ico-pencil">&nbsp;**Exam period:**</span> {{ site.data.dates.exam.time  }} {{ site.data.dates.exam.date | date: "%-d %B %Y" }}<br/><br/>
 <span class="{{ site.data.info.sakai.icon }}">&nbsp;**Sakai**</span>: [{{ site.data.info.sakai.link }}]({{ site.data.info.sakai.link }})<br/>
 <span class="{{ site.data.info.github.icon }}">&nbsp;**GitHub**</span>: [{{ site.data.info.github.link }}]({{ site.data.info.slack.link }})<br/>
 <span class="{{ site.data.info.slack.icon }}">&nbsp;**Slack**</span>: [{{ site.data.info.slack.link }}]({{ site.data.info.slack.link }})<br/>

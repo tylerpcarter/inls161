@@ -168,17 +168,7 @@ All of the tasks are interconnected, so it is important to complete the tasks in
 See [this page]({{ site.baseurl }}/assignments/) for a list of assignments and links to individual assignment instructions. 
 Assignment descriptions will be up typically one week before the due date. 
 
-{% marginnote 'tab1' '*Table 1*: List of required course tasks' %}
-
-| **Task** | **Components** | **%** | **Due date** |  
-| :------- | :------------- | ----: | -----------: |  
-| Basics | CodeAnywhere, GitHub setup | 20 | Week 1 |  
-| Web | Site published on GitHub Pages | 20 | 5 July |  
-| Text | Create formatted text document | 15 | 11 July |  
-| Spreadsheet | Create and format spreadsheets using scripts | 5 | 13 July |  
-| DB | Create and script queries in a database from tables | 15 | 18 July |  
-| Present | Create and record a presentation | 15 | 21 July |  
-| Participation | Come to class, Share resources | 10 | N/A |  
+{% include assignment-table.md %} 
 
 ## Due Dates
 
@@ -217,7 +207,7 @@ Attendance is mandatory. Absence will affect your grade in the class. There is n
 
 {% marginnote 'tab2' '*Table 2*: Course grades<br/><br/>Explanation of UNC grading systems: http://registrar.unc.edu/academic-services/grades/explanation-of-grading-system/.' %}
 
-| Points            | Grade UG            | Grade G           | What it means |  
+| Percentage            | Grade UG            | Grade G           | What it means |  
 |:-------|:---------|:--------|:------------- |  
 | 95>    | A        | H       | Highest level mastery of course content |
 | 92-94  | A-       | H       | |
@@ -288,7 +278,7 @@ However, academic dishonesty in any form is unacceptable, because any breach in 
 
 ## Diversity and Inclusion
 
-{% marginnote 'andy' '<img width="300px" src="https://touchofmodern.insnw.net/products/000/014/708/30537003d42cb6c83c99e05353bda119_large.jpg" alt="I think everybody should like everybody. - Andy Warhol" />' %}In support of the University's diversity goals and the mission of the School of Information and Library Science, SILS embraces diversity as an ethical and societal value.
+{% marginnote 'andy' '<img src="https://touchofmodern.insnw.net/products/000/014/708/30537003d42cb6c83c99e05353bda119_large.jpg" alt="I think everybody should like everybody. - Andy Warhol" />' %}In support of the University's diversity goals and the mission of the School of Information and Library Science, SILS embraces diversity as an ethical and societal value.
 
 We broadly define diversity to include race, gender, national origin, ethnicity, religion, social class, age, sexual orientation and physical and learning ability.
 

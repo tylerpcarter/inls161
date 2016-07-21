@@ -7,3 +7,6 @@ end:
 exam:
   date: "2016-07-25"
   time: "11:30-14:30"
+lab: 
+  dow: Friday
+  place: same time, same place
