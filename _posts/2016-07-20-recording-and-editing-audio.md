@@ -1,12 +1,16 @@
 ---
 layout: post
-title: "Recording and editing audio"
+title: "Adding audio for narration and video to your slides"
 category: Present
 tags: 
 - reveal.js
 - presentations
 - audio
 - audacity
+- video
+- YouTube
+- MP4
+- Jekyll
 ---
 
 Today we are going to work with Audacity to create and edit some audio to embed in our presentations. 
@@ -174,6 +178,32 @@ Just to make sure that it is clear, the way that you add audio to a slide is by 
 ```
 
 The `data-audio-src` takes care of adding the audio link so that it will play automatically. 
+
+# Adding a video to a slide so that it will play automatically
+
+Unfortunately, the YouTube autoplay feature for Reveal.js is broken at the moment because of a change to the YouTube API. 
+However, there is a workaround which involves converting/downloading YouTube videos as MP4s and then using the `video` HTML5 element to handle them in a Reveal.js slide.
+
+First, you have to download your video as an MP4. Not all MP4 converters work with HTML5 for some reason. I tested about 10 of them and most did not work very well. This one does:
+
+http://www.saveitoffline.com/
+
+You just put the link to your YouTube video in there and then click the thing underneath the link box and then click to download 360p - MP4. 
+
+Once you have that, make a "video" directory in your container on CodeAnywhere and upload your video into it (remember that the filename cannot contain spaces). Then you need to structure your slide exactly like this, but change the following accordingly:
+
+1. VIDEONAME is the filename of your video file.
+2. STARTTIME is the time in seconds that you want the video to start.
+3. ENDTIME is the time in seconds that you want the video to end. 
+
+```
+<section>
+    <video data-audio-controls src="./video/VIDEONAME.mp4#t=STARTTIME,ENDTIME" type="video/mp4" width="100%" />
+  </video>
+</section>
+```
+
+Now when you test this, it should autoplay through just like the audio embedded in the other slides. 
 
 # Demos and code examples
 

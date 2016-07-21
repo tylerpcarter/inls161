@@ -15,6 +15,12 @@
   {% if site.data.options.mathjax %}
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   {% endif %}
+  
+  <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
+  {% if site.data.options.moment %}
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
+
+  {% endif %} 
 
   <link rel="stylesheet" href="{{ "/css/tufte.css" | prepend: site.baseurl }}"> 
   

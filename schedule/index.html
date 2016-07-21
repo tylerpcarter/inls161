@@ -5,18 +5,18 @@ weight: 5
 ---
 
 <br/>
-<span class="huge date"><a href="#today" id="todays_date">{{ site.time | date: "%A, %-d %B %Y" }}</a></span> 
+<span class="huge date"><a href="#today" id="todaydate"><!--Optionally, this can be used as a fallback date: {{ site.time | date: "%A, %-d %B %Y" }}--></a></span>
 
-<!--<script>
-var dateFormat = require('dateformat');
-var n = new Date();
-document.getElementById("todays_date").innerHTML = dateFormat(n, "dddd, mmmm dS, yyyy, h:MM:ss TT");
-</script>
+    <script>
+     // set an element
+     //$("#todaydate").val( moment().format('D MMM YYYY') );
 
-<script>
-var n = new Date()
-document.getElementById("todays_date").innerHTML = n.toDateString();
-</script>-->
+     // set a variable
+     var todaydate = moment().format('dddd, D MMM, YYYY');
+     
+     // insert today into 
+     document.getElementById("todaydate").innerHTML = todaydate
+    </script>
 
   <ul class="content-listing ">
     {% for post in site.posts reversed %}      
