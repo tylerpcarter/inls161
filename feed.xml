@@ -1496,12 +1496,42 @@ There is a ton of relevant information on this topic out in the Internet.&lt;/p&
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>http://inls161.johndmart.in/</link>
     <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Jul 2016 11:19:42 -0400</pubDate>
-    <lastBuildDate>Thu, 21 Jul 2016 11:19:42 -0400</lastBuildDate>
+    <pubDate>Thu, 21 Jul 2016 17:39:38 -0400</pubDate>
+    <lastBuildDate>Thu, 21 Jul 2016 17:39:38 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
-        <title>Recording and editing audio</title>
+        <title>Wrap-up: what do we know now?</title>
+        <description>&lt;p&gt;Today we are going to wrap up the class and talk about the skills that you are taking away from this experience. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;p&gt;This information will be useful in the context of preparing a resume/CV or perhaps in conducting a job interview in which you are asked to talk about technical skills. &lt;/p&gt;
+
+&lt;p&gt;We will work through this list together and then I will update this post at the end of class.&lt;/p&gt;
+
+&lt;h1 id=&quot;during-the-exam-period&quot;&gt;During the exam period&lt;/h1&gt;
+
+&lt;p&gt;The exam period for this class is 11:30-14:30 on Monday, 25 July 2016. 
+You are all required to attend the exam session. 
+We will be viewing everyone&amp;#39;s presentations with Q&amp;amp;A to follow. &lt;/p&gt;
+
+&lt;p&gt;This should not take the entire time alotted, but plan for at least an hour and half to be safe. &lt;/p&gt;
+</description>
+        <pubDate>Thu, 21 Jul 2016 00:00:00 -0400</pubDate>
+        <link>http://inls161.johndmart.in/present/2016/07/21/what-do-we-know/</link>
+        <guid isPermaLink="true">http://inls161.johndmart.in/present/2016/07/21/what-do-we-know/</guid>
+        
+        <category>skillsets</category>
+        
+        <category>tools</category>
+        
+        
+        <category>Present</category>
+        
+      </item>
+    
+      <item>
+        <title>Adding audio for narration and video to your slides</title>
         <description>&lt;p&gt;Today we are going to work with Audacity to create and edit some audio to embed in our presentations. 
 &lt;excerpt/&gt;&lt;/p&gt;
 
@@ -1659,6 +1689,31 @@ You will have to put the name of your ZIP file instead of &amp;quot;audio.zip.&a
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The &lt;code&gt;data-audio-src&lt;/code&gt; takes care of adding the audio link so that it will play automatically. &lt;/p&gt;
 
+&lt;h1 id=&quot;adding-a-video-to-a-slide-so-that-it-will-play-automatically&quot;&gt;Adding a video to a slide so that it will play automatically&lt;/h1&gt;
+
+&lt;p&gt;Unfortunately, the YouTube autoplay feature for Reveal.js is broken at the moment because of a change to the YouTube API. 
+However, there is a workaround which involves converting/downloading YouTube videos as MP4s and then using the &lt;code&gt;video&lt;/code&gt; HTML5 element to handle them in a Reveal.js slide.&lt;/p&gt;
+
+&lt;p&gt;First, you have to download your video as an MP4. Not all MP4 converters work with HTML5 for some reason. I tested about 10 of them and most did not work very well. This one does:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.saveitoffline.com/&quot;&gt;http://www.saveitoffline.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You just put the link to your YouTube video in there and then click the thing underneath the link box and then click to download 360p - MP4. &lt;/p&gt;
+
+&lt;p&gt;Once you have that, make a &amp;quot;video&amp;quot; directory in your container on CodeAnywhere and upload your video into it (remember that the filename cannot contain spaces). Then you need to structure your slide exactly like this, but change the following accordingly:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;VIDEONAME is the filename of your video file.&lt;/li&gt;
+&lt;li&gt;STARTTIME is the time in seconds that you want the video to start.&lt;/li&gt;
+&lt;li&gt;ENDTIME is the time in seconds that you want the video to end. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&amp;lt;section&amp;gt;
+    &amp;lt;video data-audio-controls src=&quot;./video/VIDEONAME.mp4#t=STARTTIME,ENDTIME&quot; type=&quot;video/mp4&quot; width=&quot;100%&quot; /&amp;gt;
+  &amp;lt;/video&amp;gt;
+&amp;lt;/section&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now when you test this, it should autoplay through just like the audio embedded in the other slides. &lt;/p&gt;
+
 &lt;h1 id=&quot;demos-and-code-examples&quot;&gt;Demos and code examples&lt;/h1&gt;
 
 &lt;p&gt;Once you have your &lt;code&gt;index.html&lt;/code&gt; file converted and you want to polish up the final version of the presentation, you can start adding and changing backgrounds, fragments, adding audio, and other elements to the individual slides. &lt;/p&gt;
@@ -1716,6 +1771,14 @@ This is an important discussion because it will orient you to the kinds of thing
         <category>audio</category>
         
         <category>audacity</category>
+        
+        <category>video</category>
+        
+        <category>YouTube</category>
+        
+        <category>MP4</category>
+        
+        <category>Jekyll</category>
         
         
         <category>Present</category>
@@ -2845,187 +2908,6 @@ Through this we will learn more about pipes and redirecting output.&lt;label for
         <category>Bash</category>
         
         <category>Pandoc</category>
-        
-        
-        <category>Text</category>
-        
-      </item>
-    
-      <item>
-        <title>Introduction to scripting</title>
-        <description>&lt;p&gt;Today we will learn how to convert our plaintext Markdown into a PDF. 
-To do this we will have to install some more software, which may take a while. &lt;/p&gt;
-
-&lt;p&gt;In the mean time, we will cover some of the basics of scripting in order to be able to automate our workflows a little bit better. 
-&lt;excerpt/&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;texlive&quot;&gt;Texlive&lt;/h1&gt;
-
-&lt;p&gt;The TeX (or LaTeX) distribution that we are using in conjunction with Pandoc is called &amp;quot;TeXLive.&amp;quot; 
-This software is in our CodeAnywhere container&amp;#39;s repositories. &lt;/p&gt;
-
-&lt;p&gt;It is very large, so we are only going to install the base package to avoid running out of space on our CodeAnywhere containers. 
-We have a total of 2GB of space. 
-TeXLive should take up an extra ~650MB of space. &lt;/p&gt;
-
-&lt;p&gt;To check to see how much space we have, we can run this command in a terminal:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;df -h&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;It will look something like this:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace$ df -h
-Filesystem          Size  Used Avail Use% Mounted on
-/vz/private/669416  2.0G  1.1G  953M  54% /
-none                128M  4.0K  128M   1% /dev
-none                4.0K     0  4.0K   0% /sys/fs/cgroup
-none                 26M   52K   26M   1% /run
-none                5.0M     0  5.0M   0% /run/lock
-none                128M     0  128M   0% /run/shm
-none                100M     0  100M   0% /run/user
-cabox@box-codeanywhere:~/workspace$
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Make a mental note of the number in the first line of output. 
-I have 953MB available. &lt;/p&gt;
-
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
-
-&lt;p&gt;Now, to get TeXLive installed on our CodeAnywhere containers, we&amp;#39;ll need to use apt-get&lt;label for=&#39;apt-get&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;apt-get&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;“AptGet/Howto.” Ubuntu Documentation - Community Help Wiki. &lt;a href=&quot;https://help.ubuntu.com/community/AptGet/Howto&quot;&gt;https://help.ubuntu.com/community/AptGet/Howto&lt;/a&gt;. &lt;/span&gt; just like we did for Pandoc:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;sudo apt-get install texlive&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;That will output a bunch of stuff and tell us how much the installation will take up on disk. 
-See if the number is smaller than your available space and then type &lt;code&gt;Y&lt;/code&gt; and hit enter if you have enough space. 
-If not, we&amp;#39;ll have to clear something out so you can install it. &lt;/p&gt;
-
-&lt;p&gt;This may take a while. &lt;/p&gt;
-
-&lt;p&gt;If that command does not work, it is likely because you need to update your software source repositories and upgrade your installed software packages. 
-You can do that with two commands:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;sudo apt-get update&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This updates the sources. Follow it with;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;sudo apt-get dist-upgrade&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This actually downloads and installs updates to the already-installed software. &lt;/p&gt;
-
-&lt;p&gt;In the mean time, we can look at scripting. &lt;/p&gt;
-
-&lt;h1 id=&quot;scripting&quot;&gt;Scripting&lt;/h1&gt;
-
-&lt;p&gt;Scripting is fun when you get used to how it works. 
-It is also really useful for not having to repeat the same work over and over again. &lt;/p&gt;
-
-&lt;p&gt;Creating scripts is often a trial and error process, though, and can feel frustrating (see below).&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;What scripting feels like &lt;a href=&quot;https://t.co/jYR9WQftIX&quot;&gt;https://t.co/jYR9WQftIX&lt;/a&gt;&lt;/p&gt;&amp;mdash; SecuriTay (@SwiftOnSecurity) &lt;a href=&quot;https://twitter.com/SwiftOnSecurity/status/749783791279939585&quot;&gt;July 4, 2016&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
-&lt;h2 id=&quot;how-to-do-it?&quot;&gt;How to do it?&lt;/h2&gt;
-
-&lt;p&gt;In class today, we&amp;#39;ll go over some basic scripting. 
-We&amp;#39;ll use William Shotts&amp;#39; tutorial.Writing Shell Scripts tutorial by William Shotts for tomorrow.&lt;label for=&#39;shell-scripts&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;shell-scripts&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. &lt;a href=&quot;http://linuxcommand.org/lc3_writing_shell_scripts.php&quot;&gt;http://linuxcommand.org/lc3_writing_shell_scripts.php&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
-
-&lt;p&gt;A basic Bash script is simply a list of commands in a file. &lt;/p&gt;
-
-&lt;p&gt;The lines in the file get executed sequentially and then at the end of the file Bash stops, or waits depending on what the file tells it to do. &lt;/p&gt;
-
-&lt;h3 id=&quot;execution&quot;&gt;Execution&lt;/h3&gt;
-
-&lt;p&gt;All shell scripts should be executable and specify what shell program will run them. 
-If this is not the case, then we have to call a shell in the command line in order to run. &lt;/p&gt;
-
-&lt;p&gt;To create a basic Bash shell script, just touch a new file and give it the extension &lt;code&gt;.sh&lt;/code&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;touch hello-world.sh&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Then we&amp;#39;ll make it executable:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;chmod +x hello-world.sh&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This command sets the execute flag for user, group, and anyone in the permissions. 
-They should look like this if you list the files with long output:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/helper-scripts$ ls -lah
-total 64K                                   
-drwxr-xr-x 3 cabox cabox 4.0K Jul  7 12:44 .
-drwxrwxr-x 5 cabox cabox 4.0K Jul  7 10:02 ..
--rwxr-xr-x 1 cabox cabox  104 Jul  7 12:50 hello-world.sh 
-cabox@box-codeanywhere:~/workspace/helper-scripts$ 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;We also need to add a &amp;quot;shebang&amp;quot; to our script to tell Bash to execute this file. Inside the &lt;code&gt;hello-world.sh&lt;/code&gt; file, put this on the first line:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;echo&quot;&gt;Echo&lt;/h3&gt;
-
-&lt;p&gt;Now, we&amp;#39;re going to make this script say hello to the world and hello to us. 
-We do this by using the &lt;code&gt;echo&lt;/code&gt; command, which outputs whatever you tell it as text to &lt;code&gt;STDOUT&lt;/code&gt;. 
-Try it:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;echo &amp;quot;Hello, world!&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;You should see this in the command line:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/helper-scripts$ echo &quot;Hello, world!&quot;
-Hello, world!
-cabox@box-codeanywhere:~/workspace/helper-scripts$
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Now we will add this command to our script: &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Say &quot;Hello, world!&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Now when we run this script, we will see the same output as from our earlier &lt;code&gt;echo&lt;/code&gt; command on &lt;code&gt;STDOUT&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
-Hello, world!
-cabox@box-codeanywhere:~/workspace/helper-scripts$
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Note the &lt;code&gt;./&lt;/code&gt; in front of the script&amp;#39;s filename in the above command. &lt;/p&gt;
-
-&lt;p&gt;We have to do this in order to execute files and scripts that are not in our execute path. 
-The excecute path is just a list of directories from which we are allowed to execute files without jumping through some extra hoops. 
-To see your path, use the following command: &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/helper-scripts$ echo $PATH 
-/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
-cabox@box-codeanywhere:~/workspace/helper-scripts$
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;These are all the directories from which you can execute a program. &lt;/p&gt;
-
-&lt;p&gt;Finally, we want to add a &amp;quot;Hello!&amp;quot; to ourselves, and use our GitHub username. 
-We will add the same command as before, substituting our GitHub username for world, so that the script looks like this (I&amp;#39;ve used my own name here):&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# Say &quot;Hello, world!&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# Say &quot;Hello, YOU!&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello, jdmar3!&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Now if we run this, we will see all of this output:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
-Hello, world!
-Hello, jdmar3!
-cabox@box-codeanywhere:~/workspace/helper-scripts$
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;tomorrow&quot;&gt;Tomorrow&lt;/h2&gt;
-
-&lt;p&gt;We will pick up where we left off tomorrow during lab and get to work creating our scripts for the next assignment. 
-Please review the tutorial on writing shell scripts again.&lt;label for=&#39;shell-scripts&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;shell-scripts&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. &lt;a href=&quot;http://linuxcommand.org/lc3_writing_shell_scripts.php&quot;&gt;http://linuxcommand.org/lc3_writing_shell_scripts.php&lt;/a&gt;. &lt;/span&gt; 
-Also, we&amp;#39;ll use another tutorial so that we can learn to create prompts for user input.&lt;label for=&#39;user-input&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;user-input&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Chadwick, Ryan. “User Input - Bash Scripting Tutorial.” Ryan’s Tutorials. &lt;a href=&quot;http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php&quot;&gt;http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 07 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/text/2016/07/07/scripting/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/text/2016/07/07/scripting/</guid>
-        
-        <category>Pandoc</category>
-        
-        <category>PDF</category>
-        
-        <category>LaTeX</category>
-        
-        <category>Bash</category>
-        
-        <category>Scripts</category>
         
         
         <category>Text</category>

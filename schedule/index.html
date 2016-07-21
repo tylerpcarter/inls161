@@ -17,6 +17,12 @@
   
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
+  
+  <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
+  
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
+
+   
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -94,18 +100,18 @@
 </header>
     <article>
       <br/>
-<span class="huge date"><a href="#today" id="todays_date">Thursday, 21 July 2016</a></span> 
+<span class="huge date"><a href="#today" id="todaydate"><!--Optionally, this can be used as a fallback date: Thursday, 21 July 2016--></a></span>
 
-<!--<script>
-var dateFormat = require('dateformat');
-var n = new Date();
-document.getElementById("todays_date").innerHTML = dateFormat(n, "dddd, mmmm dS, yyyy, h:MM:ss TT");
-</script>
+    <script>
+     // set an element
+     //$("#todaydate").val( moment().format('D MMM YYYY') );
 
-<script>
-var n = new Date()
-document.getElementById("todays_date").innerHTML = n.toDateString();
-</script>-->
+     // set a variable
+     var todaydate = moment().format('dddd, D MMM, YYYY');
+     
+     // insert today into 
+     document.getElementById("todaydate").innerHTML = todaydate
+    </script>
 
   <ul class="content-listing ">
           
@@ -472,14 +478,29 @@ We will also cover converting your text from Markdown into Reveal-ready HTML5 us
           <hr class="slender">
           
           
-          <a href="/present/2016/07/20/recording-and-editing-audio/" ><h1 class="contrast" >Recording and editing audio</h1></a>
+          <a href="/present/2016/07/20/recording-and-editing-audio/" ><h1 class="contrast" >Adding audio for narration and video to your slides</h1></a>
           <span class="larger">Wednesday, 20 July 2016</span>
           <br/>
           <div><p>Today we are going to work with Audacity to create and edit some audio to embed in our presentations. </p>
 </div>
           <br/>
           <ul class="tags">
-            <li><a href="/topics#reveal.js" class="tag">reveal.js</a></li><li><a href="/topics#presentations" class="tag">presentations</a></li><li><a href="/topics#audio" class="tag">audio</a></li><li><a href="/topics#audacity" class="tag">audacity</a></li>
+            <li><a href="/topics#reveal.js" class="tag">reveal.js</a></li><li><a href="/topics#presentations" class="tag">presentations</a></li><li><a href="/topics#audio" class="tag">audio</a></li><li><a href="/topics#audacity" class="tag">audacity</a></li><li><a href="/topics#video" class="tag">video</a></li><li><a href="/topics#YouTube" class="tag">YouTube</a></li><li><a href="/topics#MP4" class="tag">MP4</a></li><li><a href="/topics#Jekyll" class="tag">Jekyll</a></li>
+          </ul>
+        </li>
+          
+        <li class="listing">
+          <hr class="slender">
+          
+          
+          <a href="/present/2016/07/21/what-do-we-know/" ><h1 class="contrast" id="today">Wrap-up: what do we know now?</h1></a>
+          <span class="larger">Thursday, 21 July 2016</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="smaller date contrast">TODAY</span>
+          <br/>
+          <div><p>Today we are going to wrap up the class and talk about the skills that you are taking away from this experience. </p>
+</div>
+          <br/>
+          <ul class="tags">
+            <li><a href="/topics#skillsets" class="tag">skillsets</a></li><li><a href="/topics#tools" class="tag">tools</a></li>
           </ul>
         </li>
     

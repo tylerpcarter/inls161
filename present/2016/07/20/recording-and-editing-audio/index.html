@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Tools for Information Literacy&nbsp;|&nbsp;Recording and editing audio</title>
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Adding audio for narration and video to your slides</title>
   <meta name="description" content="Today we are going to work with Audacity to create and edit some audio to embed in our presentations. ">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
@@ -17,6 +17,12 @@
   
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
+  
+  <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
+  
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
+
+   
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -93,7 +99,7 @@
 	</nav>
 </header>
     <article class="group">
-      <h1>Recording and editing audio</h1>
+      <h1>Adding audio for narration and video to your slides</h1>
 
 
 
@@ -256,6 +262,31 @@ You will have to put the name of your ZIP file instead of &quot;audio.zip.&quot;
 </code></pre></div>
 <p>The <code>data-audio-src</code> takes care of adding the audio link so that it will play automatically. </p>
 
+<h1 id="adding-a-video-to-a-slide-so-that-it-will-play-automatically">Adding a video to a slide so that it will play automatically</h1>
+
+<p>Unfortunately, the YouTube autoplay feature for Reveal.js is broken at the moment because of a change to the YouTube API. 
+However, there is a workaround which involves converting/downloading YouTube videos as MP4s and then using the <code>video</code> HTML5 element to handle them in a Reveal.js slide.</p>
+
+<p>First, you have to download your video as an MP4. Not all MP4 converters work with HTML5 for some reason. I tested about 10 of them and most did not work very well. This one does:</p>
+
+<p><a href="http://www.saveitoffline.com/">http://www.saveitoffline.com/</a></p>
+
+<p>You just put the link to your YouTube video in there and then click the thing underneath the link box and then click to download 360p - MP4. </p>
+
+<p>Once you have that, make a &quot;video&quot; directory in your container on CodeAnywhere and upload your video into it (remember that the filename cannot contain spaces). Then you need to structure your slide exactly like this, but change the following accordingly:</p>
+
+<ol>
+<li>VIDEONAME is the filename of your video file.</li>
+<li>STARTTIME is the time in seconds that you want the video to start.</li>
+<li>ENDTIME is the time in seconds that you want the video to end. </li>
+</ol>
+<div class="highlight"><pre><code class="language-" data-lang="">&lt;section&gt;
+    &lt;video data-audio-controls src="./video/VIDEONAME.mp4#t=STARTTIME,ENDTIME" type="video/mp4" width="100%" /&gt;
+  &lt;/video&gt;
+&lt;/section&gt;
+</code></pre></div>
+<p>Now when you test this, it should autoplay through just like the audio embedded in the other slides. </p>
+
 <h1 id="demos-and-code-examples">Demos and code examples</h1>
 
 <p>Once you have your <code>index.html</code> file converted and you want to polish up the final version of the presentation, you can start adding and changing backgrounds, fragments, adding audio, and other elements to the individual slides. </p>
@@ -306,7 +337,7 @@ This is an important discussion because it will orient you to the kinds of thing
 <p>
   <br/>
   <ul class="tags">
-    <li><a href="/topics#reveal.js" class="tag">reveal.js</a></li><li><a href="/topics#presentations" class="tag">presentations</a></li><li><a href="/topics#audio" class="tag">audio</a></li><li><a href="/topics#audacity" class="tag">audacity</a></li>
+    <li><a href="/topics#reveal.js" class="tag">reveal.js</a></li><li><a href="/topics#presentations" class="tag">presentations</a></li><li><a href="/topics#audio" class="tag">audio</a></li><li><a href="/topics#audacity" class="tag">audacity</a></li><li><a href="/topics#video" class="tag">video</a></li><li><a href="/topics#YouTube" class="tag">YouTube</a></li><li><a href="/topics#MP4" class="tag">MP4</a></li><li><a href="/topics#Jekyll" class="tag">Jekyll</a></li>
   </ul> 
 </p>
 
@@ -315,9 +346,11 @@ This is an important discussion because it will orient you to the kinds of thing
     <a class="prev" href="/present/2016/07/19/reveal-basics/">&laquo; Reveal.js</a>
   
   
+    <a class="next" href="/present/2016/07/21/what-do-we-know/">Wrap-up: what do we know now? &raquo;</a>
+  
 </div>
     </article>
-    <span class="print-footer">Recording and editing audio - July 20, 2016 - </span>
+    <span class="print-footer">Adding audio for narration and video to your slides - July 20, 2016 - </span>
     <footer>
   <hr class="slender">
   <ul class="footer-links">
