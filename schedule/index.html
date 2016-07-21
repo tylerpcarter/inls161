@@ -94,7 +94,18 @@
 </header>
     <article>
       <br/>
-<span class="huge date"><a href="#today">Wednesday, 20 July 2016</a></span> 
+<span class="huge date"><a href="#today" id="todays_date">Thursday, 21 July 2016</a></span> 
+
+<!--<script>
+var dateFormat = require('dateformat');
+var n = new Date();
+document.getElementById("todays_date").innerHTML = dateFormat(n, "dddd, mmmm dS, yyyy, h:MM:ss TT");
+</script>
+
+<script>
+var n = new Date()
+document.getElementById("todays_date").innerHTML = n.toDateString();
+</script>-->
 
   <ul class="content-listing ">
           
@@ -461,8 +472,8 @@ We will also cover converting your text from Markdown into Reveal-ready HTML5 us
           <hr class="slender">
           
           
-          <a href="/present/2016/07/20/recording-and-editing-audio/" ><h1 class="contrast" id="today">Recording and editing audio</h1></a>
-          <span class="larger">Wednesday, 20 July 2016</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="smaller date contrast">TODAY</span>
+          <a href="/present/2016/07/20/recording-and-editing-audio/" ><h1 class="contrast" >Recording and editing audio</h1></a>
+          <span class="larger">Wednesday, 20 July 2016</span>
           <br/>
           <div><p>Today we are going to work with Audacity to create and edit some audio to embed in our presentations. </p>
 </div>
