@@ -507,13 +507,19 @@ ul.footer-links li{
 
 .blognav a {
   display: block;
-  width: 50%;
-  float: left;
   margin: 1em 0;
 }
 
 .blognav .next {
   text-align: right;
+	float: right;
+	width: 50%;
+}
+
+.blognav .prev {
+  text-align: left;
+	float: left;
+	width: 50%;
 }
 
 /*.prev:before {
