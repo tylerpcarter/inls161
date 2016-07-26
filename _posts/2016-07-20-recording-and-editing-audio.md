@@ -179,7 +179,7 @@ Just to make sure that it is clear, the way that you add audio to a slide is by 
 
 The `data-audio-src` takes care of adding the audio link so that it will play automatically. 
 
-# Adding a video to a slide so that it will play automatically
+# Adding an autoplay video to a slide
 
 Unfortunately, the YouTube autoplay feature for Reveal.js is broken at the moment because of a change to the YouTube API. 
 However, there is a workaround which involves converting/downloading YouTube videos as MP4s and then using the `video` HTML5 element to handle them in a Reveal.js slide.

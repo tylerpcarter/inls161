@@ -207,7 +207,8 @@ table, table.booktabs { width: auto;  //making booktabs style tables the unstyle
                text-align: center; }
 
 th, td{ font-size: 1rem; //1.2rem;
-        line-height: 1.71428571;  }
+        line-height: 1.71428571; 
+				vertical-align: top !important; }
 
 .booktabs th.cmid, th { border-bottom: 1px solid lighten($border-color, 25%); }
 
@@ -217,7 +218,8 @@ th, td{ font-size: 1rem; //1.2rem;
 
 .booktabs td, td {  padding-left: 0.5em;
                     padding-right: 0.5em;
-                    text-align: left; }
+                    text-align: left; 
+										vertical-align: top !important; }
 
 .booktabs caption, caption { font-size: 90%;
                     text-align: left;
@@ -240,7 +242,6 @@ th, td{ font-size: 1rem; //1.2rem;
                  font-size: 1.0rem;
                  line-height: 1.96; }
 /* -- End of Table Styling section --*/
-
 
 /* Basic Layout stuff --*/
 
@@ -342,7 +343,9 @@ blockquote .sidenote, blockquote .marginnote { margin-right: -79% }
 
 p, footer, div.table-wrapper, div.mathblock{ width: 55%; }
 
-div.table-wrapper { overflow-x: auto; } //changed all overflow values to 'auto' so scroll bars appear only as needed
+table { max-width: 55%; }
+
+div.table-wrapper { overflow-x: auto } //changed all overflow values to 'auto' so scroll bars appear only as needed
 
 @media screen and (max-width: 760px) { 
     p, footer,div.mathblock, { width: 90%; }
@@ -418,6 +421,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
                                              position: relative; }
                             div.table-wrapper, table, table.booktabs { width: 85%; }
                             div.table-wrapper { border-right: 1px solid #efefef; }
+														table { max-width: 100%; }
                             img { max-width: 100%; } 
                             
                           }
@@ -439,6 +443,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
 .huge { font-size: 150%; }
 
 .date { font-family: $sans-font }
+.date.today:after { content: "TODAY" }
 
 //Nav and Footer styling area
 
@@ -494,11 +499,10 @@ ul.footer-links li{
 
 .blognav {
 	font-family: $sans-font;
-  font-size: 1.5rem;
 	text-transform: uppercase;
   display: block;
   overflow: hidden;
-	width: 55%;
+	width: auto;
 }
 
 .blognav a {
@@ -511,6 +515,15 @@ ul.footer-links li{
 .blognav .next {
   text-align: right;
 }
+
+/*.prev:before {
+	content: "Previous: ";
+}
+
+.next:before {
+	content: "Next: "
+}
+*/
 
 //change font color for credit links in footer
 

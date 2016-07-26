@@ -24,8 +24,8 @@ weight: 5
           <hr class="slender">
           {% capture datestamp %}{{post.date | date: "%F"}}{% endcapture %}
           {% capture today %}{{site.time | date: "%F"}}{% endcapture %}
-          <a href="{{ post.url | prepend: site.baseurl }}" ><h1 class="contrast" {% if datestamp == today  %}id="today"{% endif %}>{{ post.title }}</h1></a>
-          <span class="larger">{{ post.date | date: "%A, %-d %B %Y" }}</span>{% if datestamp == today  %}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="smaller date contrast">TODAY</span>{% endif %}
+          <a href="{{ post.url | prepend: site.baseurl }}" ><h1 class="contrast">{{ post.title }}</h1></a>
+          <span class="larger">{{ post.date | date: "%A, %-d %B %Y" }}</span><span class="smaller date contrast" id="todaymark"></span>
           <br/>
           <div>{{ post.excerpt }}</div>
           <br/>
@@ -33,5 +33,14 @@ weight: 5
             {% for tag in post.tags %}<li><a href="/topics#{{ tag }}" class="tag">{{ tag | replace: " ", "-" }}</a></li>{% endfor %}
           </ul>
         </li>
+    
+<script>
+var dateVariable = "2016-07-23";// parsed date string (YYYY-MM-DD is best
+If ((new Date()).setHours(0,0,0,0) == (new Date(dateVariable)).setHours(0,0,0,0)) 
+  { 
+    document.getElementsById("todaymark")[0].setAttribute("class", "today");
+  }
+</script>
     {% endfor %}
   </ul>
+
