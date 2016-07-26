@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,7 +106,12 @@
 
 
 
-<p class="subtitle">Thursday, 23 June 2016</p>
+<p class="subtitle"><span id="date">Thursday, 23 June 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <p>We&#39;ve discussed a bit about how servers and clients operate. 
 Now we&#39;ll look at what happens when we put lots of servers and lots of clients together. 
@@ -215,18 +223,17 @@ When the request arrives at its intended target, that host responds by attemptin
     <li><a href="/topics#networking" class="tag">networking</a></li><li><a href="/topics#networks" class="tag">networks</a></li><li><a href="/topics#inter-networks" class="tag">inter-networks</a></li><li><a href="/topics#GitHub" class="tag">GitHub</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-    <a class="prev" href="/basics/2016/06/22/git/">&laquo; Version Control</a>
-  
-  
-    <a class="next" href="/basics/2016/06/24/git-and-github-lab/">Lab #1: Git and GitHub &raquo;</a>
-  
-</div>
     </article>
     <span class="print-footer">Networks - June 23, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/basics/2016/06/22/git/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Version Control</a>
+    
+    
+      <a class="next" href="/basics/2016/06/24/git-and-github-lab/"><span class="smaller">Next:</span>&nbsp;Lab #1: Git and GitHub&nbsp;&raquo;</a>
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     

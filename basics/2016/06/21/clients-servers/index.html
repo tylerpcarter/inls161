@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,7 +106,12 @@
 
 
 
-<p class="subtitle">Tuesday, 21 June 2016</p>
+<p class="subtitle"><span id="date">Tuesday, 21 June 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <p>Today we&#39;ll talk about some of the basic ways that computers work and
 interact with one another. We&#39;ll also begin discussing the history of
@@ -271,18 +279,17 @@ We&#39;ll do some more exploring once we are up to speed with git as well.</p>
     <li><a href="/topics#clients" class="tag">clients</a></li><li><a href="/topics#servers" class="tag">servers</a></li><li><a href="/topics#Linux" class="tag">Linux</a></li><li><a href="/topics#shell commands" class="tag">shell-commands</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-    <a class="prev" href="/basics/2016/06/20/intro/">&laquo; Welcome to INLS161!</a>
-  
-  
-    <a class="next" href="/basics/2016/06/22/git/">Version Control &raquo;</a>
-  
-</div>
     </article>
     <span class="print-footer">Clients and Servers - June 21, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/basics/2016/06/20/intro/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Welcome to INLS161!</a>
+    
+    
+      <a class="next" href="/basics/2016/06/22/git/"><span class="smaller">Next:</span>&nbsp;Version Control&nbsp;&raquo;</a>
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     

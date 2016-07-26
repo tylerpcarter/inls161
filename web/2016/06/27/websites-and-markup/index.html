@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,7 +106,12 @@
 
 
 
-<p class="subtitle">Monday, 27 June 2016</p>
+<p class="subtitle"><span id="date">Monday, 27 June 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <p>This week&#39;s tasks will involve some very simple coding (markup, really) and continued exploration and use of our system administration skills. </p>
 
@@ -216,18 +224,17 @@ Berners-Lee proposed the creation of an information management system for the Eu
     <li><a href="/topics#websites" class="tag">websites</a></li><li><a href="/topics#markup" class="tag">markup</a></li><li><a href="/topics#markdown" class="tag">markdown</a></li><li><a href="/topics#html" class="tag">html</a></li><li><a href="/topics#css" class="tag">css</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-    <a class="prev" href="/basics/2016/06/24/git-and-github-lab/">&laquo; Lab #1: Git and GitHub</a>
-  
-  
-    <a class="next" href="/web/2016/06/28/jekyll-css-html/">Visual styling for the web &raquo;</a>
-  
-</div>
     </article>
     <span class="print-footer">Websites, Markup, and Markdown - June 27, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/basics/2016/06/24/git-and-github-lab/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Lab #1: Git and GitHub</a>
+    
+    
+      <a class="next" href="/web/2016/06/28/jekyll-css-html/"><span class="smaller">Next:</span>&nbsp;Visual styling for the web&nbsp;&raquo;</a>
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     

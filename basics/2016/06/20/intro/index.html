@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,7 +106,12 @@
 
 
 
-<p class="subtitle">Monday, 20 June 2016</p>
+<p class="subtitle"><span id="date">Monday, 20 June 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <p>This is a course about pushing our boundaries and learning new things. 
 It is also about learning new ways of doing things that we might already know how to do. 
@@ -214,16 +222,15 @@ Go through each of the steps in the contents listed on that page and try out the
     <li><a href="/topics#intro" class="tag">intro</a></li><li><a href="/topics#tools" class="tag">tools</a></li><li><a href="/topics#GitHub" class="tag">GitHub</a></li><li><a href="/topics#CodeAnywhere" class="tag">CodeAnywhere</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-  
-    <a class="next" href="/basics/2016/06/21/clients-servers/">Clients and Servers &raquo;</a>
-  
-</div>
     </article>
     <span class="print-footer">Welcome to INLS161! - June 20, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+    
+      <a class="next" href="/basics/2016/06/21/clients-servers/"><span class="smaller">Next:</span>&nbsp;Clients and Servers&nbsp;&raquo;</a>
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     

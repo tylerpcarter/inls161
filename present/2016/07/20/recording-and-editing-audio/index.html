@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,7 +106,12 @@
 
 
 
-<p class="subtitle">Wednesday, 20 July 2016</p>
+<p class="subtitle"><span id="date">Wednesday, 20 July 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <p>Today we are going to work with Audacity to create and edit some audio to embed in our presentations. 
 <excerpt/></p>
@@ -262,7 +270,7 @@ You will have to put the name of your ZIP file instead of &quot;audio.zip.&quot;
 </code></pre></div>
 <p>The <code>data-audio-src</code> takes care of adding the audio link so that it will play automatically. </p>
 
-<h1 id="adding-a-video-to-a-slide-so-that-it-will-play-automatically">Adding a video to a slide so that it will play automatically</h1>
+<h1 id="adding-an-autoplay-video-to-a-slide">Adding an autoplay video to a slide</h1>
 
 <p>Unfortunately, the YouTube autoplay feature for Reveal.js is broken at the moment because of a change to the YouTube API. 
 However, there is a workaround which involves converting/downloading YouTube videos as MP4s and then using the <code>video</code> HTML5 element to handle them in a Reveal.js slide.</p>
@@ -340,18 +348,17 @@ This is an important discussion because it will orient you to the kinds of thing
     <li><a href="/topics#reveal.js" class="tag">reveal.js</a></li><li><a href="/topics#presentations" class="tag">presentations</a></li><li><a href="/topics#audio" class="tag">audio</a></li><li><a href="/topics#audacity" class="tag">audacity</a></li><li><a href="/topics#video" class="tag">video</a></li><li><a href="/topics#YouTube" class="tag">YouTube</a></li><li><a href="/topics#MP4" class="tag">MP4</a></li><li><a href="/topics#Jekyll" class="tag">Jekyll</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-    <a class="prev" href="/present/2016/07/19/reveal-basics/">&laquo; Reveal.js</a>
-  
-  
-    <a class="next" href="/present/2016/07/21/what-do-we-know/">Wrap-up: what do we know now? &raquo;</a>
-  
-</div>
     </article>
     <span class="print-footer">Adding audio for narration and video to your slides - July 20, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/present/2016/07/19/reveal-basics/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Reveal.js</a>
+    
+    
+      <a class="next" href="/present/2016/07/21/what-do-we-know/"><span class="smaller">Next:</span>&nbsp;Wrap-up: what do we know now?&nbsp;&raquo;</a>
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     

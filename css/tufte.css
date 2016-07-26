@@ -351,7 +351,8 @@ table, table.booktabs {
 
 th, td {
   font-size: 1rem;
-  line-height: 1.71428571; }
+  line-height: 1.71428571;
+  vertical-align: top !important; }
 
 .booktabs th.cmid, th {
   border-bottom: 1px solid white; }
@@ -366,7 +367,8 @@ th, td {
 .booktabs td, td {
   padding-left: 0.5em;
   padding-right: 0.5em;
-  text-align: left; }
+  text-align: left;
+  vertical-align: top !important; }
 
 .booktabs caption, caption {
   font-size: 90%;
@@ -507,6 +509,9 @@ blockquote .sidenote, blockquote .marginnote {
 p, footer, div.table-wrapper, div.mathblock {
   width: 55%; }
 
+table {
+  max-width: 55%; }
+
 div.table-wrapper {
   overflow-x: auto; }
 
@@ -615,6 +620,9 @@ label.margin-toggle:not(.sidenote-number) {
   div.table-wrapper {
     border-right: 1px solid #efefef; }
 
+  table {
+    max-width: 100%; }
+
   img {
     max-width: 100%; } }
 /*--- End of Basic Layout stuff from tufte.css ---*/
@@ -645,6 +653,9 @@ label.margin-toggle:not(.sidenote-number) {
 
 .date {
   font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif; }
+
+.date.today:after {
+  content: "TODAY"; }
 
 header > nav.group, body footer {
   width: 100%;
@@ -698,11 +709,10 @@ ul.footer-links li {
 
 .blognav {
   font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif;
-  font-size: 1.5rem;
   text-transform: uppercase;
   display: block;
   overflow: hidden;
-  width: 55%; }
+  width: auto; }
 
 .blognav a {
   display: block;
@@ -713,6 +723,14 @@ ul.footer-links li {
 .blognav .next {
   text-align: right; }
 
+/*.prev:before {
+	content: "Previous: ";
+}
+
+.next:before {
+	content: "Next: "
+}
+*/
 .credits {
   font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif; }
   .credits a {

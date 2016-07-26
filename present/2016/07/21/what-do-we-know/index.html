@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,14 +106,106 @@
 
 
 
-<p class="subtitle">Thursday, 21 July 2016&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="smaller date contrast">TODAY</span></p>
+<p class="subtitle"><span id="date">Thursday, 21 July 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <p>Today we are going to wrap up the class and talk about the skills that you are taking away from this experience. 
 <excerpt/></p>
 
-<p>This information will be useful in the context of preparing a resume/CV or perhaps in conducting a job interview in which you are asked to talk about technical skills. </p>
+<p>This information will be useful in the context of preparing a resume/CV or perhaps in conducting a job interview in which you are asked to talk about technical skills.</p>
 
-<p>We will work through this list together and then I will update this post at the end of class.</p>
+<h1 id="skills-and-tools">Skills and tools</h1>
+
+<p>I asked the class to identify the major skillsets that we engaged in learning this semester and recorded the output on the whiteboard.<label for='skillsets' class='margin-toggle'> &#8853;</label><input type='checkbox' id='skillsets' class='margin-toggle'/><span class='marginnote'>Students listed the skillsets they thought they had been exposed to.<a href="/assets/img/learned-skillsets.jpg"><img src="/assets/img/learned-skillsets.jpg" alt="Whiteboard image of skillset list" /></a> </span> </p>
+
+<p>I then followed this request by linking those skillsets to the tools used in engaging them. 
+The images represent the output from this discussion.<label for='tools' class='margin-toggle'> &#8853;</label><input type='checkbox' id='tools' class='margin-toggle'/><span class='marginnote'>Students also listed the tools used in engaging those skillsets.<a href="/assets/img/learned-tools.jpg"><img src="/assets/img/learned-tools.jpg" alt="Whiteboard image of tool list" /></a> </span></p>
+
+<p>Following this, I talked briefly about how these skillsets might be engaged by other SILS courses and tried to link them accordingly. These courses are either related directly to the skillset or they make use of the skillset in some significant way.</p>
+
+<p>The table that follows organizes all of this information in a more straightforward manner (with some additions of mine). </p>
+
+<p><label for='tab1' class='margin-toggle'> &#8853;</label><input type='checkbox' id='tab1' class='margin-toggle'/><span class='marginnote'><em>Table 1</em>: Skillsets and tools covered by this course along with links to related SILS courses </span></p>
+
+<table><thead>
+<tr>
+<th></th>
+<th style="text-align: left">Skillset</th>
+<th style="text-align: left">Tools</th>
+<th style="text-align: left">Other SILS Courses</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1.</td>
+<td style="text-align: left">Troubleshooting</td>
+<td style="text-align: left">Browser inspector; forums / online discussion; man pages / <code>--help</code></td>
+<td style="text-align: left"><a href="https://sils.unc.edu/courses#382">INLS 382</a>; <a href="https://sils.unc.edu/courses#582">INLS 582</a></td>
+</tr>
+<tr>
+<td>2.</td>
+<td style="text-align: left">Networking</td>
+<td style="text-align: left">SSH; FTP; traceroute; nmap</td>
+<td style="text-align: left"><a href="https://sils.unc.edu/courses#382">INLS 382</a>; <a href="https://sils.unc.edu/courses#582">INLS 582</a></td>
+</tr>
+<tr>
+<td>3.</td>
+<td style="text-align: left">Version control</td>
+<td style="text-align: left">git; GitHub</td>
+<td style="text-align: left"><a href="https://sils.unc.edu/courses#560">INLS 560</a>; <a href="https://sils.unc.edu/courses#572">INLS 572</a>; <a href="https://sils.unc.edu/courses#573">INLS 573</a>; <a href="https://sils.unc.edu/courses#672">INLS 672</a></td>
+</tr>
+<tr>
+<td>4.</td>
+<td style="text-align: left">Critical thinking</td>
+<td style="text-align: left">Brains; discussion</td>
+<td style="text-align: left"><a href="https://sils.unc.edu/courses#151">INLS 151</a>; <a href="https://sils.unc.edu/courses#200">INLS 200</a>; <a href="https://sils.unc.edu/courses#318">INLS 318</a>; <a href="https://sils.unc.edu/courses#382">INLS 382</a>; <a href="https://sils.unc.edu/courses#582">INLS 582</a></td>
+</tr>
+<tr>
+<td>5.</td>
+<td style="text-align: left">Data handling</td>
+<td style="text-align: left">MySQL; Bash; CSV/TSV</td>
+<td style="text-align: left"><a href="https://sils.unc.edu/courses#523">INLS 523</a>; <a href="https://sils.unc.edu/courses#623">INLS 623</a>; <a href="https://sils.unc.edu/courses#624">INLS 624</a>; <a href="https://sils.unc.edu/courses#626">INLS 626</a>; <a href="https://sils.unc.edu/courses#756">INLS 756</a>; <a href="https://sils.unc.edu/courses#760">INLS 760</a></td>
+</tr>
+<tr>
+<td>6.</td>
+<td style="text-align: left">Web development / design</td>
+<td style="text-align: left">Jekyll; GitHub pages; Reveal.js; Markdown; HTML5; CS3; JavaScript; Liquid</td>
+<td style="text-align: left"><a href="https://sils.unc.edu/courses#318">INLS 318</a>; <a href="https://sils.unc.edu/courses#572">INLS 572</a>; <a href="https://sils.unc.edu/courses#573">INLS 573</a>; <a href="https://sils.unc.edu/courses#620">INLS 620</a>; <a href="https://sils.unc.edu/courses#672">INLS 672</a>; <a href="https://sils.unc.edu/courses#718">INLS 718</a>; <a href="https://sils.unc.edu/courses#760">INLS 760</a></td>
+</tr>
+<tr>
+<td>7.</td>
+<td style="text-align: left">Writing using markup languages</td>
+<td style="text-align: left">Pandoc; Markdown; HTML5; Liquid/YAML</td>
+<td style="text-align: left"><a href="https://sils.unc.edu/courses#572">INLS 572</a>; <a href="https://sils.unc.edu/courses#573">INLS 573</a>; <a href="https://sils.unc.edu/courses#672">INLS 672</a></td>
+</tr>
+<tr>
+<td>8.</td>
+<td style="text-align: left">Using remote / terminal shell commands</td>
+<td style="text-align: left">Bash; sudo; other command line tools</td>
+<td style="text-align: left"><a href="https://sils.unc.edu/courses#572">INLS 572</a>; <a href="https://sils.unc.edu/courses#382">INLS 382</a>; <a href="https://sils.unc.edu/courses#573">INLS 573</a>; <a href="https://sils.unc.edu/courses#582">INLS 582</a>; <a href="https://sils.unc.edu/courses#672">INLS 672</a></td>
+</tr>
+<tr>
+<td>9.</td>
+<td style="text-align: left">Scripting / automation</td>
+<td style="text-align: left">Bash; MySQL</td>
+<td style="text-align: left"><a href="https://sils.unc.edu/courses#560">INLS 560</a>; <a href="https://sils.unc.edu/courses#572">INLS 572</a>; <a href="https://sils.unc.edu/courses#573">INLS 573</a>; <a href="https://sils.unc.edu/courses#672">INLS 672</a></td>
+</tr>
+<tr>
+<td>10.</td>
+<td style="text-align: left">Development -&gt; production workflows</td>
+<td style="text-align: left">Jekyll; CodeAnywhere; GitHub</td>
+<td style="text-align: left"><a href="https://sils.unc.edu/courses#523">INLS 523</a>; <a href="https://sils.unc.edu/courses#560">INLS 560</a>; <a href="https://sils.unc.edu/courses#572">INLS 572</a>; <a href="https://sils.unc.edu/courses#573">INLS 573</a>; <a href="https://sils.unc.edu/courses#623">INLS 623</a>; <a href="https://sils.unc.edu/courses#624">INLS 624</a>; <a href="https://sils.unc.edu/courses#626">INLS 626</a>; <a href="https://sils.unc.edu/courses#672">INLS 672</a>; <a href="https://sils.unc.edu/courses#718">INLS 718</a>; <a href="https://sils.unc.edu/courses#756">INLS 756</a>; <a href="https://sils.unc.edu/courses#760">INLS 760</a></td>
+</tr>
+<tr>
+<td>11.</td>
+<td style="text-align: left">Software management</td>
+<td style="text-align: left">APT; Bash</td>
+<td style="text-align: left"><a href="https://sils.unc.edu/courses#523">INLS 523</a>; <a href="https://sils.unc.edu/courses#560">INLS 560</a>; <a href="https://sils.unc.edu/courses#572">INLS 572</a>; <a href="https://sils.unc.edu/courses#573">INLS 573</a>; <a href="https://sils.unc.edu/courses#623">INLS 623</a>; <a href="https://sils.unc.edu/courses#624">INLS 624</a>; <a href="https://sils.unc.edu/courses#626">INLS 626</a>; <a href="https://sils.unc.edu/courses#672">INLS 672</a>; <a href="https://sils.unc.edu/courses#718">INLS 718</a>; <a href="https://sils.unc.edu/courses#756">INLS 756</a>; <a href="https://sils.unc.edu/courses#760">INLS 760</a></td>
+</tr>
+</tbody></table>
 
 <h1 id="during-the-exam-period">During the exam period</h1>
 
@@ -127,16 +222,15 @@ We will be viewing everyone&#39;s presentations with Q&amp;A to follow. </p>
     <li><a href="/topics#skillsets" class="tag">skillsets</a></li><li><a href="/topics#tools" class="tag">tools</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-    <a class="prev" href="/present/2016/07/20/recording-and-editing-audio/">&laquo; Adding audio for narration and video to your slides</a>
-  
-  
-</div>
     </article>
     <span class="print-footer">Wrap-up: what do we know now? - July 21, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/present/2016/07/20/recording-and-editing-audio/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Adding audio for narration and video to your slides</a>
+    
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     

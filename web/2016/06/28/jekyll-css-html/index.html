@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,7 +106,12 @@
 
 
 
-<p class="subtitle">Tuesday, 28 June 2016</p>
+<p class="subtitle"><span id="date">Tuesday, 28 June 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <p>For most of class today, we will spend time creating our base site and then exploring ways that we can change and customize the style to our liking. </p>
 
@@ -178,18 +186,17 @@ Whenever a website looks like anything other than just a blank page, there is CS
     <li><a href="/topics#Jekyll" class="tag">Jekyll</a></li><li><a href="/topics#CSS" class="tag">CSS</a></li><li><a href="/topics#HTML" class="tag">HTML</a></li><li><a href="/topics#Markdown" class="tag">Markdown</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-    <a class="prev" href="/web/2016/06/27/websites-and-markup/">&laquo; Websites, Markup, and Markdown</a>
-  
-  
-    <a class="next" href="/web/2016/06/29/developing-deploying-branching/">Developing and Deploying &raquo;</a>
-  
-</div>
     </article>
     <span class="print-footer">Visual styling for the web - June 28, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/web/2016/06/27/websites-and-markup/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Websites, Markup, and Markdown</a>
+    
+    
+      <a class="next" href="/web/2016/06/29/developing-deploying-branching/"><span class="smaller">Next:</span>&nbsp;Developing and Deploying&nbsp;&raquo;</a>
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     

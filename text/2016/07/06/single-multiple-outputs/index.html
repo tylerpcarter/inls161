@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,7 +106,12 @@
 
 
 
-<p class="subtitle">Wednesday, 6 July 2016</p>
+<p class="subtitle"><span id="date">Wednesday, 6 July 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <p>We&#39;ve briefly discussed Pandoc now. 
 It bills itself as the &quot;Universal Document Converter.&quot; 
@@ -218,18 +226,17 @@ The scripts that we will write will be very, very simple, but it is good to have
     <li><a href="/topics#pandoc" class="tag">pandoc</a></li><li><a href="/topics#text" class="tag">text</a></li><li><a href="/topics#conversion" class="tag">conversion</a></li><li><a href="/topics#LaTeX" class="tag">LaTeX</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-    <a class="prev" href="/text/2016/07/05/text-conversion/">&laquo; Text Conversion</a>
-  
-  
-    <a class="next" href="/text/2016/07/07/scripting/">Introduction to scripting &raquo;</a>
-  
-</div>
     </article>
     <span class="print-footer">Single input, multiple outputs - July 6, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/text/2016/07/05/text-conversion/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Text Conversion</a>
+    
+    
+      <a class="next" href="/text/2016/07/07/scripting/"><span class="smaller">Next:</span>&nbsp;Introduction to scripting&nbsp;&raquo;</a>
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     

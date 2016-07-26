@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,7 +106,12 @@
 
 
 
-<p class="subtitle">Tuesday, 5 July 2016</p>
+<p class="subtitle"><span id="date">Tuesday, 5 July 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <h1 id="plaintext,-markup,-and-formatted-text">Plaintext, markup, and formatted text</h1>
 
@@ -225,18 +233,17 @@ You will need to do this in your CodeAnywhere container.</p>
     <li><a href="/topics#pandoc" class="tag">pandoc</a></li><li><a href="/topics#text" class="tag">text</a></li><li><a href="/topics#markdown" class="tag">markdown</a></li><li><a href="/topics#documents" class="tag">documents</a></li><li><a href="/topics#conversion" class="tag">conversion</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-    <a class="prev" href="/web/2016/07/01/web-lab/">&laquo; Troubleshooting</a>
-  
-  
-    <a class="next" href="/text/2016/07/06/single-multiple-outputs/">Single input, multiple outputs &raquo;</a>
-  
-</div>
     </article>
     <span class="print-footer">Text Conversion - July 5, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/web/2016/07/01/web-lab/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Troubleshooting</a>
+    
+    
+      <a class="next" href="/text/2016/07/06/single-multiple-outputs/"><span class="smaller">Next:</span>&nbsp;Single input, multiple outputs&nbsp;&raquo;</a>
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     

@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,7 +106,12 @@
 
 
 
-<p class="subtitle">Monday, 18 July 2016</p>
+<p class="subtitle"><span id="date">Monday, 18 July 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <p>Today we&#39;re going to talk about what is wrong with presentations and presentation software as they have come to be used.
 <excerpt/></p>
@@ -228,18 +236,17 @@ It is not even a terribly sophisticated example. </p>
     <li><a href="/topics#powerpoint" class="tag">powerpoint</a></li><li><a href="/topics#reveal.js" class="tag">reveal.js</a></li><li><a href="/topics#presentations" class="tag">presentations</a></li><li><a href="/topics#Tufte" class="tag">Tufte</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-    <a class="prev" href="/data/2016/07/15/lab-from-data-to-databases/">&laquo; From data to database</a>
-  
-  
-    <a class="next" href="/present/2016/07/19/reveal-basics/">Reveal.js &raquo;</a>
-  
-</div>
     </article>
     <span class="print-footer">Presentation Basics - July 18, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/data/2016/07/15/lab-from-data-to-databases/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;From data to database</a>
+    
+    
+      <a class="next" href="/present/2016/07/19/reveal-basics/"><span class="smaller">Next:</span>&nbsp;Reveal.js&nbsp;&raquo;</a>
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     

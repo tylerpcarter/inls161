@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,7 +106,12 @@
 
 
 
-<p class="subtitle">Friday, 8 July 2016</p>
+<p class="subtitle"><span id="date">Friday, 8 July 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <p>Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. 
 <excerpt/></p>
@@ -199,18 +207,17 @@ Through this we will learn more about pipes and redirecting output.<label for='c
     <li><a href="/topics#scripting" class="tag">scripting</a></li><li><a href="/topics#Bash" class="tag">Bash</a></li><li><a href="/topics#Pandoc" class="tag">Pandoc</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-    <a class="prev" href="/text/2016/07/07/scripting/">&laquo; Introduction to scripting</a>
-  
-  
-    <a class="next" href="/data/2016/07/11/data-handling/">Handling data &raquo;</a>
-  
-</div>
     </article>
     <span class="print-footer">Lab #3: Automation and Scripting - July 8, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/text/2016/07/07/scripting/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Introduction to scripting</a>
+    
+    
+      <a class="next" href="/data/2016/07/11/data-handling/"><span class="smaller">Next:</span>&nbsp;Handling data&nbsp;&raquo;</a>
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     

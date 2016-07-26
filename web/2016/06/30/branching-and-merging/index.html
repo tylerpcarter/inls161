@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,7 +106,12 @@
 
 
 
-<p class="subtitle">Thursday, 30 June 2016</p>
+<p class="subtitle"><span id="date">Thursday, 30 June 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <p>Today we will set up a testing workflow and learn how to create branches for adding and changing features on our sites. 
 We will use this to change the visual style the site and create blog posts. </p>
@@ -307,18 +315,17 @@ I want to be able to collectively help you, though, and that will be easier to d
     <li><a href="/topics#git" class="tag">git</a></li><li><a href="/topics#GitHub" class="tag">GitHub</a></li><li><a href="/topics#web development" class="tag">web-development</a></li><li><a href="/topics#workflows" class="tag">workflows</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-    <a class="prev" href="/web/2016/06/29/developing-deploying-branching/">&laquo; Developing and Deploying</a>
-  
-  
-    <a class="next" href="/web/2016/07/01/web-lab/">Troubleshooting &raquo;</a>
-  
-</div>
     </article>
     <span class="print-footer">Branching and Merging - June 30, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/web/2016/06/29/developing-deploying-branching/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Developing and Deploying</a>
+    
+    
+      <a class="next" href="/web/2016/07/01/web-lab/"><span class="smaller">Next:</span>&nbsp;Troubleshooting&nbsp;&raquo;</a>
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     

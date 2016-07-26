@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,7 +106,12 @@
 
 
 
-<p class="subtitle">Wednesday, 22 June 2016</p>
+<p class="subtitle"><span id="date">Wednesday, 22 June 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <p>Version control systems allow us to track and see the changes to a given document or set of files over time. 
 This can be useful in situations where you wish to roll back changes or identify the point of origin for something problematic. </p>
@@ -231,18 +239,17 @@ The article in the notes has much the same information as some of the other arti
     <li><a href="/topics#version control" class="tag">version-control</a></li><li><a href="/topics#git" class="tag">git</a></li><li><a href="/topics#shell commands" class="tag">shell-commands</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-    <a class="prev" href="/basics/2016/06/21/clients-servers/">&laquo; Clients and Servers</a>
-  
-  
-    <a class="next" href="/basics/2016/06/23/networks/">Networks &raquo;</a>
-  
-</div>
     </article>
     <span class="print-footer">Version Control - June 22, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/basics/2016/06/21/clients-servers/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Clients and Servers</a>
+    
+    
+      <a class="next" href="/basics/2016/06/23/networks/"><span class="smaller">Next:</span>&nbsp;Networks&nbsp;&raquo;</a>
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     

@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,7 +106,12 @@
 
 
 
-<p class="subtitle">Tuesday, 19 July 2016</p>
+<p class="subtitle"><span id="date">Tuesday, 19 July 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <p>Today we will look at Reveal.js more closely and start working with it in your presentation teams. 
 We will also cover converting your text from Markdown into Reveal-ready HTML5 using our old friend, Pandoc.
@@ -280,18 +288,17 @@ You can download audacity and read more documentation on the audacity homepage.<
     <li><a href="/topics#reveal.js" class="tag">reveal.js</a></li><li><a href="/topics#presentations" class="tag">presentations</a></li><li><a href="/topics#pandoc" class="tag">pandoc</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-    <a class="prev" href="/present/2016/07/18/presentation-basics/">&laquo; Presentation Basics</a>
-  
-  
-    <a class="next" href="/present/2016/07/20/recording-and-editing-audio/">Adding audio for narration and video to your slides &raquo;</a>
-  
-</div>
     </article>
     <span class="print-footer">Reveal.js - July 19, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/present/2016/07/18/presentation-basics/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Presentation Basics</a>
+    
+    
+      <a class="next" href="/present/2016/07/20/recording-and-editing-audio/"><span class="smaller">Next:</span>&nbsp;Adding audio for narration and video to your slides&nbsp;&raquo;</a>
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     

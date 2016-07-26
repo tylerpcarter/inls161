@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,7 +106,12 @@
 
 
 
-<p class="subtitle">Friday, 15 July 2016</p>
+<p class="subtitle"><span id="date">Friday, 15 July 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <h1 id="mysql-in-bash-scripts">MySQL in Bash scripts</h1>
 
@@ -166,18 +174,17 @@ It will help put into perspective what is really happening when we watch TED Tal
     <li><a href="/topics#database" class="tag">database</a></li><li><a href="/topics#tables" class="tag">tables</a></li><li><a href="/topics#queries" class="tag">queries</a></li><li><a href="/topics#SQL" class="tag">SQL</a></li><li><a href="/topics#MySQL" class="tag">MySQL</a></li><li><a href="/topics#Bash" class="tag">Bash</a></li><li><a href="/topics#scripting" class="tag">scripting</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-    <a class="prev" href="/data/2016/07/14/database-tables-queries/">&laquo; Databases, tables, queries, and relationships</a>
-  
-  
-    <a class="next" href="/present/2016/07/18/presentation-basics/">Presentation Basics &raquo;</a>
-  
-</div>
     </article>
     <span class="print-footer">From data to database - July 15, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/data/2016/07/14/database-tables-queries/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Databases, tables, queries, and relationships</a>
+    
+    
+      <a class="next" href="/present/2016/07/18/presentation-basics/"><span class="smaller">Next:</span>&nbsp;Presentation Basics&nbsp;&raquo;</a>
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     

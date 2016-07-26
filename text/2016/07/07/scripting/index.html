@@ -20,9 +20,12 @@
   
   <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
   
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script>
-
+    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
    
+  
+  
+    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
 
   <link rel="stylesheet" href="/css/tufte.css"> 
   
@@ -103,7 +106,12 @@
 
 
 
-<p class="subtitle">Thursday, 7 July 2016</p>
+<p class="subtitle"><span id="date">Thursday, 7 July 2016</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
 
 <p>Today we will learn how to convert our plaintext Markdown into a PDF. 
 To do this we will have to install some more software, which may take a while. </p>
@@ -272,18 +280,17 @@ Also, we&#39;ll use another tutorial so that we can learn to create prompts for 
     <li><a href="/topics#Pandoc" class="tag">Pandoc</a></li><li><a href="/topics#PDF" class="tag">PDF</a></li><li><a href="/topics#LaTeX" class="tag">LaTeX</a></li><li><a href="/topics#Bash" class="tag">Bash</a></li><li><a href="/topics#Scripts" class="tag">Scripts</a></li>
   </ul> 
 </p>
-
-<div class="blognav">
-  
-    <a class="prev" href="/text/2016/07/06/single-multiple-outputs/">&laquo; Single input, multiple outputs</a>
-  
-  
-    <a class="next" href="/text/2016/07/08/lab-automation/">Lab #3: Automation and Scripting &raquo;</a>
-  
-</div>
     </article>
     <span class="print-footer">Introduction to scripting - July 7, 2016 - </span>
     <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/text/2016/07/06/single-multiple-outputs/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Single input, multiple outputs</a>
+    
+    
+      <a class="next" href="/text/2016/07/08/lab-automation/"><span class="smaller">Next:</span>&nbsp;Lab #3: Automation and Scripting&nbsp;&raquo;</a>
+    
+  </div>
   <hr class="slender">
   <ul class="footer-links">
     
