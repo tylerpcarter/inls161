@@ -1494,10 +1494,10 @@ There is a ton of relevant information on this topic out in the Internet.&lt;/p&
 =======
     <title>Tools for Information Literacy</title>
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
-    <link>http://inls161.johndmart.in/</link>
-    <atom:link href="http://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 Jul 2016 22:33:42 -0400</pubDate>
-    <lastBuildDate>Mon, 25 Jul 2016 22:33:42 -0400</lastBuildDate>
+    <link>https://inls161.johndmart.in/</link>
+    <atom:link href="https://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 24 Sep 2016 02:07:50 -0400</pubDate>
+    <lastBuildDate>Sat, 24 Sep 2016 02:07:50 -0400</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
@@ -1605,8 +1605,8 @@ We will be viewing everyone&amp;#39;s presentations with Q&amp;amp;A to follow. 
 &lt;p&gt;This should not take the entire time alotted, but plan for at least an hour and half to be safe. &lt;/p&gt;
 </description>
         <pubDate>Thu, 21 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/present/2016/07/21/what-do-we-know/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/present/2016/07/21/what-do-we-know/</guid>
+        <link>https://inls161.johndmart.in/present/2016/07/21/what-do-we-know/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/present/2016/07/21/what-do-we-know/</guid>
         
         <category>skillsets</category>
         
@@ -1848,8 +1848,8 @@ This is an important discussion because it will orient you to the kinds of thing
 &lt;p&gt;We will also discuss other future classes that you might want to take if you are interested in a particular aspect of this course. &lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/present/2016/07/20/recording-and-editing-audio/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/present/2016/07/20/recording-and-editing-audio/</guid>
+        <link>https://inls161.johndmart.in/present/2016/07/20/recording-and-editing-audio/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/present/2016/07/20/recording-and-editing-audio/</guid>
         
         <category>reveal.js</category>
         
@@ -2043,8 +2043,8 @@ You can download audacity and read more documentation on the audacity homepage.&
 &lt;p&gt;We will work together on editing audio in class tomorrow. &lt;/p&gt;
 </description>
         <pubDate>Tue, 19 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/present/2016/07/19/reveal-basics/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/present/2016/07/19/reveal-basics/</guid>
+        <link>https://inls161.johndmart.in/present/2016/07/19/reveal-basics/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/present/2016/07/19/reveal-basics/</guid>
         
         <category>reveal.js</category>
         
@@ -2176,8 +2176,8 @@ It is not even a terribly sophisticated example. &lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/jdmar3/task-6-be-presentable&quot;&gt;Assignment #6: Be Presentable&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 18 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/present/2016/07/18/presentation-basics/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/present/2016/07/18/presentation-basics/</guid>
+        <link>https://inls161.johndmart.in/present/2016/07/18/presentation-basics/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/present/2016/07/18/presentation-basics/</guid>
         
         <category>powerpoint</category>
         
@@ -2249,8 +2249,8 @@ It will help put into perspective what is really happening when we watch TED Tal
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 15 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/data/2016/07/15/lab-from-data-to-databases/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/data/2016/07/15/lab-from-data-to-databases/</guid>
+        <link>https://inls161.johndmart.in/data/2016/07/15/lab-from-data-to-databases/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/data/2016/07/15/lab-from-data-to-databases/</guid>
         
         <category>database</category>
         
@@ -2275,7 +2275,7 @@ It will help put into perspective what is really happening when we watch TED Tal
         <title>Databases, tables, queries, and relationships</title>
         <description>&lt;p&gt;Today we will continue with our discussion of databases and then learn ALL THE SQL. &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://inls161.johndmart.in/assets/img/learnallthesql.jpg&quot; alt=&quot;LEARN ALL THE SQL&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;https://inls161.johndmart.in/assets/img/learnallthesql.jpg&quot; alt=&quot;LEARN ALL THE SQL&quot;&gt;
 &lt;excerpt/&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;parts-of-a-database&quot;&gt;Parts of a database&lt;/h1&gt;
@@ -2542,8 +2542,8 @@ I have to specify an additional criterion. &lt;/p&gt;
 &lt;p&gt;You are going to work in your groups to create a new script, based on your last assignment, that will write the data you have collected into a MySQL database. That assignment will be the focus of our lab session. &lt;/p&gt;
 </description>
         <pubDate>Thu, 14 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/data/2016/07/14/database-tables-queries/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/data/2016/07/14/database-tables-queries/</guid>
+        <link>https://inls161.johndmart.in/data/2016/07/14/database-tables-queries/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/data/2016/07/14/database-tables-queries/</guid>
         
         <category>database</category>
         
@@ -2657,8 +2657,8 @@ I would like you to read something about databases.&lt;label for=&#39;db&#39; cl
 &lt;p&gt;We will look at other resources and tutorials in class as well. &lt;/p&gt;
 </description>
         <pubDate>Wed, 13 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/data/2016/07/13/sql-bootcamp/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/data/2016/07/13/sql-bootcamp/</guid>
+        <link>https://inls161.johndmart.in/data/2016/07/13/sql-bootcamp/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/data/2016/07/13/sql-bootcamp/</guid>
         
         <category>database</category>
         
@@ -2712,8 +2712,8 @@ This is because both suites use ODF at their core. &lt;/p&gt;
 I would like you to look over some basic MySQL tutorials on your own so that we are prepared to dig into this.&lt;label for=&#39;sql&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;sql&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Sverdlov, Etel. “A Basic MySQL Tutorial.” DigitalOcean. Last modified June 12, 2012. &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial&quot;&gt;https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
 </description>
         <pubDate>Tue, 12 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/data/2016/07/12/data-cleaning/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/data/2016/07/12/data-cleaning/</guid>
+        <link>https://inls161.johndmart.in/data/2016/07/12/data-cleaning/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/data/2016/07/12/data-cleaning/</guid>
         
         <category>CSV</category>
         
@@ -2881,8 +2881,8 @@ This will be the basis of the next asssignment, which will be a group assignment
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 11 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/data/2016/07/11/data-handling/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/data/2016/07/11/data-handling/</guid>
+        <link>https://inls161.johndmart.in/data/2016/07/11/data-handling/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/data/2016/07/11/data-handling/</guid>
         
         <category>CSV</category>
         
@@ -2987,8 +2987,8 @@ Through this we will learn more about pipes and redirecting output.&lt;label for
 &lt;p&gt;We will then learn how to use data tables to create a more complex database, which we will be able to query to see relationships between different variables.&lt;label for=&#39;sql&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;sql&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Sverdlov, Etel. “A Basic MySQL Tutorial.” DigitalOcean. Last modified June 12, 2012. &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial&quot;&gt;https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
 </description>
         <pubDate>Fri, 08 Jul 2016 00:00:00 -0400</pubDate>
-        <link>http://inls161.johndmart.in/text/2016/07/08/lab-automation/</link>
-        <guid isPermaLink="true">http://inls161.johndmart.in/text/2016/07/08/lab-automation/</guid>
+        <link>https://inls161.johndmart.in/text/2016/07/08/lab-automation/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/text/2016/07/08/lab-automation/</guid>
         
         <category>scripting</category>
         

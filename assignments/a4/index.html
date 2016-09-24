@@ -11,7 +11,7 @@
         window.location.protocol = "https";
   </script>
 
-  <title>Tools for Information Literacy&nbsp;|&nbsp;Tools for Information Literacy</title>
+  <title>Tools for Information Literacy</title>
   <meta name="description" content="Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
@@ -28,7 +28,7 @@
   
   <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
 
-  <link rel="canonical" href="https://inls161.johndmart.in/">
+  <link rel="canonical" href="https://inls161.johndmart.in/assignments/a4/">
 
   <link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="https://inls161.johndmart.in/feed.xml" />
 </head>
@@ -54,7 +54,7 @@
   	
 		
 		    
-		      <a href="/assignments/a4/"></a>
+		      <a class="active" href="/assignments/a4/" class="active"></a>
 		    
 	    
   	
@@ -98,7 +98,7 @@
   	
 		
 		    
-		      <a class="active" href="/" class="active">Tools for Information Literacy</a>
+		      <a href="/">Tools for Information Literacy</a>
 		    
 	    
   	
@@ -129,57 +129,55 @@
 	</nav>
 </header>
     <article class="group">
-      <h1>Tools for Information Literacy</h1>
+      <h1></h1>
 <p class="subtitle"></p>
 
-<h2 id="welcome-to-inls-161-001">Welcome to INLS 161-001</h2>
+<h1 id="task-#4---create-data">Task #4 - Create data</h1>
 
-<p><label for='info' class='margin-toggle'> &#8853;</label>
-<input type='checkbox' id='info' class='margin-toggle'/>
-<span class='marginnote'>
-<span class="date larger">COURSE INFO</span><br/><br/>
-<span class="ico-user">&nbsp;<strong>Instructor:</strong></span> <a href="http://johndmart.in">John D. Martin III</a><br/>
-<span class="ico-envelope">&nbsp;<strong>Email:</strong></span> <a href="mailto:john.d.martin.iii@unc.edu"><a href="mailto:john.d.martin.iii@unc.edu">john.d.martin.iii@unc.edu</a></a><br/>
-<span class="ico-book">&nbsp;<strong>Office hours:</strong></span> I will be available for help in the lab starting at 10:30 on Fridays. Email me to meet any other weekday. I will also be on <a href="https://inls161.slack.com" target="_blank"><span class="ico-slack"> Slack</span></a> so you can contact me for questions.<br/><br/>
-<span class="ico-clock">&nbsp;<strong>Time:</strong></span> 11:30-13:00<br/>
-<span class="ico-calendar">&nbsp;<strong>Days:</strong></span> MoTuWeThFr<br/>
-<span class="ico-library">&nbsp;<strong>Location:</strong></span> 117 Manning Hall<br/>
-<span class="ico-desktop">&nbsp;<strong>Lab:</strong></span> Friday: same time, same place.<br/>
-<span class="ico-calendar-open">&nbsp;<strong>Dates:</strong></span> 20 June 2016 - 21 July 2016<br/>
-<span class="ico-pencil">&nbsp;<strong>Exam period:</strong></span> 11:30-14:30 25 July 2016<br/><br/>
-<span class="ico-target">&nbsp;<strong>Sakai</strong></span>: <a href="https://sakai.unc.edu/portal/site/inls161s216">https://sakai.unc.edu/portal/site/inls161s216</a><br/>
-<span class="ico-github">&nbsp;<strong>GitHub</strong></span>: <a href="https://inls161.slack.com">https://github.com/inls161</a><br/>
-<span class="ico-slack">&nbsp;<strong>Slack</strong></span>: <a href="https://inls161.slack.com">https://inls161.slack.com</a><br/>
-<span class="ico-rss">&nbsp;<strong>Schedule feed</strong></span>: <a href="/feed">https://inls161.johndmart.in/feed</a><br/>
-</span></p>
+<p>This assignment aims at strengthening our scripting skills and learning how to create a well-formed dataset to work with. </p>
 
-<p><span class='newthought'>This site houses</span>  the course files and syllabus for INLS 161-001, Tools for Information Literacy.</p>
+<p>We will extend what we do in this assignment in the next one, so keep that in mind.</p>
 
-<p>The course runs from 20 June 2016 to 25 July 2016. </p>
+<p>We will create a short questionnaire and then use Bash to script collection of answers.</p>
 
-<p>The class runs Monday-Thursday (except holidays), 11:00-12:30 in Manning Hall, room 117 (the computer lab inside the SILS library).</p>
+<h2 id="skillsets">Skillsets</h2>
 
-<p>The course description, as it appears in the UNC course catalog:</p>
+<p>You will be exposed to the following skillsets;</p>
 
-<p>&quot;Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.&quot;</p>
+<ol>
+<li>Scripting user input</li>
+<li>Saving data to csv file</li>
+</ol>
 
-<p>The course introduces some basic technology tools as an essential component of information literacy training. 
-We will cover the following:</p>
+<h2 id="expectations">Expectations</h2>
+
+<p>I expect you to work in your teams to create a script that will take input from users and then store their responses to a CSV file.
+It must aggregate the responses of multiple users and therefore needs to have some form of disambiguation involved in the data generation process. </p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>The only thing that you will need is Bash and text files, all of which are available in CodeAnywhere.</p>
+
+<h2 id="instructions">Instructions</h2>
+
+<p>You will need to do the following for this assignment to be considered complete. </p>
+
+<ol>
+<li>Create a list of five questions.</li>
+<li>Write a script that will do the following:
 
 <ul>
-<li>  Operating on a remote system</li>
-<li>  Using version control software to maintain your workflow</li>
-<li>  Manipulating and formatting text-based documents</li>
-<li>Basic scripting</li>
-<li>  Processing data using spreadsheets</li>
-<li>  Processing and storing data in databases</li>
-<li>  Developing presentation materials to communicate your work effectively</li>
-<li>  Beyond!</li>
-</ul>
+<li>Ask each question of the user running the script.</li>
+<li>Write a random string of characters to a variable as a unique identifier.</li>
+<li>Write the datestamp to a variable.</li>
+<li>Accept text input from the user and write each answer as a variable.</li>
+<li>Save all answers and other data to a CSV file.</li>
+</ul></li>
+</ol>
 
 
     </article>
-    <span class="print-footer">Tools for Information Literacy - </span>
+    <span class="print-footer"> - </span>
     <footer>
   <hr class="slender">
   <ul class="footer-links">

@@ -11,7 +11,7 @@
         window.location.protocol = "https";
   </script>
 
-  <title>Tools for Information Literacy&nbsp;|&nbsp;Tools for Information Literacy</title>
+  <title>Tools for Information Literacy</title>
   <meta name="description" content="Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
@@ -28,7 +28,7 @@
   
   <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
 
-  <link rel="canonical" href="https://inls161.johndmart.in/">
+  <link rel="canonical" href="https://inls161.johndmart.in/assignments/a5/">
 
   <link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="https://inls161.johndmart.in/feed.xml" />
 </head>
@@ -60,7 +60,7 @@
   	
 		
 		    
-		      <a href="/assignments/a5/"></a>
+		      <a class="active" href="/assignments/a5/" class="active"></a>
 		    
 	    
   	
@@ -98,7 +98,7 @@
   	
 		
 		    
-		      <a class="active" href="/" class="active">Tools for Information Literacy</a>
+		      <a href="/">Tools for Information Literacy</a>
 		    
 	    
   	
@@ -129,57 +129,79 @@
 	</nav>
 </header>
     <article class="group">
-      <h1>Tools for Information Literacy</h1>
+      <h1></h1>
 <p class="subtitle"></p>
 
-<h2 id="welcome-to-inls-161-001">Welcome to INLS 161-001</h2>
+<h1 id="task-#5---database-interface">Task #5 - Database interface</h1>
 
-<p><label for='info' class='margin-toggle'> &#8853;</label>
-<input type='checkbox' id='info' class='margin-toggle'/>
-<span class='marginnote'>
-<span class="date larger">COURSE INFO</span><br/><br/>
-<span class="ico-user">&nbsp;<strong>Instructor:</strong></span> <a href="http://johndmart.in">John D. Martin III</a><br/>
-<span class="ico-envelope">&nbsp;<strong>Email:</strong></span> <a href="mailto:john.d.martin.iii@unc.edu"><a href="mailto:john.d.martin.iii@unc.edu">john.d.martin.iii@unc.edu</a></a><br/>
-<span class="ico-book">&nbsp;<strong>Office hours:</strong></span> I will be available for help in the lab starting at 10:30 on Fridays. Email me to meet any other weekday. I will also be on <a href="https://inls161.slack.com" target="_blank"><span class="ico-slack"> Slack</span></a> so you can contact me for questions.<br/><br/>
-<span class="ico-clock">&nbsp;<strong>Time:</strong></span> 11:30-13:00<br/>
-<span class="ico-calendar">&nbsp;<strong>Days:</strong></span> MoTuWeThFr<br/>
-<span class="ico-library">&nbsp;<strong>Location:</strong></span> 117 Manning Hall<br/>
-<span class="ico-desktop">&nbsp;<strong>Lab:</strong></span> Friday: same time, same place.<br/>
-<span class="ico-calendar-open">&nbsp;<strong>Dates:</strong></span> 20 June 2016 - 21 July 2016<br/>
-<span class="ico-pencil">&nbsp;<strong>Exam period:</strong></span> 11:30-14:30 25 July 2016<br/><br/>
-<span class="ico-target">&nbsp;<strong>Sakai</strong></span>: <a href="https://sakai.unc.edu/portal/site/inls161s216">https://sakai.unc.edu/portal/site/inls161s216</a><br/>
-<span class="ico-github">&nbsp;<strong>GitHub</strong></span>: <a href="https://inls161.slack.com">https://github.com/inls161</a><br/>
-<span class="ico-slack">&nbsp;<strong>Slack</strong></span>: <a href="https://inls161.slack.com">https://inls161.slack.com</a><br/>
-<span class="ico-rss">&nbsp;<strong>Schedule feed</strong></span>: <a href="/feed">https://inls161.johndmart.in/feed</a><br/>
-</span></p>
+<p>This assignment aims at further strengthening our scripting skills and working more closely with a database.</p>
 
-<p><span class='newthought'>This site houses</span>  the course files and syllabus for INLS 161-001, Tools for Information Literacy.</p>
+<p>In this assignment you will work with your group to modify your data collection script so that it interfaces with a database. </p>
 
-<p>The course runs from 20 June 2016 to 25 July 2016. </p>
+<p>You will take the questionnaire that you developed in your group and make a new version of it that interfaces with a MySQL database. </p>
 
-<p>The class runs Monday-Thursday (except holidays), 11:00-12:30 in Manning Hall, room 117 (the computer lab inside the SILS library).</p>
+<h2 id="skillsets">Skillsets</h2>
 
-<p>The course description, as it appears in the UNC course catalog:</p>
+<p>You will be exposed to the following skillsets;</p>
 
-<p>&quot;Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.&quot;</p>
+<ol>
+<li>Scripting user input (this comes from your original script)</li>
+<li>Writing to temporary files</li>
+<li>Scripting database interface</li>
+</ol>
 
-<p>The course introduces some basic technology tools as an essential component of information literacy training. 
-We will cover the following:</p>
+<h2 id="expectations">Expectations</h2>
+
+<p>I expect you and your team to develop a script, based on your last one, that will allow you to write the information gathered into a MySQL database instead of into a CSV file as the final output form. </p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>You will need Bash, text files, and MySQL, all of which are available in CodeAnywhere.</p>
+
+<h2 id="instructions">Instructions</h2>
+
+<p>You will need to do the following for this assignment to be considered complete. </p>
+
+<h3 id="as-a-team:">As a team:</h3>
+
+<ol>
+<li>Decide who will do what tasks (e.g. - manage main files, look for information online about scripting MySQL, write scripts, test scripts, etc.)</li>
+<li>Designate a member of the team that will hold your main repo: the repo czar.</li>
+</ol>
+
+<h3 id="designated-repository-czar:">Designated repository czar:</h3>
+
+<ol>
+<li>Fork this repo: <a href="https://github.com/jdmar3/task-5-database-interface">https://github.com/jdmar3/task-5-database-interface</a>.</li>
+<li>Add the rest of your team as contributors.</li>
+</ol>
+
+<h3 id="as-a-team:">As a team:</h3>
+
+<ol>
+<li>Place your original script and .csv files from assignment 4 in this repository. </li>
+<li>Make a branch with an archived version of your first questionnaire script.</li>
+<li>Switch back into the master branch to work on this assignment.</li>
+<li>Create a database that has the appropriate variables and variable types (this might be an accessory script or a conditional statement in your script).</li>
+<li>Modify your script to do the following:
 
 <ul>
-<li>  Operating on a remote system</li>
-<li>  Using version control software to maintain your workflow</li>
-<li>  Manipulating and formatting text-based documents</li>
-<li>Basic scripting</li>
-<li>  Processing data using spreadsheets</li>
-<li>  Processing and storing data in databases</li>
-<li>  Developing presentation materials to communicate your work effectively</li>
-<li>  Beyond!</li>
-</ul>
+<li>connect to a MySQL database (HINT: this will involve setting variables for MySQL username, password, and location)</li>
+<li>enter the data input by users into a MySQL database </li>
+<li>dump the MySQL database into a .sql file in your repository directory with the rest of your files after it has been modified with nex data</li>
+</ul></li>
+</ol>
+
+<h3 id="individually:">Individually:</h3>
+
+<ol>
+<li>Sync your repository fork with the main fork at the end of the work (Look here for how to do this: <a href="https://help.github.com/articles/syncing-a-fork/">https://help.github.com/articles/syncing-a-fork/</a>).</li>
+<li>Write a blog post that links to your fork of the repository and write a brief explanation of what your scripts actually do. </li>
+</ol>
 
 
     </article>
-    <span class="print-footer">Tools for Information Literacy - </span>
+    <span class="print-footer"> - </span>
     <footer>
   <hr class="slender">
   <ul class="footer-links">
