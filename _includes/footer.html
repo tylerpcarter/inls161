@@ -1,12 +1,4 @@
 <footer>
-  <div class="blognav">
-    {% if page.previous.url %}
-      <a class="prev" href="{{page.previous.url}}">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;{{page.previous.title}}</a>
-    {% endif %}
-    {% if page.next.url %}
-      <a class="next" href="{{page.next.url}}"><span class="smaller">Next:</span>&nbsp;{{page.next.title}}&nbsp;&raquo;</a>
-    {% endif %}
-  </div>
   <hr class="slender">
   <ul class="footer-links">
     {% for info_hash in site.data.info %}
@@ -21,7 +13,7 @@
     <br/> 
   <span class="smaller">{{site.description}}</span>
   <br/><br/>
-  <span class="smaller"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.</span>
+  <span class="smaller">{{ site.license }}</span>
   <br/>
   <span class="smaller"><a href="{{ site.baseurl }}/credits/">Content &copy; {{ site.course-year }} {{ site.data.info.instructor.var }}</a></span>
 </div>  

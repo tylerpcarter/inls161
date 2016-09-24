@@ -2,6 +2,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script type="text/javascript">
+    var host = "{{ site.enforce-ssl }}";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+  </script>
 
   <title>{% if page.title %}{{ site.title }}&nbsp;|&nbsp;{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
@@ -15,21 +21,12 @@
   {% if site.data.options.mathjax %}
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   {% endif %}
-  
-  <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
-  {% if site.data.options.moment %}
-    <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
-  {% endif %} 
-  
-  {% if site.data.options.datejs %}
-    <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
-  {% endif %}
 
-  <link rel="stylesheet" href="{{ "/css/tufte.css" | prepend: site.baseurl }}"> 
+  <link rel="stylesheet" href="{{ '/css/tufte.css' | prepend: site.baseurl }}"> 
   
-  <link rel="icon" href="{{ "/assets/img/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon" />
+  <link rel="icon" href="{{ '/assets/img/favicon.ico' | prepend: site.baseurl }}" type="image/x-icon" />
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
 </head>
