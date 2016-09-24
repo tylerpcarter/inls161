@@ -2,6 +2,7 @@
 layout: page
 title: Reference
 weight: 9
+nav_include: true
 ---
 
 # Operating systems and tools

@@ -2,6 +2,7 @@
 layout: page
 title: Syllabus
 weight: 3
+nav_include: true
 ---
 
 ## About the Course
