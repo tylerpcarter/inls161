@@ -13,6 +13,8 @@ enforce-ssl: "inls161.johndmart.in"
 #twitter_username: jdmar3
 #github_username:  jdmar3
 
+mainicon: "/assets/img/161icon.png"
+
 department: INLS
 course-number: "161"
 course-section: "001"
