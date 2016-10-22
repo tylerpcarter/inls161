@@ -355,7 +355,10 @@ th, td {
   vertical-align: top !important; }
 
 .booktabs th.cmid, th {
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid #eee; }
+
+tr.cmid td {
+  border-top: 1px solid #eee; }
 
 .booktabs th.nocmid {
   border-bottom: none; }
@@ -427,16 +430,25 @@ body.cv ul {
 body.cv ul li {
   text-indent: -2.5%; }
 
+ul.bibliography {
+  text-indent: -2.5%; }
+
+ul.bibliography li {
+  text-indent: -2.5%; }
+
 ol {
   width: 55%;
   -webkit-padding-start: 4%;
   -webkit-padding-end: 4%; }
 
 ol li ol {
-  width: 100%;
+  width: 100% !important;
   -webkit-padding-start: 4%;
   -webkit-padding-end: 4%;
   list-style-type: lower-alpha; }
+
+ol p, ul p {
+  width: 100% !important; }
 
 article li {
   text-align: left; }
@@ -525,8 +537,8 @@ div.table-wrapper {
   .twitter-tweet {
     max-width: 87.5%; }
 
-  ul {
-    width: 85%; }
+  article ul {
+    width: 87.5%; }
 
   figure {
     max-width: 90%; }
@@ -591,7 +603,7 @@ label.margin-toggle:not(.sidenote-number) {
     float: left;
     left: 1rem;
     clear: both;
-    width: 95%;
+    width: 100%;
     margin: 1rem 2.5%;
     vertical-align: baseline;
     position: relative; }
@@ -624,11 +636,17 @@ label.margin-toggle:not(.sidenote-number) {
     max-width: 100%; }
 
   img {
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  article ul, article ol {
+    width: 87.5%; } }
 /*--- End of Basic Layout stuff from tufte.css ---*/
 /* -- Jekyll specific styling --*/
-.contrast {
+.contrast a, .contrast a:visited {
   color: #56A0D3; }
+
+.contrast a:hover {
+  color: #3687C0; }
 
 .tiny {
   font-size: 50%; }
@@ -661,11 +679,10 @@ header > nav.group, body footer {
   width: 100%;
   padding-top: 2rem; }
 
-nav.group a.active:before {
-  content: "\0003c\000a0"; }
-
-nav.group a.active:after {
-  content: " >"; }
+/* nav.group a.active:before{ content:"\0003c\000a0";} // escaped unicode for the carats and then a space on active menu links
+nav.group a.active:after{ content:"\000a0\0003e" ;} */
+nav.group a.active {
+  color: #3687C0; }
 
 header > nav a {
   font-size: 1.2rem;
@@ -803,13 +820,13 @@ li.listing h3.new {
 
 hr.slender {
   border: 0;
-  height: 1px;
+  height: 2px;
   margin-top: 1.4rem;
   margin-bottom: 1.4rem;
-  background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
-  background-image: -moz-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
-  background-image: -ms-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
-  background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent); }
+  background-image: -webkit-linear-gradient(left, rgba(100, 100, 100, 0), rgba(100, 100, 100, 0.9), rgba(100, 100, 100, 0));
+  background-image: -moz-linear-gradient(left, rgba(100, 100, 100, 0), rgba(100, 100, 100, 0.9), rgba(100, 100, 100, 0));
+  background-image: -ms-linear-gradient(left, rgba(100, 100, 100, 0), rgba(100, 100, 100, 0.9), rgba(100, 100, 100, 0));
+  background-image: -o-linear-gradient(left, rgba(100, 100, 100, 0), rgba(100, 100, 100, 0.9), rgba(100, 100, 100, 0)); }
 
 @media screen {
   .print-footer {
