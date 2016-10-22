@@ -31,7 +31,7 @@ license-img: '<a target="_blank" rel="license" href="https://creativecommons.org
 
 license-img-lrg: '<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="CC-BY-NC-SA" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>'
 
-license-summary: 'You may redistribute (but not remix or copy) content on this site under the same license as above for non-commercial purposes provided that you provide attribution and link back to the source.'
+license-summary: 'You may redistribute, remix, or copy content on this site under the same license as above for non-commercial purposes provided that you provide attribution and link back to the source.'
 
 theme-license: '<a href="https://github.com/clayh53/tufte-jekyll">Tufte-Jekyll theme</a> is &copy; <a href="http://www.clayharmon.com/">Clay Harmon</a> and distributed under the MIT license. This site theme is also distributed under the MIT license.'
 

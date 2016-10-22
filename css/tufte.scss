@@ -210,7 +210,11 @@ th, td{ font-size: 1rem; //1.2rem;
         line-height: 1.71428571; 
 				vertical-align: top !important; }
 
-.booktabs th.cmid, th { border-bottom: 1px solid lighten($border-color, 25%); }
+.booktabs th.cmid, th { border-bottom: 1px solid $border-color; }
+
+tr.cmid td { border-top: 1px solid $border-color; }
+
+//.booktabs tr.cmid { border-top: 1px solid lighten($border-color, 25%); }
 
 .booktabs th.nocmid { border-bottom: none; }
 
@@ -273,14 +277,24 @@ body.cv ul li{
   text-indent: -2.5%;
 }
 
+ul.bibliography{
+  text-indent: -2.5%;
+}
+
+ul.bibliography li{
+  text-indent: -2.5%;
+}
+
 ol { width: 55%; //width: 45%;
      -webkit-padding-start: 4%;
      -webkit-padding-end: 4%; }
 
-ol li ol { width: 100%;
+ol li ol { width: 100% !important;
      -webkit-padding-start: 4%;
      -webkit-padding-end: 4%;
      list-style-type: lower-alpha; }
+
+ol p, ul p { width: 100% !important; }
 
 article li {text-align: left}
 
@@ -353,7 +367,7 @@ div.table-wrapper { overflow-x: auto } //changed all overflow values to 'auto' s
   .twitter-tweet { max-width: 87.5%; }
     pre code { //width: 52.5%; 
     }
-    ul { width: 85%; }
+    article ul { width: 87.5%; }
     figure { max-width: 90%; }
     figcaption, figure.fullwidth figcaption { margin-right: 0%;
         max-width: none; }
@@ -402,7 +416,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
                                                                    float: left;
                                                                    left: 1rem;
                                                                    clear: both;
-                                                                   width: 95%;
+                                                                   width: 100%;
                                                                    margin: 1rem 2.5%;
                                                                    vertical-align: baseline;
                                                                    position: relative; }
@@ -423,14 +437,18 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
                             div.table-wrapper { border-right: 1px solid #efefef; }
 														table { max-width: 100%; }
                             img { max-width: 100%; } 
-                            
+														article ul, article ol { width: 87.5%; }
                           }
 /*--- End of Basic Layout stuff from tufte.css ---*/
 
 /* -- Jekyll specific styling --*/
 //helper classes
 
-.contrast { color: $contrast-color;}
+//.contrast { color: $contrast-color; }
+
+.contrast a, .contrast a:visited { color: $contrast-color; }
+
+.contrast a:hover { color: $contrast-color-dark; }
 
 //Text sizes
 
@@ -452,8 +470,10 @@ header > nav.group, body footer {
   padding-top: 2rem;
 }
 
-nav.group a.active:before{ content:"\0003c\000a0";} // escaped unicode for the carats and then a space on active menu links
-nav.group a.active:after{ content:"\000a0\0003e" ;}
+/* nav.group a.active:before{ content:"\0003c\000a0";} // escaped unicode for the carats and then a space on active menu links
+nav.group a.active:after{ content:"\000a0\0003e" ;} */
+
+nav.group a.active{ color: $contrast-color-dark; }
 
 header > nav  a{
   font-size: 1.2rem;
@@ -605,7 +625,6 @@ li.listing {
   }
 }
 
-
 li.listing:last-of-type{
   border-bottom: none;
   margin-bottom: 0; //1.4rem;
@@ -616,18 +635,18 @@ li.listing h3.new {
 }
 hr.slender {
     border: 0;
-    height: 1px;
+    height: 2px;
     margin-top: 1.4rem;
     margin-bottom:1.4rem;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -webkit-linear-gradient($hr-linear-gradient);
+    background-image:    -moz-linear-gradient($hr-linear-gradient);
+    background-image:     -ms-linear-gradient($hr-linear-gradient);
+    background-image:      -o-linear-gradient($hr-linear-gradient);
 }
 // End of front listing page stuff
 
 
-// Printing ands screen media queries
+// Printing and screen media queries
 
 // Does not display a print-footer for screen display
 @media screen{
