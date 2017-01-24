@@ -195,7 +195,7 @@ h1 code, h2 code, h3 code { font-size: 0.80em; } //left in for no real reason
 
 /*-- Table styling section - For Tufte-Jekyll, booktabs style is default for Markdown tables  --*/
 
-table, table.booktabs { width: 85%; //width: auto;  //making booktabs style tables the unstyled default in case someone uses Markdown styling
+table, table.booktabs { width: auto;  //making booktabs style tables the unstyled default in case someone uses Markdown styling
                  margin: 0 auto 0 0;
                  border-spacing: 0px;
                  border-top: 2px solid $border-color;
@@ -684,8 +684,8 @@ hr.slender {
       //border-top: 1px solid #000;
       margin-top: 50pt; // added by JDM
       padding-top: 4pt; // added by JDM
-      //border-top: 1px solid #000; // added by JDM
-      //display: none; // added by JDM
+      border-top: 1px solid #000; // added by JDM
+      display: none; // added by JDM
     }
 
     thead {
@@ -1047,7 +1047,4 @@ hr.slender {
 }
 .ico-target:before {
     content: "\e6f6";
-}
-.ico-blogger:before {
-		content: "\e64b"
 }
