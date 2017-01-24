@@ -337,7 +337,7 @@ h1 code, h2 code, h3 code {
 
 /*-- Table styling section - For Tufte-Jekyll, booktabs style is default for Markdown tables  --*/
 table, table.booktabs {
-  width: auto;
+  width: 85%;
   margin: 0 auto 0 0;
   border-spacing: 0px;
   border-top: 2px solid #eee;
@@ -851,9 +851,7 @@ hr.slender {
     font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif;
     font-size: 9pt;
     margin-top: 50pt;
-    padding-top: 4pt;
-    border-top: 1px solid #000;
-    display: none; }
+    padding-top: 4pt; }
 
   thead {
     display: table-header-group; }
@@ -1186,3 +1184,6 @@ hr.slender {
 
 .ico-target:before {
   content: "\e6f6"; }
+
+.ico-blogger:before {
+  content: ""; }
