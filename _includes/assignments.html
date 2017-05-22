@@ -8,7 +8,7 @@
   {% comment %}Site is mothballed: Link to mothballed assignments in assignments directory{% endcomment %}
 
 <p>
-  {{ ass.title }} has been archived <a href="{{site.baseurl}}/assignments/a{{ ass.number }}">here</a>.
+  {{ ass.title }} has been archived <a href="{{site.url}}{{site.baseurl}}/assignments/a{{ ass.number }}">here</a>.
 </p>
     
   {% else %}
