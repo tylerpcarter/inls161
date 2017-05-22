@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="/courses/2015_summerII/inls161_001/stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/courses/2015_summerII/inls161_001/stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/courses/2015_summerII/inls161_001/stylesheets/print.css" media="print" />
 	<link href="http://www.unc.edu/wp-content/themes/unc-sites-base-theme/images/ss_img_unc_favicon.ico" rel="shortcut icon">
 
     <!--[if lt IE 9]>
@@ -20,11 +20,11 @@
   <body>
     <header>
       <div class="inner">
-        <a href=" http://inls161.johndmart.in ">
+        <a href=" https://ils.unc.edu/courses/2015_summerII/inls161_001 ">
 		  <h1> Tools for Information Literacy </h1>
 		  <h2> INLS161-001 (Summer II) </h2>
 		</a>
-        <a href="http://sils.unc.edu" class="button"><img width="180" src="/images/silslogo.png" /></a>
+        <a href="http://sils.unc.edu" class="button"><img width="180" src="/courses/2015_summerII/inls161_001/images/silslogo.png" /></a>
 	  </div>
       <a href="https://github.com/jdmar3/inls161/">
         <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
@@ -74,7 +74,7 @@ Jekyll parses the whole thing and prepares it to be served online. </p>
 <h3 id="structure">Structure</h3>
 
 <p>A basic file structure for Jekyll looks like this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">./
+<div class="highlight"><pre><code class="language-" data-lang="">./
 ├── _config.yml
 │
 ├── css/
@@ -103,7 +103,7 @@ Jekyll parses the whole thing and prepares it to be served online. </p>
     └── ...
 </code></pre></div>
 <p>Hierarchically, Jekyll constructs the page something like this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">_config.yml
+<div class="highlight"><pre><code class="language-" data-lang="">_config.yml
 default.html (in _layouts)
     header.html (in _includes)
         content.md (information in Markdown files)
@@ -129,25 +129,25 @@ The curly braces offset our Liquid markup.</p>
 Pay attention to the Liquid tags and see what they are doing. </p>
 
 <p><code>_include/header.html</code></p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 
 <span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
 
   <span class="nt">&lt;title&gt;</span>\{\{ site.title \}\}<span class="nt">&lt;/title&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">content=</span><span class="s">&quot;\{\{ site.description \}\}&quot;</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;author&quot;</span> <span class="na">content=</span><span class="s">&quot;\{\{ site.author \}\}&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"description"</span> <span class="na">content=</span><span class="s">"\{\{ site.description \}\}"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"author"</span> <span class="na">content=</span><span class="s">"\{\{ site.author \}\}"</span><span class="nt">&gt;</span>
 
-  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;css/styles.css&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/styles.css"</span><span class="nt">&gt;</span>
 
-  <span class="c">&lt;!--[if lt IE 9]&gt;</span>
-<span class="c">  &lt;script src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;</span>
-<span class="c">  &lt;![endif]--&gt;</span>
+  <span class="c">&lt;!--[if lt IE 9]&gt;
+  &lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
 
 <span class="nt">&lt;body&gt;</span>
-  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/scripts.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;wrapper&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/scripts.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"wrapper"</span><span class="nt">&gt;</span>
 </code></pre></div>
 <p><code>_include/footer.html</code></p>
 <div class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;/div&gt;</span>
@@ -161,7 +161,7 @@ These two files function as a wrapper for our content.</p>
 <p>The following file gives us the content for the actual index page. </p>
 
 <p><code>index.md</code></p>
-<div class="highlight"><pre><code class="language-text" data-lang="text"># A Header
+<div class="highlight"><pre><code class="language-" data-lang=""># A Header
 
 Some content.
 
@@ -179,9 +179,9 @@ And an image:
 
 <p><code>_config.yml</code></p>
 <div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># Site settings</span>
-<span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">TITLE</span>
-<span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">DESCRIPTION</span>
-<span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">AUTHOR</span>
+<span class="s">title</span><span class="pi">:</span> <span class="s">TITLE</span>
+<span class="s">description</span><span class="pi">:</span> <span class="s">DESCRIPTION</span>
+<span class="s">author</span><span class="pi">:</span> <span class="s">AUTHOR</span>
 </code></pre></div>
 <h3 id="pay-now-or-pay-later">Pay now or pay later</h3>
 
@@ -213,7 +213,7 @@ We will look at how to do that in the next class. </p>
         <aside id="sidebar">
 			<nav>
 	<h1>
-		<a href="http://inls161.johndmart.in">Home</a>
+		<a href="https://ils.unc.edu/courses/2015_summerII/inls161_001">Home</a>
 	</h1>
 	<ul>
 	
@@ -277,21 +277,21 @@ We will look at how to do that in the next class. </p>
 	
 		
 		
-		<li><a class="active" href="/schedule/">Schedule</a></li>
+		<li><a href="/courses/2015_summerII/inls161_001/syllabus/">Syllabus</a></li>
 		
 	
 		
 		
-		<li><a href="/syllabus/">Syllabus</a></li>
+		<li><a class="active" href="/courses/2015_summerII/inls161_001/schedule/">Schedule</a></li>
 		
 	
 		
 	
 		
+		
+		<li><a href="/courses/2015_summerII/inls161_001/refsheets/">Reference Sheets</a></li>
+		
 	
-		
-		
-		<li><a href="/refsheets/">Reference Sheets</a></li>
 		
 	
 		

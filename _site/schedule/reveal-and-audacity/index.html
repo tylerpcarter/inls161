@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="/courses/2015_summerII/inls161_001/stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/courses/2015_summerII/inls161_001/stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/courses/2015_summerII/inls161_001/stylesheets/print.css" media="print" />
 	<link href="http://www.unc.edu/wp-content/themes/unc-sites-base-theme/images/ss_img_unc_favicon.ico" rel="shortcut icon">
 
     <!--[if lt IE 9]>
@@ -20,11 +20,11 @@
   <body>
     <header>
       <div class="inner">
-        <a href=" http://inls161.johndmart.in ">
+        <a href=" https://ils.unc.edu/courses/2015_summerII/inls161_001 ">
 		  <h1> Tools for Information Literacy </h1>
 		  <h2> INLS161-001 (Summer II) </h2>
 		</a>
-        <a href="http://sils.unc.edu" class="button"><img width="180" src="/images/silslogo.png" /></a>
+        <a href="http://sils.unc.edu" class="button"><img width="180" src="/courses/2015_summerII/inls161_001/images/silslogo.png" /></a>
 	  </div>
       <a href="https://github.com/jdmar3/inls161/">
         <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
@@ -67,21 +67,21 @@ The repo is located here: </p>
 <p>Open .git/config and look for the <code>[remote &quot;origin&quot;]</code> section. </p>
 
 <p>Then add the following two lines into that section:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">    push = +refs/heads/master:refs/heads/gh-pages
+<div class="highlight"><pre><code class="language-" data-lang="">    push = +refs/heads/master:refs/heads/gh-pages
     push = +refs/heads/master:refs/heads/master
 </code></pre></div>
 <p>So that the whole file should look something like this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">[core]
+<div class="highlight"><pre><code class="language-" data-lang="">[core]
     repositoryformatversion = 0
     filemode = true
     bare = false
     logallrefupdates = true
-[remote &quot;origin&quot;]
+[remote "origin"]
     url = git@github.com:YOUR-USERNAME/YOUR-REPO-NAME.git
     fetch = +refs/heads/*:refs/remotes/origin/*
     push = +refs/heads/master:refs/heads/gh-pages
     push = +refs/heads/master:refs/heads/master
-[branch &quot;master&quot;]
+[branch "master"]
     remote = origin
     merge = refs/heads/master
 </code></pre></div>
@@ -107,19 +107,19 @@ So, we can switch back to master for everything else now. </p>
 <p>You will need to specify some variables. </p>
 
 <p>Rememeber that the first three lines of your markdown file need to be:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">% TITLE
+<div class="highlight"><pre><code class="language-" data-lang="">% TITLE
 % NAME
 % DATE
 </code></pre></div>
 <p>Pandoc will use these as variables when it reads your markdown into the template that I have provided.</p>
 
 <p>This command will convert your markdown into a well-formed reveal.js HTML5 file. </p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">pandoc -t revealjs --template=template-index.html -s --variable theme=&quot;black&quot; --variable transition=&quot;slide&quot; --variable revealjs-url=&quot;http://YOUR-USERNAME.github.io/YOUR-REPO-NAME/&quot; YOUR-MARKDOWN-FILENAME.md -o YOUR-HTML-FILENAME.html
+<div class="highlight"><pre><code class="language-" data-lang="">pandoc -t revealjs --template=template-index.html -s --variable theme="black" --variable transition="slide" --variable revealjs-url="http://YOUR-USERNAME.github.io/YOUR-REPO-NAME/" YOUR-MARKDOWN-FILENAME.md -o YOUR-HTML-FILENAME.html
 </code></pre></div>
 <p>Here is an example of the command that I ran to get my demo presentation to translate from MD source.
 <em>CAUTION: the gettysburg.md source file is incomplete and very rudimentary. The final product took a lot of editing once it was translated into reveal.js HTML5.</em></p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">pandoc -t revealjs --template=template-index.html -s --variable theme=&quot;black&quot; --variable transition=&quot;slide&quot; --variable revealjs-url=&quot;http://
-johndmart.in/inls161-revealjs-template/&quot; gettysburg.md -o gettysburg.html
+<div class="highlight"><pre><code class="language-" data-lang="">pandoc -t revealjs --template=template-index.html -s --variable theme="black" --variable transition="slide" --variable revealjs-url="http://
+johndmart.in/inls161-revealjs-template/" gettysburg.md -o gettysburg.html
 </code></pre></div>
 <p>Once you are sure that your Markdown file has translated correctly you can copy it over the existing index.html file. </p>
 
@@ -283,7 +283,7 @@ So just press okay on that dialog until it is finished. </p>
 <h3 id="putting-the-files-in-the-right-place">Putting the files in the right place</h3>
 
 <p>You should end up with a file list that looks something like this:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">01-four_score.ogg
+<div class="highlight"><pre><code class="language-" data-lang="">01-four_score.ogg
 02-our_fathers.ogg
 03-on_this_continent.ogg
 04-a_new_nation.ogg
@@ -318,7 +318,7 @@ You will have to put the name of your ZIP file instead of &quot;audio.zip.&quot;
 <h3 id="add-audio-to-section-tags">Add audio to section tags</h3>
 
 <p>Just to make sure that it is clear, the way that you add audio to a slide is by making your <code>&lt;section&gt;</code> look like this:</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">data-audio-src=</span><span class="s">&quot;audio/SOME-AUDIO.ogg&quot;</span> <span class="na">data-background=</span><span class="s">&quot;#56A0D3&quot;</span><span class="nt">&gt;</span> 
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">data-audio-src=</span><span class="s">"audio/SOME-AUDIO.ogg"</span> <span class="na">data-background=</span><span class="s">"#56A0D3"</span><span class="nt">&gt;</span> 
     <span class="nt">&lt;h2&gt;</span>
         SOME SLIDE TITLE
     <span class="nt">&lt;/h2&gt;</span>
@@ -357,7 +357,7 @@ I will respond very quickly through that interface. </p>
         <aside id="sidebar">
 			<nav>
 	<h1>
-		<a href="http://inls161.johndmart.in">Home</a>
+		<a href="https://ils.unc.edu/courses/2015_summerII/inls161_001">Home</a>
 	</h1>
 	<ul>
 	
@@ -421,21 +421,21 @@ I will respond very quickly through that interface. </p>
 	
 		
 		
-		<li><a class="active" href="/schedule/">Schedule</a></li>
+		<li><a href="/courses/2015_summerII/inls161_001/syllabus/">Syllabus</a></li>
 		
 	
 		
 		
-		<li><a href="/syllabus/">Syllabus</a></li>
+		<li><a class="active" href="/courses/2015_summerII/inls161_001/schedule/">Schedule</a></li>
 		
 	
 		
 	
 		
+		
+		<li><a href="/courses/2015_summerII/inls161_001/refsheets/">Reference Sheets</a></li>
+		
 	
-		
-		
-		<li><a href="/refsheets/">Reference Sheets</a></li>
 		
 	
 		
