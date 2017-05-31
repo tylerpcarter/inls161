@@ -907,7 +907,7 @@ More information available here: https://codyhouse.co/gem/horizontal-timeline/
   bottom: 0;
   z-index: 2;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 0.875rem;
   padding-bottom: 15px;
   color: $text-color;
   /* fix bug on Safari - text flickering while timeline translates */
@@ -954,7 +954,7 @@ More information available here: https://codyhouse.co/gem/horizontal-timeline/
 }
 @media only screen and (min-width: 1100px) {
   .cd-horizontal-timeline {
-    margin: 6em auto;
+    margin: 0 auto;
   }
   .cd-horizontal-timeline::before {
     /* never visible - this is used in jQuery to check the current MQ */
@@ -1003,8 +1003,11 @@ More information available here: https://codyhouse.co/gem/horizontal-timeline/
   transform: translateX(-50%) translateY(-50%);
   background: url(../assets/img/cd-arrow.svg) no-repeat 0 0;
 }
+
 .cd-timeline-navigation a.prev {
-  left: 0;
+	margin-top: 1.75em;
+	margin-bottom: 1.75em;
+	left: 0;
   -webkit-transform: translateY(-50%) rotate(180deg);
   -moz-transform: translateY(-50%) rotate(180deg);
   -ms-transform: translateY(-50%) rotate(180deg);
@@ -1012,6 +1015,8 @@ More information available here: https://codyhouse.co/gem/horizontal-timeline/
   transform: translateY(-50%) rotate(180deg);
 }
 .cd-timeline-navigation a.next {
+	margin-top: 1.75em;
+	margin-bottom: 1.75em;
   right: 0;
 }
 .no-touch .cd-timeline-navigation a:hover {
@@ -1026,17 +1031,22 @@ More information available here: https://codyhouse.co/gem/horizontal-timeline/
 .no-touch .cd-timeline-navigation a.inactive:hover {
   border-color: #dfdfdf;
 }
-
 .cd-horizontal-timeline .events-content {
   position: relative;
   width: 100%;
-  margin: 2em 0;
+  //margin: 2em 0;
+	margin: 0 0;
+	padding: 0 0;
   overflow: hidden;
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
   transition: height 0.4s;
 }
-.cd-horizontal-timeline .events-content li {
+.cd-horizontal-timeline .events-content ul.nomargin {
+	margin: 0 0;
+	padding: 0 0;
+}
+	.cd-horizontal-timeline .events-content li {
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -1047,8 +1057,10 @@ More information available here: https://codyhouse.co/gem/horizontal-timeline/
   -ms-transform: translateX(-100%);
   -o-transform: translateX(-100%);
   transform: translateX(-100%);
-  padding: 0 5%;
-  opacity: 0;
+  //padding: 0 5%;
+	padding: 0 0;
+  margin: 0 0;
+	opacity: 0;
   -webkit-animation-duration: 0.4s;
   -moz-animation-duration: 0.4s;
   animation-duration: 0.4s;
