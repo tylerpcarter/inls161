@@ -1,0 +1,24 @@
+{
+{% if site.data.timeline.title %}
+    "title": {
+  {% if site.data.timeline.title.media %}
+        "media": {
+    {% for item in site.data.timeline.title.media %}
+          "{{ item[0] }}": "{{ item[1] | smartify | jsonify }}"{% unless forloop.last == true %},{% endunless %}
+        },
+  {% endif %}
+        "text": {
+          "headline": "{{ site.data.timeline.title.text.headline | smartify | jsonify }}",
+          "text": "{{ site.data.timeline.title.text.media.text | smartify | jsonify }}"
+        }
+    },
+{% else %}
+    "title": {
+        "text": {
+          "headline": "{{ site.title | smartify | jsonify }}",
+          "text": "{{ site.description | smartify | jsonify }}"
+        }
+    },
+{% endif %}
+
+}
