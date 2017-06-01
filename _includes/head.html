@@ -33,15 +33,11 @@
      <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
   {% endif %}
   
-  {% if site.data.options.timeline %}
-    <script src="{{ '/js/timeline3.js' | prepend: site.baseurl }}"></script> <!-- Modernizr -->
-  {% endif %}
-
-  <link rel="stylesheet" href="{{ '/css/tufte.css' | prepend: site.baseurl }}"> 
+<link rel="stylesheet" href="{{ '/css/tufte.css' | prepend: site.baseurl }}"> 
 
   {% comment %}<link rel="icon" href="{{ '/assets/img/favicon.ico' | prepend: site.baseurl }}" type="image/x-icon" />{% endcomment %}
   
-  <link rel="{{ '/apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png' | prepend: site.baseurl }}">
+<link rel="{{ '/apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png' | prepend: site.baseurl }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32x32.png' | prepend: site.baseurl }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/img/favicon-16x16.png' | prepend: site.baseurl }}">
 <link rel="manifest" href="{{ '/assets/img/manifest.json' | prepend: site.baseurl }}">
@@ -50,7 +46,24 @@
 <meta name="msapplication-config" content="{{ '/assets/img/browserconfig.xml' | prepend: site.baseurl }}">
 <meta name="theme-color" content="#ffffff">
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+
+{% if site.data.options.timeline %}
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- CSS-->
+    <link rel="stylesheet" href="{{ '/css/timeline.css' | prepend: baseurl }}">
+    <!--FONT-->
+    <link rel="stylesheet" href="{{ '/css/fonts/font.default.css' | prepend: baseurl }}">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements-->
+    <!--if lt IE 9
+    script(src='https://html5shim.googlecode.com/svn/trunk/html5.js')
+    
+    -->
+{% endif %}
+
 </head>

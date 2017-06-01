@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Clients and Servers
-category: Basics
+category: Class
+date: "2017-06-27 11:30"
+end_date: "13:00"
 tags: 
 - clients
 - servers

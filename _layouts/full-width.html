@@ -2,11 +2,13 @@
 <html>
   {% include head.html %}
   <body class="full-width">
+    <div class="wrap">
     {% include header.html %}
     <article>
       {{ content }}
-    </article>
+    </article>  
     {% include print-footer.html %}
     {% include footer.html %}
+    </div>
   </body>
 </html>

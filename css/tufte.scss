@@ -19,21 +19,37 @@ nav_exclude: true
 
 // Global Resets
 //
-* { margin: 0; padding: 0; }
+//* { margin: 0; padding: 0; }
+
+html, body {
+      	height:100%;
+      	width:100%;
+      	padding: 0px;
+      	margin: 0px;
+      }
+
+body{
+    -webkit-touch-callout: auto !important;
+    -webkit-user-select: auto !important;
+    -khtml-user-select: auto !important;
+    -moz-user-select: auto !important;
+    -ms-user-select: auto !important;
+    user-select: auto !important;
+}
 
 /* clearfix hack after Cederholm (group class name) */
-.group:after {
+.wrap .group:after {
   content: "";
   display: table;
   clear: both;
 }
 
-html, body { height: 100%; }
+//html, body { height: 100%; }
 
 // First significant deviation from CSS on tufte.css site - variable font size as browser width expands or contracts
 //html { font-size: 15px; }
 
-html{
+.wrap{
     text-align: baseline;
     font-size: 12px;
     -webkit-font-smoothing: antialiased;
@@ -51,6 +67,21 @@ html{
 @media screen and (min-width: 1200px){ html{ font-size: 17px; } }
 
 @media screen and (min-width: 1300px){ html{ font-size: 18px; } }
+
+.wrap { width: 87.5%;
+       margin-left: auto;
+       margin-right: auto;
+       //padding-left: 12.5%;
+       padding: 0% 5%; // added by JDM
+       font-family: et-bembo, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+       background-color: $bg-color;
+       color: $text-color;
+       //text-align: justify;
+       max-width: 1400px;
+       counter-reset: sidenote-counter; }
+
+// WRAP EVERYTHING for TL
+.wrap {
 
 // sets link style according to values in _settings.scss
 .mathblock{
@@ -78,18 +109,6 @@ p > a { @if $link-style == underline
       text-decoration: none;
     }
   }
-
-body { width: 87.5%;
-       margin-left: auto;
-       margin-right: auto;
-       //padding-left: 12.5%;
-       padding: 0% 5%; // added by JDM
-       font-family: et-bembo, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-       background-color: $bg-color;
-       color: $text-color;
-       //text-align: justify;
-       max-width: 1400px;
-       counter-reset: sidenote-counter; }
 
 // --------- Typography stuff -----------//
 // added rational line height and margins ala http://webtypography.net/intro/
@@ -245,6 +264,10 @@ tr.cmid td { border-top: 1px solid $border-color; }
                  margin-bottom: 0;
                  font-size: 1.0rem;
                  line-height: 1.96; }
+	
+// END WRAP EVERYTHING
+}
+
 /* -- End of Table Styling section --*/
 
 /* Basic Layout stuff --*/
@@ -255,8 +278,9 @@ article { position: relative;
 section { padding-top: 1rem;
           padding-bottom: 1rem; }
 
+article {
 
-article ul{ width: 55%; //width: 45%;
+ul{ width: 55%; //width: 45%;
      -webkit-padding-start: 2.5%;
      -webkit-padding-end: 2.5%;
      list-style-type: none;
@@ -269,15 +293,15 @@ ul li ul { width: 100%;
      text-indent: -2.5%;
 }
 
-body.cv ul{
+.cv ul{
   text-indent: -2.5%;
 }
 
-body.cv ul li{
+.cv ul li{
   text-indent: -2.5%;
 }
 
-ul.bibliography{
+ ul.bibliography{
   text-indent: -2.5%;
 }
 
@@ -296,7 +320,7 @@ ol li ol { width: 100% !important;
 
 ol p, ul p { width: 100% !important; }
 
-article li {text-align: left}
+li {text-align: left}
 
 //li { padding: 0.5em 0; } //vertical padding on list items screws up vertical rhythym
 
@@ -355,14 +379,18 @@ blockquote .sidenote, blockquote .marginnote { margin-right: -79% }
                    color: $contrast-color;
                    top: 0rem; } //removed superscripting for numerical reference in sidenote
 
-p, footer, div.table-wrapper, div.mathblock{ width: 55%; }
+p, div.table-wrapper, div.mathblock{ width: 55%; }
 
 table { max-width: 55%; }
 
 div.table-wrapper { overflow-x: auto } //changed all overflow values to 'auto' so scroll bars appear only as needed
 
+// END BLOCK ARTICLE STYLING
+}
+
 @media screen and (max-width: 760px) { 
-    p, footer,div.mathblock, { width: 90%; }
+	article {
+		p, div.mathblock, { width: 90%; }
     div.highlight { width: 87.5% !important; }
   .twitter-tweet { max-width: 87.5%; }
     pre code { //width: 52.5%; 
@@ -374,7 +402,12 @@ div.table-wrapper { overflow-x: auto } //changed all overflow values to 'auto' s
     blockquote p, blockquote footer {  width: 80%;
         padding-left: 5%;
         padding-right: 5%; }
+	}
 }
+
+// CODE, MEDIA AND OTHER BOXES
+
+article {
 
 .marginnote code, .sidenote code { font-size: 1rem; } //more .code class removal
 
@@ -393,21 +426,25 @@ pre, pre code, p pre code { //width: 52.5%;
 
 .fullwidth/*, li.listing div*/{ max-width: 90%; }
 
-.full-width { .sidenote, .sidenote-number, .marginnote { display: none; } }
-
 .fullwidth div.highlight {
   width: 90%;
 }
+	
+// FIRSTLINE STYLING
 
 span.newthought { font-variant: small-caps;
                   font-size: 1.2em;
                   letter-spacing: 0.05rem; }
+	
+// MARGIN AND SIDE NOTE TOGGLE STYLING IN NORMAL MODE
 
 input.margin-toggle { display: none; }
 
 label.sidenote-number { display: inline; }
 
 label.margin-toggle:not(.sidenote-number) { display: none; }
+	
+} // END ARTICLE TAG
 
 @media (max-width: 760px) { label.margin-toggle:not(.sidenote-number) { display: inline; color: $contrast-color; }
                             .sidenote, .marginnote { display: none; }
@@ -470,8 +507,12 @@ header > nav.group, body footer {
   padding-top: 2rem;
 }
 
+/* -- END Jekyll specific styling --*/
+
 /* nav.group a.active:before{ content:"\0003c\000a0";} // escaped unicode for the carats and then a space on active menu links
 nav.group a.active:after{ content:"\000a0\0003e" ;} */
+
+/* END NAVIGATION */
 
 nav.group a.active{ color: $contrast-color-dark; }
 
@@ -505,6 +546,7 @@ ul.footer-links, .credits{
 }
 ul.footer-links{
   text-indent: 0% !important;
+	padding: 0;
 }
 ul.footer-links li{
   display: inline;
@@ -551,6 +593,8 @@ ul.footer-links li{
 }
 */
 
+/* END NAVIGATION */
+
 //change font color for credit links in footer
 
 .credits{
@@ -562,14 +606,30 @@ ul.footer-links li{
 
 // End of Nav and Footer styling area
 
-//Full width page styling stuff
+// Full-width page styling stuff
 
-body.full-width{ width: 87.5%; //width: 90%;
+.full-width{ width: 87.5%; //width: 90%;
        margin-left: auto;
        margin-right: auto;
        padding: 0% 5% !important;
        max-width: 1400px;
 }
+
+.full-width { .sidenote, .sidenote-number, .marginnote { display: none; } }
+
+.full-width article p{
+  width: 100%;
+}
+
+.full-width ul{ width: 90%; 
+}
+
+.full-width ol{ width: 90%; 
+}
+
+// END Full-width page styling stuff
+
+// Front listing page stuff
 
 ul.content-listing{
   width: 100% !important;
@@ -591,16 +651,6 @@ ul.content-listing li.listing
   margin-left: auto;
   margin-right: auto;
   padding: 0% 0%;
-}
-
-.full-width article p{
-  width: 100%;
-}
-
-.full-width ul{ width: 90%; 
-}
-
-.full-width ol{ width: 90%; 
 }
 
 h1.content-listing-header{
@@ -728,7 +778,9 @@ hr.slender {
     }
 
     body header, 
-    body footer {
+    body footer,
+		body div#timeline-embed
+		{
       display:none;
     }
     
@@ -742,6 +794,8 @@ hr.slender {
 }
 
 /* TAGS */
+
+.wrap {
 
 .tags,{list-style:none;
   margin:0;
@@ -761,7 +815,6 @@ hr.slender {
 .tag{ font-weight: 500;
   background:$contrast-color;
   border-radius:0.2rem 0.2rem 0.2rem 0.2rem;
-  color: $bg-color;
   display:inline-block;
   height:1.6rem;
   line-height:1.6rem;
@@ -770,6 +823,10 @@ hr.slender {
   margin:0 0.6667rem 0.6667rem 0;
   -webkit-transition:color .2s
 }
+
+.tag{
+  color: $bg-color;	
+	}
 
 .tag::before{ background:$bg-color;
   content:'';
@@ -797,6 +854,8 @@ hr.slender {
 //.tag:hover::after{ border-left-color:$contrast-color-dark }
 
 .tag:visited{ color: $bg-color}
+	
+}
 
 //.icon-tags{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAuklEQVQ4jbXTrxJBQRTH8RsEQfAINwqiKHoEUfAYgiaIoiiIHsMDCKIgCIIgCILwEewd15/LXjN+M6fs7Pc755ydTZJ/BRV0UQvVxxSzUBM0i+AG1kHQxs77bIrgXQ4+5YAjhlhmB2VgGIR7dZwfBBEwLMJuOg8dRMJZDvmRysLPmSduC+mF1rYl4D3SBKsgqIbDWLiRzd90H6GLSzRc8AKfJK9wCUkxHCH5DuckKUZuH6iFMdIo+JdcAcegeBZTaArHAAAAAElFTkSuQmCC)}
 
