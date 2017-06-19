@@ -67,23 +67,11 @@ In most cases, work will be done using web applications in such a way that you m
 
 {% include syllabus-nav.html %}
 
-# Readings
+# Helpful reading materials
 
-There will be something to read for each session, but they are not readings for memorization. 
-The purpose of the readings is to provide you a context within which to experience the lectures and exercises that follow. 
-You will want to do the readings to have a framework within which to work. 
-Additionally, readings will provide you with helpful information in support of the assignments associated with each class session. 
+There will be something to read for each session, but they are intended as reference materials for the task- and skill-sets we are working with. 
 
-Most readings will be available either on the open web or through the univerity's proxy. Any that are not will be available in Sakai. 
-
-There are a few longer pieces that will serve as optional or recommended readings that I will refer to over the course of the semester. 
-These readings are more general pieces about computing and information technology in general, its history, and its future. 
-
-## Session Notes
-
-Pay attention to the [schedule]({{ site.baseurl }}/schedule/). 
-Session notes will be posted prior to each class and you would do well to look over the links before coming to class. 
-If there is something that you should before coming to class, it will be included on the session notes for the session prior to the class you will be preparing for.
+Most readings will be available either on the open web or through the univerity's proxy. 
 
 ## Linked Resources
 
@@ -123,16 +111,17 @@ Ford, Paul.{% marginnote 'code' 'This is an excellent piece about the need for p
 
 {% include syllabus-nav.html %}
 
-# Lectures
+# Session Notes
 
-## Session Notes
+Session notes will be posted prior to each class and you would do well to look over the links before coming to class. 
+If there is something that you should before coming to class, it will be included on the session notes for the session prior to the class you will be preparing for.
 
 Class sessions will have online lecture notes (which will include links to supplementary readings). 
-The notes will also include practical exercises that may either be required or recommended (pay attention to which is which), links to other related sources of information on the topic under consideration, and required readings for the subsequent session.
-Some lecture notes will be very detailed and loaded with images; some lecture notes will be spare and loaded with hyperlinks (recognize that links may change over time).
+The notes will also include practical exercises that we will work through in class. 
+It is a really, really good idea to go over these and try them on your own before class in order to familiarize yourself with the commands and generate questions about techniques. 
+It is also a really, really good idea to go over these after class, once we have worked through them together. 
+Some session notes will be very detailed and loaded with images; some session notes will be spare and loaded with hyperlinks (be aware that links may change over time).
 
-Refer to the lecture notes either to prepare for what you are going to learn or to review what you have learned.
-Lecture notes will be made available before each class session. 
 See the [schedule]({{ site.baseurl }}/schedule/) for links to lecture notes. 
 
 ## Daily Plan

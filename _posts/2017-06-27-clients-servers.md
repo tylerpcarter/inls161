@@ -1,15 +1,13 @@
 ---
 layout: post
 title: Clients and Servers
-category: Class
-date: "2017-06-27 11:30"
-end_date: "13:00"
+category: Basics
 tags: 
 - clients
 - servers
 - Linux
 - shell commands
-
+type: Class
 ---
 
 Today we'll talk about some of the basic ways that computers work and
