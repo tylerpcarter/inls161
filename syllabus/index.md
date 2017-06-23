@@ -14,7 +14,25 @@ This is a critical component of information literacy, which involves seeking, ev
 INLS151, titled "Retrieving and Analyzing Information," is focused on the seeking and evaluating components of information literacy. 
 This course is about effective use and communication. 
 
-### Information Literacy
+## Tools and Concepts
+
+The course introduces some basic technology tools as an essential component of information literacy training. 
+We will cover the following:
+
+-	Operating on a remote system
+-	Using version control software to maintain your workflow
+-	Manipulating and formatting text-based documents
+-	Processing data using spreadsheets
+-	Processing and storing data in databases
+-	Developing presentation materials to communicate your work effectively
+-	Beyond!
+
+Some of the tools used may be familiar to you already while others may not.  
+We will introduce concepts and practice skills relevant to effective use and understanding of the power built into the tools listed above. 
+If you already know how to use a given set of tools, you will have the opportunity to deepen or expand your existing skills. 
+We will use exclusively Free and Open Source Software (F/OSS) when possible and conduct and submit most of our work in open repositories online. 
+
+## Information Literacy
 
 From the [American Library Association](http://www.ala.org/ala/mgrps/divs/acrl/standards/informationliteracycompetency.cfm#ildef):
 
@@ -34,51 +52,13 @@ A full information literacy curriculum would include:
 -	Research literacy - The ability to understand and use information technology tools to carry our research including discipline-related software
 -	Publishing literacy - The ability to produce a text or multimedia report of the results of research
 
-### Tools and Concepts
-
-The course introduces some basic technology tools as an essential component of information literacy training. 
-We will cover the following:
-
--	Operating on a remote system
--	Using version control software to maintain your workflow
--	Manipulating and formatting text-based documents
--	Processing data using spreadsheets
--	Processing and storing data in databases
--	Developing presentation materials to communicate your work effectively
--	Beyond!
-
-We will begin with the building blocks of the Internet and the World Wide Web, to be certain we understand what the our basic tools are doing for us. 
-This will allow us to better understand methods for creating well-formed materials to be used on the Web.
-We will also introduce concepts and practice skills relevant to effective use and understanding of the power built into the tools listed above. 
-
-Some of the tools used may be familiar to you already while others may not. 
-If you already know how to use a given set of tools, it will behoove you to learn a new set, thus increasing your technical skills. 
-We will use primarily Free and Open Source Software (F/OSS) when possible and conduct and submit most of our work in open repositories online. 
-
-### A Note on Computers
-
-This is a paper-free course. 
-There will be no paper products generated in this class and there is no printing requirement. 
-
-All work done in INLS161 will be done on computers either on your personal laptop or on the desktop systems in the SILS lab. 
-You can use whatever computer you wish in the lab that we will use as our classroom. 
-You may also use your own laptops. 
-In most cases, work will be done using web applications in such a way that you might access your workspace from any computer, anywhere. 
-
 {% include syllabus-nav.html %}
 
-# Helpful reading materials
+# Reading materials
 
 There will be something to read for each session, but they are intended as reference materials for the task- and skill-sets we are working with. 
 
 Most readings will be available either on the open web or through the univerity's proxy. 
-
-## Linked Resources
-
-Part of your responsibility for this class is investigating and sharing resources that you find on the web or elsewhere that you think might be helpful to us. 
-The best and most current resources for using technology tools are not going to be found between the pages of books. 
-Rather, they will be on forums, blogs, and in ebooks like some of those listed above. 
-They best way to keep abreast of current techniques is to keep up with the resources and tutorials available online.
 
 ## Other readings
 
@@ -111,39 +91,47 @@ Ford, Paul.{% marginnote 'code' 'This is an excellent piece about the need for p
 
 {% include syllabus-nav.html %}
 
-# Session Notes
+# Class structure
+
+## Session notes
 
 Session notes will be posted prior to each class and you would do well to look over the links before coming to class. 
 If there is something that you should before coming to class, it will be included on the session notes for the session prior to the class you will be preparing for.
 
-Class sessions will have online lecture notes (which will include links to supplementary readings). 
+Class sessions will have online notes (which will include links to supplementary readings). 
 The notes will also include practical exercises that we will work through in class. 
+Some session notes will be very detailed and loaded with images; some session notes will be spare and loaded with hyperlinks (be aware that links may change over time).
+
 It is a really, really good idea to go over these and try them on your own before class in order to familiarize yourself with the commands and generate questions about techniques. 
 It is also a really, really good idea to go over these after class, once we have worked through them together. 
-Some session notes will be very detailed and loaded with images; some session notes will be spare and loaded with hyperlinks (be aware that links may change over time).
 
 See the [schedule]({{ site.baseurl }}/schedule/) for links to lecture notes. 
 
+## A Note on Computers
+
+This is a (mostly) paper-free course. 
+There will be no paper products generated in this class and there is no printing requirement. 
+
+All work done in INLS161 will be done on computers either on your personal laptop or on the desktop systems in the SILS lab. 
+In most cases, work will be done using web applications in such a way that you might access your workspace from any computer, anywhere. 
+
 ## Daily Plan
 
-What follows is a typical plan. 
-All sessions will not look like this, but many will.
+This is a pretty fast, intensive class, because we have a lot of material to cover and about 23 sessions over five weeks in which to cover it. 
+You are expected to come to class on time (read: get here early) and ready to review what we covered in the last session.
 
-The first 5 to 10 minutes will be reviewing the material from the previous session. 
+- The first 5 to 10 minutes will be reviewing the material from the previous session. 
 This will be mostly done by you. 
-You will talk about what you learned and I will listen.
-
-The next 50 to 60 minutes will consist of lecture (some); examples (a lot); discussion (a fair amount); and practice (some).
-
-The last 20 to 30 minutes will be for practice (more) when we have the time and hands-on-keyboards activities (most days).
+You will talk about what you learned and I will listen and ask questions.
+- The next 50 to 60 minutes will consist of lecture (some); examples (a lot); discussion (a fair amount); and practice (some).
+- The last 20 to 30 minutes will be for practice (more) when we have the time and hands-on-keyboards activities (most days).
 
 {% include syllabus-nav.html %}
 
-# Lab
+## Lab days
 
-Fridays will be reserved as a lab session.{% marginnote 'lab' 'I will also make myself available in the lab beginning at 10:30 on Fridays. If you need any extra help or wish to talk about anything, that is a good time to do it. ' %} 
-We will typically have a very short hands-on lesson related to one of your assignment tasks and then time to work through issues in building or completing the assignment. 
-Sometimes we will have a guest on days like this who will show us something interesting that we can put into practice. 
+Several days throughout the semester will be reserved as lab sessions.{% marginnote 'lab' 'I will also make myself available in the computer lab beginning at 10:30 on Fridays. If you need any extra help or wish to talk about anything, that is a good time to do it. ' %} 
+We will spend these days working in groups or individually on your ongoing projects so that you will have some in-class time to troubleshoot issues with help from your instructor.
 
 {% include syllabus-nav.html %}
 
@@ -153,6 +141,15 @@ This class has no exams, but there are 6 major tasks that will correspond to one
 These include a final presentation which will be made during the scheduled final exam period. 
 All of the tasks are interconnected, so it is important to complete the tasks in succession by the due dates listed in the chart below. 
 
+## Grade contract
+
+{% marginnote 'contract' '<a href="/syllabus/inls161-suii2017-gradecontract.pdf"><img src="/syllabus/inls161-suii2017-gradecontract.png"></a><br/><br/>[The breakdown of grades in the contract is also available here](/syllabus/evaluation/).' %}
+
+Evaluation for this course will be based on your agreement to a specific set of tasks at the beginning of the semester and successful completion thereof. 
+This will happen in the form of a contract between you and me which you will sign on the first day of class. 
+
+A detailed breakdown of how your grade will be rendered based on participation and contribution is included in the [contract](/syllabus/inls161-suii2017-gradecontract.pdf) and [on the course website](/syllabus/evaluation/). 
+
 ## Assignment Tasks
 
 See [this page]({{ site.baseurl }}/assignments/) for a list of assignments and links to individual assignment instructions. 
@@ -160,19 +157,20 @@ Assignment descriptions will be up typically one week before the due date.
 
 {% include assignment-table.md %} 
 
-## Due Dates
+### Due Dates
 
-Each task is due by the end of the day (midnight) on the date specified. 
+Each task is due at the date and time specified in the schedule. 
 It would be a good idea to complete assignments before that deadline so that you can get a jump on the next section. 
-The last assignment (the recorded/narrated presentation) will be due before the final exam day, but will be presented during the exam day session itself. You will have one chance to make changes after submission. 
 
-## Submitting Assignments
+The last assignment (the recorded/narrated presentation) will be due on the last regular day of class for evaluation, but will be presented during the exam day session in place of a final exam. You will have the chance to make changes after submission before the final presentation. 
+
+### Submitting Assignments
 
 All of your assignments will be submitted using GitHub, as this is where you will store your course materials and personal website. 
 Learning how to use this system is built into the first assignment. 
 Particular requirements and instructions for assignments and submission will be discussed in class and included in the lecture notes. 
 
-A snapshot of your work will be automatically collected at midnight on the assignment due date. 
+A snapshot of your work will be automatically collected from your GitHub repositories at the time the assignment is due. 
 You do not have to submit anything manually. 
 You just have to make sure that your assignment is ready and pushed to a repository in your GitHub account. 
 Given this, it is important to pay attention to how I have instructed you to name your repositories in the assignment text. 
@@ -186,6 +184,13 @@ In addition to the 6 tasks, participation will be evaluated and included in the 
 Participation, of course, means coming to class: that is mandatory. 
 It also means bringing something to the class by way of discussion or links shared with the rest of the class. 
 Since we are a small class this summer, we will decide on the first day how best to accomplish the sharing of resources. 
+
+## Linked Resources
+
+Part of your responsibility for this class is investigating and sharing resources that you find on the web or elsewhere that you think might be helpful to us. 
+The best and most current resources for using technology tools are not going to be found between the pages of books. 
+Rather, they will be on forums, blogs, and in ebooks like some of those listed above. 
+They best way to keep abreast of current techniques is to keep up with the resources and tutorials available online.
 
 ## Attendance
 
@@ -223,11 +228,9 @@ Grades will be made available on a rolling basis.
 
 # Course Policies
 
-## What it means to us
-
 Instructors and students at the University of North Carolina at Chapel Hill adhere to the Code of Student Conduct. 
 Accordingly, you all should recognize that most software applications available in the computer lab are copyrighted and cannot be copied.
-We will primarily use open source software for this course, which does allow for copying. 
+We will use open source software for this course, which does allow for copying, remixing, and reuse, depending on the terms of the license under which the software and source code is distributed. 
 It is important to know the difference and heed the terms of software licences. 
 
 We can learn much from each other and we will do that. 

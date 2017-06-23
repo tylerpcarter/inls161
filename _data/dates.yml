@@ -1,14 +1,14 @@
 begin:
   dow: Monday
-  date: "2016-06-20"
+  date: "2016-06-26"
   time: "11:30"
 end: 
   dow: Thursday
-  date: "2016-07-21"
+  date: "2016-07-27"
   time: "13:00"
 exam:
-  date: "2016-07-25"
-  time: "11:30-14:30"
+  date: "2016-07-31"
+  time: "11:30-14:00"
   begin: "11:30"
   end: "14:00"
 lab: 
