@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script type="text/javascript">
+    var host = "inls161.johndmart.in";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+  </script>
+
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Developing and Deploying</title>
+  <meta name="description" content="Today we&#39;re going to take the first steps toward actually getting our website up and running. We will also use this opportunity to discuss the developmen...">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+  
+  <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
+   
+     <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
+    
+   
+  
+     <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
+  
+<link rel="stylesheet" href="/css/tufte.css"> 
+
+  
+  
+<link rel="/apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+<link rel="manifest" href="/assets/img/manifest.json">
+<link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="canonical" href="/web/2017/07/06/developing-deploying-branching/">
+
+<link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="/feed.xml" />
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- CSS-->
+    <link rel="stylesheet" href="/css/timeline.css">
+    <!--FONT-->
+    <link rel="stylesheet" href="/css/fonts/font.default.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements-->
+    <!--if lt IE 9
+    script(src='https://html5shim.googlecode.com/svn/trunk/html5.js')
+    
+    -->
+
+
+</head>
+
+  <body>
+    <div class="wrap">
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/161icon.png" alt="UNC"></a>
+	
+	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/">Tools for Information Literacy</a>
+		    
+	    
+  	
+		
+  	
+		
+		    
+		      <a href="/syllabus/">Syllabus</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/schedule/">Schedule</a>
+		    
+	    
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/assignments/">Assignments</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/refsheets/">Reference</a>
+		    
+	    
+  	
+	</nav>
+
+</header>
+    <article class="group">
+      <h1>Developing and Deploying</h1>
+
+
+
+<p class="subtitle"><span id="date">Thursday, 6 July 2017</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
+
+<p>Today we&#39;re going to take the first steps toward actually getting our website up and running. 
+We will also use this opportunity to discuss the development &gt; testing &gt; deployment workflow. 
+<excerpt/></p>
+
+<p>We&#39;ll be using Barry Clark&#39;s tutorial as a reference, so you&#39;ll want to have that pulled up in a separate window so that you can switch back and forth to it. </p>
+
+<h1 id="fork">Fork</h1>
+
+<p>We will do the same thing that we have previously done in GitHub and fork our chosen theme into our account as a starting place. </p>
+
+<p>That should be relatively straightforward now.</p>
+
+<h1 id="configure">Configure</h1>
+
+<p>Once we have the base theme forked, we need to make sure that the site is going to show up at the right address. </p>
+
+<p>The address that we want is <code>http://YOUR-GITHUB-USERNAME.github.io</code>. This is the default user site address for GitHub pages. </p>
+
+<p>GH Pages will serve this site from code in the master branch of a repository in your account named the same as the fully qualified domain name (FQDN) or just the full URL to our desired site. </p>
+
+<p>Therefore, if your GH Pages user site defaults to <code>http://YOUR-GITHUB-USERNAME.github.io</code> then we have to make a repository in your account titled <code>YOUR-GITHUB-USERNAME.github.io</code>. 
+The easiest way to do this is to just change the name of the theme repository that we just forked so that it matches what we need. </p>
+
+<p>To do this, click the settings tab on your repository page, enter a new name under &quot;Repository name,&quot; and then click &quot;Rename.&quot;</p>
+
+<h2 id="_config-yml">_config.yml</h2>
+
+<p>Once we are there, we should be able to look into <code>_config.yml</code> file right in GitHub and make sure that our site settings are correct.
+We will likely have to change three variables, if they exist: <code>path</code>, <code>url</code>, and <code>baseurl</code>.
+These will be different for different themes, so we&#39;ll look over this together in class. Basic principles are as follows:</p>
+
+<p>You want <code>url</code> to match the desired URL for your site: <code>http://YOUR-GITHUB-USERNAME.github.io</code>.</p>
+
+<p><code>path</code> specifies a path where files are held. 
+For the GH Pages user site, it needs to have no value. You can either delete that line, comment it, or just put a set of double quotes to specify that Jekyll should not try to rewrite the links and append a subdirectory. It will look like this:</p>
+
+<p><code>path: &quot;&quot;</code></p>
+
+<p>The same is true for <code>baseurl</code>.</p>
+
+<p>All that these do is tell Jekyll where things are when it is trying to build the site. 
+Remember, linking is dynamic in the build process, so Jekyll is trying to figure out how to tell your browser where to find stuff that it needs to render the site. </p>
+
+<h2 id="test">Test</h2>
+
+<p>Once you have your config set accordingly, then you should be able to look at your site at <code>http://YOUR-GITHUB-USERNAME.github.io</code>. 
+Don&#39;t worry if it doesn&#39;t work or if something looks weird. 
+Nothing is broken in those cases, you&#39;ll just need to troublshoot to figure out what is wrong. This is part of the developmet workflow. </p>
+
+<h1 id="development">Development</h1>
+
+<p>A &quot;development workflow&quot; has several stages that happen in order.<label for='ghflow' class='margin-toggle sidenote-number'></label><input type='checkbox' id='ghflow' class='margin-toggle'/><span class='sidenote'>“Understanding the GitHub Flow.” GitHub Guides. Last modified December 12, 2013. <a href="https://guides.github.com/introduction/flow/">https://guides.github.com/introduction/flow/</a>. </span> 
+We have been gearing up to think about our work in this context. </p>
+
+<p>A typical development workflow might conceptually look like this:</p>
+
+<ol>
+<li>Create new branch of source code for new feature</li>
+<li>Work on code for new feature in new branch </li>
+<li>Test feature and make fixes if necessary</li>
+<li>Run with feature in testing environment to ensure that feature works</li>
+<li>Get feedback about new feature and integrate suggestions if necessary</li>
+<li>Merge new feature into main workflow</li>
+<li>New feature is live in production</li>
+</ol>
+
+<h1 id="next-time">Next time</h1>
+
+<p>We&#39;re going to learn tomorrow how to incorporate branching, testing, and merging by setting up a development workflow like the one described above. </p>
+
+<p>To prepare for this, I would like you to read the Gist linked in the margin, but I would also like you to do some searching online about how different developers managed their workflows. {sidenote &#39;workflow&#39; &#39;blackfalcon. “Git Basics - a General Workflow.” Gist. Accessed June 29, 2016. <a href="https://gist.github.com/blackfalcon/8428401.&#x27;">https://gist.github.com/blackfalcon/8428401.&#39;</a>}
+To this end you might Google things like &quot;development workflow&quot; or &quot;project development.&quot;
+See what you can find. 
+There is a ton of relevant information on this topic out in the Internet.</p>
+
+
+<p>
+  <br/>
+  <ul class="tags">
+    <li><a href="/topics#git" class="tag">git</a></li><li><a href="/topics#GitHub" class="tag">GitHub</a></li><li><a href="/topics#Jekyll" class="tag">Jekyll</a></li><li><a href="/topics#development" class="tag">development</a></li><li><a href="/topics#workflow" class="tag">workflow</a></li>
+  </ul> 
+</p>
+    </article>
+    <span class="print-footer">Developing and Deploying - July 6, 2017 - </span>
+    <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/web/2017/07/05/jekyll-css-html/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Visual styling for the web</a>
+    
+    
+      <a class="next" href="/web/2017/07/07/branching-and-merging/"><span class="smaller">Next:</span>&nbsp;Branching and Merging&nbsp;&raquo;</a>
+    
+  </div>
+  <hr class="slender">
+  <ul class="footer-links">
+    
+    
+      <li>
+        <a href="http://johndmart.in" title="Instructor home page"><span class="ico-user"></span>&nbsp;John D. Martin III</a>
+      </li>
+    
+    
+      <li>
+        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="ico-envelope"></span>&nbsp;john.d.martin.iii@unc.edu</a>
+      </li>
+    
+    
+      <li>
+        <span class="ico-clock"></span>&nbsp;11:30-13:00
+      </li>
+    
+    
+      <li>
+        <span class="ico-calendar"></span>&nbsp;MoTuWeThFr
+      </li>
+    
+    
+      <li>
+        <span class="ico-library"></span>&nbsp;117 Manning Hall
+      </li>
+    
+    
+      <li>
+        <a href="https://sakai.unc.edu/portal/site/inls161s216" title="UNC Sakai site for this course"><span class="ico-target"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://github.com/inls161" title="GitHub organization for this course"><span class="ico-github"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://inls161.slack.com" title="Join the Slack conversations for this course"><span class="ico-slack"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed" title="Add RSS feed"><span class="ico-rss"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+  <span>TOOLS FOR INFORMATION LITERACY &nbsp;&nbsp;|&nbsp;&nbsp; INLS161-001 (Summer II)
+    <br/> 
+  <span class="smaller">Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</span>
+  <br/><br/>
+  <span class="smaller">All content licensed under a <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</span>
+  <br/>
+  <span class="smaller"><a href="credits/">Content &copy; 2017 John D. Martin III</a></span>
+</div>  
+</footer>
+    </div>
+  </body>
+</html>

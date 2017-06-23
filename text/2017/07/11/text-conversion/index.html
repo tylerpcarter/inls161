@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script type="text/javascript">
+    var host = "inls161.johndmart.in";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+  </script>
+
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Text Conversion</title>
+  <meta name="description" content="Plaintext, markup, and formatted textThis week we will discuss the uses of plaintext and markup for creating formatted documents. Today we are going to brief...">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+  
+  <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
+   
+     <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
+    
+   
+  
+     <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
+  
+<link rel="stylesheet" href="/css/tufte.css"> 
+
+  
+  
+<link rel="/apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+<link rel="manifest" href="/assets/img/manifest.json">
+<link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="canonical" href="/text/2017/07/11/text-conversion/">
+
+<link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="/feed.xml" />
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- CSS-->
+    <link rel="stylesheet" href="/css/timeline.css">
+    <!--FONT-->
+    <link rel="stylesheet" href="/css/fonts/font.default.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements-->
+    <!--if lt IE 9
+    script(src='https://html5shim.googlecode.com/svn/trunk/html5.js')
+    
+    -->
+
+
+</head>
+
+  <body>
+    <div class="wrap">
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/161icon.png" alt="UNC"></a>
+	
+	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/">Tools for Information Literacy</a>
+		    
+	    
+  	
+		
+  	
+		
+		    
+		      <a href="/syllabus/">Syllabus</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/schedule/">Schedule</a>
+		    
+	    
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/assignments/">Assignments</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/refsheets/">Reference</a>
+		    
+	    
+  	
+	</nav>
+
+</header>
+    <article class="group">
+      <h1>Text Conversion</h1>
+
+
+
+<p class="subtitle"><span id="date">Tuesday, 11 July 2017</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
+
+<h1 id="plaintext-markup-and-formatted-text">Plaintext, markup, and formatted text</h1>
+
+<p>This week we will discuss the uses of plaintext and markup for creating formatted documents. </p>
+
+<p>Today we are going to briefly introduce Pandoc and then tomorrow we are going to see what it can really do with our documents when we learn some interesting switches and tricks. We will also some hand-on-keyboards excercises that will demonstrate the power of using marked-up plaintext for creating formatted documents. 
+<excerpt/></p>
+
+<p>All of the tools and tasks that we cover in this course can be used to make our lives easier and our workflows simpler. 
+They can also be used to make our lives harder. 
+That is not the intent of this course. 
+We&#39;re here to learn about new and flexible ways of completing tasks that involve the communication of information. </p>
+
+<p>Inevitably, someone (usually a boss or instructor) will demand that you use a specific tool to complete a task. 
+On that day, knowing what you know after taking this class, you will be able to not only suggest alternatives, but you will also be able to make a compelling argument as to why those alternatives are better, more flexible and will save work in the long run. </p>
+
+<p>If you are particularly talented or skilled, you will go off on your own and use whatever workflow you want and then produce the output requested by your boss or instructor. 
+They never have to know the difference and can be blissfully unaware of the the technical prowess that went into creating the Word document that they only want so that they can print onto dead trees and then give back to you with red pen marks all over it. </p>
+
+<p>The triumph in learning these tools is that you will know that there is a better way, and you will use that way whenever you can. 
+And in the end, when you are in charge, you can set the workflows and toolchains and collaboration environments. </p>
+
+<p>You will be equipped to do that. </p>
+
+<h2 id="down-with-word-up-with-creativity">Down with Word, Up with Creativity</h2>
+
+<p>You should have read for today the elegant and logical rant about why MicroSoft Word has to by by science-fiction author Charlie Stross.
+Stross believes that tools like Word stifle creativity by shackling you to an interface.<label for='word' class='margin-toggle sidenote-number'></label><input type='checkbox' id='word' class='margin-toggle'/><span class='sidenote'>Stross, Charlie. “Why Microsoft Word Must Die.” Charlie’s Diary. Last modified October 12, 2013. <a href="http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html">http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html</a>. </span></p>
+
+<p>I believe the same thing. 
+Don Knuth, famed computer scientist, believed the same thing about writing and typesetting for scientists in the 1970s. 
+It is because of his disdain for the arduous process involved in getting your work to print that he invented something called TeX. 
+He believed that TeX freed writers and allowed them to return to their content and not worry so much about presentation. </p>
+
+<p>We do not have enough time in this class to cover TeX, but we can discuss it briefly in this week&#39;s sessions in relation to using Pandoc for creating PDFs from our document sources. </p>
+
+<h1 id="word-processors">Word Processors</h1>
+
+<p>We are only ever going to use word processor software to check our outputs and explore the things we&#39;ve created. 
+When we do, we will use Writer, the word processor from LibreOffice, an open-source productivity suite. 
+There are several reasons for choosing an open-source tool. </p>
+
+<ol>
+<li>The software is free to download and use. </li>
+<li>The community of developers and users interact to create a more robust product and better user experience.</li>
+<li>I don&#39;t like using proprietary software if I can avoid it. </li>
+</ol>
+
+<p>LibreOffice should be installed on the lab computers. 
+However, if you want to install it on your laptops instead, you can. </p>
+
+<p>Here is a link to download LibreOffice: <a href="https://www.libreoffice.org/download/libreoffice-fresh/">https://www.libreoffice.org/download/libreoffice-fresh/</a></p>
+
+<p>Here is a link to a good installation tutorial, tailored to your operating system: <a href="https://www.libreoffice.org/get-help/install-howto/">https://www.libreoffice.org/get-help/install-howto/</a></p>
+
+<h2 id="writer">Writer</h2>
+
+<p>LibreOffice contains several tools. 
+One of them is a package called Writer. 
+Writer is analog to MSWord. </p>
+
+<p>Writer is a word processor. </p>
+
+<h3 id="questions-to-consider">Questions to consider:</h3>
+
+<p>What is a word processor and how does it work?<label for='word' class='margin-toggle sidenote-number'></label><input type='checkbox' id='word' class='margin-toggle'/><span class='sidenote'>Wiens, John A. “Word Processing versus Writing.” The Auk 100 (1983): 758. <a href="https://sora.unm.edu/sites/default/files/journals/auk/v100n03/p0758-p0758.pdf">https://sora.unm.edu/sites/default/files/journals/auk/v100n03/p0758-p0758.pdf</a>. </span>
+How does what a word processor does differ from what we when we write in Markdown?
+Why would we want to employ something other than a word processor for writing anyway?<label for='word' class='margin-toggle sidenote-number'></label><input type='checkbox' id='word' class='margin-toggle'/><span class='sidenote'>Caleb McDaniel, W. “Why (and How) I Wrote My Academic Book in Plain Text | W. Caleb McDaniel.” Last modified September 28, 2012. <a href="http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html">http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html</a>. </span> </p>
+
+<h1 id="document-conversion">Document conversion</h1>
+
+<p>Essential to any workflow that involves Markdown or other plaintext markup language, like HTML, is a parser or converter of some sort that using the markup to structure, format and style the document. 
+We&#39;ve seen this with our work on creating web sites. </p>
+
+<p>The workflow goes: </p>
+
+<p><code>plaintext.md &gt; formatted-text.html</code></p>
+
+<p>The toolchain that we have been using is:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">CodeAnywhere text editor [for authoring and editing] &gt; 
+git [for version control] &gt;
+GitHub [for storage, sharing, and disseminating] &gt;
+Jekyll (via GitHub Pages) [for creating the site files from Markdown inputs] &gt; 
+web browser [for viewing outputs]
+</code></pre></div>
+<h2 id="pandoc">Pandoc</h2>
+
+<p><a href="http://pandoc.org/">Pandoc</a> is a universal document converter. </p>
+
+<p>Without oversimplifying matters too much, it suffices to say that Pandoc is an awesome tool to have in our arsenal. </p>
+
+<p>It allows us to convert from most any document type we can think of to any other type. 
+This is very good for collaborating and working with groups on documents for publication. 
+You can also use Pandoc to create presentation materials from source files or to extract text from a formatted document into plaintext. </p>
+
+<p>You can try it out here: </p>
+
+<p><a href="http://pandoc.org/try/">http://pandoc.org/try/</a></p>
+
+<p>Then we will install it and run it in our CodeAnywhere containers. </p>
+
+<p>First things first, we need to install Pandoc. 
+You will need to do this in your CodeAnywhere container.</p>
+
+<p>All of the commands for today are linked from the <a href="/refsheets/pandoc-ref/">reference page</a>.</p>
+
+<h1 id="for-next-time">For next time</h1>
+
+<p>For tomorrow, I would like you to review a blog post tutorial by Pavel Iosad and the the main documentation page for Pandoc.<label for='pandoc' class='margin-toggle'> &#8853;</label><input type='checkbox' id='pandoc' class='margin-toggle'/><span class='marginnote'>Iosad, Pavel. “Getting off the Word Standard: Your Academic Life in Plain Text.” Pavel Iosad. Last modified February 2015. <a href="http://www.anghyflawn.net/teaching/2015/ilw-pandoc/">http://www.anghyflawn.net/teaching/2015/ilw-pandoc/</a>.<br/><br/>“Pandoc User’s Guide.” Pandoc. Accessed July 5, 2016. <a href="http://pandoc.org/README.html">http://pandoc.org/README.html</a>. </span></p>
+
+<p>I would also like you to have a look at the examples in the link below:</p>
+
+<p><a href="http://pandoc.org/demos.html">http://pandoc.org/demos.html</a></p>
+
+
+<p>
+  <br/>
+  <ul class="tags">
+    <li><a href="/topics#pandoc" class="tag">pandoc</a></li><li><a href="/topics#text" class="tag">text</a></li><li><a href="/topics#markdown" class="tag">markdown</a></li><li><a href="/topics#documents" class="tag">documents</a></li><li><a href="/topics#conversion" class="tag">conversion</a></li>
+  </ul> 
+</p>
+    </article>
+    <span class="print-footer">Text Conversion - July 11, 2017 - </span>
+    <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/web/2017/07/10/web-lab/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Troubleshooting</a>
+    
+    
+      <a class="next" href="/text/2017/07/12/single-multiple-outputs/"><span class="smaller">Next:</span>&nbsp;Single input, multiple outputs&nbsp;&raquo;</a>
+    
+  </div>
+  <hr class="slender">
+  <ul class="footer-links">
+    
+    
+      <li>
+        <a href="http://johndmart.in" title="Instructor home page"><span class="ico-user"></span>&nbsp;John D. Martin III</a>
+      </li>
+    
+    
+      <li>
+        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="ico-envelope"></span>&nbsp;john.d.martin.iii@unc.edu</a>
+      </li>
+    
+    
+      <li>
+        <span class="ico-clock"></span>&nbsp;11:30-13:00
+      </li>
+    
+    
+      <li>
+        <span class="ico-calendar"></span>&nbsp;MoTuWeThFr
+      </li>
+    
+    
+      <li>
+        <span class="ico-library"></span>&nbsp;117 Manning Hall
+      </li>
+    
+    
+      <li>
+        <a href="https://sakai.unc.edu/portal/site/inls161s216" title="UNC Sakai site for this course"><span class="ico-target"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://github.com/inls161" title="GitHub organization for this course"><span class="ico-github"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://inls161.slack.com" title="Join the Slack conversations for this course"><span class="ico-slack"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed" title="Add RSS feed"><span class="ico-rss"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+  <span>TOOLS FOR INFORMATION LITERACY &nbsp;&nbsp;|&nbsp;&nbsp; INLS161-001 (Summer II)
+    <br/> 
+  <span class="smaller">Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</span>
+  <br/><br/>
+  <span class="smaller">All content licensed under a <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</span>
+  <br/>
+  <span class="smaller"><a href="credits/">Content &copy; 2017 John D. Martin III</a></span>
+</div>  
+</footer>
+    </div>
+  </body>
+</html>

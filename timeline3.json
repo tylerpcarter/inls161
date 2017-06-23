@@ -1,0 +1,556 @@
+{
+     "title": {
+        "text": {
+          "headline": "Tools for Information Literacy",
+          "text": "Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems."
+        }
+    },  
+    "events": [
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "06",
+                "day": "26",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "06",
+                "day": "26",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/basics/2017/06/26/intro/'>Welcome to INLS161!</a>",
+                "text": "<p>This is a course about pushing our boundaries and learning new things. \nIt is also about learning new ways of doing things that we might already know how to do. \nSome of the topics and skills covered by the course might be old hat for some of you. \nOthers may not have ever heard of some of these things. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "06",
+                "day": "27",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "06",
+                "day": "27",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/basics/2017/06/27/clients-servers/'>Clients and Servers</a>",
+                "text": "<p>Today we&#39;ll talk about some of the basic ways that computers work and\ninteract with one another. We&#39;ll also begin discussing the history of\ncomputing in the context of operating systems, UNIX, and Linux.</p>\n\n<p>In class we will also start with some hands-on-keyboards practice with\nmoving around the shell and manipulating files. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "06",
+                "day": "27"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "06",
+                "day": "27"
+            },
+            "text": {
+                "headline": "<a href='/2017/06/27/set-up-github-username/'>GitHub Username and Questionnaire</a>",
+                "text": "<p>Today we&#39;ll talk about some of the basic ways that computers work and\ninteract with one another. We&#39;ll also begin discussing the history of\ncomputing in the context of operating systems, UNIX, and Linux.</p>\n\n<p>In class we will also start with some hands-on-keyboards practice with\nmoving around the shell and manipulating files. </p>"
+            },
+            "group": "Assignment"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "06",
+                "day": "28",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "06",
+                "day": "28",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/basics/2017/06/28/git/'>Version Control</a>",
+                "text": "<p>Version control systems allow us to track and see the changes to a given document or set of files over time. \nThis can be useful in situations where you wish to roll back changes or identify the point of origin for something problematic. </p>\n\n<p>It is also helpful when you are collaborating and want to be able to keep track of the work being done and changes being made by a group of people. </p>\n\n<p>Version control can exist in a standalone system or it can be networked and distributed. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "06",
+                "day": "29",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "06",
+                "day": "29",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/basics/2017/06/29/networks/'>Networks</a>",
+                "text": "<p>We&#39;ve discussed a bit about how servers and clients operate. \nNow we&#39;ll look at what happens when we put lots of servers and lots of clients together. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "06",
+                "day": "30",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "06",
+                "day": "30",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/basics/2017/06/30/git-and-github-lab/'>Lab #1: Git and GitHub</a>",
+                "text": "<p>Today we&#39;re going to learn how to fork, clone, and push changes to a repository on GitHub using git. \nWe do this in preparation for creating personal websites that will be hosted by GitHub pages. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "03",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "03",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/web/2017/07/03/websites-and-markup/'>Websites, Markup, and Markdown</a>",
+                "text": "<p>This week&#39;s tasks will involve some very simple coding (markup, really) and continued exploration and use of our system administration skills. </p>\n\n<p>Last Friday we learned how to set up a very basic website using Jekyll and GitHub pasges. \nThis week we will expand on that significantly, learn how to use markup to change the style of our content, and then learn to publish content to the web. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "05",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "05",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/web/2017/07/05/jekyll-css-html/'>Visual styling for the web</a>",
+                "text": "<p>For most of class today, we will spend time creating our base site and then exploring ways that we can change and customize the style to our liking. </p>\n\n<p>We&#39;ll learn a little bit about CSS and about linking resources so that they show up where we want them. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "06",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "06",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/web/2017/07/06/developing-deploying-branching/'>Developing and Deploying</a>",
+                "text": "<p>Today we&#39;re going to take the first steps toward actually getting our website up and running. \nWe will also use this opportunity to discuss the development &gt; testing &gt; deployment workflow. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "07",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "07",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/web/2017/07/07/branching-and-merging/'>Branching and Merging</a>",
+                "text": "<p>Today we will set up a testing workflow and learn how to create branches for adding and changing features on our sites. \nWe will use this to change the visual style the site and create blog posts. </p>\n\n<p>This session will be mostly hands-on. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "10",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "10",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/web/2017/07/10/web-lab/'>Troubleshooting</a>",
+                "text": "<p>This lab session will be primarily dedicated to helping you work out kinks and wrinkles in the process of getting your site online and completing the second assignment. \nIf you are already very far along, then this is an opportunity for you to finish your work. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "11",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "11",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/text/2017/07/11/text-conversion/'>Text Conversion</a>",
+                "text": "<h1 id=\"plaintext-markup-and-formatted-text\">Plaintext, markup, and formatted text</h1>\n\n<p>This week we will discuss the uses of plaintext and markup for creating formatted documents. </p>\n\n<p>Today we are going to briefly introduce Pandoc and then tomorrow we are going to see what it can really do with our documents when we learn some interesting switches and tricks. We will also some hand-on-keyboards excercises that will demonstrate the power of using marked-up plaintext for creating formatted documents. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "12",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "12",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/text/2017/07/12/single-multiple-outputs/'>Single input, multiple outputs</a>",
+                "text": "<p>We&#39;ve briefly discussed Pandoc now. \nIt bills itself as the &quot;Universal Document Converter.&quot; \nThis is reasonably true, but it might require some creative combinations of switches within Pandoc commands as well as multiple commands strung together or intermediate commands to get the desired output. </p>\n\n<p>The benefit of troubleshooting and understanding this process is that once we do, we can more easily optimize our conversions and automate them. \nWe&#39;ll talk more about this as we go forward. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "13",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "13",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/text/2017/07/13/scripting/'>Introduction to scripting</a>",
+                "text": "<p>Today we will learn how to convert our plaintext Markdown into a PDF. \nTo do this we will have to install some more software, which may take a while. </p>\n\n<p>In the mean time, we will cover some of the basics of scripting in order to be able to automate our workflows a little bit better. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "14",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "14",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/text/2017/07/14/lab-automation/'>Lab #3: Automation and Scripting</a>",
+                "text": "<p>Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "17",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "17",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/data/2017/07/17/data-handling/'>Handling data</a>",
+                "text": "<p>Today we are going to discuss the creation of data and learn how manipulate data structures. </p>\n\n<p><p>We will learn some things about using pipes to redirect output and learn some commands for working with data. </p>\n</p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "18",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "18",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/data/2017/07/18/data-cleaning/'>Data cleaning and spreadsheet software</a>",
+                "text": "<p>Today we&#39;re going to look at one common way of manipulating CSV and other data files: the spreadsheet. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "19",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "19",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/data/2017/07/19/sql-bootcamp/'>Database software and MySQL</a>",
+                "text": "<p>Today we will jump head-first into working with databases as an extension of our discussions earlier in the week about data.  </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "20",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "20",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/data/2017/07/20/database-tables-queries/'>Databases, tables, queries, and relationships</a>",
+                "text": "<p>Today we will continue with our discussion of databases and then learn ALL THE SQL. </p>\n\n<p><img src=\"/assets/img/learnallthesql.jpg\" alt=\"LEARN ALL THE SQL\" /></p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "21",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "21",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/data/2017/07/21/lab-from-data-to-databases/'>From data to database</a>",
+                "text": "<h1 id=\"mysql-in-bash-scripts\">MySQL in Bash scripts</h1>\n\n<p>In today&#39;s lab you are going to work in your teams to modify your questinonaire scripts to write your data into a MySQL database. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "24",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "24",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/present/2017/07/24/presentation-basics/'>Presentation Basics</a>",
+                "text": "<p>Today we&#39;re going to talk about what is wrong with presentations and presentation software as they have come to be used.</p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "25",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "25",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/present/2017/07/25/reveal-basics/'>Reveal.js</a>",
+                "text": "<p>Today we will look at Reveal.js more closely and start working with it in your presentation teams. \nWe will also cover converting your text from Markdown into Reveal-ready HTML5 using our old friend, Pandoc.</p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "26",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "26",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/present/2017/07/26/recording-and-editing-audio/'>Adding audio for narration and video to your slides</a>",
+                "text": "<p>Today we are going to work with Audacity to create and edit some audio to embed in our presentations. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "27",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "27",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/present/2017/07/27/what-do-we-know/'>Wrap-up: what do we know now?</a>",
+                "text": "<p>Today we are going to wrap up the class and talk about the skills that you are taking away from this experience. </p>"
+            },
+            "group": "Class"
+               
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "31",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "31",
+                "hour": "14",
+                "minute": "00"
+            },
+            "text": {
+                "headline": "<a href='/class/2017/07/31/presentations/'>Final</a>",
+                "text": "<p>In lieu of a traditional final, we will collectively screen everyone&#39;s final presentation. \nWe will also take a final questionnaire/quiz related to some of the overall themes in the course. </p>"
+            },
+            "group": "Class"
+               
+        }
+    ]
+}

@@ -1,0 +1,116 @@
+
+{
+{% if site.data.timeline.options.scale %}
+    "scale": {{ site.data.timeline.options.scale | smartify | jsonify }},
+{% endif %}
+{% if site.data.timeline.title %}
+    "title": {
+        "media": {
+                "caption": {{ site.data.timeline.title.media.caption | smartify | jsonify }},
+                "credit": {{ site.data.timeline.title.media.credit | smartify | jsonify }},
+                "url": {{ site.data.timeline.title.media.url | smartify | jsonify }},
+                "thumbnail": {{ site.data.timeline.title.media.thumbnail | smartify | jsonify }},
+                "alt": {{ site.data.timeline.title.media.alt | smartify | jsonify }},
+                "title": {{ site.data.timeline.title.media.title | smartify | jsonify }}
+        },
+        "text": {
+          "headline": {{ site.data.timeline.title.text.headline | smartify | jsonify }},
+          "text": {{ site.data.timeline.title.text.text | smartify | jsonify }}
+        }
+    },
+{% else %}
+    "title": {
+        "text": {
+          "headline": {{ site.title | smartify | jsonify }},
+          "text": {{ site.description | smartify | jsonify }}
+        }
+    },
+{% endif %}
+{% if site.data.timeline.eras %}
+    "eras": [
+  {% for era in site.data.timeline.eras %}
+        {
+            "start_date": {
+                "year": {{ era.start_date | date : '%Y' }},
+                "month": {{ era.start_date | date : '%M' }},
+                "day": {{ era.start_date | date : '%d' }},
+                "hour": {{ era.start_date | date : '%H' }},
+                "minute": {{ era.start_date | date : '%M' }},
+                "second": {{ era.start_date | date : '%S' }},
+                "millisecond": {{ era.start_date | date : '%L' }},
+                "format": {% if site.data.timeline.date_format %}{{ site.data.timeline.date_format }}{% else %}"%A, %e %B %Y %H:%M:%S.%L"{% endif %}
+            },
+            "end_date": {
+                "year": {{ era.end_date | date : '%Y' }},
+                "month": {{ era.end_date | date : '%M' }},
+                "day": {{ era.end_date | date : '%d' }},
+                "hour": {{ era.end_date | date : '%H' }},
+                "minute": {{ era.end_date | date : '%M' }},
+                "second": {{ era.end_date | date : '%S' }},
+                "millisecond": {{ era.end_date | date : '%L' }},
+                "format": {% if site.data.timeline.date_format %}{{ site.data.timeline.date_format }}{% else %}"%A, %e %B %Y %H:%M:%S.%L"{% endif %}
+            },
+            "text": {
+                "headline": {{ era.headline | smartify | jsonify }}
+            }
+        }{% unless forloop.last == true %},{% endunless %}
+  {% endfor %}
+    ]
+{% endif %}
+    "events": [
+      {% for post in site.posts %}
+        {
+            "start_date": {
+                "year": {{ post.date | date : '%Y' }},
+                "month": {{ post.date | date : '%M' }},
+                "day": {{ post.date | date : '%d' }},
+                "hour": {{ post.date | date : '%H' }},
+                "minute": {{ post.date | date : '%M' }},
+                "second": {{ post.date | date : '%S' }},
+                "millisecond": {{ post.date | date : '%L' }},
+                "format": {% if site.data.timeline.date_format %}{{ site.data.timeline.date_format }}{% else %}"%A, %e %B %Y %H:%M:%S.%L"{% endif %}
+            },
+            "end_date": {
+                "year": {{ post.end_date | date : '%Y' }},
+                "month": {{ post.end_date | date : '%M' }},
+                "day": {{ post.end_date | date : '%d' }},
+                "hour": {{ post.end_date | date : '%H' }},
+                "minute": {{ post.end_date | date : '%M' }},
+                "second": {{ post.end_date | date : '%S' }},
+                "millisecond": {{ post.end_date | date : '%L' }},
+                "format": {% if site.data.timeline.date_format %}{{ site.data.timeline.date_format }}{% else %}"%A, %e %B %Y %H:%M:%S.%L"{% endif %}
+            },
+            "display_date": {{ post.display_date | smartify | jsonify }},
+            "location": {
+                "icon": {{ post.location.icon | smartify | jsonify }},
+                "lat": {{ post.location.lat | smartify | jsonify }},
+                "line": {{ post.location.line | smartify | jsonify }},
+                "lon": {{ post.location.lon | smartify | jsonify }},
+                "name": {{ post.location.name | smartify | jsonify }},
+                "zoom": {{ post.location.zoom | smartify | jsonify }}
+            },
+            "background": {
+                "color": {{ post.background.color | smartify | jsonify }},
+                "opacity": {{ post.background.opacity | smartify | jsonify }},,
+                "url": {{ post.background.url | smartify | jsonify }}
+            },
+            "media": {
+                "caption": {{ post.media.caption | smartify | jsonify }},
+                "credit": {{ post.media.credit | smartify | jsonify }},
+                "url": {{ post.media.url | smartify | jsonify }},
+                "thumbnail": {{ post.media.thumbnail | smartify | jsonify }},
+                "alt": {{ post.media.alt | smartify | jsonify }},
+                "title": {{ post.media.title | smartify | jsonify }}
+            },
+            "text": {
+                "headline": {{ post.title | smartify | jsonify }},
+                "text": {{ post.excerpt | smartify | jsonify }}
+            },
+            "autolink": {{ post.autolink | smartify | jsonify }},
+            "unique_id": {{ post.unique_id | smartify | jsonify }},
+            "group": {{ post.group | smartify | jsonify }},
+            "type": {{ post.type | smartify | jsonify }}
+        }{% unless forloop.last == true %},{% endunless %}
+      {% endfor %}
+    ]
+}

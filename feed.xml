@@ -1494,11 +1494,31 @@ There is a ton of relevant information on this topic out in the Internet.&lt;/p&
 =======
     <title>Tools for Information Literacy</title>
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
-    <link>https://inls161.johndmart.in/</link>
-    <atom:link href="https://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 23 Jan 2017 19:06:33 -0500</pubDate>
-    <lastBuildDate>Mon, 23 Jan 2017 19:06:33 -0500</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 23 Jun 2017 16:33:39 -0400</pubDate>
+    <lastBuildDate>Fri, 23 Jun 2017 16:33:39 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Final</title>
+        <description>&lt;p&gt;In lieu of a traditional final, we will collectively screen everyone&amp;#39;s final presentation. 
+We will also take a final questionnaire/quiz related to some of the overall themes in the course. &lt;/p&gt;
+
+&lt;p&gt;&lt;excerpt/&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 31 Jul 2017 11:30:00 -0400</pubDate>
+        <link>/class/2017/07/31/presentations/</link>
+        <guid isPermaLink="true">/class/2017/07/31/presentations/</guid>
+        
+        <category>Final presentation</category>
+        
+        <category>Present</category>
+        
+        
+        <category>Class</category>
+        
+      </item>
     
       <item>
         <title>Wrap-up: what do we know now?</title>
@@ -1598,15 +1618,15 @@ The images represent the output from this discussion.&lt;label for=&#39;tools&#3
 
 &lt;h1 id=&quot;during-the-exam-period&quot;&gt;During the exam period&lt;/h1&gt;
 
-&lt;p&gt;The exam period for this class is 11:30-14:30 on Monday, 25 July 2016. 
+&lt;p&gt;The exam period for this class is 11:30-14:00 on Sunday, 31 July 2016. 
 You are all required to attend the exam session. 
 We will be viewing everyone&amp;#39;s presentations with Q&amp;amp;A to follow. &lt;/p&gt;
 
 &lt;p&gt;This should not take the entire time alotted, but plan for at least an hour and half to be safe. &lt;/p&gt;
 </description>
-        <pubDate>Thu, 21 Jul 2016 00:00:00 -0400</pubDate>
-        <link>https://inls161.johndmart.in/present/2016/07/21/what-do-we-know/</link>
-        <guid isPermaLink="true">https://inls161.johndmart.in/present/2016/07/21/what-do-we-know/</guid>
+        <pubDate>Thu, 27 Jul 2017 00:00:00 -0400</pubDate>
+        <link>/present/2017/07/27/what-do-we-know/</link>
+        <guid isPermaLink="true">/present/2017/07/27/what-do-we-know/</guid>
         
         <category>skillsets</category>
         
@@ -1847,9 +1867,9 @@ This is an important discussion because it will orient you to the kinds of thing
 
 &lt;p&gt;We will also discuss other future classes that you might want to take if you are interested in a particular aspect of this course. &lt;/p&gt;
 </description>
-        <pubDate>Wed, 20 Jul 2016 00:00:00 -0400</pubDate>
-        <link>https://inls161.johndmart.in/present/2016/07/20/recording-and-editing-audio/</link>
-        <guid isPermaLink="true">https://inls161.johndmart.in/present/2016/07/20/recording-and-editing-audio/</guid>
+        <pubDate>Wed, 26 Jul 2017 00:00:00 -0400</pubDate>
+        <link>/present/2017/07/26/recording-and-editing-audio/</link>
+        <guid isPermaLink="true">/present/2017/07/26/recording-and-editing-audio/</guid>
         
         <category>reveal.js</category>
         
@@ -2042,9 +2062,9 @@ You can download audacity and read more documentation on the audacity homepage.&
 
 &lt;p&gt;We will work together on editing audio in class tomorrow. &lt;/p&gt;
 </description>
-        <pubDate>Tue, 19 Jul 2016 00:00:00 -0400</pubDate>
-        <link>https://inls161.johndmart.in/present/2016/07/19/reveal-basics/</link>
-        <guid isPermaLink="true">https://inls161.johndmart.in/present/2016/07/19/reveal-basics/</guid>
+        <pubDate>Tue, 25 Jul 2017 00:00:00 -0400</pubDate>
+        <link>/present/2017/07/25/reveal-basics/</link>
+        <guid isPermaLink="true">/present/2017/07/25/reveal-basics/</guid>
         
         <category>reveal.js</category>
         
@@ -2175,9 +2195,9 @@ It is not even a terribly sophisticated example. &lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/jdmar3/task-6-be-presentable&quot;&gt;Assignment #6: Be Presentable&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 18 Jul 2016 00:00:00 -0400</pubDate>
-        <link>https://inls161.johndmart.in/present/2016/07/18/presentation-basics/</link>
-        <guid isPermaLink="true">https://inls161.johndmart.in/present/2016/07/18/presentation-basics/</guid>
+        <pubDate>Mon, 24 Jul 2017 00:00:00 -0400</pubDate>
+        <link>/present/2017/07/24/presentation-basics/</link>
+        <guid isPermaLink="true">/present/2017/07/24/presentation-basics/</guid>
         
         <category>powerpoint</category>
         
@@ -2248,9 +2268,9 @@ It will help put into perspective what is really happening when we watch TED Tal
   &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/_ZBKX-6Gz6A&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Fri, 15 Jul 2016 00:00:00 -0400</pubDate>
-        <link>https://inls161.johndmart.in/data/2016/07/15/lab-from-data-to-databases/</link>
-        <guid isPermaLink="true">https://inls161.johndmart.in/data/2016/07/15/lab-from-data-to-databases/</guid>
+        <pubDate>Fri, 21 Jul 2017 00:00:00 -0400</pubDate>
+        <link>/data/2017/07/21/lab-from-data-to-databases/</link>
+        <guid isPermaLink="true">/data/2017/07/21/lab-from-data-to-databases/</guid>
         
         <category>database</category>
         
@@ -2275,7 +2295,7 @@ It will help put into perspective what is really happening when we watch TED Tal
         <title>Databases, tables, queries, and relationships</title>
         <description>&lt;p&gt;Today we will continue with our discussion of databases and then learn ALL THE SQL. &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://inls161.johndmart.in/assets/img/learnallthesql.jpg&quot; alt=&quot;LEARN ALL THE SQL&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/learnallthesql.jpg&quot; alt=&quot;LEARN ALL THE SQL&quot;&gt;
 &lt;excerpt/&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;parts-of-a-database&quot;&gt;Parts of a database&lt;/h1&gt;
@@ -2541,9 +2561,9 @@ I have to specify an additional criterion. &lt;/p&gt;
 
 &lt;p&gt;You are going to work in your groups to create a new script, based on your last assignment, that will write the data you have collected into a MySQL database. That assignment will be the focus of our lab session. &lt;/p&gt;
 </description>
-        <pubDate>Thu, 14 Jul 2016 00:00:00 -0400</pubDate>
-        <link>https://inls161.johndmart.in/data/2016/07/14/database-tables-queries/</link>
-        <guid isPermaLink="true">https://inls161.johndmart.in/data/2016/07/14/database-tables-queries/</guid>
+        <pubDate>Thu, 20 Jul 2017 00:00:00 -0400</pubDate>
+        <link>/data/2017/07/20/database-tables-queries/</link>
+        <guid isPermaLink="true">/data/2017/07/20/database-tables-queries/</guid>
         
         <category>database</category>
         
@@ -2656,9 +2676,9 @@ I would like you to read something about databases.&lt;label for=&#39;db&#39; cl
 
 &lt;p&gt;We will look at other resources and tutorials in class as well. &lt;/p&gt;
 </description>
-        <pubDate>Wed, 13 Jul 2016 00:00:00 -0400</pubDate>
-        <link>https://inls161.johndmart.in/data/2016/07/13/sql-bootcamp/</link>
-        <guid isPermaLink="true">https://inls161.johndmart.in/data/2016/07/13/sql-bootcamp/</guid>
+        <pubDate>Wed, 19 Jul 2017 11:30:00 -0400</pubDate>
+        <link>/data/2017/07/19/sql-bootcamp/</link>
+        <guid isPermaLink="true">/data/2017/07/19/sql-bootcamp/</guid>
         
         <category>database</category>
         
@@ -2711,9 +2731,9 @@ This is because both suites use ODF at their core. &lt;/p&gt;
 &lt;p&gt;We&amp;#39;re going to break into databases next time and have a MySQL crash course. 
 I would like you to look over some basic MySQL tutorials on your own so that we are prepared to dig into this.&lt;label for=&#39;sql&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;sql&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Sverdlov, Etel. “A Basic MySQL Tutorial.” DigitalOcean. Last modified June 12, 2012. &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial&quot;&gt;https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
 </description>
-        <pubDate>Tue, 12 Jul 2016 00:00:00 -0400</pubDate>
-        <link>https://inls161.johndmart.in/data/2016/07/12/data-cleaning/</link>
-        <guid isPermaLink="true">https://inls161.johndmart.in/data/2016/07/12/data-cleaning/</guid>
+        <pubDate>Tue, 18 Jul 2017 00:00:00 -0400</pubDate>
+        <link>/data/2017/07/18/data-cleaning/</link>
+        <guid isPermaLink="true">/data/2017/07/18/data-cleaning/</guid>
         
         <category>CSV</category>
         
@@ -2880,9 +2900,9 @@ This will be the basis of the next asssignment, which will be a group assignment
   &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/OecFFZpIkDc&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Mon, 11 Jul 2016 00:00:00 -0400</pubDate>
-        <link>https://inls161.johndmart.in/data/2016/07/11/data-handling/</link>
-        <guid isPermaLink="true">https://inls161.johndmart.in/data/2016/07/11/data-handling/</guid>
+        <pubDate>Mon, 17 Jul 2017 11:30:00 -0400</pubDate>
+        <link>/data/2017/07/17/data-handling/</link>
+        <guid isPermaLink="true">/data/2017/07/17/data-handling/</guid>
         
         <category>CSV</category>
         
@@ -2894,110 +2914,6 @@ This will be the basis of the next asssignment, which will be a group assignment
         
         
         <category>Data</category>
-        
-      </item>
-    
-      <item>
-        <title>Lab #3: Automation and Scripting</title>
-        <description>&lt;p&gt;Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. 
-&lt;excerpt/&gt;&lt;/p&gt;
-
-&lt;p&gt;We will use a few online tutorials for reference.&lt;label for=&#39;shell-scripts&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;shell-scripts&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. &lt;a href=&quot;http://linuxcommand.org/lc3_writing_shell_scripts.php&quot;&gt;http://linuxcommand.org/lc3_writing_shell_scripts.php&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Chadwick, Ryan. “User Input - Bash Scripting Tutorial.” Ryan’s Tutorials. &lt;a href=&quot;http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php&quot;&gt;http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
-
-&lt;h2 id=&quot;adding-user-input&quot;&gt;Adding user input&lt;/h2&gt;
-
-&lt;p&gt;We&amp;#39;re going to add user input to our scripts from yesterday. &lt;/p&gt;
-
-&lt;p&gt;To do this, we use the &lt;code&gt;read&lt;/code&gt; command to accept the next line of input and save it as a variable.
-Instead of putting our GitHub username in the script where we want it to read out, this method will prompt for a username.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# Say &quot;Hello&quot; to the world.&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# Ask who the user is&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Who are you?&quot;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# Read GitHub username from input&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;read &lt;/span&gt;GHUSERNAME
-&lt;span class=&quot;c&quot;&gt;# Say &quot;Hello&quot; to me.&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello, &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$GHUSERNAME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;!&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Now if we run the script, it will pause and ask us for input:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
-Hello, world!
-Who are you?
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;If I type my GitHub username and press enter, then Bash will read it and put it in the right place in the output. &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;jdmar3
-Hello, jdmar3!
-cabox@box-codeanywhere:~/workspace/helper-scripts$ 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;setting-a-variable&quot;&gt;Setting a variable&lt;/h2&gt;
-
-&lt;p&gt;We can also set the username we want to output before we run the second echo command. 
-It&amp;#39;s best to set variables at the top of the file so that they are easily found. &lt;/p&gt;
-
-&lt;p&gt;Here is an example: &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# Read GH username in as variable&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;GHUSERNAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;jdmar3
-&lt;span class=&quot;c&quot;&gt;# Say &quot;Hello&quot; to the world.&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# Say &quot;Hello&quot; to me.&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello, &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$GHUSERNAME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;!&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;If we run this the Bash will output the value we set in place of the variable name:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
-Hello, world!
-Hello, jdmar3!
-cabox@box-codeanywhere:~/workspace/helper-scripts$ 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;accepting-a-variable-from-command-line-input&quot;&gt;Accepting a variable from command line input&lt;/h2&gt;
-
-&lt;p&gt;We can also specify a varialbe value in the command line itself. 
-To do this, we need to tell Bash to read what comes after the run command in as a variable, like this: &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# Read GH username&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;GHUSERNAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# Say &quot;Hello&quot; to the world.&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# Say &quot;Hello&quot; to me.&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello, &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$GHUSERNAME&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;!&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Now when we run the script, we will have to specify the username directly after the name of the script. &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh jdmar3
-Hello, world!
-Hello, jdmar3!
-cabox@box-codeanywhere:~/workspace/helper-scripts$ 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;If you change the input, you will see it change in the output now:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh YOUR-GITHUB-USERNAME
-Hello, world!
-Hello, YOUR-GITHUB-USERNAME!
-cabox@box-codeanywhere:~/workspace/helper-scripts$ 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1 id=&quot;lab&quot;&gt;Lab&lt;/h1&gt;
-
-&lt;p&gt;You can use the techniques above to create a script to automate your document conversion workflow. 
-Use the assignment text to make sure that you have gotten each of the required parts to work properly. &lt;/p&gt;
-
-&lt;h1 id=&quot;for-next-week&quot;&gt;For next week&lt;/h1&gt;
-
-&lt;p&gt;Next week we will use similar methods to help to automate the collection and formatting of data in flat data tables. 
-Through this we will learn more about pipes and redirecting output.&lt;label for=&#39;csv&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;csv&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Connelly, Brian. “Working with CSVs on the Command Line.” &lt;a href=&quot;http://bconnelly.net/&quot;&gt;http://bconnelly.net/&lt;/a&gt;. Last modified September 23, 2013. &lt;a href=&quot;http://bconnelly.net/working-with-csvs-on-the-command-line/&quot;&gt;http://bconnelly.net/working-with-csvs-on-the-command-line/&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
-
-&lt;p&gt;We will then learn how to use data tables to create a more complex database, which we will be able to query to see relationships between different variables.&lt;label for=&#39;sql&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;sql&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Sverdlov, Etel. “A Basic MySQL Tutorial.” DigitalOcean. Last modified June 12, 2012. &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial&quot;&gt;https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
-</description>
-        <pubDate>Fri, 08 Jul 2016 00:00:00 -0400</pubDate>
-        <link>https://inls161.johndmart.in/text/2016/07/08/lab-automation/</link>
-        <guid isPermaLink="true">https://inls161.johndmart.in/text/2016/07/08/lab-automation/</guid>
-        
-        <category>scripting</category>
-        
-        <category>Bash</category>
-        
-        <category>Pandoc</category>
-        
-        
-        <category>Text</category>
         
       </item>
     

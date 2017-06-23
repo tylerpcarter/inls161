@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script type="text/javascript">
+    var host = "inls161.johndmart.in";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+  </script>
+
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Lab #3: Automation and Scripting</title>
+  <meta name="description" content="Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. ">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+  
+  <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
+   
+     <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
+    
+   
+  
+     <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
+  
+<link rel="stylesheet" href="/css/tufte.css"> 
+
+  
+  
+<link rel="/apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+<link rel="manifest" href="/assets/img/manifest.json">
+<link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="canonical" href="/text/2017/07/14/lab-automation/">
+
+<link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="/feed.xml" />
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- CSS-->
+    <link rel="stylesheet" href="/css/timeline.css">
+    <!--FONT-->
+    <link rel="stylesheet" href="/css/fonts/font.default.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements-->
+    <!--if lt IE 9
+    script(src='https://html5shim.googlecode.com/svn/trunk/html5.js')
+    
+    -->
+
+
+</head>
+
+  <body>
+    <div class="wrap">
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/161icon.png" alt="UNC"></a>
+	
+	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/">Tools for Information Literacy</a>
+		    
+	    
+  	
+		
+  	
+		
+		    
+		      <a href="/syllabus/">Syllabus</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/schedule/">Schedule</a>
+		    
+	    
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/assignments/">Assignments</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/refsheets/">Reference</a>
+		    
+	    
+  	
+	</nav>
+
+</header>
+    <article class="group">
+      <h1>Lab #3: Automation and Scripting</h1>
+
+
+
+<p class="subtitle"><span id="date">Friday, 14 July 2017</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
+
+<p>Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. 
+<excerpt/></p>
+
+<p>We will use a few online tutorials for reference.<label for='shell-scripts' class='margin-toggle sidenote-number'></label><input type='checkbox' id='shell-scripts' class='margin-toggle'/><span class='sidenote'>Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. <a href="http://linuxcommand.org/lc3_writing_shell_scripts.php">http://linuxcommand.org/lc3_writing_shell_scripts.php</a>.<br/><br/>Chadwick, Ryan. “User Input - Bash Scripting Tutorial.” Ryan’s Tutorials. <a href="http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php">http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php</a>. </span> </p>
+
+<h2 id="adding-user-input">Adding user input</h2>
+
+<p>We&#39;re going to add user input to our scripts from yesterday. </p>
+
+<p>To do this, we use the <code>read</code> command to accept the next line of input and save it as a variable.
+Instead of putting our GitHub username in the script where we want it to read out, this method will prompt for a username.</p>
+<div class="highlight"><pre><code class="language-" data-lang=""><span class="c">#!/bin/bash</span>
+<span class="c"># Say "Hello" to the world.</span>
+<span class="nb">echo</span> <span class="s2">"Hello, world!"</span>
+<span class="c"># Ask who the user is</span>
+<span class="nb">echo</span> <span class="s2">"Who are you?"</span>
+<span class="c"># Read GitHub username from input</span>
+<span class="nb">read </span>GHUSERNAME
+<span class="c"># Say "Hello" to me.</span>
+<span class="nb">echo</span> <span class="s2">"Hello, </span><span class="nv">$GHUSERNAME</span><span class="s2">!"</span>
+</code></pre></div>
+<p>Now if we run the script, it will pause and ask us for input:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
+Hello, world!
+Who are you?
+</code></pre></div>
+<p>If I type my GitHub username and press enter, then Bash will read it and put it in the right place in the output. </p>
+<div class="highlight"><pre><code class="language-" data-lang="">jdmar3
+Hello, jdmar3!
+cabox@box-codeanywhere:~/workspace/helper-scripts$ 
+</code></pre></div>
+<h2 id="setting-a-variable">Setting a variable</h2>
+
+<p>We can also set the username we want to output before we run the second echo command. 
+It&#39;s best to set variables at the top of the file so that they are easily found. </p>
+
+<p>Here is an example: </p>
+<div class="highlight"><pre><code class="language-" data-lang=""><span class="c">#!/bin/bash</span>
+<span class="c"># Read GH username in as variable</span>
+<span class="nv">GHUSERNAME</span><span class="o">=</span>jdmar3
+<span class="c"># Say "Hello" to the world.</span>
+<span class="nb">echo</span> <span class="s2">"Hello, world!"</span>
+<span class="c"># Say "Hello" to me.</span>
+<span class="nb">echo</span> <span class="s2">"Hello, </span><span class="nv">$GHUSERNAME</span><span class="s2">!"</span>
+</code></pre></div>
+<p>If we run this the Bash will output the value we set in place of the variable name:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh
+Hello, world!
+Hello, jdmar3!
+cabox@box-codeanywhere:~/workspace/helper-scripts$ 
+</code></pre></div>
+<h2 id="accepting-a-variable-from-command-line-input">Accepting a variable from command line input</h2>
+
+<p>We can also specify a varialbe value in the command line itself. 
+To do this, we need to tell Bash to read what comes after the run command in as a variable, like this: </p>
+<div class="highlight"><pre><code class="language-" data-lang=""><span class="c">#!/bin/bash</span>
+<span class="c"># Read GH username</span>
+<span class="nv">GHUSERNAME</span><span class="o">=</span><span class="nv">$1</span>
+<span class="c"># Say "Hello" to the world.</span>
+<span class="nb">echo</span> <span class="s2">"Hello, world!"</span>
+<span class="c"># Say "Hello" to me.</span>
+<span class="nb">echo</span> <span class="s2">"Hello, </span><span class="nv">$GHUSERNAME</span><span class="s2">!"</span>
+</code></pre></div>
+<p>Now when we run the script, we will have to specify the username directly after the name of the script. </p>
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh jdmar3
+Hello, world!
+Hello, jdmar3!
+cabox@box-codeanywhere:~/workspace/helper-scripts$ 
+</code></pre></div>
+<p>If you change the input, you will see it change in the output now:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/helper-scripts$ ./hello-world.sh YOUR-GITHUB-USERNAME
+Hello, world!
+Hello, YOUR-GITHUB-USERNAME!
+cabox@box-codeanywhere:~/workspace/helper-scripts$ 
+</code></pre></div>
+<h1 id="lab">Lab</h1>
+
+<p>You can use the techniques above to create a script to automate your document conversion workflow. 
+Use the assignment text to make sure that you have gotten each of the required parts to work properly. </p>
+
+<h1 id="for-next-week">For next week</h1>
+
+<p>Next week we will use similar methods to help to automate the collection and formatting of data in flat data tables. 
+Through this we will learn more about pipes and redirecting output.<label for='csv' class='margin-toggle sidenote-number'></label><input type='checkbox' id='csv' class='margin-toggle'/><span class='sidenote'>Connelly, Brian. “Working with CSVs on the Command Line.” <a href="http://bconnelly.net/">http://bconnelly.net/</a>. Last modified September 23, 2013. <a href="http://bconnelly.net/working-with-csvs-on-the-command-line/">http://bconnelly.net/working-with-csvs-on-the-command-line/</a>. </span> </p>
+
+<p>We will then learn how to use data tables to create a more complex database, which we will be able to query to see relationships between different variables.<label for='sql' class='margin-toggle sidenote-number'></label><input type='checkbox' id='sql' class='margin-toggle'/><span class='sidenote'>Sverdlov, Etel. “A Basic MySQL Tutorial.” DigitalOcean. Last modified June 12, 2012. <a href="https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial">https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial</a>. </span> </p>
+
+
+<p>
+  <br/>
+  <ul class="tags">
+    <li><a href="/topics#scripting" class="tag">scripting</a></li><li><a href="/topics#Bash" class="tag">Bash</a></li><li><a href="/topics#Pandoc" class="tag">Pandoc</a></li>
+  </ul> 
+</p>
+    </article>
+    <span class="print-footer">Lab #3: Automation and Scripting - July 14, 2017 - </span>
+    <footer>
+  <div class="blognav">
+    
+      <a class="prev" href="/text/2017/07/13/scripting/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Introduction to scripting</a>
+    
+    
+      <a class="next" href="/data/2017/07/17/data-handling/"><span class="smaller">Next:</span>&nbsp;Handling data&nbsp;&raquo;</a>
+    
+  </div>
+  <hr class="slender">
+  <ul class="footer-links">
+    
+    
+      <li>
+        <a href="http://johndmart.in" title="Instructor home page"><span class="ico-user"></span>&nbsp;John D. Martin III</a>
+      </li>
+    
+    
+      <li>
+        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="ico-envelope"></span>&nbsp;john.d.martin.iii@unc.edu</a>
+      </li>
+    
+    
+      <li>
+        <span class="ico-clock"></span>&nbsp;11:30-13:00
+      </li>
+    
+    
+      <li>
+        <span class="ico-calendar"></span>&nbsp;MoTuWeThFr
+      </li>
+    
+    
+      <li>
+        <span class="ico-library"></span>&nbsp;117 Manning Hall
+      </li>
+    
+    
+      <li>
+        <a href="https://sakai.unc.edu/portal/site/inls161s216" title="UNC Sakai site for this course"><span class="ico-target"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://github.com/inls161" title="GitHub organization for this course"><span class="ico-github"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://inls161.slack.com" title="Join the Slack conversations for this course"><span class="ico-slack"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed" title="Add RSS feed"><span class="ico-rss"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+  <span>TOOLS FOR INFORMATION LITERACY &nbsp;&nbsp;|&nbsp;&nbsp; INLS161-001 (Summer II)
+    <br/> 
+  <span class="smaller">Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</span>
+  <br/><br/>
+  <span class="smaller">All content licensed under a <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</span>
+  <br/>
+  <span class="smaller"><a href="credits/">Content &copy; 2017 John D. Martin III</a></span>
+</div>  
+</footer>
+    </div>
+  </body>
+</html>
