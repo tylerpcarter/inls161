@@ -66,7 +66,7 @@
 
 </head>
 
-  <body class="full-width">
+  <body>
     <div class="wrap">
     <!--- Header and nav template site-wide -->
 <header>
@@ -131,14 +131,14 @@
 	    
   	
 		
+  	
+		
+  	
+		
 		    
-		      <a class="active" href="/schedule/" class="active">Schedule</a>
+		      <a href="/schedule/timeline-prototype/">Schedule</a>
 		    
 	    
-  	
-		
-  	
-		
   	
 		
 		    
@@ -155,9 +155,14 @@
 	</nav>
 
 </header>
+    </div>
+<!-- Timeline -->
+    <div id="timeline-embed" style="width: 100%; height: 600px; margin-top: 2em"></div>   
+    <div class="wrap">
+<!-- Content -->
     <article>
-      <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1pHFop-nqvAqwl9wLRyws7OJYIrxbajNB58eQBxT14ic&font=Default&lang=en&hash_bookmark=true&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
-    </article>  
+      
+    </article> 
     <span class="print-footer">Schedule - </span>
     <footer>
   <div class="blognav">
@@ -224,5 +229,17 @@
 </div>  
 </footer>
     </div>
+<!-- JavaScript -->
+    <script src="/js/timeline.js">     </script>
+
+    <script>
+        var additionalOptions = {
+          hash_bookmark: true,
+          timenav_position: "top",
+          timenav_mobile_height_percentage: 30,
+          debug: true
+        }
+        var timeline = new TL.Timeline('timeline-embed', '/timeline3.json', additionalOptions);
+    </script>
   </body>
 </html>
