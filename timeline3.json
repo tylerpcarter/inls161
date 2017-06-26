@@ -63,7 +63,7 @@
             },
             "text": {
                 "headline": "<a href='/2017/06/27/set-up-github-username/'>GitHub Username and Questionnaire</a>",
-                "text": "<p>Today we&#39;ll talk about some of the basic ways that computers work and\ninteract with one another. We&#39;ll also begin discussing the history of\ncomputing in the context of operating systems, UNIX, and Linux.</p>\n\n<p>In class we will also start with some hands-on-keyboards practice with\nmoving around the shell and manipulating files. </p>"
+                "text": "<p>This assignment is simple. \nIt consists of 4 tasks:</p>\n\n<ol>\n<li>Sign up for a GitHub account and log into CodeAnywhere. </li>\n<li>Take the first quiz. </li>\n<li>Take the beginning questionnaire. </li>\n<li>Make a commit on GitHub. </li>\n</ol>\n\n<p>Once you have done these, you have completed the first assignment. \nYou will likely have done these things by the time we finish class on Tuesday. </p>"
             },
             "group": "Assignment"
                
