@@ -152,10 +152,10 @@ A detailed breakdown of how your grade will be rendered based on participation a
 
 ## Assignment Tasks
 
-See [this page]({{ site.baseurl }}/assignments/) for a list of assignments and links to individual assignment instructions. 
-Assignment descriptions will be up typically one week before the due date. 
-
-{% include assignment-table.md %} 
+There are 6 major assignments for the course. 
+Assignment tasks are broken down in the grade contract. 
+They build on one another, so it is impossible to do one without first having completed the one before. 
+You will find descriptions and instructions for the assignments on the [/schedule](schedule page).
 
 ### Due Dates
 
@@ -166,9 +166,11 @@ The last assignment (the recorded/narrated presentation) will be due on the last
 
 ### Submitting Assignments
 
-All of your assignments will be submitted using GitHub, as this is where you will store your course materials and personal website. 
+All of your assignments will be submitted using GitHub, as this is where you will store your course materials and personal website.{% marginnote 'gh' '<a href="https://github.com/inls161/" target="_blank"><img src="/assets/img/logos/github.png" width="225"></a>' %} 
 Learning how to use this system is built into the first assignment. 
 Particular requirements and instructions for assignments and submission will be discussed in class and included in the lecture notes. 
+
+If you do not have a GitHub account, [please sign up for one](https://github.com). 
 
 A snapshot of your work will be automatically collected from your GitHub repositories at the time the assignment is due. 
 You do not have to submit anything manually. 
@@ -230,7 +232,7 @@ Grades will be made available on a rolling basis.
 
 Instructors and students at the University of North Carolina at Chapel Hill adhere to the Code of Student Conduct. 
 Accordingly, you all should recognize that most software applications available in the computer lab are copyrighted and cannot be copied.
-We will use open source software for this course, which does allow for copying, remixing, and reuse, depending on the terms of the license under which the software and source code is distributed. 
+We will primarily use open source software for this course, which does allow for copying. 
 It is important to know the difference and heed the terms of software licences. 
 
 We can learn much from each other and we will do that. 
@@ -239,6 +241,7 @@ We'll discuss what we expect in terms of cooperative, collaborative, shared work
 
 ## Honor Code
 
+{% marginfigure 'div' 'assets/img/uncseal.png' %}
 It shall be the responsibility of every student at The University of North Carolina at Chapel Hill to obey and support the enforcement of the [Honor Code](http://studentconduct.unc.edu/), which prohibits lying, cheating, or stealing when these actions involve academic processes or University, student or academic personnel acting in an official capacity.
 
 ## Campus Code
@@ -248,6 +251,8 @@ It shall be the further responsibility of every student to abide by the [philoso
 ## Instructor Responsibilities
 
 I have a role to play as well, and I will fulfill [these responsibilities](http://studentconduct.unc.edu/instructors).
+
+## Shared Responsibilities
 
 The system rests on several central tenets:
 
@@ -269,9 +274,21 @@ Your reward is in the practice of these principles.
 
 However, academic dishonesty in any form is unacceptable, because any breach in academic integrity, however small, strikes destructively at the University's life and work.
 
+## Plagiarism
+
+{% marginfigure 'dnc' 'assets/img/donotcopy.png' %}
+Plagiarism is not tolerated in this or any course or academic context. 
+Your work for this course will be your own, though almost everything that we do in class will be collaborative. 
+
+We will also be using and writing open source software and documentation in this class. 
+Proper crediting of work and adherence to open licensing requirements is an important part of this course and will help us to better understand and avoid plagiarism and license violation.
+
+Please go through this tutorial and then <a href="mailto:john.d.martin.iii@unc.edu?subject=Plagiarism Tutorial">email me</a> the result: [UNC LIbraries Plagiarism Tutorial](http://www.lib.unc.edu/plagiarism/).
+
 ## Diversity and Inclusion
 
-{% marginnote 'andy' '<img src="https://touchofmodern.insnw.net/products/000/014/708/30537003d42cb6c83c99e05353bda119_large.jpg" alt="I think everybody should like everybody. - Andy Warhol" />' %}In support of the University's diversity goals and the mission of the School of Information and Library Science, SILS embraces diversity as an ethical and societal value.
+{% marginfigure 'div' 'assets/img/diversity.png' %}
+In support of the University's diversity goals and the mission of the School of Information and Library Science, SILS embraces diversity as an ethical and societal value.
 
 We broadly define diversity to include race, gender, national origin, ethnicity, religion, social class, age, sexual orientation and physical and learning ability.
 
@@ -285,14 +302,31 @@ As an academic community committed to preparing our graduates to be leaders in a
 
 The statement represents a commitment of resources to the development and maintenance of an academic environment that is open, representative, reflective and committed to the concepts of equity and fairness.
 
-Remember, on occasion you may have felt yourself to be a member of a minority group, picked on by a majority group. 
-Here at school, you may find those roles reversed. 
-Do not fall prey to the temptation to use your new majority sensibility to get back at those who may have picked on you in the past, when you were in a minority group. 
+## Class conduct and expectations
+
+This class is not a safe space, but a brave space. 
+Here you are encouraged to be your most authentic self, take intellectual chances, make mistakes. 
+Our social contract in this class requires that we respect the above guidelines regarding inclusion and expand them to and beyond their boundaries. 
 
 People are complex, intersectional beings.
 Our identities are fluid and performative. 
-It is incumbent upon each of us to remember that, particularly if we come from a place of privilege.
+It is incumbent upon each of us to remember that, particularly if we come from a place of privilege which allows us to think that everyone has the same advantages and opportunities that we have.
 
-*Treating others as you would have them treat you is always a good rule to follow.*
+None of us are perfect. 
+We all make mistakes. 
+But: if you don't know what you're doing, you can't make mistakes.
+You don't have any parameters for understanding what is and isn't a mistake. 
+We are learning together and that entails accepting our ignorance and working through it toward something better: knowledge.  
+
+Think, before you speak or act, about how your words and actions affect those around you. 
+Symbolic violence is real and can be committed very easily. 
+It is usually not recognized as such by those committing it.
+Take care that your words and actions are not marginalizing those who find themselves regularly marginalized. 
+Instead, use your words and actions to empower and avocate for each other.  
+
+## Dinosaurs
+
+{% marginfigure 'dino' 'assets/img/dinosaur.png' %}
+Once you have read this syllabus in full, please <a href="mailto:john.d.martin.iii@unc.edu?subject=Dinosaur">click here</a> and email me a picture of a dinosaur.
 
 {% include syllabus-nav.html %}
