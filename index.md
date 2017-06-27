@@ -11,9 +11,9 @@ nav_include: true
 
 {% newthought 'This site houses' %} the course files and syllabus for INLS 161-001, Tools for Information Literacy.
 
-The course runs from 20 June 2016 to 25 July 2016. 
+The course runs from 26 June 2017 to 27 July 2017. 
 
-The class runs Monday-Thursday (except holidays), 11:00-12:30 in Manning Hall, room 117 (the computer lab inside the SILS library).
+The class runs Monday-Thursday (except holidays), 11:30-13:00 in Manning Hall, room 117 (the computer lab inside the SILS library).
 
 The course description, as it appears in the UNC course catalog:
 

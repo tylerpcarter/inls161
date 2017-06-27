@@ -8,6 +8,7 @@ tags:
 - Linux
 - shell commands
 type: Class
+quiz: https://goo.gl/forms/PtOTqTubrSu0Rm6X2
 ---
 
 Today we'll talk about some of the basic ways that computers work and
