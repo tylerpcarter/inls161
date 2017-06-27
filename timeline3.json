@@ -99,7 +99,7 @@
                 "year": "2017",
                 "month": "06",
                 "day": "30",
-                "hour": "11",
+                "hour": "23",
                 "minute": "59"
             },
             "end_date": {
@@ -109,7 +109,7 @@
             },
             "text": {
                 "headline": "<a href='/2017/06/30/assignment-1-basics/'>Assignment #1: BASICS</a>",
-                "text": "<p>This assignment is simple. \nIt consists of 5 tasks:</p>\n\n<ol>\n<li>Sign up for a <a href=\"GitHub\">https://github.com</a> account and log into <a href=\"CodeAnywhere\">https://codeanywhere.com</a> (we did this on the first day of class). </li>\n<li>Take the <a href=\"first%20quiz\">https://goo.gl/forms/EdP61nYyfTJB8AvZ2</a>. </li>\n<li>Take the <a href=\"beginning%20questionnaire\">https://unc.az1.qualtrics.com/jfe/form/SV_6ulF2GSI4FKFJCR</a>. </li>\n<li>Return your signed <a href=\"grade%20contract\">https://inls161.johndmart.in/syllabus/inls161-suii2017-gradecontract.pdf</a>.</li>\n<li>Read the syllabus all the way to the end.</li>\n</ol>\n\n<p>Once you have done these, you have completed the first assignment. \nYou will likely have done these things by the time we finish class on Tuesday. </p>"
+                "text": "<p>This assignment is simple. \nIt consists of 5 tasks:</p>\n\n<ol>\n<li>Sign up for a <a href=\"https://github.com\">GitHub</a> account and log into <a href=\"https://codeanywhere.com\">CodeAnywhere</a> (we did this on the first day of class). </li>\n<li>Take the <a href=\"https://goo.gl/forms/EdP61nYyfTJB8AvZ2\">first quiz</a>. </li>\n<li>Take the <a href=\"https://unc.az1.qualtrics.com/jfe/form/SV_6ulF2GSI4FKFJCR\">beginning questionnaire</a>. </li>\n<li>Return your signed <a href=\"https://inls161.johndmart.in/syllabus/inls161-suii2017-gradecontract.pdf\">grade contract</a>.</li>\n<li>Read the syllabus all the way to the end. Look out for dinosaurs.</li>\n</ol>\n\n<p>Once you have done these, you have completed the first assignment. \nYou will likely have done these things by the time we finish class on Tuesday. </p>"
             },
             "group": "Assignment"
                
