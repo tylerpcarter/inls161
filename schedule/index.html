@@ -153,7 +153,7 @@
 </header>
     </div>
 <!-- Timeline -->
-    <div id="timeline-embed" style="width: 100%; height: 600px; margin-top: 2em"></div>   
+    <div id="timeline-embed" style="width: 100%; height: 60%; margin-top: 2em"></div>   
     <div class="wrap">
 <!-- Content -->
     <article>
@@ -195,11 +195,6 @@
     
     
       <li>
-        <a href="https://sakai.unc.edu/portal/site/inls161s216" title="UNC Sakai site for this course"><span class="ico-target"></span></a>
-      </li>
-    
-    
-      <li>
         <a href="https://github.com/inls161" title="GitHub organization for this course"><span class="ico-github"></span></a>
       </li>
     
@@ -233,7 +228,11 @@
           hash_bookmark: true,
           timenav_position: "top",
           timenav_mobile_height_percentage: 30,
-          debug: true
+          debug: true,
+          scale_factor: 2,
+          trackResize: true,
+          dragging: true,
+          start_at_closest: true
         }
         var timeline = new TL.Timeline('timeline-embed', '/timeline3.json', additionalOptions);
     </script>

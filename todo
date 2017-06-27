@@ -1,0 +1,8 @@
+1. Add NEXT option to start_at_slide var in timeline.js to auto advance slide to today or nearest day. https://github.com/NUKnightLab/TimelineJS/issues/166
+2. Assignments
+3. Edit class session notes
+4. Create loop for quiz redirection
+5. Add due date/time to assignment posts
+6. Add type for era to enable era sectioning of course for JSON renderer
+7. Fix front page to use variables. 
+8. Document everything (eff)
