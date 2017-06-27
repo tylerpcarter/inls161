@@ -54,24 +54,6 @@
             "start_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "27"
-            },
-            "end_date": {
-                "year": "2017",
-                "month": "06",
-                "day": "27"
-            },
-            "text": {
-                "headline": "<a href='/2017/06/27/set-up-github-username/'>GitHub Username and Questionnaire</a>",
-                "text": "<p>This assignment is simple. \nIt consists of 4 tasks:</p>\n\n<ol>\n<li>Sign up for a GitHub account and log into CodeAnywhere. </li>\n<li>Take the first quiz. </li>\n<li>Take the beginning questionnaire. </li>\n<li>Make a commit on GitHub. </li>\n</ol>\n\n<p>Once you have done these, you have completed the first assignment. \nYou will likely have done these things by the time we finish class on Tuesday. </p>"
-            },
-            "group": "Assignment"
-               
-        },
-        {
-            "start_date": {
-                "year": "2017",
-                "month": "06",
                 "day": "28",
                 "hour": "11",
                 "minute": "30"
@@ -128,7 +110,7 @@
                 "minute": "00"
             },
             "text": {
-                "headline": "<a href='/basics/2017/06/30/git-and-github-lab/'>Lab #1: Git and GitHub</a>",
+                "headline": "<a href='/basics/2017/06/30/git-and-github-lab/'>Git and GitHub</a>",
                 "text": "<p>Today we&#39;re going to learn how to fork, clone, and push changes to a repository on GitHub using git. \nWe do this in preparation for creating personal websites that will be hosted by GitHub pages. </p>"
             },
             "group": "Class"
