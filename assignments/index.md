@@ -2,7 +2,7 @@
 layout: page
 title: Assignments
 weight: 7
-nav_include: true
+nav_include: false
 ---
 
 Links to assignments will be listed here as they are posted. 
