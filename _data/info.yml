@@ -17,10 +17,10 @@ days:
 location: 
   icon: ico-library
   var: "117 Manning Hall"
-sakai:
-  icon: ico-target
-  alt: "UNC Sakai site for this course"
-  link: "https://sakai.unc.edu/portal/site/inls161s216"
+#sakai:
+#  icon: ico-target
+#  alt: "UNC Sakai site for this course"
+#  link: "https://sakai.unc.edu/portal/site/inls161s216"
 github:
   link: "https://github.com/inls161"
   alt: "GitHub organization for this course"
