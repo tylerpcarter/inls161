@@ -143,6 +143,8 @@
 		
   	
 		
+  	
+		
 		    
 		      <a href="/refsheets/">Reference</a>
 		    
@@ -243,7 +245,7 @@ We use this on the Internet so that we can type <code>unc.edu</code> instead of 
 <p>DNS is hierarchical and uses a mesh in order to maintain service globally. 
 Most institutions run their own cacheing nameservers which allow faster LAN access to routing information for domain names. </p>
 
-<p>There are 13 &quot;root name servers&quot; globally that mirror each other.<label for='dnsroots' class='margin-toggle'> &#8853;</label><input type='checkbox' id='dnsroots' class='margin-toggle'/><span class='marginnote'>List of DNS root servers<br/><br/><a href="https://en.wikipedia.org/wiki/Root_name_server#Root_server_addresses" target="_blank">here</a> </span>
+<p>There are 13 &quot;root name servers&quot; globally that mirror each other.<label for='dnsroots' class='margin-toggle'> &#8853;</label><input type='checkbox' id='dnsroots' class='margin-toggle'/><span class='marginnote'><a href="https://en.wikipedia.org/wiki/Root_name_server#Root_server_addresses" target="_blank">List of DNS root servers.</a><br/><br/>These servers have only letter names as a subdomain on <code>[SERVERLETTER].root-servers.net</code>. </span>
 When you make a change to the DNS information related to a site or host, it propagates through this network of root servers. </p>
 
 <p>When we type <code>unc.edu</code> into a browser or other network tool, a query is made against a DNS server somewhere and the DNS server then tells us where that domain is located physically (or in some cases virtually).
@@ -256,7 +258,7 @@ When the request arrives at its intended target, that host responds by attemptin
 
 <h1 id="network-tools">Network tools</h1>
 
-<p>We will start the hands-on part of the class today exploring networks a bit more by learning some new tools.<label for='nettools' class='margin-toggle'> &#8853;</label><input type='checkbox' id='nettools' class='margin-toggle'/><span class='marginnote'>Rani Saive, &quot;13 Linux Network Configuration and Troubleshooting Commands&quot; (24 September, 2012, updated 3 January, 2015) <a href="https://www.tecmint.com/linux-network-configuration-and-troubleshooting-commands/">https://www.tecmint.com/linux-network-configuration-and-troubleshooting-commands/</a> </span></p>
+<p>We will start the hands-on part of the class today exploring networks a bit more by learning some new tools.<label for='nettools' class='margin-toggle sidenote-number'></label><input type='checkbox' id='nettools' class='margin-toggle'/><span class='sidenote'>Rani Saive, &quot;13 Linux Network Configuration and Troubleshooting Commands&quot; (24 September, 2012, updated 3 January, 2015) <a href="https://www.tecmint.com/linux-network-configuration-and-troubleshooting-commands/">https://www.tecmint.com/linux-network-configuration-and-troubleshooting-commands/</a> </span></p>
 
 <ul>
 <li><code>hostname</code></li>
@@ -268,6 +270,16 @@ When the request arrives at its intended target, that host responds by attemptin
 <li><code>traceroute</code></li>
 <li><code>wget</code></li>
 </ul>
+
+<p>The above tools give us almost everything we need to find out about a network, the host at a network address, and to get data from the Internet.</p>
+
+<h3 id="questions-to-consider">Questions to consider</h3>
+
+<ol>
+<li>How might different topologies affect the stability of a network?</li>
+<li>Why are there only 13 DNS root servers?</li>
+<li></li>
+</ol>
 
 <h1 id="branching-and-merging">Branching and Merging</h1>
 
