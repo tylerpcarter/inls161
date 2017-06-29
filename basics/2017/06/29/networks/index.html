@@ -256,9 +256,56 @@ When the request arrives at its intended target, that host responds by attemptin
 
 <h1 id="network-tools">Network tools</h1>
 
-<p>Next week, we will explore networks a bit more and talk about some of the tools that we can and will use to better understand the networks around us. </p>
+<p>We will start the hands-on part of the class today exploring networks a bit more by learning some new tools.<label for='nettools' class='margin-toggle'> &#8853;</label><input type='checkbox' id='nettools' class='margin-toggle'/><span class='marginnote'>Rani Saive, &quot;13 Linux Network Configuration and Troubleshooting Commands&quot; (24 September, 2012, updated 3 January, 2015) <a href="https://www.tecmint.com/linux-network-configuration-and-troubleshooting-commands/">https://www.tecmint.com/linux-network-configuration-and-troubleshooting-commands/</a> </span></p>
 
-<p>For the rest of the session today, we&#39;ll be exploring more using git and GitHub. </p>
+<ul>
+<li><code>hostname</code></li>
+<li><code>ifconfig</code></li>
+<li><code>ping</code></li>
+<li><code>whois</code></li>
+<li><code>nslookup</code></li>
+<li><code>host</code></li>
+<li><code>traceroute</code></li>
+<li><code>wget</code></li>
+</ul>
+
+<h1 id="branching-and-merging">Branching and Merging</h1>
+
+<p>For the rest of the session today, we&#39;ll be exploring branching and merging our repositories using git. </p>
+
+<h2 id="create-a-branch">Create a branch</h2>
+
+<p>To create, or &quot;checkout&quot; a new branch, we can follow Roger Dudler&#39;s guide again.<label for='gitnoshit' class='margin-toggle sidenote-number'></label><input type='checkbox' id='gitnoshit' class='margin-toggle'/><span class='sidenote'>Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. <a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a>.<br/><br/>Also check this resource out for help with branching and merging: Chacon, Scott, and Ben Straub. “Basic Branching and Merging.” In ProGit. New York, New York: Apress, 2014. <a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging</a>. </span></p>
+
+<p><code>git checkout -b testing</code></p>
+
+<p>This creates a new branch and switches us into it.</p>
+
+<p>If we want to see our existing branches and see where we are, type:</p>
+
+<p><code>git branch -l</code> or <code>git branch --list</code></p>
+
+<p>Once here we can make changes without disturbing the <code>master</code> branch, which should have our running code in it. </p>
+
+<p>To switch between branches, simply type:</p>
+
+<p><code>git checkout [BRANCH-NAME]</code></p>
+
+<h2 id="test-and-merge">Test and merge</h2>
+
+<p>Once you have made some changes that you are happy with, you can merge them back into your <code>master</code> branch. </p>
+
+<p>FIrst switch back into the <code>master</code> branch:</p>
+
+<p><code>git checkout master</code></p>
+
+<p>Then merge your changes from testing:</p>
+
+<p><code>git merge testing</code></p>
+
+<p>Then commit the merged changes:</p>
+
+<p><code>git commit -a -m &quot;merge testing into master</code></p>
 
 <h1 id="for-next-time">For Next Time</h1>
 
