@@ -1,15 +1,56 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="1; url=https://goo.gl/forms/jFdTUhXcADOmi3IV2">
-        <script type="text/javascript">
-            window.location.href = "https://goo.gl/forms/jFdTUhXcADOmi3IV2"
-        </script>
-        <title>Page Redirection</title>
-    </head>
-    <body>
-        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
-        If you are not redirected automatically, follow this <a href='https://goo.gl/forms/jFdTUhXcADOmi3IV2'>https://goo.gl/forms/jFdTUhXcADOmi3IV2</a>.
-    </body>
-</html>
+---
+layout: full-width
+title: Schedule
+weight: 7
+topbar: true
+---
+
+<br/>
+<span class="huge date"><a href="#today" id="todaydate"><!--Optionally, this can be used as a fallback date: {{ site.time | date: "%A, %-d %B %Y" }}--></a></span>
+
+    <script>
+     // set an element
+     //$("#todaydate").val( moment().format('D MMM YYYY') );
+
+     // set a variable
+     var todaydate = moment().format('dddd, D MMM, YYYY');
+     
+     // insert today into 
+     document.getElementById("todaydate").innerHTML = todaydate;
+    </script>
+
+    {% for post in site.posts reversed if post.published != 'false'%} 
+    <hr class="slender">
+<div class="table-wrapper" style="width: 100%">
+    <table style="width: 100%; max-width: 100%; border-top: 0px; border-bottom: 0px; margin-right: 0px;">
+      <tbody style="width: 100%">
+        <tr width="100%">
+        {% capture datestamp %}{{post.date | date: "%F"}}{% endcapture %}
+        {% capture today %}{{site.time | date: "%F"}}{% endcapture %}
+          <td style="width: 35%; padding: .5em 0 .5em 0">
+            <a href="{{ post.quiz }}" ><h1 class="contrast" style="margin: 0;">Quiz #{{ forloop.index }}: {{ post.title }}</h1></a>
+          </td>
+          <td style="width:21%; padding: .5em 0 .5em 0">
+            <span>{{ post.date | date: "%a, %b %d" }}</span><span class="smaller date contrast" id="todaymark"></span>
+          </td>
+          <td style="width: 53%;">
+            <ul class="tags" style="width: 100%; padding: .5em 0em .5em 0em;">
+                {% for tag in post.tags %}<li><a href="/topics#{{ tag }}" class="tag smaller">{{ tag | replace: " ", "-" }}</a></li>{% endfor %}
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+  </table>
+</div>
+    {% if forloop.last == true %}
+    <hr class="slender">
+    {% endif %}
+    
+<script>
+var dateVariable = "2017-06-26";// parsed date string (YYYY-MM-DD is best
+if ((new Date()).setHours(0,0,0,0) == (new Date(dateVariable)).setHours(0,0,0,0)) 
+  { 
+    document.getElementsById("todaymark")[0].setAttribute("class", "today");
+  }
+</script>
+    {% endfor %}
