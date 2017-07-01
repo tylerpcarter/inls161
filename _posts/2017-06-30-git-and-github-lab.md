@@ -9,6 +9,7 @@ tags:
 - Jekyll
 - web design
 type: Class
+quiz: https://goo.gl/forms/yb4yVFliC0tHU2sn2
 ---
 
 Today we're going to learn how to fork, clone, and push changes to a repository on GitHub using git. 

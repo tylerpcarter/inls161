@@ -493,11 +493,11 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
 .small { font-size: 60%; }
 .smaller { font-size: 80%;}
 .normalsize { font-size: 100%;}
-.large { font-size: 120%; }
-.larger { font-size: 140% }
-.huge { font-size: 150%; }
+.large { font-size: 125%; }
+.larger { font-size: 160% }
+.huge { font-size: 200%; }
 
-.date { font-family: $sans-font }
+.date { font-family: $sans-font; text-transform: uppercase; }
 .date.today:after { content: "TODAY" }
 
 //Nav and Footer styling area

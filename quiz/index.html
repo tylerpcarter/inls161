@@ -1,8 +1,8 @@
 ---
 layout: full-width
-title: Schedule
+title: Quiz
 weight: 7
-topbar: true
+nav_include: true
 ---
 
 <br/>
@@ -19,19 +19,20 @@ topbar: true
      document.getElementById("todaydate").innerHTML = todaydate;
     </script>
 
-    {% for post in site.posts reversed if post.published != 'false'%} 
+    {% for post in site.posts reversed %} 
+    {% unless post.quiz %}
+      {% continue %}
+    {% endunless %}
     <hr class="slender">
 <div class="table-wrapper" style="width: 100%">
     <table style="width: 100%; max-width: 100%; border-top: 0px; border-bottom: 0px; margin-right: 0px;">
       <tbody style="width: 100%">
         <tr width="100%">
-        {% capture datestamp %}{{post.date | date: "%F"}}{% endcapture %}
-        {% capture today %}{{site.time | date: "%F"}}{% endcapture %}
           <td style="width: 35%; padding: .5em 0 .5em 0">
-            <a href="{{ post.quiz }}" ><h1 class="contrast" style="margin: 0;">Quiz #{{ forloop.index }}: {{ post.title }}</h1></a>
+            <a href="{{ post.quiz }}" ><h1 class="contrast" style="margin: 0;">Quiz{% comment %} #{{ forloop.index }}{% endcomment %}: {{ post.title }}</h1></a>
           </td>
           <td style="width:21%; padding: .5em 0 .5em 0">
-            <span>{{ post.date | date: "%a, %b %d" }}</span><span class="smaller date contrast" id="todaymark"></span>
+            <span>{{ post.date | date: "%a, %b %d" }}</span>
           </td>
           <td style="width: 53%;">
             <ul class="tags" style="width: 100%; padding: .5em 0em .5em 0em;">
@@ -45,7 +46,6 @@ topbar: true
     {% if forloop.last == true %}
     <hr class="slender">
     {% endif %}
-    
 <script>
 var dateVariable = "2017-06-26";// parsed date string (YYYY-MM-DD is best
 if ((new Date()).setHours(0,0,0,0) == (new Date(dateVariable)).setHours(0,0,0,0)) 
