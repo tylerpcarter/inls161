@@ -596,16 +596,17 @@ article label.margin-toggle:not(.sidenote-number) {
   font-size: 100%; }
 
 .large {
-  font-size: 120%; }
+  font-size: 125%; }
 
 .larger {
-  font-size: 140%; }
+  font-size: 160%; }
 
 .huge {
-  font-size: 150%; }
+  font-size: 200%; }
 
 .date {
-  font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif; }
+  font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif;
+  text-transform: uppercase; }
 
 .date.today:after {
   content: "TODAY"; }

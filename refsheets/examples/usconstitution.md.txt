@@ -141,6 +141,10 @@
 		
   	
 		
+		    
+		      <a href="/quiz/">Quiz</a>
+		    
+	    
   	
 		
   	
@@ -721,7 +725,7 @@ We have hereunto subscribed our Names,
     </article>
     <span class="print-footer">The United States' Constitution - </span>
     <footer>
-  <div class="blognav">
+  <div class="larger blognav">
     
     
   </div>
