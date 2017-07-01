@@ -44,7 +44,7 @@
 <meta name="msapplication-config" content="/assets/img/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
-<link rel="canonical" href="/assignments/a6/">
+<link rel="canonical" href="/assignments-old/a4/">
 
 <link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="/feed.xml" />
 
@@ -161,55 +161,47 @@
       <h1></h1>
 <p class="subtitle"></p>
 
-<h1 id="task-6-be-presentable">Task #6 - Be Presentable</h1>
+<h1 id="task-4-create-data">Task #4 - Create data</h1>
 
-<p>This assignment involves the creation of a well-formed presentation with voiceover narration. </p>
+<p>This assignment aims at strengthening our scripting skills and learning how to create a well-formed dataset to work with. </p>
 
-<p>The assignment aims to strengthen your HTML skills while also learning to create presentation materials and craft a short narrative for a presentation. </p>
+<p>We will extend what we do in this assignment in the next one, so keep that in mind.</p>
 
-<p>You will use reveal.js in combination with audio files to create an automated, narrated web object. </p>
+<p>We will create a short questionnaire and then use Bash to script collection of answers.</p>
 
 <h2 id="skillsets">Skillsets</h2>
 
 <p>You will be exposed to the following skillsets;</p>
 
 <ol>
-<li>HTML5</li>
-<li>Audio manipulation</li>
-<li>Presentation skills</li>
+<li>Scripting user input</li>
+<li>Saving data to csv file</li>
 </ol>
 
 <h2 id="expectations">Expectations</h2>
 
-<p>I expect you to work with a partner or small group (no more than 3) to write and construct a short (5 min) presentation on the topic of your choice. </p>
+<p>I expect you to work in your teams to create a script that will take input from users and then store their responses to a CSV file.
+It must aggregate the responses of multiple users and therefore needs to have some form of disambiguation involved in the data generation process. </p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
-<p>You will need a text editor and audio manipulation software, preferrably Audacity. Your presentation will be stored in GitHub and you can manipulate the text using the editor in CodeAnywhere.</p>
+<p>The only thing that you will need is Bash and text files, all of which are available in CodeAnywhere.</p>
 
 <h2 id="instructions">Instructions</h2>
 
 <p>You will need to do the following for this assignment to be considered complete. </p>
 
-<h3 id="as-a-team">As a team:</h3>
-
 <ol>
-<li>Fork <a href="https://github.com/jdmar3/task-6-be-presentable/tree/5e0fbc87374c0f779f60df98e754a0610616abe6">this base repository</a> (one team member should fork first and then add the other as a contributor). </li>
-<li>Create your base presentation slides using the included Markdown template and convert it to HTML5 using Pandoc. Instructions for this are in the <code>INSTRUCTIONS.md</code> file in this repository.</li>
-<li>Add speaker notes to enclose the text of your presentation. </li>
-<li>Add images, styles, and fragments accordingly. </li>
-<li>Narrate audio of the presentation (both team members must have their voices in the audio).</li>
-<li>Use Audacity to cut the audio files into the appropriate lengths for the transitions (see instructions on class site).</li>
-<li>Upload the audio files and insert the source links in each section and fragment.</li>
-<li>Make sure that all of your changes are added, committed, and pushed. </li>
-<li>Test your presentation to ensure that all runs smoothly.</li>
-</ol>
+<li>Create a list of five questions.</li>
+<li>Write a script that will do the following:
 
-<h3 id="individually">Individually:</h3>
-
-<ol>
-<li>Sync your repository fork with the main fork at the end of the work (Look here for how to do this: <a href="https://help.github.com/articles/syncing-a-fork/">https://help.github.com/articles/syncing-a-fork/</a>).</li>
-<li>Write a blog post that links to your fork of the repository and write a brief synopsis of the content of the presentation. </li>
+<ul>
+<li>Ask each question of the user running the script.</li>
+<li>Write a random string of characters to a variable as a unique identifier.</li>
+<li>Write the datestamp to a variable.</li>
+<li>Accept text input from the user and write each answer as a variable.</li>
+<li>Save all answers and other data to a CSV file.</li>
+</ul></li>
 </ol>
 
 
