@@ -9,14 +9,14 @@ nav_exclude: true
           "text": {{ site.description | smartify | jsonify }}
         }
     },  
-    "events": [{% for post in site.posts reversed %}
+    "events": [{% for post in site.posts reversed %}{% if post.categories contains "class" or post.categories contains "assignment" %}
         {
             "start_date": {
                 "year": "{{ post.date | date : '%Y' }}",
                 "month": "{{ post.date | date : '%m' }}",
                 "day": "{{ post.date | date : '%d' }}"{% if post.start_date %},
                 "hour": "{{ post.start_date | date : '%H' }}",
-                "minute": "{{ post.start_date | date : '%M' }}"{% elsif post.type == "class" %},
+                "minute": "{{ post.start_date | date : '%M' }}"{% elsif post.category == "class" %},
                 "hour": "11",
                 "minute": "30"{% endif %}
             },{% if post.end_date %}
@@ -30,7 +30,7 @@ nav_exclude: true
             "end_date": {
                 "year": "{{ post.date | date : '%Y' }}",
                 "month": "{{ post.date | date : '%m' }}",
-                "day": "{{ post.date | date : '%d' }}"{% if post.type == "class" %},
+                "day": "{{ post.date | date : '%d' }}"{% if post.category == "class" %},
                 "hour": "13",
                 "minute": "00"{% endif %}
             },{% endif %}
@@ -41,6 +41,7 @@ nav_exclude: true
             "group": {{ post.category | smartify | jsonify }}{% endif %}
             {% if post.display_date %},
             "display_date": {{ post.display_date | smartify | jsonify }}{% endif %}   
-        }{% unless forloop.last == true %},{% endunless %}{% endfor %}
+        }{% unless forloop.last == true %},{% endunless %}{% endif %}{% endfor %}
     ]
+    
 }
