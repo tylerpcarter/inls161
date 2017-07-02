@@ -10,88 +10,72 @@
             "start_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "26",
-                "hour": "11",
-                "minute": "30"
+                "day": "26"
             },
             "end_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "26",
-                "hour": "13",
-                "minute": "00"
+                "day": "26"
             },
             "text": {
-                "headline": "<a href='/basics/2017/06/26/intro/'>Welcome to INLS161!</a>",
-                "text": "<p>This is a course about pushing our boundaries and learning new things. \nIt is also about learning new ways of doing things that we might already know how to do. \nSome of the topics and skills covered by the course might be old hat for some of you. \nOthers may not have ever heard of some of these things. </p>"
+                "headline": "<a href='/class/2017/06/26/intro/'>Welcome to INLS161!</a>",
+                "text": "<p>THIS IS A COURSE ABOUT PUSHING OUR BOUNDARIES AND LEARNING NEW THINGS. \nIT IS ALSO ABOUT LEARNING NEW WAYS OF DOING THINGS THAT WE MIGHT ALREADY KNOW HOW TO DO. \nSOME OF THE TOPICS AND SKILLS COVERED BY THE COURSE MIGHT BE OLD HAT FOR SOME OF YOU. \nOTHERS MAY NOT HAVE EVER HEARD OF SOME OF THESE THINGS. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "27",
-                "hour": "11",
-                "minute": "30"
+                "day": "27"
             },
             "end_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "27",
-                "hour": "13",
-                "minute": "00"
+                "day": "27"
             },
             "text": {
-                "headline": "<a href='/basics/2017/06/27/clients-servers/'>Clients and Servers</a>",
-                "text": "<p>Today we&#39;ll talk about some of the basic ways that computers work and\ninteract with one another. We&#39;ll also begin discussing the history of\ncomputing in the context of operating systems, UNIX, and Linux.</p>\n\n<p>In class we will also start with some hands-on-keyboards practice with\nmoving around the shell and manipulating files. </p>"
+                "headline": "<a href='/class/2017/06/27/clients-servers/'>Clients and Servers</a>",
+                "text": "<p>TODAY WE&#39;LL TALK ABOUT SOME OF THE BASIC WAYS THAT COMPUTERS WORK AND\nINTERACT WITH ONE ANOTHER. WE&#39;LL ALSO BEGIN DISCUSSING THE HISTORY OF\nCOMPUTING IN THE CONTEXT OF OPERATING SYSTEMS, UNIX, AND LINUX.</p>\n\n<p>IN CLASS WE WILL ALSO START WITH SOME HANDS-ON-KEYBOARDS PRACTICE WITH\nMOVING AROUND THE SHELL AND MANIPULATING FILES. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "28",
-                "hour": "11",
-                "minute": "30"
+                "day": "28"
             },
             "end_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "28",
-                "hour": "13",
-                "minute": "00"
+                "day": "28"
             },
             "text": {
-                "headline": "<a href='/basics/2017/06/28/git/'>Version Control</a>",
-                "text": "<p>Version control systems allow us to track and see the changes to a given document or set of files over time. \nThis can be useful in situations where you wish to roll back changes or identify the point of origin for something problematic. </p>\n\n<p>It is also helpful when you are collaborating and want to be able to keep track of the work being done and changes being made by a group of people. </p>\n\n<p>Version control can exist in a standalone system or it can be networked and distributed. </p>"
+                "headline": "<a href='/class/2017/06/28/git/'>Version Control</a>",
+                "text": "<p>VERSION CONTROL SYSTEMS ALLOW US TO TRACK AND SEE THE CHANGES TO A GIVEN DOCUMENT OR SET OF FILES OVER TIME. \nTHIS CAN BE USEFUL IN SITUATIONS WHERE YOU WISH TO ROLL BACK CHANGES OR IDENTIFY THE POINT OF ORIGIN FOR SOMETHING PROBLEMATIC. </p>\n\n<p>IT IS ALSO HELPFUL WHEN YOU ARE COLLABORATING AND WANT TO BE ABLE TO KEEP TRACK OF THE WORK BEING DONE AND CHANGES BEING MADE BY A GROUP OF PEOPLE. </p>\n\n<p>VERSION CONTROL CAN EXIST IN A STANDALONE SYSTEM OR IT CAN BE NETWORKED AND DISTRIBUTED. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "29",
-                "hour": "11",
-                "minute": "30"
+                "day": "29"
             },
             "end_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "29",
-                "hour": "13",
-                "minute": "00"
+                "day": "29"
             },
             "text": {
-                "headline": "<a href='/basics/2017/06/29/networks/'>Networks</a>",
-                "text": "<p>We&#39;ve discussed a bit about how servers and clients operate. \nNow we&#39;ll look at what happens when we put lots of servers and lots of clients together. </p>"
+                "headline": "<a href='/class/2017/06/29/networks/'>Networks</a>",
+                "text": "<p>WE&#39;VE DISCUSSED A BIT ABOUT HOW SERVERS AND CLIENTS OPERATE. \nNOW WE&#39;LL LOOK AT WHAT HAPPENS WHEN WE PUT LOTS OF SERVERS AND LOTS OF CLIENTS TOGETHER. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
@@ -108,239 +92,197 @@
                 "day": "30"
             },
             "text": {
-                "headline": "<a href='/2017/06/30/assignment-1-basics/'>Assignment #1: BASICS</a>",
-                "text": "<p>This assignment is simple. \nIt consists of 5 tasks:</p>\n\n<ol>\n<li>Sign up for a <a href=\"https://github.com\">GitHub</a> account and log into <a href=\"https://codeanywhere.com\">CodeAnywhere</a> (we did this on the first day of class). </li>\n<li>Take the <a href=\"https://goo.gl/forms/EdP61nYyfTJB8AvZ2\">first quiz</a>. </li>\n<li>Take the <a href=\"https://unc.az1.qualtrics.com/jfe/form/SV_6ulF2GSI4FKFJCR\">beginning questionnaire</a>. </li>\n<li>Return your signed <a href=\"https://inls161.johndmart.in/syllabus/inls161-suii2017-gradecontract.pdf\">grade contract</a>.</li>\n<li>Read the <a href=\"/syllabus\">syllabus</a> all the way to the end. Look out for dinosaurs.</li>\n</ol>\n\n<p>Once you have done these, you have completed the first assignment. \nYou will likely have done these things by the time we finish class on Tuesday. </p>"
+                "headline": "<a href='/assignment/2017/06/30/assignment-1-basics/'>Assignment #1: BASICS</a>",
+                "text": "<p>THIS ASSIGNMENT IS SIMPLE. \nIT CONSISTS OF 5 TASKS:</p>\n\n<ol>\n<li>SIGN UP FOR A <a href=\"HTTPS://GITHUB.COM\">GITHUB</a> ACCOUNT AND LOG INTO <a href=\"HTTPS://CODEANYWHERE.COM\">CODEANYWHERE</a> (WE DID THIS ON THE FIRST DAY OF CLASS). </li>\n<li>TAKE THE <a href=\"HTTPS://GOO.GL/FORMS/EDP61NYYFTJB8AVZ2\">FIRST QUIZ</a>. </li>\n<li>TAKE THE <a href=\"HTTPS://UNC.AZ1.QUALTRICS.COM/JFE/FORM/SV_6ULF2GSI4FKFJCR\">BEGINNING QUESTIONNAIRE</a>. </li>\n<li>RETURN YOUR SIGNED <a href=\"HTTPS://INLS161.JOHNDMART.IN/SYLLABUS/INLS161-SUII2017-GRADECONTRACT.PDF\">GRADE CONTRACT</a>.</li>\n<li>READ THE <a href=\"/SYLLABUS\">SYLLABUS</a> ALL THE WAY TO THE END. LOOK OUT FOR DINOSAURS.</li>\n</ol>\n\n<p>ONCE YOU HAVE DONE THESE, YOU HAVE COMPLETED THE FIRST ASSIGNMENT. \nYOU WILL LIKELY HAVE DONE THESE THINGS BY THE TIME WE FINISH CLASS ON TUESDAY. </p>"
             },
-            "group": "Assignment"
+            "group": "assignment"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "30",
-                "hour": "11",
-                "minute": "30"
+                "day": "30"
             },
             "end_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "30",
-                "hour": "13",
-                "minute": "00"
+                "day": "30"
             },
             "text": {
-                "headline": "<a href='/basics/2017/06/30/git-and-github-lab/'>Git and GitHub</a>",
-                "text": "<p>Today we&#39;re going to learn how to fork, clone, and push changes to a repository on GitHub using git. \nWe do this in preparation for creating personal websites that will be hosted by GitHub pages. </p>"
+                "headline": "<a href='/class/2017/06/30/git-and-github-lab/'>Git and GitHub</a>",
+                "text": "<p>TODAY WE&#39;RE GOING TO LEARN HOW TO FORK, CLONE, AND PUSH CHANGES TO A REPOSITORY ON GITHUB USING GIT. \nWE DO THIS IN PREPARATION FOR CREATING PERSONAL WEBSITES THAT WILL BE HOSTED BY GITHUB PAGES. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "03",
-                "hour": "11",
-                "minute": "30"
+                "day": "03"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "03",
-                "hour": "13",
-                "minute": "00"
+                "day": "03"
             },
             "text": {
-                "headline": "<a href='/web/2017/07/03/websites-and-markup/'>Websites, Markup, and Markdown</a>",
-                "text": "<p>This week&#39;s tasks will involve some very simple coding (markup, really) and continued exploration and use of our system administration skills. </p>\n\n<p>Last Friday we learned how to set up a very basic website using Jekyll and GitHub pasges. \nThis week we will expand on that significantly, learn how to use markup to change the style of our content, and then learn to publish content to the web. </p>"
+                "headline": "<a href='/class/2017/07/03/websites-and-markup/'>Websites, Markup, and Markdown</a>",
+                "text": "<p>THIS WEEK&#39;S TASKS WILL INVOLVE SOME VERY SIMPLE CODING (MARKUP, REALLY) AND CONTINUED EXPLORATION AND USE OF OUR SYSTEM ADMINISTRATION SKILLS. </p>\n\n<p>LAST FRIDAY WE LEARNED HOW TO SET UP A VERY BASIC WEBSITE USING JEKYLL AND GITHUB PASGES. \nTHIS WEEK WE WILL EXPAND ON THAT SIGNIFICANTLY, LEARN HOW TO USE MARKUP TO CHANGE THE STYLE OF OUR CONTENT, AND THEN LEARN TO PUBLISH CONTENT TO THE WEB. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "05",
-                "hour": "11",
-                "minute": "30"
+                "day": "05"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "05",
-                "hour": "13",
-                "minute": "00"
+                "day": "05"
             },
             "text": {
-                "headline": "<a href='/web/2017/07/05/jekyll-css-html/'>Visual styling for the web</a>",
-                "text": "<p>For most of class today, we will spend time creating our base site and then exploring ways that we can change and customize the style to our liking. </p>\n\n<p>We&#39;ll learn a little bit about CSS and about linking resources so that they show up where we want them. </p>"
+                "headline": "<a href='/class/2017/07/05/jekyll-css-html/'>Visual styling for the web</a>",
+                "text": "<p>FOR MOST OF CLASS TODAY, WE WILL SPEND TIME CREATING OUR BASE SITE AND THEN EXPLORING WAYS THAT WE CAN CHANGE AND CUSTOMIZE THE STYLE TO OUR LIKING. </p>\n\n<p>WE&#39;LL LEARN A LITTLE BIT ABOUT CSS AND ABOUT LINKING RESOURCES SO THAT THEY SHOW UP WHERE WE WANT THEM. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "06",
-                "hour": "11",
-                "minute": "30"
+                "day": "06"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "06",
-                "hour": "13",
-                "minute": "00"
+                "day": "06"
             },
             "text": {
-                "headline": "<a href='/web/2017/07/06/developing-deploying-branching/'>Developing and Deploying</a>",
-                "text": "<p>Today we&#39;re going to take the first steps toward actually getting our website up and running. \nWe will also use this opportunity to discuss the development &gt; testing &gt; deployment workflow. </p>"
+                "headline": "<a href='/class/2017/07/06/developing-deploying-branching/'>Developing and Deploying</a>",
+                "text": "<p>TODAY WE&#39;RE GOING TO TAKE THE FIRST STEPS TOWARD ACTUALLY GETTING OUR WEBSITE UP AND RUNNING. \nWE WILL ALSO USE THIS OPPORTUNITY TO DISCUSS THE DEVELOPMENT &GT; TESTING &GT; DEPLOYMENT WORKFLOW. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "07",
-                "hour": "11",
-                "minute": "30"
+                "day": "07"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "07",
-                "hour": "13",
-                "minute": "00"
+                "day": "07"
             },
             "text": {
-                "headline": "<a href='/web/2017/07/07/branching-and-merging/'>Branching and Merging</a>",
-                "text": "<p>Today we will set up a testing workflow and learn how to create branches for adding and changing features on our sites. \nWe will use this to change the visual style the site and create blog posts. </p>\n\n<p>This session will be mostly hands-on. </p>"
+                "headline": "<a href='/class/2017/07/07/branching-and-merging/'>Branching and Merging</a>",
+                "text": "<p>TODAY WE WILL SET UP A TESTING WORKFLOW AND LEARN HOW TO CREATE BRANCHES FOR ADDING AND CHANGING FEATURES ON OUR SITES. \nWE WILL USE THIS TO CHANGE THE VISUAL STYLE THE SITE AND CREATE BLOG POSTS. </p>\n\n<p>THIS SESSION WILL BE MOSTLY HANDS-ON. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "10",
-                "hour": "11",
-                "minute": "30"
+                "day": "10"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "10",
-                "hour": "13",
-                "minute": "00"
+                "day": "10"
             },
             "text": {
-                "headline": "<a href='/web/2017/07/10/web-lab/'>Troubleshooting</a>",
-                "text": "<p>This lab session will be primarily dedicated to helping you work out kinks and wrinkles in the process of getting your site online and completing the second assignment. \nIf you are already very far along, then this is an opportunity for you to finish your work. </p>"
+                "headline": "<a href='/class/2017/07/10/web-lab/'>Troubleshooting</a>",
+                "text": "<p>THIS LAB SESSION WILL BE PRIMARILY DEDICATED TO HELPING YOU WORK OUT KINKS AND WRINKLES IN THE PROCESS OF GETTING YOUR SITE ONLINE AND COMPLETING THE SECOND ASSIGNMENT. \nIF YOU ARE ALREADY VERY FAR ALONG, THEN THIS IS AN OPPORTUNITY FOR YOU TO FINISH YOUR WORK. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "11",
-                "hour": "11",
-                "minute": "30"
+                "day": "11"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "11",
-                "hour": "13",
-                "minute": "00"
+                "day": "11"
             },
             "text": {
-                "headline": "<a href='/text/2017/07/11/text-conversion/'>Text Conversion</a>",
-                "text": "<h1 id=\"plaintext-markup-and-formatted-text\">Plaintext, markup, and formatted text</h1>\n\n<p>This week we will discuss the uses of plaintext and markup for creating formatted documents. </p>\n\n<p>Today we are going to briefly introduce Pandoc and then tomorrow we are going to see what it can really do with our documents when we learn some interesting switches and tricks. We will also some hand-on-keyboards excercises that will demonstrate the power of using marked-up plaintext for creating formatted documents. </p>"
+                "headline": "<a href='/class/2017/07/11/text-conversion/'>Text Conversion</a>",
+                "text": "<h1 id=\"PLAINTEXT-MARKUP-AND-FORMATTED-TEXT\">PLAINTEXT, MARKUP, AND FORMATTED TEXT</h1>\n\n<p>THIS WEEK WE WILL DISCUSS THE USES OF PLAINTEXT AND MARKUP FOR CREATING FORMATTED DOCUMENTS. </p>\n\n<p>TODAY WE ARE GOING TO BRIEFLY INTRODUCE PANDOC AND THEN TOMORROW WE ARE GOING TO SEE WHAT IT CAN REALLY DO WITH OUR DOCUMENTS WHEN WE LEARN SOME INTERESTING SWITCHES AND TRICKS. WE WILL ALSO SOME HAND-ON-KEYBOARDS EXCERCISES THAT WILL DEMONSTRATE THE POWER OF USING MARKED-UP PLAINTEXT FOR CREATING FORMATTED DOCUMENTS. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "12",
-                "hour": "11",
-                "minute": "30"
+                "day": "12"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "12",
-                "hour": "13",
-                "minute": "00"
+                "day": "12"
             },
             "text": {
-                "headline": "<a href='/text/2017/07/12/single-multiple-outputs/'>Single input, multiple outputs</a>",
-                "text": "<p>We&#39;ve briefly discussed Pandoc now. \nIt bills itself as the &quot;Universal Document Converter.&quot; \nThis is reasonably true, but it might require some creative combinations of switches within Pandoc commands as well as multiple commands strung together or intermediate commands to get the desired output. </p>\n\n<p>The benefit of troubleshooting and understanding this process is that once we do, we can more easily optimize our conversions and automate them. \nWe&#39;ll talk more about this as we go forward. </p>"
+                "headline": "<a href='/class/2017/07/12/single-multiple-outputs/'>Single input, multiple outputs</a>",
+                "text": "<p>WE&#39;VE BRIEFLY DISCUSSED PANDOC NOW. \nIT BILLS ITSELF AS THE &QUOT;UNIVERSAL DOCUMENT CONVERTER.&QUOT; \nTHIS IS REASONABLY TRUE, BUT IT MIGHT REQUIRE SOME CREATIVE COMBINATIONS OF SWITCHES WITHIN PANDOC COMMANDS AS WELL AS MULTIPLE COMMANDS STRUNG TOGETHER OR INTERMEDIATE COMMANDS TO GET THE DESIRED OUTPUT. </p>\n\n<p>THE BENEFIT OF TROUBLESHOOTING AND UNDERSTANDING THIS PROCESS IS THAT ONCE WE DO, WE CAN MORE EASILY OPTIMIZE OUR CONVERSIONS AND AUTOMATE THEM. \nWE&#39;LL TALK MORE ABOUT THIS AS WE GO FORWARD. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "13",
-                "hour": "11",
-                "minute": "30"
+                "day": "13"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "13",
-                "hour": "13",
-                "minute": "00"
+                "day": "13"
             },
             "text": {
-                "headline": "<a href='/text/2017/07/13/scripting/'>Introduction to scripting</a>",
-                "text": "<p>Today we will learn how to convert our plaintext Markdown into a PDF. \nTo do this we will have to install some more software, which may take a while. </p>\n\n<p>In the mean time, we will cover some of the basics of scripting in order to be able to automate our workflows a little bit better. </p>"
+                "headline": "<a href='/class/2017/07/13/scripting/'>Introduction to scripting</a>",
+                "text": "<p>TODAY WE WILL LEARN HOW TO CONVERT OUR PLAINTEXT MARKDOWN INTO A PDF. \nTO DO THIS WE WILL HAVE TO INSTALL SOME MORE SOFTWARE, WHICH MAY TAKE A WHILE. </p>\n\n<p>IN THE MEAN TIME, WE WILL COVER SOME OF THE BASICS OF SCRIPTING IN ORDER TO BE ABLE TO AUTOMATE OUR WORKFLOWS A LITTLE BIT BETTER. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "14",
-                "hour": "11",
-                "minute": "30"
+                "day": "14"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "14",
-                "hour": "13",
-                "minute": "00"
+                "day": "14"
             },
             "text": {
-                "headline": "<a href='/text/2017/07/14/lab-automation/'>Lab #3: Automation and Scripting</a>",
-                "text": "<p>Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. </p>"
+                "headline": "<a href='/class/2017/07/14/lab-automation/'>Lab #3: Automation and Scripting</a>",
+                "text": "<p>TODAY WE ARE GOING TO GO OVER MORE SCRIPTING TRICKS THIS MORNING AND THEN WORK ON OUR NEXT ASSIGNMENT FOR THE REMAINDER OF THE SESSION. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "17",
-                "hour": "11",
-                "minute": "30"
+                "day": "17"
             },
             "end_date": {
                 "year": "2017",
@@ -350,41 +292,35 @@
                 "minute": "00"
             },
             "text": {
-                "headline": "<a href='/data/2017/07/17/data-handling/'>Handling data</a>",
-                "text": "<p>Today we are going to discuss the creation of data and learn how manipulate data structures. </p>\n\n<p><p>We will learn some things about using pipes to redirect output and learn some commands for working with data. </p>\n</p>"
+                "headline": "<a href='/class/2017/07/17/data-handling/'>Handling data</a>",
+                "text": "<p>TODAY WE ARE GOING TO DISCUSS THE CREATION OF DATA AND LEARN HOW MANIPULATE DATA STRUCTURES. </p>\n\n<p><p>WE WILL LEARN SOME THINGS ABOUT USING PIPES TO REDIRECT OUTPUT AND LEARN SOME COMMANDS FOR WORKING WITH DATA. </p>\n</p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "18",
-                "hour": "11",
-                "minute": "30"
+                "day": "18"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "18",
-                "hour": "13",
-                "minute": "00"
+                "day": "18"
             },
             "text": {
-                "headline": "<a href='/data/2017/07/18/data-cleaning/'>Data cleaning and spreadsheet software</a>",
-                "text": "<p>Today we&#39;re going to look at one common way of manipulating CSV and other data files: the spreadsheet. </p>"
+                "headline": "<a href='/class/2017/07/18/data-cleaning/'>Data cleaning and spreadsheet software</a>",
+                "text": "<p>TODAY WE&#39;RE GOING TO LOOK AT ONE COMMON WAY OF MANIPULATING CSV AND OTHER DATA FILES: THE SPREADSHEET. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "19",
-                "hour": "11",
-                "minute": "30"
+                "day": "19"
             },
             "end_date": {
                 "year": "2017",
@@ -394,151 +330,125 @@
                 "minute": "00"
             },
             "text": {
-                "headline": "<a href='/data/2017/07/19/sql-bootcamp/'>Database software and MySQL</a>",
-                "text": "<p>Today we will jump head-first into working with databases as an extension of our discussions earlier in the week about data.  </p>"
+                "headline": "<a href='/class/2017/07/19/sql-bootcamp/'>Database software and MySQL</a>",
+                "text": "<p>TODAY WE WILL JUMP HEAD-FIRST INTO WORKING WITH DATABASES AS AN EXTENSION OF OUR DISCUSSIONS EARLIER IN THE WEEK ABOUT DATA.  </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "20",
-                "hour": "11",
-                "minute": "30"
+                "day": "20"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "20",
-                "hour": "13",
-                "minute": "00"
+                "day": "20"
             },
             "text": {
-                "headline": "<a href='/data/2017/07/20/database-tables-queries/'>Databases, tables, queries, and relationships</a>",
-                "text": "<p>Today we will continue with our discussion of databases and then learn ALL THE SQL. </p>\n\n<p><img src=\"/assets/img/learnallthesql.jpg\" alt=\"LEARN ALL THE SQL\" /></p>"
+                "headline": "<a href='/class/2017/07/20/database-tables-queries/'>Databases, tables, queries, and relationships</a>",
+                "text": "<p>TODAY WE WILL CONTINUE WITH OUR DISCUSSION OF DATABASES AND THEN LEARN ALL THE SQL. </p>\n\n<p><img src=\"/ASSETS/IMG/LEARNALLTHESQL.JPG\" alt=\"LEARN ALL THE SQL\" /></p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "21",
-                "hour": "11",
-                "minute": "30"
+                "day": "21"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "21",
-                "hour": "13",
-                "minute": "00"
+                "day": "21"
             },
             "text": {
-                "headline": "<a href='/data/2017/07/21/lab-from-data-to-databases/'>From data to database</a>",
-                "text": "<h1 id=\"mysql-in-bash-scripts\">MySQL in Bash scripts</h1>\n\n<p>In today&#39;s lab you are going to work in your teams to modify your questinonaire scripts to write your data into a MySQL database. </p>"
+                "headline": "<a href='/class/2017/07/21/lab-from-data-to-databases/'>From data to database</a>",
+                "text": "<h1 id=\"MYSQL-IN-BASH-SCRIPTS\">MYSQL IN BASH SCRIPTS</h1>\n\n<p>IN TODAY&#39;S LAB YOU ARE GOING TO WORK IN YOUR TEAMS TO MODIFY YOUR QUESTINONAIRE SCRIPTS TO WRITE YOUR DATA INTO A MYSQL DATABASE. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "24",
-                "hour": "11",
-                "minute": "30"
+                "day": "24"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "24",
-                "hour": "13",
-                "minute": "00"
+                "day": "24"
             },
             "text": {
-                "headline": "<a href='/present/2017/07/24/presentation-basics/'>Presentation Basics</a>",
-                "text": "<p>Today we&#39;re going to talk about what is wrong with presentations and presentation software as they have come to be used.</p>"
+                "headline": "<a href='/class/2017/07/24/presentation-basics/'>Presentation Basics</a>",
+                "text": "<p>TODAY WE&#39;RE GOING TO TALK ABOUT WHAT IS WRONG WITH PRESENTATIONS AND PRESENTATION SOFTWARE AS THEY HAVE COME TO BE USED.</p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "25",
-                "hour": "11",
-                "minute": "30"
+                "day": "25"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "25",
-                "hour": "13",
-                "minute": "00"
+                "day": "25"
             },
             "text": {
-                "headline": "<a href='/present/2017/07/25/reveal-basics/'>Reveal.js</a>",
-                "text": "<p>Today we will look at Reveal.js more closely and start working with it in your presentation teams. \nWe will also cover converting your text from Markdown into Reveal-ready HTML5 using our old friend, Pandoc.</p>"
+                "headline": "<a href='/class/2017/07/25/reveal-basics/'>Reveal.js</a>",
+                "text": "<p>TODAY WE WILL LOOK AT REVEAL.JS MORE CLOSELY AND START WORKING WITH IT IN YOUR PRESENTATION TEAMS. \nWE WILL ALSO COVER CONVERTING YOUR TEXT FROM MARKDOWN INTO REVEAL-READY HTML5 USING OUR OLD FRIEND, PANDOC.</p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "26",
-                "hour": "11",
-                "minute": "30"
+                "day": "26"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "26",
-                "hour": "13",
-                "minute": "00"
+                "day": "26"
             },
             "text": {
-                "headline": "<a href='/present/2017/07/26/recording-and-editing-audio/'>Adding audio for narration and video to your slides</a>",
-                "text": "<p>Today we are going to work with Audacity to create and edit some audio to embed in our presentations. </p>"
+                "headline": "<a href='/class/2017/07/26/recording-and-editing-audio/'>Adding audio for narration and video to your slides</a>",
+                "text": "<p>TODAY WE ARE GOING TO WORK WITH AUDACITY TO CREATE AND EDIT SOME AUDIO TO EMBED IN OUR PRESENTATIONS. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "27",
-                "hour": "11",
-                "minute": "30"
+                "day": "27"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "27",
-                "hour": "13",
-                "minute": "00"
+                "day": "27"
             },
             "text": {
-                "headline": "<a href='/present/2017/07/27/what-do-we-know/'>Wrap-up: what do we know now?</a>",
-                "text": "<p>Today we are going to wrap up the class and talk about the skills that you are taking away from this experience. </p>"
+                "headline": "<a href='/class/2017/07/27/what-do-we-know/'>Wrap-up: what do we know now?</a>",
+                "text": "<p>TODAY WE ARE GOING TO WRAP UP THE CLASS AND TALK ABOUT THE SKILLS THAT YOU ARE TAKING AWAY FROM THIS EXPERIENCE. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         },
         {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "31",
-                "hour": "11",
-                "minute": "30"
+                "day": "31"
             },
             "end_date": {
                 "year": "2017",
@@ -549,9 +459,9 @@
             },
             "text": {
                 "headline": "<a href='/class/2017/07/31/presentations/'>Final</a>",
-                "text": "<p>In lieu of a traditional final, we will collectively screen everyone&#39;s final presentation. \nWe will also take a final questionnaire/quiz related to some of the overall themes in the course. </p>"
+                "text": "<p>IN LIEU OF A TRADITIONAL FINAL, WE WILL COLLECTIVELY SCREEN EVERYONE&#39;S FINAL PRESENTATION. \nWE WILL ALSO TAKE A FINAL QUESTIONNAIRE/QUIZ RELATED TO SOME OF THE OVERALL THEMES IN THE COURSE. </p>"
             },
-            "group": "Class"
+            "group": "class"
                
         }
     ]

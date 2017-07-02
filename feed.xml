@@ -1496,8 +1496,8 @@ There is a ton of relevant information on this topic out in the Internet.&lt;/p&
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Jul 2017 00:59:36 -0400</pubDate>
-    <lastBuildDate>Sat, 01 Jul 2017 00:59:36 -0400</lastBuildDate>
+    <pubDate>Sun, 02 Jul 2017 00:07:29 -0400</pubDate>
+    <lastBuildDate>Sun, 02 Jul 2017 00:07:29 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -1516,7 +1516,7 @@ We will also take a final questionnaire/quiz related to some of the overall them
         <category>Present</category>
         
         
-        <category>Class</category>
+        <category>class</category>
         
       </item>
     
@@ -1625,15 +1625,15 @@ We will be viewing everyone&amp;#39;s presentations with Q&amp;amp;A to follow. 
 &lt;p&gt;This should not take the entire time alotted, but plan for at least an hour and half to be safe. &lt;/p&gt;
 </description>
         <pubDate>Thu, 27 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/present/2017/07/27/what-do-we-know/</link>
-        <guid isPermaLink="true">/present/2017/07/27/what-do-we-know/</guid>
+        <link>/class/2017/07/27/what-do-we-know/</link>
+        <guid isPermaLink="true">/class/2017/07/27/what-do-we-know/</guid>
         
         <category>skillsets</category>
         
         <category>tools</category>
         
         
-        <category>Present</category>
+        <category>class</category>
         
       </item>
     
@@ -1868,8 +1868,8 @@ This is an important discussion because it will orient you to the kinds of thing
 &lt;p&gt;We will also discuss other future classes that you might want to take if you are interested in a particular aspect of this course. &lt;/p&gt;
 </description>
         <pubDate>Wed, 26 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/present/2017/07/26/recording-and-editing-audio/</link>
-        <guid isPermaLink="true">/present/2017/07/26/recording-and-editing-audio/</guid>
+        <link>/class/2017/07/26/recording-and-editing-audio/</link>
+        <guid isPermaLink="true">/class/2017/07/26/recording-and-editing-audio/</guid>
         
         <category>reveal.js</category>
         
@@ -1888,7 +1888,7 @@ This is an important discussion because it will orient you to the kinds of thing
         <category>Jekyll</category>
         
         
-        <category>Present</category>
+        <category>class</category>
         
       </item>
     
@@ -2063,8 +2063,8 @@ You can download audacity and read more documentation on the audacity homepage.&
 &lt;p&gt;We will work together on editing audio in class tomorrow. &lt;/p&gt;
 </description>
         <pubDate>Tue, 25 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/present/2017/07/25/reveal-basics/</link>
-        <guid isPermaLink="true">/present/2017/07/25/reveal-basics/</guid>
+        <link>/class/2017/07/25/reveal-basics/</link>
+        <guid isPermaLink="true">/class/2017/07/25/reveal-basics/</guid>
         
         <category>reveal.js</category>
         
@@ -2073,7 +2073,7 @@ You can download audacity and read more documentation on the audacity homepage.&
         <category>pandoc</category>
         
         
-        <category>Present</category>
+        <category>class</category>
         
       </item>
     
@@ -2196,8 +2196,8 @@ It is not even a terribly sophisticated example. &lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/jdmar3/task-6-be-presentable&quot;&gt;Assignment #6: Be Presentable&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 24 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/present/2017/07/24/presentation-basics/</link>
-        <guid isPermaLink="true">/present/2017/07/24/presentation-basics/</guid>
+        <link>/class/2017/07/24/presentation-basics/</link>
+        <guid isPermaLink="true">/class/2017/07/24/presentation-basics/</guid>
         
         <category>powerpoint</category>
         
@@ -2208,7 +2208,7 @@ It is not even a terribly sophisticated example. &lt;/p&gt;
         <category>Tufte</category>
         
         
-        <category>Present</category>
+        <category>class</category>
         
       </item>
     
@@ -2269,8 +2269,8 @@ It will help put into perspective what is really happening when we watch TED Tal
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 21 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/data/2017/07/21/lab-from-data-to-databases/</link>
-        <guid isPermaLink="true">/data/2017/07/21/lab-from-data-to-databases/</guid>
+        <link>/class/2017/07/21/lab-from-data-to-databases/</link>
+        <guid isPermaLink="true">/class/2017/07/21/lab-from-data-to-databases/</guid>
         
         <category>database</category>
         
@@ -2287,7 +2287,7 @@ It will help put into perspective what is really happening when we watch TED Tal
         <category>scripting</category>
         
         
-        <category>Data</category>
+        <category>class</category>
         
       </item>
     
@@ -2376,7 +2376,7 @@ It is a good idea to have some understanding of what they do on a logical level.
 
 &lt;p&gt;&lt;code&gt;mysql&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;If it does, then you can type:&lt;/p&gt;
+&lt;p&gt;If it does, then you can category:&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;CREATE DATABASE booksinfo;&lt;/code&gt;&lt;/p&gt;
 
@@ -2562,8 +2562,8 @@ I have to specify an additional criterion. &lt;/p&gt;
 &lt;p&gt;You are going to work in your groups to create a new script, based on your last assignment, that will write the data you have collected into a MySQL database. That assignment will be the focus of our lab session. &lt;/p&gt;
 </description>
         <pubDate>Thu, 20 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/data/2017/07/20/database-tables-queries/</link>
-        <guid isPermaLink="true">/data/2017/07/20/database-tables-queries/</guid>
+        <link>/class/2017/07/20/database-tables-queries/</link>
+        <guid isPermaLink="true">/class/2017/07/20/database-tables-queries/</guid>
         
         <category>database</category>
         
@@ -2576,7 +2576,7 @@ I have to specify an additional criterion. &lt;/p&gt;
         <category>MySQL</category>
         
         
-        <category>Data</category>
+        <category>class</category>
         
       </item>
     
@@ -2677,8 +2677,8 @@ I would like you to read something about databases.&lt;label for=&#39;db&#39; cl
 &lt;p&gt;We will look at other resources and tutorials in class as well. &lt;/p&gt;
 </description>
         <pubDate>Wed, 19 Jul 2017 11:30:00 -0400</pubDate>
-        <link>/data/2017/07/19/sql-bootcamp/</link>
-        <guid isPermaLink="true">/data/2017/07/19/sql-bootcamp/</guid>
+        <link>/class/2017/07/19/sql-bootcamp/</link>
+        <guid isPermaLink="true">/class/2017/07/19/sql-bootcamp/</guid>
         
         <category>database</category>
         
@@ -2687,7 +2687,7 @@ I would like you to read something about databases.&lt;label for=&#39;db&#39; cl
         <category>MySQL</category>
         
         
-        <category>Data</category>
+        <category>class</category>
         
       </item>
     
@@ -2732,8 +2732,8 @@ This is because both suites use ODF at their core. &lt;/p&gt;
 I would like you to look over some basic MySQL tutorials on your own so that we are prepared to dig into this.&lt;label for=&#39;sql&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;sql&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Sverdlov, Etel. “A Basic MySQL Tutorial.” DigitalOcean. Last modified June 12, 2012. &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial&quot;&gt;https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
 </description>
         <pubDate>Tue, 18 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/data/2017/07/18/data-cleaning/</link>
-        <guid isPermaLink="true">/data/2017/07/18/data-cleaning/</guid>
+        <link>/class/2017/07/18/data-cleaning/</link>
+        <guid isPermaLink="true">/class/2017/07/18/data-cleaning/</guid>
         
         <category>CSV</category>
         
@@ -2742,7 +2742,7 @@ I would like you to look over some basic MySQL tutorials on your own so that we 
         <category>spreadsheets</category>
         
         
-        <category>Data</category>
+        <category>class</category>
         
       </item>
     
@@ -2901,8 +2901,8 @@ This will be the basis of the next asssignment, which will be a group assignment
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 17 Jul 2017 11:30:00 -0400</pubDate>
-        <link>/data/2017/07/17/data-handling/</link>
-        <guid isPermaLink="true">/data/2017/07/17/data-handling/</guid>
+        <link>/class/2017/07/17/data-handling/</link>
+        <guid isPermaLink="true">/class/2017/07/17/data-handling/</guid>
         
         <category>CSV</category>
         
@@ -2913,7 +2913,7 @@ This will be the basis of the next asssignment, which will be a group assignment
         <category>Bash</category>
         
         
-        <category>Data</category>
+        <category>class</category>
         
       </item>
     

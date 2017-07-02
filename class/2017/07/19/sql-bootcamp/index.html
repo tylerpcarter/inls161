@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script type="text/javascript">
+    var host = "inls161.johndmart.in";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+  </script>
+
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Database software and MySQL</title>
+  <meta name="description" content="Today we will jump head-first into working with databases as an extension of our discussions earlier in the week about data.  ">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+  
+  <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
+   
+     <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
+    
+   
+  
+     <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
+  
+<link rel="stylesheet" href="/css/tufte.css"> 
+
+  
+  
+<link rel="/apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+<link rel="manifest" href="/assets/img/manifest.json">
+<link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="canonical" href="/class/2017/07/19/sql-bootcamp/">
+
+<link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="/feed.xml" />
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- CSS-->
+    <link rel="stylesheet" href="/css/timeline.css">
+    <!--FONT-->
+    <link rel="stylesheet" href="/css/fonts/font.default.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements-->
+    <!--if lt IE 9
+    script(src='https://html5shim.googlecode.com/svn/trunk/html5.js')
+    
+    -->
+
+
+</head>
+
+  <body>
+    <div class="wrap">
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/161icon.png" alt="UNC"></a>
+	
+	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/">Tools for Information Literacy</a>
+		    
+	    
+  	
+		
+  	
+		
+		    
+		      <a href="/syllabus/">Syllabus</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/schedule/">Schedule</a>
+		    
+	    
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/quiz/">Quiz</a>
+		    
+	    
+  	
+		
+  	
+		
+		    
+		      <a href="/refsheets/">Reference</a>
+		    
+	    
+  	
+	</nav>
+
+</header>
+    <article class="group">
+      <h1>Database software and MySQL</h1>
+
+
+
+<p class="subtitle"><span id="date">Wednesday, 19 July 2017</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
+
+<p>Today we will jump head-first into working with databases as an extension of our discussions earlier in the week about data.<br>
+<excerpt/></p>
+
+<p>A &quot;database&quot; is a collection of information, arranged or organized in some meaningful way so as to aid the retrieval of that information. 
+The types of information stored in databases vary based on the purpose and application. </p>
+
+<p>When we refer to databases now, we usually mean electronic databases or DataBase Management Systems (DBMS). 
+However, databases can exist in a number of non-electonic forms (and have for much of human history).</p>
+
+<p>What are some examples of non-electronic databases?</p>
+
+<h1 id="what-goes-into-a-database">What goes into a database?</h1>
+
+<p>Pieces of information, or objects, are stored in a database in a structured way. 
+The objects are sorted into classes according to type. 
+This approach is referred to as &quot;object-oriented,&quot; which we have briefly touched on over the course of the semester. </p>
+
+<p>When data are entered into a database, each object, or chunk of information, is assigned a class that allows for sorting and recall. </p>
+
+<h2 id="how-does-the-information-go-in">How does the information go in?</h2>
+
+<p>There are a number of different ways to get data into a database. </p>
+
+<p>We can import tables directly from files. 
+We can also input data one at a time using an entry form. 
+We will do both of these things over the next few days. </p>
+
+<p>Today we will start by experimenting with opening the CSV we made the other day as a table. </p>
+
+<h2 id="electronic-dbms">Electronic DBMS</h2>
+
+<p>There are myriad choices for DMBS implementations. 
+A commonly used system is called MySQL, which is based in a database language called SQL (Structured Query Language). </p>
+
+<p>You will also hear of NoSQL databases, such as MongoDB. 
+These use an entirely different internal logic to store and recall data that that of SQL-based systems. </p>
+
+<p>There are a great many front-end user interfaces for these systems. 
+MSAccess has been used for years for all sorts of applications. </p>
+
+<p>We will use the LibreOffice Base package. 
+It is an open-source analog to Access and will allow us to do the same things. 
+One major benefit of this is that we will be able to open our database without being locked to MSAccess. 
+At present, there is no way to open an Access DB in another program. 
+We wish to avoid that. </p>
+
+<h1 id="install-mysql">Install MySQL</h1>
+
+<p>We will install MySQL so that we can create and explore a database using the SQL shell in our CodeAnywhere containers.</p>
+
+<h1 id="system-maintenance">System maintenance</h1>
+
+<p>First update and upgrade all packages:</p>
+
+<p><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade</code></p>
+
+<p>We will need to make some space on our containers to install MySQL. </p>
+
+<p>We no longer need <code>unoconv</code>, so let&#39;s get rid of it:</p>
+
+<p><code>sudo apt-get remove unoconv</code></p>
+
+<p>When that is done, we can remove all of its dependencies:</p>
+
+<p><code>sudo apt-get autoremove --purge</code></p>
+
+<p>And then just for good measure, let&#39;s clean out our package cache:</p>
+
+<p><code>sudo apt-get autoclean &amp;&amp; sudo apt-get clean</code></p>
+
+<h1 id="install-the-mysql-client-and-server-packages">Install the MySQL client and server packages</h1>
+
+<p>Then we have to install one dependency, without which the install will fail:</p>
+
+<p><code>sudo apt-get install bsdutils</code></p>
+
+<p>Then install both the MySQL server and client packages in separate commands. </p>
+
+<p><code>sudo apt-get install mysql-server</code></p>
+
+<p>This will ask you to create a password for the MySQL root user. 
+Since we are only trying things out today and not installing this for the purpose of running a real SQL server, just put <code>changethis</code> as the root password. </p>
+
+<p>Then install the client:</p>
+
+<p><code>sudo apt-get install mysql-client</code></p>
+
+<h1 id="for-next-time">For next time</h1>
+
+<p>Tomorrow, we will return to databases and discuss the conceptual and theoretical underpinnings of what we worked on today. 
+I would like you to read something about databases.<label for='db' class='margin-toggle sidenote-number'></label><input type='checkbox' id='db' class='margin-toggle'/><span class='sidenote'>“What Is a Database?” BBC Guides. <a href="http://www.bbc.co.uk/guides/z8yk87h">http://www.bbc.co.uk/guides/z8yk87h</a>. </span></p>
+
+<p>We will look at other resources and tutorials in class as well. </p>
+
+
+<p>
+  <br/>
+  <ul class="tags">
+    <li><a href="/topics#database" class="tag">database</a></li><li><a href="/topics#SQL" class="tag">SQL</a></li><li><a href="/topics#MySQL" class="tag">MySQL</a></li>
+  </ul> 
+</p>
+    </article>
+    <span class="print-footer">Database software and MySQL - July 19, 2017 - </span>
+    <footer>
+  <div class="larger blognav">
+    
+      <a class="prev" href="/class/2017/07/18/data-cleaning/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Data cleaning and spreadsheet software</a>
+    
+    
+      <a class="next" href="/class/2017/07/20/database-tables-queries/"><span class="smaller">Next:</span>&nbsp;Databases, tables, queries, and relationships&nbsp;&raquo;</a>
+    
+  </div>
+  <hr class="slender">
+  <ul class="footer-links">
+    
+    
+      <li>
+        <a href="http://johndmart.in" title="Instructor home page"><span class="ico-user"></span>&nbsp;John D. Martin III</a>
+      </li>
+    
+    
+      <li>
+        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="ico-envelope"></span>&nbsp;john.d.martin.iii@unc.edu</a>
+      </li>
+    
+    
+      <li>
+        <span class="ico-clock"></span>&nbsp;11:30-13:00
+      </li>
+    
+    
+      <li>
+        <span class="ico-calendar"></span>&nbsp;MoTuWeThFr
+      </li>
+    
+    
+      <li>
+        <span class="ico-library"></span>&nbsp;117 Manning Hall
+      </li>
+    
+    
+      <li>
+        <a href="https://github.com/inls161" title="GitHub organization for this course"><span class="ico-github"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://inls161.slack.com" title="Join the Slack conversations for this course"><span class="ico-slack"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed" title="Add RSS feed"><span class="ico-rss"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+  <span>TOOLS FOR INFORMATION LITERACY &nbsp;&nbsp;|&nbsp;&nbsp; INLS161-001 (Summer II)
+    <br/> 
+  <span class="smaller">Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</span>
+  <br/><br/>
+  <span class="smaller">All content licensed under a <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</span>
+  <br/>
+  <span class="smaller"><a href="credits/">Content &copy; 2017 John D. Martin III</a></span>
+</div>  
+</footer>
+    </div>
+  </body>
+</html>
