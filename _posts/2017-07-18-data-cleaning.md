@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Data cleaning and spreadsheet software"
-category: Data
+era: Data
 tags: 
 - CSV
 - data
 - spreadsheets
-type: Class
+category: class
 ---
 
 Today we're going to look at one common way of manipulating CSV and other data files: the spreadsheet. 

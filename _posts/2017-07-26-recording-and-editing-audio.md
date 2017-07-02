@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Adding audio for narration and video to your slides"
-category: Present
+era: Present
 tags: 
 - reveal.js
 - presentations
@@ -11,7 +11,7 @@ tags:
 - YouTube
 - MP4
 - Jekyll
-type: Class
+category: class
 ---
 
 Today we are going to work with Audacity to create and edit some audio to embed in our presentations. 

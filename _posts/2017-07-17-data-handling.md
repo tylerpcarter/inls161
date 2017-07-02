@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Handling data"
-category: Data
+era: Data
 tags: 
 - CSV
 - data
@@ -9,7 +9,7 @@ tags:
 - Bash
 date: 2017-07-17 11:30
 end_date: 2017-07-17 13:00
-type: Class
+category: class
 ---
 
 <p>Today we are going to discuss the creation of data and learn how manipulate data structures. </p>

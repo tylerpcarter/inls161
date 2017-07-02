@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Introduction to scripting"
-category: Text 
+era: Text 
 tags: 
 - Pandoc
 - PDF
 - LaTeX
 - Bash
 - Scripts
-type: Class
+category: class
 ---
 
 Today we will learn how to convert our plaintext Markdown into a PDF. 

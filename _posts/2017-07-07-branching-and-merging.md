@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Branching and Merging"
-category: Web
-type: Class
+era: Web
+category: class
 tags: 
 - git
 - GitHub
 - web development
 - workflows
-type: Class
+category: class
 ---
 
 Today we will set up a testing workflow and learn how to create branches for adding and changing features on our sites. 
@@ -53,7 +53,7 @@ To do this with any command, type `sudo` before the rest of the command.
 You only need it when you are doing something that operates on the operating system itself, like installing new software. 
 
 This script installs updates and new software to your system.
-Just type:
+Just category:
 
 `sudo ./install-gh-pages.sh`
 
@@ -72,7 +72,7 @@ To create, or "checkout" a new branch, we can follow Roger Dudler's guide again.
 
 This creates a new branch and switches us into it.
 
-If we want to see our existing branches and see where we are, type:
+If we want to see our existing branches and see where we are, category:
 
 `git branch -l` or `git branch --list`
 

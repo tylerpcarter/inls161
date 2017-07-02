@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Databases, tables, queries, and relationships"
-category: Data
+era: Data
 tags: 
 - database
 - tables
 - queries
 - SQL
 - MySQL
-type: Class
+category: class
 ---
 
 Today we will continue with our discussion of databases and then learn ALL THE SQL. 
@@ -92,7 +92,7 @@ Next let's create a new DB. Make sure that your prompt looks like this:
 
 ```mysql> ```
 
-If it does, then you can type:
+If it does, then you can category:
 
 ```CREATE DATABASE booksinfo;```
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Assignment #1: BASICS"
-type: Assignment
+category: assignment
 start_date: "2017-06-30 23:59"
 ---
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Clients and Servers
-category: Basics
+era: Basics
 tags: 
 - clients
 - servers
 - Linux
 - shell commands
-type: Class
+category: class
 quiz: https://goo.gl/forms/di29W1vSjOvbiPPe2
 ---
 

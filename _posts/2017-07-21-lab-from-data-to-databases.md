@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "From data to database"
-category: Data
+era: Data
 tags: 
 - database
 - tables
@@ -10,7 +10,7 @@ tags:
 - MySQL
 - Bash
 - scripting
-type: Class
+category: class
 ---
 
 # MySQL in Bash scripts

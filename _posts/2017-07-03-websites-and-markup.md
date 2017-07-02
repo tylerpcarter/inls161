@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Websites, Markup, and Markdown"
-category: Web
+era: Web
 tags: 
 - websites
 - markup
 - markdown
 - html
 - css
-type: Class
+category: class
 ---
 
 This week's tasks will involve some very simple coding (markup, really) and continued exploration and use of our system administration skills. 

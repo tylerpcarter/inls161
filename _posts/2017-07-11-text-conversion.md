@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Text Conversion"
-category: Text  
+era: Text  
 tags: 
 - pandoc
 - text
 - markdown
 - documents
 - conversion
-type: Class
+category: class
 ---
 
 # Plaintext, markup, and formatted text

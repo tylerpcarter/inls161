@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Wrap-up: what do we know now?"
-category: Present
+era: Present
 tags: 
 - skillsets
 - tools
-type: Class
+category: class
 ---
 
 Today we are going to wrap up the class and talk about the skills that you are taking away from this experience. 

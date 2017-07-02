@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Git and GitHub"
-category: Basics
+era: Basics
 tags: 
 - version control
 - git
 - GitHub
 - Jekyll
 - web design
-type: Class
+category: class
 quiz: https://goo.gl/forms/yb4yVFliC0tHU2sn2
 ---
 

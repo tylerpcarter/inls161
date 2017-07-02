@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Single input, multiple outputs"
-category: Text
+era: Text
 tags: 
 - pandoc
 - text
 - conversion
 - LaTeX
-type: Class
+category: class
 ---
 
 We've briefly discussed Pandoc now. 

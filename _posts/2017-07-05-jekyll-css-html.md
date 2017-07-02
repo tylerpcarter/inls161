@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Visual styling for the web"
-category: Web 
+era: Web 
 tags: 
 - Jekyll
 - CSS
 - HTML
 - Markdown
-type: Class
+category: class
 ---
 
 For most of class today, we will spend time creating our base site and then exploring ways that we can change and customize the style to our liking. 

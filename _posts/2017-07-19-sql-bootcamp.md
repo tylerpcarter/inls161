@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Database software and MySQL"
-category: Data
+era: Data
 tags: 
 - database
 - SQL
 - MySQL
 date: 2017-07-19 11:30
 end_date: 2017-07-19 13:00
-type: Class
+category: class
 ---
 
 Today we will jump head-first into working with databases as an extension of our discussions earlier in the week about data.  

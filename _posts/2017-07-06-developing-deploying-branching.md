@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Developing and Deploying"
-category: Web
+era: Web
 tags: 
 - git
 - GitHub
 - Jekyll
 - development
 - workflow
-type: Class
+category: class
 ---
 
 Today we're going to take the first steps toward actually getting our website up and running. 

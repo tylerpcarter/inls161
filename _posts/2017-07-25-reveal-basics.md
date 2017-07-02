@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Reveal.js"
-category: Present
+era: Present
 tags: 
 - reveal.js
 - presentations
 - pandoc
-type: Class
+category: class
 ---
 
 Today we will look at Reveal.js more closely and start working with it in your presentation teams. 

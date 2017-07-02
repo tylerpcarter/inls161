@@ -16,7 +16,7 @@ nav_exclude: true
                 "month": "{{ post.date | date : '%m' }}",
                 "day": "{{ post.date | date : '%d' }}"{% if post.start_date %},
                 "hour": "{{ post.start_date | date : '%H' }}",
-                "minute": "{{ post.start_date | date : '%M' }}"{% elsif post.type == "Class" %},
+                "minute": "{{ post.start_date | date : '%M' }}"{% elsif post.type == "class" %},
                 "hour": "11",
                 "minute": "30"{% endif %}
             },{% if post.end_date %}
@@ -30,15 +30,15 @@ nav_exclude: true
             "end_date": {
                 "year": "{{ post.date | date : '%Y' }}",
                 "month": "{{ post.date | date : '%m' }}",
-                "day": "{{ post.date | date : '%d' }}"{% if post.type == "Class" %},
+                "day": "{{ post.date | date : '%d' }}"{% if post.type == "class" %},
                 "hour": "13",
                 "minute": "00"{% endif %}
             },{% endif %}
             "text": {
                 "headline": "<a href='{{ post.url }}'>{{ post.title }}</a>",
-                "text": {{ post.excerpt | smartify | jsonify }}
-            }{% if post.type %},
-            "group": {{ post.type | smartify | jsonify }}{% endif %}
+                "text": {{ post.excerpt | upcase | smartify | jsonify }}
+            }{% if post.category %},
+            "group": {{ post.category | smartify | jsonify }}{% endif %}
             {% if post.display_date %},
             "display_date": {{ post.display_date | smartify | jsonify }}{% endif %}   
         }{% unless forloop.last == true %},{% endunless %}{% endfor %}

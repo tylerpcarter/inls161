@@ -306,11 +306,13 @@ The statement represents a commitment of resources to the development and mainte
 
 This class is not a safe space, but a brave space. 
 Here you are encouraged to be your most authentic self, take intellectual chances, make mistakes. 
-Our social contract in this class requires that we respect the above guidelines regarding inclusion and expand them to and beyond their boundaries. 
+Our social contract in this class requires that we respect the above guidelines regarding inclusion and expand them. 
+So, be brave enough to make the spaces around you safe for people who are different than you. 
 
-People are complex, intersectional beings.
+People are complex.
 Our identities are fluid and performative. 
 It is incumbent upon each of us to remember that, particularly if we come from a place of privilege which allows us to think that everyone has the same advantages and opportunities that we have.
+Try to recognize privilege and work to break the structural inequalities that accompany it, even in this class.
 
 None of us are perfect. 
 We all make mistakes. 

@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Lab #3: Automation and Scripting"
-category: Text
+era: Text
 tags: 
 - scripting
 - Bash
 - Pandoc
-type: Class
+category: class
 ---
 
 Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. 

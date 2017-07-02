@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Presentation Basics"
-category: Present
+era: Present
 tags: 
 - powerpoint
 - reveal.js
 - presentations
 - Tufte
-type: Class
+category: class
 ---
 
 Today we're going to talk about what is wrong with presentations and presentation software as they have come to be used.
