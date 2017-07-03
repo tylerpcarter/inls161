@@ -10,12 +10,13 @@ nav_exclude: true
         }
     },  
     "events": [{% for post in site.posts reversed %}{% if post.categories contains "class" or post.categories contains "assignment" %}
+        {
             "start_date": {
                 "year": "{{ post.date | date : '%Y' }}",
                 "month": "{{ post.date | date : '%m' }}",
                 "day": "{{ post.date | date : '%d' }}"{% if post.start_date %},
                 "hour": "{{ post.start_date | date : '%H' }}",
-                "minute": "{{ post.start_date | date : '%M' }}"{% endif %}{% if post.start_date %},
+                "minute": "{{ post.start_date | date : '%M' }}"{% elsif post.category == "class" %},
                 "hour": "11",
                 "minute": "30"{% endif %}
             },{% if post.end_date %}
@@ -25,27 +26,19 @@ nav_exclude: true
                 "day": "{{ post.end_date | date : '%d' }}",
                 "hour": "{{ post.end_date | date : '%H' }}",
                 "minute": "{{ post.end_date | date : '%M' }}"
-            },{% elsif post.category == "class" %}
+            },{% else %}
             "end_date": {
                 "year": "{{ post.date | date : '%Y' }}",
                 "month": "{{ post.date | date : '%m' }}",
-                "day": "{{ post.date | date : '%d' }}",
+                "day": "{{ post.date | date : '%d' }}"{% if post.category == "class" %},
                 "hour": "13",
-                "minute": "00"
-            },{% endif %}{% if post.media %}
-            "media": {
-                "url": {{ post.media.url | smartify | jsonify }}{% if post.media.caption %},
-                "caption": {{ post.media.caption | smartify | jsonify }}{% endif %}{% if post.media.credit %},
-                "credit": {{ post.media.credit | smartify | jsonify }}{% endif %}{% if post.media.thumbnail %},
-                "thumbnail": {{ post.media.thumbnail | smartify | jsonify }}{% endif %}{% if post.media.title %},
-                "alt": {{ post.media.alt | smartify | jsonify }}{% endif %}{% if post.media.title %},
-                "title": {{ post.media.title | smartify | jsonify }}{% endif %}
+                "minute": "00"{% endif %}
             },{% endif %}
             "text": {
                 "headline": "<a href='{{ post.url }}'>{{ post.title }}</a>",
                 "text": {{ post.excerpt | smartify | jsonify }}
             },
-            "unique_id": "{{ post.date | date : '%Y-%m-%d' }}-{{ post.title | downcase | replace: ' ', '-' | remove: '#' | remove: ':' | remove: '!' | remove: ',' | remove: '&' }}"{% if post.category %},
+            "unique_id": "{{ post.date | date : '%Y-%m-%d' }}-{{ post.title | downcase | replace: " ", "-" }}"{% if post.category %},
             "group": {{ post.category | smartify | jsonify }}{% endif %}
             {% if post.display_date %},
             "display_date": {{ post.display_date | smartify | jsonify }}{% endif %}   
