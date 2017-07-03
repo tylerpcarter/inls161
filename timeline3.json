@@ -6,10 +6,13 @@
         }
     },  
     "events": [
+        {
             "start_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "26"
+                "day": "26",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -22,14 +25,17 @@
                 "headline": "<a href='/class/2017/06/26/intro/'>Welcome to INLS161!</a>",
                 "text": "<p>This is a course about pushing our boundaries and learning new things. \nIt is also about learning new ways of doing things that we might already know how to do. \nSome of the topics and skills covered by the course might be old hat for some of you. \nOthers may not have ever heard of some of these things. </p>"
             },
-            "unique_id": "2017-06-26-welcome-to-inls161",
+            "unique_id": "2017-06-26-welcome-to-inls161!",
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "27"
+                "day": "27",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -46,10 +52,13 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "28"
+                "day": "28",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -66,10 +75,13 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "29"
+                "day": "29",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -86,27 +98,34 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "06",
                 "day": "30",
                 "hour": "23",
-                "minute": "59",
-                "hour": "11",
-                "minute": "30"
+                "minute": "59"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "06",
+                "day": "30"
             },
             "text": {
                 "headline": "<a href='/assignment/2017/06/30/assignment-1-basics/'>Assignment #1: BASICS</a>",
                 "text": "<p>This assignment is simple. \nIt consists of 5 tasks:</p>\n\n<ol>\n<li>Sign up for a <a href=\"https://github.com\">GitHub</a> account and log into <a href=\"https://codeanywhere.com\">CodeAnywhere</a> (we did this on the first day of class). </li>\n<li>Take the <a href=\"https://goo.gl/forms/EdP61nYyfTJB8AvZ2\">first quiz</a>. </li>\n<li>Take the <a href=\"https://unc.az1.qualtrics.com/jfe/form/SV_6ulF2GSI4FKFJCR\">beginning questionnaire</a>. </li>\n<li>Return your signed <a href=\"https://inls161.johndmart.in/syllabus/inls161-suii2017-gradecontract.pdf\">grade contract</a>.</li>\n<li>Read the <a href=\"/syllabus\">syllabus</a> all the way to the end. Look out for dinosaurs.</li>\n</ol>\n\n<p>Once you have done these, you have completed the first assignment. \nYou will likely have done these things by the time we finish class at the end of the first week. </p>"
             },
-            "unique_id": "2017-06-30-assignment-1-basics",
+            "unique_id": "2017-06-30-assignment-#1:-basics",
             "group": "assignment"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "06",
-                "day": "30"
+                "day": "30",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -123,10 +142,13 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "03"
+                "day": "03",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -134,10 +156,6 @@
                 "day": "03",
                 "hour": "13",
                 "minute": "00"
-            },
-            "media": {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/300px-Copyleft.svg.png",
-                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/300px-Copyleft.svg.png"
             },
             "text": {
                 "headline": "<a href='/class/2017/07/03/open-source/'>Open Source</a>",
@@ -147,10 +165,13 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "05"
+                "day": "05",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -163,14 +184,17 @@
                 "headline": "<a href='/class/2017/07/05/websites-and-markup/'>Websites, Markup, and Markdown</a>",
                 "text": "<p>This week&#39;s tasks will involve some very simple coding (markup, really) and continued exploration and use of our system administration skills. </p>\n\n<p>Last Friday we learned how to set up a very basic website using Jekyll and GitHub pasges. \nThis week we will expand on that significantly, learn how to use markup to change the style of our content, and then learn to publish content to the web. </p>"
             },
-            "unique_id": "2017-07-05-websites-markup-and-markdown",
+            "unique_id": "2017-07-05-websites,-markup,-and-markdown",
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "06"
+                "day": "06",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -187,10 +211,13 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "07"
+                "day": "07",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -207,27 +234,34 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
                 "day": "10",
                 "hour": "23",
-                "minute": "59",
-                "hour": "11",
-                "minute": "30"
+                "minute": "59"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "10"
             },
             "text": {
                 "headline": "<a href='/assignment/2017/07/10/assignment-2-build-a-website/'>Assignment #2: Build a Website</a>",
                 "text": "<p>For this assignment, you will create a website based on a Jekyll theme and host it on GitHub Pages. </p>"
             },
-            "unique_id": "2017-07-10-assignment-2-build-a-website",
+            "unique_id": "2017-07-10-assignment-#2:-build-a-website",
             "group": "assignment"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "10"
+                "day": "10",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -244,10 +278,13 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "11"
+                "day": "11",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -264,10 +301,13 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "12"
+                "day": "12",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -280,14 +320,17 @@
                 "headline": "<a href='/class/2017/07/12/single-multiple-outputs/'>Single input, multiple outputs</a>",
                 "text": "<p>We&#39;ve briefly discussed Pandoc now. \nIt bills itself as the &quot;Universal Document Converter.&quot; \nThis is reasonably true, but it might require some creative combinations of switches within Pandoc commands as well as multiple commands strung together or intermediate commands to get the desired output. </p>\n\n<p>The benefit of troubleshooting and understanding this process is that once we do, we can more easily optimize our conversions and automate them. \nWe&#39;ll talk more about this as we go forward. </p>"
             },
-            "unique_id": "2017-07-12-single-input-multiple-outputs",
+            "unique_id": "2017-07-12-single-input,-multiple-outputs",
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "13"
+                "day": "13",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -304,10 +347,13 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "14"
+                "day": "14",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -320,31 +366,38 @@
                 "headline": "<a href='/class/2017/07/14/lab-automation/'>Lab #3: Automation and Scripting</a>",
                 "text": "<p>Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. </p>"
             },
-            "unique_id": "2017-07-14-lab-3-automation-and-scripting",
+            "unique_id": "2017-07-14-lab-#3:-automation-and-scripting",
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
                 "day": "16",
                 "hour": "23",
-                "minute": "59",
-                "hour": "11",
-                "minute": "30"
+                "minute": "59"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "16"
             },
             "text": {
                 "headline": "<a href='/assignment/2017/07/16/assignment-3-text-conversion/'>Assignment #3: Text Conversion</a>",
                 "text": "<p>For this assignment, you will write a bash script to convert text files written in Markdown into other formats, such as DOCX, HTML, and PDF. </p>"
             },
-            "unique_id": "2017-07-16-assignment-3-text-conversion",
+            "unique_id": "2017-07-16-assignment-#3:-text-conversion",
             "group": "assignment"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "17"
+                "day": "17",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -361,10 +414,13 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "18"
+                "day": "18",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -381,27 +437,34 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
                 "day": "19",
                 "hour": "23",
-                "minute": "59",
-                "hour": "11",
-                "minute": "30"
+                "minute": "59"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "19"
             },
             "text": {
                 "headline": "<a href='/assignment/2017/07/19/assignment-4-data/'>Assignment #4: Collect Data</a>",
                 "text": "<p>For this assignment, you will write a bash script to prompt a user for input, collect responses, and manipulate those responses into a structured data format. </p>"
             },
-            "unique_id": "2017-07-19-assignment-4-collect-data",
+            "unique_id": "2017-07-19-assignment-#4:-collect-data",
             "group": "assignment"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "19"
+                "day": "19",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -418,10 +481,13 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "20"
+                "day": "20",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -434,14 +500,17 @@
                 "headline": "<a href='/class/2017/07/20/database-tables-queries/'>Databases, tables, queries, and relationships</a>",
                 "text": "<p>Today we will continue with our discussion of databases and then learn ALL THE SQL. </p>\n\n<p><img src=\"/assets/img/learnallthesql.jpg\" alt=\"LEARN ALL THE SQL\" /></p>"
             },
-            "unique_id": "2017-07-20-databases-tables-queries-and-relationships",
+            "unique_id": "2017-07-20-databases,-tables,-queries,-and-relationships",
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "21"
+                "day": "21",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -458,27 +527,34 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
                 "day": "23",
                 "hour": "23",
-                "minute": "59",
-                "hour": "11",
-                "minute": "30"
+                "minute": "59"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "23"
             },
             "text": {
                 "headline": "<a href='/assignment/2017/07/23/assignment-5-database/'>Assignment #5: Create a Database</a>",
                 "text": "<p>For this assignment, you will start with the script from your last assignment and enhance it with the ability to interact with a database.</p>"
             },
-            "unique_id": "2017-07-23-assignment-5-create-a-database",
+            "unique_id": "2017-07-23-assignment-#5:-create-a-database",
             "group": "assignment"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "24"
+                "day": "24",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -495,10 +571,13 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "25"
+                "day": "25",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -515,10 +594,13 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "26"
+                "day": "26",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -535,27 +617,34 @@
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
                 "day": "27",
                 "hour": "23",
-                "minute": "59",
-                "hour": "11",
-                "minute": "30"
+                "minute": "59"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "27"
             },
             "text": {
                 "headline": "<a href='/assignment/2017/07/27/assignment-6-presentation/'>Assignment #6: Presentation</a>",
                 "text": "<p>For this assignment, you will create a slide presentation in HTML using the Reveal.js framework. You will also record audio narration and add it to the slides so that your presentation can run a self-contained with no presenter. </p>"
             },
-            "unique_id": "2017-07-27-assignment-6-presentation",
+            "unique_id": "2017-07-27-assignment-#6:-presentation",
             "group": "assignment"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "27"
+                "day": "27",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
@@ -568,14 +657,17 @@
                 "headline": "<a href='/class/2017/07/27/what-do-we-know/'>Wrap-up: what do we know now?</a>",
                 "text": "<p>Today we are going to wrap up the class and talk about the skills that you are taking away from this experience. </p>"
             },
-            "unique_id": "2017-07-27-wrap-up-what-do-we-know-now?",
+            "unique_id": "2017-07-27-wrap-up:-what-do-we-know-now?",
             "group": "class"
                
         },
+        {
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "31"
+                "day": "31",
+                "hour": "11",
+                "minute": "30"
             },
             "end_date": {
                 "year": "2017",
