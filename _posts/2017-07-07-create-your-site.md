@@ -205,7 +205,7 @@ Date:   Thu Jun 30 12:54:27 2016 -0400
 In this way, we can always fix a mistake we have made (or multiple mistakes), even if we've committed and pushed them. 
 This makes git a *very* powerful tool for making sure that you do not lose work.{% marginnote 'nota-bene' '**_Nota bene:_** This is why it is a good rule of thumb to commit early and often. while working on a project.' %}
 
-# For tomorrow
+# For Next Time
 
 We're going to try a slightly different approach tomorrow. 
 I'm going to cluster you in groups based on where you are in the process of completing assignment #1. 

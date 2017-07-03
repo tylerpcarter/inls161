@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "Assignment #1: BASICS"
+era: Basics
+short_description: "Set up GitHub, introduce yourself, read syllabus"
+percentage: "5"
 category: assignment
 start_date: "2017-06-30 23:59"
 ---
@@ -15,4 +18,4 @@ It consists of 5 tasks:
 5. Read the [syllabus](/syllabus) all the way to the end. Look out for dinosaurs.
 
 Once you have done these, you have completed the first assignment. 
-You will likely have done these things by the time we finish class on Tuesday. 
+You will likely have done these things by the time we finish class at the end of the first week. 

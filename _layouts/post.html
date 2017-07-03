@@ -5,7 +5,7 @@ layout: default
 
 {% capture datestamp %}{{page.date | date: "%F"}}{% endcapture %}
 {% capture today %}{{site.time | date: "%F"}}{% endcapture %}
-<p class="subtitle"><span id="date">{% if page.type == "Assignment" %}DUE: {{ page.start_date | date: "%A, %-d %B %Y at %H:%M" }}{% else %}{{ page.date | date: "%A, %-d %B %Y" }}{% endif %}</span><span class="smaller date contrast"></span></p>
+<p class="subtitle"><span id="date">{% if page.category == "assignment" %}DUE: {{ page.start_date | date: "%A, %-d %B %Y at %H:%M" }}{% else %}{{ page.date | date: "%A, %-d %B %Y" }}{% endif %}</span><span class="smaller date contrast"></span></p>
 
 <script>
 var date = document.getElementById("span")[0];

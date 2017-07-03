@@ -1,7 +1,7 @@
 ---
 layout: full-width
 title: Quiz
-weight: 7
+weight: 6
 nav_include: true
 ---
 
@@ -19,8 +19,10 @@ nav_include: true
      document.getElementById("todaydate").innerHTML = todaydate;
     </script>
 
+{% assign curDate = site.time | date: '%s' %}
     {% for post in site.categories.class reversed %} 
-    {% unless post.quiz %}
+    {% assign postStartDate = post.date | date: '%s' %}
+    {% unless post.quiz and postStartDate <= curDate | date: '%s' %}
       {% continue %}
     {% endunless %}
     <hr class="slender">

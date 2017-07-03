@@ -10,7 +10,9 @@ tags:
 - Slack
 - collaboration
 category: class
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/2000px-Copyleft.svg.png
+media:
+  url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/300px-Copyleft.svg.png"
+  thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/300px-Copyleft.svg.png"
 ---
 
 Today we will have a remote class since some of our comrades are not able to be present in the real world. 
@@ -56,7 +58,10 @@ I will post several prompts to start discussion about open source and using open
 
 I would like you to make sure that you have gone over the tutorials that I mentioned last time on your own.{% sidenote 'github-beginners' 'Orsini, Lauren. “GitHub For Beginners (Part 1): Don’t Get Scared, Get Started.” ReadWrite. Last modified September 30, 2013. http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/<br/><br/>Orsini, Lauren. “GitHub For Beginners (Part 2): Commit, Push And Go.” ReadWrite. Last modified October 2, 2013. https://readwrite.com/2013/10/02/github-for-beginners-part-2/' %} 
 
-In the next session, we will learn how to create pull request in order to post to a blog and also fork a web theme to get started working with web documents. 
+By the end of this week, you will know how to build a website from only plaintext files. 
+We will do this using GitHub Pages, the hosting service built into GitHub for projects and professional sites. 
+
+In the next session, we will learn how to create pull request in order to post to a blog and also fork a web theme to get started working on your websites. 
 The rest of this week and one day next week will be devoted to web documents, markup, and publishing information online. 
 
 We will start the next session by looking at the code that makes websites work.

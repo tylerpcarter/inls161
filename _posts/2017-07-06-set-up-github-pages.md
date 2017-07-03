@@ -12,7 +12,7 @@ category: class
 
 For most of class today, we will spend time creating our base site and then exploring ways that we can change and customize the style to our liking. 
 
-We'll learn a little bit about CSS and about linking resources so that they show up where we want them. 
+We'll learn about CSS and about linking resources so that they show up where we want them. 
 <excerpt/>
 
 # Jekyll
