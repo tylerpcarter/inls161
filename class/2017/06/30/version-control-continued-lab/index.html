@@ -11,7 +11,7 @@
         window.location.protocol = "https";
   </script>
 
-  <title>Tools for Information Literacy&nbsp;|&nbsp;Git and GitHub</title>
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Version Control Continued</title>
   <meta name="description" content="Today we&#39;re going to learn how to fork, clone, and push changes to a repository on GitHub using git. We do this in preparation for creating personal webs...">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
@@ -44,7 +44,7 @@
 <meta name="msapplication-config" content="/assets/img/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
-<link rel="canonical" href="/class/2017/06/30/git-and-github-lab/">
+<link rel="canonical" href="/class/2017/06/30/version-control-continued-lab/">
 
 <link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="/feed.xml" />
 
@@ -158,7 +158,7 @@
 
 </header>
     <article class="group">
-      <h1>Git and GitHub</h1>
+      <h1>Version Control Continued</h1>
 
 
 
@@ -173,116 +173,49 @@ alert(p.childNodes[1].textContent)
 We do this in preparation for creating personal websites that will be hosted by GitHub pages. 
 <excerpt/></p>
 
-<h1 id="fork">Fork</h1>
+<h1 id="branching-and-merging">Branching and Merging</h1>
 
-<p>The first thing that we are going to do today is fork some code that will allow us to have something to work with in CodeAnywhere later.
-We&#39;ll use this as an opportunity to get wome web code and see what that looks like. </p>
+<p>For the rest of the session today, we&#39;ll be exploring branching and merging our repositories using git. </p>
 
-<p>You are not committing to anything today: this is just for practice. 
-We&#39;ll start by going to this repo:</p>
+<h2 id="create-a-branch">Create a branch</h2>
 
-<p><a href="https://github.com/henrythemes/jekyll-starter-theme">https://github.com/henrythemes/jekyll-starter-theme</a></p>
+<p>To create, or &quot;checkout&quot; a new branch, we can follow Roger Dudler&#39;s guide again.<label for='gitnoshit' class='margin-toggle sidenote-number'></label><input type='checkbox' id='gitnoshit' class='margin-toggle'/><span class='sidenote'>Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. <a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a>.<br/><br/>Also check this resource out for help with branching and merging: Chacon, Scott, and Ben Straub. “Basic Branching and Merging.” In ProGit. New York, New York: Apress, 2014. <a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging</a>. </span></p>
 
-<p>This is the repo for a very, very simple Jekyll web theme. 
-We will us this as a starter theme to practice with. </p>
+<p><code>git checkout -b testing</code></p>
 
-<p>Once you are at the above repo, click the &quot;Fork&quot; button and select your username when prompted to make a copy of the repo in your account.<label for='fork' class='margin-toggle'> &#8853;</label><input type='checkbox' id='fork' class='margin-toggle'/><span class='marginnote'><img src="/assets/ref-images/fork.png" alt="Click the &quot;fork&quot; button."> </span> </p>
+<p>This creates a new branch and switches us into it.</p>
 
-<p>After a few seconds you will be taken to the repo page for the copy that you have made in your account. </p>
+<p>If we want to see our existing branches and see where we are, category:</p>
 
-<h1 id="clone">Clone</h1>
+<p><code>git branch -l</code> or <code>git branch --list</code></p>
 
-<p>Once there, click the big green &quot;Clone or Download&quot; button, select &quot;Use SSH,&quot; and copy the resulting link. <label for='clone' class='margin-toggle'> &#8853;</label><input type='checkbox' id='clone' class='margin-toggle'/><span class='marginnote'><img src="/assets/ref-images/clone.png" alt="Click the &quot;fork&quot; button."> </span> 
-It will look like the link in the image on the right. </p>
+<p>Once here we can make changes without disturbing the <code>master</code> branch, which should have our running code in it. </p>
 
-<p>Then, switch over to CodeAnywhere, make sure you&#39;re logged in, and then right click on your container and open and SSH terminal from the menu. </p>
+<p>To switch between branches, simply category:</p>
 
-<p>In your &quot;workspace&quot; directory, type the following command, and paste your link in after, so that it looks like this: </p>
+<p><code>git checkout [BRANCH-NAME]</code></p>
 
-<p><code>git clone git@github.com:YOUR-GITHUB-USERNAME/jekyll-starter-theme.git</code></p>
+<h2 id="test-and-merge">Test and merge</h2>
 
-<p>This makes a copy of the repository that you just forked to your local workspace in CodeAnywhere. 
-This is called cloning. </p>
+<p>Once you have made some changes that you are happy with, you can merge them back into your <code>master</code> branch. </p>
 
-<p>Then descend into the directory:</p>
+<p>FIrst switch back into the <code>master</code> branch:</p>
 
-<p><code>cd jekyll-starter-theme</code></p>
+<p><code>git checkout master</code></p>
 
-<p>And explore what is in there:</p>
+<p>Then merge your changes from testing:</p>
 
-<p><code>ls -lah</code></p>
+<p><code>git merge testing</code></p>
 
-<p>You should see a <code>_config.yml</code> file somewhere in the directory. 
-This file is filled with variables that Jekyll reads to structure the information made by your webpage. </p>
+<p>Then commit the merged changes:</p>
 
-<p>The basic structure of variables for Jekyll is:</p>
+<p><code>git commit -a -m &quot;merge testing into master</code></p>
 
-<p><code>variable-name:   &quot;variable value&quot;</code></p>
+<h1 id="create-and-clone-repositories-on-github">Create and Clone Repositories on GitHub</h1>
 
-<p>I want you to change the title variable to your name or whatever you like.
-Change the subtitle as well. </p>
+<h1 id="for-next-time">For Next Time</h1>
 
-<p>From this:<label for='test' class='margin-toggle'> &#8853;</label><input type='checkbox' id='test' class='margin-toggle'/><span class='marginnote'>The first thing that we are going to do today is fork </span> </p>
-<div class="highlight"><pre><code class="language-" data-lang=""># site.title
-
-title:    'Jekyll Starter Theme'
-subtitle: 'Another Minimalistic Static Site Quick Starter Theme'
-</code></pre></div>
-<p>To something like this:</p>
-<div class="highlight"><pre><code class="language-" data-lang=""># site.title
-
-title:    'YOUR-NAME'
-subtitle: 'Some subtitle I just made up!'
-</code></pre></div>
-<p>Then I want you to change the <code>url</code> variable so that this will show up at the address associated with your GitHub repo.</p>
-
-<p>So change this: </p>
-
-<p><code>url:   &#39;http://henrythemes.github.io/jekyll-starter-theme&#39;</code></p>
-
-<p>To this:</p>
-
-<p><code>url:   &#39;http://YOUR-GITHUB-USERNAME.github.io/jekyll-starter-theme&#39;</code></p>
-
-<p>Once you have made those changes, then save the file and we will push it back up to GitHub.</p>
-
-<h1 id="push">Push</h1>
-
-<p>So in order to record these changes and get them into our remote repo on GitHub, we have to first go through the normal commit process. 
-First, add the files:</p>
-
-<p><code>git add -v *</code></p>
-
-<p>Then commit the changes (remember to leave a message for yourself):</p>
-
-<p><code>git commit -a -m &quot;update config&quot;</code></p>
-
-<p>Then we have to push the changes upstream:</p>
-
-<p><code>git push</code></p>
-
-<p>And that should be that. </p>
-
-<h1 id="github-pages">GitHub Pages</h1>
-
-<p>You should be able to see this web code rendered as a webpage now. 
-Try going to the address that corresponds to the GH pages site associated with this repository. It will look like this:</p>
-
-<p><code>https://YOUR-GITHUB-USERNAME.github.io/jekyll-starter-theme/</code></p>
-
-<p>And there you should see a site with the title and subtitle that you assigned in the <code>_config.yml</code> file.</p>
-
-<h1 id="for-next-time">For next time</h1>
-
-<p>I would like you to have a look at some tutorials and guides to Markdown for Monday. </p>
-
-<p>Kirk Strobeck&#39;s page describes the origin and intent of Markdown, and provides links to useful resources. </p>
-
-<p><a href="http://whatismarkdown.com/">http://whatismarkdown.com/</a></p>
-
-<p>Dan Harper gives a good introduction to how Markdown is used and what it looks like in the wild. </p>
-
-<p><a href="http://code.tutsplus.com/tutorials/markdown-the-ins-and-outs--net-25482">http://code.tutsplus.com/tutorials/markdown-the-ins-and-outs--net-25482</a></p>
+<p>We will have a virtual class on Slack and discuss some aspect of open source philosophy and using open content licensing for disseminating information online. </p>
 
 
 <p>
@@ -292,14 +225,14 @@ Try going to the address that corresponds to the GH pages site associated with t
   </ul> 
 </p>
     </article>
-    <span class="print-footer">Git and GitHub - June 30, 2017 - </span>
+    <span class="print-footer">Version Control Continued - June 30, 2017 - </span>
     <footer>
   <div class="larger blognav">
     
       <a class="prev" href="/assignment/2017/06/30/assignment-1-basics/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Assignment #1: BASICS</a>
     
     
-      <a class="next" href="/class/2017/07/03/websites-and-markup/"><span class="smaller">Next:</span>&nbsp;Websites, Markup, and Markdown&nbsp;&raquo;</a>
+      <a class="next" href="/class/2017/07/03/open-source/"><span class="smaller">Next:</span>&nbsp;Open Source&nbsp;&raquo;</a>
     
   </div>
   <hr class="slender">
