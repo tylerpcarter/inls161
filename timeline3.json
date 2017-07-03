@@ -37,7 +37,8 @@ nav_exclude: true
             "text": {
                 "headline": "<a href='{{ post.url }}'>{{ post.title }}</a>",
                 "text": {{ post.excerpt | smartify | jsonify }}
-            }{% if post.category %},
+            },
+            "unique_id": "{{ post.date | date : '%Y-%m-%d' }}-"{% if post.category %},
             "group": {{ post.category | smartify | jsonify }}{% endif %}
             {% if post.display_date %},
             "display_date": {{ post.display_date | smartify | jsonify }}{% endif %}   
