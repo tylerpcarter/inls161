@@ -11,7 +11,7 @@
         window.location.protocol = "https";
   </script>
 
-  <title>Tools for Information Literacy</title>
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Assignments</title>
   <meta name="description" content="Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
@@ -44,7 +44,7 @@
 <meta name="msapplication-config" content="/assets/img/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
-<link rel="canonical" href="/assignments-old/a5/">
+<link rel="canonical" href="/assignments/">
 
 <link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="/feed.xml" />
 
@@ -74,16 +74,6 @@
 	<a href="/"><img class="badge" src="/assets/img/161icon.png" alt="UNC"></a>
 	
 	
-		
-  	
-		
-  	
-		
-  	
-		
-  	
-		
-  	
 		
   	
 		
@@ -147,6 +137,10 @@
 	    
   	
 		
+		    
+		      <a class="active" href="/assignments/" class="active">Assignments</a>
+		    
+	    
   	
 		
 		    
@@ -158,79 +152,130 @@
 
 </header>
     <article class="group">
-      <h1></h1>
+      <h1>Assignments</h1>
 <p class="subtitle"></p>
 
-<h1 id="task-5-database-interface">Task #5 - Database interface</h1>
+<p>Assignment instructions can be found on the schedule page as they are posted. </p>
 
-<p>This assignment aims at further strengthening our scripting skills and working more closely with a database.</p>
+<h1 id="assignment-breakdown">Assignment Breakdown</h1>
 
-<p>In this assignment you will work with your group to modify your data collection script so that it interfaces with a database. </p>
+<p><label for='tab1' class='margin-toggle'> &#8853;</label><input type='checkbox' id='tab1' class='margin-toggle'/><span class='marginnote'><em>Table 1</em>: List of required course tasks </span></p>
 
-<p>You will take the questionnaire that you developed in your group and make a new version of it that interfaces with a MySQL database. </p>
+<table><thead>
+<tr>
+<th style="text-align: left"><strong>Task</strong></th>
+<th style="text-align: left"><strong>Components</strong></th>
+<th style="text-align: right"><strong>%</strong></th>
+<th style="text-align: right"><strong>Due date</strong></th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">Basics</td>
+<td style="text-align: left">Set up GitHub, introduce yourself, read syllabus</td>
+<td style="text-align: right">5</td>
+<td style="text-align: right">Jun 30 at 23:59</td>
+</tr>
+<tr>
+<td style="text-align: left">Web</td>
+<td style="text-align: left">Build a website hosted on GitHub Pages</td>
+<td style="text-align: right">15</td>
+<td style="text-align: right">Jul 10 at 23:59</td>
+</tr>
+<tr>
+<td style="text-align: left">Text</td>
+<td style="text-align: left">Write a script to convert text files</td>
+<td style="text-align: right">10</td>
+<td style="text-align: right">Jul 17 at 23:59</td>
+</tr>
+<tr>
+<td style="text-align: left">Data</td>
+<td style="text-align: left">Write a script to collect and manipulate data</td>
+<td style="text-align: right">5</td>
+<td style="text-align: right">Jul 19 at 23:59</td>
+</tr>
+<tr>
+<td style="text-align: left">Database</td>
+<td style="text-align: left">Write a script to interact with a database</td>
+<td style="text-align: right">10</td>
+<td style="text-align: right">Jul 23 at 23:59</td>
+</tr>
+<tr>
+<td style="text-align: left">Present</td>
+<td style="text-align: left">Create a presentation using HTML</td>
+<td style="text-align: right">15</td>
+<td style="text-align: right">Jul 27 at 23:59</td>
+</tr>
+</tbody></table>
 
-<h2 id="skillsets">Skillsets</h2>
+<h1>Assignment #1: BASICS</h1>
+    
 
-<p>You will be exposed to the following skillsets;</p>
-
-<ol>
-<li>Scripting user input (this comes from your original script)</li>
-<li>Writing to temporary files</li>
-<li>Scripting database interface</li>
-</ol>
-
-<h2 id="expectations">Expectations</h2>
-
-<p>I expect you and your team to develop a script, based on your last one, that will allow you to write the information gathered into a MySQL database instead of into a CSV file as the final output form. </p>
-
-<h2 id="prerequisites">Prerequisites</h2>
-
-<p>You will need Bash, text files, and MySQL, all of which are available in CodeAnywhere.</p>
-
-<h2 id="instructions">Instructions</h2>
-
-<p>You will need to do the following for this assignment to be considered complete. </p>
-
-<h3 id="as-a-team">As a team:</h3>
-
-<ol>
-<li>Decide who will do what tasks (e.g. - manage main files, look for information online about scripting MySQL, write scripts, test scripts, etc.)</li>
-<li>Designate a member of the team that will hold your main repo: the repo czar.</li>
-</ol>
-
-<h3 id="designated-repository-czar">Designated repository czar:</h3>
-
-<ol>
-<li>Fork this repo: <a href="https://github.com/jdmar3/task-5-database-interface">https://github.com/jdmar3/task-5-database-interface</a>.</li>
-<li>Add the rest of your team as contributors.</li>
-</ol>
-
-<h3 id="as-a-team">As a team:</h3>
-
-<ol>
-<li>Place your original script and .csv files from assignment 4 in this repository. </li>
-<li>Make a branch with an archived version of your first questionnaire script.</li>
-<li>Switch back into the master branch to work on this assignment.</li>
-<li>Create a database that has the appropriate variables and variable types (this might be an accessory script or a conditional statement in your script).</li>
-<li>Modify your script to do the following:
-
-<ul>
-<li>connect to a MySQL database (HINT: this will involve setting variables for MySQL username, password, and location)</li>
-<li>enter the data input by users into a MySQL database </li>
-<li>dump the MySQL database into a .sql file in your repository directory with the rest of your files after it has been modified with nex data</li>
-</ul></li>
-</ol>
-
-<h3 id="individually">Individually:</h3>
+<p>This assignment is simple. 
+It consists of 5 tasks:</p>
 
 <ol>
-<li>Sync your repository fork with the main fork at the end of the work (Look here for how to do this: <a href="https://help.github.com/articles/syncing-a-fork/">https://help.github.com/articles/syncing-a-fork/</a>).</li>
-<li>Write a blog post that links to your fork of the repository and write a brief explanation of what your scripts actually do. </li>
+<li>Sign up for a <a href="https://github.com">GitHub</a> account and log into <a href="https://codeanywhere.com">CodeAnywhere</a> (we did this on the first day of class). </li>
+<li>Take the <a href="https://goo.gl/forms/EdP61nYyfTJB8AvZ2">first quiz</a>. </li>
+<li>Take the <a href="https://unc.az1.qualtrics.com/jfe/form/SV_6ulF2GSI4FKFJCR">beginning questionnaire</a>. </li>
+<li>Return your signed <a href="https://inls161.johndmart.in/syllabus/inls161-suii2017-gradecontract.pdf">grade contract</a>.</li>
+<li>Read the <a href="/syllabus">syllabus</a> all the way to the end. Look out for dinosaurs.</li>
 </ol>
+
+<p>Once you have done these, you have completed the first assignment. 
+You will likely have done these things by the time we finish class at the end of the first week. </p>
+
+<p><p>
+    Assignment #1: BASICS is worth 5% of your final grade. It is due on Friday, 30 June 2017 at 23:59.
+  </p></p>
+
+<h1>Assignment #2: Build a Website</h1>
+    
+
+<p>For this assignment, you will create a website based on a Jekyll theme and host it on GitHub Pages. </p>
+
+<p><p>
+    Assignment #2: Build a Website is worth 15% of your final grade. It is due on Monday, 10 July 2017 at 23:59.
+  </p></p>
+
+<h1>Assignment #3: Text Conversion</h1>
+    
+
+<p>For this assignment, you will write a bash script to convert text files written in Markdown into other formats, such as DOCX, HTML, and PDF. </p>
+
+<p><p>
+    Assignment #3: Text Conversion is worth 10% of your final grade. It is due on Monday, 17 July 2017 at 23:59.
+  </p></p>
+
+<h1>Assignment #4: Collect Data</h1>
+    
+
+<p>For this assignment, you will write a bash script to prompt a user for input, collect responses, and manipulate those responses into a structured data format. </p>
+
+<p><p>
+    Assignment #4: Collect Data is worth 5% of your final grade. It is due on Wednesday, 19 July 2017 at 23:59.
+  </p></p>
+
+<h1>Assignment #5: Create a Database</h1>
+    
+
+<p>For this assignment, you will start with the script from your last assignment and enhance it with the ability to interact with a database.</p>
+
+<p><p>
+    Assignment #5: Create a Database is worth 10% of your final grade. It is due on Sunday, 23 July 2017 at 23:59.
+  </p></p>
+
+<h1>Assignment #6: Presentation</h1>
+    
+
+<p>For this assignment, you will create a slide presentation in HTML using the Reveal.js framework. You will also record audio narration and add it to the slides so that your presentation can run a self-contained with no presenter. </p>
+
+<p><p>
+    Assignment #6: Presentation is worth 15% of your final grade. It is due on Thursday, 27 July 2017 at 23:59.
+  </p></p>
 
 
     </article>
-    <span class="print-footer"> - </span>
+    <span class="print-footer">Assignments - </span>
     <footer>
   <div class="larger blognav">
     

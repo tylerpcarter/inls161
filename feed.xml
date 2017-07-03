@@ -1496,8 +1496,8 @@ There is a ton of relevant information on this topic out in the Internet.&lt;/p&
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 02 Jul 2017 21:40:13 -0400</pubDate>
-    <lastBuildDate>Sun, 02 Jul 2017 21:40:13 -0400</lastBuildDate>
+    <pubDate>Mon, 03 Jul 2017 02:40:28 -0400</pubDate>
+    <lastBuildDate>Mon, 03 Jul 2017 02:40:28 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -1634,6 +1634,19 @@ We will be viewing everyone&amp;#39;s presentations with Q&amp;amp;A to follow. 
         
         
         <category>class</category>
+        
+      </item>
+    
+      <item>
+        <title>Assignment #6: Presentation</title>
+        <description>&lt;p&gt;For this assignment, you will create a slide presentation in HTML using the Reveal.js framework. You will also record audio narration and add it to the slides so that your presentation can run a self-contained with no presenter. &lt;/p&gt;
+</description>
+        <pubDate>Thu, 27 Jul 2017 00:00:00 -0400</pubDate>
+        <link>/assignment/2017/07/27/assignment-6-presentation/</link>
+        <guid isPermaLink="true">/assignment/2017/07/27/assignment-6-presentation/</guid>
+        
+        
+        <category>assignment</category>
         
       </item>
     
@@ -2213,6 +2226,31 @@ It is not even a terribly sophisticated example. &lt;/p&gt;
       </item>
     
       <item>
+        <title>Present</title>
+        <description></description>
+        <pubDate>Mon, 24 Jul 2017 00:00:00 -0400</pubDate>
+        <link>/era/2017/07/24/present/</link>
+        <guid isPermaLink="true">/era/2017/07/24/present/</guid>
+        
+        
+        <category>era</category>
+        
+      </item>
+    
+      <item>
+        <title>Assignment #5: Create a Database</title>
+        <description>&lt;p&gt;For this assignment, you will start with the script from your last assignment and enhance it with the ability to interact with a database.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 Jul 2017 00:00:00 -0400</pubDate>
+        <link>/assignment/2017/07/23/assignment-5-database/</link>
+        <guid isPermaLink="true">/assignment/2017/07/23/assignment-5-database/</guid>
+        
+        
+        <category>assignment</category>
+        
+      </item>
+    
+      <item>
         <title>From data to database</title>
         <description>&lt;h1 id=&quot;mysql-in-bash-scripts&quot;&gt;MySQL in Bash scripts&lt;/h1&gt;
 
@@ -2574,343 +2612,6 @@ I have to specify an additional criterion. &lt;/p&gt;
         <category>SQL</category>
         
         <category>MySQL</category>
-        
-        
-        <category>class</category>
-        
-      </item>
-    
-      <item>
-        <title>Database software and MySQL</title>
-        <description>&lt;p&gt;Today we will jump head-first into working with databases as an extension of our discussions earlier in the week about data.&lt;br&gt;
-&lt;excerpt/&gt;&lt;/p&gt;
-
-&lt;p&gt;A &amp;quot;database&amp;quot; is a collection of information, arranged or organized in some meaningful way so as to aid the retrieval of that information. 
-The types of information stored in databases vary based on the purpose and application. &lt;/p&gt;
-
-&lt;p&gt;When we refer to databases now, we usually mean electronic databases or DataBase Management Systems (DBMS). 
-However, databases can exist in a number of non-electonic forms (and have for much of human history).&lt;/p&gt;
-
-&lt;p&gt;What are some examples of non-electronic databases?&lt;/p&gt;
-
-&lt;h1 id=&quot;what-goes-into-a-database&quot;&gt;What goes into a database?&lt;/h1&gt;
-
-&lt;p&gt;Pieces of information, or objects, are stored in a database in a structured way. 
-The objects are sorted into classes according to type. 
-This approach is referred to as &amp;quot;object-oriented,&amp;quot; which we have briefly touched on over the course of the semester. &lt;/p&gt;
-
-&lt;p&gt;When data are entered into a database, each object, or chunk of information, is assigned a class that allows for sorting and recall. &lt;/p&gt;
-
-&lt;h2 id=&quot;how-does-the-information-go-in&quot;&gt;How does the information go in?&lt;/h2&gt;
-
-&lt;p&gt;There are a number of different ways to get data into a database. &lt;/p&gt;
-
-&lt;p&gt;We can import tables directly from files. 
-We can also input data one at a time using an entry form. 
-We will do both of these things over the next few days. &lt;/p&gt;
-
-&lt;p&gt;Today we will start by experimenting with opening the CSV we made the other day as a table. &lt;/p&gt;
-
-&lt;h2 id=&quot;electronic-dbms&quot;&gt;Electronic DBMS&lt;/h2&gt;
-
-&lt;p&gt;There are myriad choices for DMBS implementations. 
-A commonly used system is called MySQL, which is based in a database language called SQL (Structured Query Language). &lt;/p&gt;
-
-&lt;p&gt;You will also hear of NoSQL databases, such as MongoDB. 
-These use an entirely different internal logic to store and recall data that that of SQL-based systems. &lt;/p&gt;
-
-&lt;p&gt;There are a great many front-end user interfaces for these systems. 
-MSAccess has been used for years for all sorts of applications. &lt;/p&gt;
-
-&lt;p&gt;We will use the LibreOffice Base package. 
-It is an open-source analog to Access and will allow us to do the same things. 
-One major benefit of this is that we will be able to open our database without being locked to MSAccess. 
-At present, there is no way to open an Access DB in another program. 
-We wish to avoid that. &lt;/p&gt;
-
-&lt;h1 id=&quot;install-mysql&quot;&gt;Install MySQL&lt;/h1&gt;
-
-&lt;p&gt;We will install MySQL so that we can create and explore a database using the SQL shell in our CodeAnywhere containers.&lt;/p&gt;
-
-&lt;h1 id=&quot;system-maintenance&quot;&gt;System maintenance&lt;/h1&gt;
-
-&lt;p&gt;First update and upgrade all packages:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;We will need to make some space on our containers to install MySQL. &lt;/p&gt;
-
-&lt;p&gt;We no longer need &lt;code&gt;unoconv&lt;/code&gt;, so let&amp;#39;s get rid of it:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;sudo apt-get remove unoconv&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;When that is done, we can remove all of its dependencies:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;sudo apt-get autoremove --purge&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;And then just for good measure, let&amp;#39;s clean out our package cache:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;sudo apt-get autoclean &amp;amp;&amp;amp; sudo apt-get clean&lt;/code&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;install-the-mysql-client-and-server-packages&quot;&gt;Install the MySQL client and server packages&lt;/h1&gt;
-
-&lt;p&gt;Then we have to install one dependency, without which the install will fail:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;sudo apt-get install bsdutils&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Then install both the MySQL server and client packages in separate commands. &lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;sudo apt-get install mysql-server&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This will ask you to create a password for the MySQL root user. 
-Since we are only trying things out today and not installing this for the purpose of running a real SQL server, just put &lt;code&gt;changethis&lt;/code&gt; as the root password. &lt;/p&gt;
-
-&lt;p&gt;Then install the client:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;sudo apt-get install mysql-client&lt;/code&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;for-next-time&quot;&gt;For next time&lt;/h1&gt;
-
-&lt;p&gt;Tomorrow, we will return to databases and discuss the conceptual and theoretical underpinnings of what we worked on today. 
-I would like you to read something about databases.&lt;label for=&#39;db&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;db&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;“What Is a Database?” BBC Guides. &lt;a href=&quot;http://www.bbc.co.uk/guides/z8yk87h&quot;&gt;http://www.bbc.co.uk/guides/z8yk87h&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;We will look at other resources and tutorials in class as well. &lt;/p&gt;
-</description>
-        <pubDate>Wed, 19 Jul 2017 11:30:00 -0400</pubDate>
-        <link>/class/2017/07/19/sql-bootcamp/</link>
-        <guid isPermaLink="true">/class/2017/07/19/sql-bootcamp/</guid>
-        
-        <category>database</category>
-        
-        <category>SQL</category>
-        
-        <category>MySQL</category>
-        
-        
-        <category>class</category>
-        
-      </item>
-    
-      <item>
-        <title>Data cleaning and spreadsheet software</title>
-        <description>&lt;p&gt;Today we&amp;#39;re going to look at one common way of manipulating CSV and other data files: the spreadsheet. 
-&lt;excerpt/&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;csv-to-spreadsheet&quot;&gt;CSV to spreadsheet&lt;/h1&gt;
-
-&lt;p&gt;Spreadsheets appear to operate in a very simple manner, storing data in rows and columns just like any other table, but looks can be deceiving. &lt;/p&gt;
-
-&lt;p&gt;Just like with DOCX and ODT files when compared with plaintext files, spreadsheets hide a lot of metadata underneath what appears on the surface. &lt;/p&gt;
-
-&lt;p&gt;Unlike with the relationship between plaintext and interface-wrapped formatted text files, it is more difficult to get all of the information out of the spreadsheet. &lt;/p&gt;
-
-&lt;p&gt;As mentioned in the piece by Paul Ford, spreadsheets can hide a lot of things from us, including errors. 
-If our code to perform the same kinds of operations is visible to us, it is easier to check for errors. &lt;/p&gt;
-
-&lt;p&gt;That said, spreadsheets are a powerful tool and should be used in certain tasks in preference over other tools. &lt;/p&gt;
-
-&lt;p&gt;Once you have learned to do basic math in a spreadsheet, there is absolutely no reason to ever use a calculator (or calculator app) for instance.&lt;/p&gt;
-
-&lt;h1 id=&quot;caveats-and-pitfalls-of-using-spreadsheets&quot;&gt;Caveats and pitfalls of using spreadsheets&lt;/h1&gt;
-
-&lt;p&gt;This forum post is a good guide to things that you should be aware of when using spreadsheets:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://forum.openoffice.org/en/forum/viewtopic.php?t=39529&quot;&gt;https://forum.openoffice.org/en/forum/viewtopic.php?t=39529&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It pertains to OpenOffice, which is the productivity suite that LibreOffice was forked from some years ago. 
-OpenOffice is now owned by Oracle and some of the community was not happy with licensing changes that had occured, so they jumped ship and moved their development to LibreOffice under the umbrella of the Open Document Foundation. 
-The software still operates similarly enough that the information is relevant to us. 
-This is because both suites use ODF at their core. &lt;/p&gt;
-
-&lt;p&gt;It will also be a good idea to have a look at the LibreOffice documentation to familiarize yourself with it as a reference: &lt;a href=&quot;https://www.libreoffice.org/get-help/documentation/&quot;&gt;https://www.libreoffice.org/get-help/documentation/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally, here is a compendium of all of the functions available to you in LibreOffice Calc: &lt;a href=&quot;https://help.libreoffice.org/Calc/Spreadsheet_Functions&quot;&gt;https://help.libreoffice.org/Calc/Spreadsheet_Functions&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;for-next-time&quot;&gt;For next time&lt;/h1&gt;
-
-&lt;p&gt;We&amp;#39;re going to break into databases next time and have a MySQL crash course. 
-I would like you to look over some basic MySQL tutorials on your own so that we are prepared to dig into this.&lt;label for=&#39;sql&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;sql&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Sverdlov, Etel. “A Basic MySQL Tutorial.” DigitalOcean. Last modified June 12, 2012. &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial&quot;&gt;https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
-</description>
-        <pubDate>Tue, 18 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/class/2017/07/18/data-cleaning/</link>
-        <guid isPermaLink="true">/class/2017/07/18/data-cleaning/</guid>
-        
-        <category>CSV</category>
-        
-        <category>data</category>
-        
-        <category>spreadsheets</category>
-        
-        
-        <category>class</category>
-        
-      </item>
-    
-      <item>
-        <title>Handling data</title>
-        <description>&lt;p&gt;Today we are going to discuss the creation of data and learn how manipulate data structures. &lt;/p&gt;
-
-&lt;p&gt;We will learn some things about using pipes to redirect output and learn some commands for working with data. 
-&lt;excerpt/&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;data&quot;&gt;Data&lt;/h1&gt;
-
-&lt;p&gt;So, data? &lt;/p&gt;
-
-&lt;p&gt;What is data? &lt;/p&gt;
-
-&lt;p&gt;Rather, we should ask: &amp;quot;What are data?&amp;quot; &lt;/p&gt;
-
-&lt;p&gt;datum, data, &lt;em&gt;n&lt;/em&gt; - something given (past participle of the verb, &lt;em&gt;dare,&lt;/em&gt; &amp;quot;to give&amp;quot;).&lt;/p&gt;
-
-&lt;p&gt;Where does it come from? What do we use it for? What does it all mean? &lt;/p&gt;
-
-&lt;p&gt;The major question that we are going to be asking ourselves here is &amp;quot;How are we going to get data into and out of different formats?&amp;quot; &lt;/p&gt;
-
-&lt;p&gt;We will start with lists of similar data and then move to structured and ordered sets of lists (tables). &lt;/p&gt;
-
-&lt;p&gt;Eventually we will consider linked sets of data in the form of databases.&lt;/p&gt;
-
-&lt;h2 id=&quot;raw-data&quot;&gt;Raw data&lt;/h2&gt;
-
-&lt;p&gt;&amp;quot;Raw&amp;quot; data is sort of an oxymoron. 
-There is very little data available that is actually really raw in the sense that it has not been touched, manipulated, massaged, curated, or cleaned by some human intervention. &lt;/p&gt;
-
-&lt;p&gt;Remember, even data that is available on the web is not raw, it is text that we have marked up and structured in specific ways. 
-However, web data can stand in as an analog for raw data. &lt;/p&gt;
-
-&lt;p&gt;The process through which we might gather data via the web is referred to as &amp;quot;scraping.&amp;quot; 
-A &amp;quot;scraper&amp;quot; is a program that reaches out into the web and grabs all of the text (including markup) available at a URL and saves it in some meaningfully structured way. &lt;/p&gt;
-
-&lt;p&gt;We&amp;#39;re not going to dig into web-scraping too much, but I want you to be aware of how data can be gathered on the web. &lt;/p&gt;
-
-&lt;p&gt;One tool that can be used for web scraping is our friend, &lt;code&gt;wget&lt;/code&gt;. 
-We&amp;#39;ve used it to download remote files, but it can also be used to get whole websites and all of the data linked from them. &lt;/p&gt;
-
-&lt;p&gt;This can be useful for mirroring a website. 
-It can also be useful in aggregating unstructured data so that it might be manipulated into structured data. &lt;/p&gt;
-
-&lt;h2 id=&quot;structured-data&quot;&gt;Structured data&lt;/h2&gt;
-
-&lt;p&gt;One simple fomat for structured data is a table. &lt;/p&gt;
-
-&lt;p&gt;Rows in the table represent individual cases or instances of something. &lt;/p&gt;
-
-&lt;p&gt;Columns represent variables. &lt;/p&gt;
-
-&lt;p&gt;What is the difference? &lt;/p&gt;
-
-&lt;p&gt;In the data that we are going to create in class, our rows will represent individual people. 
-The information contained in these rows will be given (&amp;quot;datum, a thing given&amp;quot;) to us by every member of this class. 
-The columns will represent a specifically defined aspect of data that we gather about every individual person. &lt;/p&gt;
-
-&lt;p&gt;We will start with making our own individual lists and then aggregate them. &lt;/p&gt;
-
-&lt;h1 id=&quot;the-humble-and-mighty-csv&quot;&gt;The humble and mighty CSV&lt;/h1&gt;
-
-&lt;h3 id=&quot;lists&quot;&gt;Lists&lt;/h3&gt;
-
-&lt;p&gt;We&amp;#39;ll start with a list of data. &lt;/p&gt;
-
-&lt;p&gt;Open a new file and name it with your GitHub user account and the extension .list. &lt;/p&gt;
-
-&lt;p&gt;Mine will be &lt;code&gt;jdmar3.list&lt;/code&gt;. &lt;/p&gt;
-
-&lt;p&gt;Inside the file, I want you to give one-word or numerical answers to the following (as specified), in this order, each on their own line:&lt;/p&gt;
-
-&lt;p&gt;What is your GitHub username?
-How tall are you (in centimeters)?
-What time did you wake up this morning (in 24-hour/military time: e.g., 06:30)?
-How many semesters do you have left in your degree program? 
-Approximately how far is your home city/town away from UNC/Chapel Hill (in km)?&lt;/p&gt;
-
-&lt;p&gt;If any answer doesn&amp;#39;t apply to you, type &lt;code&gt;NA&lt;/code&gt; (&amp;quot;not applicable&amp;quot;).&lt;/p&gt;
-
-&lt;p&gt;My file will look like this:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;jdmar3
-175.26
-06:45
-2
-1,129.3
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Very simple. &lt;/p&gt;
-
-&lt;h3 id=&quot;comma-separated-values-(csv)&quot;&gt;Comma Separated Values (CSV)&lt;/h3&gt;
-
-&lt;p&gt;Now that we have listed some information about ourselves, lets try to aggregate our data. &lt;/p&gt;
-
-&lt;p&gt;If we want to put all of our data together as it is, we will just end up with a super long list that is difficult for us to use in any meaninful way. 
-If we take our list and flip it, so that we have a single line instead, we can then stack all of our data up together. 
-We can separate the elements in the list with commas (or tabs, semicolons, pipe separators, or some other marker) and then we will have a row of what will become a Comma Separated Values file: structured data. &lt;/p&gt;
-
-&lt;p&gt;We can do this by hand, but that is boring. &lt;/p&gt;
-
-&lt;p&gt;Let&amp;#39;s learn a command to do this:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;paste -d, -s example.list&lt;/code&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;paste&lt;/code&gt; sequentially reads the lines from a file and then writes them out in the same sequence, separated by something (tabs, by default). 
-In this case we are asking it to read every line in our file, and then write it out separated by a comma (&lt;code&gt;-d,&lt;/code&gt;). 
-The &lt;code&gt;-s&lt;/code&gt; tells &lt;code&gt;paste&lt;/code&gt; to serialize its operations instead of parellelizing them. &lt;/p&gt;
-
-&lt;p&gt;So our standard ouput (STDOUT) from the above command will be:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;gh-username,height,wakeup,semesters-left,hometown-distance
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1 id=&quot;output-redirection&quot;&gt;Output redirection&lt;/h1&gt;
-
-&lt;p&gt;To get this into a file, we will use one of several forms of output redirection.  &lt;/p&gt;
-
-&lt;p&gt;Output redirection is simple. 
-It merely allows for the echoed output of one file to be put into another file. 
-We can use programs on top of this to manipulate that output. &lt;/p&gt;
-
-&lt;p&gt;For example:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;paste -d, -s example.list &amp;gt; example.csv&lt;/code&gt; &lt;/p&gt;
-
-&lt;p&gt;This will take the output from the first part of the command and overwrite the CSV file specified in the second part. &lt;/p&gt;
-
-&lt;p&gt;This command will append the output to the file instead of overwriting it:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;paste -d, -s example.list &amp;gt; example.csv&lt;/code&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;pipes&quot;&gt;Pipes&lt;/h1&gt;
-
-&lt;p&gt;A &amp;quot;pipe&amp;quot; is an operator that tells a program to take output from another program. 
-You&amp;#39;ll find it on your keyboard as SHIFT+.&lt;/p&gt;
-
-&lt;p&gt;Pipes translate the output of one program (STDOUT) into being input for another program (STDIN). &lt;/p&gt;
-
-&lt;p&gt;For example, if we wanted to count how many lines were in our csv file, we could run:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;cat example.csv | wc -l&lt;/code&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;for-next-time&quot;&gt;For next time&lt;/h1&gt;
-
-&lt;p&gt;Tomorrow, we are going to work in groups to learn to create and aggregate data using scripts.
-In your groups, you will write a script that asks the above questions of the user and then appends their answer to a CSV file. 
-This will be the basis of the next asssignment, which will be a group assignment. &lt;/p&gt;
-
-&lt;p&gt;I would like you to review some commands for working with a CSV file including how pipes work.&lt;label for=&#39;csv&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;csv&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Connelly, Brian. “Working with CSVs on the Command Line.” &lt;a href=&quot;http://bconnelly.net/&quot;&gt;http://bconnelly.net/&lt;/a&gt;. Last modified September 23, 2013. &lt;a href=&quot;http://bconnelly.net/working-with-csvs-on-the-command-line/&quot;&gt;http://bconnelly.net/working-with-csvs-on-the-command-line/&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
-
-&lt;p&gt;I would also like you to watch the following video on working with CSV files. I think that it might be very helpful. Try watching it once and then following along a second time. &lt;/p&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;
-  &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/OecFFZpIkDc&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 17 Jul 2017 11:30:00 -0400</pubDate>
-        <link>/class/2017/07/17/data-handling/</link>
-        <guid isPermaLink="true">/class/2017/07/17/data-handling/</guid>
-        
-        <category>CSV</category>
-        
-        <category>data</category>
-        
-        <category>scripting</category>
-        
-        <category>Bash</category>
         
         
         <category>class</category>
