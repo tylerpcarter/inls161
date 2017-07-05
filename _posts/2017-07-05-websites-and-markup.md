@@ -79,11 +79,21 @@ Berners-Lee proposed the creation of an information management system for the Eu
 
 When we write Markdown and then post it to GitHub, a system actually translates it into HTML5. 
 
+# Hands-on: Write a blog post
+
+Go to https://github.com/inls161/inls161.github.io. 
+
+This is where our class blog files will be stored. This is where you will share resources with the rest of the class. 
+
+In order to share something, you have to create a new post file. When you do this, it will create a new branch and a pull request that sends a message to me. When I get that message, I will approve the file and it will appear on the blog. 
+
+Today, we'll learn how to do this together. 
+
 # For next time
 
 I would like you to look at this tutorial about creating a website using Jekyll and GitHub Pages. 
 
-Clark, Barry. “Build A Blog With Jekyll And GitHub Pages – Smashing Magazine.” Smashing Magazine. Last modified August 1, 2014. Accessed June 27, 2016. https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/.
+Clark, Barry. “Build A Blog With Jekyll And GitHub Pages – Smashing Magazine.” Smashing Magazine. Last modified August 1, 2014. https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/.
 
 We have already done this in a very rudimentary way, but we will do it again to create a better final product. 
 
@@ -112,77 +122,3 @@ http://jekyllthemes.org/themes/dbyll/
 http://jekyllthemes.org/themes/blackdoc/
 
 http://jekyllthemes.org/themes/daktilo/
-
-# Fork
-
-Once you have chosen a Jekyll theme, you will make a copy of it in GitHub on your account. 
-We'll use this as an opportunity to get wome web code and see what that looks like. 
-
-You are not committing to anything today: this is just for practice. 
-We'll start by going to this repo:
-
-https://github.com/henrythemes/jekyll-starter-theme
-
-This is the repo for a very, very simple Jekyll web theme. 
-We will us this as a starter theme to practice with. 
-
-Once you are at the above repo, click the "Fork" button and select your username when prompted to make a copy of the repo in your account.{% marginnote 'fork' '![Click the "fork" button.](/assets/ref-images/fork.png)' %} 
-
-After a few seconds you will be taken to the repo page for the copy that you have made in your account. 
-
-# Configure
-
-Once we have the base theme forked, we need to make sure that the site is going to show up at the right address. 
-
-The address that we want is `http://YOUR-GITHUB-USERNAME.github.io`. This is the default user site address for GitHub pages. 
-
-GH Pages will serve this site from code in the master branch of a repository in your account named the same as the fully qualified domain name (FQDN) or just the full URL to our desired site. 
-
-Therefore, if your GH Pages user site defaults to `http://YOUR-GITHUB-USERNAME.github.io` then we have to make a repository in your account titled `YOUR-GITHUB-USERNAME.github.io`. 
-The easiest way to do this is to just change the name of the theme repository that we just forked so that it matches what we need. 
-
-To do this, click the settings tab on your repository page, enter a new name under "Repository name," and then click "Rename."
-
-## \_config.yml
-
-Once we are there, we should be able to look into `_config.yml` file right in GitHub and make sure that our site settings are correct.
-We will likely have to change three variables, if they exist: `path`, `url`, and `baseurl`.
-These will be different for different themes, so we'll look over this together in class. Basic principles are as follows:
-
-You want `url` to match the desired URL for your site: `http://YOUR-GITHUB-USERNAME.github.io`.
-
-`path` specifies a path where files are held. 
-For the GH Pages user site, it needs to have no value. You can either delete that line, comment it, or just put a set of double quotes to specify that Jekyll should not try to rewrite the links and append a subdirectory. It will look like this:
-
-`path: ""`
-
-The same is true for `baseurl`.
-
-All that these do is tell Jekyll where things are when it is trying to build the site. 
-Remember, linking is dynamic in the build process, so Jekyll is trying to figure out how to tell your browser where to find stuff that it needs to render the site. 
-
-## Test
-
-Once you have your config set accordingly, then you should be able to look at your site at `http://YOUR-GITHUB-USERNAME.github.io`. 
-Don't worry if it doesn't work or if something looks weird. 
-Nothing is broken in those cases, you'll just need to troublshoot to figure out what is wrong. This is part of the developmet workflow. 
-
-# Development
-
-A "development workflow" has several stages that happen in order.{% sidenote 'ghflow' '“Understanding the GitHub Flow.” GitHub Guides. Last modified December 12, 2013. https://guides.github.com/introduction/flow/.' %} 
-We have been gearing up to think about our work in this context. 
-
-A typical development workflow might conceptually look like this:
-
-1. Create new branch of source code for new feature
-2. Work on code for new feature in new branch 
-3. Test feature and make fixes if necessary
-4. Run with feature in testing environment to ensure that feature works
-5. Get feedback about new feature and integrate suggestions if necessary
-6. Merge new feature into main workflow
-7. New feature is live in production
-
-## Good advice about development and design 
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;Write the best code possible today and be completely unattached to it and willing to delete it tomorrow.&quot;<a href="https://t.co/mBAJhip0KP">https://t.co/mBAJhip0KP</a></p>&mdash; Adam Wathan (@adamwathan) <a href="https://twitter.com/adamwathan/status/747429538930393088">June 27, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
