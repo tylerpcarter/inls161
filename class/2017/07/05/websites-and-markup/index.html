@@ -227,11 +227,21 @@ Berners-Lee proposed the creation of an information management system for the Eu
 
 <p>When we write Markdown and then post it to GitHub, a system actually translates it into HTML5. </p>
 
+<h1 id="hands-on-write-a-blog-post">Hands-on: Write a blog post</h1>
+
+<p>Go to <a href="https://github.com/inls161/inls161.github.io">https://github.com/inls161/inls161.github.io</a>. </p>
+
+<p>This is where our class blog files will be stored. This is where you will share resources with the rest of the class. </p>
+
+<p>In order to share something, you have to create a new post file. When you do this, it will create a new branch and a pull request that sends a message to me. When I get that message, I will approve the file and it will appear on the blog. </p>
+
+<p>Today, we&#39;ll learn how to do this together. </p>
+
 <h1 id="for-next-time">For next time</h1>
 
 <p>I would like you to look at this tutorial about creating a website using Jekyll and GitHub Pages. </p>
 
-<p>Clark, Barry. “Build A Blog With Jekyll And GitHub Pages – Smashing Magazine.” Smashing Magazine. Last modified August 1, 2014. Accessed June 27, 2016. <a href="https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/">https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/</a>.</p>
+<p>Clark, Barry. “Build A Blog With Jekyll And GitHub Pages – Smashing Magazine.” Smashing Magazine. Last modified August 1, 2014. <a href="https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/">https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/</a>.</p>
 
 <p>We have already done this in a very rudimentary way, but we will do it again to create a better final product. </p>
 
@@ -260,83 +270,6 @@ Berners-Lee proposed the creation of an information management system for the Eu
 <p><a href="http://jekyllthemes.org/themes/blackdoc/">http://jekyllthemes.org/themes/blackdoc/</a></p>
 
 <p><a href="http://jekyllthemes.org/themes/daktilo/">http://jekyllthemes.org/themes/daktilo/</a></p>
-
-<h1 id="fork">Fork</h1>
-
-<p>Once you have chosen a Jekyll theme, you will make a copy of it in GitHub on your account. 
-We&#39;ll use this as an opportunity to get wome web code and see what that looks like. </p>
-
-<p>You are not committing to anything today: this is just for practice. 
-We&#39;ll start by going to this repo:</p>
-
-<p><a href="https://github.com/henrythemes/jekyll-starter-theme">https://github.com/henrythemes/jekyll-starter-theme</a></p>
-
-<p>This is the repo for a very, very simple Jekyll web theme. 
-We will us this as a starter theme to practice with. </p>
-
-<p>Once you are at the above repo, click the &quot;Fork&quot; button and select your username when prompted to make a copy of the repo in your account.<label for='fork' class='margin-toggle'> &#8853;</label><input type='checkbox' id='fork' class='margin-toggle'/><span class='marginnote'><img src="/assets/ref-images/fork.png" alt="Click the &quot;fork&quot; button."> </span> </p>
-
-<p>After a few seconds you will be taken to the repo page for the copy that you have made in your account. </p>
-
-<h1 id="configure">Configure</h1>
-
-<p>Once we have the base theme forked, we need to make sure that the site is going to show up at the right address. </p>
-
-<p>The address that we want is <code>http://YOUR-GITHUB-USERNAME.github.io</code>. This is the default user site address for GitHub pages. </p>
-
-<p>GH Pages will serve this site from code in the master branch of a repository in your account named the same as the fully qualified domain name (FQDN) or just the full URL to our desired site. </p>
-
-<p>Therefore, if your GH Pages user site defaults to <code>http://YOUR-GITHUB-USERNAME.github.io</code> then we have to make a repository in your account titled <code>YOUR-GITHUB-USERNAME.github.io</code>. 
-The easiest way to do this is to just change the name of the theme repository that we just forked so that it matches what we need. </p>
-
-<p>To do this, click the settings tab on your repository page, enter a new name under &quot;Repository name,&quot; and then click &quot;Rename.&quot;</p>
-
-<h2 id="_config-yml">_config.yml</h2>
-
-<p>Once we are there, we should be able to look into <code>_config.yml</code> file right in GitHub and make sure that our site settings are correct.
-We will likely have to change three variables, if they exist: <code>path</code>, <code>url</code>, and <code>baseurl</code>.
-These will be different for different themes, so we&#39;ll look over this together in class. Basic principles are as follows:</p>
-
-<p>You want <code>url</code> to match the desired URL for your site: <code>http://YOUR-GITHUB-USERNAME.github.io</code>.</p>
-
-<p><code>path</code> specifies a path where files are held. 
-For the GH Pages user site, it needs to have no value. You can either delete that line, comment it, or just put a set of double quotes to specify that Jekyll should not try to rewrite the links and append a subdirectory. It will look like this:</p>
-
-<p><code>path: &quot;&quot;</code></p>
-
-<p>The same is true for <code>baseurl</code>.</p>
-
-<p>All that these do is tell Jekyll where things are when it is trying to build the site. 
-Remember, linking is dynamic in the build process, so Jekyll is trying to figure out how to tell your browser where to find stuff that it needs to render the site. </p>
-
-<h2 id="test">Test</h2>
-
-<p>Once you have your config set accordingly, then you should be able to look at your site at <code>http://YOUR-GITHUB-USERNAME.github.io</code>. 
-Don&#39;t worry if it doesn&#39;t work or if something looks weird. 
-Nothing is broken in those cases, you&#39;ll just need to troublshoot to figure out what is wrong. This is part of the developmet workflow. </p>
-
-<h1 id="development">Development</h1>
-
-<p>A &quot;development workflow&quot; has several stages that happen in order.<label for='ghflow' class='margin-toggle sidenote-number'></label><input type='checkbox' id='ghflow' class='margin-toggle'/><span class='sidenote'>“Understanding the GitHub Flow.” GitHub Guides. Last modified December 12, 2013. <a href="https://guides.github.com/introduction/flow/">https://guides.github.com/introduction/flow/</a>. </span> 
-We have been gearing up to think about our work in this context. </p>
-
-<p>A typical development workflow might conceptually look like this:</p>
-
-<ol>
-<li>Create new branch of source code for new feature</li>
-<li>Work on code for new feature in new branch </li>
-<li>Test feature and make fixes if necessary</li>
-<li>Run with feature in testing environment to ensure that feature works</li>
-<li>Get feedback about new feature and integrate suggestions if necessary</li>
-<li>Merge new feature into main workflow</li>
-<li>New feature is live in production</li>
-</ol>
-
-<h2 id="good-advice-about-development-and-design">Good advice about development and design</h2>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;Write the best code possible today and be completely unattached to it and willing to delete it tomorrow.&quot;<a href="https://t.co/mBAJhip0KP">https://t.co/mBAJhip0KP</a></p>&mdash; Adam Wathan (@adamwathan) <a href="https://twitter.com/adamwathan/status/747429538930393088">June 27, 2016</a></blockquote>
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 <p>
